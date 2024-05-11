@@ -1,8 +1,8 @@
 import './mainpage.css';
-import React from 'react';
-import { useState } from 'react';
-import { IoIosArrowDown } from "react-icons/io";
 import { RiArrowDownSLine } from "react-icons/ri";
+import { FaArrowRightLong } from "react-icons/fa6";
+import React, { useState, useEffect, useRef } from 'react';
+
 
 
 function mainpage() {
@@ -10,24 +10,46 @@ function mainpage() {
 
     const [isRotatedUp, setIsRotatedUp] = useState(false);
     const [isRotatedDown, setIsRotatedDown] = useState(false);
+    const dropdownRefUp = useRef(null);
+    const dropdownRefDown = useRef(null);
+
+    useEffect(() => {
+        function handleClickOutside(event) {
+            if (dropdownRefUp.current && !dropdownRefUp.current.contains(event.target)) {
+                setIsRotatedUp(false);
+            }
+            if (dropdownRefDown.current && !dropdownRefDown.current.contains(event.target)) {
+                setIsRotatedDown(false);
+            }
+        }
+
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, [dropdownRefUp, dropdownRefDown]);
 
     const handleClickUp = () => {
         setIsRotatedUp(!isRotatedUp);
     };
+
     const handleClickDown = () => {
         setIsRotatedDown(!isRotatedDown);
     };
 
     return (
+
+        
         <div className="mainpage">
+
 
             <section className="sectionfirst">
                 <div className="citychoose">
 
                     <div className="leftbuttons">
 
-                        <div onClick={handleClickUp} className={`lftlftbtndrpdwn ${isRotatedUp ? 'lftlftbtndrpdwnactive' : ''}`}>Choose city <RiArrowDownSLine strokeWidth={2} style={{ transform: isRotatedUp ? 'rotate(180deg)' : 'none' }} />
-
+                        <div ref={dropdownRefUp} onClick={handleClickUp} className={`lftlftbtndrpdwn ${isRotatedUp ? 'lftlftbtndrpdwnactive' : ''}`}>
+                            Choose city <RiArrowDownSLine strokeWidth={2} style={{ transform: isRotatedUp ? 'rotate(180deg)' : 'none' }} />
                             <ul className={`lftlftbtndrpdwnul ${isRotatedUp ? 'lftlftbtndrpdwnulactive' : ''}`}>
                                 <li>Aghdjabadi</li>
                                 <li>Aghdam</li>
@@ -109,11 +131,20 @@ function mainpage() {
 
                         </div>
 
-                        <div onClick={handleClickDown} className="lftrghtbtndrpdwn">Choose travel type <RiArrowDownSLine strokeWidth={2} style={{ transform: isRotatedDown ? 'rotate(180deg)' : 'none' }} /></div>
+                        <div ref={dropdownRefDown} onClick={handleClickDown} className="lftrghtbtndrpdwn">
+                            Choose travel type 
+                            <RiArrowDownSLine strokeWidth={2} style={{ transform: isRotatedDown ? 'rotate(180deg)' : 'none' }} />
+                            <ul className={`rghtlftbtndrpdwnul ${isRotatedDown ? 'rghtlftbtndrpdwnulactive' : ''}`}>
+                                <li>Package tours</li>
+                                <li>Day tours & excursions</li>
+                                <li>Visa-free shore tours</li>
+                            </ul>
+
+                        </div>
                     </div>
 
                     <div className="checkoutpart">
-                        <span>Find Tours !</span>
+                        <span>Find Tours ! <FaArrowRightLong /></span>
                     </div>
                 </div>
             </section>
