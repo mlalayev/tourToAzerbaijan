@@ -7,25 +7,6 @@
     /* border: 1px solid white; */
 }
 
-.yellow {
-    width: 10px;
-    height: 10px;
-    color: yellow;
-    border-radius: 50%;
-    margin-top: -24px;
-    margin-left: 250px;
-    background-color: var(--main-yellow-color) ;
-}
-
-:root {
-    --main-black-color: #000000;
-    --main-white-color: #ffffff;
-    --font-family-rubik: rubik;
-    --font-family-reddit: reddit sans;
-    --main-light-green-color: #43c7b1;
-    --main-yellow-color:  rgb(255, 230, 0);
-}
-
 .logo {
     width: 130px;
     object-fit: fill;
@@ -39,15 +20,6 @@ header {
     padding-top: 20px;
     align-items: center;
     justify-content: space-between;
-}
-
-.upperpart {
-    width: 100%;
-    height: 680px;
-    overflow: hidden;
-    position: relative;
-    /* z-index: -1; */
-    background-color: var(--main-light-green-color);
 }
 
 .headerul {
@@ -117,48 +89,4 @@ header {
     text-align: center;
     align-items: center;
     justify-content: center;
-}
-
-.mainpicprt {
-    bottom: 0;
-    width: 700px;
-    height: 700px;
-    margin-top: 166px;
-    margin-left: 110px;
-    position: relative;
-    border-radius: 50%;
-    background-color: #03947c;
-}
-
-.main {
-    left: 0;
-    width: 640px;
-    bottom: 300px;
-    height: 500px;
-    position: absolute;
-}
-
-.txtprt {
-    display: flex;
-    font-family: var(--font-family-reddit);
-    color: var(--main-white-color);
-}
-
-.txtprtfrsth {
-    font-size: 50px;
-}
-
-.txtprtscndh {
-    font-size: 50px;
-}
-
-.txtprtrtra {
-    margin-top: 80px;
-    margin-left: -50px;
-    width: 600px;
-}
-
-.txtprtp {
-    font-size: 26px;
-    margin-top: 20px;
 }
