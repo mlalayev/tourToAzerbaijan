@@ -3,9 +3,9 @@ import { useState } from 'react';
 import './header.css';
 import main from '../../assets/main.png';
 import logo from '../../assets/logo.svg';
+import { GoPerson } from "react-icons/go";
 import { CgShoppingCart } from "react-icons/cg";
-import { IoPersonOutline } from "react-icons/io5";
-import { IoMdArrowDropdown } from "react-icons/io";
+import { RiArrowDownSLine } from "react-icons/ri";
 import { MdOutlineEuroSymbol } from "react-icons/md";
 
 function header() {
@@ -13,7 +13,7 @@ function header() {
     const [isRotated, setIsRotated] = useState(false);
 
     const handleClick = () => {
-      setIsRotated(!isRotated);
+        setIsRotated(!isRotated);
     };
 
 
@@ -33,9 +33,9 @@ function header() {
                 <div className="btnsdv">
                     <div className="lftbtnsdv">
 
-                        <button><IoPersonOutline size={20} className='icon' /></button>
+                        <button><GoPerson size={20} className='icon' strokeWidth={1}/></button>
                         <button><CgShoppingCart size={20} className='icon' /></button>
-                        <button onClick={handleClick}><MdOutlineEuroSymbol size={20} className='icon' /> <IoMdArrowDropdown size={16} style={{ transform: isRotated ? 'rotate(180deg)' : 'none' }}/></button>
+                        <button onClick={handleClick}><MdOutlineEuroSymbol size={20} className='icon' /> <RiArrowDownSLine strokeWidth={1} size={16} style={{ transform: isRotated ? 'rotate(180deg)' : 'none' }} /></button>
 
                     </div>
 
@@ -45,7 +45,19 @@ function header() {
                 </div>
             </header>
 
-            {/* <img src={main} className='main'/> */}
+            <div className="txtprt">
+                <div className="mainpicprt">
+                    <img src={main} className='main' />
+                </div>
+
+                <div className="txtprtrtra">
+                    <h1 className='txtprtfrsth'>Azerbaijan <div className='yellow'></div></h1>
+                    <h1 className='txtprtscndh'>The great adventure</h1>
+
+                    <p className='txtprtp'>We offer you our handpicked tours and excursions for an incredible vacation in Azerbaijan</p>
+                </div>
+
+            </div>
 
         </div>
     )
