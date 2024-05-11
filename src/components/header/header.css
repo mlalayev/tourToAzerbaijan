@@ -7,14 +7,14 @@
     /* border: 1px solid white; */
 }
 
-.yellow{
+.yellow {
     width: 10px;
     height: 10px;
     color: yellow;
     border-radius: 50%;
     margin-top: -24px;
     margin-left: 250px;
-    background-color: rgb(255, 230, 0);
+    background-color: var(--main-yellow-color) ;
 }
 
 :root {
@@ -23,6 +23,7 @@
     --font-family-rubik: rubik;
     --font-family-reddit: reddit sans;
     --main-light-green-color: #43c7b1;
+    --main-yellow-color:  rgb(255, 230, 0);
 }
 
 .logo {
@@ -45,6 +46,7 @@ header {
     height: 680px;
     overflow: hidden;
     position: relative;
+    /* z-index: -1; */
     background-color: var(--main-light-green-color);
 }
 
@@ -70,7 +72,7 @@ header {
     border-bottom: 2px solid var(--main-white-color);
 }
 
-.lftbtnsdv{
+.lftbtnsdv {
     display: flex;
 }
 
@@ -110,14 +112,14 @@ header {
     background-color: #eeecec;
 }
 
-.lftbtnsdv button{
+.lftbtnsdv button {
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
 }
 
-.mainpicprt{
+.mainpicprt {
     bottom: 0;
     width: 700px;
     height: 700px;
@@ -128,7 +130,7 @@ header {
     background-color: #03947c;
 }
 
-.main{
+.main {
     left: 0;
     width: 640px;
     bottom: 300px;
@@ -136,27 +138,27 @@ header {
     position: absolute;
 }
 
-.txtprt{
+.txtprt {
     display: flex;
     font-family: var(--font-family-reddit);
     color: var(--main-white-color);
 }
 
-.txtprtfrsth{
+.txtprtfrsth {
     font-size: 50px;
 }
 
-.txtprtscndh{
+.txtprtscndh {
     font-size: 50px;
 }
 
-.txtprtrtra{
+.txtprtrtra {
     margin-top: 80px;
     margin-left: -50px;
     width: 600px;
 }
 
-.txtprtp{
+.txtprtp {
     font-size: 26px;
     margin-top: 20px;
 }

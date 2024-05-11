@@ -5,7 +5,7 @@ import main from '../../assets/main.png';
 import logo from '../../assets/logo.svg';
 import { GoPerson } from "react-icons/go";
 import { CgShoppingCart } from "react-icons/cg";
-import { IoMdArrowDropdown } from "react-icons/io";
+import { RiArrowDownSLine } from "react-icons/ri";
 import { MdOutlineEuroSymbol } from "react-icons/md";
 
 function header() {
@@ -35,7 +35,7 @@ function header() {
 
                         <button><GoPerson size={20} className='icon' strokeWidth={1}/></button>
                         <button><CgShoppingCart size={20} className='icon' /></button>
-                        <button onClick={handleClick}><MdOutlineEuroSymbol size={20} className='icon' /> <IoMdArrowDropdown size={16} style={{ transform: isRotated ? 'rotate(180deg)' : 'none' }} /></button>
+                        <button onClick={handleClick}><MdOutlineEuroSymbol size={20} className='icon' /> <RiArrowDownSLine strokeWidth={1} size={16} style={{ transform: isRotated ? 'rotate(180deg)' : 'none' }} /></button>
 
                     </div>
 
