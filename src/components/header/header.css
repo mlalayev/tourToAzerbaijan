@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "rubik"; */
+    /* font-family: "reddit sans"; */
+    /* border: 1px solid white; */
+}
+
+:root {
+    --main-black-color: #000000;
+    --main-white-color: #ffffff;
+    --font-family-rubik: rubik;
+    --font-family-reddit: reddit;
+    --main-light-green-color: #43c7b1;
+}
+
+.logo {
+    width: 130px;
+    object-fit: fill;
+}
+
+header {
+    gap: 20px;
+    width: 74%;
+    margin: auto;
+    display: flex;
+    padding-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.upperpart {
+    width: 100%;
+    height: 680px;
+    background-color: var(--main-light-green-color);
+}
+
+.headerul {
+    gap: 20px;
+    display: flex;
+    list-style: none;
+}
+
+.headerul li {
+    transition: 0.1s;
+}
+
+.headerul a {
+    font-size: 18px;
+    text-decoration: none;
+    font-family: "reddit sans";
+    color: var(--main-black-color);
+}
+
+.headerul li:hover {
+    margin-top: -4px;
+    border-bottom: 2px solid var(--main-white-color);
+}
+
+.lftbtnsdv{
+    width: 200px;
+}
+
+.lftbtnsdv button {
+    width: 48px;
+    height: 48px;
+    border: none;
+    transition: 0.3s;
+    margin-right: 2px;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.icon{
+    margin-top: 2px;
+    margin-left: -1px;
+}
+
+.lftbtnsdv button:hover {
+    color: var(--main-light-green-color);
+    background-color: var(--main-black-color);
+}
+
+.btnsdv {
+    display: flex;
+}
+
+.chcktbtn {
+    width: 100px;
+    height: 48px;
+    border: none;
+    transition: 0.2s;
+    font-weight: 600;
+    margin-left: 4px;
+    border-radius: 25px;
+    font-family: var(--font-family-rubik);
+    background-color: var(--main-white-color);
+}
+
+.chcktbtn:hover {
+    transform: scale(1.05);
+    background-color: #eeecec;
+}
