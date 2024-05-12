@@ -203,3 +203,7 @@
     display: flex;
     align-items: center;
 }
+
+.sliderholder{
+    display: flex;
+}
