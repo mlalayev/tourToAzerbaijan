@@ -164,6 +164,40 @@ function mainpage() {
                     <button className="btntoright">a</button>
                 </div>
                 <div className="sliderholder">
+
+                    <div className="yellowcirclescnd"></div>
+
+                    <div className="sliderone">
+                        <img src={slideruno} className='slideruno' />
+                        <div className="txtprtscndscc">
+                            <h1>Tours to Baku and its sights</h1>
+                            <p>Feel the lifestyle and culture of the ancient Azerbaijani metropolis. Our professional guides...</p>
+                            <button>View 29 tours <FaArrowRightLong /> </button>
+                        </div>
+                    </div>
+
+                    <SLIDER imgg={sliderdos} huno={'Baku Boulevard'} p={'1 day from 179,48 eur'} btn={'View'} />
+                    <SLIDER imgg={slidertres} huno={'Weekend in Qabala from Upon request'} p={'8 days / 7 nights from 343,64 Eur'} btn={'View'} />
+                    <SLIDER imgg={slidercuatro} huno={'Weekend in Lerik from Upon request'} p={'3 days / 2 nights from 94,54'} btn={'View'} />
+                    <SLIDER imgg={sliderpierci} huno={'Weekend in Lankaran from Upon request'} p={'3 days / 2 nights from 146,85'} btn={'View'} />
+                    <SLIDER imgg={slidersessi} huno={'Weekend in Quba from Upon request'} p={'3 days / 2 nights from 245,58'} btn={'View'} />
+                    <SLIDER imgg={sliderseptini} huno={'Weekend in Shusha from Upon request'} p={'3 days / 2 nights from 180,93'} btn={'View'} />
+                </div>
+            </section>
+
+            <section className="sectionthird">
+                <div className='scndsctnup'>
+                    <div className="scndsctntxt">
+                        <h1>Package tours</h1>
+                        <p>Select one of our tailor-made packages and get prepared for your Russian adventure! You do not need to worry about accommodation, airport transfers, museum tickets, transportation between the cities, tour guides — we will take care of it for you. </p>
+                    </div>
+                    <button className="btntoleft">a</button>
+                    <button className="btntoright">a</button>
+                </div>
+                <div className="sliderholder">
+
+                    <div className="yellowcircle"></div>
+
                     <div className="sliderone">
                         <img src={slideruno} className='slideruno' />
                         <div className="txtprtscndscc">
