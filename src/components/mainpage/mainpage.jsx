@@ -1,10 +1,15 @@
 import './mainpage.css';
-import { RiArrowDownSLine } from "react-icons/ri";
-import { FaArrowRightLong } from "react-icons/fa6";
-import React, { useState, useEffect, useRef } from 'react';
-import slideruno from '../../assets/slider1.jpeg';
-import sliderdos from '../../assets/slider2.jpg';
 import SLIDER from '../sliders/slider.jsx';
+import sliderdos from '../../assets/slider2.jpg';
+import { RiArrowDownSLine } from "react-icons/ri";
+import slideruno from '../../assets/slider1.jpeg';
+import { FaArrowRightLong } from "react-icons/fa6";
+import slidersessi from '../../assets/slider6quba.jpg';
+import slidertres from '../../assets/slider3qabala.jpg';
+import slidercuatro from '../../assets/slider4lerik.jpg';
+import sliderseptini from '../../assets/slider7shusha.jpg';
+import React, { useState, useEffect, useRef } from 'react';
+import sliderpierci from '../../assets/slider5lankaran.jpg';
 
 
 function mainpage() {
@@ -161,13 +166,19 @@ function mainpage() {
                 <div className="sliderholder">
                     <div className="sliderone">
                         <img src={slideruno} className='slideruno' />
-
-                        <h1>Tours to Moscow & St. Petersburg</h1>
-                        <p>Feel the lifestyle and culture of the two Russian metropolises. Our professional guides...</p>
-                        <button>View 29 tours <FaArrowRightLong /> </button>
+                        <div className="txtprtscndscc">
+                            <h1>Tours to Baku and its sights</h1>
+                            <p>Feel the lifestyle and culture of the ancient Azerbaijani metropolis. Our professional guides...</p>
+                            <button>View 29 tours <FaArrowRightLong /> </button>
+                        </div>
                     </div>
 
-                    <SLIDER imgg={sliderdos} huno={'Baku Boulevard'} p={'3 hours from Upon request'} btn={'View'}/>
+                    <SLIDER imgg={sliderdos} huno={'Baku Boulevard'} p={'1 day from 179,48 eur'} btn={'View'} />
+                    <SLIDER imgg={slidertres} huno={'Weekend in Qabala from Upon request'} p={'8 days / 7 nights from 343,64 Eur'} btn={'View'} />
+                    <SLIDER imgg={slidercuatro} huno={'Weekend in Lerik from Upon request'} p={'3 days / 2 nights from 94,54'} btn={'View'} />
+                    <SLIDER imgg={sliderpierci} huno={'Weekend in Lankaran from Upon request'} p={'3 days / 2 nights from 146,85'} btn={'View'} />
+                    <SLIDER imgg={slidersessi} huno={'Weekend in Quba from Upon request'} p={'3 days / 2 nights from 245,58'} btn={'View'} />
+                    <SLIDER imgg={sliderseptini} huno={'Weekend in Shusha from Upon request'} p={'3 days / 2 nights from 180,93'} btn={'View'} />
                 </div>
             </section>
 

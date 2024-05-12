@@ -4,14 +4,15 @@ import './slider.css'
 
 function slider(props) {
     return (
-        <div>
-            <img src={props.imgg} className='propsimg'/>
-
-            <h1>{props.huno}</h1>
-            <p>{props.p}</p>
-            <button>{props.btn} <FaArrowRightLong /> </button>
+        <div className='props'>
+            <img src={props.imgg} className='propsimg' />
+            <div className="txtprtscndsc">
+                <h1 className='propshuno'>{props.huno}</h1>
+                <p className='propsp'>{props.p}</p>
+                <button className='propsbtn'>{props.btn} <FaArrowRightLong /> </button>
+            </div>
         </div>
-    )   
+    )
 }
 
 export default slider
