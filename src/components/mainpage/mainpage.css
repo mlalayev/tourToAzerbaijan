@@ -14,7 +14,7 @@
 }
 
 .sectionfirst {
-    height: 500px;
+    height: 70px;
     position: relative;
 }
 
@@ -66,7 +66,7 @@
     font-family: var(--font-family-rubik);
 }
 
-.checkoutpart span{
+.checkoutpart span {
     display: flex;
     align-items: center;
     transition: 0.1s;
@@ -142,4 +142,64 @@
 
 .rghtlftbtndrpdwnul li:hover {
     background-color: var(--main-light-green-color);
+}
+
+.sectionsecond {
+    width: 100%;
+    height: 800px;
+    border: 1px solid red;
+    padding: 90px 200px;
+}
+
+.scndsctntxt {
+    width: 923px;
+    font-family: var(--font-family-rubik);
+}
+
+.scndsctntxt h1 {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 35px;
+}
+
+.scndsctntxt p {
+    color: #202020;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.scndsctnup {
+    display: flex;
+    gap: 20px;
+}
+
+.scndsctnup button {
+    width: 70px;
+    height: 50px;
+    margin-top: 80px;
+    border-radius: 25px;
+}
+
+.btntoleft {
+    margin-left: 90px;
+}
+
+.sliderone {
+    width: 500px;
+    height: 500px;
+    border-radius: 16px;
+    background-color: rgb(236,239,250);
+    font-family: var(--font-family-reddit);
+}
+
+.slideruno {
+    width: 500px;
+    height: 300px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.sliderone button{
+    display: flex;
+    align-items: center;
 }

@@ -2,7 +2,7 @@ import './mainpage.css';
 import { RiArrowDownSLine } from "react-icons/ri";
 import { FaArrowRightLong } from "react-icons/fa6";
 import React, { useState, useEffect, useRef } from 'react';
-
+import slideruno from '../../assets/slider1.jpeg'
 
 
 function mainpage() {
@@ -39,10 +39,8 @@ function mainpage() {
 
     return (
 
-        
+
         <div className="mainpage">
-
-
             <section className="sectionfirst">
                 <div className="citychoose">
 
@@ -132,7 +130,7 @@ function mainpage() {
                         </div>
 
                         <div ref={dropdownRefDown} onClick={handleClickDown} className="lftrghtbtndrpdwn">
-                            Choose travel type 
+                            Choose travel type
                             <RiArrowDownSLine strokeWidth={2} style={{ transform: isRotatedDown ? 'rotate(180deg)' : 'none' }} />
                             <ul className={`rghtlftbtndrpdwnul ${isRotatedDown ? 'rghtlftbtndrpdwnulactive' : ''}`}>
                                 <li>Package tours</li>
@@ -147,6 +145,26 @@ function mainpage() {
                         <span>Find Tours ! <FaArrowRightLong /></span>
                     </div>
                 </div>
+            </section>
+
+            <section className="sectionsecond">
+                <div className='scndsctnup'>
+                    <div className="scndsctntxt">
+                        <h1>Package tours</h1>
+                        <p>Select one of our tailor-made packages and get prepared for your Russian adventure! You do not need to worry about accommodation, airport transfers, museum tickets, transportation between the cities, tour guides — we will take care of it for you. </p>
+                    </div>
+                    <button className="btntoleft">a</button>
+                    <button className="btntoright">a</button>
+                </div>
+
+                <div className="sliderone">
+                    <img src={slideruno} className='slideruno' />
+
+                    <h1>Tours to Moscow & St. Petersburg</h1>
+                    <p>Feel the lifestyle and culture of the two Russian metropolises. Our professional guides...</p>
+                    <button>View 29 tours <FaArrowRightLong /> </button>
+                </div>
+
             </section>
 
         </div>
