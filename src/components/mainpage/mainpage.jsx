@@ -2,7 +2,9 @@ import './mainpage.css';
 import { RiArrowDownSLine } from "react-icons/ri";
 import { FaArrowRightLong } from "react-icons/fa6";
 import React, { useState, useEffect, useRef } from 'react';
-import slideruno from '../../assets/slider1.jpeg'
+import slideruno from '../../assets/slider1.jpeg';
+import sliderdos from '../../assets/slider2.jpg';
+import SLIDER from '../sliders/slider.jsx';
 
 
 function mainpage() {
@@ -156,15 +158,17 @@ function mainpage() {
                     <button className="btntoleft">a</button>
                     <button className="btntoright">a</button>
                 </div>
+                <div className="sliderholder">
+                    <div className="sliderone">
+                        <img src={slideruno} className='slideruno' />
 
-                <div className="sliderone">
-                    <img src={slideruno} className='slideruno' />
+                        <h1>Tours to Moscow & St. Petersburg</h1>
+                        <p>Feel the lifestyle and culture of the two Russian metropolises. Our professional guides...</p>
+                        <button>View 29 tours <FaArrowRightLong /> </button>
+                    </div>
 
-                    <h1>Tours to Moscow & St. Petersburg</h1>
-                    <p>Feel the lifestyle and culture of the two Russian metropolises. Our professional guides...</p>
-                    <button>View 29 tours <FaArrowRightLong /> </button>
+                    <SLIDER imgg={sliderdos} huno={'Baku Boulevard'} p={'3 hours from Upon request'} btn={'View'}/>
                 </div>
-
             </section>
 
         </div>
