@@ -1,4 +1,105 @@
-.propsimg{
-    width: 400px;
-    height: 300px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-black-color: #000000;
+    --main-white-color: #ffffff;
+    --font-family-rubik: rubik;
+    --font-family-reddit: reddit sans;
+    --main-light-green-color: #43c7b1;
+    --main-yellow-color: rgb(255, 230, 0);
+}
+
+.propsimg {
+    width: 340px;
+    height: 280px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.props {
+    height: 450px;
+    margin-left: 30px;
+    position: relative;
+    border-radius: 16px;
+    background-color: rgb(236, 239, 250);
+    font-family: var(--font-family-reddit);
+}
+
+.txtprtscndscc {
+    width: 450px;
+    margin: auto;
+    height: 155px;
+    display: flex;
+    padding-top: 10px;
+    flex-direction: column;
+}
+
+.txtprtscndsc {
+    width: 300px;
+    margin: auto;
+    height: 155px;
+    display: flex;
+    padding-top: 10px;
+    flex-direction: column;
+}
+
+.txtprtscndsc button {
+    gap: 10px;
+    left: 10px;
+    bottom: 5px;
+    width: 100px;
+    height: 60px;
+    border: none;
+    display: flex;
+    font-size: 16px;
+    position: absolute;
+    text-align: center;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-yellow-color);
+}
+
+.txtprtscndsc button:hover{
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.212);
+}
+
+.txtprtscndscc button:hover{
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.212);
+}
+
+.txtprtscndscc button {
+    gap: 10px;
+    left: 10px;
+    bottom: 5px;
+    width: 150px;
+    height: 60px;
+    border: none;
+    display: flex;
+    font-size: 15px;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    border-radius: 30px;
+    justify-content: center;
+    background-color: var(--main-yellow-color);
+}
+
+.sliderholder {
+    width: 135%;
+    display: flex;
+    margin-top: 50px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-left: 200px;
+    margin-left: -200px;
+}
+
+.sliderholder::-webkit-scrollbar {
+    color: transparent;
+    background-color: transparent;
 }

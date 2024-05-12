@@ -147,7 +147,7 @@
 .sectionsecond {
     width: 100%;
     height: 800px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding: 90px 200px;
 }
 
@@ -186,7 +186,8 @@
 
 .sliderone {
     width: 500px;
-    height: 500px;
+    height: 450px;
+    position: relative;
     border-radius: 16px;
     background-color: rgb(236,239,250);
     font-family: var(--font-family-reddit);
@@ -194,7 +195,7 @@
 
 .slideruno {
     width: 500px;
-    height: 300px;
+    height: 280px;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
 }
@@ -204,6 +205,3 @@
     align-items: center;
 }
 
-.sliderholder{
-    display: flex;
-}
