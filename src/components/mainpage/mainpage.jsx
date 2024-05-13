@@ -215,7 +215,6 @@ function mainpage() {
                     <SLIDER imgg={sliderseptini} huno={'Weekend in Shusha from Upon request'} p={'3 days / 2 nights from 180,93'} btn={'View'} />
                 </div>
             </section>
-
         </div>
     )
 }

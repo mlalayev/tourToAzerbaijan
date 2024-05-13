@@ -16,11 +16,13 @@
 .sectionfirst {
     height: 70px;
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .citychoose {
     z-index: 1;
-    left: 300px;
+    /* left: 300px; */
     width: 920px;
     margin: auto;
     height: 120px;
@@ -147,12 +149,16 @@
 .sectionsecond {
     width: 100%;
     height: 900px;
+    overflow-x: hidden;
+    position: relative;
     padding: 90px 200px;
 }
 
 .sectionthird {
     width: 100%;
+    position: relative;
     height: 900px;
+    overflow-x: hidden;
     padding: 0px 200px;
 }
 
@@ -211,9 +217,9 @@
 }
 
 .yellowcircle{
-    top: 730px;
+    top: 0px;
     z-index: -1;
-    left: 1000px;
+    left: -100px;
     width: 600px;
     border: none;
     height: 600px;
@@ -224,19 +230,14 @@
 }
 
 .yellowcirclescnd{
-    left: -100px;
+    top: 100px;
     z-index: -1;
-    top: 1730px;
     width: 600px;
     border: none;
+    right: -100px;
     height: 600px;
     overflow: hidden;
     border-radius: 50%;
     position: absolute;
     background-color: rgb(235, 235, 152);
-}
-
-
-body{
-    overflow-x: hidden;
 }

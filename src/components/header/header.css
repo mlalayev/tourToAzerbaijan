@@ -13,17 +13,23 @@
 }
 
 header {
-    gap: 20px;
-    width: 74%;
-    margin: auto;
     display: flex;
+    overflow: hidden;
     padding-top: 20px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+}
+
+.container {
+    gap: 30px;
+    display: flex;
+    max-width: 1560px; 
+    align-items: center;
+    /* justify-content: space-around; */
 }
 
 .headerul {
-    gap: 30px;
+    gap: 50px;
     display: flex;
     list-style: none;
 }
@@ -90,3 +96,11 @@ header {
     align-items: center;
     justify-content: center;
 }
+
+
+
+@media screen and (max-width: 1440px) {
+    .upperpart {
+      background-color: var(--main-light-green-color);
+    }
+  }
