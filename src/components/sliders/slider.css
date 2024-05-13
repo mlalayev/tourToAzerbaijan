@@ -35,6 +35,10 @@
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.234);
 }
 
+.sliderone:hover{
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.234);
+}
+
 .txtprtscndscc {
     width: 450px;
     margin: auto;
@@ -98,14 +102,15 @@
 }
 
 .sliderholder {
-    width: 135%;
+    width: 136%;
     display: flex;
     margin-top: 50px;
     overflow-x: scroll;
     overflow-y: hidden;
     padding-left: 200px;
     margin-left: -200px;
-    height: 490px;
+    height: 510px;
+
 }
 
 .sliderholder::-webkit-scrollbar {

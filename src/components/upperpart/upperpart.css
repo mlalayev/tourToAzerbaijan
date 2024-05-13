@@ -8,9 +8,20 @@
     /* border: none; */
 }
 
-.containerupr{
-    max-width: 11560px; 
+.containerupr {
+    gap: 30px;
+    display: flex;
+    max-width: 1360px; 
+    align-items: center;
+    flex-direction: column;
+}
 
+.upperpart{
+    display: flex;
+    overflow: hidden;
+    padding-top: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
 .yellow {
@@ -60,7 +71,6 @@
     width: 100%;
     display: flex;
     position: relative;
-    border: 1px solid green;
     justify-content: space-around;
     color: var(--main-white-color);
     font-family: var(--font-family-reddit);
@@ -68,7 +78,6 @@
 
 .txtprtrtra {
     width: 600px;
-    border: 1px solid red;
 }
 
 .txtprtfrsth {
