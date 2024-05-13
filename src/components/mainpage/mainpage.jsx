@@ -10,6 +10,12 @@ import slidercuatro from '../../assets/slider4lerik.jpg';
 import sliderseptini from '../../assets/slider7shusha.jpg';
 import React, { useState, useEffect, useRef } from 'react';
 import sliderpierci from '../../assets/slider5lankaran.jpg';
+import { GrUserManager } from "react-icons/gr";
+import { GrCertificate } from "react-icons/gr";
+import { LiaHandHoldingHeartSolid } from "react-icons/lia";
+
+
+
 
 
 function mainpage() {
@@ -189,7 +195,6 @@ function mainpage() {
                 </div>
             </section>
 
-
             <section className="sectionthird">
                 <div className="containerthrdsc">
                     <div className='scndsctnup'>
@@ -231,12 +236,23 @@ function mainpage() {
                     </div>
 
                     <div className="frthrght">
+                        <p>Planning a trip to Russia can be a difficult task, especially when you are not aware of all peculiarities and gems of this great country. VisitRussia.com is here to help you with choosing the best itinerary for your experience. Why should you choose us:</p>
 
+                        <div className="pprtuno">
+                            <div className="icons"><GrUserManager size={50}color='black'/></div>  <p>We are the experienced travel concierge with more than 10 years’ experience and thousands of happy tourists</p>
+                        </div>
+
+                        <div className="pprtdos">
+                           <div className="icons"><GrCertificate className='iconuno' size={50}color='black'/></div> <p>We are the registered tour operator officially licensed by the The Federal Agency for Tourism of the Russian Federation</p>
+                        </div>
+
+                        <div className="pprttres">
+                           <div className="icons"><LiaHandHoldingHeartSolid size={50}color='black' /></div> <p>We practise a personal approach to each customer and design your trip according to your needs</p>
+                        </div>
                     </div>
                 </div>
             </section>
         </div>
-        // </div>
     )
 }
 
