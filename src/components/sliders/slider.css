@@ -109,8 +109,7 @@
     overflow-x: scroll;
     overflow-y: hidden;
     padding-left: 200px;
-    /* margin-left: 1000px; */
-
+    padding-right: 30px;
 }
 
 .sliderholder::-webkit-scrollbar {
