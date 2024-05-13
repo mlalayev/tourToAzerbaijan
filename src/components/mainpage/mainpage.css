@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: 1px solid red; */
 }
 
 :root {
@@ -17,6 +18,7 @@
     height: 70px;
     position: relative;
     display: flex;
+    margin-left: 10px;
     justify-content: center;
 }
 
@@ -54,7 +56,22 @@
     background-color: var(--main-light-green-color);
 }
 
-.checkoutpart {
+.containermn {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 1600px;
+}
+
+.mainpaga{
+    max-width: 1160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ .checkoutpart {
     width: 100%;
     height: 100%;
     border-top-right-radius: 10px;
@@ -148,7 +165,7 @@
 
 .sectionsecond {
     width: 100%;
-    height: 900px;
+    height: 920px;
     overflow-x: hidden;
     position: relative;
     padding: 90px 200px;
@@ -160,6 +177,7 @@
     height: 900px;
     overflow-x: hidden;
     padding: 0px 200px;
+    margin-top: 20px;
 }
 
 .scndsctntxt {
@@ -198,9 +216,10 @@
 .sliderone {
     width: 500px;
     height: 450px;
+    transition: 0.3s;
     position: relative;
     border-radius: 16px;
-    background-color: rgb(236,239,250);
+    background-color: rgb(236, 239, 250);
     font-family: var(--font-family-reddit);
 }
 
@@ -211,12 +230,12 @@
     border-top-right-radius: 16px;
 }
 
-.sliderone button{
+.sliderone button {
     display: flex;
     align-items: center;
 }
 
-.yellowcircle{
+.yellowcircle {
     top: 0px;
     z-index: -1;
     left: -100px;
@@ -229,8 +248,8 @@
     background-color: rgb(235, 235, 152);
 }
 
-.yellowcirclescnd{
-    top: 100px;
+.yellowcirclescnd {
+    top: 0px;
     z-index: -1;
     width: 600px;
     border: none;
