@@ -17,6 +17,7 @@ function header() {
 
     return (
         <header>
+            <div className="container">
             <a href="#"><img src={logo} className='logo' /></a>
 
             <ul className='headerul'>
@@ -37,6 +38,7 @@ function header() {
                 <div className="rghtbtnsdv">
                     <button className='chcktbtn'>Checkout</button>
                 </div>
+            </div>
             </div>
         </header>
     )
