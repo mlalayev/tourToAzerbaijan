@@ -48,9 +48,8 @@ function mainpage() {
 
         <div className="mainpage">
 
-            <div className="containermn">
-
-                <section className="sectionfirst">
+            <section className="sectionfirst">
+                <div className="containerfrstsc">
                     <div className="citychoose">
 
                         <div className="leftbuttons">
@@ -154,9 +153,11 @@ function mainpage() {
                             <span>Find Tours ! <FaArrowRightLong /></span>
                         </div>
                     </div>
-                </section>
+                </div>
+            </section>
 
-                <section className="sectionsecond">
+            <section className="sectionsecond">
+                <div className="containerscndsc">
                     <div className='scndsctnup'>
                         <div className="scndsctntxt">
                             <h1>Package tours</h1>
@@ -185,9 +186,12 @@ function mainpage() {
                         <SLIDER imgg={slidersessi} huno={'Weekend in Quba from Upon request'} p={'3 days / 2 nights from 245,58'} btn={'View'} />
                         <SLIDER imgg={sliderseptini} huno={'Weekend in Shusha from Upon request'} p={'3 days / 2 nights from 180,93'} btn={'View'} />
                     </div>
-                </section>
+                </div>
+            </section>
 
-                <section className="sectionthird">
+
+            <section className="sectionthird">
+                <div className="containerthrdsc">
                     <div className='scndsctnup'>
                         <div className="scndsctntxt">
                             <h1>Package tours</h1>
@@ -216,9 +220,23 @@ function mainpage() {
                         <SLIDER imgg={slidersessi} huno={'Weekend in Quba from Upon request'} p={'3 days / 2 nights from 245,58'} btn={'View'} />
                         <SLIDER imgg={sliderseptini} huno={'Weekend in Shusha from Upon request'} p={'3 days / 2 nights from 180,93'} btn={'View'} />
                     </div>
-                </section>
-            </div>
+                </div>
+            </section>
+
+            <section className="sectionfourth">
+                <div className="containerfrthsc">
+                    <div className="frthlft">
+                        <h1 className='txtprtfrsth frthhuno'>Welcome to</h1>
+                        <h1 className='txtprtfrsth'>Azerbaijan <div className='yellow'></div></h1>
+                    </div>
+
+                    <div className="frthrght">
+
+                    </div>
+                </div>
+            </section>
         </div>
+        // </div>
     )
 }
 

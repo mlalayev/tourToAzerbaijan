@@ -14,11 +14,53 @@
     --main-yellow-color: rgb(255, 230, 0);
 }
 
+.containerfrstsc{
+    display: flex;
+    /* width: 1200px; */
+    border: 2px solid blue;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerscndsc{
+    display: flex;
+    width: 1550px;
+    margin: auto;
+    position: relative;
+    flex-direction: column;
+    border: 2px solid blue;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerthrdsc{
+    margin: auto;
+    display: flex;
+    width: 1550px;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid blue;
+    justify-content: center;
+}
+
+.containerfrthsc{
+    display: flex;
+    width: 1800px;
+    margin: auto;
+    position: relative;
+    flex-direction: column;
+    border: 2px solid blue;
+    align-items: center;
+    justify-content: center;
+}
+
 .sectionfirst {
     height: 70px;
     position: relative;
     display: flex;
-    margin-left: 10px;
+    width: 100vw;
+    /* margin-left: 10px; */
     justify-content: center;
 }
 
@@ -64,14 +106,14 @@
     max-width: 1600px;
 }
 
-.mainpaga{
+.mainpaga {
     max-width: 1160px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
- .checkoutpart {
+.checkoutpart {
     width: 100%;
     height: 100%;
     border-top-right-radius: 10px;
@@ -168,7 +210,7 @@
     height: 920px;
     overflow-x: hidden;
     position: relative;
-    padding: 90px 200px;
+    padding: 90px 0px;
 }
 
 .sectionthird {
@@ -176,8 +218,8 @@
     position: relative;
     height: 900px;
     overflow-x: hidden;
-    padding: 0px 200px;
-    margin-top: 20px;
+    padding: 0px 0px;
+    margin-top: -50px;
 }
 
 .scndsctntxt {
@@ -218,6 +260,7 @@
     height: 450px;
     transition: 0.3s;
     position: relative;
+    margin-right: 30px;
     border-radius: 16px;
     background-color: rgb(236, 239, 250);
     font-family: var(--font-family-reddit);
@@ -259,4 +302,31 @@
     border-radius: 50%;
     position: absolute;
     background-color: rgb(235, 235, 152);
+}
+
+.sectionfourth {
+    width: 100vw;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.frthlft {
+    background-color: var(--main-light-green-color);
+    width: 40%;
+    min-height: 500px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    font-family: var(--font-family-reddit);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.frthhuno{
+    margin-top: -30px;
 }
