@@ -166,6 +166,61 @@ body {
     border-bottom: 1px solid black;
 }
 
+
+
+@media screen and (max-width: 1399px){
+    .citychoose {
+        width: 860px;
+    }    
+}
+
+@media screen and (max-width: 930px){
+    .citychoose {
+        height: 200px;
+        width: 260px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .leftbuttons {
+        align-items: center !important;
+        justify-content: center !important;
+        display: flex !important;
+        flex-direction: column;
+        margin-top: -18px !important;
+        gap: 10px !important;
+    }
+
+    .checkoutpart {
+        font-size: 14px;
+        margin-top: -20px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0px;
+    }
+
+    
+    .leftbuttons div {
+        font-size: 14px;
+        width: 230px !important;
+    }
+
+    .leftbuttons .lftlftbtndrpdwnul {
+        margin-left: -46px;
+        font-size: 16px;
+    }
+
+    .leftbuttons .rghtlftbtndrpdwnul {
+        left: -22px !important;
+        font-size: 16px;
+        top: 136px !important;
+    }
+}
+
+@media screen and (max-width: 1399px){
+
+}
+
 /********** SECTION FIRST CSS ENDS **********/
 /********** SECTION FIRST CSS ENDS **********/
 /********** SECTION FIRST CSS ENDS **********/
@@ -179,10 +234,11 @@ body {
 
 .sectionsecond {
     width: 100%;
-    height: 940px;
+    height: 920px;
     padding: 90px 0px;
     overflow-x: hidden !important;
     position: relative;
+    margin-bottom: -100px;
 }
 
 .containerscndsc {
@@ -260,6 +316,156 @@ body {
     background-color: rgb(235, 235, 152);
 }
 
+.txtprtscndscc button:hover {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.212);
+}
+
+.txtprtscndscc button {
+    gap: 10px;
+    left: 10px;
+    bottom: 5px;
+    width: 150px;
+    border: none;
+    height: 60px;
+    display: flex;
+    font-size: 15px;
+    transition: 0.3s;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    border-radius: 30px;
+    justify-content: center;
+    background-color: var(--main-yellow-color);
+}
+
+
+@media screen and (max-width:1399px) {
+
+    .scndsctnup {
+        width: 860px;
+        margin-left: -200px;
+    }
+
+    .scndsctntxt {
+        padding-left: 0px !important;
+        margin-left: 0px !important;
+        width: 600px;
+    }
+
+    .scndsctntxt h1 {
+        font-size: 26px;
+    }
+
+    .scndsctntxt p {
+        font-size: 18px;
+    }
+
+    .scndsctntxt {
+        margin-right: 0px;
+    }
+
+
+}
+
+@media screen and (max-width:1140px) {
+    .scndsctnup {
+        margin-left: -400px;
+    }
+
+    .scndsctntxt {
+        padding-left: 0px !important;
+        margin-left: 0px !important;
+        width: 400px;
+    }
+
+    .sectionsecond{
+        overflow-y: hidden !important;
+        height: 900px !important;
+    }      
+}
+
+@media screen and (max-width:930px) {
+    .scndsctnup {
+        margin-left: -600px !important;
+    }
+
+    .txtprtscndsc {
+        padding: 10px 20px;
+        width: 230px !important;
+    }
+
+    .scndsctntxt {
+        width: 300px;
+    }
+
+    .scndsctntxt h1 {
+        font-size: 26px;
+    }
+
+    .scndsctntxt p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .scndsctnup{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .scndsctnup button{
+        margin: 0;
+        padding: 0;
+    }
+
+    .sctnscndbtnhldr{
+        display: flex;
+        position: relative;
+        gap: 20px;
+    }
+
+    .yellowcircle, .yellowcirclescnd{
+        width: 400px;
+        height: 400px;
+    }
+
+    .sectionsecond{
+        overflow-y: hidden !important;
+    }
+
+    .yellowcirclescnd{
+        right: 800px !important;
+        top: 200px !important;
+    }
+
+    .yellowcircle, .yellowcirclescnd{
+        width: 400px;
+        height: 400px;
+    }
+
+    .sliderone{
+        width: 260px;
+        height: 400px;
+    }
+
+    .sliderone button{
+        bottom: 10px !important;
+        width: 100px !important;
+        height: 50px !important;
+        font-size: 10px !important;
+        gap: 5px !important;
+    }
+
+    .sliderone img{
+        width: 260px;
+        height: 190px;
+    }
+
+    .txtprtscndscc{
+        padding: 0 4px;
+        width: 230px !important;
+    }
+}
+
 /********** SECTION SECOND CSS ENDS **********/
 /********** SECTION SECOND CSS ENDS **********/
 /********** SECTION SECOND CSS ENDS **********/
@@ -273,9 +479,9 @@ body {
 .sectionthird {
     width: 100%;
     height: 940px;
-    padding: 90px 0px;
-    overflow-x: hidden !important;
+    padding: 100px 0px;
     position: relative;
+    overflow-x: hidden !important;
 }
 
 .containerthrdsc {
@@ -351,6 +557,154 @@ body {
     border-radius: 50%;
     position: absolute;
     background-color: rgb(235, 235, 152);
+}
+
+.txtprtthrdscc button:hover {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.212);
+}
+
+.txtprtthrdscc button {
+    gap: 10px;
+    left: 10px;
+    bottom: 5px;
+    width: 150px;
+    border: none;
+    height: 60px;
+    display: flex;
+    font-size: 15px;
+    transition: 0.3s;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    border-radius: 30px;
+    justify-content: center;
+    background-color: var(--main-yellow-color);
+}
+
+
+@media screen and (max-width:1399px) {
+    .thrdsctnup {
+        width: 860px;
+        margin-left: -200px;
+    }
+
+    .thrdsctntxt {
+        padding-left: 0px !important;
+        margin-left: 0px !important;
+        width: 600px;
+    }
+
+    .thrdsctntxt h1 {
+        font-size: 26px;
+    }
+
+    .thrdsctntxt p {
+        font-size: 18px;
+    }
+
+    .thrdsctntxt {
+        margin-right: 0px;
+    }
+}
+
+
+@media screen and (max-width:1140px) {
+    .thrdsctnup {
+        margin-left: -400px;
+    }
+
+    .yellowcirclescnd{
+        right: 400px;
+    }
+    
+    .thrdsctntxt {
+        padding-left: 0px !important;
+        margin-left: 0px !important;
+        width: 400px;
+    }
+
+    /* .txtprtthrdsc {
+        padding: 10px 20px;
+        width: 230px !important;
+    } */
+
+    .sectionthird{
+        overflow-y: hidden !important;
+        height: 900px !important;
+    }      
+}
+
+@media screen and (max-width:930px) {
+    .thrdsctnup {
+        margin-left: -600px !important;
+    }
+
+    .thrdsctntxt {
+        width: 300px;
+    }
+
+    .thrdsctntxt h1 {
+        font-size: 26px;
+    }
+
+    .thrdsctntxt p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .thrdsctnup{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .thrddsctnup button{
+        margin: 0;
+        padding: 0;
+    }
+
+    .sctnthrdbtnhldr{
+        display: flex;
+        position: relative;
+        gap: 20px !important;
+        margin: -70px 0 0 -90px !important;
+    }
+
+    .yellowcircle, .yellowcirclescnd{
+        width: 400px;
+        height: 400px;
+    }
+
+    .sectionthird{
+        overflow-y: hidden !important;
+    }
+
+    .yellowcircle, .yellowcirclescnd{
+        width: 400px;
+        height: 400px;
+    }
+
+    .sliderone{
+        width: 260px;
+        height: 400px;
+    }
+
+    .sliderone button{
+        bottom: 10px !important;
+        width: 100px !important;
+        height: 50px !important;
+        font-size: 10px !important;
+        gap: 5px !important;
+    }
+
+    .sliderone img{
+        width: 260px;
+        height: 190px;
+    }
+
+    .txtprtthrdscc{
+        padding: 0 4px;
+        width: 230px !important;
+    }
 }
 
 
@@ -527,259 +881,3 @@ body {
     flex-direction: column;
 }
 
-/************** media screen **************/
-/************** media screen **************/
-/************** media screen **************/
-
-@media screen and (max-width:1399px) {
-    .citychoose {
-        width: 860px;
-    }
-
-    .leftbuttons div {
-        width: 300px !important;
-    }
-
-    .scndsctnup {
-        width: 860px;
-        margin-left: -200px;
-    }
-
-    .scndsctntxt {
-        padding-left: 0px !important;
-        margin-left: 0px !important;
-        width: 600px;
-    }
-
-    .scndsctntxt h1 {
-        font-size: 26px;
-    }
-
-    .scndsctntxt p {
-        font-size: 18px;
-    }
-
-    .scndsctntxt {
-        margin-right: 0px;
-    }
-
-    .thrdsctnup {
-        width: 860px;
-        /* margin-left: -200px !important; */
-    }
-
-    .thrdsctntxt {
-        padding-left: 0px !important;
-        margin-left: 0px !important;
-        width: 600px;
-    }
-
-    .thrdsctntxt h1 {
-        font-size: 26px;
-    }
-
-    .thrdsctntxt p {
-        font-size: 18px;
-    }
-
-    .thrdsctntxt {
-        margin-right: 0px;
-    }
-}
-
-
-
-
-
-@media screen and (max-width:1140px) {
-    .scndsctnup {
-        margin-left: -400px;
-    }
-
-    .scndsctntxt {
-        padding-left: 0px !important;
-        margin-left: 0px !important;
-        width: 400px;
-    }
-
-    .thrdsctnup {
-        margin-left: 80px;
-    }
-
-    .thrdsctntxt {
-        padding-left: 0px !important;
-        margin-left: 0px !important;
-        width: 400px;
-    }
-
-    .sectionthird{
-        overflow-y: hidden !important;
-    }
-
-    .sectionscnd{
-        overflow-y: hidden !important;
-        height: 900px !important;
-    }
-}
-
-
-
-
-
-@media screen and (max-width:930px) {
-    .citychoose {
-        height: 200px;
-        width: 260px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .leftbuttons {
-        align-items: center !important;
-        justify-content: center !important;
-        display: flex !important;
-        flex-direction: column;
-        margin-top: -18px !important;
-        gap: 10px !important;
-    }
-
-    .checkoutpart {
-        font-size: 14px;
-        margin-top: -20px;
-        border-bottom-right-radius: 10px;
-        border-bottom-left-radius: 10px;
-        border-top-right-radius: 0px;
-    }
-
-    .leftbuttons div {
-        font-size: 14px;
-        width: 230px !important;
-    }
-
-    .leftbuttons .lftlftbtndrpdwnul {
-        margin-left: -46px;
-        font-size: 16px;
-    }
-
-    .leftbuttons .rghtlftbtndrpdwnul {
-        left: -22px !important;
-        font-size: 16px;
-        top: 136px !important;
-    }
-
-    .scndsctnup {
-        margin-left: -600px;
-    }
-
-    .scndsctntxt {
-        width: 300px;
-    }
-
-    .scndsctntxt h1 {
-        font-size: 26px;
-    }
-
-    .scndsctntxt p {
-        font-size: 14px;
-        line-height: 20px;
-    }
-
-    .scndsctnup{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .scndsctnup button{
-        margin: 0;
-        padding: 0;
-    }
-
-    .sctnscndbtnhldr{
-        display: flex;
-        position: relative;
-        gap: 20px;
-    }
-
-    .yellowcircle, .yellowcirclescnd{
-        width: 400px;
-        height: 400px;
-    }
-
-    .sectionsecond{
-        overflow-y: hidden !important;
-    }
-
-    .thrdsctnup {
-        margin-left: 30% !important;
-    }
-
-    .thrdsctntxt {
-        width: 300px;
-    }
-
-    .thrdsctntxt h1 {
-        font-size: 26px;
-    }
-
-    .thrdsctntxt p {
-        font-size: 14px;
-        line-height: 20px;
-    }
-
-    .thrdsctnup{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .thrdsctnup button{
-        margin: 0;
-        padding: 0;
-    }
-
-    .sctnscndbtnhldr{
-        display: flex;
-        position: relative;
-        gap: 20px;
-    }
-
-    .yellowcircle, .yellowcirclescnd{
-        width: 400px;
-        height: 400px;
-    }
-
-    .sectionthird{
-        overflow-y: hidden !important;
-        height: 830px !important;
-    }
-
-    .sliderone{
-        width: 260px;
-        height: 400px;
-    }
-
-    .sliderone button{
-        bottom: 10px !important;
-        width: 100px !important;
-        height: 50px !important;
-        font-size: 10px !important;
-        gap: 5px !important;
-    }
-
-    .sliderone img{
-        width: 260px;
-        height: 190px;
-    }
-
-    .txtprtscndscc h1{
-        font-size: 18px;
-    }
-
-    .txtprtscndscc p{
-        font-size: 14px;
-    }
-
-    .txtprtscndscc{
-        padding: 0 4px;
-        width: 230px !important;
-    }
-}

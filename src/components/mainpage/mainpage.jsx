@@ -211,7 +211,7 @@ function mainpage() {
                             <button className="btntoright">a</button>
                         </div>
                     </div>
-                    <div className="sliderholder">
+                    <div className="sliderholderthrd">
 
                         <div className="yellowcirclescnd"></div>
 
