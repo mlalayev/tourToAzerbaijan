@@ -239,18 +239,58 @@ function mainpage() {
                         <p>Planning a trip to Russia can be a difficult task, especially when you are not aware of all peculiarities and gems of this great country. VisitRussia.com is here to help you with choosing the best itinerary for your experience. Why should you choose us:</p>
 
                         <div className="pprtuno">
-                            <div className="icons"><GrUserManager size={50}color='black'/></div>  <p>We are the experienced travel concierge with more than 10 years’ experience and thousands of happy tourists</p>
+                            <div className="icons"><GrUserManager size={50} color='black' /></div>  <p>We are the experienced travel concierge with more than 10 years’ experience and thousands of happy tourists</p>
                         </div>
 
                         <div className="pprtdos">
-                           <div className="icons"><GrCertificate className='iconuno' size={50}color='black'/></div> <p>We are the registered tour operator officially licensed by the The Federal Agency for Tourism of the Russian Federation</p>
+                            <div className="icons"><GrCertificate className='iconuno' size={50} color='black' /></div> <p>We are the registered tour operator officially licensed by the The Federal Agency for Tourism of the Russian Federation</p>
                         </div>
 
                         <div className="pprttres">
-                           <div className="icons"><LiaHandHoldingHeartSolid size={50}color='black' /></div> <p>We practise a personal approach to each customer and design your trip according to your needs</p>
+                            <div className="icons"><LiaHandHoldingHeartSolid size={50} color='black' /></div> <p>We practise a personal approach to each customer and design your trip according to your needs</p>
                         </div>
                     </div>
                 </div>
+            </section>
+
+            <section className="sectionfifth">
+                <div className="containerffthsc">
+
+                    <div className="ffthscup">
+                        <h1>Popular destinations</h1>
+
+                        <ul className='destinations'>
+                            <li>Baku</li>
+                            <li>Gabala</li>
+                            <li>Gusar</li>
+                            <li>Ismailly</li>
+                            <li>Lankaran</li>
+                            <li>Lerik</li>
+                            <li>Guba</li>
+                            <li>Shusha</li>
+                            <li>Khankandi</li>
+                        </ul>
+
+                        <div className="horizontalline"></div>
+                    </div>
+
+                    <div className="sldrhldrtwo">
+                        <div className="ffthscdwnlft">
+                            <h1>Moscow</h1>
+                            <p>
+                                It can take forever to explore Moscow, the capital and the largest city of Russia. Our tours of Moscow will help you to become acquainted with the most amazing and peculiar spots of Moscow and its suburbs; our professional guides will tell you about history and show the real life and culture of modern Muscovites.
+                            </p>
+                            <div className="btnshldr">
+                                <button>View Tours</button>
+                                <button>View excursions</button>
+                            </div>
+                        </div>
+                        <div className="ffthscdwnrght">
+                            <img src={slidercuatro} className='sldrimg' alt="" />
+                        </div>
+                    </div>
+                </div>
+
             </section>
         </div>
     )

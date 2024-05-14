@@ -9,11 +9,13 @@
 
 .logo {
     width: 130px;
+    /* width: 9vw; */
     object-fit: fill;
 }
 
 header {
-    width: 100%; 
+    /* width: 100%;  */
+    width: 100vw; 
     display: flex;
     overflow: hidden;
     padding-top: 50px;
@@ -22,12 +24,15 @@ header {
 }
 
 .container {
-    gap: 30px;
-    width: 1300px;
+    gap: 24px;
+    /* width: 100%; */
+    width: 100vw;
     display: flex;
+    max-width: 1600px;
     padding-top: 50px;
     align-items: center;
-    padding-left: 100px;
+    justify-content: center;
+    /* padding-left: 100px; */
 }
 
 .headerul {
@@ -54,6 +59,7 @@ header {
 
 .lftbtnsdv {
     display: flex;
+    margin-right: -30px;
 }
 
 .lftbtnsdv button {

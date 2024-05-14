@@ -20,7 +20,7 @@ function header() {
                     </div>
 
                     <div className="txtprtrtra">
-                        <h1 className='txtprtfrsth'>Azerbaijan <div className='yellow'></div></h1>
+                        <h1 className='txtprtfrsth'>Azerbaijan <span className='yellow'>.</span></h1>
                         <h1 className='txtprtscndh'>The great adventure</h1>
 
                         <p className='txtprtp'>We offer you our handpicked tours and excursions for an incredible vacation in Azerbaijan</p>
