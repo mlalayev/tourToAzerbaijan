@@ -174,7 +174,7 @@ function mainpage() {
                             <button className="btntoleft">a</button>
                             <button className="btntoright">a</button>
                         </div>
-                        
+
                     </div>
                     <div className="sliderholder">
 
@@ -201,13 +201,15 @@ function mainpage() {
 
             <section className="sectionthird">
                 <div className="containerthrdsc">
-                    <div className='scndsctnup'>
-                        <div className="scndsctntxt">
+                    <div className='thrdsctnup'>
+                        <div className="thrdsctntxt">
                             <h1>Package tours</h1>
                             <p>Select one of our tailor-made packages and get prepared for your Russian adventure! You do not need to worry about accommodation, airport transfers, museum tickets, transportation between the cities, tour guides — we will take care of it for you. </p>
                         </div>
-                        <button className="btntoleft">a</button>
-                        <button className="btntoright">a</button>
+                        <div className="sctnthrdbtnhldr">
+                            <button className="btntoleft">a</button>
+                            <button className="btntoright">a</button>
+                        </div>
                     </div>
                     <div className="sliderholder">
 
@@ -215,7 +217,7 @@ function mainpage() {
 
                         <div className="sliderone">
                             <img src={slideruno} className='slideruno' />
-                            <div className="txtprtscndscc">
+                            <div className="txtprtthrdscc">
                                 <h1>Tours to Baku and its sights</h1>
                                 <p>Feel the lifestyle and culture of the ancient Azerbaijani metropolis. Our professional guides...</p>
                                 <button>View 29 tours <FaArrowRightLong /> </button>
@@ -243,15 +245,15 @@ function mainpage() {
                         <p>Planning a trip to Russia can be a difficult task, especially when you are not aware of all peculiarities and gems of this great country. VisitRussia.com is here to help you with choosing the best itinerary for your experience. Why should you choose us:</p>
 
                         <div className="pprtuno">
-                            <div className="icons"><GrUserManager size={50} color='black' /></div>  <p>We are the experienced travel concierge with more than 10 years’ experience and thousands of happy tourists</p>
+                            <div className="icons"><GrUserManager size={40} color='black' /></div>  <p>We are the experienced travel concierge with more than 10 years’ experience and thousands of happy tourists</p>
                         </div>
 
                         <div className="pprtdos">
-                            <div className="icons"><GrCertificate className='iconuno' size={50} color='black' /></div> <p>We are the registered tour operator officially licensed by the The Federal Agency for Tourism of the Russian Federation</p>
+                            <div className="icons"><GrCertificate className='iconuno' size={40} color='black' /></div> <p>We are the registered tour operator officially licensed by the The Federal Agency for Tourism of the Russian Federation</p>
                         </div>
 
                         <div className="pprttres">
-                            <div className="icons"><LiaHandHoldingHeartSolid size={50} color='black' /></div> <p>We practise a personal approach to each customer and design your trip according to your needs</p>
+                            <div className="icons"><LiaHandHoldingHeartSolid size={40} color='black' /></div> <p>We practise a personal approach to each customer and design your trip according to your needs</p>
                         </div>
                     </div>
                 </div>
