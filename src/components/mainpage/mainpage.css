@@ -14,47 +14,31 @@
     --main-yellow-color: rgb(255, 230, 0);
 }
 
+.btntoleft {
+    margin-left: 90px;
+}
+
+body {
+    overflow-x: hidden !important;
+}
+
+/********** SECTION FIRST CSS **********/
+/********** SECTION FIRST CSS **********/
+/********** SECTION FIRST CSS **********/
+
+.sectionfirst {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
 .containerfrstsc {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.containerscndsc {
-    margin: auto;
-    width: 1550px;
-    display: flex;
-    position: relative;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.containerthrdsc {
-    margin: auto;
-    display: flex;
-    width: 1550px;
-    position: relative;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.containerffthsc {
-    margin: auto;
-    display: flex;
-    /* width: 1550px; */
-    width: 80%;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.sectionfirst {
-    height: 70px;
-    width: 100vw;
-    display: flex;
-    position: relative;
-    justify-content: center;
+    max-width: 1600px;
 }
 
 .citychoose {
@@ -88,48 +72,6 @@
     justify-content: space-between;
     font-family: var(--font-family-rubik);
     background-color: var(--main-light-green-color);
-}
-
-.containermn {
-    margin: auto;
-    display: flex;
-    max-width: 1600px;
-    position: relative;
-    flex-direction: column;
-}
-
-.mainpaga {
-    display: flex;
-    max-width: 1160px;
-    align-items: center;
-    justify-content: center;
-}
-
-.checkoutpart {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    font-size: 1rem;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    font-family: var(--font-family-rubik);
-    background-color: var(--main-yellow-color);
-}
-
-.checkoutpart span {
-    gap: 4px;
-    display: flex;
-    transition: 0.1s;
-    align-items: center;
-}
-
-.checkoutpart:hover span {
-    gap: 8px;
-    margin-bottom: -1px;
-    border-bottom: 1px solid black;
 }
 
 .lftlftbtndrpdwn {
@@ -197,31 +139,72 @@
     background-color: var(--main-light-green-color);
 }
 
+.checkoutpart {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    font-size: 1rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-family: var(--font-family-rubik);
+    background-color: var(--main-yellow-color);
+}
+
+.checkoutpart span {
+    gap: 4px;
+    display: flex;
+    transition: 0.1s;
+    align-items: center;
+}
+
+.checkoutpart:hover span {
+    gap: 8px;
+    margin-bottom: -1px;
+    border-bottom: 1px solid black;
+}
+
+/********** SECTION FIRST CSS ENDS **********/
+/********** SECTION FIRST CSS ENDS **********/
+/********** SECTION FIRST CSS ENDS **********/
+
+
+
+
+/********** SECTION SECOND CSS **********/
+/********** SECTION SECOND CSS **********/
+/********** SECTION SECOND CSS **********/
+
 .sectionsecond {
     width: 100%;
-    height: 920px;
+    height: 940px;
     padding: 90px 0px;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     position: relative;
 }
 
-.sectionthird {
-    width: 100%;
-    height: 750px;
-    padding: 0px 0px;
-    margin-top: -50px;
+.containerscndsc {
+    margin: auto;
+    width: 1600px;
+    display: flex;
     position: relative;
-    overflow-x: hidden;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.sectionfourth::before {
-    left: 0;
-    width: 38%;
-    content: "";
-    height: 100%;
-    display: block;
-    position: absolute;
-    background-color: var(--main-light-green-color);
+.scndsctnup {
+    gap: 20px;
+    display: flex;
+}
+
+.scndsctnup button {
+    width: 70px;
+    height: 50px;
+    margin-top: 80px;
+    border-radius: 25px;
 }
 
 .scndsctntxt {
@@ -239,22 +222,6 @@
     color: #202020;
     font-size: 1.125rem;
     line-height: 30px;
-}
-
-.scndsctnup {
-    gap: 20px;
-    display: flex;
-}
-
-.scndsctnup button {
-    width: 70px;
-    height: 50px;
-    margin-top: 80px;
-    border-radius: 25px;
-}
-
-.btntoleft {
-    margin-left: 90px;
 }
 
 .sliderone {
@@ -287,10 +254,90 @@
     width: 600px;
     border: none;
     height: 600px;
-    overflow: hidden;
+    overflow: hidden !important;
     position: absolute;
     border-radius: 50%;
     background-color: rgb(235, 235, 152);
+}
+
+/********** SECTION SECOND CSS ENDS **********/
+/********** SECTION SECOND CSS ENDS **********/
+/********** SECTION SECOND CSS ENDS **********/
+
+
+
+/********** SECTION THIRD CSS **********/
+/********** SECTION THIRD CSS **********/
+/********** SECTION THIRD CSS **********/
+
+.sectionthird {
+    width: 100%;
+    height: 940px;
+    padding: 90px 0px;
+    overflow-x: hidden !important;
+    position: relative;
+}
+
+.containerthrdsc {
+    margin: auto;
+    width: 1600px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.thrdsctnup {
+    gap: 20px;
+    display: flex;
+}
+
+.thrdsctnup button {
+    width: 70px;
+    height: 50px;
+    margin-top: 80px;
+    border-radius: 25px;
+}
+
+.thrdsctntxt {
+    width: 923px;
+    font-family: var(--font-family-rubik);
+}
+
+.thrdsctntxt h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 35px;
+}
+
+.thrdsctntxt p {
+    color: #202020;
+    font-size: 1.125rem;
+    line-height: 30px;
+}
+
+.sliderone {
+    width: 500px;
+    height: 450px;
+    transition: 0.3s;
+    position: relative;
+    margin-right: 30px;
+    border-radius: 16px;
+    background-color: rgb(236, 239, 250);
+    font-family: var(--font-family-reddit);
+}
+
+.slideruno {
+    width: 500px;
+    height: 280px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.sliderone button {
+    display: flex;
+    align-items: center;
 }
 
 .yellowcirclescnd {
@@ -300,10 +347,31 @@
     border: none;
     right: -100px;
     height: 600px;
-    overflow: hidden;
+    overflow: hidden !important;
     border-radius: 50%;
     position: absolute;
     background-color: rgb(235, 235, 152);
+}
+
+
+/********** SECTION THIRD CSS ENDS **********/
+/********** SECTION THIRD CSS ENDS **********/
+/********** SECTION THIRD CSS ENDS **********/
+
+
+
+/********** SECTION FOURTH CSS **********/
+/********** SECTION FOURTH CSS **********/
+/********** SECTION FOURTH CSS **********/
+
+.sectionfourth::before {
+    left: 0;
+    width: 38%;
+    content: "";
+    height: 100%;
+    display: block;
+    position: absolute;
+    background-color: var(--main-light-green-color);
 }
 
 .sectionfourth {
@@ -311,13 +379,17 @@
     height: 530px;
     display: flex;
     padding: 0px 0px;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     position: relative;
-    overflow-y: hidden;
+    overflow-y: hidden !important;
 }
 
-body {
-    overflow-x: hidden;
+.containerfrthsc {
+    margin: auto;
+    max-width: 1600px;
+    display: flex;
+    position: relative;
+    flex-direction: row;
 }
 
 .frthlft {
@@ -339,14 +411,6 @@ body {
     margin-top: -30px;
 }
 
-.containerfrthsc {
-    margin: auto;
-    width: 1550px;
-    display: flex;
-    position: relative;
-    flex-direction: row;
-}
-
 .frthrght {
     width: 55%;
     color: gray;
@@ -359,20 +423,6 @@ body {
     font-family: var(--font-family-rubik);
 }
 
-.icons {
-    height: 80px;
-    display: flex;
-    max-width: 80px;
-    min-width: 80px;
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--main-light-green-color);
-}
-
-.iconuno {
-    margin-top: 4px;
-}
 
 .pprtuno,
 .pprtdos,
@@ -381,6 +431,33 @@ body {
     display: flex;
 }
 
+.icons {
+    height: 70px;
+    display: flex;
+    max-width: 70px;
+    min-width: 70px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-light-green-color);
+}
+
+.iconuno {
+    margin-top: 4px;
+    margin-left: 2px;
+}
+
+/********** SECTION FOURTH CSS ENDS **********/
+/********** SECTION FOURTH CSS ENDS **********/
+/********** SECTION FOURTH CSS ENDS **********/
+
+
+
+
+/********** SECTION FIFTH CSS **********/
+/********** SECTION FIFTH CSS **********/
+/********** SECTION FIFTH CSS **********/
+
 .sectionfifth {
     margin-top: 100px;
     position: relative;
@@ -388,25 +465,14 @@ body {
     font-family: var(--font-family-reddit);
 }
 
-.horizontalline {
-    left: 0;
-    height: 2px;
-    width: 100vw;
-    margin-top: 20px;
-    position: absolute;
-    background-color: var(--main-light-green-color);
-}
-
-.sldrimg {
-    border-radius: 14px;
-    width: 540px;
-    height: 430px;
-}
-
-.sldrhldrtwo {
-    gap: 100px;
+.containerffthsc {
+    margin: auto;
     display: flex;
-    padding-top: 70px;
+    width: 80%;
+    /* width: 1550px; */
+    max-width: 1400px;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .ffthscup h1 {
@@ -427,10 +493,43 @@ body {
     color: var(--main-light-green-color);
 }
 
-.sldrhldrtwo {}
+.horizontalline {
+    left: 0;
+    height: 2px;
+    width: 100vw;
+    margin-top: 20px;
+    position: absolute;
+    background-color: var(--main-light-green-color);
+}
+
+.sldrhldrtwo {
+    gap: 100px;
+    display: flex;
+    padding-top: 70px;
+}
 
 
-/* media screen */
+.sldrimg {
+    border-radius: 14px;
+    width: 540px;
+    height: 430px;
+}
+
+/********** SECTION FIFTH CSS ENDS **********/
+/********** SECTION FIFTH CSS ENDS **********/
+/********** SECTION FIFTH CSS ENDS **********/
+
+.containermn {
+    margin: auto;
+    display: flex;
+    max-width: 1600px;
+    position: relative;
+    flex-direction: column;
+}
+
+/************** media screen **************/
+/************** media screen **************/
+/************** media screen **************/
 
 @media screen and (max-width:1399px) {
     .citychoose {
@@ -461,10 +560,32 @@ body {
     }
 
     .scndsctntxt {
-        /* margin-right: 100px; */
+        margin-right: 0px;
+    }
+
+    .thrdsctnup {
+        width: 860px;
+        /* margin-left: -200px !important; */
+    }
+
+    .thrdsctntxt {
+        padding-left: 0px !important;
+        margin-left: 0px !important;
+        width: 600px;
+    }
+
+    .thrdsctntxt h1 {
+        font-size: 26px;
+    }
+
+    .thrdsctntxt p {
+        font-size: 18px;
+    }
+
+    .thrdsctntxt {
+        margin-right: 0px;
     }
 }
-
 
 
 
@@ -479,6 +600,25 @@ body {
         padding-left: 0px !important;
         margin-left: 0px !important;
         width: 400px;
+    }
+
+    .thrdsctnup {
+        margin-left: 80px;
+    }
+
+    .thrdsctntxt {
+        padding-left: 0px !important;
+        margin-left: 0px !important;
+        width: 400px;
+    }
+
+    .sectionthird{
+        overflow-y: hidden !important;
+    }
+
+    .sectionscnd{
+        overflow-y: hidden !important;
+        height: 900px !important;
     }
 }
 
@@ -566,7 +706,50 @@ body {
     }
 
     .sectionsecond{
-        overflow-y: hidden;
+        overflow-y: hidden !important;
+    }
+
+    .thrdsctnup {
+        margin-left: 30% !important;
+    }
+
+    .thrdsctntxt {
+        width: 300px;
+    }
+
+    .thrdsctntxt h1 {
+        font-size: 26px;
+    }
+
+    .thrdsctntxt p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .thrdsctnup{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .thrdsctnup button{
+        margin: 0;
+        padding: 0;
+    }
+
+    .sctnscndbtnhldr{
+        display: flex;
+        position: relative;
+        gap: 20px;
+    }
+
+    .yellowcircle, .yellowcirclescnd{
+        width: 400px;
+        height: 400px;
+    }
+
+    .sectionthird{
+        overflow-y: hidden !important;
+        height: 830px !important;
     }
 
     .sliderone{
