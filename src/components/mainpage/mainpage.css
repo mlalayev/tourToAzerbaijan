@@ -14,13 +14,13 @@
     --main-yellow-color: rgb(255, 230, 0);
 }
 
-.containerfrstsc{
+.containerfrstsc {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.containerscndsc{
+.containerscndsc {
     margin: auto;
     width: 1550px;
     display: flex;
@@ -30,12 +30,21 @@
     justify-content: center;
 }
 
-.containerthrdsc{
+.containerthrdsc {
     margin: auto;
     display: flex;
     width: 1550px;
     position: relative;
     align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.containerffthsc {
+    margin: auto;
+    display: flex;
+    /* width: 1550px; */
+    width: 80%;
     flex-direction: column;
     justify-content: center;
 }
@@ -100,7 +109,7 @@
     width: 100%;
     height: 100%;
     display: flex;
-    font-size: 16px;
+    font-size: 1rem;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -205,7 +214,7 @@
     overflow-x: hidden;
 }
 
-.sectionfourth::before{
+.sectionfourth::before {
     left: 0;
     width: 38%;
     content: "";
@@ -221,14 +230,14 @@
 }
 
 .scndsctntxt h1 {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 500;
     margin-bottom: 35px;
 }
 
 .scndsctntxt p {
     color: #202020;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 30px;
 }
 
@@ -305,10 +314,9 @@
     overflow-x: hidden;
     position: relative;
     overflow-y: hidden;
-    margin-bottom: 1000px;
 }
 
-body{
+body {
     overflow-x: hidden;
 }
 
@@ -327,11 +335,11 @@ body{
     background-color: var(--main-light-green-color);
 }
 
-.frthhuno{
+.frthhuno {
     margin-top: -30px;
 }
 
-.containerfrthsc{
+.containerfrthsc {
     margin: auto;
     width: 1550px;
     display: flex;
@@ -339,19 +347,19 @@ body{
     flex-direction: row;
 }
 
-.frthrght{
+.frthrght {
     width: 55%;
     color: gray;
     padding: 30px 40px;
 }
 
-.frthrght p{
-    font-size: 20px;
+.frthrght p {
+    font-size: 1.25rem;
     margin-bottom: 70px;
     font-family: var(--font-family-rubik);
 }
 
-.icons{
+.icons {
     height: 80px;
     display: flex;
     max-width: 80px;
@@ -362,11 +370,111 @@ body{
     background-color: var(--main-light-green-color);
 }
 
-.iconuno{
+.iconuno {
     margin-top: 4px;
 }
 
-.pprtuno, .pprtdos, .pprttres{
+.pprtuno,
+.pprtdos,
+.pprttres {
     gap: 50px;
     display: flex;
+}
+
+.sectionfifth {
+    margin-top: 100px;
+    position: relative;
+    margin-bottom: 1000px;
+    font-family: var(--font-family-reddit);
+}
+
+.horizontalline {
+    left: 0;
+    height: 2px;
+    width: 100vw;
+    margin-top: 20px;
+    position: absolute;
+    background-color: var(--main-light-green-color);
+}
+
+.sldrimg {
+    border-radius: 14px;
+    width: 540px;
+    height: 430px;
+}
+
+.sldrhldrtwo {
+    gap: 100px;
+    display: flex;
+    padding-top: 70px;
+}
+
+.ffthscup h1 {
+    font-size: 2.125rem;
+    margin-bottom: 30px;
+}
+
+.destinations {
+    color: gray;
+    display: flex;
+    font-size: 1.25rem;
+    list-style: none;
+    font-weight: 600;
+    justify-content: space-between;
+}
+
+.destinations li:hover {
+    color: var(--main-light-green-color);
+}
+
+.sldrhldrtwo {
+}
+
+
+/* media screen */
+
+@media screen and (max-width:1399px){
+    .citychoose{
+        width: 860px;
+    }
+
+    .leftbuttons div{
+        width: 300px !important;
+    }
+}
+
+@media screen and (max-width:930px){
+    .citychoose{
+        height: 200px;
+        width: 260px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .leftbuttons{
+        align-items: center !important;
+        justify-content: center !important;
+        display: flex !important;
+        flex-direction: column;
+        margin-top: -18px !important;
+        gap: 10px !important;
+    }
+
+    .checkoutpart{
+        font-size: 14px;
+        margin-top: -20px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0px;
+    }
+
+    .leftbuttons div{
+        font-size: 14px;
+        width: 230px !important;
+    }
+
+    .leftbuttons ul{
+        margin-left: -46px;
+        font-size: 16px;
+    }
 }

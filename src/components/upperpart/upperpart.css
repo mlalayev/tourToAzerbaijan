@@ -11,12 +11,12 @@
 .containerupr {
     gap: 30px;
     display: flex;
-    max-width: 1360px; 
+    max-width: 1360px;
     align-items: center;
     flex-direction: column;
 }
 
-.upperpart{
+.upperpart {
     display: flex;
     overflow: hidden;
     padding-top: 20px;
@@ -27,11 +27,7 @@
 .yellow {
     width: 10px;
     height: 10px;
-    color: yellow;
-    margin-top: -24px;
-    border-radius: 50%;
-    margin-left: 250px;
-    background-color: var(--main-yellow-color) ;
+    color: var(--main-yellow-color);
 }
 
 :root {
@@ -40,7 +36,7 @@
     --font-family-rubik: rubik;
     --font-family-reddit: reddit sans;
     --main-light-green-color: #43c7b1;
-    --main-yellow-color:  rgb(255, 230, 0);
+    --main-yellow-color: rgb(255, 230, 0);
 }
 
 .upperpart {
@@ -63,7 +59,7 @@
 
 .main {
     width: 600px;
-    bottom: 125px;
+    bottom: 165px;
     position: absolute;
 }
 
@@ -93,3 +89,166 @@
     margin-top: 20px;
 }
 
+.hamdiv {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    display: none;
+    background: white;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* MEDIA SCREEN PART STARTS */
+
+/* mediascreen 1400px starts */
+
+@media screen and (max-width:1399px) {
+
+    .headerul a,
+    .headerul li,
+    .headerul {
+        display: none;
+    }
+
+    .hamdiv {
+        display: flex;
+    }
+
+    .container {
+        display: flex;
+        gap: 100px !important;
+        padding-top: 110px !important;
+    }
+
+    .chcktbtn {
+        width: 130px !important;
+        height: 50px !important;
+        border-radius: 30px !important;
+        font-size: 16px !important;
+    }
+
+    .mainpicprt {
+        top: 50px;
+        width: 500px;
+        height: 500px;
+        left: 110px;
+    }
+
+    .main {
+        bottom: 190px;
+        right: 0;
+        width: 500px;
+        height: 400px;
+    }
+
+    .txtprtrtra h1 {
+        font-size: 36px !important;
+    }
+
+    .txtprtrtra p {
+        font-size: 18px;
+    }
+
+    .txtprtrtra {
+        padding-right: 200px !important;
+    }
+
+    .txtprtscndh {
+        font-weight: 400;
+    }
+
+    .upperpart {
+        height: 500px;
+    }
+}
+
+/* mediascreen max width 930px start */
+
+@media screen and (max-width: 930px) {
+    .container {
+        gap: 10px !important;
+        justify-content: space-between !important;
+        padding: 0px 20px 0px 0 !important;
+        padding-top: 140px !important;
+    }
+
+    .hamdiv {
+        min-width: 50px !important;
+        min-height: 50px !important;
+    }
+
+    .lftbtnsdv {
+        margin-left: -40px !important;
+    }
+
+    .logo {
+        width: 70px;
+        height: 70px;
+    }
+
+    #iconfirst {
+        display: none;
+    }
+
+    .chcktbtn {
+        display: none;
+
+    }
+
+    .main {
+        bottom: 174px;
+        width: 370px !important;
+        height: 300px !important;
+    }
+
+    .mainpicprt {
+        width: 300px !important;
+        margin-top: 200px !important;
+    }
+
+    .upperpart {
+        height: 660px;
+    }
+
+    .txtprt {
+        text-align: center;
+        margin-right: 470px;
+    }
+
+    .txtprtrtra p {
+        font-size: 14px;
+    }
+
+    .txtprtrtra h1 {
+        font-size: 30px !important;
+    }
+
+    .mainpicprt {
+        left: 55%;
+        margin-bottom: 40px;
+        width: 340px !important;
+        height: 440px !important;
+    }
+}
+
+/* mediascreen max width 930px ed */
+
+
+/* mediascreen till 1250 px start */
+
+@media screen and (max-width: 1250px) {
+    .txtprtrtra {
+        margin-right: -200px !important;
+    }
+
+    .mainpicprt {
+        margin-left: -100px !important;
+    }
+}
+
+/* mediascreen till 1250 px end */
+
+/* MEDIA SCREEN PART ENDS */
