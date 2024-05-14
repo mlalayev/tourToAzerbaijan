@@ -169,8 +169,12 @@ function mainpage() {
                             <h1>Package tours</h1>
                             <p>Select one of our tailor-made packages and get prepared for your Russian adventure! You do not need to worry about accommodation, airport transfers, museum tickets, transportation between the cities, tour guides — we will take care of it for you. </p>
                         </div>
-                        <button className="btntoleft">a</button>
-                        <button className="btntoright">a</button>
+
+                        <div className="sctnscndbtnhldr">
+                            <button className="btntoleft">a</button>
+                            <button className="btntoright">a</button>
+                        </div>
+                        
                     </div>
                     <div className="sliderholder">
 
