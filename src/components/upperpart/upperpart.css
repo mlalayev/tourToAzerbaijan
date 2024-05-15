@@ -30,6 +30,10 @@
     color: var(--main-yellow-color);
 }
 
+.yelloww {
+    color: var(--main-yellow-color);
+}
+
 :root {
     --font-family-rubik: rubik;
     --main-black-color: #000000;
@@ -189,10 +193,6 @@
         height: 70px;
     }
 
-    #iconfirst {
-        display: none;
-    }
-
     .chcktbtn {
         display: none;
 
@@ -208,20 +208,19 @@
         margin: 0 !important;
         padding: 0 !important;
         width: 370px !important;
+        bottom: 120px !important;
         height: 300px !important;
         display: flex !important;
         position: absolute !important;
-        bottom: 120px !important;
     }
 
     .mainpicprt {
+        top: 200px !important;
         padding: 0 !important;
+        left: 180px !important;
         display: flex !important;
         position: absolute !important;
-        top: 200px !important;
         justify-content: center !important;
-        left: 160px !important;
-        /* right: auto !important; */
     }
 
     .txtprt {
@@ -234,20 +233,20 @@
         justify-content: center !important;
     }
 
-    .txtprtrtra{
+    .txtprtrtra {
         height: 400px;
         top: 0px !important;
         width: 100% !important;
         margin-top: 20px !important;
     }
 
-    .yellow{
+    .yellow {
         margin: 0 !important;
         padding: 0 !important;
     }
 
     .txtprtrtra p {
-        font-size: 14px;
+        font-size: 15px;
         margin: 0 !important;
         padding: 0 !important;
         position: relative !important;
@@ -258,7 +257,7 @@
         margin: 0 !important;
         padding: 0 !important;
         display: flex !important;
-        font-size: 30px !important;
+        font-size: 32px !important;
         position: relative !important;
         text-align: center !important;
         justify-content: center !important;
@@ -272,14 +271,8 @@
         display: flex !important;
         justify-content: center !important;
     }
-
-    .sectionsecond,
-    .sectionthird,
-    .setionfourth,
-    .sectionfifth {
-        max-width: 300px !important;
-    }
 }
+
 
 /* mediascreen max width 930px ed */
 
