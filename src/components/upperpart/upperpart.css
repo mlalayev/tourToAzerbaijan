@@ -31,9 +31,9 @@
 }
 
 :root {
+    --font-family-rubik: rubik;
     --main-black-color: #000000;
     --main-white-color: #ffffff;
-    --font-family-rubik: rubik;
     --font-family-reddit: reddit sans;
     --main-light-green-color: #43c7b1;
     --main-yellow-color: rgb(255, 230, 0);
@@ -126,21 +126,21 @@
     .chcktbtn {
         width: 130px !important;
         height: 50px !important;
-        border-radius: 30px !important;
         font-size: 16px !important;
+        border-radius: 30px !important;
     }
 
     .mainpicprt {
         top: 50px;
+        left: 110px;
         width: 500px;
         height: 500px;
-        left: 110px;
     }
 
     .main {
-        bottom: 190px;
         right: 0;
         width: 500px;
+        bottom: 190px;
         height: 400px;
     }
 
@@ -170,9 +170,9 @@
 @media screen and (max-width: 930px) {
     .container {
         gap: 10px !important;
-        justify-content: space-between !important;
-        padding: 0px 20px 0px 0 !important;
         padding-top: 140px !important;
+        padding: 0px 20px 0px 0 !important;
+        justify-content: space-between !important;
     }
 
     .hamdiv {
@@ -198,39 +198,86 @@
 
     }
 
+    .upperpart {
+        height: 660px;
+        width: 100vw !important;
+        display: flex !important;
+    }
+
     .main {
-        bottom: 174px;
+        margin: 0 !important;
+        padding: 0 !important;
         width: 370px !important;
         height: 300px !important;
+        display: flex !important;
+        position: absolute !important;
+        bottom: 120px !important;
     }
 
     .mainpicprt {
-        width: 300px !important;
-        margin-top: 200px !important;
-    }
-
-    .upperpart {
-        height: 660px;
+        padding: 0 !important;
+        display: flex !important;
+        position: absolute !important;
+        top: 200px !important;
+        justify-content: center !important;
+        left: 160px !important;
+        /* right: auto !important; */
     }
 
     .txtprt {
-        text-align: center;
-        margin-right: 470px;
+        padding: 0 !important;
+        width: 500px !important;
+        height: 600px !important;
+        margin-top: 200px !important;
+        position: relative !important;
+        text-align: center !important;
+        justify-content: center !important;
+    }
+
+    .txtprtrtra{
+        height: 400px;
+        top: 0px !important;
+        width: 100% !important;
+        margin-top: 20px !important;
+    }
+
+    .yellow{
+        margin: 0 !important;
+        padding: 0 !important;
     }
 
     .txtprtrtra p {
         font-size: 14px;
+        margin: 0 !important;
+        padding: 0 !important;
+        position: relative !important;
     }
 
     .txtprtrtra h1 {
+        top: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: flex !important;
         font-size: 30px !important;
+        position: relative !important;
+        text-align: center !important;
+        justify-content: center !important;
     }
 
     .mainpicprt {
-        left: 55%;
-        margin-bottom: 40px;
+        margin: 0 !important;
+        padding: 0 !important;
         width: 340px !important;
         height: 440px !important;
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+    .sectionsecond,
+    .sectionthird,
+    .setionfourth,
+    .sectionfifth {
+        max-width: 300px !important;
     }
 }
 

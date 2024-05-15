@@ -15,7 +15,7 @@
 
 header {
     /* width: 100%;  */
-    width: 100vw; 
+    width: 100vw;
     display: flex;
     overflow: hidden;
     padding-top: 50px;
@@ -109,6 +109,14 @@ header {
 
 @media screen and (max-width: 1440px) {
     .upperpart {
-      background-color: var(--main-light-green-color);
+        background-color: var(--main-light-green-color);
     }
-  }
+}
+
+@media screen and (max-width: 930px) {
+    header {
+        display: flex !important;
+        position: absolute !important;
+        top: -20px !important;
+    }
+}

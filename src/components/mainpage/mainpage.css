@@ -6,9 +6,9 @@
 }
 
 :root {
+    --font-family-rubik: rubik;
     --main-black-color: #000000;
     --main-white-color: #ffffff;
-    --font-family-rubik: rubik;
     --font-family-reddit: reddit sans;
     --main-light-green-color: #43c7b1;
     --main-yellow-color: rgb(255, 230, 0);
@@ -27,8 +27,8 @@ body {
 /********** SECTION FIRST CSS **********/
 
 .sectionfirst {
-    height: 70px;
     width: 100%;
+    height: 70px;
     display: flex;
     position: relative;
     justify-content: center;
@@ -36,9 +36,9 @@ body {
 
 .containerfrstsc {
     display: flex;
+    max-width: 1600px;
     align-items: center;
     justify-content: center;
-    max-width: 1600px;
 }
 
 .citychoose {
@@ -176,27 +176,27 @@ body {
 
 @media screen and (max-width: 930px){
     .citychoose {
-        height: 200px;
         width: 260px;
+        height: 200px;
         display: flex;
         flex-direction: column;
     }
 
     .leftbuttons {
+        gap: 10px !important;
+        flex-direction: column;
+        display: flex !important;
+        margin-top: -18px !important;
         align-items: center !important;
         justify-content: center !important;
-        display: flex !important;
-        flex-direction: column;
-        margin-top: -18px !important;
-        gap: 10px !important;
     }
 
     .checkoutpart {
         font-size: 14px;
         margin-top: -20px;
-        border-bottom-right-radius: 10px;
-        border-bottom-left-radius: 10px;
         border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
     }
 
     
@@ -206,14 +206,14 @@ body {
     }
 
     .leftbuttons .lftlftbtndrpdwnul {
-        margin-left: -46px;
         font-size: 16px;
+        margin-left: -46px;
     }
 
     .leftbuttons .rghtlftbtndrpdwnul {
-        left: -22px !important;
         font-size: 16px;
         top: 136px !important;
+        left: -22px !important;
     }
 }
 
@@ -236,9 +236,9 @@ body {
     width: 100%;
     height: 920px;
     padding: 90px 0px;
-    overflow-x: hidden !important;
     position: relative;
     margin-bottom: -100px;
+    overflow-x: hidden !important;
 }
 
 .containerscndsc {
@@ -276,8 +276,8 @@ body {
 
 .scndsctntxt p {
     color: #202020;
-    font-size: 1.125rem;
     line-height: 30px;
+    font-size: 1.125rem;
 }
 
 .sliderone {
@@ -310,9 +310,9 @@ body {
     width: 600px;
     border: none;
     height: 600px;
-    overflow: hidden !important;
     position: absolute;
     border-radius: 50%;
+    overflow: hidden !important;
     background-color: rgb(235, 235, 152);
 }
 
@@ -347,9 +347,9 @@ body {
     }
 
     .scndsctntxt {
-        padding-left: 0px !important;
-        margin-left: 0px !important;
         width: 600px;
+        margin-left: 0px !important;
+        padding-left: 0px !important;
     }
 
     .scndsctntxt h1 {
@@ -363,8 +363,6 @@ body {
     .scndsctntxt {
         margin-right: 0px;
     }
-
-
 }
 
 @media screen and (max-width:1140px) {
@@ -373,14 +371,14 @@ body {
     }
 
     .scndsctntxt {
-        padding-left: 0px !important;
-        margin-left: 0px !important;
         width: 400px;
+        margin-left: 0px !important;
+        padding-left: 0px !important;
     }
 
     .sectionsecond{
+        height: 870px !important;
         overflow-y: hidden !important;
-        height: 900px !important;
     }      
 }
 
@@ -418,9 +416,9 @@ body {
     }
 
     .sctnscndbtnhldr{
+        gap: 20px;
         display: flex;
         position: relative;
-        gap: 20px;
     }
 
     .yellowcircle, .yellowcirclescnd{
@@ -433,8 +431,8 @@ body {
     }
 
     .yellowcirclescnd{
-        right: 800px !important;
         top: 200px !important;
+        right: 800px !important;
     }
 
     .yellowcircle, .yellowcirclescnd{
@@ -448,11 +446,11 @@ body {
     }
 
     .sliderone button{
-        bottom: 10px !important;
+        gap: 5px !important;
         width: 100px !important;
+        bottom: 10px !important;
         height: 50px !important;
         font-size: 10px !important;
-        gap: 5px !important;
     }
 
     .sliderone img{
@@ -519,8 +517,8 @@ body {
 
 .thrdsctntxt p {
     color: #202020;
-    font-size: 1.125rem;
     line-height: 30px;
+    font-size: 1.125rem;
 }
 
 .sliderone {
@@ -589,9 +587,9 @@ body {
     }
 
     .thrdsctntxt {
-        padding-left: 0px !important;
-        margin-left: 0px !important;
         width: 600px;
+        margin-left: 0px !important;
+        padding-left: 0px !important;
     }
 
     .thrdsctntxt h1 {
@@ -618,19 +616,14 @@ body {
     }
     
     .thrdsctntxt {
-        padding-left: 0px !important;
-        margin-left: 0px !important;
         width: 400px;
+        margin-left: 0px !important;
+        padding-left: 0px !important;
     }
 
-    /* .txtprtthrdsc {
-        padding: 10px 20px;
-        width: 230px !important;
-    } */
-
     .sectionthird{
+        height: 880px !important;
         overflow-y: hidden !important;
-        height: 900px !important;
     }      
 }
 
@@ -689,11 +682,11 @@ body {
     }
 
     .sliderone button{
-        bottom: 10px !important;
+        gap: 5px !important;
         width: 100px !important;
+        bottom: 10px !important;
         height: 50px !important;
         font-size: 10px !important;
-        gap: 5px !important;
     }
 
     .sliderone img{
@@ -733,15 +726,15 @@ body {
     height: 530px;
     display: flex;
     padding: 0px 0px;
-    overflow-x: hidden !important;
     position: relative;
+    overflow-x: hidden !important;
     overflow-y: hidden !important;
 }
 
 .containerfrthsc {
     margin: auto;
-    max-width: 1600px;
     display: flex;
+    max-width: 1600px;
     position: relative;
     flex-direction: row;
 }
@@ -820,10 +813,9 @@ body {
 }
 
 .containerffthsc {
+    width: 80%;
     margin: auto;
     display: flex;
-    width: 80%;
-    /* width: 1550px; */
     max-width: 1400px;
     flex-direction: column;
     justify-content: center;
@@ -837,9 +829,9 @@ body {
 .destinations {
     color: gray;
     display: flex;
-    font-size: 1.25rem;
     list-style: none;
     font-weight: 600;
+    font-size: 1.25rem;
     justify-content: space-between;
 }
 
@@ -864,9 +856,9 @@ body {
 
 
 .sldrimg {
-    border-radius: 14px;
     width: 540px;
     height: 430px;
+    border-radius: 14px;
 }
 
 /********** SECTION FIFTH CSS ENDS **********/
