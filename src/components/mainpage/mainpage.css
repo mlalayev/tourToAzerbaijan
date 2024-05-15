@@ -168,13 +168,13 @@ body {
 
 
 
-@media screen and (max-width: 1399px){
+@media screen and (max-width: 1399px) {
     .citychoose {
         width: 860px;
-    }    
+    }
 }
 
-@media screen and (max-width: 930px){
+@media screen and (max-width: 930px) {
     .citychoose {
         width: 260px;
         height: 200px;
@@ -199,7 +199,7 @@ body {
         border-bottom-right-radius: 10px;
     }
 
-    
+
     .leftbuttons div {
         font-size: 14px;
         width: 230px !important;
@@ -217,9 +217,7 @@ body {
     }
 }
 
-@media screen and (max-width: 1399px){
-
-}
+@media screen and (max-width: 1399px) {}
 
 /********** SECTION FIRST CSS ENDS **********/
 /********** SECTION FIRST CSS ENDS **********/
@@ -376,10 +374,10 @@ body {
         padding-left: 0px !important;
     }
 
-    .sectionsecond{
+    .sectionsecond {
         height: 870px !important;
         overflow-y: hidden !important;
-    }      
+    }
 }
 
 @media screen and (max-width:930px) {
@@ -405,47 +403,49 @@ body {
         line-height: 20px;
     }
 
-    .scndsctnup{
+    .scndsctnup {
         display: flex;
         flex-direction: column;
     }
 
-    .scndsctnup button{
+    .scndsctnup button {
         margin: 0;
         padding: 0;
     }
 
-    .sctnscndbtnhldr{
+    .sctnscndbtnhldr {
         gap: 20px;
         display: flex;
         position: relative;
     }
 
-    .yellowcircle, .yellowcirclescnd{
+    .yellowcircle,
+    .yellowcirclescnd {
         width: 400px;
         height: 400px;
     }
 
-    .sectionsecond{
+    .sectionsecond {
         overflow-y: hidden !important;
     }
 
-    .yellowcirclescnd{
+    .yellowcirclescnd {
         top: 200px !important;
         right: 800px !important;
     }
 
-    .yellowcircle, .yellowcirclescnd{
+    .yellowcircle,
+    .yellowcirclescnd {
         width: 400px;
         height: 400px;
     }
 
-    .sliderone{
+    .sliderone {
         width: 260px;
         height: 400px;
     }
 
-    .sliderone button{
+    .sliderone button {
         gap: 5px !important;
         width: 100px !important;
         bottom: 10px !important;
@@ -453,12 +453,12 @@ body {
         font-size: 10px !important;
     }
 
-    .sliderone img{
+    .sliderone img {
         width: 260px;
         height: 190px;
     }
 
-    .txtprtscndscc{
+    .txtprtscndscc {
         padding: 0 4px;
         width: 230px !important;
     }
@@ -611,20 +611,20 @@ body {
         margin-left: -400px;
     }
 
-    .yellowcirclescnd{
+    .yellowcirclescnd {
         right: 400px;
     }
-    
+
     .thrdsctntxt {
         width: 400px;
         margin-left: 0px !important;
         padding-left: 0px !important;
     }
 
-    .sectionthird{
+    .sectionthird {
         height: 880px !important;
         overflow-y: hidden !important;
-    }      
+    }
 }
 
 @media screen and (max-width:930px) {
@@ -645,43 +645,45 @@ body {
         line-height: 20px;
     }
 
-    .thrdsctnup{
+    .thrdsctnup {
         display: flex;
         flex-direction: column;
     }
 
-    .thrddsctnup button{
+    .thrddsctnup button {
         margin: 0;
         padding: 0;
     }
 
-    .sctnthrdbtnhldr{
+    .sctnthrdbtnhldr {
         display: flex;
         position: relative;
         gap: 20px !important;
         margin: -70px 0 0 -90px !important;
     }
 
-    .yellowcircle, .yellowcirclescnd{
+    .yellowcircle,
+    .yellowcirclescnd {
         width: 400px;
         height: 400px;
     }
 
-    .sectionthird{
+    .sectionthird {
         overflow-y: hidden !important;
     }
 
-    .yellowcircle, .yellowcirclescnd{
+    .yellowcircle,
+    .yellowcirclescnd {
         width: 400px;
         height: 400px;
     }
 
-    .sliderone{
+    .sliderone {
         width: 260px;
         height: 400px;
     }
 
-    .sliderone button{
+    .sliderone button {
         gap: 5px !important;
         width: 100px !important;
         bottom: 10px !important;
@@ -689,12 +691,12 @@ body {
         font-size: 10px !important;
     }
 
-    .sliderone img{
+    .sliderone img {
         width: 260px;
         height: 190px;
     }
 
-    .txtprtthrdscc{
+    .txtprtthrdscc {
         padding: 0 4px;
         width: 230px !important;
     }
@@ -781,7 +783,6 @@ body {
 .icons {
     height: 70px;
     display: flex;
-    max-width: 70px;
     min-width: 70px;
     border-radius: 50%;
     align-items: center;
@@ -789,9 +790,84 @@ body {
     background-color: var(--main-light-green-color);
 }
 
+.div {
+    display: flex;
+}
+
 .iconuno {
     margin-top: 4px;
     margin-left: 2px;
+}
+
+@media screen and (max-width:930px) {
+    .containerfrthsc {
+        height: 1000px;
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    .frthlft {
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+        height: 200px !important;
+        display: flex !important;
+        text-align: center !important;
+        position: relative !important;
+        justify-content: center !important;
+    }
+
+    .div {
+        display: flex !important;
+        position: relative !important;
+    }
+
+    .frthrght {
+        display: flex !important;
+        flex-direction: column;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 40px 100px;
+    }
+
+    .frthrghttxtprt{
+        margin-top: -30px;
+    }
+
+    .frthrght p{
+        font-size: 14px !important;
+    }
+    .sectionfourth {
+        width: 100vw;
+        display: flex !important;
+        height: 1000px !important;
+        align-items: center !important;
+        flex-direction: column !important;
+    }
+    
+    .icons{
+        height: 60px !important;
+        min-width: 60px !important;
+        margin-right: -20px !important;
+    }
+
+    .sectionfourth::before {
+        content: "";
+        width: 100% !important;
+        height: 200px !important;
+    }
+
+    .frthlft h1 {
+        font-size: 22px !important;
+    }
+
+    .yelloww {
+        bottom: 0;
+        right: -10px;
+        font-size: 20px;
+        position: absolute;
+        color: var(--main-yellow-color);
+    }
 }
 
 /********** SECTION FOURTH CSS ENDS **********/
@@ -872,4 +948,3 @@ body {
     position: relative;
     flex-direction: column;
 }
-
