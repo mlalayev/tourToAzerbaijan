@@ -111,21 +111,24 @@
     background-color: transparent;
 }
 
+
 @media screen and (max-width:930px) {
     .props {
-        width: 230px;
-        height: 400px;
+        min-width: 340px !important;
+        height: 420px;
+        margin-left: 10px;
     }
 
     .propsimg {
-        width: 200px;
-        height: 190px;
+        width: 340px !important;
+        height: 240px !important;
     }
 
     .props button {
         gap: 5px !important;
+        left: 15px !important;
         width: 100px !important;
-        bottom: 10px !important;
+        bottom: 15px !important;
         height: 50px !important;
         font-size: 10px !important;
     }
@@ -136,26 +139,31 @@
     }
 
     .props h1 {
-        font-size: 18px;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .txtprtscndsc {
+        padding: 10px 0 !important;
     }
 
     .props p {
         font-size: 14px;
     }
 
-    .sliderholder{
+    .sliderholder {
+        padding-left: 120px;
+        padding-right: 1250px;
+        width: 100% !important;
+    }
+
+    .sliderholderthrd {
         padding-left: 120px;
         padding-right: 1180px;
         width: 100% !important;
     }
 
-    .sliderholderthrd{
-        padding-left: 120px;
-        padding-right: 1180px;
-        width: 100% !important;
-    }
-
-    .sectionthird{
+    .sectionthird {
         overflow-y: hidden;
     }
 }
