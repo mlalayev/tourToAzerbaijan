@@ -27,7 +27,7 @@
 /****** TEXT PART STARTS******/
 
 .txtprtrtra {
-    min-width: 100vw;
+    width: 100vw;
     max-width: 1600px;
     color: white;
     display: flex;
@@ -101,3 +101,38 @@
 /*********** MEDIA SCREEN 612 PX  ***********/
 /*********** MEDIA SCREEN 612 PX  ***********/
 /*********** MEDIA SCREEN 612 PX  ***********/
+
+@media screen and (min-width:830px) {
+    .main {
+        bottom: 140px;
+        width: clamp(15em, 400px ,450px);
+    }
+
+    .mainpicprt{
+        top: -20px;
+        min-width: 400px;
+        min-height: 400px;
+        border-radius: 50%;
+    }
+
+    .txtprt p{
+        font-size: 20px;
+    }
+
+    .txtprt h1{
+        font-size: 38px;
+    }
+
+    .txtprtrtra{
+        margin-top: -50px;
+    }
+
+    .txtprtrtra {
+        width: 60vw !important;
+    }
+
+    .upperpart{
+        height: 600px;
+    }
+
+}
