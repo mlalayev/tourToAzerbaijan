@@ -28,6 +28,7 @@
 
 .txtprtrtra {
     min-width: 100vw;
+    max-width: 1600px;
     color: white;
     display: flex;
     padding: 0 30px;
