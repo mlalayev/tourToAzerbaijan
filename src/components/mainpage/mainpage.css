@@ -5,14 +5,14 @@
     /* border: 1px solid red; */
 }
 
-/* :root {
+:root {
     --font-family-rubik: rubik;
     --main-black-color: #000000;
     --main-white-color: #ffffff;
     --font-family-reddit: reddit sans;
     --main-light-green-color: #43c7b1;
     --main-yellow-color: rgb(255, 230, 0);
-} */
+}
 
 body {
     overflow-x: hidden;
@@ -48,6 +48,7 @@ body {
 .lftrghtbtndrpdwn {
     gap: 10px;
     width: 90vw;
+    color: white;
     height: 40px;
     margin: auto;
     display: flex;
@@ -57,6 +58,7 @@ body {
     position: relative;
     align-items: center;
     border-radius: 20px;
+    justify-content: space-between;
     font-family: var(--font-family-reddit);
     background-color: var(--main-light-green-color);
 }
@@ -66,6 +68,7 @@ body {
     top: 45px;
     left: 0px;
     width: 90vw;
+    color: black;
     z-index: 9999;
     display: block;
     overflow: hidden;
@@ -104,11 +107,10 @@ body {
 
 .sectionfirst {
     width: 96%;
-    max-width: 1600px;
     display: flex;
     height: 164px;
     margin: 0 auto;
-    /* max-width: 100%; */
+    max-width: 1600px;
     margin-top: -150px;
     position: relative;
     border-radius: 8px;
@@ -120,9 +122,9 @@ body {
 .checkoutpart {
     width: 90vw;
     display: flex;
-    max-width: 1550px;
     min-height: 40px;
     margin-top: 10px;
+    max-width: 1550px;
     align-items: center;
     border-radius: 20px;
     justify-content: center;
@@ -152,10 +154,10 @@ body {
 /**********SECTION SECOND CSS STARTS**********/
 
 .sectionsecond {
-    font-family: var(--font-family-reddit);
+    max-width: 99vw;
     margin-top: 30px;
     position: relative;
-    max-width: 99vw;
+    font-family: var(--font-family-reddit);
 }
 
 .sliderone img {
@@ -167,7 +169,6 @@ body {
 
 .txtprtscndscc,
 .txtprtscndsc {
-    padding: 5px 10px;
     height: 38%;
     display: flex;
     padding: 5px 10px;
@@ -194,14 +195,13 @@ body {
 }
 
 .sliderone button:hover,
-.props button:hover {
-    box-shadow: 2px 2px 5px gray;
-}
-
+.props button:hover,
 .props:hover,
 .sliderone:hover {
     box-shadow: 3px 3px 5px gray;
 }
+
+
 
 .sliderone,
 .props {
@@ -348,7 +348,7 @@ body {
 .yellowcirclescnd {
     top: 100px;
     z-index: -1;
-    left: 150px;
+    right: -100px;
     width: 400px;
     height: 400px;
     border-radius: 50%;
@@ -370,9 +370,8 @@ body {
 
 .containerfrthsc {
     display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
+    flex-direction: column;
 }
 
 .frthlft {
@@ -389,8 +388,8 @@ body {
 }
 
 .frthrght {
-    font-family: var(--font-family-rubik);
     padding: 10px 20px;
+    font-family: var(--font-family-rubik);
 
 }
 
@@ -414,14 +413,14 @@ body {
 
 .icons {
     display: flex;
-    justify-content: center;
-    align-items: center;
     max-width: 50px;
     min-width: 50px;
     min-height: 50px;
     max-height: 50px;
     margin-right: 20px;
     border-radius: 50%;
+    align-items: center;
+    justify-content: center;
     background-color: var(--main-light-green-color);
 }
 
@@ -438,6 +437,7 @@ body {
 .sectionfifth {
     width: 100vw;
     display: flex;
+    margin-top: 60px;
     justify-content: center;
 }
 
@@ -458,26 +458,176 @@ select {
     display: none;
 }
 
+.ffthsctnulactive li {
+    color: black;
+    padding: 5px 20px;
+}
+
+.ffthsctnulactive li:hover {
+    background-color: var(--main-light-green-color);
+}
+
 .ffthsctnulactive {
+    top: 46px;
+    width: 92vw;
+    z-index: 99999;
     display: block;
+    list-style: none;
+    position: absolute;
+    background-color: #fff;
+    border: 2px solid #43c7b1;
+}
+
+.ffthscup h1 {
+    padding: 0 20px;
 }
 
 .ffthscup {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+    font-family: var(--font-family-reddit);
 }
 
 .fifthsctndv {
-    display: flex;
-    align-items: center;
+    gap: 10px;
     width: 94vw;
-    border: 1px solid red;
+    color: #fff;
+    height: 40px;
+    display: flex;
+    margin: 20px 0;
+    padding: 0 20px;
+    text-align: start;
+    position: relative;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 5px gray;
+    font-family: var(--font-family-reddit);
+    background-color: var(--main-light-green-color);
+}
+
+.horizontalline {
+    display: none;
+}
+
+.ffthscdwnrght {
+    display: flex;
+    justify-content: center;
+
+}
+
+.sldrimg {
+    width: 92vw;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.sldrhldrtwo {
+    font-family: var(--font-family-reddit);
+}
+
+.btnshldr {
+    width: 80vw;
+    z-index: 999;
+    display: flex;
+    max-width: 440px;
+    margin: 20px auto -24px;
+    justify-content: space-between;
+}
+
+.ffthscdwnlft {
+    display: flex;
+    padding: 0 20px;
+    flex-direction: column;
+}
+
+.btnshldr button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px gray;
+    font-family: var(--font-family-rubik);
+    background-color: var(--main-light-green-color);
 }
 
 /**********SECTION FIFTH CSS ENDS**********/
 /**********SECTION FIFTH CSS ENDS**********/
 /**********SECTION FIFTH CSS ENDS**********/
+
+/**********SECTION SIXTH CSS STARTS**********/
+/**********SECTION SIXTH CSS STARTS**********/
+/**********SECTION SIXTH CSS STARTS**********/
+
+.sectionsixth {
+    width: 100vw;
+    height: 1040px;
+    margin-top: 100px;
+    padding: 60px 20px;
+    color: rgb(36, 36, 36);
+    background-color: #43c7b1;
+}
+
+.trstssy div {
+    margin: 20px 0;
+}
+
+.trstssy {
+    font-family: var(--font-family-reddit);
+}
+
+.strs {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.horizontal {
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+}
+
+.recommendedby{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-family-reddit);
+    color: white;
+    padding: 10px;
+}
+
+.recomimg img{
+    width: 100px;
+    height: 30px;
+}
+
+.recomimg{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* flex-direction: column; */
+}
+
+/**********SECTION SIXTH CSS ENDS**********/
+/**********SECTION SIXTH CSS ENDS**********/
+/**********SECTION SIXTH CSS ENDS**********/
+
+
+
+/**********SECTION SEVENTH CSS STARTS**********/
+/**********SECTION SEVENTH CSS STARTS**********/
+/**********SECTION SEVENTH CSS STARTS**********/
+
+
+
+
+
+/**********SECTION SEVENTH CSS ENDS**********/
+/**********SECTION SEVENTH CSS ENDS**********/
+/**********SECTION SEVENTH CSS ENDS**********/
 
 
 
