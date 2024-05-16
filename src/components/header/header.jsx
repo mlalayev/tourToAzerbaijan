@@ -41,7 +41,7 @@ function header() {
                 </div>
 
                 <div className="hamdiv">
-                    <RxHamburgerMenu className='hamburger' />
+                    <RxHamburgerMenu className='hamburger' size={20}  color='black'/>
                 </div>
             </div>
         </header>

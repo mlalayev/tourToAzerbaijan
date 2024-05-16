@@ -2,36 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: "rubik"; */
-    /* font-family: "reddit sans"; */
-    /* border: 1px solid white; */
-    /* border: none; */
-}
-
-.containerupr {
-    gap: 30px;
-    display: flex;
-    max-width: 1600px;
-    align-items: center;
-    flex-direction: column;
-}
-
-.upperpart {
-    display: flex;
-    overflow: hidden;
-    padding-top: 20px;
-    align-items: center;
-    justify-content: center;
-}
-
-.yellow {
-    width: 10px;
-    height: 10px;
-    color: var(--main-yellow-color);
-}
-
-.yelloww {
-    color: var(--main-yellow-color);
+    /* border: 1px solid red; */
 }
 
 :root {
@@ -44,251 +15,88 @@
 }
 
 .upperpart {
-    width: 100%;
-    height: 680px;
+    z-index: 0;
+    max-width: 100vw;
+    height: 700px;
     overflow: hidden;
     position: relative;
     background-color: var(--main-light-green-color);
 }
 
-.mainpicprt {
-    top: 80px;
-    width: 600px;
-    height: 600px;
-    display: flex;
-    position: relative;
-    border-radius: 50%;
-    background-color: #03947c;
-}
+/****** TEXT PART STARTS******/
+/****** TEXT PART STARTS******/
+/****** TEXT PART STARTS******/
 
-.main {
-    width: 600px;
-    bottom: 165px;
-    position: absolute;
-}
-
-.txtprt {
-    width: 100%;
+.txtprtrtra {
+    width: 100vw;
+    color: white;
     display: flex;
-    position: relative;
-    justify-content: space-around;
-    color: var(--main-white-color);
+    padding: 0 30px;
+    flex-direction: column;
     font-family: var(--font-family-reddit);
 }
 
-.txtprtrtra {
-    width: 600px;
+.txtprtrtra h1 {
+    font-size: clamp(16px, 38px, 40px);
 }
 
-.txtprtfrsth {
-    font-size: 50px;
-}
-
-.txtprtscndh {
-    font-size: 50px;
-}
-
-.txtprtp {
-    font-size: 26px;
-    margin-top: 20px;
-}
-
-.hamdiv {
-    width: 50px;
-    height: 50px;
+.txtprt {
+    width: 100vw;
+    height: 540px;
     display: flex;
-    display: none;
-    background: white;
-    border-radius: 50%;
+    padding: 0px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.txtprtrtra p {
+    width: 80%;
+    font-size: clamp(16px, 16px, 40px);
+}
+
+
+.yellow {
+    color: var(--main-yellow-color);
+}
+
+/****** TEXT PART ENDS******/
+/****** TEXT PART ENDS******/
+/****** TEXT PART ENDS******/
+
+
+.main {
+    width: 400px;
+    height: 300px;
+    bottom: 100px;
+    display: flex;
+    position: absolute;
     align-items: center;
     justify-content: center;
 }
 
+.mainpicprt {
+    display: flex;
+    position: relative;
+    border-radius: 175px;
+    margin-bottom: -100px;
+    align-items: flex-end;
+    width: max(40vh, 350px);
+    justify-content: center;
+    height: max(30vh, 350px);
+    background-color: #2f8a7b;
+}
 
-/* MEDIA SCREEN PART STARTS */
+/*********** MEDIA SCREEN 612 PX  ***********/
+/*********** MEDIA SCREEN 612 PX  ***********/
+/*********** MEDIA SCREEN 612 PX  ***********/
 
-/* mediascreen 1400px starts */
-
-@media screen and (max-width:1399px) {
-
-    .headerul a,
-    .headerul li,
-    .headerul {
-        display: none;
-    }
-
-    .hamdiv {
-        display: flex;
-    }
-
-    .container {
-        display: flex;
-        gap: 100px !important;
-        padding-top: 110px !important;
-    }
-
-    .chcktbtn {
-        width: 130px !important;
-        height: 50px !important;
-        font-size: 16px !important;
-        border-radius: 30px !important;
-    }
-
+@media screen and (min-width:612px) {
     .mainpicprt {
-        top: 50px;
-        left: 110px;
-        width: 500px;
-        height: 500px;
-    }
-
-    .main {
-        right: 0;
-        width: 500px;
-        bottom: 190px;
-        height: 400px;
-    }
-
-    .txtprtrtra h1 {
-        font-size: 36px !important;
-    }
-
-    .txtprtrtra p {
-        font-size: 18px;
-    }
-
-    .txtprtrtra {
-        padding-right: 200px !important;
-    }
-
-    .txtprtscndh {
-        font-weight: 400;
-    }
-
-    .upperpart {
-        height: 500px;
+        /* margin-top: 97px; */
     }
 }
 
-/* mediascreen max width 930px start */
-
-@media screen and (max-width: 930px) {
-    .container {
-        gap: 10px !important;
-        padding-top: 140px !important;
-        padding: 0px 20px 0px 0 !important;
-        justify-content: space-between !important;
-    }
-
-    .hamdiv {
-        min-width: 50px !important;
-        min-height: 50px !important;
-    }
-
-    .lftbtnsdv {
-        margin-left: -40px !important;
-    }
-
-    .logo {
-        width: 70px;
-        height: 70px;
-    }
-
-    .chcktbtn {
-        display: none;
-
-    }
-
-    .upperpart {
-        height: 660px;
-        width: 100vw !important;
-        display: flex !important;
-    }
-
-    .main {
-        margin: 0 !important;
-        padding: 0 !important;
-        width: 370px !important;
-        bottom: 120px !important;
-        height: 300px !important;
-        display: flex !important;
-        position: absolute !important;
-    }
-
-    .mainpicprt {
-        top: 200px !important;
-        padding: 0 !important;
-        left: 180px !important;
-        display: flex !important;
-        position: absolute !important;
-        justify-content: center !important;
-    }
-
-    .txtprt {
-        padding: 0 !important;
-        width: 500px !important;
-        height: 600px !important;
-        margin-top: 200px !important;
-        position: relative !important;
-        text-align: center !important;
-        justify-content: center !important;
-    }
-
-    .txtprtrtra {
-        height: 400px;
-        top: 0px !important;
-        width: 100% !important;
-        margin-top: 20px !important;
-    }
-
-    .yellow {
-        margin: 0 !important;
-        padding: 0 !important;
-    }
-
-    .txtprtrtra p {
-        font-size: 15px;
-        margin: 0 !important;
-        padding: 0 !important;
-        position: relative !important;
-    }
-
-    .txtprtrtra h1 {
-        top: 0 !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        display: flex !important;
-        font-size: 32px !important;
-        position: relative !important;
-        text-align: center !important;
-        justify-content: center !important;
-    }
-
-    .mainpicprt {
-        margin: 0 !important;
-        padding: 0 !important;
-        width: 340px !important;
-        height: 440px !important;
-        display: flex !important;
-        justify-content: center !important;
-    }
-}
-
-
-/* mediascreen max width 930px ed */
-
-
-/* mediascreen till 1250 px start */
-
-@media screen and (max-width: 1250px) {
-    .txtprtrtra {
-        margin-right: -200px !important;
-    }
-
-    .mainpicprt {
-        margin-left: -100px !important;
-    }
-}
-
-/* mediascreen till 1250 px end */
-
-/* MEDIA SCREEN PART ENDS */
+/*********** MEDIA SCREEN 612 PX  ***********/
+/*********** MEDIA SCREEN 612 PX  ***********/
+/*********** MEDIA SCREEN 612 PX  ***********/

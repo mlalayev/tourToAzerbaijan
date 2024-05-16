@@ -14,1043 +14,120 @@
     --main-yellow-color: rgb(255, 230, 0);
 }
 
-.btntoleft {
-    margin-left: 90px;
-}
-
-body {
-    overflow-x: hidden !important;
-}
-
-/********** SECTION FIRST CSS **********/
-/********** SECTION FIRST CSS **********/
-/********** SECTION FIRST CSS **********/
-
-.sectionfirst {
-    width: 100%;
-    height: 70px;
-    display: flex;
-    position: relative;
-    justify-content: center;
-}
-
-.containerfrstsc {
-    display: flex;
-    max-width: 1600px;
-    align-items: center;
-    justify-content: center;
-}
-
-.citychoose {
-    z-index: 1;
-    width: 920px;
-    margin: auto;
-    height: 120px;
-    display: flex;
-    margin-top: -60px;
-    position: absolute;
-    border-radius: 10px;
-    box-shadow: 5px 4px 10px gray;
-    background-color: var(--main-white-color);
-}
-
-.leftbuttons {
-    gap: 40px;
-    display: flex;
-    padding: 30px 30px;
-    align-items: center;
-}
-
-.leftbuttons div {
-    width: 325px;
-    height: 54px;
-    display: flex;
-    padding: 0px 20px;
-    align-items: center;
-    border-radius: 30px;
-    color: var(--main-white-color);
-    justify-content: space-between;
-    font-family: var(--font-family-rubik);
-    background-color: var(--main-light-green-color);
-}
-
-.lftlftbtndrpdwn {
-    position: relative;
+.mainpage{
+    max-width: 100%;
 }
 
 .lftlftbtndrpdwnul {
     display: none;
-    color: black;
-    position: absolute;
+}
+
+.rghtlftbtndrpdwnul {
+    display: none;
+}
+
+.citychoose {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.lftlftbtndrpdwn,
+.lftrghtbtndrpdwn {
+    gap: 10px;
+    width: 90vw;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    padding: 0 20px;
+    margin-top: 10px;
+    position: relative;
+    align-items: center;
+    border-radius: 20px;
+    font-family: var(--font-family-reddit);
+    background-color: var(--main-light-green-color);
 }
 
 .lftlftbtndrpdwnulactive {
-    gap: 10px;
-    top: 60px;
-    left: 10px;
-    width: 300px;
-    display: flex;
-    height: 250px;
+    top: 45px;
+    left: 0px;
+    width: 90vw;
+    z-index: 9999;
+    display: block;
+    padding: 0 10px;
+    overflow: hidden;
     list-style: none;
-    padding: 10px 10px;
+    max-height: 200px;
+    position: absolute;
     overflow-y: scroll;
-    flex-direction: column;
-    background-color: white;
-    box-shadow: 2px 2px 10px;
+    background-color: #fff;
 }
 
-.lftlftbtndrpdwnul li {
-    padding-left: 10px;
+.rghtlftbtndrpdwnulactive{
+    top: 45px;
+    left: 0px;
+    width: 90vw;
+    z-index: 9999;
+    display: block;
+    padding: 0 10px;
+    overflow: hidden;
+    list-style: none;
+    max-height: 200px;
+    position: absolute;
+    overflow-y: scroll;
+    background-color: #fff;
+}
+
+.lftlftbtndrpdwnul li{
+    padding: 2px 5px;
 }
 
 .lftlftbtndrpdwnul li:hover {
     background-color: var(--main-light-green-color);
 }
 
-.rghtlftbtndrpdwn {
-    position: relative;
+.containerfrstsc{
+    display: flex;
+    width: 92vw;
+    justify-content: center;
+    border: 4px solid green;
 }
 
-.rghtlftbtndrpdwnul {
-    display: none;
-    color: black;
+.sectionfirst {
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    height: 174px;
+    margin: 0 auto;
+    margin-top: -80px;
     position: absolute;
-}
-
-.rghtlftbtndrpdwnulactive {
-    gap: 10px;
-    top: 92px;
-    right: 212px;
-    width: 300px;
-    display: flex;
-    height: 100px;
-    list-style: none;
-    padding: 10px 10px;
-    flex-direction: column;
-    background-color: white;
-    box-shadow: 2px 2px 10px;
-}
-
-.rghtlftbtndrpdwnul li {
-    padding-left: 10px;
-}
-
-.rghtlftbtndrpdwnul li:hover {
-    background-color: var(--main-light-green-color);
-}
-
-.checkoutpart {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    font-size: 1rem;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    font-family: var(--font-family-rubik);
-    background-color: var(--main-yellow-color);
-}
-
-.checkoutpart span {
-    gap: 4px;
-    display: flex;
-    transition: 0.1s;
-    align-items: center;
-}
-
-.checkoutpart:hover span {
-    gap: 8px;
-    margin-bottom: -1px;
-    border-bottom: 1px solid black;
-}
-
-
-
-@media screen and (max-width: 1399px) {
-    .citychoose {
-        width: 860px;
-    }
-}
-
-@media screen and (max-width: 930px) {
-    .citychoose {
-        /* width: 260px; */
-        width: 90vw;
-        height: 200px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .leftbuttons {
-        gap: 10px !important;
-        flex-direction: column;
-        display: flex !important;
-        margin-top: -18px !important;
-        align-items: center !important;
-        justify-content: center !important;
-    }
-
-    .checkoutpart {
-        font-size: 14px;
-        margin-top: -20px;
-        border-top-right-radius: 0px;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }
-
-
-    .leftbuttons div {
-        font-size: 14px;
-        width: 80vw !important;
-    }
-
-    .leftbuttons .lftlftbtndrpdwnul {
-        font-size: 16px;
-        margin-left: -10px;
-        width: 80vw;
-        z-index: 9999;
-    }
-
-    .lftrghtbtndrpdwn{
-        position: relative !important;
-    }
-
-    .leftbuttons .rghtlftbtndrpdwnul {
-        font-size: 16px;
-        top: 60px !important;
-        right: 0px;
-        width: 80vw;
-        position: absolute;
-    }
-}
-
-@media screen and (max-width: 1399px) {}
-
-/********** SECTION FIRST CSS ENDS **********/
-/********** SECTION FIRST CSS ENDS **********/
-/********** SECTION FIRST CSS ENDS **********/
-
-
-
-
-/********** SECTION SECOND CSS **********/
-/********** SECTION SECOND CSS **********/
-/********** SECTION SECOND CSS **********/
-
-.sectionsecond {
-    width: 100%;
-    height: 920px;
-    padding: 90px 0px;
-    position: relative;
-    margin-bottom: -100px;
-    overflow-x: hidden !important;
-}
-
-.containerscndsc {
-    margin: auto;
-    width: 1600px;
-    display: flex;
-    position: relative;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.scndsctnup {
-    gap: 20px;
-    display: flex;
-}
-
-.scndsctnup button {
-    width: 70px;
-    height: 50px;
-    margin-top: 80px;
-    border-radius: 25px;
-}
-
-.scndsctntxt {
-    width: 923px;
-    font-family: var(--font-family-rubik);
-}
-
-.scndsctntxt h1 {
-    font-size: 2rem;
-    font-weight: 500;
-    margin-bottom: 35px;
-}
-
-.scndsctntxt p {
-    color: #202020;
-    line-height: 30px;
-    font-size: 1.125rem;
-}
-
-.sliderone {
-    width: 500px;
-    height: 450px;
-    transition: 0.3s;
-    position: relative;
-    margin-right: 30px;
-    border-radius: 16px;
-    background-color: rgb(236, 239, 250);
-    font-family: var(--font-family-reddit);
-}
-
-.slideruno {
-    width: 500px;
-    height: 280px;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-}
-
-.sliderone button {
-    display: flex;
-    align-items: center;
-}
-
-.yellowcircle {
-    top: 0px;
-    z-index: -1;
-    left: -100px;
-    width: 600px;
-    border: none;
-    height: 600px;
-    position: absolute;
-    border-radius: 50%;
-    overflow: hidden !important;
-    background-color: rgb(235, 235, 152);
-}
-
-.txtprtscndscc button:hover {
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.212);
-}
-
-.txtprtscndscc button {
-    gap: 10px;
-    left: 10px;
-    bottom: 5px;
-    width: 150px;
-    border: none;
-    height: 60px;
-    display: flex;
-    font-size: 15px;
-    transition: 0.3s;
-    position: absolute;
-    text-align: center;
-    align-items: center;
-    border-radius: 30px;
-    justify-content: center;
-    background-color: var(--main-yellow-color);
-}
-
-
-@media screen and (max-width:1399px) {
-
-    .scndsctnup {
-        width: 860px;
-        margin-left: -200px;
-    }
-
-    .scndsctntxt {
-        width: 600px;
-        margin-left: 0px !important;
-        padding-left: 0px !important;
-    }
-
-    .scndsctntxt h1 {
-        font-size: 26px;
-    }
-
-    .scndsctntxt p {
-        font-size: 18px;
-    }
-
-    .scndsctntxt {
-        margin-right: 0px;
-    }
-
-    .sectionsecond {
-        min-height: 880px !important;
-        overflow-y: hidden !important;
-        padding: 0 !important;
-        margin: 50px 0 -50px 0 !important;
-    }
-}
-
-@media screen and (max-width:1140px) {
-    .scndsctnup {
-        margin-left: -400px;
-    }
-
-    .scndsctntxt {
-        width: 400px;
-        margin-left: 0px !important;
-        padding-left: 0px !important;
-    }
-
-    .sectionsecond {
-        height: 870px !important;
-        overflow-y: hidden !important;
-    }
-}
-
-@media screen and (max-width:930px) {
-    .scndsctnup {
-        margin-left: -600px !important;
-    }
-
-    .txtprtscndsc {
-        padding: 10px 20px;
-        width: 230px !important;
-    }
-
-    .scndsctntxt {
-        width: 300px;
-    }
-
-    .scndsctntxt h1 {
-        font-size: 26px;
-    }
-
-    .scndsctntxt p {
-        font-size: 14px;
-        line-height: 20px;
-    }
-
-    .scndsctnup {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .scndsctnup button {
-        margin: 0;
-        padding: 0;
-    }
-
-    .sctnscndbtnhldr {
-        gap: 20px;
-        display: flex;
-        position: relative;
-    }
-
-    .yellowcircle,
-    .yellowcirclescnd {
-        width: 400px;
-        height: 400px;
-    }
-
-    .sectionsecond {
-        overflow-y: hidden !important;
-    }
-
-    .yellowcirclescnd {
-        top: 200px !important;
-        left: 220px !important;
-    }
-
-    .yellowcircle,
-    .yellowcirclescnd {
-        width: 400px;
-        height: 400px;
-    }
-
-    .sliderone {
-        width: 400px !important;
-        height: 420px !important;
-    }
-
-    .sliderone button {
-        gap: 5px !important;
-        width: 100px !important;
-        bottom: 10px !important;
-        height: 50px !important;
-        font-size: 10px !important;
-    }
-
-    .sliderone img {
-        width: 100% !important;
-        height: 190px;
-    }
-
-    .txtprtscndscc h1 {
-        font-size: 16px;
-        margin-bottom: 20px;
-    }
-
-    .txtprtscndscc p {
-        font-size: 15px;
-    }
-
-    .txtprtscndscc {
-        padding: 0 0px;
-        width: 230px !important;
-    }
-
-
-}
-
-/********** SECTION SECOND CSS ENDS **********/
-/********** SECTION SECOND CSS ENDS **********/
-/********** SECTION SECOND CSS ENDS **********/
-
-
-
-/********** SECTION THIRD CSS **********/
-/********** SECTION THIRD CSS **********/
-/********** SECTION THIRD CSS **********/
-
-.sectionthird {
-    width: 100%;
-    height: 940px;
-    padding: 100px 0px;
-    position: relative;
-    overflow-x: hidden !important;
-}
-
-.containerthrdsc {
-    margin: auto;
-    width: 1600px;
-    display: flex;
-    position: relative;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.thrdsctnup {
-    gap: 20px;
-    display: flex;
-}
-
-.thrdsctnup button {
-    width: 70px;
-    height: 50px;
-    margin-top: 80px;
-    border-radius: 25px;
-}
-
-.thrdsctntxt {
-    width: 923px;
-    font-family: var(--font-family-rubik);
-}
-
-.thrdsctntxt h1 {
-    font-size: 2rem;
-    font-weight: 500;
-    margin-bottom: 35px;
-}
-
-.thrdsctntxt p {
-    color: #202020;
-    line-height: 30px;
-    font-size: 1.125rem;
-}
-
-.sliderone {
-    width: 500px;
-    height: 450px;
-    transition: 0.3s;
-    position: relative;
-    margin-right: 30px;
-    border-radius: 16px;
-    background-color: rgb(236, 239, 250);
-    font-family: var(--font-family-reddit);
-}
-
-.slideruno {
-    width: 500px;
-    height: 280px;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-}
-
-.sliderone button {
-    display: flex;
-    align-items: center;
-}
-
-.yellowcirclescnd {
-    top: 0px;
-    z-index: -1;
-    width: 600px;
-    border: none;
-    right: -100px;
-    height: 600px;
-    overflow: hidden !important;
-    border-radius: 50%;
-    position: absolute;
-    background-color: rgb(235, 235, 152);
-}
-
-.txtprtthrdscc button:hover {
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.212);
-}
-
-.txtprtthrdscc button {
-    gap: 10px;
-    left: 10px;
-    bottom: 5px;
-    width: 150px;
-    border: none;
-    height: 60px;
-    display: flex;
-    font-size: 15px;
-    transition: 0.3s;
-    position: absolute;
-    text-align: center;
-    align-items: center;
-    border-radius: 30px;
-    justify-content: center;
-    background-color: var(--main-yellow-color);
-}
-
-
-@media screen and (max-width:1399px) {
-    .thrdsctnup {
-        width: 860px;
-        margin-left: -200px;
-    }
-
-    .thrdsctntxt {
-        width: 600px;
-        margin-left: 0px !important;
-        padding-left: 0px !important;
-    }
-
-    .thrdsctntxt h1 {
-        font-size: 26px;
-    }
-
-    .thrdsctntxt p {
-        font-size: 18px;
-    }
-
-    .thrdsctntxt {
-        margin-right: 0px;
-    }
-
-    .sectionthird {
-        min-height: 880px !important;
-        overflow-y: hidden !important;
-        padding: 0 !important;
-        margin: 0 !important;
-    }
-}
-
-
-@media screen and (max-width:1140px) {
-    .thrdsctnup {
-        margin-left: -400px;
-    }
-
-    .yellowcirclescnd {
-        right: 400px;
-    }
-
-    .thrdsctntxt {
-        width: 400px;
-        margin-left: 0px !important;
-        padding-left: 0px !important;
-    }
-
-    .sectionthird {
-        height: 880px !important;
-        overflow-y: hidden !important;
-    }
-}
-
-@media screen and (max-width:930px) {
-    .thrdsctnup {
-        margin-left: -600px !important;
-    }
-
-    .thrdsctntxt {
-        width: 300px;
-    }
-
-    .thrdsctntxt h1 {
-        font-size: 26px;
-        margin-bottom: 14px;
-    }
-
-    .sctnthrdbtnhldr {
-        /* width: 100%; */
-        /* height: 100px; */
-    }
-
-    .thrdsctntxt p {
-        font-size: 14px;
-        line-height: 20px;
-    }
-
-    .thrdsctnup {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .thrddsctnup button {
-        margin: 0;
-        padding: 0;
-    }
-
-    .sctnthrdbtnhldr {
-        display: flex;
-        height: 50px !important;
-        position: relative;
-        gap: 20px !important;
-        margin: 0px 0 0 -90px !important;
-    }
-
-    .sctnthrdbtnhldr button{
-        margin-top: 0%;
-    }
-
-    .yellowcircle,
-    .yellowcirclescnd {
-        width: 400px;
-        height: 400px;
-    }
-
-    .sectionthird {
-        overflow-y: hidden !important;
-    }
-
-    .yellowcircle,
-    .yellowcirclescnd {
-        width: 400px;
-        height: 400px;
-    }
-
-    .sliderone {
-        min-width: 340px !important;
-        height: 420px !important;
-    }
-
-    .sliderone button {
-        gap: 5px !important;
-        width: 100px !important;
-        bottom: 10px !important;
-        height: 50px !important;
-        font-size: 10px !important;
-    }
-
-    .sliderone img {
-        width: 300px !important;
-        height: 190px;
-    }
-
-    .txtprtthrdscc h1 {
-        font-size: 16px;
-        margin-bottom: 20px;
-        margin-top: 10px;
-    }
-
-    .txtprtthrdscc p {
-        font-size: 15px;
-    }
-
-    .txtprtthrdscc {
-        padding: 0 30px;
-    }
-}
-
-
-/********** SECTION THIRD CSS ENDS **********/
-/********** SECTION THIRD CSS ENDS **********/
-/********** SECTION THIRD CSS ENDS **********/
-
-
-
-/********** SECTION FOURTH CSS **********/
-/********** SECTION FOURTH CSS **********/
-/********** SECTION FOURTH CSS **********/
-
-.sectionfourth::before {
-    left: 0;
-    width: 38%;
-    content: "";
-    height: 100%;
-    display: block;
-    position: absolute;
-    background-color: var(--main-light-green-color);
-}
-
-.sectionfourth {
-    width: 100%;
-    height: 530px;
-    display: flex;
-    padding: 0px 0px;
-    position: relative;
-    overflow-x: hidden !important;
-    overflow-y: hidden !important;
-}
-
-.containerfrthsc {
-    margin: auto;
-    display: flex;
-    max-width: 1600px;
-    position: relative;
-    flex-direction: row;
-}
-
-.frthlft {
-    width: 40%;
-    height: 530px;
-    color: white;
-    display: flex;
-    padding-left: 50px;
-    margin-right: 20px;
-    align-items: center;
-    border-radius: 14px;
-    flex-direction: column;
-    justify-content: center;
-    font-family: var(--font-family-reddit);
-    background-color: var(--main-light-green-color);
-}
-
-.frthhuno {
-    margin-top: -30px;
-}
-
-.frthrght {
-    width: 55%;
-    color: gray;
-    padding: 30px 40px;
-}
-
-.frthrght p {
-    font-size: 1.25rem;
-    margin-bottom: 70px;
-    font-family: var(--font-family-rubik);
-}
-
-
-.pprtuno,
-.pprtdos,
-.pprttres {
-    gap: 50px;
-    display: flex;
-}
-
-.icons {
-    height: 70px;
-    display: flex;
-    min-width: 70px;
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--main-light-green-color);
-}
-
-.div {
-    display: flex;
-}
-
-.iconuno {
-    margin-top: 4px;
-    margin-left: 2px;
-}
-
-@media screen and (max-width:930px) {
-    .containerfrthsc {
-        height: 1000px;
-        display: flex;
-        flex-direction: column !important;
-    }
-
-    .frthlft {
-        margin: 0 !important;
-        padding: 0 !important;
-        width: 100% !important;
-        height: 400px !important;
-        display: flex !important;
-        text-align: center !important;
-        position: relative !important;
-        justify-content: center !important;
-    }
-
-    .div {
-        display: flex !important;
-        position: relative !important;
-    }
-
-    .frthrght {
-        display: flex !important;
-        flex-direction: column;
-        width: 100% !important;
-        margin: 0 !important;
-        padding: 40px 20px;
-    }
-
-    .frthrghttxtprt {
-        margin-top: -30px;
-    }
-
-    .frthrghttxtprt div {
-        height: 100px;
-        /* margin-bottom: -20px; */
-    }
-
-    .frthrghtp {
-        padding-top: 20px;
-    }
-    .frthrght p {
-        height: 100%;
-        font-size: 14px !important;
-    }
-
-    .sectionfourth {
-        width: 100vw;
-        display: flex !important;
-        height: 1000px !important;
-        align-items: center !important;
-        flex-direction: column !important;
-    }
-
-    .icons {
-        height: 100%;
-        margin: auto;
-        margin-left: 20px;
-        width: 150px !important;
-        height: 60px !important;
-        display: flex !important;
-        max-width: 60px !important;
-        min-width: 60px !important;
-        align-self: center !important;
-        align-items: center !important;
-        margin-right: -30px !important;
-        justify-content: center !important;
-    }
-
-    .sectionfourth::before {
-        content: "";
-        width: 100% !important;
-        height: 400px !important;
-    }
-
-    .frthlft h1 {
-        font-size: 22px !important;
-    }
-
-    .yelloww {
-        bottom: 0;
-        right: -10px;
-        font-size: 20px;
-        position: absolute;
-        color: var(--main-yellow-color);
-    }
-}
-
-/********** SECTION FOURTH CSS ENDS **********/
-/********** SECTION FOURTH CSS ENDS **********/
-/********** SECTION FOURTH CSS ENDS **********/
-
-
-
-
-/********** SECTION FIFTH CSS **********/
-/********** SECTION FIFTH CSS **********/
-/********** SECTION FIFTH CSS **********/
-
-.sectionfifth {
-    margin-top: 100px;
-    position: relative;
     margin-bottom: 1000px;
-    font-family: var(--font-family-reddit);
-}
-
-.containerffthsc {
-    width: 80%;
-    margin: auto;
-    display: flex;
-    max-width: 1400px;
-    flex-direction: column;
+    background-color: #fff;
     justify-content: center;
 }
 
-.ffthscup h1 {
-    font-size: 2.125rem;
-    margin-bottom: 30px;
-}
-
-.destinations {
-    color: gray;
+.checkoutpart{
+    width: 90vw;
     display: flex;
-    list-style: none;
-    font-weight: 600;
-    font-size: 1.25rem;
-    justify-content: space-between;
+    min-height: 70px;
+    margin-top: 10px;
+    align-items: center;
+    border-radius: 35px;
+    justify-content: center;
+    background-color: var(--main-yellow-color);
 }
 
-.destinations li:hover {
-    color: var(--main-light-green-color);
-}
-
-.horizontalline {
-    left: 0;
-    height: 2px;
-    width: 100vw;
-    margin-top: 20px;
-    position: absolute;
-    background-color: var(--main-light-green-color);
-}
-
-.sldrhldrtwo {
-    gap: 100px;
+.checkoutpart span{
+    gap: 10px;
     display: flex;
-    padding-top: 70px;
+    transition: 0.2s;
+    align-items: center;
+    font-family: var(--font-family-reddit);
 }
 
-
-.sldrimg {
-    width: 540px;
-    height: 430px;
-    border-radius: 14px;
-}
-
-@media screen and (max-width:930px){
-    .destinations{
-        font-size: 14px;
-    }
-
-    .ffthscup{
-        display: block !important;
-    }
-
-    .sldrhldrtwo{
-        display: block !important;
-        grid-template-columns: 1fr;
-    }
-
-    .ffthscdwnrght img{
-        width: 100% !important;
-        display: grid !important;
-        height: 50%;
-        /* grid-template-columns: 100px !important; */
-    }
-
-    .sldrimg{
-        display: grid !important;
-        grid-template-columns: 1fr !important;
-    }
-}
-
-/********** SECTION FIFTH CSS ENDS **********/
-/********** SECTION FIFTH CSS ENDS **********/
-/********** SECTION FIFTH CSS ENDS **********/
-
-.containermn {
-    margin: auto;
-    display: flex;
-    max-width: 1600px;
-    position: relative;
-    flex-direction: column;
-}
-
-@media screen and (max-width:1399px) {
-    .sliderholder {
-        overflow-y: hidden !important;
-    }
+.checkoutpart:hover span{
+    gap: 15px;
+    border-bottom: 1px solid black;
 }

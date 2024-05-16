@@ -162,7 +162,7 @@ function mainpage() {
                 </div>
             </section>
 
-            <section className="sectionsecond">
+            {/* <section className="sectionsecond">
                 <div className="containerscndsc">
                     <div className='scndsctnup'>
                         <div className="scndsctntxt">
@@ -300,7 +300,7 @@ function mainpage() {
                     </div>
                 </div>
 
-            </section>
+            </section> */}
         </div>
     )
 }
