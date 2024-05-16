@@ -44,7 +44,7 @@ function mainpage() {
                 setIsRotatedDown(false);
             }
             if (dropdownRefDownFifthSection.current && !dropdownRefDownFifthSection.current.contains(event.target)) {
-                setIsRotatedDown(false);
+                setIsRotatedDownFifthSection(false);
             }
         }
 
