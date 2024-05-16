@@ -199,7 +199,7 @@ function mainpage() {
                 </div>
             </section>
 
-            {/* <section className="sectionthird">
+            <section className="sectionthird">
                 <div className="containerthrdsc">
                     <div className='thrdsctnup'>
                         <div className="thrdsctntxt">
@@ -234,7 +234,7 @@ function mainpage() {
                 </div>
             </section>
 
-            <section className="sectionfourth">
+            {/* <section className="sectionfourth">
                 <div className="containerfrthsc">
                     <div className="frthlft">
                         <h1 className='txtprtfrsth frthhuno'>Welcome to</h1>
