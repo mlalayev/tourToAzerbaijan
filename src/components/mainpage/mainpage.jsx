@@ -162,7 +162,7 @@ function mainpage() {
                 </div>
             </section>
 
-            {/* <section className="sectionsecond">
+            <section className="sectionsecond">
                 <div className="containerscndsc">
                     <div className='scndsctnup'>
                         <div className="scndsctntxt">
@@ -172,7 +172,7 @@ function mainpage() {
 
                         <div className="sctnscndbtnhldr">
                             <button className="btntoleft">a</button>
-                            <button className="btntoright">a</button>
+                            <button className="btntoright">b</button>
                         </div>
 
                     </div>
@@ -199,7 +199,7 @@ function mainpage() {
                 </div>
             </section>
 
-            <section className="sectionthird">
+            {/* <section className="sectionthird">
                 <div className="containerthrdsc">
                     <div className='thrdsctnup'>
                         <div className="thrdsctntxt">
