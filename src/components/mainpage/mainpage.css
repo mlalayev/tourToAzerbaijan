@@ -14,7 +14,7 @@
     --main-yellow-color: rgb(255, 230, 0);
 } */
 
-body{
+body {
     overflow-x: hidden;
 }
 
@@ -365,7 +365,7 @@ body{
 /**********SECTION FOURTH CSS STARTS**********/
 
 .sectionfourth {
-    margin-bottom: 1000px;
+    /* margin-bottom: 1000px; */
 }
 
 .containerfrthsc {
@@ -431,6 +431,56 @@ body{
 
 
 
+/**********SECTION FIFTH CSS STARTS**********/
+/**********SECTION FIFTH CSS STARTS**********/
+/**********SECTION FIFTH CSS STARTS**********/
+
+.sectionfifth {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.destinations {
+    display: none;
+}
+
+.containerffthsc {
+    width: 96vw;
+}
+
+select {
+    width: 96vw;
+    border: none;
+}
+
+.ffthsctnul {
+    display: none;
+}
+
+.ffthsctnulactive {
+    display: block;
+}
+
+.ffthscup {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.fifthsctndv {
+    display: flex;
+    align-items: center;
+    width: 94vw;
+    border: 1px solid red;
+}
+
+/**********SECTION FIFTH CSS ENDS**********/
+/**********SECTION FIFTH CSS ENDS**********/
+/**********SECTION FIFTH CSS ENDS**********/
+
+
+
 /* **********ADDITIONAL********** */
 /* **********ADDITIONAL********** */
 /* **********ADDITIONAL********** */
@@ -441,7 +491,7 @@ body{
 .containerscndsc,
 .containerthrdsc {
     max-width: 1600px;
-    
+
 }
 
 header {

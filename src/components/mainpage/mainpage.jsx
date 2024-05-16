@@ -23,8 +23,10 @@ function mainpage() {
 
     const [isRotatedUp, setIsRotatedUp] = useState(false);
     const [isRotatedDown, setIsRotatedDown] = useState(false);
+    const [isRotatedDownFifthSection, setIsRotatedDownFifthSection] = useState(false);
     const dropdownRefUp = useRef(null);
     const dropdownRefDown = useRef(null);
+    const dropdownRefDownFifthSection = useRef(null);
 
     useEffect(() => {
         function handleClickOutside(event) {
@@ -34,13 +36,16 @@ function mainpage() {
             if (dropdownRefDown.current && !dropdownRefDown.current.contains(event.target)) {
                 setIsRotatedDown(false);
             }
+            if (dropdownRefDownFifthSection.current && !dropdownRefDownFifthSection.current.contains(event.target)) {
+                setIsRotatedDown(false);
+            }
         }
 
         document.addEventListener('mousedown', handleClickOutside);
         return () => {
             document.removeEventListener('mousedown', handleClickOutside);
         };
-    }, [dropdownRefUp, dropdownRefDown]);
+    }, [dropdownRefUp, dropdownRefDown, dropdownRefDownFifthSection]);
 
     const handleClickUp = () => {
         setIsRotatedUp(!isRotatedUp);
@@ -48,6 +53,10 @@ function mainpage() {
 
     const handleClickDown = () => {
         setIsRotatedDown(!isRotatedDown);
+    };
+
+    const handleClickDownFifthSection = () => {
+        setIsRotatedDownFifthSection(!isRotatedDownFifthSection);
     };
 
     return (
@@ -263,7 +272,7 @@ function mainpage() {
                 </div>
             </section>
 
-            {/* <section className="sectionfifth">
+            <section className="sectionfifth">
                 <div className="containerffthsc">
 
                     <div className="ffthscup">
@@ -280,6 +289,23 @@ function mainpage() {
                             <li>Shusha</li>
                             <li>Khankandi</li>
                         </ul>
+
+
+                        <div ref={dropdownRefDownFifthSection} onClick={handleClickDownFifthSection} className={`fifthsctndv ${isRotatedDownFifthSection ? 'fifthsctndvactive' : ''}`}>
+                            Choose city <RiArrowDownSLine strokeWidth={2} style={{ transform: isRotatedDownFifthSection ? 'rotate(180deg)' : 'none' }} />
+                            <ul className={`ffthsctnul ${isRotatedDownFifthSection ? 'ffthsctnulactive' : ''}`}>
+                                <li>Baku</li>
+                                <li>Gabala</li>
+                                <li>Gusar</li>
+                                <li>Ismailly</li>
+                                <li>Lankaran</li>
+                                <li>Lerik</li>
+                                <li>Guba</li>
+                                <li>Shusha</li>
+                                <li>Khankandi</li>
+                            </ul>
+                        </div>
+
 
                         <div className="horizontalline"></div>
                     </div>
@@ -301,7 +327,7 @@ function mainpage() {
                     </div>
                 </div>
 
-            </section> */}
+            </section>
         </div>
     )
 }
