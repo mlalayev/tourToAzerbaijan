@@ -201,8 +201,6 @@ body {
     box-shadow: 3px 3px 5px gray;
 }
 
-
-
 .sliderone,
 .props {
     height: 500px;
@@ -589,7 +587,7 @@ select {
     background-color: #fff;
 }
 
-.recommendedby{
+.recommendedby {
     display: flex;
     flex-direction: column;
     font-family: var(--font-family-reddit);
@@ -597,12 +595,12 @@ select {
     padding: 10px;
 }
 
-.recomimg img{
+.recomimg img {
     width: 100px;
     height: 30px;
 }
 
-.recomimg{
+.recomimg {
     margin-top: 20px;
     display: flex;
     gap: 10px;
@@ -614,20 +612,6 @@ select {
 /**********SECTION SIXTH CSS ENDS**********/
 /**********SECTION SIXTH CSS ENDS**********/
 /**********SECTION SIXTH CSS ENDS**********/
-
-
-
-/**********SECTION SEVENTH CSS STARTS**********/
-/**********SECTION SEVENTH CSS STARTS**********/
-/**********SECTION SEVENTH CSS STARTS**********/
-
-
-
-
-
-/**********SECTION SEVENTH CSS ENDS**********/
-/**********SECTION SEVENTH CSS ENDS**********/
-/**********SECTION SEVENTH CSS ENDS**********/
 
 
 
@@ -655,4 +639,75 @@ header {
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+
+/************ MEDIA QUERIES ************/
+
+@media screen and (min-width:830px) {
+    .leftbuttons {
+        display: flex;
+    }
+
+    .leftbuttons div {
+        width: 46vw;
+    }
+
+    .lftlftbtndrpdwn {
+        margin: 10px 10px 0 0;
+    }
+
+    .sectionfirst {
+        height: 120px;
+        margin-top: -60px;
+    }
+
+    .checkoutpart {
+        width: 93vw;
+    }
+
+    .sectionsixth {
+        height: 800px;
+    }
+
+    .recommendedby {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .recomimg {
+        margin: 0;
+        padding: 0;
+        width: 76vw;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .scndsctntxt h1, .thrdsctntxt h1{
+        font-size: 40px;
+    }
+
+    .lftlftbtndrpdwnulactive{
+        width: 100%;
+    }
+
+    .rghtlftbtndrpdwnulactive{
+        width: 100%;
+    }
+
+    .scndsctntxt p, .thrdsctntxt p{
+        font-size: 19px;
+    }
+
+    .sctnscndbtnhldr button, .sctnthrdbtnhldr button{
+        width: 70px;
+        height: 30px;
+        border-radius: 15px;
+    }
+
 }
