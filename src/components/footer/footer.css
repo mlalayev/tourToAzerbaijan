@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-family-rubik: rubik;
+    --main-black-color: #000000;
+    --main-white-color: #ffffff;
+    --font-family-reddit: reddit sans;
+    --main-light-green-color: #43c7b1;
+    --main-yellow-color: rgb(255, 230, 0);
+}
+
+.containerftr {
+    gap: 20px;
+    height: 300px;
+    display: grid;
+    margin-left: auto;
+    padding: 20px 10px;
+    margin-right: auto;
+    justify-content: space-around;
+    grid-template-columns: 10em 10em;
+}
+
+footer {
+    margin-bottom: 1000px;
+}
+
+.containerftr div {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-family-reddit);
+}
+
+.containerftr a {
+    color: black;
+    padding: 10px 0;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.containerftr a:hover{
+    color: var(--main-light-green-color);
+}
+
+.horizontall {
+    width: 100%;
+    height: 1px;
+    margin: 10px 0;
+    background-color: var(--main-light-green-color);
+}

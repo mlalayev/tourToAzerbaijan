@@ -13,6 +13,13 @@ import sliderpierci from '../../assets/slider5lankaran.jpg';
 import { GrUserManager } from "react-icons/gr";
 import { GrCertificate } from "react-icons/gr";
 import { LiaHandHoldingHeartSolid } from "react-icons/lia";
+import { IoMdStar } from "react-icons/io";
+import recommendeduno from '../../assets/recommended-1.png'
+import recommendeddos from '../../assets/recommended-2.png'
+import recommendedtres from '../../assets/recommended-3.png'
+import recommendedcuatro from '../../assets/recommended-4.png'
+import recommendedpieci from '../../assets/recommended-5.png'
+
 
 
 
@@ -272,6 +279,7 @@ function mainpage() {
                 </div>
             </section>
 
+
             <section className="sectionfifth">
                 <div className="containerffthsc">
 
@@ -317,8 +325,8 @@ function mainpage() {
                                 It can take forever to explore Moscow, the capital and the largest city of Russia. Our tours of Moscow will help you to become acquainted with the most amazing and peculiar spots of Moscow and its suburbs; our professional guides will tell you about history and show the real life and culture of modern Muscovites.
                             </p>
                             <div className="btnshldr">
-                                <button>View Tours</button>
-                                <button>View excursions</button>
+                                <button>left</button>
+                                <button>right</button>
                             </div>
                         </div>
                         <div className="ffthscdwnrght">
@@ -328,6 +336,81 @@ function mainpage() {
                 </div>
 
             </section>
+
+            <section className="sectionsixth">
+                <div className="containersxth">
+                    <div className="trstssy">
+                        <h1>What tourists say?</h1>
+                        <p>More than 1500 tourists already travelled to Russia with us. Here is what they say:</p>
+
+                        <div className="horizontal"></div>
+
+
+                        <div className="trstuno">
+                            <p>Yvonne Sanders</p>
+                            <div className="strs">
+                                <p>2019-10-05</p>
+                                <div className="strcnt"><IoMdStar color='gold' />
+                                    <IoMdStar color='gold' />
+                                    <IoMdStar color='gold' />
+                                    <IoMdStar color='gold' />
+                                    <IoMdStar color='gold' />
+                                </div>
+                            </div>
+                            <p>Hello and Good day We wanted to say "Thank you so very much" to Irina and Sergej for their warm welcome and the wonderful time that we had in St. Petersburg in early October while we were with them. We enjoyed their...</p>
+                        </div>
+
+                        <div className="horizontal"></div>
+
+                        <div className="trstdos">
+                            <p>Yvonne Sanders</p>
+                            <div className="strs">
+                                <p>2019-10-05</p>
+                                <div className="strcnt"><IoMdStar color='gold' />
+                                    <IoMdStar color='gold' />
+                                    <IoMdStar color='gold' />
+                                    <IoMdStar color='gold' />
+                                    <IoMdStar color='gold' />
+                                </div>
+                            </div>
+                            <p>Hello and Good day We wanted to say "Thank you so very much" to Irina and Sergej for their warm welcome and the wonderful time that we had in St. Petersburg in early October while we were with them. We enjoyed their...</p>
+                        </div>
+
+                        <div className="horizontal"></div>
+
+
+                        <div className="trsttres">
+                            <p>Yvonne Sanders</p>
+                            <div className="strs">
+                                <p>2019-10-05</p>
+                                <div className="strcnt"><IoMdStar color='gold' />
+                                    <IoMdStar color='gold' />
+                                    <IoMdStar color='gold' />
+                                    <IoMdStar color='gold' />
+                                    <IoMdStar color='gold' />
+                                </div>
+                            </div>
+                            <p>Hello and Good day We wanted to say "Thank you so very much" to Irina and Sergej for their warm welcome and the wonderful time that we had in St. Petersburg in early October while we were with them. We enjoyed their...</p>
+                        </div>
+                    </div>
+
+                    <div className="horizontal"></div>
+                    <div className="horizontal"></div>
+
+                    <div className="recommendedby">
+                        <p>Recommended by:</p>
+                        <div className="recomimg">
+                            <img src={recommendeduno} />
+                            <img src={recommendeddos} />
+                            <img src={recommendedtres} />
+                            <img src={recommendedcuatro} />
+                            <img src={recommendedpieci} />
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
         </div>
     )
 }
