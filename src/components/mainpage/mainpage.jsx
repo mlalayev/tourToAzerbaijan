@@ -35,7 +35,6 @@ function mainpage() {
     const dropdownRefDown = useRef(null);
     const dropdownRefDownFifthSection = useRef(null);
 
-    const [isLove, setIsLove] = useState(false)
 
     useEffect(() => {
         function handleClickOutside(event) {

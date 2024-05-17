@@ -709,5 +709,99 @@ header {
         height: 30px;
         border-radius: 15px;
     }
+}
 
+@media screen and (min-width:1130px) {
+    .citychoose{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }    
+
+    .leftbuttons div{
+        width: 36vw;
+        display: flex;
+        margin: 0 5px;
+        max-width: 550px;
+        justify-content: space-between;
+    }
+
+    .sectionfirst{
+        height: 70px;
+        display: flex;
+        max-width: 1300px;
+        padding: 0 0 0 6px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .containerfrstsc{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        max-width: 1600px;
+        justify-content: flex-end;
+    }
+
+    .checkoutpart{
+        margin: 0;
+        width: 20vw;
+        height: 70px;
+        min-width: 100px;
+        border-radius: 10px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .containerfrthsc{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .frthlft{
+        position: relative;
+        border-radius: 10px;
+    }
+
+    .sectionfourth{
+        height: 420px;
+    }
+    
+    .frthlft::before{
+        width: 90vw;
+        content: "";
+        z-index: -1;
+        right: 200px;
+        height: 400px;
+        position: absolute;
+        background-color: #43c7b1;
+    }
+
+    .sldrhldrtwo{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .btnshldr{
+        top: 80px;
+        right: 30px;
+        position: absolute;
+    }
+
+    .sldrimg{
+        position: relative;
+    }
+
+    .sliderholder, .sliderholderthrd{
+        height: 600px;
+    }
+
+    .containerffthsc{
+        max-width: 1600px;
+        position: relative;
+    }
+
+    .fifthsctndv{
+        max-width: 1600px;
+    }
 }
