@@ -35,6 +35,7 @@ function mainpage() {
     const dropdownRefDown = useRef(null);
     const dropdownRefDownFifthSection = useRef(null);
 
+
     useEffect(() => {
         function handleClickOutside(event) {
             if (dropdownRefUp.current && !dropdownRefUp.current.contains(event.target)) {
@@ -298,6 +299,7 @@ function mainpage() {
                             <li>Khankandi</li>
                         </ul>
 
+                        <div className="horizontalffth"></div>
 
                         <div ref={dropdownRefDownFifthSection} onClick={handleClickDownFifthSection} className={`fifthsctndv ${isRotatedDownFifthSection ? 'fifthsctndvactive' : ''}`}>
                             Choose city <RiArrowDownSLine strokeWidth={2} style={{ transform: isRotatedDownFifthSection ? 'rotate(180deg)' : 'none' }} />
@@ -343,59 +345,62 @@ function mainpage() {
                         <h1>What tourists say?</h1>
                         <p>More than 1500 tourists already travelled to Russia with us. Here is what they say:</p>
 
-                        <div className="horizontal"></div>
+                        <div className="horizontalwhite"></div>
 
-
-                        <div className="trstuno">
-                            <p>Yvonne Sanders</p>
-                            <div className="strs">
-                                <p>2019-10-05</p>
-                                <div className="strcnt"><IoMdStar color='gold' />
-                                    <IoMdStar color='gold' />
-                                    <IoMdStar color='gold' />
-                                    <IoMdStar color='gold' />
-                                    <IoMdStar color='gold' />
+                        <div className="rcmndtrst">
+                            <div className="trstuno">
+                                <p>Yvonne Sanders</p>
+                                <div className="strs">
+                                    <p>2019-10-05</p>
+                                    <div className="strcnt"><IoMdStar color='gold' />
+                                        <IoMdStar color='gold' />
+                                        <IoMdStar color='gold' />
+                                        <IoMdStar color='gold' />
+                                        <IoMdStar color='gold' />
+                                    </div>
                                 </div>
+                                <p>Hello and Good day We wanted to say "Thank you so very much" to Irina and Sergej for their warm welcome and the wonderful time that we had in St. Petersburg in early October while we were with them. We enjoyed their...</p>
                             </div>
-                            <p>Hello and Good day We wanted to say "Thank you so very much" to Irina and Sergej for their warm welcome and the wonderful time that we had in St. Petersburg in early October while we were with them. We enjoyed their...</p>
-                        </div>
 
-                        <div className="horizontal"></div>
+                            <div className="horizontal"></div>
+                            <div className="vertical"></div>
 
-                        <div className="trstdos">
-                            <p>Yvonne Sanders</p>
-                            <div className="strs">
-                                <p>2019-10-05</p>
-                                <div className="strcnt"><IoMdStar color='gold' />
-                                    <IoMdStar color='gold' />
-                                    <IoMdStar color='gold' />
-                                    <IoMdStar color='gold' />
-                                    <IoMdStar color='gold' />
+                            <div className="trstdos">
+                                <p>Yvonne Sanders</p>
+                                <div className="strs">
+                                    <p>2019-10-05</p>
+                                    <div className="strcnt"><IoMdStar color='gold' />
+                                        <IoMdStar color='gold' />
+                                        <IoMdStar color='gold' />
+                                        <IoMdStar color='gold' />
+                                        <IoMdStar color='gold' />
+                                    </div>
                                 </div>
+                                <p>Hello and Good day We wanted to say "Thank you so very much" to Irina and Sergej for their warm welcome and the wonderful time that we had in St. Petersburg in early October while we were with them. We enjoyed their...</p>
                             </div>
-                            <p>Hello and Good day We wanted to say "Thank you so very much" to Irina and Sergej for their warm welcome and the wonderful time that we had in St. Petersburg in early October while we were with them. We enjoyed their...</p>
-                        </div>
 
-                        <div className="horizontal"></div>
+                            <div className="horizontal"></div>
+                            <div className="vertical"></div>
 
 
-                        <div className="trsttres">
-                            <p>Yvonne Sanders</p>
-                            <div className="strs">
-                                <p>2019-10-05</p>
-                                <div className="strcnt"><IoMdStar color='gold' />
-                                    <IoMdStar color='gold' />
-                                    <IoMdStar color='gold' />
-                                    <IoMdStar color='gold' />
-                                    <IoMdStar color='gold' />
+                            <div className="trsttres">
+                                <p>Yvonne Sanders</p>
+                                <div className="strs">
+                                    <p>2019-10-05</p>
+                                    <div className="strcnt"><IoMdStar color='gold' />
+                                        <IoMdStar color='gold' />
+                                        <IoMdStar color='gold' />
+                                        <IoMdStar color='gold' />
+                                        <IoMdStar color='gold' />
+                                    </div>
                                 </div>
+                                <p>Hello and Good day We wanted to say "Thank you so very much" to Irina and Sergej for their warm welcome and the wonderful time that we had in St. Petersburg in early October while we were with them. We enjoyed their...</p>
                             </div>
-                            <p>Hello and Good day We wanted to say "Thank you so very much" to Irina and Sergej for their warm welcome and the wonderful time that we had in St. Petersburg in early October while we were with them. We enjoyed their...</p>
                         </div>
                     </div>
 
-                    <div className="horizontal"></div>
-                    <div className="horizontal"></div>
+                    <div className="horizontalwhite"></div>
+                    <div className="horizontalwhite"></div>
 
                     <div className="recommendedby">
                         <p>Recommended by:</p>

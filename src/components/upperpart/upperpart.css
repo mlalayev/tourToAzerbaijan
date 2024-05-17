@@ -92,11 +92,7 @@
 /*********** MEDIA SCREEN 612 PX  ***********/
 /*********** MEDIA SCREEN 612 PX  ***********/
 
-@media screen and (min-width:612px) {
-    .mainpicprt {
-        /* margin-top: 97px; */
-    }
-}
+@media screen and (min-width:612px) {}
 
 /*********** MEDIA SCREEN 612 PX  ***********/
 /*********** MEDIA SCREEN 612 PX  ***********/
@@ -105,25 +101,25 @@
 @media screen and (min-width:830px) {
     .main {
         bottom: 140px;
-        width: clamp(15em, 400px ,450px);
+        width: clamp(15em, 400px, 450px);
     }
 
-    .mainpicprt{
+    .mainpicprt {
         top: -20px;
         min-width: 400px;
         min-height: 400px;
         border-radius: 50%;
     }
 
-    .txtprt p{
+    .txtprt p {
         font-size: 20px;
     }
 
-    .txtprt h1{
+    .txtprt h1 {
         font-size: 38px;
     }
 
-    .txtprtrtra{
+    .txtprtrtra {
         margin-top: -50px;
     }
 
@@ -131,8 +127,48 @@
         width: 60vw !important;
     }
 
-    .upperpart{
+    .upperpart {
         height: 600px;
     }
+}
 
+@media screen and (min-width:1130px) {
+    .txtprt {
+        display: flex;
+        max-width: 1600px;
+        margin-top: 100px;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: row-reverse;
+    }
+
+    .txtprtrtra {
+        padding: 0;
+        max-width: 40%;
+        margin-left: 0;
+    }
+
+    .mainpicprt {
+        max-width: 500px;
+        max-height: 500px;
+    }
+
+    .upperpart {
+        height: 500px;
+        display: flex;
+        margin: 0 auto;
+        position: relative;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .upperpart::before {
+        top: 200px;
+        content: "";
+        z-index: -1;
+        width: 100vw;
+        height: 500px;
+        position: absolute;
+        background-color: #43c7b1;
+    }
 }

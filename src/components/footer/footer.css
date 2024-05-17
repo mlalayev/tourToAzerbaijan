@@ -55,7 +55,15 @@ footer {
 }
 
 @media screen and (min-width:830px) {
-    .containerftr{
+    .containerftr {
         grid-template-columns: 12em 12em 12em;
+    }
+
+}
+
+@media screen and (min-width:1130px) {
+    .containerftr {
+        grid-template-columns: 12em 12em 12em;
+        grid-column-start: 4;
     }
 }

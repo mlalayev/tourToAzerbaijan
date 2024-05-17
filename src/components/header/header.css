@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,17 +14,17 @@
     --main-yellow-color: rgb(255, 230, 0);
 }
 
-.logo{
+.logo {
     width: min(25vw, 150px);
     height: min(12vh, 90px);
 }
 
-header{
+header {
     width: 100vw;
     height: 160px;
 }
 
-.container{
+.container {
     width: 100vw;
     display: flex;
     padding: 10px 20px;
@@ -33,11 +33,15 @@ header{
     background-color: var(--main-light-green-color);
 }
 
-.headerul{
+.headerul {
     display: none;
 }
 
-.lftbtnsdv button{
+.headerul a {
+    transition: 0.2s;
+}
+
+.lftbtnsdv button {
     display: flex;
     border: #000000;
     transition: 0.2s;
@@ -49,40 +53,40 @@ header{
     min-height: min(10vh, 40px);
 }
 
-.lftbtnsdv button:hover{
+.lftbtnsdv button:hover {
     color: #43c7b1;
     background-color: #000000;
 }
 
-.lftbtnsdv{
+.lftbtnsdv {
     width: 40%;
     display: flex;
     justify-content: space-between;
 }
 
-.chcktbtn{
+.chcktbtn {
     border: none;
     height: 40px;
     display: flex;
     border-radius: 20px;
     align-items: center;
-    width: min(14vw,110px);
+    width: min(14vw, 110px);
     justify-content: center;
     font-size: clamp(8px, 13px, 20px);
     font-family: var(--font-family-reddit);
     background-color: var(--main-yellow-color);
 }
 
-.chcktbtn:hover{
+.chcktbtn:hover {
     box-shadow: 4px 4px 6px rgb(158, 17, 17);
     background-color: #fff;
 }
 
-.hamdiv:hover{
+.hamdiv:hover {
     box-shadow: 2px 2px 6px rgb(186, 17, 17);
 }
 
-.hamdiv{
+.hamdiv {
     display: flex;
     min-width: 40px;
     min-height: 40px;
@@ -90,4 +94,39 @@ header{
     align-items: center;
     justify-content: center;
     background-color: #FFFFFF;
+}
+
+@media screen and (min-width:1130px) {
+    .hamdiv {
+        display: none;
+    }
+
+    .headerul {
+        display: flex;
+        width: 50vw;
+        justify-content: space-between;
+        list-style: none;
+    }
+
+    .headerul a {
+        font-family: var(--font-family-reddit);
+        color: black;
+        text-decoration: none;
+    }
+
+    .headerul a:hover {
+        color: white;
+        border-bottom: 1px solid white;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .lftbtnsdv {
+        max-width: 12%;
+        display: flex;
+        justify-content: space-around;
+    }
 }
