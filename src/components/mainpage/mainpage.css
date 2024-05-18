@@ -514,6 +514,7 @@ select {
 .sldrimg {
     width: 92vw;
     max-width: 500px;
+    max-height: 370px;
     border-radius: 10px;
 }
 
@@ -665,6 +666,10 @@ header {
         margin: 10px 10px 0 0;
     }
 
+    #destinatonhuno{
+        margin: 10px 0;
+    }
+
     .sectionfirst {
         height: 120px;
         margin-top: -60px;
@@ -711,6 +716,10 @@ header {
 
     .recommendedby {
         padding: 30px 10px;
+    }
+    
+    .ffthscdwnlft{
+        padding: 10px 10px;
     }
 
     .scndsctntxt p,
@@ -806,6 +815,8 @@ header {
 
     .sldrimg {
         position: relative;
+        /* max-height: 400px;
+        border: 2px solid red; */
     }
 
     .sliderholder,
@@ -866,6 +877,14 @@ header {
 
     .horizontal {
         display: none;
+    }
+
+    .ffthscdwnlft{
+        padding: 20px 60px 10px 0!important;
+    }
+
+    #destinatonhuno{
+        margin: 20px 0;
     }
 
     .vertical {

@@ -19,17 +19,31 @@ import recommendeddos from '../../assets/recommended-2.png';
 import recommendedtres from '../../assets/recommended-3.png';
 import recommendedpieci from '../../assets/recommended-5.png';
 import recommendedcuatro from '../../assets/recommended-4.png';
+import citiesData from '../../../cityinfosectionfifth.json'
 
 
 function mainpage() {
+    const [selectedCity, setSelectedCity] = useState('Baku');
+    const [cityInfo, setCityInfo] = useState('Baku, the capital and largest city of Azerbaijan, is a vibrant metropolis blending ancient heritage and modernity. Our tours of Baku offer an insightful journey through its most captivating landmarks and unique sites. From the historical charm of the Old City (Icherisheher) to the futuristic Flame Towers, our knowledgeable guides will share intriguing stories and give you a glimpse into the dynamic life and rich culture of contemporary Baku residents. Discover the enchanting blend of East and West that defines this fascinating city.');
+
 
     const [isRotatedUp, setIsRotatedUp] = useState(false);
     const [isRotatedDown, setIsRotatedDown] = useState(false);
     const [isRotatedDownFifthSection, setIsRotatedDownFifthSection] = useState(false);
 
+
     const dropdownRefUp = useRef(null);
     const dropdownRefDown = useRef(null);
     const dropdownRefDownFifthSection = useRef(null);
+
+    const handleCityChangem = (cityName) => {
+        setSelectedCity(cityName);
+        const city = citiesData.find(city => city.cityName === cityName);
+        if (city) {
+            setCityInfo(city.cityInfo);
+        }
+    };
+
 
     const handleClickUp = () => {
         setIsRotatedUp(!isRotatedUp);
@@ -49,7 +63,7 @@ function mainpage() {
         }
     };
 
-    React.useEffect(() => {
+    useEffect(() => {
         const handleOutsideClickUp = handleClickOutside(dropdownRefUp, setIsRotatedUp);
         const handleOutsideClickDown = handleClickOutside(dropdownRefDown, setIsRotatedDown);
         const handleOutsideClickDownFifth = handleClickOutside(dropdownRefDownFifthSection, setIsRotatedDownFifthSection);
@@ -64,6 +78,7 @@ function mainpage() {
             document.removeEventListener('mousedown', handleOutsideClickDownFifth);
         };
     }, []);
+
 
 
     return (
@@ -286,15 +301,11 @@ function mainpage() {
                         <h1>Popular destinations</h1>
 
                         <ul className='destinations'>
-                            <li>Baku</li>
-                            <li>Gabala</li>
-                            <li>Gusar</li>
-                            <li>Ismailly</li>
-                            <li>Lankaran</li>
-                            <li>Lerik</li>
-                            <li>Guba</li>
-                            <li>Shusha</li>
-                            <li>Khankandi</li>
+                            {citiesData.map(city => (
+                                <li key={city.cityName} onClick={() => handleCityChangem(city.cityName)}>
+                                    {city.cityName}
+                                </li>
+                            ))}
                         </ul>
 
                         <div className="horizontalffth"></div>
@@ -320,10 +331,13 @@ function mainpage() {
 
                     <div className="sldrhldrtwo">
                         <div className="ffthscdwnlft">
-                            <h1>Moscow</h1>
-                            <p>
-                                It can take forever to explore Moscow, the capital and the largest city of Russia. Our tours of Moscow will help you to become acquainted with the most amazing and peculiar spots of Moscow and its suburbs; our professional guides will tell you about history and show the real life and culture of modern Muscovites.
-                            </p>
+
+                            {selectedCity && (
+                                <div>
+                                    <h1 id='destinatonhuno'>{selectedCity}</h1>
+                                    <p>{cityInfo}</p>
+                                </div>
+                            )}
                             <div className="btnshldr">
                                 <button>left</button>
                                 <button>right</button>
@@ -417,5 +431,6 @@ function mainpage() {
         </div>
     )
 }
+
 
 export default mainpage
