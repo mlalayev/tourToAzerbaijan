@@ -515,6 +515,7 @@ select {
     width: 92vw;
     max-width: 500px;
     max-height: 370px;
+    min-height: 370px;
     border-radius: 10px;
 }
 
@@ -884,7 +885,7 @@ header {
     }
 
     #destinatonhuno{
-        margin: 20px 0;
+        margin: 0 0 20px 0;
     }
 
     .vertical {
