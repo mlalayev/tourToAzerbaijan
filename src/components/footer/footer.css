@@ -66,4 +66,18 @@ footer {
         grid-template-columns: 12em 12em 12em;
         grid-column-start: 4;
     }
+
+    .containerftr {
+        max-width: 1600px;
+    }
+
+    footer{
+        padding: 50px 0;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .containerftr{
+        grid-template-columns: 12em;
+    }    
 }

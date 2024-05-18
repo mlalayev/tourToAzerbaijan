@@ -101,8 +101,8 @@ body {
 .containerfrstsc {
     width: 92vw;
     display: flex;
-    justify-content: center;
     max-width: 1600px;
+    justify-content: center;
 }
 
 .sectionfirst {
@@ -282,11 +282,11 @@ body {
 /**********SECTION THIRD CSS STARTS**********/
 
 .sectionthird {
-    font-family: var(--font-family-reddit);
-    margin-top: 30px;
     max-width: 99vw;
+    margin-top: 30px;
     position: relative;
     overflow-x: hidden;
+    font-family: var(--font-family-reddit);
 }
 
 .sliderholderthrd::-webkit-scrollbar {
@@ -398,6 +398,7 @@ body {
 .pprttres {
     display: flex;
     margin-top: 30px;
+    align-items: center;
 }
 
 .iconuno {
@@ -513,6 +514,7 @@ select {
 .sldrimg {
     width: 92vw;
     max-width: 500px;
+    max-height: 370px;
     border-radius: 10px;
 }
 
@@ -664,6 +666,10 @@ header {
         margin: 10px 10px 0 0;
     }
 
+    #destinatonhuno{
+        margin: 10px 0;
+    }
+
     .sectionfirst {
         height: 120px;
         margin-top: -60px;
@@ -671,10 +677,6 @@ header {
 
     .checkoutpart {
         width: 93vw;
-    }
-
-    .sectionsixth {
-        height: 800px;
     }
 
     .recommendedby {
@@ -708,12 +710,16 @@ header {
         width: 100%;
     }
 
-    .sectionsixth{
+    .sectionsixth {
         height: 950px;
     }
 
-    .recommendedby{
+    .recommendedby {
         padding: 30px 10px;
+    }
+    
+    .ffthscdwnlft{
+        padding: 10px 10px;
     }
 
     .scndsctntxt p,
@@ -798,21 +804,30 @@ header {
     .sldrhldrtwo {
         display: flex;
         flex-direction: row;
+        padding: 0 80px;
     }
 
     .btnshldr {
         top: 120px;
-        right: 30px;
+        right: 110px;
         position: absolute;
     }
 
     .sldrimg {
         position: relative;
+        /* max-height: 400px;
+        border: 2px solid red; */
     }
 
     .sliderholder,
     .sliderholderthrd {
         height: 600px;
+        padding-left: 380px;
+    }
+
+    .scndsctnup,
+    .thrdsctnup {
+        padding: 10px 150px 50px 100px;
     }
 
     .containerffthsc {
@@ -847,11 +862,29 @@ header {
         height: 2px;
         background-color: var(--main-light-green-color);
         border: none;
+        position: relative;
         margin: 10px 0 70px 0;
+    }
+
+    .horizontalffth::before {
+        content: "";
+        width: 100vw;
+        height: 2px;
+        background-color: var(--main-light-green-color);
+        right: 100%;
+        position: absolute;
     }
 
     .horizontal {
         display: none;
+    }
+
+    .ffthscdwnlft{
+        padding: 20px 60px 10px 0!important;
+    }
+
+    #destinatonhuno{
+        margin: 20px 0;
     }
 
     .vertical {
@@ -873,9 +906,17 @@ header {
 
     .sectionsixth {
         height: 520px;
+        display: flex;
+        justify-content: center;
     }
 
-    .recommendedby{
+    .recommendedby {
+        display: flex;
         padding: 30px 10px;
+        align-items: start;
+    }
+
+    .containersxth {
+        max-width: 1600px;
     }
 }
