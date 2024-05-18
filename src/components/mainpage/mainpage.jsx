@@ -16,11 +16,11 @@ import { LiaHandHoldingHeartSolid } from "react-icons/lia";
 import sliderpierci from '../../assets/slider5lankaran.jpg';
 import recommendeduno from '../../assets/recommended-1.png';
 import recommendeddos from '../../assets/recommended-2.png';
+import citiesData from '../../../cityinfosectionfifth.json';
 import recommendedtres from '../../assets/recommended-3.png';
 import recommendedpieci from '../../assets/recommended-5.png';
 import recommendedcuatro from '../../assets/recommended-4.png';
 import fifthsliderone from '../../assets/fifthsectionimgone.jpg';
-import citiesData from '../../../cityinfosectionfifth.json'
 
 
 function mainpage() {
@@ -43,10 +43,10 @@ function mainpage() {
     const handleCityChangem = (cityName) => {
         const city = citiesData.find(city => city.cityName === cityName);
         if (city) {
-            setSelectedCity(city.cityName);
             setCityInfo(city.cityInfo);
-            setSelectedCityImg(city.cityImg);
             setChooseCity(city.cityName);
+            setSelectedCity(city.cityName);
+            setSelectedCityImg(city.cityImg);
         }
     };
 
@@ -367,7 +367,8 @@ function mainpage() {
                                 <p>Yvonne Sanders</p>
                                 <div className="strs">
                                     <p>2019-10-05</p>
-                                    <div className="strcnt"><IoMdStar color='gold' />
+                                    <div className="strcnt">
+                                        <IoMdStar color='gold' />
                                         <IoMdStar color='gold' />
                                         <IoMdStar color='gold' />
                                         <IoMdStar color='gold' />
@@ -384,7 +385,8 @@ function mainpage() {
                                 <p>Yvonne Sanders</p>
                                 <div className="strs">
                                     <p>2019-10-05</p>
-                                    <div className="strcnt"><IoMdStar color='gold' />
+                                    <div className="strcnt">
+                                        <IoMdStar color='gold' />
                                         <IoMdStar color='gold' />
                                         <IoMdStar color='gold' />
                                         <IoMdStar color='gold' />
@@ -402,7 +404,8 @@ function mainpage() {
                                 <p>Yvonne Sanders</p>
                                 <div className="strs">
                                     <p>2019-10-05</p>
-                                    <div className="strcnt"><IoMdStar color='gold' />
+                                    <div className="strcnt">
+                                        <IoMdStar color='gold' />
                                         <IoMdStar color='gold' />
                                         <IoMdStar color='gold' />
                                         <IoMdStar color='gold' />
