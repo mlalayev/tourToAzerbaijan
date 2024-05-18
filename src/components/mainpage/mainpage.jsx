@@ -25,6 +25,7 @@ import citiesData from '../../../cityinfosectionfifth.json'
 
 function mainpage() {
     const [selectedCity, setSelectedCity] = useState('Baku');
+    const [chooseCity, setChooseCity] = useState('Choose City');
     const [selectedCityImg, setSelectedCityImg] = useState(fifthsliderone);
     const [cityInfo, setCityInfo] = useState('Baku, the capital and largest city of Azerbaijan, is a vibrant metropolis blending ancient heritage and modernity. Our tours of Baku offer an insightful journey through its most captivating landmarks and unique sites. From the historical charm of the Old City (Icherisheher) to the futuristic Flame Towers, our knowledgeable guides will share intriguing stories and give you a glimpse into the dynamic life and rich culture of contemporary Baku residents. Discover the enchanting blend of East and West that defines this fascinating city.');
 
@@ -45,9 +46,9 @@ function mainpage() {
             setSelectedCity(city.cityName);
             setCityInfo(city.cityInfo);
             setSelectedCityImg(city.cityImg);
+            setChooseCity(city.cityName);
         }
     };
-
 
     const handleClickUp = () => {
         setIsRotatedUp(!isRotatedUp);
@@ -315,17 +316,13 @@ function mainpage() {
                         <div className="horizontalffth"></div>
 
                         <div ref={dropdownRefDownFifthSection} onClick={handleClickDownFifthSection} className={`fifthsctndv ${isRotatedDownFifthSection ? 'fifthsctndvactive' : ''}`}>
-                            Choose city <RiArrowDownSLine strokeWidth={2} style={{ transform: isRotatedDownFifthSection ? 'rotate(180deg)' : 'none' }} />
+                            {chooseCity} <RiArrowDownSLine strokeWidth={2} style={{ transform: isRotatedDownFifthSection ? 'rotate(180deg)' : 'none' }} />
                             <ul className={`ffthsctnul ${isRotatedDownFifthSection ? 'ffthsctnulactive' : ''}`}>
-                                <li>Baku</li>
-                                <li>Gabala</li>
-                                <li>Gusar</li>
-                                <li>Ismailly</li>
-                                <li>Lankaran</li>
-                                <li>Lerik</li>
-                                <li>Guba</li>
-                                <li>Shusha</li>
-                                <li>Khankandi</li>
+                                {citiesData.map(city => (
+                                    <li key={city.cityName} onClick={() => handleCityChangem(city.cityName)}>
+                                        {city.cityName}
+                                    </li>
+                                ))}
                             </ul>
                         </div>
 
@@ -347,10 +344,7 @@ function mainpage() {
                                 <button>right</button>
                             </div>
                         </div>
-                        {/* <div className="ffthscdwnrght">
-                            <img src={slidercuatro} className='sldrimg' alt="" />
-                        </div> */}
-
+       
                         <div className="ffthscdwnrght">
                             {selectedCityImg && <img src={selectedCityImg} className='sldrimg' alt={selectedCity} />}
                         </div>
