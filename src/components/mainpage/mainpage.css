@@ -624,6 +624,17 @@ select {
 /* **********ADDITIONAL********** */
 /* **********ADDITIONAL********** */
 
+.ffthsctnul li,
+.destinations li,
+.fifthsctndv,
+.lftlftbtndrpdwn,
+.lftlftbtndrpdwnul li,
+.lftrghtbtndrpdwn,
+.checkoutpart,
+button {
+    cursor: pointer;
+}
+
 .container,
 .containerfrstsc,
 .containerfrthsc,
@@ -667,7 +678,7 @@ header {
         margin: 10px 10px 0 0;
     }
 
-    #destinatonhuno{
+    #destinatonhuno {
         margin: 10px 0;
     }
 
@@ -718,8 +729,8 @@ header {
     .recommendedby {
         padding: 30px 10px;
     }
-    
-    .ffthscdwnlft{
+
+    .ffthscdwnlft {
         padding: 10px 10px;
     }
 
@@ -880,11 +891,11 @@ header {
         display: none;
     }
 
-    .ffthscdwnlft{
-        padding: 20px 60px 10px 0!important;
+    .ffthscdwnlft {
+        padding: 20px 60px 10px 0 !important;
     }
 
-    #destinatonhuno{
+    #destinatonhuno {
         margin: 0 0 20px 0;
     }
 

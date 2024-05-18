@@ -304,7 +304,7 @@ function mainpage() {
 
                     <div className="ffthscup">
                         <h1>Popular destinations</h1>
-
+                        
                         <ul className='destinations'>
                             {citiesData.map(city => (
                                 <li key={city.cityName} onClick={() => handleCityChangem(city.cityName)}>
