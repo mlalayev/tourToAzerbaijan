@@ -101,8 +101,8 @@ body {
 .containerfrstsc {
     width: 92vw;
     display: flex;
-    justify-content: center;
     max-width: 1600px;
+    justify-content: center;
 }
 
 .sectionfirst {
@@ -282,11 +282,11 @@ body {
 /**********SECTION THIRD CSS STARTS**********/
 
 .sectionthird {
-    font-family: var(--font-family-reddit);
-    margin-top: 30px;
     max-width: 99vw;
+    margin-top: 30px;
     position: relative;
     overflow-x: hidden;
+    font-family: var(--font-family-reddit);
 }
 
 .sliderholderthrd::-webkit-scrollbar {
@@ -398,6 +398,7 @@ body {
 .pprttres {
     display: flex;
     margin-top: 30px;
+    align-items: center;
 }
 
 .iconuno {
@@ -673,10 +674,6 @@ header {
         width: 93vw;
     }
 
-    .sectionsixth {
-        height: 800px;
-    }
-
     .recommendedby {
         height: 100%;
         display: flex;
@@ -708,11 +705,11 @@ header {
         width: 100%;
     }
 
-    .sectionsixth{
+    .sectionsixth {
         height: 950px;
     }
 
-    .recommendedby{
+    .recommendedby {
         padding: 30px 10px;
     }
 
@@ -798,11 +795,12 @@ header {
     .sldrhldrtwo {
         display: flex;
         flex-direction: row;
+        padding: 0 80px;
     }
 
     .btnshldr {
         top: 120px;
-        right: 30px;
+        right: 110px;
         position: absolute;
     }
 
@@ -813,6 +811,12 @@ header {
     .sliderholder,
     .sliderholderthrd {
         height: 600px;
+        padding-left: 380px;
+    }
+
+    .scndsctnup,
+    .thrdsctnup {
+        padding: 10px 150px 50px 100px;
     }
 
     .containerffthsc {
@@ -847,7 +851,17 @@ header {
         height: 2px;
         background-color: var(--main-light-green-color);
         border: none;
+        position: relative;
         margin: 10px 0 70px 0;
+    }
+
+    .horizontalffth::before {
+        content: "";
+        width: 100vw;
+        height: 2px;
+        background-color: var(--main-light-green-color);
+        right: 100%;
+        position: absolute;
     }
 
     .horizontal {
@@ -873,9 +887,17 @@ header {
 
     .sectionsixth {
         height: 520px;
+        display: flex;
+        justify-content: center;
     }
 
-    .recommendedby{
+    .recommendedby {
+        display: flex;
         padding: 30px 10px;
+        align-items: start;
+    }
+
+    .containersxth {
+        max-width: 1600px;
     }
 }

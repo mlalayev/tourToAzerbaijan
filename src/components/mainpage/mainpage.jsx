@@ -1,5 +1,8 @@
 import './mainpage.css';
+import { IoMdStar } from "react-icons/io";
 import SLIDER from '../sliders/slider.jsx';
+import { GrUserManager } from "react-icons/gr";
+import { GrCertificate } from "react-icons/gr";
 import sliderdos from '../../assets/slider2.jpg';
 import { RiArrowDownSLine } from "react-icons/ri";
 import slideruno from '../../assets/slider1.jpeg';
@@ -9,51 +12,24 @@ import slidertres from '../../assets/slider3qabala.jpg';
 import slidercuatro from '../../assets/slider4lerik.jpg';
 import sliderseptini from '../../assets/slider7shusha.jpg';
 import React, { useState, useEffect, useRef } from 'react';
-import sliderpierci from '../../assets/slider5lankaran.jpg';
-import { GrUserManager } from "react-icons/gr";
-import { GrCertificate } from "react-icons/gr";
 import { LiaHandHoldingHeartSolid } from "react-icons/lia";
-import { IoMdStar } from "react-icons/io";
-import recommendeduno from '../../assets/recommended-1.png'
-import recommendeddos from '../../assets/recommended-2.png'
-import recommendedtres from '../../assets/recommended-3.png'
-import recommendedcuatro from '../../assets/recommended-4.png'
-import recommendedpieci from '../../assets/recommended-5.png'
-
-
-
-
+import sliderpierci from '../../assets/slider5lankaran.jpg';
+import recommendeduno from '../../assets/recommended-1.png';
+import recommendeddos from '../../assets/recommended-2.png';
+import recommendedtres from '../../assets/recommended-3.png';
+import recommendedpieci from '../../assets/recommended-5.png';
+import recommendedcuatro from '../../assets/recommended-4.png';
 
 
 function mainpage() {
 
-
     const [isRotatedUp, setIsRotatedUp] = useState(false);
     const [isRotatedDown, setIsRotatedDown] = useState(false);
     const [isRotatedDownFifthSection, setIsRotatedDownFifthSection] = useState(false);
+
     const dropdownRefUp = useRef(null);
     const dropdownRefDown = useRef(null);
     const dropdownRefDownFifthSection = useRef(null);
-
-
-    useEffect(() => {
-        function handleClickOutside(event) {
-            if (dropdownRefUp.current && !dropdownRefUp.current.contains(event.target)) {
-                setIsRotatedUp(false);
-            }
-            if (dropdownRefDown.current && !dropdownRefDown.current.contains(event.target)) {
-                setIsRotatedDown(false);
-            }
-            if (dropdownRefDownFifthSection.current && !dropdownRefDownFifthSection.current.contains(event.target)) {
-                setIsRotatedDownFifthSection(false);
-            }
-        }
-
-        document.addEventListener('mousedown', handleClickOutside);
-        return () => {
-            document.removeEventListener('mousedown', handleClickOutside);
-        };
-    }, [dropdownRefUp, dropdownRefDown, dropdownRefDownFifthSection]);
 
     const handleClickUp = () => {
         setIsRotatedUp(!isRotatedUp);
@@ -66,6 +42,29 @@ function mainpage() {
     const handleClickDownFifthSection = () => {
         setIsRotatedDownFifthSection(!isRotatedDownFifthSection);
     };
+
+    const handleClickOutside = (ref, setState) => (event) => {
+        if (ref.current && !ref.current.contains(event.target)) {
+            setState(false);
+        }
+    };
+
+    React.useEffect(() => {
+        const handleOutsideClickUp = handleClickOutside(dropdownRefUp, setIsRotatedUp);
+        const handleOutsideClickDown = handleClickOutside(dropdownRefDown, setIsRotatedDown);
+        const handleOutsideClickDownFifth = handleClickOutside(dropdownRefDownFifthSection, setIsRotatedDownFifthSection);
+
+        document.addEventListener('mousedown', handleOutsideClickUp);
+        document.addEventListener('mousedown', handleOutsideClickDown);
+        document.addEventListener('mousedown', handleOutsideClickDownFifth);
+
+        return () => {
+            document.removeEventListener('mousedown', handleOutsideClickUp);
+            document.removeEventListener('mousedown', handleOutsideClickDown);
+            document.removeEventListener('mousedown', handleOutsideClickDownFifth);
+        };
+    }, []);
+
 
     return (
 
@@ -279,7 +278,6 @@ function mainpage() {
                     </div>
                 </div>
             </section>
-
 
             <section className="sectionfifth">
                 <div className="containerffthsc">
