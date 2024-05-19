@@ -1,5 +1,7 @@
 import './mainpage.css';
 import { IoMdStar } from "react-icons/io";
+import cityData from '../../../cities.json';
+import cityTour from '../../../tourtype.json';
 import SLIDER from '../sliders/slider.jsx';
 import { GrUserManager } from "react-icons/gr";
 import { GrCertificate } from "react-icons/gr";
@@ -24,21 +26,20 @@ import fifthsliderone from '../../assets/fifthsectionimgone.jpg';
 
 
 function mainpage() {
+    const [cityLi, setCityLi] = useState('Choose City');
+    const [tourLi, setTourLi] = useState('Choose travel type');
     const [selectedCity, setSelectedCity] = useState('Baku');
     const [chooseCity, setChooseCity] = useState('Choose City');
     const [selectedCityImg, setSelectedCityImg] = useState(fifthsliderone);
     const [cityInfo, setCityInfo] = useState('Baku, the capital and largest city of Azerbaijan, is a vibrant metropolis blending ancient heritage and modernity. Our tours of Baku offer an insightful journey through its most captivating landmarks and unique sites. From the historical charm of the Old City (Icherisheher) to the futuristic Flame Towers, our knowledgeable guides will share intriguing stories and give you a glimpse into the dynamic life and rich culture of contemporary Baku residents. Discover the enchanting blend of East and West that defines this fascinating city.');
 
-
     const [isRotatedUp, setIsRotatedUp] = useState(false);
     const [isRotatedDown, setIsRotatedDown] = useState(false);
     const [isRotatedDownFifthSection, setIsRotatedDownFifthSection] = useState(false);
 
-
     const dropdownRefUp = useRef(null);
     const dropdownRefDown = useRef(null);
     const dropdownRefDownFifthSection = useRef(null);
-
 
     const handleCityChangem = (cityName) => {
         const city = citiesData.find(city => city.cityName === cityName);
@@ -47,6 +48,20 @@ function mainpage() {
             setChooseCity(city.cityName);
             setSelectedCity(city.cityName);
             setSelectedCityImg(city.cityImg);
+        }
+    };
+
+    const handleCityChangeLi = (cityName) => {
+        const cityList = cityData.cities.find(city => city.cityLi === cityName);
+        if (cityList) {
+            setCityLi(cityName);
+        }
+    };
+
+    const handleTourChangeLi = (tourName) => {
+        const tourType = cityTour.tourtypes.find(tour => tour.tourtype === tourName);
+        if (tourType) {
+            setTourLi(tourName);
         }
     };
 
@@ -85,7 +100,6 @@ function mainpage() {
     }, []);
 
 
-
     return (
 
         <div className="mainpage">
@@ -97,95 +111,26 @@ function mainpage() {
                         <div className="leftbuttons">
 
                             <div ref={dropdownRefUp} onClick={handleClickUp} className={`lftlftbtndrpdwn ${isRotatedUp ? 'lftlftbtndrpdwnactive' : ''}`}>
-                                Choose city <RiArrowDownSLine strokeWidth={2} style={{ transform: isRotatedUp ? 'rotate(180deg)' : 'none' }} />
+                                {cityLi} <RiArrowDownSLine strokeWidth={2} style={{ transform: isRotatedUp ? 'rotate(180deg)' : 'none' }} />
                                 <ul className={`lftlftbtndrpdwnul ${isRotatedUp ? 'lftlftbtndrpdwnulactive' : ''}`}>
-                                    <li>Aghdjabadi</li>
-                                    <li>Aghdam</li>
-                                    <li>Aghdash</li>
-                                    <li>Aghdara</li>
-                                    <li>Ahstafa</li>
-                                    <li>Aghsu</li>
-                                    <li>Astara</li>
-                                    <li>Babek</li>
-                                    <li>Baku</li>
-                                    <li>Balakan</li>
-                                    <li>Baylagan</li>
-                                    <li>Barda</li>
-                                    <li>Bilasuvar</li>
-                                    <li>Djabrail</li>
-                                    <li>Djalilabad</li>
-                                    <li>Djulfa</li>
-                                    <li>Dashkasan</li>
-                                    <li>Dalimammadli</li>
-                                    <li>Fuzuli</li>
-                                    <li>Gadabay</li>
-                                    <li>Ganja</li>
-                                    <li>Goranboy</li>
-                                    <li>Goychay</li>
-                                    <li>Goygol</li>
-                                    <li>Goytapa</li>
-                                    <li>Hadjikabul</li>
-                                    <li>Horadiz</li>
-                                    <li>Khachmas</li>
-                                    <li>Khankandi</li>
-                                    <li>Khizy</li>
-                                    <li>Khojaly</li>
-                                    <li>Khodjavand</li>
-                                    <li>Khirdalan</li>
-                                    <li>Khudat</li>
-                                    <li>Ismailly</li>
-                                    <li>Kalbadjar</li>
-                                    <li>Kurdamir</li>
-                                    <li>Gakh</li>
-                                    <li>Kazakh</li>
-                                    <li>Gabala</li>
-                                    <li>Gobustan</li>
-                                    <li>Govlar</li>
-                                    <li>Guba</li>
-                                    <li>Kubadly</li>
-                                    <li>Kusar</li>
-                                    <li>Lachin</li>
-                                    <li>Lerik</li>
-                                    <li>Lankaran</li>
-                                    <li>Liman</li>
-                                    <li>Masally</li>
-                                    <li>Mingachevir</li>
-                                    <li>Naftalan</li>
-                                    <li>Oghuz</li>
-                                    <li>Ordubad</li>
-                                    <li>Saatly</li>
-                                    <li>Sabirabad</li>
-                                    <li>Salyan</li>
-                                    <li>Samukh</li>
-                                    <li>Siyasan</li>
-                                    <li>Sumgait</li>
-                                    <li>Shabran</li>
-                                    <li>Shahbuz</li>
-                                    <li>Shamakhy</li>
-                                    <li>Shaki</li>
-                                    <li>Shamkir</li>
-                                    <li>Sharur</li>
-                                    <li>Shirvan</li>
-                                    <li>Shusha</li>
-                                    <li>Tartar</li>
-                                    <li>Tovuz</li>
-                                    <li>Udjar</li>
-                                    <li>Yardymly</li>
-                                    <li>Yevlakh</li>
-                                    <li>Zagatala</li>
-                                    <li>Zangilan</li>
-                                    <li>Zardab</li>
+                                    {cityData.cities.map((city, index) => (
+                                        <li key={index} onClick={() => handleCityChangeLi(city.cityLi)}>
+                                            {city.cityLi}
+                                        </li>
+                                    ))}
                                 </ul>
 
                             </div>
 
                             <div ref={dropdownRefDown} onClick={handleClickDown} className="lftrghtbtndrpdwn">
-                                Choose travel type
+                                {tourLi}
                                 <RiArrowDownSLine strokeWidth={2} style={{ transform: isRotatedDown ? 'rotate(180deg)' : 'none' }} />
                                 <ul className={`rghtlftbtndrpdwnul ${isRotatedDown ? 'rghtlftbtndrpdwnulactive' : ''}`}>
-                                    <li>Package tours</li>
-                                    <li>Day tours & excursions</li>
-                                    <li>Visa-free shore tours</li>
+                                    {cityTour.tourtypes.map((tour, index) => (
+                                        <li key={index} onClick={() => handleTourChangeLi(tour.tourtype)}>
+                                            {tour.tourtype}
+                                        </li>
+                                    ))}
                                 </ul>
 
                             </div>
@@ -304,7 +249,7 @@ function mainpage() {
 
                     <div className="ffthscup">
                         <h1>Popular destinations</h1>
-                        
+
                         <ul className='destinations'>
                             {citiesData.map(city => (
                                 <li key={city.cityName} onClick={() => handleCityChangem(city.cityName)}>
@@ -344,7 +289,7 @@ function mainpage() {
                                 <button>right</button>
                             </div>
                         </div>
-       
+
                         <div className="ffthscdwnrght">
                             {selectedCityImg && <img src={selectedCityImg} className='sldrimg' alt={selectedCity} />}
                         </div>
