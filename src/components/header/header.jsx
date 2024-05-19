@@ -30,9 +30,16 @@ function header() {
                 </ul>
                 <div className="lftbtnsdv">
 
-                    <button><GoPerson size={20} className='icon' id='iconfirst' strokeWidth={1} /></button>
-                    <button><CgShoppingCart size={20} className='icon' /></button>
-                    <button onClick={handleClick}><MdOutlineEuroSymbol size={20} className='icon' /> <RiArrowDownSLine strokeWidth={1} size={16} style={{ transform: isRotated ? 'rotate(180deg)' : 'none' }} /></button>
+                    <button>
+                        <GoPerson size={20} className='icon' id='iconfirst' strokeWidth={1} />
+                    </button>
+                    <button>
+                        <CgShoppingCart size={20} className='icon' />
+                    </button>
+                    <button onClick={handleClick}>
+                        <MdOutlineEuroSymbol size={20} className='icon' />
+                        <RiArrowDownSLine strokeWidth={1} size={16} style={{ transform: isRotated ? 'rotate(180deg)' : 'none' }} />
+                    </button>
 
                 </div>
 
@@ -41,7 +48,7 @@ function header() {
                 </div>
 
                 <div className="hamdiv">
-                    <RxHamburgerMenu className='hamburger' size={20}  color='black'/>
+                    <RxHamburgerMenu className='hamburger' size={20} color='black' />
                 </div>
             </div>
         </header>
