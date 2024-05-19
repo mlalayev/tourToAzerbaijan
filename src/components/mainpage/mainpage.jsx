@@ -29,8 +29,8 @@ import { FaAnglesRight } from "react-icons/fa6";
 
 function mainpage() {
     const [cityLi, setCityLi] = useState('Choose City');
-    const [tourLi, setTourLi] = useState('Choose travel type');
     const [selectedCity, setSelectedCity] = useState('Baku');
+    const [tourLi, setTourLi] = useState('Choose travel type');
     const [chooseCity, setChooseCity] = useState('Choose City');
     const [selectedCityImg, setSelectedCityImg] = useState(fifthsliderone);
     const [cityInfo, setCityInfo] = useState('Baku, the capital and largest city of Azerbaijan, is a vibrant metropolis blending ancient heritage and modernity. Our tours of Baku offer an insightful journey through its most captivating landmarks and unique sites. From the historical charm of the Old City (Icherisheher) to the futuristic Flame Towers, our knowledgeable guides will share intriguing stories and give you a glimpse into the dynamic life and rich culture of contemporary Baku residents. Discover the enchanting blend of East and West that defines this fascinating city.');
@@ -140,6 +140,8 @@ function mainpage() {
             document.removeEventListener('mousedown', handleOutsideClickDownFifth);
         };
     }, []);
+
+
 
 
     return (
@@ -275,7 +277,7 @@ function mainpage() {
                             </div>
 
                             <div className="pprtdos">
-                                <div className="icons"><GrCertificate className='iconuno' size={32} color='black' /></div> <p className='frthrghtp'>We are the registered tour operator officially licensed by the The Federal Agency for Tourism of the Russian Federation</p>
+                                <div className="icons"><GrCertificate className='iconuno' size={32} color='black' /></div> <p className='frthrghtp'>We are the registered tour operator officially licensed by the State Tourism Agency of the Republic of Azerbaijan</p>
                             </div>
 
                             <div className="pprttres">
@@ -292,9 +294,10 @@ function mainpage() {
                     <div className="ffthscup">
                         <h1>Popular destinations</h1>
 
-                        <ul className='destinations'>
+
+                        <ul className='destinations' >
                             {citiesData.map(city => (
-                                <li key={city.cityName} onClick={() => handleCityChangem(city.cityName)}>
+                                <li className={`ulli ${selectedCity === city.cityName ? 'nulliactive' : ''}`} key={city.cityName} onClick={() => { handleCityChangem(city.cityName); handleClickList(); }}>
                                     {city.cityName}
                                 </li>
                             ))}
@@ -306,7 +309,7 @@ function mainpage() {
                             {chooseCity} <RiArrowDownSLine strokeWidth={2} style={{ transform: isRotatedDownFifthSection ? 'rotate(180deg)' : 'none' }} />
                             <ul className={`ffthsctnul ${isRotatedDownFifthSection ? 'ffthsctnulactive' : ''}`}>
                                 {citiesData.map(city => (
-                                    <li key={city.cityName} onClick={() => handleCityChangem(city.cityName)}>
+                                    <li key={city.cityName} onClick={() => handleCityChangem(city.cityName)}  >
                                         {city.cityName}
                                     </li>
                                 ))}
@@ -420,6 +423,7 @@ function mainpage() {
 
                 </div>
             </section>
+
 
         </div>
     )
