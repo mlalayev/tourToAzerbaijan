@@ -23,6 +23,8 @@ import recommendedtres from '../../assets/recommended-3.png';
 import recommendedpieci from '../../assets/recommended-5.png';
 import recommendedcuatro from '../../assets/recommended-4.png';
 import fifthsliderone from '../../assets/fifthsectionimgone.jpg';
+import { FaAnglesLeft } from "react-icons/fa6";
+import { FaAnglesRight } from "react-icons/fa6";
 
 
 function mainpage() {
@@ -80,6 +82,46 @@ function mainpage() {
     const handleClickOutside = (ref, setState) => (event) => {
         if (ref.current && !ref.current.contains(event.target)) {
             setState(false);
+        }
+    };
+
+    const handleScrollRight = () => {
+        const section = document.getElementById('sectionthird');
+        if (section) {
+            section.scrollBy({
+                left: 200,
+                behavior: 'smooth',
+            });
+        }
+    };
+
+    const handleScrollLeft = () => {
+        const section = document.getElementById('sectionthird');
+        if (section) {
+            section.scrollBy({
+                left: -200,
+                behavior: 'smooth',
+            });
+        }
+    };
+
+    const handleScrollRightScnd = () => {
+        const sectionscnd = document.getElementById('sectionsecond');
+        if (sectionscnd) {
+            sectionscnd.scrollBy({
+                left: 200,
+                behavior: 'smooth',
+            });
+        }
+    };
+
+    const handleScrollLeftScnd = () => {
+        const sectionscnd = document.getElementById('sectionsecond');
+        if (sectionscnd) {
+            sectionscnd.scrollBy({
+                left: -200,
+                behavior: 'smooth',
+            });
         }
     };
 
@@ -152,12 +194,12 @@ function mainpage() {
                         </div>
 
                         <div className="sctnscndbtnhldr">
-                            <button className="btntoleft">a</button>
-                            <button className="btntoright">b</button>
+                            <button className="btntoleft" onClick={handleScrollLeftScnd}><FaAnglesLeft size={16} color={"white"} /></button>
+                            <button className="btntoright" onClick={handleScrollRightScnd}><FaAnglesRight size={16} color={"white"} /></button>
                         </div>
 
                     </div>
-                    <div className="sliderholder">
+                    <div className="sliderholder" id='sectionsecond'>
 
                         <div className="yellowcircle"></div>
 
@@ -188,14 +230,14 @@ function mainpage() {
                             <p>Select one of our tailor-made packages and get prepared for your Russian adventure! You do not need to worry about accommodation, airport transfers, museum tickets, transportation between the cities, tour guides — we will take care of it for you. </p>
                         </div>
                         <div className="sctnthrdbtnhldr">
-                            <button className="btntoleft">a</button>
-                            <button className="btntoright">a</button>
+                            <button onClick={handleScrollLeft} className="btntoleft"><FaAnglesLeft size={16} color={"white"} /></button>
+                            <button onClick={handleScrollRight} className="btntoright"><FaAnglesRight size={16} color={"white"} /></button>
                         </div>
                     </div>
 
                     <div className="yellowcirclescnd"></div>
 
-                    <div className="sliderholderthrd">
+                    <div className="sliderholderthrd" id='sectionthird'>
 
                         <div className="sliderone">
                             <img src={slideruno} className='slideruno' />
@@ -226,7 +268,7 @@ function mainpage() {
                     </div>
 
                     <div className="frthrght">
-                        <p>Planning a trip to Russia can be a difficult task, especially when you are not aware of all peculiarities and gems of this great country. VisitRussia.com is here to help you with choosing the best itinerary for your experience. Why should you choose us:</p>
+                        <p>Planning a trip to Azerbaijan can be a challenging endeavor, particularly when you're unfamiliar with all the unique aspects and hidden treasures of this captivating country.  <a className='travelazer' target='_blank' href="https://azerbaijan.travel/"> Azerbaijan.travel</a> is here to assist you in selecting the perfect itinerary for your adventure. Why should you choose us:</p>
                         <div className="frthrghttxtprt">
                             <div className="pprtuno">
                                 <div className="icons"><GrUserManager size={32} color='black' /></div>  <p className='frthrghtp'>We are the experienced travel concierge with more than 10 years’ experience and thousands of happy tourists</p>
