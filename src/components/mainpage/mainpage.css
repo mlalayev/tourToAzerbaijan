@@ -28,11 +28,9 @@
     z-index: 999;
     position: absolute;
     border-radius: 7px;
-    /* background-color: #17554b; */
-    background-color: white;
+    background-color: #43c7b1;
     border: 2px solid darkgreen;
     box-shadow: 3px 3px 6px rgb(0, 0, 0);
-    /* background-color: darkred; */
 }
 
 body {
