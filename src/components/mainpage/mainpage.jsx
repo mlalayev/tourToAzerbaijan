@@ -420,7 +420,6 @@ function mainpage() {
                             <img src={recommendedpieci} />
                         </div>
                     </div>
-
                 </div>
             </section>
 

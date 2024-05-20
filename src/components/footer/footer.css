@@ -15,7 +15,7 @@
 
 .containerftr {
     gap: 20px;
-    height: 300px;
+    height: 150px;
     display: grid;
     flex-wrap: wrap;
     margin-left: auto;
@@ -54,6 +54,8 @@ footer {
     background-color: var(--main-light-green-color);
 }
 
+
+
 @media screen and (min-width:830px) {
     .containerftr {
         grid-template-columns: 12em 12em 12em;
@@ -71,13 +73,13 @@ footer {
         max-width: 1600px;
     }
 
-    footer{
+    footer {
         padding: 50px 0;
     }
 }
 
 @media screen and (max-width: 360px) {
-    .containerftr{
+    .containerftr {
         grid-template-columns: 12em;
-    }    
+    }
 }

@@ -22,13 +22,15 @@
 
 .nulliactive::before{
     top: 24px;
-    width: 14px;
+    width: 12px;
     content: '';
-    height: 14px;
+    height: 12px;
     z-index: 999;
     position: absolute;
     border-radius: 7px;
-    background-color: #17554b;
+    /* background-color: #17554b; */
+    background-color: white;
+    border: 2px solid darkgreen;
     box-shadow: 3px 3px 6px rgb(0, 0, 0);
     /* background-color: darkred; */
 }
@@ -591,7 +593,7 @@ select {
 /* ! */ /* ! */ /* ! */ /* ! */ /* ! */ /* ! */ 
 .sectionsixth {
     width: 100vw;
-    height: 170vh;
+    height: 830px;
     margin-top: 100px;
     padding: 60px 20px;
     color: rgb(36, 36, 36);
@@ -599,7 +601,7 @@ select {
 }
 
 .trstssy div {
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .trstssy {
@@ -672,7 +674,7 @@ button {
 .containerfrthsc,
 .containerscndsc,
 .containerthrdsc {
-    max-width: 1600px;
+    max-width: 1600px !important;
 
 }
 
@@ -768,7 +770,7 @@ header {
     }
 
     .sectionsixth {
-        height: 950px;
+        height: 750px;
     }
 
     .recommendedby {
@@ -987,3 +989,16 @@ header {
         max-width: 1600px;
     }
 }
+
+@media screen and (max-width:590px){
+    .sectionsixth{
+        height: 70vh;
+    }
+}
+
+@media screen and (max-width:460px){
+    .sectionsixth{
+        height: 105vh;
+    }
+}
+

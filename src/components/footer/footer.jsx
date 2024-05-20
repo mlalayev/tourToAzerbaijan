@@ -26,14 +26,6 @@ function footer() {
                     <p>Work with us</p>
                     <div className="horizontall"></div>
                     <a href="#">for travel agents</a>
-                </div>
-
-                <div className="contact">
-                    <div className="officeinbaku">
-                        <p>Office in Baku</p>
-                        <div className="horizontall"></div>
-                        <p>+994 50 274 01 81</p>
-                    </div>
                     <br />
                     <div className="officeinbaku">
                         <p>Office in Baku</p>
