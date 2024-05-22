@@ -13,6 +13,11 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
+          <Route path='/' element={<>
+            <UPPERPART />
+            <MAINPAGE />
+            <FOOTER />
+          </>} />
           <Route path='/home' element={<>
             <UPPERPART />
             <MAINPAGE />
