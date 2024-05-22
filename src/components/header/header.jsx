@@ -20,11 +20,11 @@ function header() {
     return (
         <header>
             <div className="container">
-                <a href="#"><img src={logo} className='logo' /></a>
+                <a href="/home"><img src={logo} className='logo' /></a>
 
                 <ul className='headerul'>
                     <li><a href="#">Multi-day tours</a></li>
-                    <li><a href="#">Day trips</a></li>
+                    <li><a href="/sngldytrips">Day trips</a></li>
                     <li><a href="#">Visa-free shore tours</a></li>
                     <li><a href="#">Visa informations</a></li>
                 </ul>

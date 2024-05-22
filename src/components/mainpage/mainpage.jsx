@@ -1,10 +1,12 @@
 import './mainpage.css';
 import { IoMdStar } from "react-icons/io";
+import SLIDER from '../sliders/slider.jsx';
 import cityData from '../../../cities.json';
 import cityTour from '../../../tourtype.json';
-import SLIDER from '../sliders/slider.jsx';
 import { GrUserManager } from "react-icons/gr";
+import { FaAnglesLeft } from "react-icons/fa6";
 import { GrCertificate } from "react-icons/gr";
+import { FaAnglesRight } from "react-icons/fa6";
 import sliderdos from '../../assets/slider2.jpg';
 import { RiArrowDownSLine } from "react-icons/ri";
 import slideruno from '../../assets/slider1.jpeg';
@@ -23,8 +25,6 @@ import recommendedtres from '../../assets/recommended-3.png';
 import recommendedpieci from '../../assets/recommended-5.png';
 import recommendedcuatro from '../../assets/recommended-4.png';
 import fifthsliderone from '../../assets/fifthsectionimgone.jpg';
-import { FaAnglesLeft } from "react-icons/fa6";
-import { FaAnglesRight } from "react-icons/fa6";
 
 
 function mainpage() {
@@ -422,7 +422,6 @@ function mainpage() {
                     </div>
                 </div>
             </section>
-
 
         </div>
     )
