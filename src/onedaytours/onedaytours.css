@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+:root {
+    --font-family-rubik: rubik;
+    --main-black-color: #000000;
+    --main-white-color: #ffffff;
+    --font-family-reddit: reddit sans;
+    --main-light-green-color: #43c7b1;
+    --main-yellow-color: rgb(255, 230, 0);
+}
+
+.maiden {
+    width: 500px;
+    bottom: 40px;
+    height: 400px;
+}
+
+.onedaytour {
+    min-width: 100%;
+}
+
+.onedaytourcitychoose {
+    top: 90px;
+    height: 115px;
+}
+
+.sectionsecondonedaytour{
+    margin-top: 140px;
+}
+
+.touroneimgdiv{
+    display: flex;
+    justify-content: center;
+}
+
+.touroneimg{
+    width: 100%;
+    height: 250px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.tourone{
+    height: 430px;
+    display: grid;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color: rgb(235, 235, 235);
+}
+
+.touronediv{
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: var(--font-family-reddit);
+    padding: 10px 20px;
+}
+
+.sectionsecondonedaytour{
+    padding: 0 20px;
+}
