@@ -24,7 +24,6 @@ function App() {
             <FOOTER />
           </>} />
           <Route path='/sngldytrips' element={<>
-            {/* <UPPERPART /> */}
             <ONEDAY />
             <FOOTER />
           </>} />
