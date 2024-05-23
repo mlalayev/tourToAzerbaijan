@@ -1,4 +1,5 @@
 import './mainpage.css';
+import axios from 'axios';
 import { IoMdStar } from "react-icons/io";
 import SLIDER from '../sliders/slider.jsx';
 import cityData from '../../../cities.json';
@@ -7,6 +8,7 @@ import { GrUserManager } from "react-icons/gr";
 import { FaAnglesLeft } from "react-icons/fa6";
 import { GrCertificate } from "react-icons/gr";
 import { FaAnglesRight } from "react-icons/fa6";
+import TEMP from '../temprature/temprature.jsx';
 import sliderdos from '../../assets/slider2.jpg';
 import { RiArrowDownSLine } from "react-icons/ri";
 import slideruno from '../../assets/slider1.jpeg';
@@ -28,30 +30,147 @@ import fifthsliderone from '../../assets/fifthsectionimgone.jpg';
 
 
 function mainpage() {
+    const dropdownRefUp = useRef(null);
+    const dropdownRefDown = useRef(null);
+    const dropdownRefDownFifthSection = useRef(null);
+
     const [cityLi, setCityLi] = useState('Choose City');
     const [selectedCity, setSelectedCity] = useState('Baku');
     const [tourLi, setTourLi] = useState('Choose travel type');
     const [chooseCity, setChooseCity] = useState('Choose City');
     const [selectedCityImg, setSelectedCityImg] = useState(fifthsliderone);
-    const [cityInfo, setCityInfo] = useState('Baku, the capital and largest city of Azerbaijan, is a vibrant metropolis blending ancient heritage and modernity. Our tours of Baku offer an insightful journey through its most captivating landmarks and unique sites. From the historical charm of the Old City (Icherisheher) to the futuristic Flame Towers, our knowledgeable guides will share intriguing stories and give you a glimpse into the dynamic life and rich culture of contemporary Baku residents. Discover the enchanting blend of East and West that defines this fascinating city.');
+    const [cityInfo, setCityInfo] = useState(
+        'Baku, the capital and largest city of Azerbaijan, is a vibrant metropolis blending ancient heritage and modernity. Our tours of Baku offer an insightful journey through its most captivating landmarks and unique sites. From the historical charm of the Old City (Icherisheher) to the futuristic Flame Towers, our knowledgeable guides will share intriguing stories and give you a glimpse into the dynamic life and rich culture of contemporary Baku residents. Discover the enchanting blend of East and West that defines this fascinating city.'
+    );
 
     const [isRotatedUp, setIsRotatedUp] = useState(false);
     const [isRotatedDown, setIsRotatedDown] = useState(false);
     const [isRotatedDownFifthSection, setIsRotatedDownFifthSection] = useState(false);
 
-    const dropdownRefUp = useRef(null);
-    const dropdownRefDown = useRef(null);
-    const dropdownRefDownFifthSection = useRef(null);
+    const [tours, setTours] = useState([]);
+    const [weatherData, setWeatherData] = useState(null);
+    const [cityInput, setCityInput] = useState('');
+    const [city, setCity] = useState('');
+    const [country, setCountry] = useState('');
+    const [celcius, setCelcius] = useState('');
+    const [fahren, setFahren] = useState('');
+    const [wind, setWind] = useState('');
+    const [weatherIcon, setWeatherIcon] = useState('');
 
-    const handleCityChangem = (cityName) => {
-        const city = citiesData.find(city => city.cityName === cityName);
-        if (city) {
-            setCityInfo(city.cityInfo);
-            setChooseCity(city.cityName);
-            setSelectedCity(city.cityName);
-            setSelectedCityImg(city.cityImg);
+    const [bakuWeather, setBakuWeather] = useState({
+        city: '',
+        country: '',
+        celcius: '',
+        wind: '',
+        icon: ''
+    });
+
+    const [ganjaWeather, setGanjaWeather] = useState({
+        city: '',
+        country: '',
+        celcius: '',
+        wind: '',
+        icon: ''
+    });
+
+    const handleCityFormSubmit = async (event) => {
+        event.preventDefault();
+        try {
+            const response = await axios.get(`https://api.weatherapi.com/v1/current.json?key=4c8f79d84e4841f4b9c110121242305&q=${cityInput}`);
+            const data = response.data;
+            setWeatherData(data);
+            setCity(data.location.name);
+            setCountry(data.location.country);
+            setCelcius(data.current.temp_c);
+            setFahren(data.current.condition.text);
+            setWind(data.current.wind_kph);
+            setWeatherIcon(data.current.condition.icon);
+            console.log(data);
+        } catch (error) {
+            console.error('Error fetching weather data:', error);
         }
     };
+
+    useEffect(() => {
+        const fetchTours = async () => {
+            try {
+                const response = await fetch('../../../singledaytours.json');
+                const data = await response.json();
+                setTours(data);
+            } catch (error) {
+                console.error('Error fetching the tours data:', error);
+            }
+        };
+
+        const fetchBakuWeather = async () => {
+            try {
+                const response = await axios.get(`https://api.weatherapi.com/v1/current.json?key=4c8f79d84e4841f4b9c110121242305&q=Baku`);
+                const data = response.data;
+                setBakuWeather({
+                    city: data.location.name,
+                    wind: data.current.wind_kph,
+                    celcius: data.current.temp_c,
+                    country: data.location.country,
+                    icon: data.current.condition.icon,
+                    fahren: data.current.condition.text
+                });
+                console.log(data);
+            } catch (error) {
+                console.error('Error fetching weather data for Baku:', error);
+            }
+        };
+
+        const fetchGanjaWeather = async () => {
+            try {
+                const response = await axios.get(`https://api.weatherapi.com/v1/current.json?key=4c8f79d84e4841f4b9c110121242305&q=Ganja`);
+                const data = response.data;
+                setGanjaWeather({
+                    city: data.location.name,
+                    country: data.location.country,
+                    celcius: data.current.temp_c,
+                    fahren: data.current.condition.text,
+                    wind: data.current.wind_kph,
+                    icon: data.current.condition.icon
+                });
+                console.log(data);
+            } catch (error) {
+                console.error('Error fetching weather data for Baku:', error);
+            }
+        };
+
+        const fetchWeatherData = async () => {
+            try {
+                const response = await axios.get(`https://api.weatherapi.com/v1/current.json?key=4c8f79d84e4841f4b9c110121242305&q=Azerbaijan`);
+                setWeatherData(response.data);
+                console.log(response.data);
+            } catch (error) {
+                console.error('Error fetching weather data:', error);
+            }
+        };
+
+        fetchTours();
+        fetchWeatherData();
+        fetchBakuWeather();
+        fetchGanjaWeather();
+
+    }, []);
+
+
+    useEffect(() => {
+        const handleOutsideClickUp = handleClickOutside(dropdownRefUp, setIsRotatedUp);
+        const handleOutsideClickDown = handleClickOutside(dropdownRefDown, setIsRotatedDown);
+        const handleOutsideClickDownFifth = handleClickOutside(dropdownRefDownFifthSection, setIsRotatedDownFifthSection);
+
+        document.addEventListener('mousedown', handleOutsideClickUp);
+        document.addEventListener('mousedown', handleOutsideClickDown);
+        document.addEventListener('mousedown', handleOutsideClickDownFifth);
+
+        return () => {
+            document.removeEventListener('mousedown', handleOutsideClickUp);
+            document.removeEventListener('mousedown', handleOutsideClickDown);
+            document.removeEventListener('mousedown', handleOutsideClickDownFifth);
+        };
+    }, []);
 
     const handleCityChangeLi = (cityName) => {
         const cityList = cityData.cities.find(city => city.cityLi === cityName);
@@ -67,6 +186,26 @@ function mainpage() {
         }
     };
 
+    const handleCityChangem = (cityName) => {
+        const city = citiesData.find(city => city.cityName === cityName);
+        if (city) {
+            setCityInfo(city.cityInfo);
+            setChooseCity(city.cityName);
+            setSelectedCity(city.cityName);
+            setSelectedCityImg(city.cityImg);
+        }
+    };
+
+    const handleCityInputChange = (event) => {
+        setCityInput(event.target.value);
+    };
+
+    const handleClickOutside = (ref, setState) => (event) => {
+        if (ref.current && !ref.current.contains(event.target)) {
+            setState(false);
+        }
+    };
+
     const handleClickUp = () => {
         setIsRotatedUp(!isRotatedUp);
     };
@@ -77,12 +216,6 @@ function mainpage() {
 
     const handleClickDownFifthSection = () => {
         setIsRotatedDownFifthSection(!isRotatedDownFifthSection);
-    };
-
-    const handleClickOutside = (ref, setState) => (event) => {
-        if (ref.current && !ref.current.contains(event.target)) {
-            setState(false);
-        }
     };
 
     const handleScrollRight = () => {
@@ -125,25 +258,6 @@ function mainpage() {
         }
     };
 
-    useEffect(() => {
-        const handleOutsideClickUp = handleClickOutside(dropdownRefUp, setIsRotatedUp);
-        const handleOutsideClickDown = handleClickOutside(dropdownRefDown, setIsRotatedDown);
-        const handleOutsideClickDownFifth = handleClickOutside(dropdownRefDownFifthSection, setIsRotatedDownFifthSection);
-
-        document.addEventListener('mousedown', handleOutsideClickUp);
-        document.addEventListener('mousedown', handleOutsideClickDown);
-        document.addEventListener('mousedown', handleOutsideClickDownFifth);
-
-        return () => {
-            document.removeEventListener('mousedown', handleOutsideClickUp);
-            document.removeEventListener('mousedown', handleOutsideClickDown);
-            document.removeEventListener('mousedown', handleOutsideClickDownFifth);
-        };
-    }, []);
-
-
-
-
     return (
 
         <div className="mainpage">
@@ -185,6 +299,60 @@ function mainpage() {
                         </div>
                     </div>
                 </div>
+            </section>
+
+            <section className="sectionweatherinfo frmnpg">
+                <div className="weatherinfo">
+
+                    <div className="infouno">
+
+                        <TEMP
+                            temperature={bakuWeather.celcius}
+                            wind={bakuWeather.wind}
+                            location={`${bakuWeather.city}, ${bakuWeather.country}`}
+                            weather={bakuWeather.fahren}
+                            icon={bakuWeather.icon}
+                        />
+
+                    </div>
+
+                    <div className="infodos">
+
+                        <TEMP
+                            temperature={ganjaWeather.celcius}
+                            wind={ganjaWeather.wind}
+                            location={`${ganjaWeather.city}, ${ganjaWeather.country}`}
+                            weather={ganjaWeather.fahren}
+                            icon={ganjaWeather.icon}
+                        />
+
+                    </div>
+
+                    <div className="infotres" style={{ display: city ? 'block' : 'none' }}>
+                        <TEMP
+                            temperature={celcius}
+                            wind={wind}
+                            location={`${city}, ${country}`}
+                            weather={fahren}
+                            icon={weatherIcon}
+                        />
+                    </div>
+                </div>
+
+                <form className="form" onSubmit={handleCityFormSubmit}>
+                    <button>
+                        <svg width="17" height="16" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 16" role="img" aria-labelledby="search">
+                            <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9" stroke="currentColor" strokeWidth="1.333" strokeLinecap="round" strokeLinejoin="round"></path>
+                        </svg>
+                    </button>
+                    <input className="input" value={cityInput} onChange={handleCityInputChange} placeholder="Enter City Name" required type="text" />
+                    <button className="reset" type="reset">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                    <button id="btnwdth" type="submit">Get Weather</button>
+                </form>
             </section>
 
             <section className="sectionsecond">
