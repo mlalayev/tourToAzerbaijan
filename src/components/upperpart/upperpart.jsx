@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Children } from 'react';
 import { useState } from 'react';
 import './upperpart.css';
 import main from '../../assets/main.png';
@@ -10,7 +10,6 @@ function header() {
         
         <div className="upperpart">
             <HEADER />
-
             <div className="containerupr">
 
 

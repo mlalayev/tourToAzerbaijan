@@ -1,0 +1,22 @@
+[
+    {
+        "imgSrc": "./src/assets/shahdag.jpg",
+        "title": "Shahdag",
+        "description": "Shahdag in Azerbaijan is a premier mountain resort offering year-round outdoor activities and stunning natural scenery."
+    },
+    {
+        "imgSrc": "./src/assets/shahdag.jpg",
+        "title": "Tour Two",
+        "description": "Description for Tour Two."
+    },
+    {
+        "imgSrc": "./src/assets/shahdag.jpg",
+        "title": "Tour Three",
+        "description": "Description for Tour Three."
+    },
+    {
+        "imgSrc": "./src/assets/shahdag.jpg",
+        "title": "Tour Three",
+        "description": "Description for Tour Three."
+    }
+]
