@@ -303,12 +303,12 @@ body {
 .sctnscndbtnhldr button:hover,
 .sctnthrdbtnhldr button:hover {
     box-shadow:
-    1.7px 1.7px 1.2px rgba(0, 0, 0, 0.081),
-    4px 4.1px 3px rgba(0, 0, 0, 0.11),
-    7.5px 7.8px 5.6px rgba(0, 0, 0, 0.127),
-    13.4px 13.8px 10.1px rgba(0, 0, 0, 0.137),
-    25.1px 25.9px 18.8px rgba(0, 0, 0, 0.137),
-    60px 62px 45px rgba(0, 0, 0, 0.1);
+        1.7px 1.7px 1.2px rgba(0, 0, 0, 0.081),
+        4px 4.1px 3px rgba(0, 0, 0, 0.11),
+        7.5px 7.8px 5.6px rgba(0, 0, 0, 0.127),
+        13.4px 13.8px 10.1px rgba(0, 0, 0, 0.137),
+        25.1px 25.9px 18.8px rgba(0, 0, 0, 0.137),
+        60px 62px 45px rgba(0, 0, 0, 0.1);
     transition: 0.2s;
 }
 
@@ -1125,4 +1125,17 @@ header {
     .sectionsixth {
         min-height: 105vh;
     }
+}
+
+
+@media screen and (min-width:830px) {
+    .weatherinfo{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+}
+
+.frmnpg{
+    margin-top: 40px;
 }

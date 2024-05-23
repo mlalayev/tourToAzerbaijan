@@ -11,16 +11,41 @@ import '../onedaytours/onedaytours.css'
 import tourtwo from '../assets/zernavabridge.jpg'
 import tourthree from '../assets/masalliistisu.jpg'
 import axios from 'axios';
+import TEMP from '../components/temprature/temprature.jsx'
 
 
 
 function onedaytour() {
     const dropdownRefUp = useRef(null);
     const [tours, setTours] = useState([]);
-    const [cityInput, setCityInput] = useState('');
     const [cityLi, setCityLi] = useState('Choose City');
     const [weatherData, setWeatherData] = useState(null);
     const [isRotatedUp, setIsRotatedUp] = useState(false);
+    const [cityInput, setCityInput] = useState('');
+    const [city, setCity] = useState('');
+    const [country, setCountry] = useState('');
+    const [celcius, setCelcius] = useState('');
+    const [fahren, setFahren] = useState('');
+    const [wind, setWind] = useState('');
+    const [weatherIcon, setWeatherIcon] = useState('');
+
+    const [bakuWeather, setBakuWeather] = useState({
+        city: '',
+        country: '',
+        celcius: '',
+        wind: '',
+        icon: ''
+    });
+
+    const [ganjaWeather, setGanjaWeather] = useState({
+        city: '',
+        country: '',
+        celcius: '',
+        wind: '',
+        icon: ''
+    })
+
+
 
     const handleCityChangeLi = (cityName) => {
         const cityList = cityData.cities.find(city => city.cityLi === cityName);
@@ -48,8 +73,15 @@ function onedaytour() {
         event.preventDefault();
         try {
             const response = await axios.get(`https://api.weatherapi.com/v1/current.json?key=4c8f79d84e4841f4b9c110121242305&q=${cityInput}`);
-            setWeatherData(response.data);
-            console.log(response.data);
+            const data = response.data;
+            setWeatherData(data);
+            setCity(data.location.name);
+            setCountry(data.location.country);
+            setCelcius(data.current.temp_c);
+            setFahren(data.current.condition.text);
+            setWind(data.current.wind_kph);
+            setWeatherIcon(data.current.condition.icon);
+            console.log(data);
         } catch (error) {
             console.error('Error fetching weather data:', error);
         }
@@ -66,6 +98,42 @@ function onedaytour() {
             }
         };
 
+        const fetchBakuWeather = async () => {
+            try {
+                const response = await axios.get(`https://api.weatherapi.com/v1/current.json?key=4c8f79d84e4841f4b9c110121242305&q=Baku`);
+                const data = response.data;
+                setBakuWeather({
+                    city: data.location.name,
+                    wind: data.current.wind_kph,
+                    celcius: data.current.temp_c,
+                    country: data.location.country,
+                    icon: data.current.condition.icon,
+                    fahren: data.current.condition.text
+                });
+                console.log(data);
+            } catch (error) {
+                console.error('Error fetching weather data for Baku:', error);
+            }
+        };
+
+        const fetchGanjaWeather = async () => {
+            try {
+                const response = await axios.get(`https://api.weatherapi.com/v1/current.json?key=4c8f79d84e4841f4b9c110121242305&q=Ganja`);
+                const data = response.data;
+                setGanjaWeather({
+                    city: data.location.name,
+                    country: data.location.country,
+                    celcius: data.current.temp_c,
+                    fahren: data.current.condition.text,
+                    wind: data.current.wind_kph,
+                    icon: data.current.condition.icon
+                });
+                console.log(data);
+            } catch (error) {
+                console.error('Error fetching weather data for Baku:', error);
+            }
+        };
+
         const fetchWeatherData = async () => {
             try {
                 const response = await axios.get(`https://api.weatherapi.com/v1/current.json?key=4c8f79d84e4841f4b9c110121242305&q=Azerbaijan`);
@@ -78,6 +146,8 @@ function onedaytour() {
 
         fetchTours();
         fetchWeatherData();
+        fetchBakuWeather();
+        fetchGanjaWeather();
 
     }, []);
 
@@ -145,25 +215,62 @@ function onedaytour() {
                 </div>
             </section>
 
-            <section className="sectionsecondonedaytour">
+            <section className="sectionweatherinfo">
+                <div className="weatherinfo">
 
+                    <div className="infouno">
 
-                <form onSubmit={handleCityFormSubmit}>
-                    <div className="input-container">
-                        <input type="text" name="text" className="input" value={cityInput} onChange={handleCityInputChange} placeholder="Enter City Name" />
-                        <span className="iconinput">
-                            <svg width="19px" height="19px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path opacity="1" d="M14 5H20" stroke="#000" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path> <path opacity="1" d="M14 8H17" stroke="#000" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path> <path d="M21 11.5C21 16.75 16.75 21 11.5 21C6.25 21 2 16.75 2 11.5C2 6.25 6.25 2 11.5 2" stroke="#000" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"></path> <path opacity="1" d="M22 22L20 20" stroke="#000" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round"></path> </g></svg>
-                        </span>
-                        <button type="submit">Get Weather</button>
+                        <TEMP
+                            temperature={bakuWeather.celcius}
+                            wind={bakuWeather.wind}
+                            location={`${bakuWeather.city}, ${bakuWeather.country}`}
+                            weather={bakuWeather.fahren}
+                            icon={bakuWeather.icon}
+                        />
+
                     </div>
 
-                    {/* <div className="tempinfo">
-                        <h1>{city}</h1>
-                        <h1>{country}</h1>
-                        <p>{celci}</p>
-                        <p>{fahren}</p>
-                    </div> */}
+                    <div className="infodos">
+
+                        <TEMP
+                            temperature={ganjaWeather.celcius}
+                            wind={ganjaWeather.wind}
+                            location={`${ganjaWeather.city}, ${ganjaWeather.country}`}
+                            weather={ganjaWeather.fahren}
+                            icon={ganjaWeather.icon}
+                        />
+
+                    </div>
+
+                    <div className="infotres" style={{ display: city ? 'block' : 'none' }}>
+                        <TEMP
+                            temperature={celcius}
+                            wind={wind}
+                            location={`${city}, ${country}`}
+                            weather={fahren}
+                            icon={weatherIcon}
+                        />
+                    </div>
+                </div>
+
+                <form className="form" onSubmit={handleCityFormSubmit}>
+                    <button>
+                        <svg width="17" height="16" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 16" role="img" aria-labelledby="search">
+                            <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9" stroke="currentColor" strokeWidth="1.333" strokeLinecap="round" strokeLinejoin="round"></path>
+                        </svg>
+                    </button>
+                    <input className="input" value={cityInput} onChange={handleCityInputChange} placeholder="Enter City Name" required type="text" />
+                    <button className="reset" type="reset">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                    <button id="btnwdth" type="submit">Get Weather</button>
                 </form>
+            </section>
+
+            <section className="sectionsecondonedaytour">
+
 
 
                 <h1>Single-day tours</h1>
