@@ -210,7 +210,16 @@ function mainpage() {
                             <div className="txtprtscndscc">
                                 <h1>Tours to Baku and its sights</h1>
                                 <p>Feel the lifestyle and culture of the ancient Azerbaijani metropolis. Our professional guides...</p>
-                                <button>View 29 tours <FaArrowRightLong /> </button>
+                                {/* <button>View 29 tours <FaArrowRightLong /> </button> */}
+
+                                <button className="cta mnpgbtn">
+                                    <span>Hover me</span>
+                                    <svg width="15px" height="10px" viewBox="0 0 13 10">
+                                        <path d="M1,5 L11,5"></path>
+                                        <polyline points="8 1 12 5 8 9"></polyline>
+                                    </svg>
+                                </button>
+
                             </div>
                         </div>
 
@@ -246,7 +255,13 @@ function mainpage() {
                             <div className="txtprtthrdscc">
                                 <h1>Tours to Baku and its sights</h1>
                                 <p>Feel the lifestyle and culture of the ancient Azerbaijani metropolis. Our professional guides...</p>
-                                <button>View 29 tours <FaArrowRightLong /> </button>
+                                <button className="cta mnpgbtn">
+                                    <span>Hover me</span>
+                                    <svg width="15px" height="10px" viewBox="0 0 13 10">
+                                        <path d="M1,5 L11,5"></path>
+                                        <polyline points="8 1 12 5 8 9"></polyline>
+                                    </svg>
+                                </button>
                             </div>
                         </div>
 
