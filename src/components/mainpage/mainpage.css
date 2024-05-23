@@ -14,13 +14,13 @@
     --main-yellow-color: rgb(255, 230, 0);
 }
 
-.nulliactive{
+.nulliactive {
     display: flex;
     position: relative;
     justify-content: center;
 }
 
-.nulliactive::before{
+.nulliactive::before {
     top: 25px;
     width: 10px;
     content: '';
@@ -40,11 +40,22 @@ body {
 .mainpage {
     max-width: 100%;
 }
-/* ! */ /* ! */ /* ! */ /* ! */ /* ! */ /* ! */ 
+
+/* ! */
+/* ! */
+/* ! */
+/* ! */
+/* ! */
+/* ! */
 /**********SECTION FIRST CSS STARTS**********/
 /**********SECTION FIRST CSS STARTS**********/
 /**********SECTION FIRST CSS STARTS**********/
-/* ! */ /* ! */ /* ! */ /* ! */ /* ! */ /* ! */ 
+/* ! */
+/* ! */
+/* ! */
+/* ! */
+/* ! */
+/* ! */
 .lftlftbtndrpdwnul {
     display: none;
 }
@@ -161,15 +172,31 @@ body {
     gap: 15px;
     border-bottom: 1px solid black;
 }
-/* ! */ /* ! */ /* ! */ /* ! */ /* ! */ /* ! */ 
+
+/* ! */
+/* ! */
+/* ! */
+/* ! */
+/* ! */
+/* ! */
 /**********SECTION FIRST CSS ENDS**********/
 /**********SECTION FIRST CSS ENDS**********/
 /**********SECTION FIRST CSS ENDS**********/
-/* ! */ /* ! */ /* ! */ /* ! */ /* ! */ /* ! */ 
+/* ! */
+/* ! */
+/* ! */
+/* ! */
+/* ! */
+/* ! */
 /**********SECTION SECOND CSS STARTS**********/
 /**********SECTION SECOND CSS STARTS**********/
 /**********SECTION SECOND CSS STARTS**********/
-/* ! */ /* ! */ /* ! */ /* ! */ /* ! */ /* ! */ 
+/* ! */
+/* ! */
+/* ! */
+/* ! */
+/* ! */
+/* ! */
 .sectionsecond {
     max-width: 99vw;
     margin-top: 30px;
@@ -193,37 +220,50 @@ body {
     justify-content: space-between;
 }
 
+.mnpgbtn {
+    font-size: 10px;
+}
+
 .props button,
 .sliderone button {
     gap: 10px;
-    width: 90px;
-    height: 40px;
+    width: 160px;
+    height: 44px;
     border: none;
     display: flex;
-    font-size: 14px;
     align-items: center;
-    border-radius: 20px;
     justify-content: center;
-    background-color: var(--main-yellow-color);
 }
 
 .sliderone button {
-    width: 130px;
+    width: 160px;
 }
 
-.sliderone button:hover,
-.props button:hover,
-.props:hover,
-.sliderone:hover {
-    box-shadow: 3px 3px 5px gray;
+.sliderone:hover,
+.props:hover {
+    box-shadow:
+        1.7px 1.7px 1.2px rgba(0, 0, 0, 0.081),
+        4px 4.1px 3px rgba(0, 0, 0, 0.11),
+        7.5px 7.8px 5.6px rgba(0, 0, 0, 0.127),
+        13.4px 13.8px 10.1px rgba(0, 0, 0, 0.137),
+        25.1px 25.9px 18.8px rgba(0, 0, 0, 0.137),
+        60px 62px 45px rgba(0, 0, 0, 0.1);
 }
 
 .sliderone,
 .props {
     height: 500px;
+    transition: 0.3s;
     margin-right: 20px;
     border-radius: 10px;
     background-color: rgb(235, 235, 235);
+    box-shadow:
+        1.7px 1.7px 1.2px rgba(0, 0, 0, 0.014),
+        4px 4.1px 3px rgba(0, 0, 0, 0.03),
+        7.5px 7.8px 5.6px rgba(0, 0, 0, 0.047),
+        13.4px 13.8px 10.1px rgba(0, 0, 0, 0.065),
+        25.1px 25.9px 18.8px rgba(0, 0, 0, 0.082),
+        60px 62px 45px rgba(0, 0, 0, 0.1);
 }
 
 .props img {
@@ -256,13 +296,20 @@ body {
 }
 
 .sctnscndbtnhldr,
-.sctnthrdbtnhldr{
+.sctnthrdbtnhldr {
     margin: 8px 0;
 }
 
 .sctnscndbtnhldr button:hover,
-.sctnthrdbtnhldr button:hover{
-    box-shadow: 2px 2px 6px #17554b;
+.sctnthrdbtnhldr button:hover {
+    box-shadow:
+    1.7px 1.7px 1.2px rgba(0, 0, 0, 0.081),
+    4px 4.1px 3px rgba(0, 0, 0, 0.11),
+    7.5px 7.8px 5.6px rgba(0, 0, 0, 0.127),
+    13.4px 13.8px 10.1px rgba(0, 0, 0, 0.137),
+    25.1px 25.9px 18.8px rgba(0, 0, 0, 0.137),
+    60px 62px 45px rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
 }
 
 .sctnscndbtnhldr button {
@@ -302,15 +349,31 @@ body {
     /* background-color: rgba(255, 255, 0, 0.619); */
     background-color: #93ddd0;
 }
-/* ! */ /* ! */ /* ! */ /* ! */ /* ! */ /* ! */ 
+
+/* ! */
+/* ! */
+/* ! */
+/* ! */
+/* ! */
+/* ! */
 /**********SECTION SECOND CSS ENDS**********/
 /**********SECTION SECOND CSS ENDS**********/
 /**********SECTION SECOND CSS ENDS**********/
-/* ! */ /* ! */ /* ! */ /* ! */ /* ! */ /* ! */ 
+/* ! */
+/* ! */
+/* ! */
+/* ! */
+/* ! */
+/* ! */
 /**********SECTION THIRD CSS STARTS**********/
 /**********SECTION THIRD CSS STARTS**********/
 /**********SECTION THIRD CSS STARTS**********/
-/* ! */ /* ! */ /* ! */ /* ! */ /* ! */ /* ! */ 
+/* ! */
+/* ! */
+/* ! */
+/* ! */
+/* ! */
+/* ! */
 .sectionthird {
     max-width: 99vw;
     margin-top: 30px;
@@ -387,15 +450,31 @@ body {
     border-radius: 50%;
     background-color: #93ddd0;
 }
-/* ! */ /* ! */ /* ! */ /* ! */ /* ! */ /* ! */ 
+
+/* ! */
+/* ! */
+/* ! */
+/* ! */
+/* ! */
+/* ! */
 /**********SECTION THIRD CSS ENDS**********/
 /**********SECTION THIRD CSS ENDS**********/
 /**********SECTION THIRD CSS ENDS**********/
-/* ! */ /* ! */ /* ! */ /* ! */ /* ! */ /* ! */ 
+/* ! */
+/* ! */
+/* ! */
+/* ! */
+/* ! */
+/* ! */
 /**********SECTION FOURTH CSS STARTS**********/
 /**********SECTION FOURTH CSS STARTS**********/
 /**********SECTION FOURTH CSS STARTS**********/
-/* ! */ /* ! */ /* ! */ /* ! */ /* ! */ /* ! */ 
+/* ! */
+/* ! */
+/* ! */
+/* ! */
+/* ! */
+/* ! */
 .containerfrthsc {
     display: flex;
     align-items: center;
@@ -452,15 +531,31 @@ body {
     justify-content: center;
     background-color: var(--main-light-green-color);
 }
-/* ! */ /* ! */ /* ! */ /* ! */ /* ! */ /* ! */ 
+
+/* ! */
+/* ! */
+/* ! */
+/* ! */
+/* ! */
+/* ! */
 /**********SECTION FOURTH CSS ENDS**********/
 /**********SECTION FOURTH CSS ENDS**********/
 /**********SECTION FOURTH CSS ENDS**********/
-/* ! */ /* ! */ /* ! */ /* ! */ /* ! */ /* ! */ 
+/* ! */
+/* ! */
+/* ! */
+/* ! */
+/* ! */
+/* ! */
 /**********SECTION FIFTH CSS STARTS**********/
 /**********SECTION FIFTH CSS STARTS**********/
 /**********SECTION FIFTH CSS STARTS**********/
-/* ! */ /* ! */ /* ! */ /* ! */ /* ! */ /* ! */ 
+/* ! */
+/* ! */
+/* ! */
+/* ! */
+/* ! */
+/* ! */
 .sectionfifth {
     width: 100vw;
     display: flex;
@@ -580,15 +675,31 @@ select {
     font-family: var(--font-family-rubik);
     background-color: var(--main-light-green-color);
 }
-/* ! */ /* ! */ /* ! */ /* ! */ /* ! */ /* ! */ 
+
+/* ! */
+/* ! */
+/* ! */
+/* ! */
+/* ! */
+/* ! */
 /**********SECTION FIFTH CSS ENDS**********/
 /**********SECTION FIFTH CSS ENDS**********/
 /**********SECTION FIFTH CSS ENDS**********/
-/* ! */ /* ! */ /* ! */ /* ! */ /* ! */ /* ! */ 
+/* ! */
+/* ! */
+/* ! */
+/* ! */
+/* ! */
+/* ! */
 /**********SECTION SIXTH CSS STARTS**********/
 /**********SECTION SIXTH CSS STARTS**********/
 /**********SECTION SIXTH CSS STARTS**********/
-/* ! */ /* ! */ /* ! */ /* ! */ /* ! */ /* ! */ 
+/* ! */
+/* ! */
+/* ! */
+/* ! */
+/* ! */
+/* ! */
 .sectionsixth {
     width: 100vw;
     min-height: 130vh;
@@ -646,15 +757,31 @@ select {
     justify-content: center;
     /* flex-direction: column; */
 }
-/* ! */ /* ! */ /* ! */ /* ! */ /* ! */ /* ! */ 
+
+/* ! */
+/* ! */
+/* ! */
+/* ! */
+/* ! */
+/* ! */
 /********** SECTION SIXTH CSS ENDS**********/
 /**********SECTION SIXTH CSS ENDS**********/
 /**********SECTION SIXTH CSS ENDS**********/
-/* ! */ /* ! */ /* ! */ /* ! */ /* ! */ /* ! */ 
+/* ! */
+/* ! */
+/* ! */
+/* ! */
+/* ! */
+/* ! */
 /* **********ADDITIONAL********** */
 /* **********ADDITIONAL********** */
 /* **********ADDITIONAL********** */
-/* ! */ /* ! */ /* ! */ /* ! */ /* ! */ /* ! */ 
+/* ! */
+/* ! */
+/* ! */
+/* ! */
+/* ! */
+/* ! */
 
 .ffthsctnul li,
 .destinations li,
@@ -676,14 +803,14 @@ button {
 
 }
 
-.travelazer{
+.travelazer {
     text-decoration: underline;
     color: #43c7b1;
     font-weight: 500;
     transition: 0.2s;
 }
 
-.travelazer:hover{
+.travelazer:hover {
     text-decoration: underline;
     color: black;
     font-weight: 500;
@@ -908,13 +1035,13 @@ header {
         font-family: var(--font-family-reddit);
     }
 
-    .yellowcircle{
+    .yellowcircle {
         left: -120px;
         height: 500px;
         width: 500px;
     }
 
-    .yellowcirclescnd{
+    .yellowcirclescnd {
         height: 500px;
         width: 500px;
         right: -50px;
@@ -988,15 +1115,14 @@ header {
     }
 }
 
-@media screen and (max-width:590px){
-    .sectionsixth{
+@media screen and (max-width:590px) {
+    .sectionsixth {
         min-height: 70vh;
     }
 }
 
-@media screen and (max-width:460px){
-    .sectionsixth{
+@media screen and (max-width:460px) {
+    .sectionsixth {
         min-height: 105vh;
     }
 }
-

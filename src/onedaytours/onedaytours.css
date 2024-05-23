@@ -125,7 +125,7 @@
 
 .cta span {
     color: #234567;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
     position: relative;
     letter-spacing: 0.05em;
@@ -276,9 +276,9 @@
 }
 
 .loadingscreen {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
