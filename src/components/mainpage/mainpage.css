@@ -14,6 +14,13 @@
     --main-yellow-color: rgb(255, 230, 0);
 }
 
+.errormsg{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .nulliactive {
     display: flex;
     position: relative;
@@ -1137,5 +1144,11 @@ header {
 }
 
 .frmnpg{
-    margin-top: 40px;
+    margin: 0;
+    padding: 50px 0;
+}
+
+#btnwdthh{
+    background-color: red;
+    z-index: 999;
 }

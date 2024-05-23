@@ -107,7 +107,7 @@
 .form:before {
     content: "";
     position: absolute;
-    background: var(--border-color);
+    background: var(--main-light-green-color);
     transform: scaleX(0);
     transform-origin: center;
     width: 100%;

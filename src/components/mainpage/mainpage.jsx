@@ -38,7 +38,7 @@ function mainpage() {
     const [selectedCity, setSelectedCity] = useState('Baku');
     const [tourLi, setTourLi] = useState('Choose travel type');
     const [chooseCity, setChooseCity] = useState('Choose City');
-    const [selectedCityImg, setSelectedCityImg] = useState(fifthsliderone);
+    const [errorMessage, setErrorMessage] = useState(''); const [selectedCityImg, setSelectedCityImg] = useState(fifthsliderone);
     const [cityInfo, setCityInfo] = useState(
         'Baku, the capital and largest city of Azerbaijan, is a vibrant metropolis blending ancient heritage and modernity. Our tours of Baku offer an insightful journey through its most captivating landmarks and unique sites. From the historical charm of the Old City (Icherisheher) to the futuristic Flame Towers, our knowledgeable guides will share intriguing stories and give you a glimpse into the dynamic life and rich culture of contemporary Baku residents. Discover the enchanting blend of East and West that defines this fascinating city.'
     );
@@ -47,15 +47,15 @@ function mainpage() {
     const [isRotatedDown, setIsRotatedDown] = useState(false);
     const [isRotatedDownFifthSection, setIsRotatedDownFifthSection] = useState(false);
 
-    const [tours, setTours] = useState([]);
-    const [weatherData, setWeatherData] = useState(null);
-    const [cityInput, setCityInput] = useState('');
+    const [wind, setWind] = useState('');
     const [city, setCity] = useState('');
+    const [tours, setTours] = useState([]);
+    const [fahren, setFahren] = useState('');
     const [country, setCountry] = useState('');
     const [celcius, setCelcius] = useState('');
-    const [fahren, setFahren] = useState('');
-    const [wind, setWind] = useState('');
+    const [cityInput, setCityInput] = useState('');
     const [weatherIcon, setWeatherIcon] = useState('');
+    const [weatherData, setWeatherData] = useState(null);
 
     const [bakuWeather, setBakuWeather] = useState({
         city: '',
@@ -66,11 +66,11 @@ function mainpage() {
     });
 
     const [ganjaWeather, setGanjaWeather] = useState({
-        city: '',
-        country: '',
-        celcius: '',
+        icon: '',
         wind: '',
-        icon: ''
+        city: '',
+        celcius: '',
+        country: ''
     });
 
     const handleCityFormSubmit = async (event) => {
@@ -78,16 +78,20 @@ function mainpage() {
         try {
             const response = await axios.get(`https://api.weatherapi.com/v1/current.json?key=4c8f79d84e4841f4b9c110121242305&q=${cityInput}`);
             const data = response.data;
+
+            setErrorMessage('');
+
             setWeatherData(data);
             setCity(data.location.name);
-            setCountry(data.location.country);
-            setCelcius(data.current.temp_c);
-            setFahren(data.current.condition.text);
             setWind(data.current.wind_kph);
+            setCelcius(data.current.temp_c);
+            setCountry(data.location.country);
+            setFahren(data.current.condition.text);
             setWeatherIcon(data.current.condition.icon);
-            console.log(data);
         } catch (error) {
-            console.error('Error fetching weather data:', error);
+            setErrorMessage('Please enter a correct city.');
+            setWeatherData(null);
+            // console.error('Error fetching weather data:', error);
         }
     };
 
@@ -98,7 +102,7 @@ function mainpage() {
                 const data = await response.json();
                 setTours(data);
             } catch (error) {
-                console.error('Error fetching the tours data:', error);
+                // console.error('Error fetching the tours data:', error);
             }
         };
 
@@ -114,9 +118,9 @@ function mainpage() {
                     icon: data.current.condition.icon,
                     fahren: data.current.condition.text
                 });
-                console.log(data);
+                // console.log(data);
             } catch (error) {
-                console.error('Error fetching weather data for Baku:', error);
+                // console.error('Error fetching weather data for Baku:', error);
             }
         };
 
@@ -132,9 +136,9 @@ function mainpage() {
                     wind: data.current.wind_kph,
                     icon: data.current.condition.icon
                 });
-                console.log(data);
+                // console.log(data);
             } catch (error) {
-                console.error('Error fetching weather data for Baku:', error);
+                // console.error('Error fetching weather data for Baku:', error);
             }
         };
 
@@ -142,9 +146,9 @@ function mainpage() {
             try {
                 const response = await axios.get(`https://api.weatherapi.com/v1/current.json?key=4c8f79d84e4841f4b9c110121242305&q=Azerbaijan`);
                 setWeatherData(response.data);
-                console.log(response.data);
+                // console.log(response.data);
             } catch (error) {
-                console.error('Error fetching weather data:', error);
+                // console.error('Error fetching weather data:', error);
             }
         };
 
@@ -327,15 +331,19 @@ function mainpage() {
                         />
 
                     </div>
-
-                    <div className="infotres" style={{ display: city ? 'block' : 'none' }}>
-                        <TEMP
-                            temperature={celcius}
-                            wind={wind}
-                            location={`${city}, ${country}`}
-                            weather={fahren}
-                            icon={weatherIcon}
-                        />
+                    <div>
+                        {errorMessage && <p className='errormsg'>{errorMessage}</p>}
+                        <div className="infotres" style={{ display: city ? 'block' : 'none' }}>
+                            {weatherData && (
+                                <TEMP
+                                    temperature={celcius}
+                                    wind={wind}
+                                    location={`${city}, ${country}`}
+                                    weather={fahren}
+                                    icon={weatherIcon}
+                                />
+                            )}
+                        </div>
                     </div>
                 </div>
 
@@ -351,7 +359,7 @@ function mainpage() {
                             <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12"></path>
                         </svg>
                     </button>
-                    <button id="btnwdth" type="submit">Get Weather</button>
+                    <button id="btnwdth btnwdthh" type="submit">Get Weather</button>
                 </form>
             </section>
 
