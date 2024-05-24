@@ -38,7 +38,8 @@ function mainpage() {
     const [selectedCity, setSelectedCity] = useState('Baku');
     const [tourLi, setTourLi] = useState('Choose travel type');
     const [chooseCity, setChooseCity] = useState('Choose City');
-    const [errorMessage, setErrorMessage] = useState(''); const [selectedCityImg, setSelectedCityImg] = useState(fifthsliderone);
+    const [errorMessage, setErrorMessage] = useState(''); 
+    const [selectedCityImg, setSelectedCityImg] = useState(fifthsliderone);
     const [cityInfo, setCityInfo] = useState(
         'Baku, the capital and largest city of Azerbaijan, is a vibrant metropolis blending ancient heritage and modernity. Our tours of Baku offer an insightful journey through its most captivating landmarks and unique sites. From the historical charm of the Old City (Icherisheher) to the futuristic Flame Towers, our knowledgeable guides will share intriguing stories and give you a glimpse into the dynamic life and rich culture of contemporary Baku residents. Discover the enchanting blend of East and West that defines this fascinating city.'
     );
@@ -320,6 +321,19 @@ function mainpage() {
 
                     </div>
 
+                    {errorMessage && <p className='errormsg'>{errorMessage}</p>}
+                    <div className="infotres" style={{ display: city ? 'block' : 'none' }}>
+                        {weatherData && (
+                            <TEMP
+                                temperature={celcius}
+                                wind={wind}
+                                location={`${city}, ${country}`}
+                                weather={fahren}
+                                icon={weatherIcon}
+                            />
+                        )}
+                    </div>
+
                     <div className="infodos">
 
                         <TEMP
@@ -331,20 +345,7 @@ function mainpage() {
                         />
 
                     </div>
-                    <div>
-                        {errorMessage && <p className='errormsg'>{errorMessage}</p>}
-                        <div className="infotres" style={{ display: city ? 'block' : 'none' }}>
-                            {weatherData && (
-                                <TEMP
-                                    temperature={celcius}
-                                    wind={wind}
-                                    location={`${city}, ${country}`}
-                                    weather={fahren}
-                                    icon={weatherIcon}
-                                />
-                            )}
-                        </div>
-                    </div>
+
                 </div>
 
                 <form className="form" onSubmit={handleCityFormSubmit}>

@@ -10,7 +10,6 @@
   }
   
   .background {
-    fill: linear-gradient(90deg, #5936B4 0%, #362A84 100%);
     position: absolute;
     inset: 0;
     z-index: -1;
@@ -19,7 +18,7 @@
   .cloud {
     position: absolute;
     right: -20px;
-    top: 40px;
+    top: 10px;
   }
   
   .cloud img {

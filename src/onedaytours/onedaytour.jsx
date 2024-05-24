@@ -1,48 +1,44 @@
-import { RiArrowDownSLine } from "react-icons/ri";
-import React, { useState, useEffect, useRef } from 'react';
-import { FaArrowRightLong } from "react-icons/fa6";
-import cityTour from '../../tourtype.json';
-import cityData from '../../cities.json';
-import citiesData from '../../cityinfosectionfifth.json';
-import maidentower from '../assets/maidentower.png'
-import HEADER from '../components/header/header.jsx'
-import '../onedaytours/onedaytours.css'
-// import shahdag from '../assets/shahdag.jpg'
-import tourtwo from '../assets/zernavabridge.jpg'
-import tourthree from '../assets/masalliistisu.jpg'
 import axios from 'axios';
-import TEMP from '../components/temprature/temprature.jsx'
+import cityData from '../../cities.json';
+import '../onedaytours/onedaytours.css';
+import { RiArrowDownSLine } from "react-icons/ri";
+import { FaArrowRightLong } from "react-icons/fa6";
+import maidentower from '../assets/maidentower.png';
+import HEADER from '../components/header/header.jsx';
+import React, { useState, useEffect, useRef } from 'react';
+import TEMP from '../components/temprature/temprature.jsx';
 
 
 
 function onedaytour() {
     const dropdownRefUp = useRef(null);
-    const [tours, setTours] = useState([]);
-    const [cityLi, setCityLi] = useState('Choose City');
-    const [weatherData, setWeatherData] = useState(null);
-    const [isRotatedUp, setIsRotatedUp] = useState(false);
-    const [cityInput, setCityInput] = useState('');
     const [city, setCity] = useState('');
+    const [wind, setWind] = useState('');
+    const [tours, setTours] = useState([]);
+    const [fahren, setFahren] = useState('');
     const [country, setCountry] = useState('');
     const [celcius, setCelcius] = useState('');
-    const [fahren, setFahren] = useState('');
-    const [wind, setWind] = useState('');
+    const [cityInput, setCityInput] = useState('');
     const [weatherIcon, setWeatherIcon] = useState('');
+    const [cityLi, setCityLi] = useState('Choose City');
+    const [errorMessage, setErrorMessage] = useState(''); 
+    const [weatherData, setWeatherData] = useState(null);
+    const [isRotatedUp, setIsRotatedUp] = useState(false);
 
     const [bakuWeather, setBakuWeather] = useState({
         city: '',
-        country: '',
-        celcius: '',
+        icon: '',
         wind: '',
-        icon: ''
+        country: '',
+        celcius: ''
     });
 
     const [ganjaWeather, setGanjaWeather] = useState({
         city: '',
-        country: '',
-        celcius: '',
         wind: '',
-        icon: ''
+        icon: '',
+        celcius: '',
+        country: ''
     })
 
 
@@ -74,16 +70,20 @@ function onedaytour() {
         try {
             const response = await axios.get(`https://api.weatherapi.com/v1/current.json?key=4c8f79d84e4841f4b9c110121242305&q=${cityInput}`);
             const data = response.data;
+
+            setErrorMessage('');
+
             setWeatherData(data);
             setCity(data.location.name);
-            setCountry(data.location.country);
-            setCelcius(data.current.temp_c);
-            setFahren(data.current.condition.text);
             setWind(data.current.wind_kph);
+            setCelcius(data.current.temp_c);
+            setCountry(data.location.country);
+            setFahren(data.current.condition.text);
             setWeatherIcon(data.current.condition.icon);
-            console.log(data);
         } catch (error) {
-            console.error('Error fetching weather data:', error);
+            setErrorMessage('Please enter a correct city.');
+            setWeatherData(null);
+            // console.error('Error fetching weather data:', error);
         }
     };
 
@@ -94,7 +94,7 @@ function onedaytour() {
                 const data = await response.json();
                 setTours(data);
             } catch (error) {
-                console.error('Error fetching the tours data:', error);
+                // console.error('Error fetching the tours data:', error);
             }
         };
 
@@ -110,9 +110,9 @@ function onedaytour() {
                     icon: data.current.condition.icon,
                     fahren: data.current.condition.text
                 });
-                console.log(data);
+                // console.log(data);
             } catch (error) {
-                console.error('Error fetching weather data for Baku:', error);
+                // console.error('Error fetching weather data for Baku:', error);
             }
         };
 
@@ -128,9 +128,9 @@ function onedaytour() {
                     wind: data.current.wind_kph,
                     icon: data.current.condition.icon
                 });
-                console.log(data);
+                // console.log(data);
             } catch (error) {
-                console.error('Error fetching weather data for Baku:', error);
+                // console.error('Error fetching weather data for Baku:', error);
             }
         };
 
@@ -138,9 +138,9 @@ function onedaytour() {
             try {
                 const response = await axios.get(`https://api.weatherapi.com/v1/current.json?key=4c8f79d84e4841f4b9c110121242305&q=Azerbaijan`);
                 setWeatherData(response.data);
-                console.log(response.data);
+                // console.log(response.data);
             } catch (error) {
-                console.error('Error fetching weather data:', error);
+                // console.error('Error fetching weather data:', error);
             }
         };
 
@@ -230,6 +230,19 @@ function onedaytour() {
 
                     </div>
 
+                    {errorMessage && <p className='errormsg'>{errorMessage}</p>}
+                    <div className="infotres" style={{ display: city ? 'block' : 'none' }}>
+                        {weatherData && (
+                            <TEMP
+                                temperature={celcius}
+                                wind={wind}
+                                location={`${city}, ${country}`}
+                                weather={fahren}
+                                icon={weatherIcon}
+                            />
+                        )}
+                    </div>
+
                     <div className="infodos">
 
                         <TEMP
@@ -240,16 +253,6 @@ function onedaytour() {
                             icon={ganjaWeather.icon}
                         />
 
-                    </div>
-
-                    <div className="infotres" style={{ display: city ? 'block' : 'none' }}>
-                        <TEMP
-                            temperature={celcius}
-                            wind={wind}
-                            location={`${city}, ${country}`}
-                            weather={fahren}
-                            icon={weatherIcon}
-                        />
                     </div>
                 </div>
 
