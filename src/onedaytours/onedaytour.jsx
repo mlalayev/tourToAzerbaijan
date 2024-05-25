@@ -165,9 +165,7 @@ function onedaytour() {
         <div className="body">
 
             <div className="upperpart">
-
                 <HEADER />
-
                 <div className="containerupr">
 
 
@@ -273,8 +271,6 @@ function onedaytour() {
             </section>
 
             <section className="sectionsecondonedaytour">
-
-
 
                 <h1>Single-day tours</h1>
                 <div className="singledaytoursdiv">

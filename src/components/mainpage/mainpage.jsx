@@ -26,8 +26,7 @@ import citiesData from '../../../cityinfosectionfifth.json';
 import recommendedtres from '../../assets/recommended-3.png';
 import recommendedpieci from '../../assets/recommended-5.png';
 import recommendedcuatro from '../../assets/recommended-4.png';
-import fifthsliderone from '../../assets/fifthsectionimgone.jpg';
-
+import fifthsliderone from '../../assets/fifthsectionimgone.jpg'
 
 function mainpage() {
     const dropdownRefUp = useRef(null);
@@ -38,7 +37,7 @@ function mainpage() {
     const [selectedCity, setSelectedCity] = useState('Baku');
     const [tourLi, setTourLi] = useState('Choose travel type');
     const [chooseCity, setChooseCity] = useState('Choose City');
-    const [errorMessage, setErrorMessage] = useState(''); 
+    const [errorMessage, setErrorMessage] = useState('');
     const [selectedCityImg, setSelectedCityImg] = useState(fifthsliderone);
     const [cityInfo, setCityInfo] = useState(
         'Baku, the capital and largest city of Azerbaijan, is a vibrant metropolis blending ancient heritage and modernity. Our tours of Baku offer an insightful journey through its most captivating landmarks and unique sites. From the historical charm of the Old City (Icherisheher) to the futuristic Flame Towers, our knowledgeable guides will share intriguing stories and give you a glimpse into the dynamic life and rich culture of contemporary Baku residents. Discover the enchanting blend of East and West that defines this fascinating city.'
@@ -74,36 +73,15 @@ function mainpage() {
         country: ''
     });
 
-    const handleCityFormSubmit = async (event) => {
-        event.preventDefault();
-        try {
-            const response = await axios.get(`https://api.weatherapi.com/v1/current.json?key=4c8f79d84e4841f4b9c110121242305&q=${cityInput}`);
-            const data = response.data;
-
-            setErrorMessage('');
-
-            setWeatherData(data);
-            setCity(data.location.name);
-            setWind(data.current.wind_kph);
-            setCelcius(data.current.temp_c);
-            setCountry(data.location.country);
-            setFahren(data.current.condition.text);
-            setWeatherIcon(data.current.condition.icon);
-        } catch (error) {
-            setErrorMessage('Please enter a correct city.');
-            setWeatherData(null);
-            // console.error('Error fetching weather data:', error);
-        }
-    };
-
+    // Fetch weather data
     useEffect(() => {
-        const fetchTours = async () => {
+        const fetchWeatherData = async () => {
             try {
-                const response = await fetch('../../../singledaytours.json');
-                const data = await response.json();
-                setTours(data);
+                const response = await axios.get(`https://api.weatherapi.com/v1/current.json?key=4c8f79d84e4841f4b9c110121242305&q=Azerbaijan`);
+                setWeatherData(response.data);
+                console.log(data)
             } catch (error) {
-                // console.error('Error fetching the tours data:', error);
+                console.error('Error fetching weather data:', error);
             }
         };
 
@@ -119,9 +97,8 @@ function mainpage() {
                     icon: data.current.condition.icon,
                     fahren: data.current.condition.text
                 });
-                // console.log(data);
             } catch (error) {
-                // console.error('Error fetching weather data for Baku:', error);
+                console.error('Error fetching weather data for Baku:', error);
             }
         };
 
@@ -137,19 +114,18 @@ function mainpage() {
                     wind: data.current.wind_kph,
                     icon: data.current.condition.icon
                 });
-                // console.log(data);
             } catch (error) {
-                // console.error('Error fetching weather data for Baku:', error);
+                console.error('Error fetching weather data for Ganja:', error);
             }
         };
 
-        const fetchWeatherData = async () => {
+        const fetchTours = async () => {
             try {
-                const response = await axios.get(`https://api.weatherapi.com/v1/current.json?key=4c8f79d84e4841f4b9c110121242305&q=Azerbaijan`);
-                setWeatherData(response.data);
-                // console.log(response.data);
+                const response = await fetch('../../../singledaytours.json');
+                const data = await response.json();
+                setTours(data);
             } catch (error) {
-                // console.error('Error fetching weather data:', error);
+                console.error('Error fetching the tours data:', error);
             }
         };
 
@@ -157,9 +133,7 @@ function mainpage() {
         fetchWeatherData();
         fetchBakuWeather();
         fetchGanjaWeather();
-
     }, []);
-
 
     useEffect(() => {
         const handleOutsideClickUp = handleClickOutside(dropdownRefUp, setIsRotatedUp);
@@ -176,6 +150,38 @@ function mainpage() {
             document.removeEventListener('mousedown', handleOutsideClickDownFifth);
         };
     }, []);
+
+    const handleCityFormSubmit = async (event) => {
+        event.preventDefault();
+        try {
+            const response = await axios.get(`https://api.weatherapi.com/v1/current.json?key=4c8f79d84e4841f4b9c110121242305&q=${cityInput}`);
+            const data = response.data;
+
+            setErrorMessage('');
+            setWeatherData(data);
+            setCity(data.location.name);
+            setWind(data.current.wind_kph);
+            setCelcius(data.current.temp_c);
+            setCountry(data.location.country);
+            setFahren(data.current.condition.text);
+            setWeatherIcon(data.current.condition.icon);
+        } catch (error) {
+            setErrorMessage('Please enter a correct city.');
+            setWeatherData(null);
+        } finally {
+            setCityInput(''); // Reset the input field
+        }
+    };
+
+    const handleCityInputChange = (event) => {
+        setCityInput(event.target.value);
+    };
+
+    const handleClickOutside = (ref, setState) => (event) => {
+        if (ref.current && !ref.current.contains(event.target)) {
+            setState(false);
+        }
+    };
 
     const handleCityChangeLi = (cityName) => {
         const cityList = cityData.cities.find(city => city.cityLi === cityName);
@@ -198,16 +204,6 @@ function mainpage() {
             setChooseCity(city.cityName);
             setSelectedCity(city.cityName);
             setSelectedCityImg(city.cityImg);
-        }
-    };
-
-    const handleCityInputChange = (event) => {
-        setCityInput(event.target.value);
-    };
-
-    const handleClickOutside = (ref, setState) => (event) => {
-        if (ref.current && !ref.current.contains(event.target)) {
-            setState(false);
         }
     };
 
@@ -308,7 +304,6 @@ function mainpage() {
 
             <section className="sectionweatherinfo frmnpg">
                 <div className="weatherinfo">
-
                     <div className="infouno">
 
                         <TEMP
@@ -345,7 +340,6 @@ function mainpage() {
                         />
 
                     </div>
-
                 </div>
 
                 <form className="form" onSubmit={handleCityFormSubmit}>
