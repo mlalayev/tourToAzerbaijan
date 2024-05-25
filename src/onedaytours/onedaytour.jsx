@@ -164,34 +164,34 @@ function onedaytour() {
     return (
         <div className="body">
 
-            <div className="upperpart">
+            <div className="upper-part">
                 <HEADER />
-                <div className="containerupr">
+                <div className="container-upr">
 
 
-                    <div className="txtprt">
+                    <div className="text-part">
 
-                        <div className="txtprtrtra">
-                            <h1 className='txtprtfrsth'>Which city will you
+                        <div className="text-part-ra">
+                            <h1 className='text-part-firsth'>Which city will you
                             </h1>
-                            <h1 className='txtprtscndh'>explore with us<span className='yellow'>?</span></h1>
+                            <h1 className='text-part-secondh'>explore with us<span className='yellow'>?</span></h1>
 
-                            <p className='txtprtp'>Here you can book excursions and one-day tours without buying a package. You can combine these short tours to create your unique itinerary.</p>
+                            <p className='text-partp'>Here you can book excursions and one-day tours without buying a package. You can combine these short tours to create your unique itinerary.</p>
                         </div>
 
-                        <div className="mainpicprt">
-                            <img src={maidentower} className='main maiden' />
+                        <div className="main-pic-part">
+                            <img src={maidentower} className='main-maiden' />
                         </div>
                     </div>
                 </div>
             </div>
 
 
-            <section className="sectionfirst onedaytourcitychoose">
-                <div className="containerfrstsc">
-                    <div className="citychoose onedaytourcitychoose">
+            <section className="section-first">
+                <div className="container-first">
+                    <div className="city-choose">
 
-                        <div className="leftbuttons">
+                        <div className="left-button">
                             <div ref={dropdownRefUp} onClick={handleClickUp} className={`lftlftbtndrpdwnn  ${isRotatedUp ? 'lftlftbtndrpdwnactive' : ''}`}>
                                 {cityLi} <RiArrowDownSLine strokeWidth={2} style={{ transform: isRotatedUp ? 'rotate(180deg)' : 'none' }} />
                                 <ul className={`lftlftbtndrpdwnul ${isRotatedUp ? 'lftlftbtndrpdwnulactive' : ''}`}>

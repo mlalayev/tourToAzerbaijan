@@ -280,11 +280,11 @@ body {
     border-top-right-radius: 10px;
 }
 
-.sliderholder {
+.sliderholder, .sliderholderthrd {
     display: flex;
-    height: 530px;
     padding: 0 20px;
     max-width: 100vw;
+    min-height: 600px;
     overflow-x: scroll;
 }
 
@@ -316,14 +316,15 @@ body {
         13.4px 13.8px 10.1px rgba(0, 0, 0, 0.137),
         25.1px 25.9px 18.8px rgba(0, 0, 0, 0.137),
         60px 62px 45px rgba(0, 0, 0, 0.1);
-    transition: 0.2s;
 }
 
+.sctnthrdbtnhldr button,
 .sctnscndbtnhldr button {
     width: 50px;
     height: 25px;
     display: flex;
     border: none;
+    transition: 0.2s;
     margin-right: 20px;
     align-items: center;
     border-radius: 15px;
@@ -933,6 +934,7 @@ header {
         justify-content: space-between;
     }
 
+
     .leftbuttons div {
         width: 36vw;
         display: flex;
@@ -1010,7 +1012,7 @@ header {
 
     .sliderholder,
     .sliderholderthrd {
-        height: 600px;
+        height: 620px;
         padding-left: 180px;
     }
 
