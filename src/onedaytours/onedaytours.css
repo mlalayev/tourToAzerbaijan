@@ -16,8 +16,8 @@
 
 .body {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
 }
 
 .maiden {
@@ -62,7 +62,7 @@
 
 /* styling of whole input container */
 .form {
-    margin-top: 20px;
+    margin: 50px 0;
     box-shadow:
         3.7px 0px 75px rgba(0, 0, 0, 0.105),
         10.3px 0px 71.8px rgba(0, 0, 0, 0.15),
@@ -88,8 +88,12 @@
 }
 
 #btnwdth {
-    width: 100px;
+    width: 140px;
     margin-left: 20px;
+    color: #43c7b1;
+    font-family: var(--font-family-reddit);
+    font-weight: 600;
+    font-size: 14px;
 }
 
 /* styling of Input */
@@ -155,7 +159,7 @@ input:not(:placeholder-shown)~.reset {
 
 /* input */
 .sectionsecondonedaytour {
-    margin-top: 140px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -413,6 +417,14 @@ input:not(:placeholder-shown)~.reset {
 /* ! weather info card ! */
 /* ! weather info card ! */
 
+.sectionweatherinfo {
+    display: flex;
+    max-width: 1600px;
+    margin-top: 120px;
+    align-items: center;
+    flex-direction: column;
+    font-family: var(--font-family-reddit);
+}
 
 /* ! weather info card ! */
 /* ! weather info card ! */
@@ -424,7 +436,6 @@ input:not(:placeholder-shown)~.reset {
 /* ! weather section ! */
 
 .weatherinfo {
-    /* color: #43c7b1; */
     gap: 20px;
     width: 100%;
     display: flex;
@@ -433,16 +444,39 @@ input:not(:placeholder-shown)~.reset {
     justify-content: space-around;
 }
 
-.sectionweatherinfo {
-    margin-top: 120px;
-    font-family: var(--font-family-reddit);
-}
-
-/* ! weather section ! */
-/* ! weather section ! */
-/* ! weather section ! */
-
-
-.cloud img{
+.cloud img {
     width: 100px;
 }
+
+/* ! weather section ! */
+/* ! weather section ! */
+/* ! weather section ! */
+
+@media screen and (min-width:750px) {
+    .singledaytoursdiv {
+        gap: 20px;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .form {
+        /* border: 1px solid red; */
+        max-width: 600px;
+    }
+
+    .sectionweatherinfo {
+        min-width: 90vw;
+    }
+
+}
+
+@media screen and (min-width:1000px) {
+    .singledaytoursdiv {
+        gap: 20px;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+

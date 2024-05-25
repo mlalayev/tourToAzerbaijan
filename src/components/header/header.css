@@ -5,14 +5,14 @@
     /* border: 1px solid red; */
 }
 
-:root {
+/* :root {
     --font-family-rubik: rubik;
     --main-black-color: #000000;
     --main-white-color: #ffffff;
     --font-family-reddit: reddit sans;
     --main-light-green-color: #43c7b1;
     --main-yellow-color: rgb(255, 230, 0);
-}
+} */
 
 .logo {
     width: min(25vw, 150px);
