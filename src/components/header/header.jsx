@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './header.css'
 import logo from '../../assets/logo.svg';
 import { GoPerson } from "react-icons/go";
@@ -13,6 +13,7 @@ function header() {
 
     const [isRotated, setIsRotated] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const menuRef = useRef(null);
 
     const handleClick = () => {
         setIsRotated(!isRotated);
@@ -22,6 +23,19 @@ function header() {
         setIsMenuOpen(!isMenuOpen);
     };
 
+    const handleClickOutside = (event) => {
+        if (menuRef.current && !menuRef.current.contains(event.target)) {
+            setIsMenuOpen(false);
+        }
+    };
+
+    useEffect(() => {
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
+
     return (
         <header>
             <div className="container">
@@ -30,7 +44,7 @@ function header() {
                 <ul className="headerul">
                     <li><a href="#">Multi-day tours</a></li>
                     <li><a href="/sngldytrips">Day trips</a></li>
-                    <li><a href="#">Visa-free shore tours</a></li>
+                    <li><a href="#">Destinations</a></li>
                     <li><a href="#">Visa informations</a></li>
                 </ul>
 
@@ -57,11 +71,11 @@ function header() {
             </div>
 
             {isMenuOpen && (
-                <div className="hamburger-menu">
+                <div className="hamburger-menu" ref={menuRef}>
                     <ul>
                         <li><a href="#">Multi-day tours</a></li>
                         <li><a href="/sngldytrips">Day trips</a></li>
-                        <li><a href="#">Visa-free shore tours</a></li>
+                        <li><a href="#">Destinations</a></li>
                         <li><a href="#">Visa informations</a></li>
                     </ul>
                 </div>
