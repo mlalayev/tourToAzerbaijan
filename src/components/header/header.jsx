@@ -42,7 +42,7 @@ function header() {
                 <a href="/home"><img src={logo} className="logo" alt="Logo" /></a>
 
                 <ul className="headerul">
-                    <li><a href="#">Multi-day tours</a></li>
+                    <li><a href="/mltdytrs">Multi-day tours</a></li>
                     <li><a href="/sngldytrips">Day trips</a></li>
                     <li><a href="#">Destinations</a></li>
                     <li><a href="#">Visa informations</a></li>
@@ -73,7 +73,7 @@ function header() {
             {isMenuOpen && (
                 <div className="hamburger-menu" ref={menuRef}>
                     <ul>
-                        <li><a href="#">Multi-day tours</a></li>
+                        <li><a href="/mltdytrs">Multi-day tours</a></li>
                         <li><a href="/sngldytrips">Day trips</a></li>
                         <li><a href="#">Destinations</a></li>
                         <li><a href="#">Visa informations</a></li>

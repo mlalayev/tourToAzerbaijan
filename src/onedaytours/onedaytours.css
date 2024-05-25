@@ -66,7 +66,7 @@
 
 .main-maiden {
     width: 400px;
-    bottom: 60px;
+    bottom: 50px;
     height: 300px;
     display: flex;
     position: absolute;
@@ -79,7 +79,7 @@
     display: flex;
     height: 114px;
     max-width: 1600px;
-    margin-top: -80px;
+    margin-top: -60px;
     position: relative;
     border-radius: 8px;
     align-items: center;
@@ -118,154 +118,10 @@
     margin: 0;
 }
 
-
-@media screen and (min-width:830px) {
-    .upper-part {
-        height: 600px;
-    }
-
-    .left-button div {
-        width: 93vw;
-    }
-
-    .section-first {
-        display: flex;
-        height: 120px;
-        margin-top: -60px;
-        align-items: center;
-    }
-
-    .main-maiden {
-        bottom: 100px;
-        width: clamp(15em, 400px, 450px);
-    }
-
-    .main-pic-part {
-        top: -20px;
-        min-width: 400px;
-        min-height: 400px;
-        border-radius: 50%;
-    }
-
-    .text-part p {
-        font-size: 20px;
-    }
-
-    .text-part h1 {
-        font-size: 38px;
-    }
-
-    .text-part-ra {
-        margin-top: -50px;
-        width: 60vw;
-    }
-
-}
-
-
-@media screen and (min-width:1130px) {
-    .upper-part {
-        height: 500px;
-        display: flex;
-        margin: 0 auto;
-        position: relative;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .left-button div {
-        width: 82vw;
-        margin-right: 10px;
-        max-width: 1100px;
-    }
-
-    .city-choose {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .container-first {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        max-width: 1600px;
-        justify-content: flex-end;
-    }
-
-    .section-first {
-        height: 70px;
-        display: flex;
-        margin-top: -40px;
-        max-width: 1300px;
-        flex-direction: row;
-        padding: 0 0 0 6px;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .main-pic-part {
-        max-width: 500px;
-        max-height: 500px;
-    }
-
-    .text-part {
-        display: flex;
-        max-width: 1600px;
-        margin-top: 100px;
-        align-items: flex-start;
-        justify-content: center;
-        flex-direction: row-reverse;
-    }
-
-    .upper-part::before {
-        top: 200px;
-        content: "";
-        z-index: -1;
-        width: 100vw;
-        height: 500px;
-        position: absolute;
-        background-color: #43c7b1;
-    }
-
-    .text-part-ra {
-        width: 40vw;
-    }
-
-    .main-maiden{
-        width: 400px;
-        height: 370px;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.body {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
 .lftlftbtndrpdwnn {
-    gap: 10px;
-    width: 90vw;
     color: white;
     height: 40px;
-    margin: auto;
     display: flex;
-    padding: 0 20px;
-    margin-top: 10px;
     max-width: 1550px;
     position: relative;
     align-items: center;
@@ -275,15 +131,9 @@
     background-color: var(--main-light-green-color);
 }
 
-.onedaytourcitychoose {
-    top: 90px;
-    height: 110px !important;
-}
-
 /* ! input ! */
 /* ! input ! */
 /* ! input ! */
-/* removing default style of button */
 
 .form button {
     border: none;
@@ -291,7 +141,6 @@
     color: #8b8ba7;
 }
 
-/* styling of whole input container */
 .form {
     margin: 50px 0;
     box-shadow:
@@ -327,7 +176,6 @@
     font-size: 14px;
 }
 
-/* styling of Input */
 .input {
     font-size: 0.9rem;
     background-color: transparent;
@@ -338,7 +186,6 @@
     border: none;
 }
 
-/* styling of animated border */
 .form:before {
     content: "";
     position: absolute;
@@ -353,7 +200,6 @@
     transition: transform var(--timing) ease;
 }
 
-/* Hover on Input */
 .form:focus-within {
     border-radius: var(--after-border-radius);
 }
@@ -362,13 +208,10 @@ input:focus {
     outline: none;
 }
 
-/* here is code of animated border */
 .form:focus-within:before {
     transform: scale(1);
 }
 
-/* styling of close button */
-/* == you can click the close button to remove text == */
 .reset {
     border: none;
     background: none;
@@ -376,19 +219,16 @@ input:focus {
     visibility: hidden;
 }
 
-/* close button shown when typing */
 input:not(:placeholder-shown)~.reset {
     opacity: 1;
     visibility: visible;
 }
 
-/* sizing svg icons */
 .form svg {
     width: 17px;
     margin-top: 3px;
 }
 
-/* input */
 .sectionsecondonedaytour {
     margin-top: 20px;
     display: flex;
@@ -446,8 +286,6 @@ input:not(:placeholder-shown)~.reset {
 .sectionsecondonedaytour {
     padding: 0 20px;
 }
-
-
 
 /* ! button css ! */
 /* ! button css ! */
@@ -630,8 +468,6 @@ input:not(:placeholder-shown)~.reset {
         stroke-dashoffset: 0;
     }
 }
-
-
 /* ! button css ! */
 /* ! button css ! */
 /* ! button css ! */
@@ -644,27 +480,20 @@ input:not(:placeholder-shown)~.reset {
     justify-content: center;
 }
 
-/* ! weather info card ! */
-/* ! weather info card ! */
-/* ! weather info card ! */
-
 .sectionweatherinfo {
     display: flex;
+    margin-top: 40px;
     max-width: 1600px;
-    margin-top: 120px;
     align-items: center;
     flex-direction: column;
     font-family: var(--font-family-reddit);
 }
 
-/* ! weather info card ! */
-/* ! weather info card ! */
-/* ! weather info card ! */
-
-
-/* ! weather section ! */
-/* ! weather section ! */
-/* ! weather section ! */
+.body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
 .weatherinfo {
     gap: 20px;
@@ -679,9 +508,124 @@ input:not(:placeholder-shown)~.reset {
     width: 100px;
 }
 
-/* ! weather section ! */
-/* ! weather section ! */
-/* ! weather section ! */
+@media screen and (min-width:830px) {
+    .upper-part {
+        height: 600px;
+    }
+
+    .left-button div {
+        width: 93vw;
+    }
+
+    .section-first {
+        display: flex;
+        height: 120px;
+        margin-top: -60px;
+        align-items: center;
+    }
+
+    .main-maiden {
+        bottom: 100px;
+        width: clamp(15em, 400px, 450px);
+    }
+
+    .main-pic-part {
+        top: -20px;
+        min-width: 400px;
+        min-height: 400px;
+        border-radius: 50%;
+    }
+
+    .text-part p {
+        font-size: 20px;
+    }
+
+    .text-part h1 {
+        font-size: 38px;
+    }
+
+    .text-part-ra {
+        margin-top: -50px;
+        width: 60vw;
+    }
+
+}
+
+
+@media screen and (min-width:1130px) {
+    .upper-part {
+        height: 500px;
+        display: flex;
+        margin: 0 auto;
+        position: relative;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .left-button div {
+        width: 82vw;
+        margin-right: 10px;
+        max-width: 1100px;
+    }
+
+    .city-choose {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .container-first {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        max-width: 1600px;
+        justify-content: flex-end;
+    }
+
+    .section-first {
+        height: 70px;
+        display: flex;
+        margin-top: -40px;
+        max-width: 1300px;
+        flex-direction: row;
+        padding: 0 0 0 6px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .main-pic-part {
+        max-width: 500px;
+        max-height: 500px;
+    }
+
+    .text-part {
+        display: flex;
+        max-width: 1600px;
+        margin-top: 100px;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: row-reverse;
+    }
+
+    .upper-part::before {
+        top: 200px;
+        content: "";
+        z-index: -1;
+        width: 100vw;
+        height: 500px;
+        position: absolute;
+        background-color: #43c7b1;
+    }
+
+    .text-part-ra {
+        width: 40vw;
+    }
+
+    .main-maiden{
+        width: 400px;
+        height: 370px;
+    }
+}
 
 @media screen and (min-width:750px) {
     .singledaytoursdiv {
@@ -690,16 +634,6 @@ input:not(:placeholder-shown)~.reset {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-
-    .form {
-        /* border: 1px solid red; */
-        max-width: 1400px;
-    }
-
-    .sectionweatherinfo {
-        min-width: 90vw;
-    }
-
 }
 
 @media screen and (min-width:1000px) {
