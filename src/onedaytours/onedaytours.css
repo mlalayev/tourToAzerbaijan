@@ -293,7 +293,7 @@ input:not(:placeholder-shown)~.reset {
 
 .cta {
     border: none;
-    width: 160px;
+    width: 150px;
     display: flex;
     cursor: pointer;
     background: none;
@@ -309,7 +309,7 @@ input:not(:placeholder-shown)~.reset {
     left: 0;
     width: 45px;
     content: "";
-    height: 45px;
+    height: 42px;
     display: block;
     position: absolute;
     border-radius: 50px;
@@ -340,7 +340,7 @@ input:not(:placeholder-shown)~.reset {
 }
 
 .cta:hover:before {
-    width: 100%;
+    width: 96%;
     background: #43c7b1;
 }
 
