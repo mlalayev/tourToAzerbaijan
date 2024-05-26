@@ -53,5 +53,15 @@
         "imgSrc": "./src/assets/qecres.jpg",
         "title": "Qechresh Forest",
         "description": "A picturesque forest perfect for nature walks and picnics."
+    },
+    {
+        "imgSrc": "./src/assets/qecres.jpg",
+        "title": "Qechresh Forest",
+        "description": "A picturesque forest perfect for nature walks and picnics."
+    },
+    {
+        "imgSrc": "./src/assets/qecres.jpg",
+        "title": "Qechresh Forest",
+        "description": "A picturesque forest perfect for nature walks and picnics."
     }
 ]
