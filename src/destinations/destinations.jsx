@@ -278,17 +278,19 @@ function destinations() {
                 {destinations.map((destination, index) => (
                     <div key={index} className='infoholder'>
                         <div className="infoholder-img">
-                            <button class="custom-button">
-                                <span class="custom-button-text">Recommended</span>
-                                <div class="tooltip-container">
-                                    <div class="tooltip-content">
-                                        <div class="tooltip-box">
-                                            <p>This city recommended by author!</p>
+                            {destination.isRecommended && (
+                                <button className="custom-button">
+                                    <span className="custom-button-text">Recommended</span>
+                                    <div className="tooltip-container">
+                                        <div className="tooltip-content">
+                                            <div className="tooltip-box">
+                                                <p>This city is recommended by the author!</p>
+                                            </div>
+                                            <div className="tooltip-arrow"></div>
                                         </div>
-                                        <div class="tooltip-arrow"></div>
                                     </div>
-                                </div>
-                            </button>
+                                </button>
+                            )}
                             <img src={destination.imgSrc} alt={destination.title} className='infoholder-image' />
                         </div>
                         <div className="div-holder">
