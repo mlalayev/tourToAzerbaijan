@@ -5,6 +5,7 @@ import React, { useState, useEffect } from 'react';
 import FOOTER from './components/footer/footer.jsx';
 import HEADER from './components/header/header.jsx';
 import MAINPAGE from './components/mainpage/mainpage.jsx';
+import DESTINATIONS from './destinations/destinations.jsx';
 import UPPERPART from './components/upperpart/upperpart.jsx';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -94,9 +95,10 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/mltdytrs" element={<><MULTIDAY /><FOOTER /></>} />
-        <Route path="/home" element={<><UPPERPART /><MAINPAGE /><FOOTER /></>} />
-        <Route path="/" element={<><UPPERPART /><MAINPAGE /><FOOTER /></>} />
         <Route path="/sngldytrips" element={<><ONEDAY /><FOOTER /></>} />
+        <Route path="/dstntns" element={<><DESTINATIONS /><FOOTER /></>} />
+        <Route path="/" element={<><UPPERPART /><MAINPAGE /><FOOTER /></>} />
+        <Route path="/home" element={<><UPPERPART /><MAINPAGE /><FOOTER /></>} />
       </Routes>
     </BrowserRouter>
   );

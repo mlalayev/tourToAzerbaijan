@@ -44,7 +44,7 @@ function header() {
                 <ul className="headerul">
                     <li><a href="/mltdytrs">Multi-day tours</a></li>
                     <li><a href="/sngldytrips">Day trips</a></li>
-                    <li><a href="#">Destinations</a></li>
+                    <li><a href="/dstntns">Destinations</a></li>
                     <li><a href="#">Visa informations</a></li>
                 </ul>
 
@@ -75,7 +75,7 @@ function header() {
                     <ul>
                         <li><a href="/mltdytrs">Multi-day tours</a></li>
                         <li><a href="/sngldytrips">Day trips</a></li>
-                        <li><a href="#">Destinations</a></li>
+                        <li><a href="/dstntns">Destinations</a></li>
                         <li><a href="#">Visa informations</a></li>
                     </ul>
                 </div>
