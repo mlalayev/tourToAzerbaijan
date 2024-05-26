@@ -1,12 +1,14 @@
 import axios from 'axios';
 import cityData from '../../cities.json';
-import '../multidaytours/multidaytour.css';
+import '../destinations/destinations.css';
 import momuna from '../assets/mominakhatun.png';
 import { RiArrowDownSLine } from "react-icons/ri";
 import { FaArrowRightLong } from "react-icons/fa6";
 import HEADER from '../components/header/header.jsx';
 import React, { useState, useEffect, useRef } from 'react';
 import TEMP from '../components/temprature/temprature.jsx';
+
+import test from '../assets/bakuboulvard.jpg'
 
 
 
@@ -97,12 +99,8 @@ function destinations() {
                 const data = await response.json();
                 setDestinations(data);
 
-                data.forEach(destination => {
-                    setCountryPic(destination.title);
-                });
-                // console.log(data)
             } catch (error) {
-                // console.error('Error fetching the tours data:', error);
+                console.error('Error fetching the tours data:', error);
             }
         };
 
@@ -193,7 +191,6 @@ function destinations() {
                 </div>
             </div>
 
-
             <section className="section-first">
                 <div className="container-first">
                     <div className="city-choose">
@@ -275,6 +272,27 @@ function destinations() {
                     </button>
                     <button id="btnwdth" type="submit">Get Weather</button>
                 </form>
+            </section>
+
+            <section className="section-info">
+                {destinations.map((destination, index) => (
+                    <div key={index} className='infoholder'>
+                        <div className="infoholder-img">
+                            <img src={destination.imgSrc} alt={destination.title} className='infoholder-image' />
+                        </div>
+                        <div className="infoholder-text">
+                            <h1>{destination.title}</h1>
+                            <p>{destination.description}</p>
+                        </div>
+                        <button className="cta mnpgbtn dstbtn">
+                            <span>View me</span>
+                            <svg width="15px" height="10px" viewBox="0 0 13 10">
+                                <path d="M1,5 L11,5"></path>
+                                <polyline points="8 1 12 5 8 9"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                ))}
             </section>
         </div>
     )

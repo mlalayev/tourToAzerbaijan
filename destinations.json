@@ -1,73 +1,52 @@
 [
     {
-        "imgSrc": "./src/assets/shahdag.jpg",
-        "title": "Shahdag",
-        "description": "Shahdag in Azerbaijan is a premier mountain resort offering year-round outdoor activities and stunning natural scenery."
-    },
-    {
-        "imgSrc": "./src/assets/iceriseher.jpg",
-        "title": "Icherisheher (Old City)",
+        "imgSrc": "./src/assets/bakumap.png",
+        "title": "Baku",
         "description": "Explore the historic center of Baku, a UNESCO World Heritage site."
     },
     {
-        "imgSrc": "./src/assets/bakuboulvard.jpg",
-        "title": "Baku Boulevard",
+        "imgSrc": "./src/assets/lankaranmap.png",
+        "title": "Lankaran",
+        "description": "Shahdag in Azerbaijan is a premier mountain resort offering year-round outdoor activities and stunning natural scenery."
+    },
+    {
+        "imgSrc": "./src/assets/shamakhimap.png",
+        "title": "Shamakhy",
         "description": "A scenic promenade along the Caspian Sea."
     },
     {
-        "imgSrc": "./src/assets/qecres.jpg",
+        "imgSrc": "./src/assets/gubamap.png",
         "title": "Qechresh Forest",
         "description": "A picturesque forest perfect for nature walks and picnics."
     },
     {
-        "imgSrc": "./src/assets/afurca.jpg",
+        "imgSrc": "./src/assets/shakimap.png",
         "title": "Afurdzhi Waterfall",
         "description": "A beautiful waterfall located in the village of Afurdzhi."
     },
     {
-        "imgSrc": "./src/assets/seki.jpg",
+        "imgSrc": "./src/assets/ganjamap.png",
         "title": "Sheki Khan's Palace",
         "description": " A historic palace known for its beautiful stained glass windows and intricate architecture."
     },
     {
-        "imgSrc": "./src/assets/butulkaliev.jpg",
+        "imgSrc": "./src/assets/gusarmap.png",
         "title": "Qechresh Forest",
         "description": "A picturesque forest perfect for nature walks and picnics."
     },
     {
-        "imgSrc": "./src/assets/hirkanmp.jpg",
+        "imgSrc": "./src/assets/ismaillymap.png",
         "title": "Hirkan National Park",
         "description": "A biodiversity hotspot with unique flora and fauna, great for hiking and wildlife watching."
     },
     {
-        "imgSrc": "./src/assets/yeddigumbaz.jpg",
+        "imgSrc": "./src/assets/khizimap.png",
         "title": "Yeddi Gumbaz Mausoleum",
         "description": "A historic site with seven ancient tombs."
     },
     {
-        "imgSrc": "./src/assets/qecres.jpg",
-        "title": "Qechresh Forest",
-        "description": "A picturesque forest perfect for nature walks and picnics."
-    },
-    {
-        "imgSrc": "./src/assets/qecres.jpg",
-        "title": "Qechresh Forest",
-        "description": "A picturesque forest perfect for nature walks and picnics."
-    },    {
-        "imgSrc": "./src/assets/qecres.jpg",
-        "title": "Qechresh Forest",
-        "description": "A picturesque forest perfect for nature walks and picnics."
-    },    {
-        "imgSrc": "./src/assets/qecres.jpg",
-        "title": "Qechresh Forest",
-        "description": "A picturesque forest perfect for nature walks and picnics."
-    },    {
-        "imgSrc": "./src/assets/qecres.jpg",
-        "title": "Qechresh Forest",
-        "description": "A picturesque forest perfect for nature walks and picnics."
-    },    {
-        "imgSrc": "./src/assets/qecres.jpg",
-        "title": "Qechresh Forest",
-        "description": "A picturesque forest perfect for nature walks and picnics."
+        "imgSrc": "./src/assets/lerikmap.png",
+        "title": "Yeddi Gumbaz Mausoleum",
+        "description": "A historic site with seven ancient tombs."
     }
 ]
