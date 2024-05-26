@@ -10,12 +10,19 @@ import { GrCertificate } from "react-icons/gr";
 import { FaAnglesRight } from "react-icons/fa6";
 import TEMP from '../temprature/temprature.jsx';
 import sliderdos from '../../assets/slider2.jpg';
+import yanardag from '../../assets/yanardag.jpg';
+import khizidag from '../../assets/khizidag.jpg';
+import atashgah from '../../assets/atashgah.jpeg';
 import { RiArrowDownSLine } from "react-icons/ri";
 import slideruno from '../../assets/slider1.jpeg';
 import { FaArrowRightLong } from "react-icons/fa6";
+import mudvolcano from '../../assets/mudvolcano.jpg';
+import hdlymosque from '../../assets/hdlymosque.jpg';
 import slidersessi from '../../assets/slider6quba.jpg';
+import ganimetpark from '../../assets/ganimetpark.jpg';
 import slidertres from '../../assets/slider3qabala.jpg';
 import slidercuatro from '../../assets/slider4lerik.jpg';
+import slidershahdag from '../../assets/slidershahdag.jpg';
 import sliderseptini from '../../assets/slider7shusha.jpg';
 import React, { useState, useEffect, useRef } from 'react';
 import { LiaHandHoldingHeartSolid } from "react-icons/lia";
@@ -26,7 +33,7 @@ import citiesData from '../../../cityinfosectionfifth.json';
 import recommendedtres from '../../assets/recommended-3.png';
 import recommendedpieci from '../../assets/recommended-5.png';
 import recommendedcuatro from '../../assets/recommended-4.png';
-import fifthsliderone from '../../assets/fifthsectionimgone.jpg'
+import fifthsliderone from '../../assets/fifthsectionimgone.jpg';
 
 function mainpage() {
     const dropdownRefUp = useRef(null);
@@ -381,10 +388,9 @@ function mainpage() {
                             <div className="txtprtscndscc">
                                 <h1>Tours to Baku and its sights</h1>
                                 <p>Feel the lifestyle and culture of the ancient Azerbaijani metropolis. Our professional guides...</p>
-                                {/* <button>View 29 tours <FaArrowRightLong /> </button> */}
 
                                 <button className="cta mnpgbtn">
-                                    <span>Hover me</span>
+                                    <span>View me</span>
                                     <svg width="15px" height="10px" viewBox="0 0 13 10">
                                         <path d="M1,5 L11,5"></path>
                                         <polyline points="8 1 12 5 8 9"></polyline>
@@ -422,12 +428,12 @@ function mainpage() {
                     <div className="sliderholderthrd" id='sectionthird'>
 
                         <div className="sliderone">
-                            <img src={slideruno} className='slideruno' />
+                            <img src={atashgah} className='slideruno' />
                             <div className="txtprtthrdscc">
-                                <h1>Tours to Baku and its sights</h1>
-                                <p>Feel the lifestyle and culture of the ancient Azerbaijani metropolis. Our professional guides...</p>
+                                <h1>Ateshgah</h1>
+                                <p>Fire Temple of Baku, is a fascinating historical and religious site. This pentagonal complex, built during the 17th and...</p>
                                 <button className="cta mnpgbtn">
-                                    <span>Hover me</span>
+                                    <span>View me</span>
                                     <svg width="15px" height="10px" viewBox="0 0 13 10">
                                         <path d="M1,5 L11,5"></path>
                                         <polyline points="8 1 12 5 8 9"></polyline>
@@ -436,12 +442,12 @@ function mainpage() {
                             </div>
                         </div>
 
-                        <SLIDER imgg={sliderdos} huno={'Baku Boulevard'} p={'1 day from 179,48 eur'} btn={'View'} />
-                        <SLIDER imgg={slidertres} huno={'Weekend in Qabala from Upon request'} p={'8 days / 7 nights from 343,64 Eur'} btn={'View'} />
-                        <SLIDER imgg={slidercuatro} huno={'Weekend in Lerik from Upon request'} p={'3 days / 2 nights from 94,54'} btn={'View'} />
-                        <SLIDER imgg={sliderpierci} huno={'Weekend in Lankaran from Upon request'} p={'3 days / 2 nights from 146,85'} btn={'View'} />
-                        <SLIDER imgg={slidersessi} huno={'Weekend in Quba from Upon request'} p={'3 days / 2 nights from 245,58'} btn={'View'} />
-                        <SLIDER imgg={sliderseptini} huno={'Weekend in Shusha from Upon request'} p={'3 days / 2 nights from 180,93'} btn={'View'} />
+                        <SLIDER imgg={slidershahdag} huno={'Shahdag Mountain Resort'} p={'A large resort area with multiple hotels offering skiing, snowboarding, and other winter sports...'} btn={'View'} />
+                        <SLIDER imgg={khizidag} huno={'The Khizi Red Mountains'} p={' Khizi district of Azerbaijan, are known for their striking red and orange hues...'} btn={'View'} />
+                        <SLIDER imgg={ganimetpark} huno={'Military Trophies Park in Baku '} p={'Extensive collection of captured military equipment and artifacts, providing a stark and...'} btn={'View'} />
+                        <SLIDER imgg={mudvolcano} huno={'The Gobustan mud volcanoes'} p={'Renowned for their therapeutic properties, believed to improve skin conditions and...'} btn={'View'} />
+                        <SLIDER imgg={hdlymosque} huno={'The Heydar Aliyev Mosque'} p={'is the largest mosque in the Caucasus region, notable for its impressive architectural design and grand scale...'} btn={'View'} />
+                        <SLIDER imgg={yanardag} huno={'Yanardagh (Burning hill)'} p={' is a natural gas fire that continuously burns on a hillside, creating a mesmerizing and enduring display...'} btn={'View'} />
                     </div>
                 </div>
             </section>

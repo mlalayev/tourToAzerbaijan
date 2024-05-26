@@ -206,7 +206,7 @@ body {
 /* ! */
 .sectionsecond {
     max-width: 99vw;
-    margin-top: 30px;
+    margin-top: -40px;
     position: relative;
     font-family: var(--font-family-reddit);
 }
@@ -384,7 +384,7 @@ body {
 /* ! */
 .sectionthird {
     max-width: 99vw;
-    margin-top: 30px;
+    margin-top: -30px;
     position: relative;
     overflow-x: hidden;
     font-family: var(--font-family-reddit);

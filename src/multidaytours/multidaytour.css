@@ -1,0 +1,55 @@
+.sectionsecondonedaytour{
+    font-family: var(--font-family-reddit);
+}
+
+.main-pic-parttwo{
+    display: flex;
+    position: relative;
+    border-radius: 225px;
+    margin-bottom: -20px;
+    align-items: flex-end;
+    width: max(40vh, 400px);
+    justify-content: center;
+    height: max(30vh, 400px);
+    background-color: #2f8a7b;
+}
+
+
+.main-momuna {
+    width: 250px;
+    bottom: 0px;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width:830px) {
+    .main-momuna {
+        bottom: 10px;
+        width: 250px;
+
+    }
+
+    .main-pic-parttwo {
+        top: -20px;
+        min-width: 400px;
+        min-height: 400px;
+        border-radius: 50%;
+    }
+}
+
+@media screen and (min-width:1130px) {
+    .main-momuna{
+        width: 250px;
+        height: 400px;
+        bottom: 60px;
+    }
+
+    .main-pic-parttwo {
+        max-width: 500px;
+        max-height: 500px;
+    }
+}

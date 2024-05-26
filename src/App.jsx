@@ -1,5 +1,6 @@
 import './App.css';
 import ONEDAY from './onedaytours/onedaytour.jsx';
+import MULTIDAY from './multidaytours/multidaytour.jsx';
 import React, { useState, useEffect } from 'react';
 import FOOTER from './components/footer/footer.jsx';
 import HEADER from './components/header/header.jsx';
@@ -92,8 +93,9 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<><UPPERPART /><MAINPAGE /><FOOTER /></>} />
+        <Route path="/mltdytrs" element={<><MULTIDAY /><FOOTER /></>} />
         <Route path="/home" element={<><UPPERPART /><MAINPAGE /><FOOTER /></>} />
+        <Route path="/" element={<><UPPERPART /><MAINPAGE /><FOOTER /></>} />
         <Route path="/sngldytrips" element={<><ONEDAY /><FOOTER /></>} />
       </Routes>
     </BrowserRouter>
