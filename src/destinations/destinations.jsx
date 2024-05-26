@@ -278,19 +278,32 @@ function destinations() {
                 {destinations.map((destination, index) => (
                     <div key={index} className='infoholder'>
                         <div className="infoholder-img">
+                            <button class="custom-button">
+                                <span class="custom-button-text">Recommended</span>
+                                <div class="tooltip-container">
+                                    <div class="tooltip-content">
+                                        <div class="tooltip-box">
+                                            <p>This city recommended by author!</p>
+                                        </div>
+                                        <div class="tooltip-arrow"></div>
+                                    </div>
+                                </div>
+                            </button>
                             <img src={destination.imgSrc} alt={destination.title} className='infoholder-image' />
                         </div>
-                        <div className="infoholder-text">
-                            <h1>{destination.title}</h1>
-                            <p>{destination.description}</p>
+                        <div className="div-holder">
+                            <div className="infoholder-text">
+                                <h1>{destination.title}</h1>
+                                <p>{destination.description}</p>
+                            </div>
+                            <button className="cta mnpgbtn dstbtn">
+                                <span>View me</span>
+                                <svg width="15px" height="10px" viewBox="0 0 13 10">
+                                    <path d="M1,5 L11,5"></path>
+                                    <polyline points="8 1 12 5 8 9"></polyline>
+                                </svg>
+                            </button>
                         </div>
-                        <button className="cta mnpgbtn dstbtn">
-                            <span>View me</span>
-                            <svg width="15px" height="10px" viewBox="0 0 13 10">
-                                <path d="M1,5 L11,5"></path>
-                                <polyline points="8 1 12 5 8 9"></polyline>
-                            </svg>
-                        </button>
                     </div>
                 ))}
             </section>
