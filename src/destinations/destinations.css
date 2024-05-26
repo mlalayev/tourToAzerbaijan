@@ -66,8 +66,7 @@
     height: 40px;
     width: 120px;
     color: white;
-    transition: background 1s, color 1s;
-    /* transition: 1s; */
+    transition: 1s;
     padding: 0.5rem;
     cursor: pointer;
     font-weight: 600;
@@ -130,6 +129,7 @@
 .tooltip-box {
     width: 170px;
     color: #cbd5e1;
+    font-size: 12px;
     margin-top: -6px;
     margin-left: 5px;
     background: #000000;
