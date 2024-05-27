@@ -8,27 +8,19 @@ import HEADER from '../components/header/header.jsx';
 import React, { useState, useEffect, useRef } from 'react';
 import TEMP from '../components/temprature/temprature.jsx';
 
-import test from '../assets/bakuboulvard.jpg'
 
 
 
 function destinations() {
     const dropdownRefUp = useRef(null);
-    const [city, setCity] = useState('');
-    const [wind, setWind] = useState('');
-    const [fahren, setFahren] = useState('');
-    const [country, setCountry] = useState('');
-    const [celcius, setCelcius] = useState('');
     const [cityInput, setCityInput] = useState('');
-    const [weatherIcon, setWeatherIcon] = useState('');
     const [cityLi, setCityLi] = useState('Choose City');
     const [destinations, setDestinations] = useState([]);
     const [errorMessage, setErrorMessage] = useState('');
     const [weatherData, setWeatherData] = useState(null);
     const [isRotatedUp, setIsRotatedUp] = useState(false);
-
-
-    const [countryPic, setCountryPic] = useState('');
+    const [showDefaultWeather, setShowDefaultWeather] = useState(true);
+    const [cityWeatherFetched, setCityWeatherFetched] = useState(false);
 
     const [bakuWeather, setBakuWeather] = useState({
         city: '',
@@ -45,8 +37,6 @@ function destinations() {
         celcius: '',
         country: ''
     })
-
-
 
     const handleCityChangeLi = (cityName) => {
         const cityList = cityData.cities.find(city => city.cityLi === cityName);
@@ -66,29 +56,26 @@ function destinations() {
         setIsRotatedUp(!isRotatedUp);
     };
 
-    const handleCityInputChange = (event) => {
-        setCityInput(event.target.value);
-    };
-
     const handleCityFormSubmit = async (event) => {
         event.preventDefault();
         try {
             const response = await axios.get(`https://api.weatherapi.com/v1/current.json?key=4c8f79d84e4841f4b9c110121242305&q=${cityInput}`);
             const data = response.data;
-
+            setWeatherData({
+                city: data.location.name,
+                country: data.location.country,
+                celcius: data.current.temp_c,
+                fahren: data.current.condition.text,
+                wind: data.current.wind_kph,
+                icon: data.current.condition.icon,
+            });
+            setShowDefaultWeather(false); // Hide Baku and Ganja weather
+            setCityWeatherFetched(true); // Show new city weather
             setErrorMessage('');
-
-            setWeatherData(data);
-            setCity(data.location.name);
-            setWind(data.current.wind_kph);
-            setCelcius(data.current.temp_c);
-            setCountry(data.location.country);
-            setFahren(data.current.condition.text);
-            setWeatherIcon(data.current.condition.icon);
         } catch (error) {
-            setErrorMessage('Please enter a correct city.');
-            setWeatherData(null);
-            // console.error('Error fetching weather data:', error);
+            setErrorMessage('Error fetching weather data for the specified city');
+            setShowDefaultWeather(true); // Show Baku and Ganja weather in case of an error
+            setCityWeatherFetched(false); // Hide new city weather in case of an error
         }
     };
 
@@ -98,7 +85,6 @@ function destinations() {
                 const response = await fetch('../../destinations.json');
                 const data = await response.json();
                 setDestinations(data);
-
             } catch (error) {
                 console.error('Error fetching the tours data:', error);
             }
@@ -114,11 +100,10 @@ function destinations() {
                     celcius: data.current.temp_c,
                     country: data.location.country,
                     icon: data.current.condition.icon,
-                    fahren: data.current.condition.text
+                    fahren: data.current.condition.text,
                 });
-                // console.log(data);
             } catch (error) {
-                // console.error('Error fetching weather data for Baku:', error);
+                console.error('Error fetching weather data for Baku:', error);
             }
         };
 
@@ -132,11 +117,10 @@ function destinations() {
                     celcius: data.current.temp_c,
                     fahren: data.current.condition.text,
                     wind: data.current.wind_kph,
-                    icon: data.current.condition.icon
+                    icon: data.current.condition.icon,
                 });
-                // console.log(data);
             } catch (error) {
-                // console.error('Error fetching weather data for Baku:', error);
+                console.error('Error fetching weather data for Ganja:', error);
             }
         };
 
@@ -219,43 +203,45 @@ function destinations() {
 
             <section className="sectionweatherinfo">
                 <div className="weatherinfo">
+                    {showDefaultWeather && (
+                        <>
+                            <div className="infouno">
+                                <TEMP
+                                    temperature={bakuWeather.celcius}
+                                    wind={bakuWeather.wind}
+                                    location={`${bakuWeather.city}, ${bakuWeather.country}`}
+                                    weather={bakuWeather.fahren}
+                                    icon={bakuWeather.icon}
+                                />
+                            </div>
 
-                    <div className="infouno">
-
-                        <TEMP
-                            temperature={bakuWeather.celcius}
-                            wind={bakuWeather.wind}
-                            location={`${bakuWeather.city}, ${bakuWeather.country}`}
-                            weather={bakuWeather.fahren}
-                            icon={bakuWeather.icon}
-                        />
-
-                    </div>
+                            <div className="infodos">
+                                <TEMP
+                                    temperature={ganjaWeather.celcius}
+                                    wind={ganjaWeather.wind}
+                                    location={`${ganjaWeather.city}, ${ganjaWeather.country}`}
+                                    weather={ganjaWeather.fahren}
+                                    icon={ganjaWeather.icon}
+                                />
+                            </div>
+                        </>
+                    )}
 
                     {errorMessage && <p className='errormsg'>{errorMessage}</p>}
-                    <div className="infotres" style={{ display: city ? 'block' : 'none' }}>
-                        {weatherData && (
-                            <TEMP
-                                temperature={celcius}
-                                wind={wind}
-                                location={`${city}, ${country}`}
-                                weather={fahren}
-                                icon={weatherIcon}
-                            />
-                        )}
-                    </div>
 
-                    <div className="infodos">
-
-                        <TEMP
-                            temperature={ganjaWeather.celcius}
-                            wind={ganjaWeather.wind}
-                            location={`${ganjaWeather.city}, ${ganjaWeather.country}`}
-                            weather={ganjaWeather.fahren}
-                            icon={ganjaWeather.icon}
-                        />
-
-                    </div>
+                    {cityWeatherFetched && (
+                        <div className="infotres">
+                            {weatherData && (
+                                <TEMP
+                                    temperature={weatherData.celcius}
+                                    wind={weatherData.wind}
+                                    location={`${weatherData.city}, ${weatherData.country}`}
+                                    weather={weatherData.fahren}
+                                    icon={weatherData.icon}
+                                />
+                            )}
+                        </div>
+                    )}
                 </div>
 
                 <form className="form" onSubmit={handleCityFormSubmit}>
@@ -264,7 +250,7 @@ function destinations() {
                             <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9" stroke="currentColor" strokeWidth="1.333" strokeLinecap="round" strokeLinejoin="round"></path>
                         </svg>
                     </button>
-                    <input className="input" value={cityInput} onChange={handleCityInputChange} placeholder="Enter City Name" required type="text" />
+                    <input className="input" value={cityInput} onChange={(e) => setCityInput(e.target.value)} placeholder="Enter City Name" required type="text" />
                     <button className="reset" type="reset">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12"></path>
