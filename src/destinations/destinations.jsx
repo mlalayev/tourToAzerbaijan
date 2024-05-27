@@ -1,42 +1,20 @@
-import axios from 'axios';
 import cityData from '../../cities.json';
 import '../destinations/destinations.css';
 import momuna from '../assets/mominakhatun.png';
 import { RiArrowDownSLine } from "react-icons/ri";
 import { FaArrowRightLong } from "react-icons/fa6";
 import HEADER from '../components/header/header.jsx';
+import WAPI from '../components/weatherapi/weatherapi.jsx';
 import React, { useState, useEffect, useRef } from 'react';
-import TEMP from '../components/temprature/temprature.jsx';
-
 
 
 
 function destinations() {
     const dropdownRefUp = useRef(null);
-    const [cityInput, setCityInput] = useState('');
     const [cityLi, setCityLi] = useState('Choose City');
     const [destinations, setDestinations] = useState([]);
-    const [errorMessage, setErrorMessage] = useState('');
-    const [weatherData, setWeatherData] = useState(null);
     const [isRotatedUp, setIsRotatedUp] = useState(false);
-    const [showDefaultWeather, setShowDefaultWeather] = useState(true);
-    const [cityWeatherFetched, setCityWeatherFetched] = useState(false);
-
-    const [bakuWeather, setBakuWeather] = useState({
-        city: '',
-        icon: '',
-        wind: '',
-        country: '',
-        celcius: ''
-    });
-
-    const [ganjaWeather, setGanjaWeather] = useState({
-        city: '',
-        wind: '',
-        icon: '',
-        celcius: '',
-        country: ''
-    })
+ 
 
     const handleCityChangeLi = (cityName) => {
         const cityList = cityData.cities.find(city => city.cityLi === cityName);
@@ -56,29 +34,6 @@ function destinations() {
         setIsRotatedUp(!isRotatedUp);
     };
 
-    const handleCityFormSubmit = async (event) => {
-        event.preventDefault();
-        try {
-            const response = await axios.get(`https://api.weatherapi.com/v1/current.json?key=4c8f79d84e4841f4b9c110121242305&q=${cityInput}`);
-            const data = response.data;
-            setWeatherData({
-                city: data.location.name,
-                country: data.location.country,
-                celcius: data.current.temp_c,
-                fahren: data.current.condition.text,
-                wind: data.current.wind_kph,
-                icon: data.current.condition.icon,
-            });
-            setShowDefaultWeather(false); // Hide Baku and Ganja weather
-            setCityWeatherFetched(true); // Show new city weather
-            setErrorMessage('');
-        } catch (error) {
-            setErrorMessage('Error fetching weather data for the specified city');
-            setShowDefaultWeather(true); // Show Baku and Ganja weather in case of an error
-            setCityWeatherFetched(false); // Hide new city weather in case of an error
-        }
-    };
-
     useEffect(() => {
         const fetchDestinations = async () => {
             try {
@@ -90,55 +45,7 @@ function destinations() {
             }
         };
 
-        const fetchBakuWeather = async () => {
-            try {
-                const response = await axios.get(`https://api.weatherapi.com/v1/current.json?key=4c8f79d84e4841f4b9c110121242305&q=Baku`);
-                const data = response.data;
-                setBakuWeather({
-                    city: data.location.name,
-                    wind: data.current.wind_kph,
-                    celcius: data.current.temp_c,
-                    country: data.location.country,
-                    icon: data.current.condition.icon,
-                    fahren: data.current.condition.text,
-                });
-            } catch (error) {
-                console.error('Error fetching weather data for Baku:', error);
-            }
-        };
-
-        const fetchGanjaWeather = async () => {
-            try {
-                const response = await axios.get(`https://api.weatherapi.com/v1/current.json?key=4c8f79d84e4841f4b9c110121242305&q=Ganja`);
-                const data = response.data;
-                setGanjaWeather({
-                    city: data.location.name,
-                    country: data.location.country,
-                    celcius: data.current.temp_c,
-                    fahren: data.current.condition.text,
-                    wind: data.current.wind_kph,
-                    icon: data.current.condition.icon,
-                });
-            } catch (error) {
-                console.error('Error fetching weather data for Ganja:', error);
-            }
-        };
-
-        const fetchWeatherData = async () => {
-            try {
-                const response = await axios.get(`https://api.weatherapi.com/v1/current.json?key=4c8f79d84e4841f4b9c110121242305&q=Azerbaijan`);
-                setWeatherData(response.data);
-                // console.log(response.data);
-            } catch (error) {
-                // console.error('Error fetching weather data:', error);
-            }
-        };
-
         fetchDestinations();
-        fetchWeatherData();
-        fetchBakuWeather();
-        fetchGanjaWeather();
-
     }, []);
 
     useEffect(() => {
@@ -151,8 +58,8 @@ function destinations() {
         };
     }, []);
     return (
-        <div className="body">
 
+        <div className="body">
             <div className="upper-part">
                 <HEADER />
                 <div className="container-upr">
@@ -201,64 +108,7 @@ function destinations() {
                 </div>
             </section>
 
-            <section className="sectionweatherinfo">
-                <div className="weatherinfo">
-                    {showDefaultWeather && (
-                        <>
-                            <div className="infouno">
-                                <TEMP
-                                    temperature={bakuWeather.celcius}
-                                    wind={bakuWeather.wind}
-                                    location={`${bakuWeather.city}, ${bakuWeather.country}`}
-                                    weather={bakuWeather.fahren}
-                                    icon={bakuWeather.icon}
-                                />
-                            </div>
-
-                            <div className="infodos">
-                                <TEMP
-                                    temperature={ganjaWeather.celcius}
-                                    wind={ganjaWeather.wind}
-                                    location={`${ganjaWeather.city}, ${ganjaWeather.country}`}
-                                    weather={ganjaWeather.fahren}
-                                    icon={ganjaWeather.icon}
-                                />
-                            </div>
-                        </>
-                    )}
-
-                    {errorMessage && <p className='errormsg'>{errorMessage}</p>}
-
-                    {cityWeatherFetched && (
-                        <div className="infotres">
-                            {weatherData && (
-                                <TEMP
-                                    temperature={weatherData.celcius}
-                                    wind={weatherData.wind}
-                                    location={`${weatherData.city}, ${weatherData.country}`}
-                                    weather={weatherData.fahren}
-                                    icon={weatherData.icon}
-                                />
-                            )}
-                        </div>
-                    )}
-                </div>
-
-                <form className="form" onSubmit={handleCityFormSubmit}>
-                    <button>
-                        <svg width="17" height="16" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 16" role="img" aria-labelledby="search">
-                            <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9" stroke="currentColor" strokeWidth="1.333" strokeLinecap="round" strokeLinejoin="round"></path>
-                        </svg>
-                    </button>
-                    <input className="input" value={cityInput} onChange={(e) => setCityInput(e.target.value)} placeholder="Enter City Name" required type="text" />
-                    <button className="reset" type="reset">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12"></path>
-                        </svg>
-                    </button>
-                    <button id="btnwdth" type="submit">Get Weather</button>
-                </form>
-            </section>
+            <WAPI />
 
             <section className="section-info">
                 {destinations.map((destination, index) => (
