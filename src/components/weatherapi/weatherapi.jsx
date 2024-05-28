@@ -1,13 +1,11 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import TEMP from '../temprature/temprature.jsx'
+import TEMP from '../temprature/temprature.jsx';
 
-function weatherapi() {
-
+function WeatherAPI() {
     const [errorMessage, setErrorMessage] = useState('');
     const [cityInput, setCityInput] = useState('');
     const [weatherData, setWeatherData] = useState(null);
-    const [showDefaultWeather, setShowDefaultWeather] = useState(true);
     const [cityWeatherFetched, setCityWeatherFetched] = useState(false);
 
     const [bakuWeather, setBakuWeather] = useState({
@@ -29,15 +27,6 @@ function weatherapi() {
     });
 
     useEffect(() => {
-        const fetchWeatherData = async () => {
-            try {
-                const response = await axios.get(`https://api.weatherapi.com/v1/current.json?key=4c8f79d84e4841f4b9c110121242305&q=Azerbaijan`);
-                setWeatherData(response.data);
-            } catch (error) {
-                console.error('Error fetching weather data:', error);
-            }
-        };
-
         const fetchBakuWeather = async () => {
             try {
                 const response = await axios.get(`https://api.weatherapi.com/v1/current.json?key=4c8f79d84e4841f4b9c110121242305&q=Baku`);
@@ -72,7 +61,6 @@ function weatherapi() {
             }
         };
 
-        fetchWeatherData();
         fetchBakuWeather();
         fetchGanjaWeather();
     }, []);
@@ -92,12 +80,10 @@ function weatherapi() {
                 wind: data.current.wind_kph,
                 icon: data.current.condition.icon,
             });
-            setShowDefaultWeather(false);
             setCityWeatherFetched(true);
         } catch (error) {
             setErrorMessage('Please enter a correct city.');
             setWeatherData(null);
-            setShowDefaultWeather(false);
             setCityWeatherFetched(false);
         } finally {
             setCityInput('');
@@ -107,34 +93,26 @@ function weatherapi() {
     return (
         <section className="sectionweatherinfo frmnpg">
             <div className="weatherinfo">
-                {!errorMessage && showDefaultWeather && (
-                    <>
-                        <div className="infouno">
-                            <TEMP
-                                temperature={bakuWeather.celcius}
-                                wind={bakuWeather.wind}
-                                location={`${bakuWeather.city}, ${bakuWeather.country}`}
-                                weather={bakuWeather.fahren}
-                                icon={bakuWeather.icon}
-                            />
-                        </div>
+                <div className="infouno">
+                    <TEMP
+                        temperature={bakuWeather.celcius}
+                        wind={bakuWeather.wind}
+                        location={`${bakuWeather.city}, ${bakuWeather.country}`}
+                        weather={bakuWeather.fahren}
+                        icon={bakuWeather.icon}
+                    />
+                </div>
 
-                        <div className="infodos">
-                            <TEMP
-                                temperature={ganjaWeather.celcius}
-                                wind={ganjaWeather.wind}
-                                location={`${ganjaWeather.city}, ${ganjaWeather.country}`}
-                                weather={ganjaWeather.fahren}
-                                icon={ganjaWeather.icon}
-                            />
-                        </div>
-                    </>
-                )}
+                <div className="infotres">
+                    {(!cityWeatherFetched && !errorMessage) && (
+                        <p>Check your city here</p>
+                    )}
 
-                {errorMessage && <p className='errormsg'>{errorMessage}</p>}
+                    {errorMessage && (
+                        <p className='errormsg'>{errorMessage}</p>
+                    )}
 
-                {cityWeatherFetched && weatherData && (
-                    <div className="infotres">
+                    {cityWeatherFetched && weatherData && (
                         <TEMP
                             temperature={weatherData.celcius}
                             wind={weatherData.wind}
@@ -142,8 +120,18 @@ function weatherapi() {
                             weather={weatherData.fahren}
                             icon={weatherData.icon}
                         />
-                    </div>
-                )}
+                    )}
+                </div>
+
+                <div className="infodos">
+                    <TEMP
+                        temperature={ganjaWeather.celcius}
+                        wind={ganjaWeather.wind}
+                        location={`${ganjaWeather.city}, ${ganjaWeather.country}`}
+                        weather={ganjaWeather.fahren}
+                        icon={ganjaWeather.icon}
+                    />
+                </div>
             </div>
 
             <form className="form" onSubmit={handleCityFormSubmit}>
@@ -161,7 +149,7 @@ function weatherapi() {
                 <button id="btnwdth" type="submit">Get Weather</button>
             </form>
         </section>
-    )
+    );
 }
 
-export default weatherapi
+export default WeatherAPI;
