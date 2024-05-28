@@ -13,6 +13,30 @@
     --main-yellow-color: rgb(255, 230, 0);
 } */
 
+.divgreenline {
+    width: 100vw;
+    color: var(--main-light-green-color);
+    background-color: var(--main-light-green-color);
+    height: 2px;
+    position: relative;
+    margin: 50px 0;
+}
+
+.greencircle {
+    width: 60px;
+    top: -30px;
+    left: 10%;
+    height: 60px;
+    border-radius: 50px;
+    position: absolute;
+    cursor: pointer;
+    display: flex;
+    padding-left: 0px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-yellow-color);
+}
+
 .containerftr {
     gap: 20px;
     height: 150px;
@@ -67,6 +91,11 @@ footer {
     .containerftr {
         grid-template-columns: 12em 12em 12em;
         grid-column-start: 4;
+    }
+
+    .divgreenline {
+        margin: 10px 0;
+        margin-bottom: 40px;
     }
 
     .containerftr {

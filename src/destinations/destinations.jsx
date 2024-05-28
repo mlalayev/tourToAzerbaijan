@@ -1,12 +1,12 @@
 import cityData from '../../cities.json';
 import '../destinations/destinations.css';
+import { useNavigate } from 'react-router-dom';
 import momuna from '../assets/mominakhatun.png';
 import { RiArrowDownSLine } from "react-icons/ri";
 import { FaArrowRightLong } from "react-icons/fa6";
 import HEADER from '../components/header/header.jsx';
 import WAPI from '../components/weatherapi/weatherapi.jsx';
 import React, { useState, useEffect, useRef } from 'react';
-import { useNavigate } from 'react-router-dom';
 
 
 
