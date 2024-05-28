@@ -6,6 +6,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import HEADER from '../components/header/header.jsx';
 import WAPI from '../components/weatherapi/weatherapi.jsx';
 import React, { useState, useEffect, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -14,7 +15,12 @@ function destinations() {
     const [cityLi, setCityLi] = useState('Choose City');
     const [destinations, setDestinations] = useState([]);
     const [isRotatedUp, setIsRotatedUp] = useState(false);
- 
+    const navigate = useNavigate();
+
+
+    const handleButtonClick = () => {
+        navigate('/sngldytrips');
+    }
 
     const handleCityChangeLi = (cityName) => {
         const cityList = cityData.cities.find(city => city.cityLi === cityName);
@@ -48,15 +54,6 @@ function destinations() {
         fetchDestinations();
     }, []);
 
-    useEffect(() => {
-        const handleOutsideClickUp = handleClickOutside(dropdownRefUp, setIsRotatedUp);
-
-        document.addEventListener('mousedown', handleOutsideClickUp);
-
-        return () => {
-            document.removeEventListener('mousedown', handleOutsideClickUp);
-        };
-    }, []);
     return (
 
         <div className="body">
@@ -133,8 +130,10 @@ function destinations() {
                             <div className="infoholder-text">
                                 <h1>{destination.title}</h1>
                                 <p>{destination.description}</p>
+                                <p className='descriptionadd'>{destination.descriptiontwo}</p>
+                                <strong className='strong'> For further informations click the button!</strong>
                             </div>
-                            <button className="cta mnpgbtn dstbtn">
+                            <button className="cta mnpgbtn dstbtn" onClick={handleButtonClick}>
                                 <span>View me</span>
                                 <svg width="15px" height="10px" viewBox="0 0 13 10">
                                     <path d="M1,5 L11,5"></path>

@@ -3,60 +3,70 @@
         "imgSrc": "./src/assets/bakumap.png",
         "title": "Baku",
         "description": "Explore the historic center of Baku, a UNESCO World Heritage site. Wander through the charming old city, visit the iconic Flame Towers, and enjoy the vibrant nightlife along the Caspian Sea coast.",
-        "isRecommended": true
+        "isRecommended": true,
+        "descriptiontwo": "Discover the architectural marvel of the Heydar Aliyev Center and immerse yourself in the rich cultural heritage at the Azerbaijan Carpet Museum. Stroll along the scenic Baku Boulevard and savor traditional Azerbaijani cuisine at the city's diverse restaurants."
     },
     {
         "imgSrc": "./src/assets/lankaranmap.png",
         "title": "Lankaran",
-        "description": "Discover Lankaran's beautiful beaches and rich history, including its stunning Lankaran Fortress. Enjoy the lush tea plantations and the unique subtropical climate that makes this city a perfect getaway.",
-        "isRecommended": false
+        "description": "Discover Lankaran's beautiful beaches and rich history, including its stunning Lankaran Fortress. Enjoy the lush tea plantations and the unique subtropical climate that makes this city a perfect getaway. ",
+        "isRecommended": false,
+        "descriptiontwo": "Explore the coastal charm and immerse yourself in the vibrant culture of Lankaran. Experience the warm hospitality of the locals and indulge in delicious local cuisine. Relax and unwind amidst the natural beauty of this coastal gem."
     },
     {
         "imgSrc": "./src/assets/shamakhimap.png",
         "title": "Shamakhy",
         "description": "Visit the ancient city of Shamakhy, known for its historical mosques and beautiful landscapes. Explore the Diri Baba Mausoleum and enjoy the breathtaking views of the surrounding mountains.",
-        "isRecommended": true
+        "isRecommended": true,
+        "descriptiontwo": " Immerse yourself in the rich history and culture of this enchanting city, where every corner tells a story. Experience the tranquility of the countryside and marvel at the architectural wonders of Shamakhy's past. Don't miss the opportunity to discover the hidden treasures and ancient traditions of this historic gem."
     },
     {
         "imgSrc": "./src/assets/gubamap.png",
         "title": "Guba",
         "description": "A picturesque forest perfect for nature walks and picnics. Immerse yourself in the serene environment and discover the diverse flora and fauna that make this forest a natural haven.",
-        "isRecommended": false
+        "isRecommended": false,
+        "descriptiontwo": "Engage your senses as you meander along winding trails, inhaling the fresh scent of pine and listening to the soothing melodies of chirping birds.Experience a true escape from the hustle and bustle of daily life as you immerse yourself in the serene beauty of this woodland oasis."
     },
     {
         "imgSrc": "./src/assets/shakimap.png",
         "title": "Shaki",
         "description": "A beautiful waterfall located in the village of Afurdzhi. Enjoy the scenic hike to the waterfall and the refreshing atmosphere created by the cascading waters.",
-        "isRecommended": true
+        "isRecommended": true,
+        "descriptiontwo": "After relishing the scenic hike to the waterfall, immerse yourself in the refreshing atmosphere created by the cascading waters. Feel the mist on your skin as you stand in awe of the majestic beauty before you. Whether you're seeking adventure or simply a peaceful retreat, a visit to this beautiful waterfall promises an unforgettable experience that will leave you rejuvenated and inspired."
     },
     {
         "imgSrc": "./src/assets/ganjamap.png",
         "title": "Ganja",
         "description": "A historic palace known for its beautiful stained glass windows and intricate architecture. Delve into the rich history of Sheki and admire the craftsmanship that makes this palace a national treasure.",
-        "isRecommended": true
+        "isRecommended": true,
+        "descriptiontwo": "Wander through its grand halls and marvel at the exquisite detailing that reflects the opulence of a bygone era. The palace, set against the picturesque backdrop of Sheki, offers a glimpse into the region's storied past and cultural heritage. Each room tells a story, showcasing the artistry and skill of the craftsmen who built this architectural masterpiece."
     },
     {
         "imgSrc": "./src/assets/gusarmap.png",
         "title": "Gusar",
         "description": "A picturesque forest perfect for nature walks and picnics. The tranquility of the forest provides a perfect escape from the hustle and bustle of city life, making it an ideal spot for relaxation.",
-        "isRecommended": false
+        "isRecommended": false,
+        "descriptiontwo": "As you stroll through the winding trails, you'll encounter a diverse array of flora and fauna, adding to the forest's enchanting appeal. The gentle rustling of leaves and the soothing sounds of chirping birds create a serene ambiance, perfect for unwinding. Whether you're an avid nature enthusiast or simply looking for a peaceful retreat, this forest offers a rejuvenating experience for all visitors."
     },
     {
         "imgSrc": "./src/assets/ismaillymap.png",
         "title": "Ismailly",
         "description": "A biodiversity hotspot with unique flora and fauna, great for hiking and wildlife watching. Explore the dense forests, enjoy bird watching, and experience the natural beauty of this protected area.",
-        "isRecommended": true
+        "isRecommended": true,
+        "descriptiontwo": "Tread along scenic trails that wind through verdant landscapes, offering breathtaking views at every turn. Capture glimpses of rare wildlife in their natural habitat, making each hike an adventure filled with discovery. This protected area is a haven for nature lovers, providing a serene escape into the heart of unspoiled wilderness."
     },
     {
         "imgSrc": "./src/assets/khizimap.png",
         "title": "Khizi",
         "description": "Visit the historic Yeddi Gumbaz Mausoleum, known for its seven ancient tombs and serene surroundings. Learn about the history of the Shirvan dynasty and enjoy the peaceful ambiance of this historical site.",
-        "isRecommended": false
+        "isRecommended": false,
+        "descriptiontwo": "Marvel at the architectural beauty and intricate carvings that adorn each tomb, reflecting the artistry of a bygone era. The mausoleum, set against a backdrop of rolling hills, offers a quiet place for reflection and appreciation of the region's rich heritage. As you wander through the site, you'll gain a deeper understanding of the Shirvan dynasty's legacy and the cultural significance of this timeless monument."
     },
     {
         "imgSrc": "./src/assets/lerikmap.png",
         "title": "Lerik",
         "description": "Lerik is renowned for the longevity of its inhabitants and its stunning mountainous landscapes. Experience the fresh mountain air, explore the picturesque villages, and discover the cultural heritage of this unique region.",
-        "isRecommended": true
+        "isRecommended": true,
+        "descriptiontwo": "Hike through the lush, green valleys and enjoy panoramic views that stretch as far as the eye can see. Visit local museums to learn about the secrets behind the impressive lifespans of the residents. Engage with the warm and welcoming locals, and immerse yourself in the traditional customs and vibrant folklore of Lerik."
     }
 ]
