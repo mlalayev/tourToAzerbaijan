@@ -9,6 +9,13 @@ import DESTINATIONS from './destinations/destinations.jsx';
 import BAKU from './destinations/baku/baku.jsx';
 import LANKARAN from './destinations/lankaran/lankaran.jsx';
 import SHAMAKHY from './destinations/shamakhy/shamaky.jsx';
+import GANJA from './destinations/ganja/ganja.jsx';
+import GUSAR from './destinations/gusar/gusar.jsx';
+import GUBA from './destinations/guba/guba.jsx';
+import ISMAILLY from './destinations/ismailly/ismailly.jsx';
+import KHIZY from './destinations/khizy/khizy.jsx';
+import LERIK from './destinations/lerik/lerik.jsx';
+import SHAKI from './destinations/shaki/shaki.jsx';
 import UPPERPART from './components/upperpart/upperpart.jsx';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -100,32 +107,32 @@ function App() {
         <Route path="/mltdytrs" element={<><MULTIDAY /><FOOTER /></>} />
 
         <Route path="/sngldytrips" element={<><ONEDAY /><FOOTER /></>} />
-       
+
         <Route path="/dstntns" element={<><DESTINATIONS /><FOOTER /></>} />
-       
+
         <Route path="/" element={<><UPPERPART /><MAINPAGE /><FOOTER /></>} />
-       
+
         <Route path="/home" element={<><UPPERPART /><MAINPAGE /><FOOTER /></>} />
-       
+
         <Route path="/baku" element={<><BAKU /><FOOTER /></>} />
-       
+
         <Route path="/lankaran" element={<><LANKARAN /><FOOTER /></>} />
-       
+
         <Route path="/shamakhy" element={<><SHAMAKHY /><FOOTER /></>} />
-       
-        <Route path="/guba" element={<><UPPERPART /><MAINPAGE /><FOOTER /></>} />
-       
-        <Route path="/shaki" element={<><UPPERPART /><MAINPAGE /><FOOTER /></>} />
-       
-        <Route path="/ganja" element={<><UPPERPART /><MAINPAGE /><FOOTER /></>} />
-       
-        <Route path="/gusar" element={<><UPPERPART /><MAINPAGE /><FOOTER /></>} />
-       
-        <Route path="/ismailly" element={<><UPPERPART /><MAINPAGE /><FOOTER /></>} />
-       
-        <Route path="/khizi" element={<><UPPERPART /><MAINPAGE /><FOOTER /></>} />
-       
-        <Route path="/lerik" element={<><UPPERPART /><MAINPAGE /><FOOTER /></>} />
+
+        <Route path="/guba" element={<><GUBA /><FOOTER /></>} />
+
+        <Route path="/shaki" element={<><SHAKI /><FOOTER /></>} />
+
+        <Route path="/ganja" element={<><GANJA /><FOOTER /></>} />
+
+        <Route path="/gusar" element={<><GUSAR /><FOOTER /></>} />
+
+        <Route path="/ismailly" element={<><ISMAILLY /><FOOTER /></>} />
+
+        <Route path="/khizi" element={<><KHIZY /><FOOTER /></>} />
+
+        <Route path="/lerik" element={<><LERIK /><FOOTER /></>} />
       </Routes>
     </BrowserRouter>
   );
