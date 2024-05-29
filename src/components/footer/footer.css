@@ -79,7 +79,6 @@ footer {
 }
 
 
-
 @media screen and (min-width:830px) {
     .containerftr {
         grid-template-columns: 12em 12em 12em;

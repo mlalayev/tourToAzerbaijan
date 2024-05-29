@@ -36,7 +36,9 @@ import recommendedcuatro from '../../assets/recommended-4.png';
 import fifthsliderone from '../../assets/fifthsectionimgone.jpg';
 import WAPI from '../weatherapi/weatherapi.jsx'
 
+
 function mainpage() {
+
     const dropdownRefUp = useRef(null);
     const dropdownRefDown = useRef(null);
     const dropdownRefDownFifthSection = useRef(null);
@@ -469,3 +471,4 @@ function mainpage() {
 
 
 export default mainpage
+

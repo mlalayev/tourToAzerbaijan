@@ -17,10 +17,9 @@ function destinations() {
     const [isRotatedUp, setIsRotatedUp] = useState(false);
     const navigate = useNavigate();
 
-
-    const handleButtonClick = () => {
-        navigate('/sngldytrips');
-    }
+    const handleButtonClick = (path) => {
+        navigate(path);
+    };
 
     const handleCityChangeLi = (cityName) => {
         const cityList = cityData.cities.find(city => city.cityLi === cityName);
@@ -108,10 +107,10 @@ function destinations() {
             <WAPI />
 
             <section className="section-info">
-                {destinations.map((destination, index) => (
+                {destinations.map((item, index) => (
                     <div key={index} className='infoholder'>
                         <div className="infoholder-img">
-                            {destination.isRecommended && (
+                            {item.isRecommended && (
                                 <button className="custom-button">
                                     <span className="custom-button-text">Recommended</span>
                                     <div className="tooltip-container">
@@ -124,16 +123,16 @@ function destinations() {
                                     </div>
                                 </button>
                             )}
-                            <img src={destination.imgSrc} alt={destination.title} className='infoholder-image' />
+                            <img src={item.imgSrc} alt={item.title} className='infoholder-image' />
                         </div>
                         <div className="div-holder">
                             <div className="infoholder-text">
-                                <h1>{destination.title}</h1>
-                                <p>{destination.description}</p>
-                                <p className='descriptionadd'>{destination.descriptiontwo}</p>
-                                <strong className='strong'> For further informations click the button!</strong>
+                                <h1>{item.title}</h1>
+                                <p>{item.description}</p>
+                                <p className='descriptionadd'>{item.descriptiontwo}</p>
+                                <strong className='strong'> For further information click the button!</strong>
                             </div>
-                            <button className="cta mnpgbtn dstbtn" onClick={handleButtonClick}>
+                            <button className="cta mnpgbtn dstbtn" onClick={() => handleButtonClick(item.path)}>
                                 <span>View me</span>
                                 <svg width="15px" height="10px" viewBox="0 0 13 10">
                                     <path d="M1,5 L11,5"></path>

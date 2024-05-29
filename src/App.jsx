@@ -6,6 +6,8 @@ import FOOTER from './components/footer/footer.jsx';
 import HEADER from './components/header/header.jsx';
 import MAINPAGE from './components/mainpage/mainpage.jsx';
 import DESTINATIONS from './destinations/destinations.jsx';
+import BAKU from './destinations/baku/baku.jsx';
+import LANKARAN from './destinations/lankaran/lankaran.jsx';
 import UPPERPART from './components/upperpart/upperpart.jsx';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -99,6 +101,16 @@ function App() {
         <Route path="/dstntns" element={<><DESTINATIONS /><FOOTER /></>} />
         <Route path="/" element={<><UPPERPART /><MAINPAGE /><FOOTER /></>} />
         <Route path="/home" element={<><UPPERPART /><MAINPAGE /><FOOTER /></>} />
+        <Route path="/baku" element={<><BAKU /><FOOTER /></>} />
+        <Route path="/lankaran" element={<><LANKARAN /><FOOTER /></>} />
+        <Route path="/shamakhy" element={<><UPPERPART /><MAINPAGE /><FOOTER /></>} />
+        <Route path="/guba" element={<><UPPERPART /><MAINPAGE /><FOOTER /></>} />
+        <Route path="/shaki" element={<><UPPERPART /><MAINPAGE /><FOOTER /></>} />
+        <Route path="/ganja" element={<><UPPERPART /><MAINPAGE /><FOOTER /></>} />
+        <Route path="/gusar" element={<><UPPERPART /><MAINPAGE /><FOOTER /></>} />
+        <Route path="/ismailly" element={<><UPPERPART /><MAINPAGE /><FOOTER /></>} />
+        <Route path="/khizi" element={<><UPPERPART /><MAINPAGE /><FOOTER /></>} />
+        <Route path="/lerik" element={<><UPPERPART /><MAINPAGE /><FOOTER /></>} />
       </Routes>
     </BrowserRouter>
   );
