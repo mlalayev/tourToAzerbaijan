@@ -3,9 +3,9 @@ import './header.css'
 import logo from '../../assets/logo.svg';
 import { GoPerson } from "react-icons/go";
 import { CgShoppingCart } from "react-icons/cg";
+import { RxHamburgerMenu } from "react-icons/rx";
 import { RiArrowDownSLine } from "react-icons/ri";
 import { MdOutlineEuroSymbol } from "react-icons/md";
-import { RxHamburgerMenu } from "react-icons/rx";
 
 
 
@@ -45,7 +45,7 @@ function header() {
                     <li><a href="/mltdytrs">Multi-day tours</a></li>
                     <li><a href="/sngldytrips">Day trips</a></li>
                     <li><a href="/dstntns">Destinations</a></li>
-                    <li><a href="#">Visa informations</a></li>
+                    <li><a href="https://www.evisa.gov.az/en/" target="_blank">Visa informations</a></li>
                 </ul>
 
                 <div className="lftbtnsdv">
@@ -76,7 +76,7 @@ function header() {
                         <li><a href="/mltdytrs">Multi-day tours</a></li>
                         <li><a href="/sngldytrips">Day trips</a></li>
                         <li><a href="/dstntns">Destinations</a></li>
-                        <li><a href="#">Visa informations</a></li>
+                        <li><a href="https://www.evisa.gov.az/en/" target="_blank">Visa informations</a></li>
                     </ul>
                 </div>
             )}
