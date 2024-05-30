@@ -7,18 +7,16 @@ function footer() {
 
     const scrollToTop = () => {
         window.scrollTo({
-          top: 0,
-          behavior: 'smooth',
+            top: 0,
+            behavior: 'smooth',
         });
-      };
+    };
 
     return (
         <footer>
-
             <div className="divgreenline">
-                <div className="greencircle" onClick={scrollToTop} ><LuArrowUpCircle size={60} strokeWidth={1} color='black'/></div>
+                <div className="greencircle" onClick={scrollToTop} ><LuArrowUpCircle size={60} strokeWidth={1} color='black' /></div>
             </div>
-
             <div className="containerftr">
                 <div className="travelservices">
                     <p>Travel sevices</p>

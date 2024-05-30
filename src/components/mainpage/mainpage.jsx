@@ -46,6 +46,7 @@ function mainpage() {
     const [cityLi, setCityLi] = useState('Choose City');
     const [selectedCity, setSelectedCity] = useState('Baku');
     const [tourLi, setTourLi] = useState('Choose travel type');
+    const [tours, setTours] = useState('Choose travel type');
     const [chooseCity, setChooseCity] = useState('Choose City');
     const [selectedCityImg, setSelectedCityImg] = useState(fifthsliderone);
     const [cityInfo, setCityInfo] = useState(
@@ -339,7 +340,7 @@ function mainpage() {
 
                         <ul className='destinations' >
                             {citiesData.map(city => (
-                                <li className={`ulli ${selectedCity === city.cityName ? 'nulliactive' : ''}`} key={city.cityName} onClick={() => { handleCityChangem(city.cityName); handleClickList(); }}>
+                                <li className={`ulli ${selectedCity === city.cityName ? 'nulliactive' : ''}`} key={city.cityName} onClick={() => { handleCityChangem(city.cityName);  }}>
                                     {city.cityName}
                                 </li>
                             ))}
