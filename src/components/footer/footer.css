@@ -4,14 +4,34 @@
     box-sizing: border-box;
 }
 
-/* :root {
+:root {
     --font-family-rubik: rubik;
     --main-black-color: #000000;
     --main-white-color: #ffffff;
     --font-family-reddit: reddit sans;
     --main-light-green-color: #43c7b1;
     --main-yellow-color: rgb(255, 230, 0);
-} */
+}
+
+.divgreenline::before {
+    content: '';
+    width: 100vw;
+    position: absolute;
+    right: 0;
+    height: 2px;
+    z-index: -1;
+    background-color: var(--main-light-green-color);
+}
+
+.divgreenline::after {
+    content: '';
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    height: 2px;
+    background-color: var(--main-light-green-color);
+}
 
 .divgreenline {
     width: 100vw;
@@ -20,6 +40,7 @@
     height: 2px;
     position: relative;
     margin: 50px 0;
+    max-width: 1600px;
 }
 
 .greencircle {
@@ -31,11 +52,11 @@
     position: absolute;
     cursor: pointer;
     display: flex;
-    padding-left: 0px;
     justify-content: center;
     align-items: center;
     background-color: var(--main-yellow-color);
 }
+
 
 .containerftr {
     gap: 20px;
@@ -52,6 +73,10 @@
 footer {
     height: 100%;
     margin-bottom: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
 
 .containerftr div {
@@ -78,6 +103,10 @@ footer {
     background-color: var(--main-light-green-color);
 }
 
+.footer {
+    width: 1600px !important;
+}
+
 
 @media screen and (min-width:830px) {
     .containerftr {
@@ -88,7 +117,7 @@ footer {
 
 @media screen and (min-width:1130px) {
     .containerftr {
-        grid-template-columns: 12em 12em 12em;
+        grid-template-columns: 15em 15em 15em;
         grid-column-start: 4;
     }
 

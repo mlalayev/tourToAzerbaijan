@@ -1,3 +1,19 @@
-.section-first{
+.section-first {
     margin: -40px auto 0 auto;
+}
+
+.sectionslider {
+    width: 100vw;
+    max-width: 1600px;
+    display: flex;
+    justify-content: center;
+}
+
+.murad {
+    width: 100vw;
+    display: flex;
+    margin-top: 50px;
+    max-width: 1600px;
+    height: 730px;
+    justify-content: center;
 }

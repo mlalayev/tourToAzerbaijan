@@ -7,8 +7,21 @@ import HEADER from '../../components/header/header.jsx';
 import cityData from '../../../cities.json';
 import '../destinations.css'
 import './baku.css'
+// import Carousel from 'react-bootstrap/Carousel';
+import sliderone from '../../assets/bakusliderone.webp';
+import slidertwo from '../../assets/bakuslidertwo.webp';
+import sliderthree from '../../assets/bakusliderthree.jpeg';
+import Carousel from 'react-bootstrap/Carousel';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Baku() {
+
+  const [index, setIndex] = useState(0);
+
+  const handleSelect = (selectedIndex) => {
+    setIndex(selectedIndex);
+  };
+
   const navigate = useNavigate(); // Import useNavigate hook from react-router-dom
   const dropdownRefUp = useRef(null);
   const [cityLi, setCityLi] = useState('Choose City');
@@ -45,7 +58,7 @@ function Baku() {
   }, []);
 
   return (
-    <>
+    <div className='body'>
       <div className="upper-part">
         <HEADER />
         <div className="container-upr">
@@ -83,8 +96,40 @@ function Baku() {
         </div>
       </section>
 
+      <section className="sectionslider">
 
-    </>
+        <Carousel activeIndex={index} onSelect={handleSelect}>
+          <Carousel.Item>
+            <img src={sliderone} className='murad'/>
+            <Carousel.Caption>
+              <h3>First slide label</h3>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          
+          <Carousel.Item>
+            <img src={slidertwo} className='murad'/>
+            <Carousel.Caption>
+              <h3>Second slide label</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+
+          <Carousel.Item>
+            <img src={sliderthree} className='murad'/>
+            {/* <MURAD text="Third slide" /> */}
+            <Carousel.Caption>
+              <h3>Third slide label</h3>
+              <p>
+                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              </p>
+            </Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
+
+      </section>
+
+    </div>
   );
 }
 
