@@ -12,8 +12,26 @@
 .murad {
     width: 100vw;
     display: flex;
-    margin-top: 50px;
-    max-width: 1600px;
-    height: 730px;
+    height: 100vh;
+    object-fit:cover;
+    /* max-width: 1600px; */
     justify-content: center;
+}
+
+.textholder{
+    background-color: rgba(0, 0, 0, 0.478);
+}
+
+#body{
+    display: flex;
+    justify-content: center;
+}
+
+#header{
+    position: absolute;
+    z-index: 999;
+}
+
+#container{
+    background-color: transparent !important;
 }

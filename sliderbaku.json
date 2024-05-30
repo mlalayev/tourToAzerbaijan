@@ -1,0 +1,22 @@
+[
+    {
+      "image": "./src/assets/bakusliderone.webp",
+      "title": "First slide label",
+      "caption": "Nulla vitae elit libero, a pharetra augue mollis interdum."
+    },
+    {
+      "image": "./src/assets/bakuslidertwo.webp",
+      "title": "Second slide label",
+      "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "image": "./src/assets/bakusliderthree.jpeg",
+      "title": "Third slide label",
+      "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
+    },
+    {
+      "image": "./src/assets/bakusliderfour.jpg",
+      "title": "Fourth slide label",
+      "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
+    }
+  ]
