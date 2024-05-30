@@ -9,7 +9,7 @@ import DESTINATIONS from './destinations/destinations.jsx';
 import BAKU from './destinations/baku/baku.jsx';
 import LANKARAN from './destinations/lankaran/lankaran.jsx';
 import SHAMAKHY from './destinations/shamakhy/shamaky.jsx';
-import GANJA from './destinations/ganja/ganja.jsx';
+// import GANJA from './destinations/ganja/ganja.jsx';
 import GUSAR from './destinations/gusar/gusar.jsx';
 import GUBA from './destinations/guba/guba.jsx';
 import ISMAILLY from './destinations/ismailly/ismailly.jsx';
@@ -124,7 +124,7 @@ function App() {
 
         <Route path="/shaki" element={<><SHAKI /><FOOTER /></>} />
 
-        <Route path="/ganja" element={<><GANJA /><FOOTER /></>} />
+        {/* <Route path="/ganja" element={<><GANJA /><FOOTER /></>} /> */}
 
         <Route path="/gusar" element={<><GUSAR /><FOOTER /></>} />
 

@@ -87,8 +87,6 @@ function mainpage() {
         };
     }, []);
 
-
-
     const handleClickOutside = (ref, setState) => (event) => {
         if (ref.current && !ref.current.contains(event.target)) {
             setState(false);
@@ -372,10 +370,7 @@ function mainpage() {
                                     <p>{cityInfo}</p>
                                 </div>
                             )}
-                            <div className="btnshldr">
-                                <button>left</button>
-                                <button>right</button>
-                            </div>
+
                         </div>
 
                         <div className="ffthscdwnrght">

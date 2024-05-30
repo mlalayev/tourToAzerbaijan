@@ -14,7 +14,7 @@
     --main-yellow-color: rgb(255, 230, 0);
 } */
 
-.errormsg{
+.errormsg {
     height: 100px;
     display: flex;
     align-items: center;
@@ -28,10 +28,10 @@
 }
 
 .nulliactive::before {
-    top: 25px;
-    width: 10px;
+    top: 29px;
+    width: 12px;
     content: '';
-    height: 10px;
+    height: 12px;
     z-index: 999;
     position: absolute;
     border-radius: 6px;
@@ -204,6 +204,17 @@ body {
 /* ! */
 /* ! */
 /* ! */
+
+.upperpart h1 {
+    font-weight: 700 !important;
+}
+
+#sectionsecond h1,
+#sectionthird h1 {
+    font-size: 24px !important;
+    font-weight: 700;
+}
+
 .sectionsecond {
     max-width: 99vw;
     margin-top: -40px;
@@ -228,7 +239,7 @@ body {
 }
 
 .mnpgbtn {
-    font-size: 10px;
+    font-size: 10px !important;
 }
 
 .props button,
@@ -280,7 +291,8 @@ body {
     border-top-right-radius: 10px;
 }
 
-.sliderholder, .sliderholderthrd {
+.sliderholder,
+.sliderholderthrd {
     display: flex;
     padding: 0 20px;
     max-width: 100vw;
@@ -333,12 +345,12 @@ body {
 }
 
 .scndsctntxt h1 {
-    font-size: 28px;
+    font-size: 28px !important;
     margin-bottom: 10px;
 }
 
 .scndsctntxt p {
-    font-size: 16px;
+    font-size: 16px !important;
 }
 
 .sctnscndbtnhldr {
@@ -435,12 +447,12 @@ body {
 }
 
 .thrdsctntxt h1 {
-    font-size: 28px;
+    font-size: 28px !important;
     margin-bottom: 10px;
 }
 
 .thrdsctntxt p {
-    font-size: 16px;
+    font-size: 16px !important;
 }
 
 .sctnthrdbtnhldr {
@@ -489,22 +501,26 @@ body {
     flex-direction: column;
 }
 
+.frthlft h1{
+    font-weight: 700 !important;
+    font-family: var(--font-family-reddit) !important;
+}
+
 .frthlft {
     width: 100%;
     color: white;
     height: 400px;
     display: flex;
-    font-size: 30px;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    font-family: var(--font-family-reddit);
+    font-size: 30px !important;
     background-color: var(--main-light-green-color);
 }
 
 .frthrght {
     padding: 10px 20px;
-    font-family: var(--font-family-rubik);
+    font-family: var(--font-family-rubik) !important;
 
 }
 
@@ -891,7 +907,7 @@ header {
 
     .scndsctntxt h1,
     .thrdsctntxt h1 {
-        font-size: 40px;
+        font-size: 40px !important;
     }
 
     .lftlftbtndrpdwnulactive {
@@ -916,7 +932,7 @@ header {
 
     .scndsctntxt p,
     .thrdsctntxt p {
-        font-size: 19px;
+        font-size: 19px !important;
     }
 
     .sctnscndbtnhldr button,
@@ -1138,19 +1154,30 @@ header {
 
 
 @media screen and (min-width:830px) {
-    .weatherinfo{
+    .weatherinfo {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
     }
 }
 
-.frmnpg{
+.frmnpg {
     margin: 0;
     padding: 50px 0;
 }
 
-#btnwdthh{
+#btnwdthh {
     background-color: red;
     z-index: 999;
 }
+
+
+h1{
+    font-weight: 700 !important;
+}
+
+
+::selection {
+    color: white;
+    background: var(--main-light-green-color);
+  }

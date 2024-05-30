@@ -15,8 +15,8 @@
 } */
 
 .logo {
-    width: min(25vw, 150px);
-    height: min(12vh, 90px);
+    width: 150px;
+    height: 90px;
 }
 
 header {
@@ -35,6 +35,9 @@ header {
 
 .headerul {
     display: none;
+    height: 100% !important;
+    align-items: center;
+    padding: 0;
 }
 
 .headerul a {
@@ -49,8 +52,8 @@ header {
     align-items: center;
     justify-content: center;
     background-color: #43c7b1;
-    min-width: min(10vw, 40px);
-    min-height: min(10vh, 40px);
+    min-width: 40px;
+    min-height: 40px;
 }
 
 .lftbtnsdv button:hover {

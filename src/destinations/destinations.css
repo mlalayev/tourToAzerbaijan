@@ -150,6 +150,9 @@
     border-right: 8px solid transparent;
 }
 
+p{
+    margin: 0 !important;
+}
 
 @media screen and (min-width:930px) {
     .infoholder {
