@@ -4,7 +4,7 @@ import './temprature.css'
 function temprature({ temperature, wind, location, weather, icon }) {
     return (
         <div>
-            <div className="card">
+            <div id="card">
                 <svg fill="none" viewBox="0 0 342 175" height="175" width="342" xmlns="http://www.w3.org/2000/svg" className="background">
                     <defs>
                         <linearGradient id="paint0_linear_103_640" x1="0%" y1="0%" x2="100%" y2="100%">
