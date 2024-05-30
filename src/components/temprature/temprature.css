@@ -1,46 +1,51 @@
 #card {
-    width: 342px;
-    height: 184px;
-    position: relative;
-    padding: 20px;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  .background {
-    position: absolute;
-    inset: 0;
-    z-index: -1;
-  }
-  
-  .cloud {
-    position: absolute;
-    right: -20px;
-    top: 10px;
-  }
-  
-  .cloud img {
-    width: 130px;
-    height: 110px;
-  }
-  
-  #card .main-text {
-    font-size: 48px;
-    z-index: 2;
-  }
-  
-  #card .info {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  #card .info .text-gray {
-    color: rgba(235, 235, 245, 0.60);
-  }
-  
-  #card .info .info-right {
-    align-self: flex-end;
-  }
-  
+  color: #fff;
+  width: 342px;
+  height: 184px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+
+.background {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.cloud {
+  position: absolute;
+  right: -20px;
+  top: 10px;
+}
+
+.cloud img {
+  width: 130px;
+  height: 110px;
+}
+
+#card .main-text {
+  font-size: 48px;
+  z-index: 2;
+}
+
+#card .info {
+  display: flex;
+  justify-content: space-between;
+}
+
+#card .info .text-gray {
+  color: rgba(235, 235, 245, 0.60);
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+#card .info .info-right {
+  width: 100px;
+  text-align: end;
+  align-self: flex-end;
+  font-size: 14px !important;
+}

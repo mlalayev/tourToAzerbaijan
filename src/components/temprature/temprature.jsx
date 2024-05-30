@@ -21,7 +21,7 @@ function temprature({ temperature, wind, location, weather, icon }) {
                 <div className="info">
                     <div className="info-left">
                         <p className="text-gray">Wind: {wind} km/h</p>
-                        <p>{location}</p>
+                        <p className='text-loc'>{location}</p>
                     </div>
                     <p className="info-right">{weather}</p>
                 </div>

@@ -103,6 +103,16 @@ function WeatherAPI() {
                     />
                 </div>
 
+                <div className="infodos">
+                    <TEMP
+                        temperature={ganjaWeather.celcius}
+                        wind={ganjaWeather.wind}
+                        location={`${ganjaWeather.city}, ${ganjaWeather.country}`}
+                        weather={ganjaWeather.fahren}
+                        icon={ganjaWeather.icon}
+                    />
+                </div>
+
                 <div className="infotres">
                     {(!cityWeatherFetched && !errorMessage) && (
                         <p>Check your city here</p>
@@ -123,15 +133,6 @@ function WeatherAPI() {
                     )}
                 </div>
 
-                <div className="infodos">
-                    <TEMP
-                        temperature={ganjaWeather.celcius}
-                        wind={ganjaWeather.wind}
-                        location={`${ganjaWeather.city}, ${ganjaWeather.country}`}
-                        weather={ganjaWeather.fahren}
-                        icon={ganjaWeather.icon}
-                    />
-                </div>
             </div>
 
             <form className="form" onSubmit={handleCityFormSubmit}>

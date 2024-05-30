@@ -277,7 +277,7 @@ input:not(:placeholder-shown)~.reset {
 .touronediv {
     height: 180px;
     display: flex;
-    padding: 10px 20px;
+    padding: 15px 10px;
     flex-direction: column;
     justify-content: space-between;
     font-family: var(--font-family-reddit);
@@ -285,6 +285,16 @@ input:not(:placeholder-shown)~.reset {
 
 .sectionsecondonedaytour {
     padding: 0 20px;
+}
+
+.upper-part h1{
+    font-size: 40px !important;
+    margin: 0;
+}
+
+h1{
+    margin: 0;
+    font-size: 24px !important;
 }
 
 /* ! button css ! */
@@ -296,6 +306,8 @@ input:not(:placeholder-shown)~.reset {
     width: 150px;
     display: flex;
     cursor: pointer;
+    align-items: center;
+    height: 42px;
     background: none;
     position: relative;
     padding: 12px 18px;
@@ -513,6 +525,10 @@ input:not(:placeholder-shown)~.reset {
         height: 600px;
     }
 
+    h1{
+     font-size: 26px !important;   
+    }
+
     .left-button div {
         width: 93vw;
     }
@@ -627,7 +643,7 @@ input:not(:placeholder-shown)~.reset {
     }
 }
 
-@media screen and (min-width:750px) {
+@media screen and (min-width:850px) {
     .singledaytoursdiv {
         gap: 20px;
         padding: 20px;
