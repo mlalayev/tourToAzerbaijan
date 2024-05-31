@@ -1,4 +1,3 @@
-import './baku.css'
 import logo from '../../assets/logo.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from 'react-bootstrap/Carousel';

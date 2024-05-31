@@ -1,27 +1,27 @@
 [
-    {
-      "image": "./src/assets/shamakhysliderfive.jpg",
-      "title": "First slide label",
-      "caption": "Nulla vitae elit libero, a pharetra augue mollis interdum."
-    },
-    {
-      "image": "./src/assets/shamakhysliderfour.jpg",
-      "title": "Second slide label",
-      "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-    },
-    {
-      "image": "./src/assets/shamakhysliderthree.jpg",
-      "title": "Third slide label",
-      "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
-    },
-    {
-      "image": "./src/assets/shamakhyslidertwo.jpg",
-      "title": "Fourth slide label",
-      "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
-    },
-    {
-      "image": "./src/assets/shamakhysliderone.jpeg",
-      "title": "Fourth slide label",
-      "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
-    }
-  ]
+  {
+    "image": "./src/assets/gubasliderone.jpg",
+    "title": "First slide label",
+    "caption": "Nulla vitae elit libero, a pharetra augue mollis interdum."
+  },
+  {
+    "image": "./src/assets/gubaslidertwo.jpg",
+    "title": "Second slide label",
+    "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  },
+  {
+    "image": "./src/assets/gubasliderthree.jpg",
+    "title": "GURGUR slide label",
+    "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
+  },
+  {
+    "image": "./src/assets/gubasliderfour.jpg",
+    "title": "Fourth slide label",
+    "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
+  },
+  {
+    "image": "./src/assets/gubasliderfive.jpg",
+    "title": "Fourth slide label",
+    "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
+  }
+]
