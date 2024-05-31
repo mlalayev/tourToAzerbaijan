@@ -1,23 +1,23 @@
+import '../baku/baku.css'
+import logo from '../../assets/logo.svg';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Carousel from 'react-bootstrap/Carousel';
+import { RxHamburgerMenu } from "react-icons/rx";
 import React, { useState, useEffect, useRef } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { RiArrowDownSLine } from 'react-icons/ri';
-import { FaArrowRightLong } from 'react-icons/fa6';
-import momuna from '../../assets/mominakhatun.png';
-import HEADER from '../../components/header/header.jsx';
-import cityData from '../../../cities.json';
-import '../destinations.css'
 
 function Lankaran() {
-  const navigate = useNavigate(); // Import useNavigate hook from react-router-dom
-  const dropdownRefUp = useRef(null);
-  const [cityLi, setCityLi] = useState('Choose City');
-  const [isRotatedUp, setIsRotatedUp] = useState(false);
-  const [destinations, setDestinations] = useState([]); // State to store destinations data
 
-  const handleCityChangeLi = (cityName) => {
-    setCityLi(cityName);
-    setIsRotatedUp(false);
-  };
+  const [index, setIndex] = useState(0);
+  const [slides, setSlides] = useState([]);
+  const [cityLi, setCityLi] = useState('Choose City');
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [destinations, setDestinations] = useState([]);
+  const [isRotatedUp, setIsRotatedUp] = useState(false);
+
+  const dropdownRefUp = useRef(null);
+  const menuRef = useRef(null);
+
+  const handleSelect = (selectedIndex) => setIndex(selectedIndex);
 
   const handleClickOutside = (ref, setFunction) => (event) => {
     if (ref.current && !ref.current.contains(event.target)) {
@@ -25,65 +25,91 @@ function Lankaran() {
     }
   };
 
-  const handleClickUp = () => {
-    setIsRotatedUp(!isRotatedUp);
-  };
+  const handleHamburgerClick = () => setIsMenuOpen(!isMenuOpen);
 
   useEffect(() => {
-    const fetchDestinations = async () => {
+    const fetchSlides = async () => {
       try {
-        const response = await fetch('../../../destinations.json'); // Assuming destinations.json is in the correct path
+        const response = await fetch('../../../sliderlankaran.json');
         const data = await response.json();
-        setDestinations(data); // Set destinations state with fetched data
+        setSlides(data);
       } catch (error) {
-        console.error('Error fetching the tours data:', error);
+        console.error('Error fetching the slides data:', error);
       }
     };
 
-    fetchDestinations();
+    fetchSlides();
+  }, []);
+
+
+  useEffect(() => {
+    const handleOutsideClick = handleClickOutside(dropdownRefUp, setIsRotatedUp);
+    document.addEventListener('mousedown', handleOutsideClick);
+    return () => {
+      document.removeEventListener('mousedown', handleOutsideClick);
+    };
+  }, []);
+
+  useEffect(() => {
+    const handleOutsideClick = handleClickOutside(menuRef, setIsMenuOpen);
+    document.addEventListener('mousedown', handleOutsideClick);
+    return () => {
+      document.removeEventListener('mousedown', handleOutsideClick);
+    };
   }, []);
 
   return (
-    <>
-      <div className="upper-part">
-        <HEADER />
-        <div className="container-upr">
-          <div className="text-part">
-            <div className="text-part-ra">
-              <h1 className='text-part-firsth'>Where do you want to go<span className='yellow'>?</span></h1>
-              <p className='text-partp'>Here you can book a tour to Baku, Gabala, Sheki, and other amazing cities and regions of Azerbaijan.</p>
-            </div>
-            <div className="main-pic-parttwo">
-              <img src={momuna} className='main-momuna' alt="Momuna" />
-            </div>
-          </div>
-        </div>
-      </div>
+    <div id='body'>
 
-      <section className="section-first">
-        <div className="container-first">
-          <div className="city-choose">
-            <div className="left-button">
-              <div ref={dropdownRefUp} onClick={handleClickUp} className={`lftlftbtndrpdwnn  ${isRotatedUp ? 'lftlftbtndrpdwnactive' : ''}`}>
-                {cityLi} <RiArrowDownSLine strokeWidth={2} style={{ transform: isRotatedUp ? 'rotate(180deg)' : 'none' }} />
-                <ul className={`lftlftbtndrpdwnul ${isRotatedUp ? 'lftlftbtndrpdwnulactive' : ''}`}>
-                  {cityData.cities.map((city, index) => (
-                    <li key={index} onClick={() => handleCityChangeLi(city.cityLi)}>
-                      {city.cityLi}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-            <div className="checkoutpart">
-              <span>Find Tours ! <FaArrowRightLong /></span>
-            </div>
+      <header id='header'>
+        <div id='container'>
+          <a href="/home"><img src={logo} className="logo" alt="Logo" /></a>
+
+          <ul className="headerul destnul">
+            <li><a href="/mltdytrs">Multi-day tours</a></li>
+            <li><a href="/sngldytrips">Day trips</a></li>
+            <li><a href="/dstntns">Destinations</a></li>
+            <li><a href="https://www.evisa.gov.az/en/" target="_blank">Visa informations</a></li>
+          </ul>
+
+          <div className="rghtbtnsdv">
+            <button className="chcktbtn destbtn">Checkout</button>
+          </div>
+
+          <div className="hamdiv" onClick={handleHamburgerClick}>
+            <RxHamburgerMenu className="hamburger" size={20} color="black" />
           </div>
         </div>
+
+        {isMenuOpen && (
+          <div className="hamburger-menu" ref={menuRef}>
+            <ul>
+              <li><a href="/mltdytrs">Multi-day tours</a></li>
+              <li><a href="/sngldytrips">Day trips</a></li>
+              <li><a href="/dstntns">Destinations</a></li>
+              <li><a href="https://www.evisa.gov.az/en/" target="_blank">Visa informations</a></li>
+            </ul>
+          </div>
+        )}
+      </header>
+
+      <section className="sectionslider">
+        <Carousel activeIndex={index} onSelect={handleSelect}>
+          {slides.map((slide, idx) => (
+            <Carousel.Item key={idx}>
+              <img src={slide.image} className='murad' alt={`Slide ${idx + 1}`} />
+              <Carousel.Caption>
+                <div className="textholder">
+                  <h3>{slide.title}</h3>
+                  <p>{slide.caption}</p>
+                </div>
+              </Carousel.Caption>
+            </Carousel.Item>
+          ))}
+        </Carousel>
       </section>
 
-
-    </>
+    </div>
   );
 }
 

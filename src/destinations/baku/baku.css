@@ -27,12 +27,12 @@
     transition: 0.2s;
     letter-spacing: 2px;
     background-color: transparent;
-    border: 4px solid var(--main-light-green-color);
+    border: 3px solid white;
 }
 
 .destbtn:hover{
     background-color: transparent;
-    border: 4px solid var(--main-light-green-color);
+    border: 4px solid white;
     box-shadow: 3px 5px 10px rgb(55, 46, 46);
 }
 
