@@ -116,7 +116,7 @@ function App() {
 
         <Route path="/baku" element={<><BAKU /></>} />
 
-        <Route path="/lankaran" element={<><LANKARAN /><FOOTER /></>} />
+        <Route path="/lankaran" element={<><LANKARAN /></>} />
 
         <Route path="/shamakhy" element={<><SHAMAKHY /><FOOTER /></>} />
 

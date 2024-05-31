@@ -37,7 +37,8 @@ header {
     display: none;
     height: 100% !important;
     align-items: center;
-    padding: 0;
+    padding: 15px 0 0 0 ;
+    /* border: 1px solid red; */
 }
 
 .headerul a {
