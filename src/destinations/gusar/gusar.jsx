@@ -28,7 +28,7 @@ function Gusar() {
   useEffect(() => {
     const fetchSlides = async () => {
       try {
-        const response = await fetch('../../../slidershamakhy.json');
+        const response = await fetch('../../../slidergusar.json');
         const data = await response.json();
         setSlides(data);
       } catch (error) {
