@@ -120,19 +120,19 @@ function App() {
 
         <Route path="/shamakhy" element={<><SHAMAKHY /></>} />
 
-        <Route path="/guba" element={<><GUBA /><FOOTER /></>} />
+        <Route path="/guba" element={<><GUBA /></>} />
 
-        <Route path="/shaki" element={<><SHAKI /><FOOTER /></>} />
+        <Route path="/shaki" element={<><SHAKI /></>} />
 
-        {/* <Route path="/ganja" element={<><GANJA /><FOOTER /></>} /> */}
+        {/* <Route path="/ganja" element={<><GANJA /></>} /> */}
 
-        <Route path="/gusar" element={<><GUSAR /><FOOTER /></>} />
+        <Route path="/gusar" element={<><GUSAR /></>} />
 
-        <Route path="/ismailly" element={<><ISMAILLY /><FOOTER /></>} />
+        <Route path="/ismailly" element={<><ISMAILLY /></>} />
 
-        <Route path="/khizi" element={<><KHIZY /><FOOTER /></>} />
+        <Route path="/khizi" element={<><KHIZY /></>} />
 
-        <Route path="/lerik" element={<><LERIK /><FOOTER /></>} />
+        <Route path="/lerik" element={<><LERIK /></>} />
       </Routes>
     </BrowserRouter>
   );
