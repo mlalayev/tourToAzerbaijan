@@ -63,7 +63,7 @@ function Baku() {
 
       <header id='header'>
         <div id='container'>
-          <a href="/home"><img src={logo} className="logo" alt="Logo" /></a>
+          <a href="/home"><img src={logo} className="plogo logo" alt="Logo" /></a>
 
           <ul className="headerul destnul">
             <li><a href="/mltdytrs">Multi-day tours</a></li>

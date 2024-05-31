@@ -1,0 +1,27 @@
+[
+    {
+        "image": "./src/assets/shakisliderfive.jpg",
+        "title": "First slide label",
+        "caption": "Nulla vitae elit libero, a pharetra augue mollis interdum."
+    },
+    {
+        "image": "./src/assets/shakisliderfour.jpg",
+        "title": "Second slide label",
+        "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+        "image": "./src/assets/shakisliderthree.jpg",
+        "title": "Kish slide label",
+        "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
+    },
+    {
+        "image": "./src/assets/shakislidertwo.jpg",
+        "title": "kish slide label",
+        "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
+    },
+    {
+        "image": "./src/assets/shakisliderone.jpeg",
+        "title": "Fourth slide label",
+        "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
+    }
+]

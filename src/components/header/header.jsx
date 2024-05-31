@@ -39,7 +39,7 @@ function header() {
     return (
         <header>
             <div className="container">
-                <a href="/home"><img src={logo} className="logo" alt="Logo" /></a>
+                <a href="/home"><img src={logo} className="logo plogo" alt="Logo" /></a>
 
                 <ul className="headerul">
                     <li><a href="/mltdytrs">Multi-day tours</a></li>
