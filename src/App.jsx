@@ -118,7 +118,7 @@ function App() {
 
         <Route path="/lankaran" element={<><LANKARAN /></>} />
 
-        <Route path="/shamakhy" element={<><SHAMAKHY /><FOOTER /></>} />
+        <Route path="/shamakhy" element={<><SHAMAKHY /></>} />
 
         <Route path="/guba" element={<><GUBA /><FOOTER /></>} />
 
