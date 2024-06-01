@@ -40,25 +40,27 @@ function SearchForm() {
                         </div>
                         <div className="form-group-two">
                             <div class="textInputWrapper">
-                                <input placeholder="Type Here" type="text" className="textInputone" />
-                                <input placeholder="Type Here" type="text" className="textInputtwo" />
+                                <input placeholder="From" type="text" className="textInputone" />
+                                <input placeholder="To" type="text" className="textInputtwo" />
                                 <input placeholder="Type Here" type="date" className="textInputthree" />
                                 <input placeholder="Type Here" type="date" className="textInputfour" />
                             </div>
                         </div>
                         <div className="form-group-three">
-                            <label>Adults 16+ years</label>
+                            <label>Adults: </label>
                             <input type="number" min="1" defaultValue="1" />
-                            <label>Children 0-15 years</label>
+                            <label>Children: </label>
                             <input type="number" min="0" defaultValue="0" />
-                            <label>Cabin class</label>
-                            <select className='idun'>
-                                <option>Economy</option>
-                                <option>Business</option>
-                                <option>First</option>
-                            </select>
+                            <div className='flex'>
+                                <label>Cabin class</label>
+                                <select className='idun'>
+                                    <option>Economy</option>
+                                    <option>Business</option>
+                                    <option>First</option>
+                                </select>
+                            </div>
                         </div>
-                        <button type="button" onClick={() => window.location.href = '/flights'}>Search flights</button>
+                        <button className='procedbtn' type="button" onClick={() => window.open("https://www.skyscanner.com/", "_blank")}>Search flights</button>
                     </>
                 ) : (
                     <>
