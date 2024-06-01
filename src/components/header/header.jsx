@@ -6,28 +6,23 @@ import { RxHamburgerMenu } from "react-icons/rx";
 
 function header() {
 
-    const [isRotated, setIsRotated] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const menuRef = useRef(null);
-
-    const handleClick = () => {
-        setIsRotated(!isRotated);
-    };
 
     const handleHamburgerClick = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
-    const handleClickOutside = (event) => {
-        if (menuRef.current && !menuRef.current.contains(event.target)) {
-            setIsMenuOpen(false);
-        }
-    };
-
     useEffect(() => {
-        document.addEventListener('mousedown', handleClickOutside);
+        const handleClickOutside = (event) => {
+            const hamdiv = document.querySelector('.hamdiv');
+            if (hamdiv && !hamdiv.contains(event.target)) {
+                setIsMenuOpen(false);
+            }
+        };
+
+        document.addEventListener('click', handleClickOutside);
         return () => {
-            document.removeEventListener('mousedown', handleClickOutside);
+            document.removeEventListener('click', handleClickOutside);
         };
     }, []);
 
@@ -43,7 +38,7 @@ function header() {
                     <li><a href="https://www.evisa.gov.az/en/" target="_blank">Visa informations</a></li>
                 </ul>
 
-        
+
                 <div className="rghtbtnsdv">
                     <button className="chcktbtn">Checkout</button>
                 </div>
@@ -54,7 +49,7 @@ function header() {
             </div>
 
             {isMenuOpen && (
-                <div className="hamburger-menu" ref={menuRef}>
+                <div className="hamburger-menu">
                     <ul>
                         <li><a href="/mltdytrs">Multi-day tours</a></li>
                         <li><a href="/sngldytrips">Day trips</a></li>
