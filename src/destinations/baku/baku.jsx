@@ -1,23 +1,16 @@
-import './baku.css'
+import './baku.css';
 import logo from '../../assets/logo.svg';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Carousel from 'react-bootstrap/Carousel';
 import { RxHamburgerMenu } from "react-icons/rx";
 import React, { useState, useEffect, useRef } from 'react';
+import ImageSlider from '../../components/imageSlider/imageSlider.jsx';
 
 function Baku() {
 
-  const [index, setIndex] = useState(0);
   const [slides, setSlides] = useState([]);
-  const [cityLi, setCityLi] = useState('Choose City');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [destinations, setDestinations] = useState([]);
-  const [isRotatedUp, setIsRotatedUp] = useState(false);
 
   const dropdownRefUp = useRef(null);
   const menuRef = useRef(null);
-
-  const handleSelect = (selectedIndex) => setIndex(selectedIndex);
 
   const handleClickOutside = (ref, setFunction) => (event) => {
     if (ref.current && !ref.current.contains(event.target)) {
@@ -33,21 +26,13 @@ function Baku() {
         const response = await fetch('../../../sliderbaku.json');
         const data = await response.json();
         setSlides(data);
+        console.log('murad');
       } catch (error) {
         console.error('Error fetching the slides data:', error);
       }
     };
 
     fetchSlides();
-  }, []);
-
-
-  useEffect(() => {
-    const handleOutsideClick = handleClickOutside(dropdownRefUp, setIsRotatedUp);
-    document.addEventListener('mousedown', handleOutsideClick);
-    return () => {
-      document.removeEventListener('mousedown', handleOutsideClick);
-    };
   }, []);
 
   useEffect(() => {
@@ -94,19 +79,9 @@ function Baku() {
       </header>
 
       <section className="sectionslider">
-        <Carousel activeIndex={index} onSelect={handleSelect}>
-          {slides.map((slide, idx) => (
-            <Carousel.Item key={idx}>
-              <img src={slide.image} className='murad' alt={`Slide ${idx + 1}`} />
-              <Carousel.Caption>
-                <div className="textholder">
-                  <h3>{slide.title}</h3>
-                  <p>{slide.caption}</p>
-                </div>
-              </Carousel.Caption>
-            </Carousel.Item>
-          ))}
-        </Carousel>
+
+        {slides.length > 0 ? <ImageSlider slides={slides} /> : <p>Loading...</p>}
+
       </section>
 
     </div>

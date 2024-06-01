@@ -101,7 +101,7 @@
 @media screen and (min-width:830px) {
     .main {
         bottom: 140px;
-        width: clamp(15em, 400px, 450px);
+        width: 400px;
     }
 
     .mainpicprt {
@@ -171,4 +171,4 @@
         position: absolute;
         background-color: #43c7b1;
     }
-}
+}   

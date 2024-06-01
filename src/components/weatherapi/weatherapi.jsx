@@ -92,6 +92,7 @@ function WeatherAPI() {
 
     return (
         <section className="sectionweatherinfo frmnpg">
+            
             <div className="weatherinfo">
                 <div className="infouno">
                     <TEMP

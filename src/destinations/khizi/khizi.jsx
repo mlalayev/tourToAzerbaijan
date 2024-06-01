@@ -20,7 +20,7 @@ function Lankaran() {
     useEffect(() => {
         const fetchSlides = async () => {
             try {
-                const response = await fetch('../../../sliderlerik.json');
+                const response = await fetch('../../../sliderkhizi.json');
                 const data = await response.json();
                 setSlides(data);
             } catch (error) {

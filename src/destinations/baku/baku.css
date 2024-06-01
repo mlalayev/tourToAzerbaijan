@@ -9,20 +9,12 @@
     justify-content: center;
 }
 
-.murad {
-    width: 100vw;
-    display: flex;
-    height: 100vh;
-    object-fit: cover;
-    justify-content: center;
-}
-
 .destnul a {
     color: white;
     transition: 0s;
 }
 
-.destbtn{
+.destbtn {
     color: white;
     transition: 0.2s;
     letter-spacing: 2px;
@@ -30,12 +22,12 @@
     border: 3px solid white;
 }
 
-.plogo{
-    -webkit-filter: invert(100%) !important; 
+.plogo {
+    -webkit-filter: invert(100%) !important;
     filter: invert(100%) !important;
 }
 
-.destbtn:hover{
+.destbtn:hover {
     background-color: transparent;
     border: 4px solid white;
     box-shadow: 3px 5px 10px rgb(55, 46, 46);
@@ -58,10 +50,6 @@
     justify-content: center;
 }
 
-h1{
-    font-size: 20px;
-}
-
 #header {
     z-index: 999;
     position: absolute;
@@ -76,4 +64,3 @@ h1{
     justify-content: space-between;
     background-color: transparent !important;
 }
-

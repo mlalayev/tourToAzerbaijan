@@ -1,5 +1,4 @@
-import React, { Children } from 'react';
-import { useState } from 'react';
+import React  from 'react';
 import './upperpart.css';
 import main from '../../assets/main.png';
 import HEADER from '../header/header.jsx'
