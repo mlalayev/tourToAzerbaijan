@@ -1,26 +1,26 @@
 [
     {
-      "image": "./src/assets/gusarsliderone.jpg",
+      "image": "./src/assets/ganjasliderone.jpg",
       "title": "First slide label",
       "caption": "Nulla vitae elit libero, a pharetra augue mollis interdum."
     },
     {
-      "image": "./src/assets/gusarslidertwo.jpg",
+      "image": "./src/assets/ganjaslidertwo.jpg",
       "title": "Second slide label",
       "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
-      "image": "./src/assets/gusarsliderthree.jpg",
-      "title": "Third slide label",
+      "image": "./src/assets/ganjasliderthree.jpg",
+      "title": "GURGUR slide label",
       "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
     },
     {
-      "image": "./src/assets/gusarsliderfour.jpg",
+      "image": "./src/assets/ganjasliderfour.jpg",
       "title": "Fourth slide label",
       "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
     },
     {
-      "image": "./src/assets/gusarsliderfive.jpg",
+      "image": "./src/assets/ganjasliderfive.jpeg",
       "title": "Fourth slide label",
       "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
     }

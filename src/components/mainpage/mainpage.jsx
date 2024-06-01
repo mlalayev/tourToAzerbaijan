@@ -1,5 +1,4 @@
 import './mainpage.css';
-import axios from 'axios';
 import { IoMdStar } from "react-icons/io";
 import SLIDER from '../sliders/slider.jsx';
 import cityData from '../../../cities.json';
@@ -8,7 +7,7 @@ import { GrUserManager } from "react-icons/gr";
 import { FaAnglesLeft } from "react-icons/fa6";
 import { GrCertificate } from "react-icons/gr";
 import { FaAnglesRight } from "react-icons/fa6";
-import TEMP from '../temprature/temprature.jsx';
+import WAPI from '../weatherapi/weatherapi.jsx';
 import sliderdos from '../../assets/slider2.jpg';
 import yanardag from '../../assets/yanardag.jpg';
 import khizidag from '../../assets/khizidag.jpg';
@@ -21,6 +20,7 @@ import hdlymosque from '../../assets/hdlymosque.jpg';
 import slidersessi from '../../assets/slider6quba.jpg';
 import ganimetpark from '../../assets/ganimetpark.jpg';
 import slidertres from '../../assets/slider3qabala.jpg';
+import IMAGESLIDER from '../imageSlider/imageSlider.jsx';
 import slidercuatro from '../../assets/slider4lerik.jpg';
 import slidershahdag from '../../assets/slidershahdag.jpg';
 import sliderseptini from '../../assets/slider7shusha.jpg';
@@ -34,8 +34,7 @@ import recommendedtres from '../../assets/recommended-3.png';
 import recommendedpieci from '../../assets/recommended-5.png';
 import recommendedcuatro from '../../assets/recommended-4.png';
 import fifthsliderone from '../../assets/fifthsectionimgone.jpg';
-import WAPI from '../weatherapi/weatherapi.jsx'
-
+import SEARCH from '../search/search.jsx'
 
 function mainpage() {
 
@@ -46,7 +45,7 @@ function mainpage() {
     const [cityLi, setCityLi] = useState('Choose City');
     const [selectedCity, setSelectedCity] = useState('Baku');
     const [tourLi, setTourLi] = useState('Choose travel type');
-    const [tours, setTours] = useState('Choose travel type');
+    const [tours, setTours] = useState('');
     const [chooseCity, setChooseCity] = useState('Choose City');
     const [selectedCityImg, setSelectedCityImg] = useState(fifthsliderone);
     const [cityInfo, setCityInfo] = useState(
@@ -148,6 +147,7 @@ function mainpage() {
             });
         }
     };
+
 
     const handleScrollRightScnd = () => {
         const sectionscnd = document.getElementById('sectionsecond');
@@ -338,7 +338,7 @@ function mainpage() {
 
                         <ul className='destinations' >
                             {citiesData.map(city => (
-                                <li className={`ulli ${selectedCity === city.cityName ? 'nulliactive' : ''}`} key={city.cityName} onClick={() => { handleCityChangem(city.cityName);  }}>
+                                <li className={`ulli ${selectedCity === city.cityName ? 'nulliactive' : ''}`} key={city.cityName} onClick={() => { handleCityChangem(city.cityName); handleClickList(); }}>
                                     {city.cityName}
                                 </li>
                             ))}
@@ -370,7 +370,10 @@ function mainpage() {
                                     <p>{cityInfo}</p>
                                 </div>
                             )}
-
+                            <div className="btnshldr">
+                                <button>left</button>
+                                <button>right</button>
+                            </div>
                         </div>
 
                         <div className="ffthscdwnrght">
@@ -461,10 +464,11 @@ function mainpage() {
                 </div>
             </section>
 
+            <SEARCH />
+
         </div>
     )
 }
 
 
 export default mainpage
-

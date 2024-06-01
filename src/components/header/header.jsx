@@ -1,12 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './header.css'
 import logo from '../../assets/logo.svg';
-import { GoPerson } from "react-icons/go";
-import { CgShoppingCart } from "react-icons/cg";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { RiArrowDownSLine } from "react-icons/ri";
-import { MdOutlineEuroSymbol } from "react-icons/md";
-
 
 
 function header() {
@@ -39,7 +34,7 @@ function header() {
     return (
         <header>
             <div className="container">
-                <a href="/home"><img src={logo} className="logo plogo" alt="Logo" /></a>
+                <a href="/home"><img src={logo} className="logo" alt="Logo" /></a>
 
                 <ul className="headerul">
                     <li><a href="/mltdytrs">Multi-day tours</a></li>

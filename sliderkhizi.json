@@ -1,26 +1,26 @@
 [
     {
-      "image": "./src/assets/gusarsliderone.jpg",
+      "image": "./src/assets/khizisliderone.jpg",
       "title": "First slide label",
       "caption": "Nulla vitae elit libero, a pharetra augue mollis interdum."
     },
     {
-      "image": "./src/assets/gusarslidertwo.jpg",
+      "image": "./src/assets/khizislidertwo.jpg",
       "title": "Second slide label",
       "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
-      "image": "./src/assets/gusarsliderthree.jpg",
+      "image": "./src/assets/ismaillysliderthree.jpg",
       "title": "Third slide label",
       "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
     },
     {
-      "image": "./src/assets/gusarsliderfour.jpg",
+      "image": "./src/assets/ismaillysliderfour.jpg",
       "title": "Fourth slide label",
       "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
     },
     {
-      "image": "./src/assets/gusarsliderfive.jpg",
+      "image": "./src/assets/ismaillysliderfive.jpg",
       "title": "Fourth slide label",
       "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
     }

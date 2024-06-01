@@ -2,20 +2,19 @@ import './App.css';
 import ONEDAY from './onedaytours/onedaytour.jsx';
 import MULTIDAY from './multidaytours/multidaytour.jsx';
 import React, { useState, useEffect } from 'react';
-import FOOTER from './components/footer/footer.jsx';
-import HEADER from './components/header/header.jsx';
-import MAINPAGE from './components/mainpage/mainpage.jsx';
-import DESTINATIONS from './destinations/destinations.jsx';
 import BAKU from './destinations/baku/baku.jsx';
 import LANKARAN from './destinations/lankaran/lankaran.jsx';
-import SHAMAKHY from './destinations/shamakhy/shamaky.jsx';
-// import GANJA from './destinations/ganja/ganja.jsx';
-import GUSAR from './destinations/gusar/gusar.jsx';
+import SHAMAKHY from './destinations/shamakhy/shamakhy.jsx';
 import GUBA from './destinations/guba/guba.jsx';
-import ISMAILLY from './destinations/ismailly/ismailly.jsx';
-import KHIZY from './destinations/khizy/khizy.jsx';
-import LERIK from './destinations/lerik/lerik.jsx';
 import SHAKI from './destinations/shaki/shaki.jsx';
+import GANJA from './destinations/ganja/ganja.jsx';
+import GUSAR from './destinations/gusar/gusar.jsx';
+import ISMAILLY from './destinations/ismailly/ismailly.jsx';
+import KHIZI from './destinations/khizi/khizi.jsx';
+import LERIK from './destinations/lerik/lerik.jsx';
+import FOOTER from './components/footer/footer.jsx';
+import MAINPAGE from './components/mainpage/mainpage.jsx';
+import DESTINATIONS from './destinations/destinations.jsx';
 import UPPERPART from './components/upperpart/upperpart.jsx';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -124,13 +123,13 @@ function App() {
 
         <Route path="/shaki" element={<><SHAKI /></>} />
 
-        {/* <Route path="/ganja" element={<><GANJA /></>} /> */}
+        <Route path="/ganja" element={<><GANJA /></>} />
 
         <Route path="/gusar" element={<><GUSAR /></>} />
 
-        <Route path="/ismailly" element={<><ISMAILLY /></>} />
+        <Route path="/khizi" element={<><KHIZI /></>} />
 
-        <Route path="/khizi" element={<><KHIZY /></>} />
+        <Route path="/ismailly" element={<><ISMAILLY /></>} />
 
         <Route path="/lerik" element={<><LERIK /></>} />
       </Routes>
