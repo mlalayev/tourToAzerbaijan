@@ -45,8 +45,8 @@
 
 .holder{
     width: 100vw;
-    justify-content: center;
     display: flex;
+    justify-content: center;
 }
 
 .greencircle {
@@ -78,12 +78,8 @@
 
 footer {
     height: 100%;
-    /* display: flex; */
     margin-top: 20px;
     margin-bottom: 130px;
-    /* flex-direction: column; */
-    /* align-content: center; */
-    /* justify-content: center; */
 }
 
 .containerftr div {
@@ -124,8 +120,8 @@ footer {
 
 @media screen and (min-width:1130px) {
     .containerftr {
-        grid-template-columns: 15em 15em 15em;
         grid-column-start: 4;
+        grid-template-columns: 15em 15em 15em;
     }
 
     .divgreenline {

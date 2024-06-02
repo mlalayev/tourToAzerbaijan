@@ -466,6 +466,10 @@ function mainpage() {
 
             <SEARCH />
 
+            <section className="sectionseventh">
+                
+            </section>
+
         </div>
     )
 }

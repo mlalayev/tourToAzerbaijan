@@ -6,6 +6,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import HEADER from '../components/header/header.jsx';
 import React, { useState, useEffect, useRef } from 'react';
 import WAPI from '../components/weatherapi/weatherapi.jsx'
+import SEARCH from '../components/search/search.jsx'
 
 
 function onedaytour() {
@@ -133,6 +134,8 @@ function onedaytour() {
                     ))}
                 </div>
             </section>
+
+            <SEARCH />
         </div>
     )
 }
