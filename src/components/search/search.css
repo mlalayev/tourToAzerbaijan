@@ -1,22 +1,25 @@
 .search-container {
-    position: relative;
     width: 94vw;
+    height: 600px;
+    display: flex;
     padding: 20px;
     max-width: 800px;
     margin-bottom: 0;
     transition: 0.2s;
     margin: 60px auto;
-    margin-bottom: 200px;
+    position: relative;
     border-radius: 5px;
+    flex-direction: column;
+    justify-content: flex-end;
     font-family: var(--font-family-reddit);
     background-color: rgba(128, 128, 128, 0.081);
     box-shadow:
-        0px 0px 2px rgba(0, 0, 0, 0.052),
-        0px 0px 3px rgba(0, 0, 0, 0.099),
-        0px 0px 4px rgba(0, 0, 0, 0.108),
-        0px 0px 9px rgba(0, 0, 0, 0.179),
-        0px 0px 4px rgba(0, 0, 0, 0.254),
-        0px 0px 8px rgba(0, 0, 0, 0.33);
+    0px 0px 2px rgba(0, 0, 0, 0.052),
+    0px 0px 3px rgba(0, 0, 0, 0.099),
+    0px 0px 4px rgba(0, 0, 0, 0.108),
+    0px 0px 9px rgba(0, 0, 0, 0.179),
+    0px 0px 4px rgba(0, 0, 0, 0.254),
+    0px 0px 8px rgba(0, 0, 0, 0.33);
 }
 
 .search-hotels-container {
@@ -26,10 +29,9 @@
 }
 
 .skyscanner{
-    right: 20px;
-    width: 240px;
-    height: 50px;
-    position: absolute;
+    width: 200px;
+    height: 40px;
+    align-self: end;
 }
 
 .deactive {
@@ -46,9 +48,9 @@
     display: flex;
     font-size: 20px;
     align-items: center;
+    justify-content: center;
     min-width: 30px !important;
     min-height: 30px !important;
-    justify-content: center;
 }
 
 .search-container:hover {
@@ -422,20 +424,22 @@ input[type='radio'] {
 }
 
 .box {
-    left: -50px;
+    left: -70px;
     margin: auto;
-    bottom: -200px;
+    top: -50px;
     max-width: 600px;
     position: absolute;
     transform: scale(0.7) rotate(-5deg);
 }
 
 .clip {
-    top: -35px;
+    top: -25px;
+    z-index: 1;
     width: 20px;
-    left: 162px;
+    right: 152px;
     height: 50px;
     margin: auto;
+    transform: rotateZ(10deg);
     position: absolute;
     border: solid 3px #666;
     box-sizing: border-box;
@@ -507,15 +511,15 @@ input[type='radio'] {
     margin-top: 8px;
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
-    border-right: 5px solid #EEEEEE;
+    border-right: 5px solid var(--main-light-green-color);
 }
 
 .left li:nth-child(4) {
     margin-top: 8px;
     margin-left: 2px;
+    border-right: 5px solid #EEEEEE;
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
-    border-right: 5px solid #EEEEEE;
 }
 
 .left li:nth-child(5) {
@@ -557,64 +561,64 @@ input[type='radio'] {
     margin-left: 2px;
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
-    border-right: 5px solid #ff0083;
+    border-right: 5px solid var(--main-light-green-color);
 }
 
 .left li:nth-child(14) {
     margin-top: 7px;
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
-    border-right: 5px solid #ff0083;
+    border-right: 5px solid var(--main-light-green-color);
 }
 
 .right {
+    top: 0px;
     margin: 0;
     padding: 0;
+    right: -5px;
     list-style: none;
     position: absolute;
-    top: 0px;
-    right: -5px;
 }
 
 .right li:nth-child(-n+2) {
     margin-top: 8px;
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
-    border-left: 5px solid #ff0083;
+    border-left: 5px solid var(--main-light-green-color);
 }
 
 .right li:nth-child(3),
 .right li:nth-child(4),
 .right li:nth-child(6) {
     margin-top: 8px;
+    border-left: 5px solid #EEEEEE;
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
-    border-left: 5px solid #EEEEEE;
 }
 
 .right li:nth-child(5) {
     margin-top: 8px;
     margin-left: -2px;
+    border-left: 5px solid #EEEEEE;
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
-    border-left: 5px solid #EEEEEE;
 }
 
 .right li:nth-child(8),
 .right li:nth-child(9),
 .right li:nth-child(11) {
     margin-top: 7px;
+    border-left: 5px solid #E5E5E5;
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
-    border-left: 5px solid #E5E5E5;
 }
 
 .right li:nth-child(7) {
     margin-top: 7px;
     margin-left: -3px;
+    border-left: 5px solid #E5E5E5;
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
-    border-left: 5px solid #E5E5E5;
 }
 
 .right li:nth-child(10) {
@@ -637,7 +641,7 @@ input[type='radio'] {
     margin-top: 7px;
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
-    border-left: 5px solid #ff0083;
+    border-left: 5px solid var(--main-light-green-color);
 }
 
 .ticket:after {
@@ -649,9 +653,9 @@ input[type='radio'] {
     height: 250px;
     box-shadow: inset 0 0 0 #Ffffff,
         inset 0 -10px 0 #999999,
-        inset 0 -20px 0 #ff0083,
+        inset 0 -20px 0 var(--main-light-green-color),
         inset 0 -30px 0 #999999,
-        inset 0 -40px 0 #ff0083,
+        inset 0 -40px 0 var(--main-light-green-color),
         inset 0 -50px 0 #999999,
         inset 0 -60px 0 #E5E5E5,
         inset 0 -70px 0 #999999,
@@ -669,89 +673,89 @@ input[type='radio'] {
         inset 0 -190px 0 #B0B0B0,
         inset 0 -200px 0 #EEEEEE,
         inset 0 -210px 0 #B0B0B0,
-        inset 0 -220px 0 #ff0083,
+        inset 0 -220px 0 var(--main-light-green-color),
         inset 0 -230px 0 #999999,
-        inset 0 -240px 0 #ff0083,
+        inset 0 -240px 0 var(--main-light-green-color),
         inset 0 -250px 0 #999999;
 }
 
 
 .content {
-    position: absolute;
     top: 40px;
     width: 100%;
     height: 170px;
+    position: absolute;
     background: #eee;
 }
 
 .airline {
-    position: absolute;
     top: 10px;
     left: 10px;
-    font-family: Arial;
-    font-size: 20px;
     color: white;
+    font-size: 20px;
+    position: absolute;
+    font-family: Arial;
 }
 
 .boarding {
-    position: absolute;
     top: 10px;
     right: 220px;
-    font-family: Arial;
     font-size: 18px;
+    position: absolute;
+    font-family: Arial;
     color: rgba(255, 255, 255, 0.6);
 }
 
 .jfk {
-    position: absolute;
     top: 10px;
     left: 20px;
-    font-family: Arial;
-    font-size: 38px;
     color: #222;
+    font-size: 38px;
+    position: absolute;
+    font-family: Arial;
 }
 
 .sfo {
-    position: absolute;
     top: 10px;
     left: 180px;
-    font-family: Arial;
-    font-size: 38px;
     color: #222;
+    font-size: 38px;
+    position: absolute;
+    font-family: Arial;
 }
 
 .plane {
-    position: absolute;
-    left: 105px;
     top: 0px;
+    left: 105px;
+    position: absolute;
 }
 
 .sub-content {
-    background: #e5e5e5;
+    top: 70px;
     width: 100%;
     height: 100px;
     position: absolute;
-    top: 70px;
+    background: #e5e5e5;
 }
 
 .watermark {
-    position: absolute;
     left: 5px;
     top: -10px;
-    font-family: Arial;
     font-size: 110px;
     font-weight: bold;
+    position: absolute;
+    font-family: Arial;
     color: rgba(255, 255, 255, 0.2);
 }
 
 .name {
-    position: absolute;
     top: 10px;
     left: 10px;
-    font-family: Arial Narrow, Arial;
-    font-weight: bold;
-    font-size: 14px;
     color: #999;
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    font-family: Arial Narrow, Arial;
 }
 
 .name span {
@@ -760,13 +764,13 @@ input[type='radio'] {
 }
 
 .flight {
-    position: absolute;
     top: 10px;
     left: 180px;
-    font-family: Arial Narrow, Arial;
-    font-weight: bold;
-    font-size: 14px;
     color: #999;
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    font-family: Arial Narrow, Arial;
 }
 
 .flight span {
@@ -902,15 +906,15 @@ input[type='radio'] {
 }
 
 .jfkslip {
-    font-size: 30px;
     top: 20px;
     left: 410px;
+    font-size: 30px;
 }
 
 .sfoslip {
-    font-size: 30px;
     top: 20px;
     left: 530px;
+    font-size: 30px;
 }
 
 .planeslip {

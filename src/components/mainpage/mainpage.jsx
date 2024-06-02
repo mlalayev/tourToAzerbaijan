@@ -370,10 +370,6 @@ function mainpage() {
                                     <p>{cityInfo}</p>
                                 </div>
                             )}
-                            <div className="btnshldr">
-                                <button>left</button>
-                                <button>right</button>
-                            </div>
                         </div>
 
                         <div className="ffthscdwnrght">
@@ -465,9 +461,6 @@ function mainpage() {
             </section>
 
             <SEARCH />
-
-            <section className="sectionseventh">
-            </section>
 
         </div>
     )

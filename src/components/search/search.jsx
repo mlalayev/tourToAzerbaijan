@@ -111,11 +111,11 @@ const SearchForm = () => {
                             <li></li>
                         </ul>
                         <div className="ticket">
-                            <span className="airline">Postsnap</span>
-                            <span className="airline airlineslip">Postsnap</span>
+                            <span className="airline">Tour To Azerbaijan</span>
+                            <span className="airline airlineslip">Hello, Baku!</span>
                             <span className="boarding">Boarding pass</span>
                             <div className="content">
-                                <span className="jfk">LHR</span>
+                                <span className="jfk">IST</span>
                                 <span className="plane">
                                     <svg clipRule="evenodd" fillRule="evenodd" height="60" width="60" imageRendering="optimizeQuality" shapeRendering="geometricPrecision" textRendering="geometricPrecision" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
                                         <g stroke="#222">
@@ -124,8 +124,8 @@ const SearchForm = () => {
                                         </g>
                                     </svg>
                                 </span>
-                                <span className="sfo">SFO</span>
-                                <span className="jfk jfkslip">LHR</span>
+                                <span className="sfo">GYD</span>
+                                <span className="jfk jfkslip">IST</span>
                                 <span className="plane planeslip">
                                     <svg clipRule="evenodd" fillRule="evenodd" height="50" width="50" imageRendering="optimizeQuality" shapeRendering="geometricPrecision" textRendering="geometricPrecision" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
                                         <g stroke="#222">
@@ -134,14 +134,14 @@ const SearchForm = () => {
                                         </g>
                                     </svg>
                                 </span>
-                                <span className="sfo sfoslip">SFO</span>
+                                <span className="sfo sfoslip">GYD</span>
                                 <div className="sub-content">
-                                    <span className="watermark">Postsnap</span>
+                                    <span className="watermark">AZERBAIJ</span>
                                     <span className="name">PASSENGER NAME<br /><span>BLOGGS, Joe</span></span>
                                     <span className="flight">FLIGHT N&deg;<br /><span>X3-65C3</span></span>
                                     <span className="gate">GATE<br /><span>11B</span></span>
                                     <span className="seat">SEAT<br /><span>45A</span></span>
-                                    <span className="boardingtime">BOARDING TIME<br /><span>8:25PM ON AUGUST 2014</span></span>
+                                    <span className="boardingtime">BOARDING TIME<br /><span>8:25PM ON AUGUST 2024</span></span>
                                     <span className="flight flightslip">FLIGHT N&deg;<br /><span>X3-65C3</span></span>
                                     <span className="seat seatslip">SEAT<br /><span>45A</span></span>
                                     <span className="name nameslip">PASSENGER NAME<br /><span>BLOGGS, Joe</span></span>
