@@ -5,6 +5,8 @@ import airports from '../../../airports.json';
 import skyscanner from '../../assets/poweredbyskyscanner.png'
 import { MdOutlineFlight } from "react-icons/md";
 import { MdOutlineHotel } from "react-icons/md";
+import { TbPlaneDeparture } from "react-icons/tb";
+import { TbPlaneArrival } from "react-icons/tb";
 
 
 const SearchForm = () => {
@@ -19,6 +21,9 @@ const SearchForm = () => {
     const [toSuggestions, setToSuggestions] = useState([]);
     const [fromSuggestions, setFromSuggestions] = useState([]);
     const [hotelSuggestions, setHotelSuggestions] = useState([]);
+    const [selectedToCode, setSelectedToCode] = useState('');
+    const [selectedFromCode, setSelectedFromCode] = useState('');
+
 
     const swapInputs = () => {
         const temp = from;
@@ -96,6 +101,7 @@ const SearchForm = () => {
 
     const selectFromSuggestion = (suggestion) => {
         setFrom(`${suggestion.name} - ${suggestion.code} - ${suggestion.city} - ${suggestion.country}`);
+        setSelectedFromCode(suggestion.code); // Update selected airport code
         setFromSuggestions([]);
     };
 
@@ -106,15 +112,18 @@ const SearchForm = () => {
 
     const selectToSuggestion = (suggestion) => {
         setTo(`${suggestion.name} - ${suggestion.code} - ${suggestion.city} - ${suggestion.country}`);
+        setSelectedToCode(suggestion.code); // Update selected airport code
         setToSuggestions([]);
     };
 
     const handleEnterPress = (e) => {
         if (e.key === 'Enter' && fromSuggestions.length > 0) {
             setFrom(`${fromSuggestions[0].name} - ${fromSuggestions[0].code} - ${fromSuggestions[0].city}, ${fromSuggestions[0].country}`);
+            setSelectedFromCode(toSuggestions[0].code); // Update selected airport code
             setFromSuggestions([]);
         } else if (e.key === 'Enter' && toSuggestions.length > 0) {
             setTo(`${toSuggestions[0].name} - ${toSuggestions[0].code} - ${toSuggestions[0].city}, ${toSuggestions[0].country}`);
+            setSelectedToCode(toSuggestions[0].code); // Update selected airport code
             setToSuggestions([]);
         } else if (e.key === 'Enter' && hotelSuggestions.length > 0) {
             setHotel(`${hotelSuggestions[0].name} - ${hotelSuggestions[0].code} - ${hotelSuggestions[0].city}, ${hotelSuggestions[0].country}`);
@@ -182,11 +191,13 @@ const SearchForm = () => {
                                         <ul className="suggestions">
                                             {fromSuggestions.map((suggestion, index) => (
                                                 <li key={index} onClick={() => selectFromSuggestion(suggestion)}>
+                                                    <TbPlaneDeparture />
                                                     {suggestion.name} - {suggestion.code} - {suggestion.city}, {suggestion.country}
                                                 </li>
                                             ))}
                                         </ul>
                                     )}
+                                    <p className='selectedfromcode'>{selectedFromCode}</p>
                                 </div>
                                 <div className="iconholder" onClick={swapInputs}>
                                     <TbReplace color='black' size={25} />
@@ -205,12 +216,13 @@ const SearchForm = () => {
                                         <ul className="suggestions">
                                             {toSuggestions.map((suggestion, index) => (
                                                 <li key={index} onClick={() => selectToSuggestion(suggestion)}>
-                                                    {suggestion.name} - {suggestion.code} - {suggestion.city} - {suggestion.country}
+                                                    <TbPlaneArrival />
+                                                    {suggestion.name} - {suggestion.city} - {suggestion.country}
                                                 </li>
                                             ))}
                                         </ul>
                                     )}
-                                    <p>{ }</p>
+                                    <p className='selectedtocode'>{selectedToCode}</p>
                                 </div>
                             </div>
 
