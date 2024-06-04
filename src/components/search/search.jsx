@@ -177,7 +177,7 @@ const SearchForm = () => {
                                     )}
                                 </div>
                                 <div className="iconholder" onClick={swapInputs}>
-                                    <TbReplace color='white' size={30} />
+                                    <TbReplace color='black' size={25} />
                                 </div>
 
                                 <div className="mydiv">
@@ -198,24 +198,23 @@ const SearchForm = () => {
                                             ))}
                                         </ul>
                                     )}
-                                    <p>{}</p>
+                                    <p>{ }</p>
                                 </div>
                             </div>
 
                             <div className="flex">
                                 <input
                                     placeholder="Enter text here"
-                                    className="input-style"
+                                    className="input-style inputtres"
                                     type="date"
                                 />
 
                                 <input
                                     placeholder="Enter text here"
-                                    className="input-style"
+                                    className="input-style inputcuatro"
                                     type="date"
                                 />
                             </div>
-
                         </div>
 
                         <div className="form-group-three">
@@ -285,18 +284,25 @@ const SearchForm = () => {
                                 </div>
                             </div>
 
-                            <div className="flex">
-                                <label>Cabin class</label>
-                                <select className="idun">
-                                    <option>Economy</option>
-                                    <option>Business</option>
-                                    <option>First</option>
-                                </select>
+                            <div class="aradio-inputs">
+                                <label class="aradio">
+                                    <input type="radio" name="radio" />
+                                    <span className="nname">Economy</span>
+                                </label>
+                                <label class="aradio">
+                                    <input type="radio" name="radio" />
+                                    <span className="nname">Buisness</span>
+                                </label>
+
+                                <label class="aradio">
+                                    <input type="radio" name="radio" />
+                                    <span className="nname">First Class</span>
+                                </label>
                             </div>
 
                         </div>
 
-                        <button className='procedbtn' type="button" onClick={() => window.open("https://www.skyscanner.com/", "_blank")}>Search flights</button>
+                        <button className='procedbtn' disabled={!from} type="button" onClick={() => window.open("https://www.skyscanner.com/", "_blank")}>Search flights</button>
                     </div>
                 </>
             ) : (
