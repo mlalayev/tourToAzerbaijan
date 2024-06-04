@@ -168,12 +168,6 @@
         "country": "Israel"
     },
     {
-        "name": "Incheon International Airport",
-        "code": "ICN",
-        "city": "Incheon",
-        "country": "South Korea"
-    },
-    {
         "name": "Mumbai Airport",
         "code": "BOM",
         "city": "Mumbai",
@@ -216,12 +210,6 @@
         "country": "Spain"
     },
     {
-        "name": "Leonardo da Vinci–Fiumicino Airport",
-        "code": "FCO",
-        "city": "Rome",
-        "country": "Italy"
-    },
-    {
         "name": "Hamad International Airport",
         "code": "DOH",
         "city": "Doha",
@@ -232,12 +220,6 @@
         "code": "BUD",
         "city": "Budapest",
         "country": "Hungary"
-    },
-    {
-        "name": "Zurich Airport",
-        "code": "ZRH",
-        "city": "Zurich",
-        "country": "Switzerland"
     },
     {
         "name": "Vienna International Airport",
@@ -270,12 +252,6 @@
         "country": "USA"
     },
     {
-        "name": "Dublin Airport",
-        "code": "DUB",
-        "city": "Dublin",
-        "country": "Ireland"
-    },
-    {
         "name": "Edinburgh Airport",
         "code": "EDI",
         "city": "Edinburgh",
@@ -298,5 +274,263 @@
         "code": "ATL",
         "city": "Atlanta",
         "country": "USA"
+    },
+    {
+        "name": "Gatwick Airport",
+        "code": "LGW",
+        "city": "London",
+        "country": "United Kingdom"
+    },
+    {
+        "name": "Orlando International Airport",
+        "code": "MCO",
+        "city": "Orlando",
+        "country": "USA"
+    },
+    {
+        "name": "Miami International Airport",
+        "code": "MIA",
+        "city": "Miami",
+        "country": "USA"
+    },
+    {
+        "name": "Phoenix Sky Harbor International Airport",
+        "code": "PHX",
+        "city": "Phoenix",
+        "country": "USA"
+    },
+    {
+        "name": "Las Vegas McCarran International Airport",
+        "code": "LAS",
+        "city": "Las Vegas",
+        "country": "USA"
+    },
+    {
+        "name": "Salt Lake City International Airport",
+        "code": "SLC",
+        "city": "Salt Lake City",
+        "country": "USA"
+    },
+    {
+        "name": "Newark Liberty International Airport",
+        "code": "EWR",
+        "city": "Newark",
+        "country": "USA"
+    },
+    {
+        "name": "Minneapolis–Saint Paul International Airport",
+        "code": "MSP",
+        "city": "Minneapolis",
+        "country": "USA"
+    },
+    {
+        "name": "Detroit Metropolitan Airport",
+        "code": "DTW",
+        "city": "Detroit",
+        "country": "USA"
+    },
+    {
+        "name": "Philadelphia International Airport",
+        "code": "PHL",
+        "city": "Philadelphia",
+        "country": "USA"
+    },
+    {
+        "name": "Charlotte Douglas International Airport",
+        "code": "CLT",
+        "city": "Charlotte",
+        "country": "USA"
+    },
+    {
+        "name": "Helsinki-Vantaa Airport",
+        "code": "HEL",
+        "city": "Helsinki",
+        "country": "Finland"
+    },
+    {
+        "name": "Oslo Gardermoen Airport",
+        "code": "OSL",
+        "city": "Oslo",
+        "country": "Norway"
+    },
+    {
+        "name": "Stockholm Arlanda Airport",
+        "code": "ARN",
+        "city": "Stockholm",
+        "country": "Sweden"
+    },
+    {
+        "name": "Copenhagen Airport",
+        "code": "CPH",
+        "city": "Copenhagen",
+        "country": "Denmark"
+    },
+    {
+        "name": "Lisbon Portela Airport",
+        "code": "LIS",
+        "city": "Lisbon",
+        "country": "Portugal"
+    },
+    {
+        "name": "Brussels Airport",
+        "code": "BRU",
+        "city": "Brussels",
+        "country": "Belgium"
+    },
+    {
+        "name": "Athens International Airport",
+        "code": "ATH",
+        "city": "Athens",
+        "country": "Greece"
+    },
+    {
+        "name": "Hamad International Airport",
+        "code": "DOH",
+        "city": "Doha",
+        "country": "Qatar"
+    },
+    {
+        "name": "Lisbon Portela Airport",
+        "code": "LIS",
+        "city": "Lisbon",
+        "country": "Portugal"
+    },
+    {
+        "name": "Brussels Airport",
+        "code": "BRU",
+        "city": "Brussels",
+        "country": "Belgium"
+    },
+    {
+        "name": "Manchester Airport",
+        "code": "MAN",
+        "city": "Manchester",
+        "country": "United Kingdom"
+    },
+    {
+        "name": "Lyon-Saint Exupéry Airport",
+        "code": "LYS",
+        "city": "Lyon",
+        "country": "France"
+    },
+    {
+        "name": "Nice Côte d'Azur Airport",
+        "code": "NCE",
+        "city": "Nice",
+        "country": "France"
+    },
+    {
+        "name": "Berlin Brandenburg Airport",
+        "code": "BER",
+        "city": "Berlin",
+        "country": "Germany"
+    },
+    {
+        "name": "Munich Airport",
+        "code": "MUC",
+        "city": "Munich",
+        "country": "Germany"
+    },
+    {
+        "name": "Hamburg Airport",
+        "code": "HAM",
+        "city": "Hamburg",
+        "country": "Germany"
+    },
+    {
+        "name": "Cologne Bonn Airport",
+        "code": "CGN",
+        "city": "Cologne",
+        "country": "Germany"
+    },
+    {
+        "name": "Vienna International Airport",
+        "code": "VIE",
+        "city": "Vienna",
+        "country": "Austria"
+    },
+    {
+        "name": "Zagreb Airport",
+        "code": "ZAG",
+        "city": "Zagreb",
+        "country": "Croatia"
+    },
+    {
+        "name": "Warsaw Chopin Airport",
+        "code": "WAW",
+        "city": "Warsaw",
+        "country": "Poland"
+    },
+    {
+        "name": "Prague Václav Havel Airport",
+        "code": "PRG",
+        "city": "Prague",
+        "country": "Czech Republic"
+    },
+    {
+        "name": "Bucharest Henri Coandă International Airport",
+        "code": "OTP",
+        "city": "Bucharest",
+        "country": "Romania"
+    },
+    {
+        "name": "Sofia Airport",
+        "code": "SOF",
+        "city": "Sofia",
+        "country": "Bulgaria"
+    },
+    {
+        "name": "Moscow Sheremetyevo International Airport",
+        "code": "SVO",
+        "city": "Moscow",
+        "country": "Russia"
+    },
+    {
+        "name": "Saint Petersburg Pulkovo Airport",
+        "code": "LED",
+        "city": "Saint Petersburg",
+        "country": "Russia"
+    },
+    {
+        "name": "Istanbul Airport",
+        "code": "IST",
+        "city": "Istanbul",
+        "country": "Turkey"
+    },
+    {
+        "name": "Copenhagen Airport",
+        "code": "CPH",
+        "city": "Copenhagen",
+        "country": "Denmark"
+    },
+    {
+        "name": "Oslo Gardermoen Airport",
+        "code": "OSL",
+        "city": "Oslo",
+        "country": "Norway"
+    },
+    {
+        "name": "Helsinki-Vantaa Airport",
+        "code": "HEL",
+        "city": "Helsinki",
+        "country": "Finland"
+    },
+    {
+        "name": "Riga International Airport",
+        "code": "RIX",
+        "city": "Riga",
+        "country": "Latvia"
+    },
+    {
+        "name": "Vilnius Airport",
+        "code": "VNO",
+        "city": "Vilnius",
+        "country": "Lithuania"
+    },
+    {
+        "name": "Tallinn Airport",
+        "code": "TLL",
+        "city": "Tallinn",
+        "country": "Estonia"
     }
 ]

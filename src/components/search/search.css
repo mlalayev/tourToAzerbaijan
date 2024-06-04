@@ -1,4 +1,5 @@
 * {
+    /* border: 1px solid red; */
 }
 
 :root {
@@ -6,15 +7,10 @@
 }
 
 .flex input {
+    min-width: 84vw;
     max-width: 180px;
     font-size: 16px;
-    margin-left: 5px;
 }
-
-/* .input-style.inputcuatro {
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-} */
 
 .ccontainer {
     display: flex;
@@ -252,7 +248,7 @@
 }
 
 .tab-container {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: space-between;
 }
@@ -294,7 +290,8 @@
 }
 
 .tab {
-    border: none;
+    gap: 3px;
+    color: white;
     cursor: pointer;
     font-size: 16px;
     cursor: pointer;
@@ -302,24 +299,31 @@
     transition: 0.2s;
     padding: 10px 20px;
     border-radius: 4px;
+    border-radius: 50px;
+    background: #05203C;
     align-self: flex-end;
-    color: black !important;
-    background-color: gray;
+    border: 2px solid white;
     margin: 0 10px 20px 10px;
     box-shadow: 2px 2px 5px gray;
-    background: white !important;
+}
+
+.btnhldr button{
+    display: inline-flex;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
 }
 
 .tab:hover {
     color: white !important;
     box-shadow: 4px 4px 10px gray;
-    background-color: #04b396 !important;
+    background-color: rgb(21, 70, 121);
 }
 
 .active {
     color: white !important;
     transition: 0.2s;
-    background-color: var(--main-light-green-color) !important;
+    background-color: #007bff;
 }
 
 .search-form {
@@ -352,10 +356,7 @@ input[type='radio'] {
     border: 1px solid #ccc;
 }
 
-/* .inputuno {
-    border-top-left-radius: 30px !important;
-    border-bottom-left-radius: 30px !important;
-} */
+
 
 .input-style {
     color: black;
@@ -368,17 +369,7 @@ input[type='radio'] {
     border: 2px solid #ccc;
 }
 
-/* 
-.input-style {
-    color: black;
-    height: 80px;
-    width: 494px;
-    outline: none;
-    font-size: 20px;
-    border-radius: 5px;
-    padding: 10px 20px;
-    border: 2px solid #ccc;
-} */
+
 
 .input-style:focus {
     border-color: #007bff;
@@ -508,7 +499,7 @@ input[type='radio'] {
 }
 
 .flex input {
-    min-width: 84vw;
+    /* min-width: 84vw; */
 }
 
 .procedbtn {
@@ -666,7 +657,6 @@ input[type='radio'] {
     padding: 0.25rem;
     position: relative;
     border-radius: 0.5rem;
-    margin-top: 0;
     box-sizing: border-box;
     background-color: #EEE;
     box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
@@ -681,6 +671,10 @@ input[type='radio'] {
 .aradio-inputs .aradio input {
     display: none;
     transition: 0.3s;
+}
+
+.iconholder {
+    z-index: 1;
 }
 
 .aradio-inputs .aradio .nname {
@@ -714,4 +708,182 @@ input[type='radio'] {
     font-weight: 600;
     border-radius: 0.5rem;
     background-color: #05203C;
+}
+
+@media screen and (min-width:1300px) {
+    .input-style {
+        color: black;
+        height: 80px;
+        width: 494px;
+        outline: none;
+        font-size: 20px;
+        border-radius: 5px;
+        padding: 10px 20px;
+        border: 2px solid #ccc;
+    }
+
+    .mydiv {
+        position: relative;
+    }
+
+    .inputuno {
+        border-top-left-radius: 30px !important;
+        border-bottom-left-radius: 30px !important;
+    }
+
+    .input-style.inputcuatro {
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+
+    .autocomplete {
+        flex-direction: row;
+    }
+
+    .inputholder {
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+        justify-content: center;
+    }
+
+    .flex {
+        flex-direction: row;
+        margin: 0;
+    }
+
+    .flex input {
+        min-width: 165px;
+        max-width: 165px;
+    }
+
+    .input-style {
+        width: 33vw;
+    }
+
+    .search-container {
+        min-height: 320px;
+    }
+
+    .search-hotels-container {
+        min-height: 200px;
+        max-height: 200px;
+    }
+
+    .input-row h2 {
+        font-size: 20px;
+    }
+
+    .number {
+        font-size: 20px;
+    }
+
+    .aradio-inputs span {
+        font-size: 16px;
+    }
+
+    .form-group-three {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .aradio-inputs{
+        margin: 0 5px;
+    }
+
+    .ccontainer{
+        display: flex;
+        margin: 0;
+        justify-content: flex-start;
+    }
+
+    .input-row{
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width: 365px) {
+    .tab-container {
+        flex-direction: column;
+    }
+
+    .ccontainer {
+        flex-direction: column;
+    }
+
+    .input-row {
+        min-width: 82vw;
+    }
+
+    .cloud {
+        width: 50px;
+        height: 50px;
+        right: 90px;
+    }
+
+    .infouno svg,
+    .infodos svg,
+    .infotres svg {
+        max-width: 200px;
+    }
+
+    .infouno h1,
+    .infodos h1,
+    .infotres h1 {
+        font-size: 10px;
+    }
+
+    .infouno,
+    .infodos,
+    .infotres {
+        font-size: 10px;
+        max-width: 200px;
+    }
+
+    .card {
+        max-width: 200px;
+        font-size: 12px;
+        padding: 0px;
+    }
+
+    .cloud {
+        right: auto;
+        left: 100px;
+    }
+
+    .main-text {
+        margin-top: 10px;
+        width: 100px;
+    }
+
+    .info {
+        margin-bottom: 30px;
+        flex-direction: column;
+        max-width: 100px;
+    }
+
+    #card {
+        max-width: 200px;
+    }
+
+    .info-right {
+        justify-content: flex-start;
+        align-items: flex-start;
+        left: 0;
+    }
+
+    .info-left {
+        max-width: 100px;
+    }
+
+    .procedbtn {
+        max-width: 100px;
+    }
+
+    .yellowcircle {
+        min-width: 100px;
+        max-width: 100px;
+        min-height: 100px;
+        max-height: 100px;
+    }
 }

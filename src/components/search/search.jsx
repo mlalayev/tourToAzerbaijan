@@ -3,19 +3,22 @@ import React, { useState } from 'react';
 import { TbReplace } from "react-icons/tb";
 import airports from '../../../airports.json';
 import skyscanner from '../../assets/poweredbyskyscanner.png'
+import { MdOutlineFlight } from "react-icons/md";
+import { MdOutlineHotel } from "react-icons/md";
+
 
 const SearchForm = () => {
     const minValue = 0;
     const maxValue = 10;
+    const [to, setTo] = useState('');
     const [from, setFrom] = useState('');
     const [hotel, setHotel] = useState('');
-    const [adultCount, setAdultCount] = useState(2);
+    const [adultCount, setAdultCount] = useState(1);
     const [childCount, setChildCount] = useState(0);
     const [activeTab, setActiveTab] = useState('flights');
     const [toSuggestions, setToSuggestions] = useState([]);
     const [fromSuggestions, setFromSuggestions] = useState([]);
     const [hotelSuggestions, setHotelSuggestions] = useState([]);
-    const [to, setTo] = useState('');
 
     const swapInputs = () => {
         const temp = from;
@@ -123,12 +126,21 @@ const SearchForm = () => {
         setActiveTab(tab);
     };
 
+    const handleClick = (e) => {
+        if (!from || !to) {
+            e.preventDefault();
+            alert("Please select both 'from' and 'to' locations.");
+        } else {
+            window.open("https://www.skyscanner.com/", "_blank");
+        }
+    };
+
     return (
         <div className='search-container'>
             <div className="tab-container">
                 <div className="btnhldr">
-                    <button className={`tab ${activeTab === 'flights' ? 'active' : ''}`} onClick={() => handleTabChange('flights')}>Flights</button>
-                    <button className={`tab ${activeTab === 'hotels' ? 'active' : ''}`} onClick={() => handleTabChange('hotels')}>Hotels</button>
+                    <button className={`tab ${activeTab === 'flights' ? 'active' : ''}`} onClick={() => handleTabChange('flights')}><MdOutlineFlight />Flights</button>
+                    <button className={`tab ${activeTab === 'hotels' ? 'active' : ''}`} onClick={() => handleTabChange('hotels')}><MdOutlineHotel /> Hotels</button>
                 </div>
                 <img src={skyscanner} className='skyscanner' />
             </div>
@@ -136,7 +148,7 @@ const SearchForm = () => {
             {activeTab === 'flights' ? (
                 <>
                     <div className="form-group-one">
-                        <div class="coontainer">
+                        <div className="coontainer">
                             <form>
                                 <label>
                                     <input type="radio" name="radio" />
@@ -159,7 +171,7 @@ const SearchForm = () => {
                             <div className="autocomplete">
                                 <div className="mydiv">
                                     <input
-                                        placeholder="Enter text here"
+                                        placeholder="From"
                                         className="input-style inputuno"
                                         type="text"
                                         value={from}
@@ -284,17 +296,17 @@ const SearchForm = () => {
                                 </div>
                             </div>
 
-                            <div class="aradio-inputs">
-                                <label class="aradio">
+                            <div className="aradio-inputs">
+                                <label className="aradio">
                                     <input type="radio" name="radio" />
                                     <span className="nname">Economy</span>
                                 </label>
-                                <label class="aradio">
+                                <label className="aradio">
                                     <input type="radio" name="radio" />
                                     <span className="nname">Buisness</span>
                                 </label>
 
-                                <label class="aradio">
+                                <label className="aradio">
                                     <input type="radio" name="radio" />
                                     <span className="nname">First Class</span>
                                 </label>
@@ -302,7 +314,7 @@ const SearchForm = () => {
 
                         </div>
 
-                        <button className='procedbtn' disabled={!from} type="button" onClick={() => window.open("https://www.skyscanner.com/", "_blank")}>Search flights</button>
+                        <button className='procedbtn' type="button" onClick={handleClick}>Search flights</button>
                     </div>
                 </>
             ) : (
