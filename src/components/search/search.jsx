@@ -1,7 +1,8 @@
 import './search.css'
 import React, { useState } from 'react';
-import airports from '../../../airports.json'; // Ensure this path is correct
+import airports from '../../../airports.json';
 import skyscanner from '../../assets/poweredbyskyscanner.png'
+
 const SearchForm = () => {
     const [from, setFrom] = useState('');
     const [hotel, setHotel] = useState('');
@@ -9,10 +10,8 @@ const SearchForm = () => {
     const [fromSuggestions, setFromSuggestions] = useState([]);
     const [hotelSuggestions, setHotelSuggestions] = useState([]);
     const [toSuggestions, setToSuggestions] = useState([]);
-    const [adults, setAdults] = useState(1);
-    const [children, setChildren] = useState(0);
     const [activeTab, setActiveTab] = useState('flights');
-    const [adultCount, setAdultCount] = useState(1);
+    const [adultCount, setAdultCount] = useState(2);
     const [childCount, setChildCount] = useState(0);
     const minValue = 0;
     const maxValue = 10;
@@ -88,7 +87,7 @@ const SearchForm = () => {
     };
 
     const selectHotelSuggestion = (suggestion) => {
-        setFrom(`${suggestion.name} - ${suggestion.code} - ${suggestion.city} - ${suggestion.country}`);
+        setHotel(`${suggestion.name} - ${suggestion.code} - ${suggestion.city} - ${suggestion.country}`);
         setHotelSuggestions([]);
     };
 
@@ -104,15 +103,10 @@ const SearchForm = () => {
         } else if (e.key === 'Enter' && toSuggestions.length > 0) {
             setTo(`${toSuggestions[0].name} - ${toSuggestions[0].code} - ${toSuggestions[0].city}, ${toSuggestions[0].country}`);
             setToSuggestions([]);
+        } else if (e.key === 'Enter' && hotelSuggestions.length > 0) {
+            setHotel(`${hotelSuggestions[0].name} - ${hotelSuggestions[0].code} - ${hotelSuggestions[0].city}, ${hotelSuggestions[0].country}`);
+            setHotelSuggestions([]);
         }
-    };
-
-    const handleAdultsChange = (delta) => {
-        setAdults((prev) => Math.max(1, prev + delta));
-    };
-
-    const handleChildrenChange = (delta) => {
-        setChildren((prev) => Math.max(0, prev + delta));
     };
 
     const handleTabChange = (tab) => {
@@ -248,7 +242,7 @@ const SearchForm = () => {
                                     <ul className="suggestions">
                                         {toSuggestions.map((suggestion, index) => (
                                             <li key={index} onClick={() => selectToSuggestion(suggestion)}>
-                                                {suggestion.name} - {suggestion.code} - {suggestion.city}, {suggestion.country}
+                                                {suggestion.name} - {suggestion.code} - {suggestion.city} - {suggestion.country}
                                             </li>
                                         ))}
                                     </ul>
@@ -346,43 +340,44 @@ const SearchForm = () => {
             ) : (
                 <>
                     <div className="search-hotels-container">
-                        <div className="form-group-hotels">
+                        <div className="autocompletehotel">
+                            <div className="form-group-hotels">
+                                <input
+                                    placeholder="To"
+                                    type="text"
+                                    className="scndinput"
+                                    value={hotel}
+                                    onChange={handleHotelChange}
+                                    onKeyDown={handleEnterPress}
+                                />
+                                {hotelSuggestions.length > 0 && (
+                                    <ul className="suggestions">
+                                        {hotelSuggestions.map((suggestion, index) => (
+                                            <li key={index} onClick={() => selectHotelSuggestion(suggestion)}>
+                                                {suggestion.name} - {suggestion.code} - {suggestion.city} - {suggestion.country}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                )}
+                            </div>
+                        </div>
+                        <div className="flexx">
                             <input
-                                placeholder="Hotel names..."
-                                type="text"
-                                className="textInputone scndinput"
-                                onChange={handleHotelChange}
+                                placeholder="From"
+                                type="date"
+                                className="textInputone scndinputdate"
+                                // value={from}
+                                // onChange={handleFromChange}
                                 onKeyDown={handleEnterPress}
                             />
-
-                            {toSuggestions.length > 0 && (
-                                <ul className="suggestions">
-                                    {toSuggestions.map((suggestion, index) => (
-                                        <li key={index} onClick={() => selectHotelSuggestion(suggestion)}>
-                                            {suggestion.name} - {suggestion.code} - {suggestion.city}, {suggestion.country}
-                                        </li>
-                                    ))}
-                                </ul>
-                            )}
-
-                            <div className="flexx">
-                                <input
-                                    placeholder="From"
-                                    type="date"
-                                    className="textInputone scndinputdate"
-                                    // value={from}
-                                    // onChange={handleFromChange}
-                                    onKeyDown={handleEnterPress}
-                                />
-                                <input
-                                    placeholder="Till"
-                                    type="date"
-                                    className="textInputone scndinputdate"
-                                    // value={from}
-                                    // onChange={handleFromChange}
-                                    onKeyDown={handleEnterPress}
-                                />
-                            </div>
+                            <input
+                                placeholder="Till"
+                                type="date"
+                                className="textInputone scndinputdate"
+                                // value={from}
+                                // onChange={handleFromChange}
+                                onKeyDown={handleEnterPress}
+                            />
                         </div>
 
                         <div className="form-group-four">

@@ -1,3 +1,7 @@
+* {
+    /* border: 1px solid black; */
+}
+
 :root {
     --width-container: 540px;
 }
@@ -16,10 +20,10 @@
 
 .input-row {
     display: flex;
-    padding: 5px;
+    padding: 0 20px;
     margin: 10px auto;
     align-items: center;
-    padding: var(--space-8) 0;
+    justify-content: center;
     border-bottom: var(--border);
     background-color: #fff;
     box-shadow: 8px 8px 6px gray;
@@ -93,16 +97,16 @@
     color: var(--color-gray-400);
 }
 
-.minus{
+.minus {
     margin-right: 10px !important;
 }
 
-.plus{
+.plus {
     margin-left: 10px !important;
 }
 
 @media screen and (min-width:830px) {
-    .box{
+    .box {
         /* border: 10px solid red; */
         margin: auto;
         left: auto !important;
@@ -115,10 +119,10 @@
 
 .search-container {
     width: 94vw;
-    height: 500px;
+    height: 550px;
     display: flex;
     padding: 20px;
-    max-width: 1600px;
+    max-width: 1400px;
     margin-bottom: 0;
     transition: 0.2s;
     margin: 60px auto;
@@ -158,11 +162,11 @@
     left: -9999px;
 }
 
-.coontainer label input:checked + span {
+.coontainer label input:checked+span {
     background-color: #e0e0f5;
 }
 
-.coontainer label input:checked + span:before {
+.coontainer label input:checked+span:before {
     box-shadow: inset 0 0 0 0.4375em #00005c;
 }
 
@@ -205,12 +209,12 @@
     justify-content: center;
 }
 
-.svghld{
+.svghld {
     z-index: -99;
     width: 100%;
     height: 100%;
     border-radius: 5px;
-    background:linear-gradient(pink, #ff0, red);
+    background: linear-gradient(pink, #ff0, red);
     position: absolute;
     background: #00000016;
     margin: -20px !important;
@@ -227,12 +231,12 @@
 
 .skyscanner {
     width: 200px;
-    color: white !important;
+    color: white;
     height: 40px;
     /* align-self: end; */
 }
 
-.tab-container{
+.tab-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -356,15 +360,13 @@ input[type='radio'] {
     box-shadow: 2px 2px 5px black;
 }
 
-
-
 .textInputWrapper input {
     margin: 6px !important;
 }
 
 .textInputWrapper {
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
     margin: 12px 5px;
     position: relative;
     justify-content: center;
@@ -417,7 +419,7 @@ input[type='radio'] {
 }
 
 .form-group-two {
-    display: flex;
+    /* display: flex; */
     align-items: center;
     flex-direction: column;
 }
@@ -433,11 +435,35 @@ input[type='radio'] {
 }
 
 .scndinput {
-    min-width: 100% !important;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 12px;
+    font-size: 14px;
+    width: 88vw;
+    font-weight: 500;
+    max-height: 36px;
+    max-width: 740px;
+    position: relative;
+    border-radius: 5px;
+    margin: 0 !important;
+    background-color: #fefefe;
+    transition-duration: 200ms;
+    border-bottom: 2px solid black;
+    font-family: var(--font-family-reddit);
+    transition-property: background-color;
+    box-shadow:
+        0px 0px 2.2px rgba(0, 0, 0, 0.052),
+        0px 0px 5.3px rgba(0, 0, 0, 0.099),
+        0px 0px 10px rgba(0, 0, 0, 0.108),
+        0px 0px 9px rgba(0, 0, 0, 0.179),
+        0px 0px 4px rgba(0, 0, 0, 0.254),
+        0px 0px 8px rgba(0, 0, 0, 0.33);
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .form-group-hotels {
-    height: 80px;
+    /* height: 80px; */
     display: flex;
     margin-bottom: 20px;
     width: 90% !important;
@@ -459,7 +485,7 @@ input[type='radio'] {
 .textInputtwo,
 .textInputthree,
 .textInputfour {
-    width: 43vw;
+    width: 100vw;
     color: black;
     border: none;
     outline: none;
@@ -574,7 +600,13 @@ input[type='radio'] {
 }
 
 .autocomplete {
+    /* display: flex; */
+    position: relative;
+}
+
+.autocompletehotel {
     display: flex;
+    height: 38px;
     position: relative;
 }
 
@@ -599,6 +631,30 @@ input[type='radio'] {
 }
 
 .suggestions li:hover {
+    background-color: #f0f0f0;
+}
+
+.suggestionshotel {
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    top: 100%;
+    z-index: 1000;
+    overflow-y: auto;
+    max-height: 150px;
+    position: absolute;
+    list-style-type: none;
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+.suggestionshotel li {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.suggestionshotel li:hover {
     background-color: #f0f0f0;
 }
 
