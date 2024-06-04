@@ -713,6 +713,39 @@ input[type='radio'] {
     background-color: #05203C;
 }
 
+.selectedtocode {
+    right: 15px;
+    display: flex;
+    padding: 0 10px;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    background-color: #fff;
+    border-left: 1px solid #05203C;
+    box-shadow: -5px 0px 6px white;
+}
+
+.mydiv {
+    display: flex;
+    align-items: center;
+}
+
+.mydiv input{
+    padding-right: 70px;
+}
+
+.selectedfromcode {
+    right: 15px;
+    display: flex;
+    padding: 0 10px;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    background-color: #fff;
+    border-left: 1px solid #05203C;
+    box-shadow: -5px 0px 6px white;
+}
+
 @media screen and (min-width:1300px) {
     .input-style {
         color: black;
@@ -764,7 +797,7 @@ input[type='radio'] {
         width: 33vw;
     }
 
-    .mydiv .input-style{
+    .mydiv .input-style {
         padding-right: 73px;
     }
 
@@ -794,8 +827,8 @@ input[type='radio'] {
         justify-content: space-between;
     }
 
-    .inputuno{
-        padding-right: 75px !important;
+    .inputuno {
+        padding-right: 70px !important;
     }
 
     .aradio-inputs {
@@ -832,7 +865,7 @@ input[type='radio'] {
     }
 
     .selectedfromcode {
-        right: 10px;
+        right: 15px;
         height: 80%;
         display: flex;
         padding: 0 10px;
@@ -842,7 +875,7 @@ input[type='radio'] {
         align-items: center;
         background-color: #fff;
         border-left: 1px solid #05203C;
-        box-shadow: -15px 0px 3px white;
+        box-shadow: -5px 0px 6px white;
     }
 }
 

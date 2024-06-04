@@ -210,12 +210,6 @@
         "country": "Spain"
     },
     {
-        "name": "Hamad International Airport",
-        "code": "DOH",
-        "city": "Doha",
-        "country": "Qatar"
-    },
-    {
         "name": "Budapest Ferenc Liszt International Airport",
         "code": "BUD",
         "city": "Budapest",
@@ -348,12 +342,6 @@
         "country": "Finland"
     },
     {
-        "name": "Oslo Gardermoen Airport",
-        "code": "OSL",
-        "city": "Oslo",
-        "country": "Norway"
-    },
-    {
         "name": "Stockholm Arlanda Airport",
         "code": "ARN",
         "city": "Stockholm",
@@ -390,18 +378,6 @@
         "country": "Qatar"
     },
     {
-        "name": "Lisbon Portela Airport",
-        "code": "LIS",
-        "city": "Lisbon",
-        "country": "Portugal"
-    },
-    {
-        "name": "Brussels Airport",
-        "code": "BRU",
-        "city": "Brussels",
-        "country": "Belgium"
-    },
-    {
         "name": "Manchester Airport",
         "code": "MAN",
         "city": "Manchester",
@@ -426,12 +402,6 @@
         "country": "Germany"
     },
     {
-        "name": "Munich Airport",
-        "code": "MUC",
-        "city": "Munich",
-        "country": "Germany"
-    },
-    {
         "name": "Hamburg Airport",
         "code": "HAM",
         "city": "Hamburg",
@@ -442,12 +412,6 @@
         "code": "CGN",
         "city": "Cologne",
         "country": "Germany"
-    },
-    {
-        "name": "Vienna International Airport",
-        "code": "VIE",
-        "city": "Vienna",
-        "country": "Austria"
     },
     {
         "name": "Zagreb Airport",
@@ -510,12 +474,6 @@
         "country": "Norway"
     },
     {
-        "name": "Helsinki-Vantaa Airport",
-        "code": "HEL",
-        "city": "Helsinki",
-        "country": "Finland"
-    },
-    {
         "name": "Riga International Airport",
         "code": "RIX",
         "city": "Riga",
@@ -532,5 +490,227 @@
         "code": "TLL",
         "city": "Tallinn",
         "country": "Estonia"
+    },
+    {
+        "name": "Shanghai Pudong International Airport",
+        "code": "PVG",
+        "city": "Shanghai",
+        "country": "China"
+    },
+    {
+        "name": "Shanghai Hongqiao International Airport",
+        "code": "SHA",
+        "city": "Shanghai",
+        "country": "China"
+    },
+    {
+        "name": "Chengdu Shuangliu International Airport",
+        "code": "CTU",
+        "city": "Chengdu",
+        "country": "China"
+    },
+    {
+        "name": "Guangzhou Baiyun International Airport",
+        "code": "CAN",
+        "city": "Guangzhou",
+        "country": "China"
+    },
+    {
+        "name": "Shenzhen Bao'an International Airport",
+        "code": "SZX",
+        "city": "Shenzhen",
+        "country": "China"
+    },
+    {
+        "name": "Xi'an Xianyang International Airport",
+        "code": "XIY",
+        "city": "Xi'an",
+        "country": "China"
+    },
+    {
+        "name": "Hangzhou Xiaoshan International Airport",
+        "code": "HGH",
+        "city": "Hangzhou",
+        "country": "China"
+    },
+    {
+        "name": "Shenyang Taoxian International Airport",
+        "code": "SHE",
+        "city": "Shenyang",
+        "country": "China"
+    },
+    {
+        "name": "Nanjing Lukou International Airport",
+        "code": "NKG",
+        "city": "Nanjing",
+        "country": "China"
+    },
+    {
+        "name": "Chongqing Jiangbei International Airport",
+        "code": "CKG",
+        "city": "Chongqing",
+        "country": "China"
+    },
+    {
+        "name": "Chengdu Tianfu International Airport",
+        "code": "TFU",
+        "city": "Chengdu",
+        "country": "China"
+    },
+    {
+        "name": "Zhengzhou Xinzheng International Airport",
+        "code": "CGO",
+        "city": "Zhengzhou",
+        "country": "China"
+    },
+    {
+        "name": "Kunming Changshui International Airport",
+        "code": "KMG",
+        "city": "Kunming",
+        "country": "China"
+    },
+    {
+        "name": "Urumqi Diwopu International Airport",
+        "code": "URC",
+        "city": "Urumqi",
+        "country": "China"
+    },
+    {
+        "name": "Harbin Taiping International Airport",
+        "code": "HRB",
+        "city": "Harbin",
+        "country": "China"
+    },
+    {
+        "name": "Nanning Wuxu International Airport",
+        "code": "NNG",
+        "city": "Nanning",
+        "country": "China"
+    },
+    {
+        "name": "Xiamen Gaoqi International Airport",
+        "code": "XMN",
+        "city": "Xiamen",
+        "country": "China"
+    },
+    {
+        "name": "Taiyuan Wusu International Airport",
+        "code": "TYN",
+        "city": "Taiyuan",
+        "country": "China"
+    },
+    {
+        "name": "Changchun Longjia International Airport",
+        "code": "CGQ",
+        "city": "Changchun",
+        "country": "China"
+    },
+    {
+        "name": "Qingdao Liuting International Airport",
+        "code": "TAO",
+        "city": "Qingdao",
+        "country": "China"
+    },
+    {
+        "name": "Dalian Zhoushuizi International Airport",
+        "code": "DLC",
+        "city": "Dalian",
+        "country": "China"
+    },
+    {
+        "name": "Guiyang Longdongbao International Airport",
+        "code": "KWE",
+        "city": "Guiyang",
+        "country": "China"
+    },
+    {
+        "name": "Wuhan Tianhe International Airport",
+        "code": "WUH",
+        "city": "Wuhan",
+        "country": "China"
+    },
+    {
+        "name": "Changsha Huanghua International Airport",
+        "code": "CSX",
+        "city": "Changsha",
+        "country": "China"
+    },
+    {
+        "name": "Changzhou Benniu Airport",
+        "code": "CZX",
+        "city": "Changzhou",
+        "country": "China"
+    },
+    {
+        "name": "Wenzhou Longwan International Airport",
+        "code": "WNZ",
+        "city": "Wenzhou",
+        "country": "China"
+    },
+    {
+        "name": "Fuzhou Changle International Airport",
+        "code": "FOC",
+        "city": "Fuzhou",
+        "country": "China"
+    },
+    {
+        "name": "Haikou Meilan International Airport",
+        "code": "HAK",
+        "city": "Haikou",
+        "country": "China"
+    },
+    {
+        "name": "Sanya Phoenix International Airport",
+        "code": "SYX",
+        "city": "Sanya",
+        "country": "China"
+    },
+    {
+        "name": "Hohhot Baita International Airport",
+        "code": "HET",
+        "city": "Hohhot",
+        "country": "China"
+    },
+    {
+        "name": "Jinan Yaoqiang International Airport",
+        "code": "TNA",
+        "city": "Jinan",
+        "country": "China"
+    },
+    {
+        "name": "Nanchang Changbei International Airport",
+        "code": "KHN",
+        "city": "Nanchang",
+        "country": "China"
+    },
+    {
+        "name": "Ningbo Lishe International Airport",
+        "code": "NGB",
+        "city": "Ningbo",
+        "country": "China"
+    },
+    {
+        "name": "Suzhou Sunan Shuofang International Airport",
+        "code": "SZV",
+        "city": "Suzhou",
+        "country": "China"
+    },
+    {
+        "name": "Xining Caojiabao Airport",
+        "code": "XNN",
+        "city": "Xining",
+        "country": "China"
+    },
+    {
+        "name": "Yinchuan Hedong Airport",
+        "code": "INC",
+        "city": "Yinchuan",
+        "country": "China"
+    },
+    {
+        "name": "Zhuhai Jinwan Airport",
+        "code": "ZUH",
+        "city": "Zhuhai",
+        "country": "China"
     }
 ]

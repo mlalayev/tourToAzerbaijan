@@ -29,6 +29,8 @@ const SearchForm = () => {
         const temp = from;
         setFrom(to);
         setTo(temp);
+        setSelectedFromCode(selectedToCode);
+        setSelectedToCode(selectedFromCode);
     };
 
     const handleIncrement = (type) => {
@@ -100,7 +102,7 @@ const SearchForm = () => {
     };
 
     const selectFromSuggestion = (suggestion) => {
-        setFrom(`${suggestion.name} - ${suggestion.code} - ${suggestion.city} - ${suggestion.country}`);
+        setFrom(`${suggestion.name} - ${suggestion.city} - ${suggestion.country}`);
         setSelectedFromCode(suggestion.code); // Update selected airport code
         setFromSuggestions([]);
     };
@@ -111,25 +113,26 @@ const SearchForm = () => {
     };
 
     const selectToSuggestion = (suggestion) => {
-        setTo(`${suggestion.name} - ${suggestion.code} - ${suggestion.city} - ${suggestion.country}`);
+        setTo(`${suggestion.name} - ${suggestion.city} - ${suggestion.country}`);
         setSelectedToCode(suggestion.code); // Update selected airport code
         setToSuggestions([]);
     };
 
     const handleEnterPress = (e) => {
         if (e.key === 'Enter' && fromSuggestions.length > 0) {
-            setFrom(`${fromSuggestions[0].name} - ${fromSuggestions[0].code} - ${fromSuggestions[0].city}, ${fromSuggestions[0].country}`);
-            setSelectedFromCode(toSuggestions[0].code); // Update selected airport code
+            setFrom(`${fromSuggestions[0].name} -  ${fromSuggestions[0].city}, ${fromSuggestions[0].country}`);
+            setSelectedFromCode(fromSuggestions[0].code); // Update selected airport code
             setFromSuggestions([]);
         } else if (e.key === 'Enter' && toSuggestions.length > 0) {
-            setTo(`${toSuggestions[0].name} - ${toSuggestions[0].code} - ${toSuggestions[0].city}, ${toSuggestions[0].country}`);
+            setTo(`${toSuggestions[0].name} - ${toSuggestions[0].city}, ${toSuggestions[0].country}`);
             setSelectedToCode(toSuggestions[0].code); // Update selected airport code
             setToSuggestions([]);
         } else if (e.key === 'Enter' && hotelSuggestions.length > 0) {
-            setHotel(`${hotelSuggestions[0].name} - ${hotelSuggestions[0].code} - ${hotelSuggestions[0].city}, ${hotelSuggestions[0].country}`);
+            setHotel(`${hotelSuggestions[0].name} - ${hotelSuggestions[0].city}, ${hotelSuggestions[0].country}`);
             setHotelSuggestions([]);
         }
     };
+    
 
     const handleTabChange = (tab) => {
         setActiveTab(tab);
@@ -217,7 +220,7 @@ const SearchForm = () => {
                                             {toSuggestions.map((suggestion, index) => (
                                                 <li key={index} onClick={() => selectToSuggestion(suggestion)}>
                                                     <TbPlaneArrival />
-                                                    {suggestion.name} - {suggestion.city} - {suggestion.country}
+                                                    {suggestion.name} - {suggestion.code} - {suggestion.city} {suggestion.country}
                                                 </li>
                                             ))}
                                         </ul>
