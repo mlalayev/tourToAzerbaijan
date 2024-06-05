@@ -1,8 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import TEMP from '../temprature/temprature.jsx';
+import { useTranslation } from 'react-i18next';
 
 function WeatherAPI() {
+
+    const { t } = useTranslation();
+
+
     const [errorMessage, setErrorMessage] = useState('');
     const [cityInput, setCityInput] = useState('');
     const [weatherData, setWeatherData] = useState(null);
@@ -92,7 +97,7 @@ function WeatherAPI() {
 
     return (
         <section className="sectionweatherinfo frmnpg">
-            
+
             <div className="weatherinfo">
                 <div className="infouno">
                     <TEMP
@@ -116,11 +121,11 @@ function WeatherAPI() {
 
                 <div className="infotres">
                     {(!cityWeatherFetched && !errorMessage) && (
-                        <p>Check your city here</p>
+                        <p>{t('api.message')}</p>
                     )}
 
                     {errorMessage && (
-                        <p className='errormsg'>{errorMessage}</p>
+                        <p className='errormsg'>{t('api.errormessage')}</p>
                     )}
 
                     {cityWeatherFetched && weatherData && (

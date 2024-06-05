@@ -1,11 +1,58 @@
 {
     "header": {
-      "logoAlt": "Logo",
-      "multiDayTours": "Çoxgünlük turlar",
-      "dayTrips": "Günlük səyahətlər",
-      "destinations": "Məkanlar",
-      "visaInformations": "Viza məlumatları",
-      "checkout": "Ödəmə"
+        "logoAlt": "Logo",
+        "multiDayTours": "Çox gün müddətli tur",
+        "dayTrips": "Günlük səyahətlər",
+        "destinations": "Gediləcək yerlər",
+        "visaInformations": "Viza məlumatları",
+        "checkout": "Ödəmə"
+    },
+    "sectionfirst": {
+        "cityChoose": "Şəhər seçin",
+        "findTours": "Tur tap"
+    },
+    "sectionsecond": {
+        "packageTours": "Paket turlar",
+        "selectPackage": "Rusiya səfərinizə hazırlaşmaq üçün özəl paketlərimizdən birini seçin! Qonaqlıq, hava limanı transferləri, muzey biletləri, şəhərlər arası nəqliyyat, tur rehberləri ilə narahat olmağa ehtiyacınız yoxdur - biz bunu sizin üçün həll edəcəyik.",
+        "toursToBaku": "Bakı və onun görməli yerlərinə turlar",
+        "bakuBoulevard": "Bakı bulvarı",
+        "weekendInQabala": "Qəbələdə həftə sonu - Sorğu ilə",
+        "weekendInLerik": "Lerikdə həftə sonu - Sorğu ilə",
+        "weekendInLankaran": "Lənkəran'da həftə sonu - Sorğu ilə",
+        "weekendInQuba": "Qubada həftə sonu - Sorğu ilə",
+        "weekendInShusha": "Şuşada həftə sonu - Sorğu ilə",
+        "view": "Baxış",
+        "sliderProps": {
+            "sliderdos": {
+                "huno": "Bakı bulvarı",
+                "p": "1 gün 179,48 avro",
+                "btn": "Bax"
+            },
+            "slidertres": {
+                "huno": "Qəbələdə həftə sonu - Sorğu ilə",
+                "p": "8 gün / 7 gecə 343,64 avro",
+                "btn": "Bax"
+            },
+            "slidercuatro": {
+                "huno": "Lerikdə həftə sonu - Sorğu ilə",
+                "p": "3 gün / 2 gecə 94,54",
+                "btn": "Bax"
+            },
+            "sliderpierci": {
+                "huno": "Lənkəran'da həftə sonu - Sorğu ilə",
+                "p": "3 gün / 2 gecə 146,85",
+                "btn": "Bax"
+            },
+            "slidersessi": {
+                "huno": "Qubada həftə sonu - Sorğu ilə",
+                "p": "3 gün / 2 gecə 245,58",
+                "btn": "Bax"
+            },
+            "sliderseptini": {
+                "huno": "Şuşada həftə sonu - Sorğu ilə",
+                "p": "3 gün / 2 gecə 180,93",
+                "btn": "Bax"
+            }
+        }
     }
-  }
-  
+}

@@ -5,6 +5,11 @@
     /* border: 1px solid red; */
 }
 
+.flag{
+    width: 20px;
+    height: 20px;
+}
+
 .lang{
     width: 60px;
     height: 40px;
@@ -18,8 +23,9 @@
 
 /* src/components/LanguageSwitcher.css */
 .language-switcher {
+    display: flex;
     position: relative;
-    display: inline-block;
+    justify-content: center;
 }
 
 .lang {
@@ -34,19 +40,25 @@
 .language-menu {
     position: absolute;
     top: 100%;
-    left: 0;
+    border-radius: 10px;
+    font-family: var(--font-family-reddit);
+    /* right: auto; */
+    /* left: auto; */
     background: white;
     border: 1px solid #ddd;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     list-style: none;
     padding: 0;
-    margin: 0;
-    width: 120px;
+    margin: auto;
+    width: 140px;
 }
 
 .language-menu li {
+    gap: 5px;
+    display: flex;
     padding: 10px;
     cursor: pointer;
+    align-items: center;
 }
 
 .language-menu li:hover {

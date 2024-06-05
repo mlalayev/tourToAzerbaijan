@@ -7,9 +7,12 @@ import { MdOutlineFlight } from "react-icons/md";
 import { MdOutlineHotel } from "react-icons/md";
 import { TbPlaneDeparture } from "react-icons/tb";
 import { TbPlaneArrival } from "react-icons/tb";
-
+import { useTranslation } from 'react-i18next';
 
 const SearchForm = () => {
+
+    const { t } = useTranslation();
+
     const minValue = 0;
     const maxValue = 10;
     const [to, setTo] = useState('');
@@ -21,7 +24,7 @@ const SearchForm = () => {
     const [toSuggestions, setToSuggestions] = useState([]);
     const [fromSuggestions, setFromSuggestions] = useState([]);
     const [hotelSuggestions, setHotelSuggestions] = useState([]);
-    const [selectedToCode, setSelectedToCode] = useState('');
+    const [selectedToCode, setSelectedToCode] = useState('GYD');
     const [selectedFromCode, setSelectedFromCode] = useState('');
 
 
@@ -151,8 +154,8 @@ const SearchForm = () => {
         <div className='search-container'>
             <div className="tab-container">
                 <div className="btnhldr">
-                    <button className={`tab ${activeTab === 'flights' ? 'active' : ''}`} onClick={() => handleTabChange('flights')}><MdOutlineFlight />Flights</button>
-                    <button className={`tab ${activeTab === 'hotels' ? 'active' : ''}`} onClick={() => handleTabChange('hotels')}><MdOutlineHotel /> Hotels</button>
+                    <button className={`tab ${activeTab === 'flights' ? 'active' : ''}`} onClick={() => handleTabChange('flights')}><MdOutlineFlight />{t('search.flightsTab')}</button>
+                    <button className={`tab ${activeTab === 'hotels' ? 'active' : ''}`} onClick={() => handleTabChange('hotels')}><MdOutlineHotel /> {t('search.hotelsTab')}</button>
                 </div>
                 <img src={skyscanner} className='skyscanner' />
             </div>
@@ -164,15 +167,15 @@ const SearchForm = () => {
                             <form>
                                 <label>
                                     <input type="radio" name="radio" />
-                                    <span>One-Way</span>
+                                    <span>{t('search.oneway')}</span>
                                 </label>
                                 <label>
                                     <input type="radio" name="radio" />
-                                    <span>Two-Way</span>
+                                    <span>{t('search.twoway')}</span>
                                 </label>
                                 <label>
                                     <input type="radio" name="radio" />
-                                    <span>Multi-City</span>
+                                    <span>{t('search.multicity')}</span>
                                 </label>
                             </form>
                         </div>
@@ -249,7 +252,7 @@ const SearchForm = () => {
                             <div className="ccontainer">
                                 <div className="input-row">
                                     <div className="title">
-                                        <h2 className="label">Adults</h2>
+                                        <h2 className="label">{t('search.adults')}</h2>
                                     </div>
                                     <div className="input">
                                         <button
@@ -280,7 +283,7 @@ const SearchForm = () => {
                                 </div>
                                 <div className="input-row">
                                     <div className="title">
-                                        <h2 className="label">Children</h2>
+                                        <h2 className="label">{t('search.children')}</h2>
                                     </div>
                                     <div className="input">
                                         <button
@@ -314,22 +317,22 @@ const SearchForm = () => {
                             <div className="aradio-inputs">
                                 <label className="aradio">
                                     <input type="radio" name="radio" />
-                                    <span className="nname">Economy</span>
+                                    <span className="nname">{t('search.economy')}</span>
                                 </label>
                                 <label className="aradio">
                                     <input type="radio" name="radio" />
-                                    <span className="nname">Buisness</span>
+                                    <span className="nname">{t('search.buisness')}</span>
                                 </label>
 
                                 <label className="aradio">
                                     <input type="radio" name="radio" />
-                                    <span className="nname">First Class</span>
+                                    <span className="nname">{t('search.firstclass')}</span>
                                 </label>
                             </div>
 
                         </div>
 
-                        <button className='procedbtn' type="button" onClick={handleClick}>Search flights</button>
+                        <button className='procedbtn' type="button" onClick={handleClick}>{t('search.searchFlight')}</button>
                     </div>
                 </>
             ) : (
