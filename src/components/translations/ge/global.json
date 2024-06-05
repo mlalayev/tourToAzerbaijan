@@ -1,10 +1,89 @@
 {
+    "cities": {
+        "default": "Stadt auswählen",
+        "Aghdjabadi": "Aghdjabadi",
+        "Aghdam": "Aghdam",
+        "Aghdash": "Aghdash",
+        "Aghdara": "Aghdara",
+        "Ahstafa": "Ahstafa",
+        "Aghsu": "Aghsu",
+        "Astara": "Astara",
+        "Babek": "Babek",
+        "Baku": "Baku",
+        "Balakan": "Balakan",
+        "Baylagan": "Baylagan",
+        "Barda": "Barda",
+        "Bilasuvar": "Bilasuvar",
+        "Djabrail": "Djabrail",
+        "Djalilabad": "Djalilabad",
+        "Djulfa": "Djulfa",
+        "Dashkasan": "Dashkasan",
+        "Dalimammadli": "Dalimammadli",
+        "Fuzuli": "Fuzuli",
+        "Gadabay": "Gadabay",
+        "Ganja": "Ganja",
+        "Goranboy": "Goranboy",
+        "Goychay": "Goychay",
+        "Goygol": "Goygol",
+        "Goytapa": "Goytapa",
+        "Hadjikabul": "Hadjikabul",
+        "Horadiz": "Horadiz",
+        "Khachmas": "Khachmas",
+        "Khankandi": "Khankandi",
+        "Khizy": "Khizy",
+        "Khojaly": "Khojaly",
+        "Khodjavand": "Khodjavand",
+        "Khirdalan": "Khirdalan",
+        "Khudat": "Khudat",
+        "Ismailly": "Ismailly",
+        "Kalbadjar": "Kalbadjar",
+        "Kurdamir": "Kurdamir",
+        "Gakh": "Gakh",
+        "Kazakh": "Kazakh",
+        "Gabala": "Gabala",
+        "Gobustan": "Gobustan",
+        "Govlar": "Govlar",
+        "Guba": "Guba",
+        "Kubadly": "Kubadly",
+        "Kusar": "Kusar",
+        "Lachin": "Lachin",
+        "Lerik": "Lerik",
+        "Lankaran": "Lankaran",
+        "Liman": "Liman",
+        "Masally": "Masally",
+        "Mingachevir": "Mingachevir",
+        "Naftalan": "Naftalan",
+        "Oghuz": "Oghuz",
+        "Ordubad": "Ordubad",
+        "Saatly": "Saatly",
+        "Sabirabad": "Sabirabad",
+        "Salyan": "Salyan",
+        "Samukh": "Samukh",
+        "Siyasan": "Siyasan",
+        "Sumgait": "Sumgait",
+        "Shabran": "Shabran",
+        "Shahbuz": "Shahbuz",
+        "Shamakhy": "Shamakhy",
+        "Shaki": "Shaki",
+        "Shamkir": "Shamkir",
+        "Sharur": "Sharur",
+        "Shirvan": "Shirvan",
+        "Shusha": "Shusha",
+        "Tartar": "Tartar",
+        "Tovuz": "Tovuz",
+        "Udjar": "Udjar",
+        "Yardymly": "Yardymly",
+        "Yevlakh": "Yevlakh",
+        "Zagatala": "Zagatala",
+        "Zangilan": "Zangilan",
+        "Zardab": "Zardab"
+    },
     "header": {
         "logoAlt": "Logo",
         "multiDayTours": "Mehrtägige Touren",
         "dayTrips": "Tagesausflüge",
         "destinations": "Ziele",
-        "visaInformations": "Visainformationen",
+        "visaInformations": "Visa-Informationen",
         "checkout": "Auschecken"
     },
     "sectionfirst": {
@@ -12,8 +91,8 @@
         "findTours": "Touren finden"
     },
     "sectionsecond": {
-        "packageTours": "Paketreisen",
-        "selectPackage": "Wählen Sie eines unserer maßgeschneiderten Pakete und machen Sie sich bereit für Ihr russisches Abenteuer! Sie müssen sich keine Sorgen um Unterkunft, Flughafentransfers, Museumseintrittskarten, Transport zwischen den Städten, Reiseleiter machen - wir kümmern uns darum für Sie.",
+        "packageTours": "Pauschalreisen",
+        "selectPackage": "Wählen Sie eines unserer maßgeschneiderten Pakete aus und bereiten Sie sich auf Ihr russisches Abenteuer vor! Sie müssen sich keine Sorgen um Unterkünfte, Flughafentransfers, Museumstickets, Transport zwischen den Städten und Reiseleiter machen - wir kümmern uns darum für dich.",
         "toursToBaku": "Touren nach Baku und seine Sehenswürdigkeiten",
         "bakuBoulevard": "Baku Boulevard",
         "weekendInQabala": "Wochenende in Qabala ab Auf Anfrage",
@@ -21,93 +100,93 @@
         "weekendInLankaran": "Wochenende in Lankaran ab Auf Anfrage",
         "weekendInQuba": "Wochenende in Quba ab Auf Anfrage",
         "weekendInShusha": "Wochenende in Shusha ab Auf Anfrage",
-        "view": "Schau mir an",
+        "view": "Mich anschauen",
         "sliderProps": {
             "sliderdos": {
                 "huno": "Baku Boulevard",
                 "p": "1 Tag ab 179,48 Euro",
-                "btn": "Schau mich an"
+                "btn": "Mich anschauen"
             },
             "slidertres": {
                 "huno": "Wochenende in Qabala ab Auf Anfrage",
                 "p": "8 Tage / 7 Nächte ab 343,64 Euro",
-                "btn": "Schau mich an"
+                "btn": "Mich anschauen"
             },
             "slidercuatro": {
                 "huno": "Wochenende in Lerik ab Auf Anfrage",
-                "p": "3 Tage / 2 Nächte ab 94,54 Euro",
-                "btn": "Schau mich an"
+                "p": "3 Tage / 2 Nächte ab 94,54",
+                "btn": "Mich anschauen"
             },
             "sliderpierci": {
                 "huno": "Wochenende in Lankaran ab Auf Anfrage",
-                "p": "3 Tage / 2 Nächte ab 146,85 Euro",
-                "btn": "Schau mich an"
+                "p": "3 Tage / 2 Nächte ab 146,85",
+                "btn": "Mich anschauen"
             },
             "slidersessi": {
                 "huno": "Wochenende in Quba ab Auf Anfrage",
-                "p": "3 Tage / 2 Nächte ab 245,58 Euro",
-                "btn": "Schau mich an"
+                "p": "3 Tage / 2 Nächte ab 245,58",
+                "btn": "Mich anschauen"
             },
             "sliderseptini": {
                 "huno": "Wochenende in Shusha ab Auf Anfrage",
-                "p": "3 Tage / 2 Nächte ab 180,93 Euro",
-                "btn": "Schau mich an"
+                "p": "3 Tage / 2 Nächte ab 180,93",
+                "btn": "Mich anschauen"
             }
         }
     },
     "sectionthird": {
-        "packageTours": "Paketreisen",
-        "selectPackage": "Wählen Sie eines unserer maßgeschneiderten Pakete und machen Sie sich bereit für Ihr russisches Abenteuer! Sie müssen sich keine Sorgen um Unterkunft, Flughafentransfers, Museumseintrittskarten, Transport zwischen den Städten, Reiseleiter machen - wir kümmern uns darum für Sie.",
+        "packageTours": "Pauschalreisen",
+        "selectPackage": "Wählen Sie eines unserer maßgeschneiderten Pakete aus und bereiten Sie sich auf Ihr russisches Abenteuer vor! Sie müssen sich keine Sorgen um Unterkünfte, Flughafentransfers, Museumstickets, Transport zwischen den Städten und Reiseleiter machen - wir kümmern uns darum für dich.",
         "atashgah": "Atashgah",
-        "atashgahDescription": "Das Feuerheiligtum von Baku ist eine faszinierende historische und religiöse Stätte. Dieser pentagonale Komplex, der im 17. Jahrhundert erbaut wurde, ...",
-        "viewMe": "Schau mich an",
+        "atashgahDescription": "Das Feuertempel von Baku ist eine faszinierende historische und religiöse Stätte. Dieser pentagonale Komplex, erbaut im 17. Jahrhundert...",
+        "viewMe": "Mich anschauen",
         "sliderProps": {
             "slidershahdag": {
-                "huno": "Shahdag Bergresort",
-                "p": "Ein großes Resortgebiet mit mehreren Hotels, die Skifahren, Snowboarden und andere Wintersportarten anbieten ...",
-                "btn": "Ansehen"
+                "huno": "Shahdag Mountain Resort",
+                "p": "Ein großes Resortgebiet mit mehreren Hotels, die Skifahren, Snowboarden und andere Wintersportarten anbieten...",
+                "btn": "Anschauen"
             },
             "khizidag": {
                 "huno": "Die roten Berge von Khizi",
-                "p": "Der Bezirk Khizi in Aserbaidschan ist bekannt für seine markanten roten und orangefarbenen Farbtöne ...",
-                "btn": "Ansehen"
+                "p": "Der Bezirk Khizi in Aserbaidschan ist bekannt für seine auffälligen roten und orangefarbenen Nuancen...",
+                "btn": "Anschauen"
             },
             "ganimetpark": {
-                "huno": "Militärtrophäenpark in Baku",
-                "p": "Umfangreiche Sammlung erbeuteter Militärausrüstung und Artefakte, die einen krassen und ...",
-                "btn": "Ansehen"
+                "huno": "Militärischer Trophäenpark in Baku",
+                "p": "Umfangreiche Sammlung erbeuteter Militärausrüstung und Artefakte, die einen starken und...",
+                "btn": "Anschauen"
             },
             "mudvolcano": {
                 "huno": "Die Schlammvulkane von Gobustan",
-                "p": "Bekannt für ihre therapeutischen Eigenschaften, die angeblich Hauterkrankungen verbessern und ...",
-                "btn": "Ansehen"
+                "p": "Bekannt für ihre therapeutischen Eigenschaften, die angeblich Hauterkrankungen verbessern und...",
+                "btn": "Anschauen"
             },
             "hdlymosque": {
                 "huno": "Die Heydar Aliyev Moschee",
-                "p": "ist die größte Moschee in der Kaukasusregion, bekannt für ihr beeindruckendes architektonisches Design und ihre beeindruckende Größe ...",
-                "btn": "Ansehen"
+                "p": "ist die größte Moschee in der Kaukasus-Region, bekannt für ihr beeindruckendes architektonisches Design und ihren imposanten Maßstab...",
+                "btn": "Anschauen"
             },
             "yanardag": {
                 "huno": "Yanardagh (Brennender Hügel)",
-                "p": "ist ein natürliches Gasfeuer, das kontinuierlich an einem Berghang brennt und ein faszinierendes und dauerhaftes Display erzeugt ...",
-                "btn": "Ansehen"
+                "p": "ist ein natürlicher Gasbrand, der kontinuierlich an einem Hang brennt und eine faszinierende und dauerhafte Darbietung schafft...",
+                "btn": "Anschauen"
             }
         }
     },
     "sectionfourth": {
-        "welcomeTo": "Willkommen zu",
+        "welcomeTo": "Willkommen in",
         "azerbaijan": "Aserbaidschan",
-        "planningTrip": "Die Planung einer Reise nach Aserbaidschan kann eine herausfordernde Aufgabe sein, insbesondere wenn Sie mit allen einzigartigen Aspekten und verborgenen Schätzen dieses faszinierenden Landes nicht vertraut sind. ",
-        "assistance": "steht Ihnen zur Seite, um Ihnen bei der Auswahl des perfekten Reiseplans für Ihr Abenteuer zu helfen. Warum sollten Sie uns wählen:",
+        "planningTrip": "Die Planung einer Reise nach Aserbaidschan kann eine herausfordernde Unternehmung sein, insbesondere wenn Sie mit all den einzigartigen Aspekten und verborgenen Schätzen dieses faszinierenden Landes nicht vertraut sind. ",
+        "assistance": "ist hier, um Ihnen bei der Auswahl des perfekten Reiseplans für Ihr Abenteuer zu helfen. Warum sollten Sie uns wählen:",
         "reasons": {
-            "first": "Wir sind der erfahrene Reise-Concierge mit mehr als 10 Jahren Erfahrung und Tausenden von zufriedenen Touristen",
-            "second": "Wir sind der registrierte Reiseveranstalter, der offiziell von der Staatlichen TourismAgentur der Republik Aserbaidschan lizenziert ist",
-            "third": "Wir praktizieren einen persönlichen Ansatz für jeden Kunden und gestalten Ihre Reise entsprechend Ihren Bedürfnissen"
+            "first": "Wir sind der erfahrene Reiseconcierge mit mehr als 10 Jahren Erfahrung und Tausenden von zufriedenen Touristen",
+            "second": "Wir sind der registrierte Reiseveranstalter, der offiziell von der Staatlichen Agentur für Tourismus der Republik Aserbaidschan lizenziert ist",
+            "third": "Wir praktizieren einen persönlichen Ansatz für jeden Kunden und gestalten Ihre Reise nach Ihren Bedürfnissen"
         }
     },
     "sectionfifth": {
         "popularDestinations": "Beliebte Reiseziele",
-        "chooseCity": "Stadt wählen"
+        "chooseCity": "Wähle eine Stadt"
     },
     "sectionsixth": {
         "whatTouristsSay": "Was Touristen sagen?",
@@ -118,32 +197,32 @@
                 "name": "Yvonne Sanders",
                 "date": "2019-10-05",
                 "rating": 5,
-                "comment": "Hallo und guten Tag! Wir wollten Irina und Sergej für ihren herzlichen Empfang und die wundervolle Zeit danken, die wir Anfang Oktober in St. Petersburg mit ihnen hatten. Wir haben ihre..."
+                "comment": "Hallo und guten Tag Wir wollten 'Vielen Dank' an Irina und Sergej für ihren herzlichen Empfang und die wundervolle Zeit sagen, die wir Anfang Oktober in St. Petersburg bei ihnen hatten. Wir haben ihre..."
             },
             {
                 "name": "Yvonne Sanders",
                 "date": "2019-10-05",
                 "rating": 5,
-                "comment": "Hallo und guten Tag! Wir wollten Irina und Sergej für ihren herzlichen Empfang und die wundervolle Zeit danken, die wir Anfang Oktober in St. Petersburg mit ihnen hatten. Wir haben ihre..."
+                "comment": "Hallo und guten Tag Wir wollten 'Vielen Dank' an Irina und Sergej für ihren herzlichen Empfang und die wundervolle Zeit sagen, die wir Anfang Oktober in St. Petersburg bei ihnen hatten. Wir haben ihre..."
             },
             {
                 "name": "Yvonne Sanders",
                 "date": "2019-10-05",
                 "rating": 5,
-                "comment": "Hallo und guten Tag! Wir wollten Irina und Sergej für ihren herzlichen Empfang und die wundervolle Zeit danken, die wir Anfang Oktober in St. Petersburg mit ihnen hatten. Wir haben ihre..."
+                "comment": "Hallo und guten Tag Wir wollten 'Vielen Dank' an Irina und Sergej für ihren herzlichen Empfang und die wundervolle Zeit sagen, die wir Anfang Oktober in St. Petersburg bei ihnen hatten. Wir haben ihre..."
             }
         ]
     },
     "azerbaijan": {
         "title": "Aserbaidschan",
         "subtitle": "Das große Abenteuer",
-        "description": "Wir bieten Ihnen unsere handverlesenen Touren und Ausflüge für einen unglaublichen Urlaub in Aserbaidschan"
+        "description": "Wir bieten Ihnen handverlesene Touren und Ausflüge für einen unglaublichen Urlaub in Aserbaidschan"
     },
     "tourtypes": {
-        "default": "Wählen Sie den Tourtyp",
-        "Package tours": "Paketreisen",
-        "Day tours & excursions": "Tagesausflüge & Ausflüge",
-        "Visa-free shore tours": "Visumfreie Küstentouren"
+        "default": "Tourtyp auswählen",
+        "Packagetours": "Pauschalreisen",
+        "Daytoursexcursions": "Tagesausflüge & Exkursionen",
+        "Visafreeshoretours": "Visumfreie Küstentouren"
     },
     "cityDestinations": {
         "Baku": "Baku",
@@ -211,18 +290,18 @@
         "adults": "Erwachsene",
         "children": "Kinder",
         "firstclass": "Erste Klasse",
-        "business": "Geschäft",
+        "buisness": "Business",
         "economy": "Wirtschaft",
         "searchFlight": "Flüge suchen",
         "oneway": "Einweg",
         "twoway": "Hin- und Rückflug",
-        "multicity": "Mehrere Städte"
+        "multicity": "Multi-Stadt"
     },
     "temp": {
         "Wind": "Wind"
     },
     "api": {
-        "errormessage": "Bitte geben Sie die richtige Stadt ein",
-        "message": "Überprüfen Sie Ihre Stadt hier"
+        "errormessage": "Bitte geben Sie die korrekte Stadt ein",
+        "message": "Überprüfen Sie Ihre Stadt von hier aus"
     }
 }

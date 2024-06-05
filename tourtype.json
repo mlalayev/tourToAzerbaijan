@@ -1,13 +1,7 @@
 {
     "tourtypes": [
-        {
-            "tourtype": "Package tours"
-        },
-        {
-            "tourtype": "Day tours & excursions"
-        },
-        {
-            "tourtype": "Visa-free shore tours"
-        }
+        {"tourtype": "Package tours"},
+        {"tourtype": "Day tours & excursions"},
+        {"tourtype": "Visa-free shore tours"}
     ]
 }

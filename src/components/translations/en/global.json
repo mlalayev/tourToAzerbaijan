@@ -220,9 +220,9 @@
     },
     "tourtypes": {
         "default": "Select Tour Type",
-        "Package tours": "Package tours",
-        "Day tours & excursions": "Day tours & excursions",
-        "Visa-free shore tours": "Visa-free shore tours"
+        "Packagetours": "Package dsada tours",
+        "Daytoursexcursions": "Day tours & excursions",
+        "Visafreeshoretours": "Visa-free shore tours"
     },
     "cityDestinations": {
         "Baku": "Baku",
@@ -287,21 +287,21 @@
     "search": {
         "flightsTab": "Flights",
         "hotelsTab": "Hotels",
-        "adults":"Adults",
-        "children":"Children",
-        "firstclass":"First Class",
-        "buisness":"Buisness",
-        "economy":"Economy",
+        "adults": "Adults",
+        "children": "Children",
+        "firstclass": "First Class",
+        "buisness": "Buisness",
+        "economy": "Economy",
         "searchFlight": "Search Flights",
-        "oneway":"One Way",
-        "twoway":"Two Way",
-        "multicity":"Multi-city"
+        "oneway": "One Way",
+        "twoway": "Two Way",
+        "multicity": "Multi-city"
     },
-    "temp":{
+    "temp": {
         "Wind": "Wind"
     },
-    "api":{
-        "errormessage":"Please enter correct city",
-        "message":"Check your city from here"
+    "api": {
+        "errormessage": "Please enter correct city",
+        "message": "Check your city from here"
     }
 }

@@ -123,7 +123,7 @@ const SearchForm = () => {
 
     const handleEnterPress = (e) => {
         if (e.key === 'Enter' && fromSuggestions.length > 0) {
-            setFrom(`${fromSuggestions[0].name} -  ${fromSuggestions[0].city}, ${fromSuggestions[0].country}`);
+            setFrom(`${fromSuggestions[0].name} - ${fromSuggestions[0].city}, ${fromSuggestions[0].country}`);
             setSelectedFromCode(fromSuggestions[0].code); // Update selected airport code
             setFromSuggestions([]);
         } else if (e.key === 'Enter' && toSuggestions.length > 0) {
@@ -223,7 +223,7 @@ const SearchForm = () => {
                                             {toSuggestions.map((suggestion, index) => (
                                                 <li key={index} onClick={() => selectToSuggestion(suggestion)}>
                                                     <TbPlaneArrival />
-                                                    {suggestion.name} - {suggestion.code} - {suggestion.city} {suggestion.country}
+                                                    {suggestion.name} - {suggestion.code} - {suggestion.city}, {suggestion.country}
                                                 </li>
                                             ))}
                                         </ul>
