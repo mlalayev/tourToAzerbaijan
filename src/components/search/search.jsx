@@ -208,7 +208,7 @@ const SearchForm = () => {
 
                                 <div className="mydiv">
                                     <input
-                                        placeholder="Heydar Aliyev International Airport - GYD - Baku, Azerbaijan"
+                                        placeholder="Heydar Aliyev International Airport - Baku, Azerbaijan"
                                         className="input-style"
                                         type="text"
                                         value={to}

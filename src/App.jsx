@@ -17,7 +17,8 @@ import MAINPAGE from './components/mainpage/mainpage.jsx';
 import DESTINATIONS from './destinations/destinations.jsx';
 import UPPERPART from './components/upperpart/upperpart.jsx';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
+import { I18nextProvider } from 'react-i18next';
+import i18n from './components/i18n/i18n.jsx';
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -101,39 +102,41 @@ function App() {
   }
 
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/mltdytrs" element={<><MULTIDAY /><FOOTER /></>} />
+    <I18nextProvider i18n={i18n}>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/mltdytrs" element={<><MULTIDAY /><FOOTER /></>} />
 
-        <Route path="/sngldytrips" element={<><ONEDAY /><FOOTER /></>} />
+          <Route path="/sngldytrips" element={<><ONEDAY /><FOOTER /></>} />
 
-        <Route path="/dstntns" element={<><DESTINATIONS /><FOOTER /></>} />
+          <Route path="/dstntns" element={<><DESTINATIONS /><FOOTER /></>} />
 
-        <Route path="/" element={<><UPPERPART /><MAINPAGE /><FOOTER /></>} />
+          <Route path="/" element={<><UPPERPART /><MAINPAGE /><FOOTER /></>} />
 
-        <Route path="/home" element={<><UPPERPART /><MAINPAGE /><FOOTER /></>} />
+          <Route path="/home" element={<><UPPERPART /><MAINPAGE /><FOOTER /></>} />
 
-        <Route path="/baku" element={<><BAKU /></>} />
+          <Route path="/baku" element={<><BAKU /></>} />
 
-        <Route path="/lankaran" element={<><LANKARAN /></>} />
+          <Route path="/lankaran" element={<><LANKARAN /></>} />
 
-        <Route path="/shamakhy" element={<><SHAMAKHY /></>} />
+          <Route path="/shamakhy" element={<><SHAMAKHY /></>} />
 
-        <Route path="/guba" element={<><GUBA /></>} />
+          <Route path="/guba" element={<><GUBA /></>} />
 
-        <Route path="/shaki" element={<><SHAKI /></>} />
+          <Route path="/shaki" element={<><SHAKI /></>} />
 
-        <Route path="/ganja" element={<><GANJA /></>} />
+          <Route path="/ganja" element={<><GANJA /></>} />
 
-        <Route path="/gusar" element={<><GUSAR /></>} />
+          <Route path="/gusar" element={<><GUSAR /></>} />
 
-        <Route path="/khizi" element={<><KHIZI /></>} />
+          <Route path="/khizi" element={<><KHIZI /></>} />
 
-        <Route path="/ismailly" element={<><ISMAILLY /></>} />
+          <Route path="/ismailly" element={<><ISMAILLY /></>} />
 
-        <Route path="/lerik" element={<><LERIK /></>} />
-      </Routes>
-    </BrowserRouter>
+          <Route path="/lerik" element={<><LERIK /></>} />
+        </Routes>
+      </BrowserRouter>
+    </I18nextProvider>
   );
 }
 
