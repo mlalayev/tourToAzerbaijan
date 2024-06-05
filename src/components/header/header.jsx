@@ -1,12 +1,20 @@
-import React, { useState, useEffect, useRef } from 'react';
-import './header.css'
+import React, { useState, useEffect } from 'react';
+import './header.css';
 import logo from '../../assets/logo.svg';
 import { RxHamburgerMenu } from "react-icons/rx";
+import { IoLanguageSharp } from "react-icons/io5";
+import { RiArrowDownSLine } from "react-icons/ri";
+import { useTranslation } from 'react-i18next';
 
-
-function header() {
+function Header() {
+    const { t, i18n } = useTranslation();
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [langMenuOpen, setLangMenuOpen] = useState(false);
+
+    const handleLangButtonClick = () => {
+        setLangMenuOpen(!langMenuOpen);
+    };
 
     const handleHamburgerClick = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -14,7 +22,13 @@ function header() {
 
     useEffect(() => {
         const handleClickOutside = (event) => {
+            const langButton = document.querySelector('.lang');
+            const langMenu = document.querySelector('.language-menu');
             const hamdiv = document.querySelector('.hamdiv');
+
+            if (langButton && langMenu && !langButton.contains(event.target) && !langMenu.contains(event.target)) {
+                setLangMenuOpen(false);
+            }
             if (hamdiv && !hamdiv.contains(event.target)) {
                 setIsMenuOpen(false);
             }
@@ -26,21 +40,38 @@ function header() {
         };
     }, []);
 
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng);
+        setLangMenuOpen(false); // Close the menu after selecting a language
+    };
+
     return (
         <header>
             <div className="container">
-                <a href="/home"><img src={logo} className="logo" alt="Logo" /></a>
+                <a href="/home"><img src={logo} className="logo" alt={t('header.logoAlt')} /></a>
 
                 <ul className="headerul">
-                    <li><a href="/mltdytrs">Multi-day tours</a></li>
-                    <li><a href="/sngldytrips">Day trips</a></li>
-                    <li><a href="/dstntns">Destinations</a></li>
-                    <li><a href="https://www.evisa.gov.az/en/" target="_blank">Visa informations</a></li>
+                    <li><a href="/mltdytrs">{t('header.multiDayTours')}</a></li>
+                    <li><a href="/sngldytrips">{t('header.dayTrips')}</a></li>
+                    <li><a href="/dstntns">{t('header.destinations')}</a></li>
+                    <li><a href="https://www.evisa.gov.az/en/" target="_blank">{t('header.visaInformations')}</a></li>
                 </ul>
 
-
                 <div className="rghtbtnsdv">
-                    <button className="chcktbtn">Checkout</button>
+                    <div className="language-switcher">
+                        <button className="lang" onClick={handleLangButtonClick}>
+                            <IoLanguageSharp size={20} />
+                            <RiArrowDownSLine size={20} />
+                        </button>
+                        {langMenuOpen && (
+                            <ul className="language-menu">
+                                <li onClick={() => changeLanguage('en')}>English</li>
+                                <li onClick={() => changeLanguage('az')}>Azərbaycanca</li>
+                                <li onClick={() => changeLanguage('ru')}>Русский</li>
+                            </ul>
+                        )}
+                    </div>
+                    <button className="chcktbtn">{t('header.checkout')}</button>
                 </div>
 
                 <div className="hamdiv" onClick={handleHamburgerClick}>
@@ -51,15 +82,15 @@ function header() {
             {isMenuOpen && (
                 <div className="hamburger-menu">
                     <ul>
-                        <li><a href="/mltdytrs">Multi-day tours</a></li>
-                        <li><a href="/sngldytrips">Day trips</a></li>
-                        <li><a href="/dstntns">Destinations</a></li>
-                        <li><a href="https://www.evisa.gov.az/en/" target="_blank">Visa informations</a></li>
+                        <li><a href="/mltdytrs">{t('header.multiDayTours')}</a></li>
+                        <li><a href="/sngldytrips">{t('header.dayTrips')}</a></li>
+                        <li><a href="/dstntns">{t('header.destinations')}</a></li>
+                        <li><a href="https://www.evisa.gov.az/en/" target="_blank">{t('header.visaInformations')}</a></li>
                     </ul>
                 </div>
             )}
         </header>
-    )
+    );
 }
 
-export default header
+export default Header;
