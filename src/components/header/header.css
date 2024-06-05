@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid red; */
 }
 
 .flag{
@@ -11,46 +10,44 @@
 }
 
 .lang{
-    width: 60px;
-    height: 40px;
     display: flex;
     align-items: center;
-    border-radius: 30px;
     justify-content: center;
-    background-color: #fff;
     border: 1px solid white;
 }
 
-/* src/components/LanguageSwitcher.css */
 .language-switcher {
+    width: 60px;
+    height: 40px;
     display: flex;
+    padding-left: 3px;
     position: relative;
+    border-radius: 30px;
+    background-color: #fff;
     justify-content: center;
 }
 
 .lang {
-    background: none;
     border: none;
-    cursor: pointer;
     display: flex;
-    align-items: center;
+    cursor: pointer;
     font-size: 16px;
+    background: none;
+    align-items: center;
 }
 
 .language-menu {
-    position: absolute;
     top: 100%;
-    border-radius: 10px;
-    font-family: var(--font-family-reddit);
-    /* right: auto; */
-    /* left: auto; */
-    background: white;
-    border: 1px solid #ddd;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    list-style: none;
     padding: 0;
     margin: auto;
     width: 140px;
+    list-style: none;
+    background: white;
+    position: absolute;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-family: var(--font-family-reddit);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .language-menu li {
@@ -62,24 +59,16 @@
 }
 
 .language-menu li:hover {
+    border-radius: 10px;
     background-color: #f0f0f0;
 }
 
 
 .rghtbtnsdv{
-    display: flex;
     gap: 10px;
+    display: flex;
     align-items: center;
 }
-
-/* :root {
-    --font-family-rubik: rubik;
-    --main-black-color: #000000;
-    --main-white-color: #ffffff;
-    --font-family-reddit: reddit sans;
-    --main-light-green-color: #43c7b1;
-    --main-yellow-color: rgb(255, 230, 0);
-} */
 
 .logo {
     width: 150px;
@@ -100,9 +89,7 @@ header {
   }
   
   .hamburger svg {
-    /* The size of the SVG defines the overall size */
     height: 3em;
-    /* Define the transition for transforming the SVG */
     transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
@@ -112,7 +99,6 @@ header {
     stroke-linecap: round;
     stroke-linejoin: round;
     stroke-width: 3;
-    /* Define the transition for transforming the Stroke */
     transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
                 stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -204,10 +190,13 @@ header {
 }
 
 .hamburger-menu {
-    width: 100%;
+    top: 140px;
+    width: 100vw;
     z-index: 999;
     display: flex;
-    min-height: 214px;
+    margin: auto ;
+    max-height: 210px;
+    position: absolute;
     padding: 20px 30px;
     flex-direction: column;
     background-color: #fff;

@@ -2,7 +2,7 @@ import './mainpage.css';
 import { IoMdStar } from "react-icons/io";
 import SLIDER from '../sliders/slider.jsx';
 import cityData from '../../../cities.json';
-import cityTour from '../../../tourtype.json';
+// import cityTour from '../../../tourtype.json';
 import { GrUserManager } from "react-icons/gr";
 import { FaAnglesLeft } from "react-icons/fa6";
 import { GrCertificate } from "react-icons/gr";
@@ -103,13 +103,6 @@ function mainpage() {
         }
     };
 
-    const handleTourChangeLi = (tourName) => {
-        const tourType = cityTour.tourtypes.find(tour => tour.tourtype === tourName);
-        if (tourType) {
-            setTourLi(tourName);
-        }
-    };
-
     const handleCityChangem = (cityName) => {
         const city = citiesData.find(city => city.cityName === cityName);
         if (city) {
@@ -173,17 +166,29 @@ function mainpage() {
         }
     };
 
+    const tourTypes = [
+        { "tourtype": "Package tours" },
+        { "tourtype": "Day tours & excursions" },
+        { "tourtype": "Visa-free shore tours" }
+    ];
+
+    const renderTourTypes = () => {
+        return tourTypes.map((tour, index) => (
+            <li key={index} onClick={() => handleTourChangeLi(tour.tourtype)}>
+                {tour.tourtype}
+            </li>
+        ));
+    };
+
     return (
 
         <div className="mainpage">
 
             <section className="sectionfirst">
-                <div className="containerfrstsc">
-                    <div className="citychoose">
-
-                        <div className="leftbuttons">
-
-                            <div ref={dropdownRefUp} onClick={handleClickUp} className={`lftlftbtndrpdwn ${isRotatedUp ? 'lftlftbtndrpdwnactive' : ''}`}>
+                <div className="container-first">
+                    <div className="city-choose">
+                        <div className="left-button">
+                            <div ref={dropdownRefUp} onClick={handleClickUp} className={`lftlftbtndrpdwnn  ${isRotatedUp ? 'lftlftbtndrpdwnactive' : ''}`}>
                                 {t(`cities.${cityLi}`)} <RiArrowDownSLine strokeWidth={2} style={{ transform: isRotatedUp ? 'rotate(180deg)' : 'none' }} />
                                 <ul className={`lftlftbtndrpdwnul ${isRotatedUp ? 'lftlftbtndrpdwnulactive' : ''}`}>
                                     {cityData.cities.map((city, index) => (
@@ -193,18 +198,7 @@ function mainpage() {
                                     ))}
                                 </ul>
                             </div>
-
-                            <div ref={dropdownRefDown} onClick={handleClickDown} className="lftrghtbtndrpdwn">
-                                {tourLi}
-                                <RiArrowDownSLine strokeWidth={2} style={{ transform: isRotatedDown ? 'rotate(180deg)' : 'none' }} />
-                                <ul className={`rghtlftbtndrpdwnul ${isRotatedDown ? 'rghtlftbtndrpdwnulactive' : ''}`}>
-                                    {cityTour.tourtypes.map((tour, index) => (
-                                        <li key={index} onClick={() => handleTourChangeLi(tour.tourtype)}>
-                                            {t(`tourtypes.${tour.tourtype}`)}
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>                        </div>
+                        </div>
                         <div className="checkoutpart">
                             <span>{t('sectionfirst.findTours')}! <FaArrowRightLong /></span>
                         </div>

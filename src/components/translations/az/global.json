@@ -1,58 +1,307 @@
 {
+    "cities": {
+        "default": "Şəhəri seçin",
+        "Aghdjabadi": "Ağcabədi",
+        "Aghdam": "Ağdam",
+        "Aghdash": "Aghdaş",
+        "Aghdara": "Aghdərə",
+        "Ahstafa": "Ağstafa",
+        "Aghsu": "Ağsu",
+        "Astara": "Astara",
+        "Babek": "Babək",
+        "Baku": "Bakı",
+        "Balakan": "Balakən",
+        "Baylagan": "Bəyləqan",
+        "Barda": "Bərdə",
+        "Bilasuvar": "Biləsuvar",
+        "Djabrail": "Cəbrayıl",
+        "Djalilabad": "Cəlilabad",
+        "Djulfa": "Culfa",
+        "Dashkasan": "Daşkəsən",
+        "Dalimammadli": "Dəliməmmədli",
+        "Fuzuli": "Füzuli",
+        "Gadabay": "Gədəbəy",
+        "Ganja": "Gəncə",
+        "Goranboy": "Goranboy",
+        "Goychay": "Göyçay",
+        "Goygol": "Göygöl",
+        "Goytapa": "Göytəpə",
+        "Hadjikabul": "Hacıqabul",
+        "Horadiz": "Horadiz",
+        "Khachmas": "Xaçmaz",
+        "Khankandi": "Xankəndi",
+        "Khizy": "Xızı",
+        "Khojaly": "Xocalı",
+        "Khodjavand": "Xocavənd",
+        "Khirdalan": "Xırdalan",
+        "Khudat": "Xudat",
+        "Ismailly": "İsmayıllı",
+        "Kalbadjar": "Kəlbəcər",
+        "Kurdamir": "Kürdəmir",
+        "Gakh": "Qax",
+        "Kazakh": "Qazax",
+        "Gabala": "Qəbələ",
+        "Gobustan": "Qobustan",
+        "Govlar": "Qovlar",
+        "Guba": "Quba",
+        "Kubadly": "Qubadlı",
+        "Kusar": "Qusar",
+        "Lachin": "Laçın",
+        "Lerik": "Lerik",
+        "Lankaran": "Lənkəran",
+        "Liman": "Liman",
+        "Masally": "Masallı",
+        "Mingachevir": "Mingəçevir",
+        "Naftalan": "Naftalan",
+        "Oghuz": "Oğuz",
+        "Ordubad": "Ordubad",
+        "Saatly": "Saatlı",
+        "Sabirabad": "Sabirabad",
+        "Salyan": "Salyan",
+        "Samukh": "Samux",
+        "Siyasan": "Siyəsən",
+        "Sumgait": "Sumqayıt",
+        "Shabran": "Şabran",
+        "Shahbuz": "Şahbuz",
+        "Shamakhy": "Şamaxı",
+        "Shaki": "Şəki",
+        "Shamkir": "Şəmkir",
+        "Sharur": "Şərur",
+        "Shirvan": "Şirvan",
+        "Shusha": "Şuşa",
+        "Tartar": "Tərtər",
+        "Tovuz": "Tovuz",
+        "Udjar": "Ucar",
+        "Yardymly": "Yardımlı",
+        "Yevlakh": "Yevlax",
+        "Zagatala": "Zaqatala",
+        "Zangilan": "Zəngilan",
+        "Zardab": "Zərdab"
+    },
     "header": {
         "logoAlt": "Logo",
-        "multiDayTours": "Çox gün müddətli tur",
-        "dayTrips": "Günlük səyahətlər",
-        "destinations": "Gediləcək yerlər",
+        "multiDayTours": "Çox gün ərzində turlar",
+        "dayTrips": "Gündüz səfərləri",
+        "destinations": "Məkanlar",
         "visaInformations": "Viza məlumatları",
-        "checkout": "Ödəmə"
+        "checkout": "Ödəniş et"
     },
     "sectionfirst": {
-        "cityChoose": "Şəhər seçin",
-        "findTours": "Tur tap"
+        "cityChoose": "Şəhəri seçin",
+        "findTours": "Tur tapın"
     },
     "sectionsecond": {
         "packageTours": "Paket turlar",
-        "selectPackage": "Rusiya səfərinizə hazırlaşmaq üçün özəl paketlərimizdən birini seçin! Qonaqlıq, hava limanı transferləri, muzey biletləri, şəhərlər arası nəqliyyat, tur rehberləri ilə narahat olmağa ehtiyacınız yoxdur - biz bunu sizin üçün həll edəcəyik.",
-        "toursToBaku": "Bakı və onun görməli yerlərinə turlar",
-        "bakuBoulevard": "Bakı bulvarı",
-        "weekendInQabala": "Qəbələdə həftə sonu - Sorğu ilə",
-        "weekendInLerik": "Lerikdə həftə sonu - Sorğu ilə",
-        "weekendInLankaran": "Lənkəran'da həftə sonu - Sorğu ilə",
-        "weekendInQuba": "Qubada həftə sonu - Sorğu ilə",
-        "weekendInShusha": "Şuşada həftə sonu - Sorğu ilə",
-        "view": "Baxış",
+        "selectPackage": "Tailor-made paketlərimizdən birini seçin və Rusiya macəranız üçün hazırlaşın! Konaklama, hava limanı transferləri, muzey biletləri, şəhərlər arası nəqliyyat, tur rehberləri ilə məşğul olmağınız üçün narahat olmalısınız - bunu sizin üçün həll edəcəyik.",
+        "toursToBaku": "Bakı və onun görünüşlərinə tur",
+        "bakuBoulevard": "Bakı Boulevardu",
+        "weekendInQabala": "Qəbələ həftə sonu Tələbələr üçün istəyə əsasən",
+        "weekendInLerik": "Lerik həftə sonu Tələbələr üçün istəyə əsasən",
+        "weekendInLankaran": "Lənkəran həftə sonu Tələbələr üçün istəyə əsasən",
+        "weekendInQuba": "Quba həftə sonu Tələbələr üçün istəyə əsasən",
+        "weekendInShusha": "Şuşa həftə sonu Tələbələr üçün istəyə əsasən",
+        "view": "Keçid",
         "sliderProps": {
             "sliderdos": {
-                "huno": "Bakı bulvarı",
-                "p": "1 gün 179,48 avro",
-                "btn": "Bax"
+                "huno": "Bakı Bulvarı",
+                "p": "1 gün, 179,48 avro",
+                "btn": "Keçid"
             },
             "slidertres": {
-                "huno": "Qəbələdə həftə sonu - Sorğu ilə",
-                "p": "8 gün / 7 gecə 343,64 avro",
-                "btn": "Bax"
+                "huno": "Qəbələ həftə sonu - Tələbələr üçün istəyə əsasən",
+                "p": "8 gün / 7 gecə, 343,64 avro",
+                "btn": "Keçid"
             },
             "slidercuatro": {
-                "huno": "Lerikdə həftə sonu - Sorğu ilə",
-                "p": "3 gün / 2 gecə 94,54",
-                "btn": "Bax"
+                "huno": "Lerik həftə sonu - Tələbələr üçün istəyə əsasən",
+                "p": "3 gün / 2 gecə, 94,54 avro",
+                "btn": "Keçid"
             },
             "sliderpierci": {
-                "huno": "Lənkəran'da həftə sonu - Sorğu ilə",
-                "p": "3 gün / 2 gecə 146,85",
-                "btn": "Bax"
+                "huno": "Lənkəran həftə sonu - Tələbələr üçün istəyə əsasən",
+                "p": "3 gün / 2 gecə, 146,85 avro",
+                "btn": "Keçid"
             },
             "slidersessi": {
-                "huno": "Qubada həftə sonu - Sorğu ilə",
-                "p": "3 gün / 2 gecə 245,58",
-                "btn": "Bax"
+                "huno": "Quba həftə sonu - Tələbələr üçün istəyə əsasən",
+                "p": "3 gün / 2 gecə, 245,58 avro",
+                "btn": "Keçid"
             },
             "sliderseptini": {
-                "huno": "Şuşada həftə sonu - Sorğu ilə",
-                "p": "3 gün / 2 gecə 180,93",
-                "btn": "Bax"
+                "huno": "Şuşa həftə sonu - Tələbələr üçün istəyə əsasən",
+                "p": "3 gün / 2 gecə, 180,93 avro",
+                "btn": "Keçid"
             }
         }
+    },
+    "sectionthird": {
+        "packageTours": "Paket turlar",
+        "selectPackage": "Özel hazırlanmış paketlerimizden birini seçin ve Rusya maceranız için hazırlanın! Konaklama, havaalanı transferleri, müze biletleri, şehirler arası ulaşım, tur rehberleri ile ilgilenmenize gerek yok - biz sizin için onu hallederiz.",
+        "atashgah": "Ataşgah",
+        "atashgahDescription": "Bakü'deki Ateşgah, etkileyici bir tarihi ve dini mekandır. Bu beşgen kompleks, 17. yüzyılda inşa edilmiştir ve...",
+        "viewMe": "Keçid",
+        "sliderProps": {
+            "slidershahdag": {
+                "huno": "Şahdağ Dağçı Bələdiyyəsi",
+                "p": "Çoxsaylı otellərin olduğu geniş bir tatil bölgesi, kayak, snowboard və digər qış idmanları təklif edir...",
+                "btn": "Baxın"
+            },
+            "khizidag": {
+                "huno": "Xızı Qırmızı Dağlar",
+                "p": "Azərbaycanın Xızı rayonu, qırmızı və narıncı renkləri ilə tanınır...",
+                "btn": "Baxın"
+            },
+            "ganimetpark": {
+                "huno": "Bakıda Hərbi Qənimətlər Parkı",
+                "p": "Məsuliyyətsiz hərbi texnikanın və əşyaların geniş kolleksiyası, qeyri-adi və...",
+                "btn": "Baxın"
+            },
+            "mudvolcano": {
+                "huno": "Qobustanda Çamur Vulkanları",
+                "p": "Dəri vəziyyətlərini yaxşılaşdırdığına inanılan, müalicəvi xüsusiyyətləri üçün tanınmış...",
+                "btn": "Baxın"
+            },
+            "hdlymosque": {
+                "huno": "Heydər Əliyev Məscidi",
+                "p": "Qafqaz regionunda ən böyük məsciddir, qeyri-adi memarlıq dizaynı və böyük ölçüsü ilə...",
+                "btn": "Baxın"
+            },
+            "yanardag": {
+                "huno": "Yanardağ (Yanan tepe)",
+                "p": "Sürekli yanar və büyüleyici və əbədi bir görüntü yaratan doğal qaz yandırmasıdır...",
+                "btn": "Baxın"
+            }
+        }
+    },
+    "sectionfourth": {
+        "welcomeTo": "Xoş gəlmisiniz",
+        "azerbaijan": "Azərbaycan",
+        "planningTrip": "Azərbaycana səyahət planlamaq xüsusi qeyri-rutubətli bir iş ola bilər, xüsusən də bu cazibədar ölkənin bütün unikal aspektləri və gizli dəyərləri ilə tanış olmadıqda.",
+        "assistance": "sizin əldən gələcək vətəndaşlarınızın rəmzi səyahəti üçün mükəmməl bir marşrut seçməkdə sizə kömək edir. Niçin bizi seçməlisiniz:",
+        "reasons": {
+            "first": "Biz 10-dan çox illik təcrübəsi olan seyahət konsercisi və minlərlə xoşbəxt turisti olan təcrübəliyik.",
+            "second": "Biz Azərbaycan Respublikasının Dövlət Turizm Agentliyi tərəfindən rəsmi lisenziya almış qeyri-rəsmi tur operatoruyuq.",
+            "third": "Hər bir müştəriyə şəxsi yanaşma tətbiq edirik və səyahətinizi sizin ehtiyaclarınıza görə dizayn edirik."
+        }
+    },
+    "sectionfifth": {
+        "popularDestinations": "Populyar məkanlar",
+        "chooseCity": "Şəhəri seçin"
+    },
+    "sectionsixth": {
+        "whatTouristsSay": "Turistlər nə deyir?",
+        "touristsSayIntro": "Bizimlə artıq 1500-dən çox turist Rusiyaya səfər etdi. İşte onların sözləri:",
+        "recommendedBy": "Tərəfindən tövsiyə olunur:",
+        "testimonials": [
+            {
+                "name": "Yvonne Sanders",
+                "date": "2019-10-05",
+                "rating": 5,
+                "comment": "Salam və Xoş gün İrina və Sergeyə bizimlə qaldığımız və onlarla birlikdə İrina və Sergey ilə St. Petersburgda əyləncəli vaxt keçirdiyimiz üçün çox çox sağ olun. Onların..."
+            },
+            {
+                "name": "Yvonne Sanders",
+                "date": "2019-10-05",
+                "rating": 5,
+                "comment": "Salam və Xoş gün İrina və Sergeyə bizimlə qaldığımız və onlarla birlikdə İrina və Sergey ilə St. Petersburgda əyləncəli vaxt keçirdiyimiz üçün çox çox sağ olun. Onların..."
+            },
+            {
+                "name": "Yvonne Sanders",
+                "date": "2019-10-05",
+                "rating": 5,
+                "comment": "Salam və Xoş gün İrina və Sergeyə bizimlə qaldığımız və onlarla birlikdə İrina və Sergey ilə St. Petersburgda əyləncəli vaxt keçirdiyimiz üçün çox çox sağ olun. Onların..."
+            }
+        ]
+    },
+    "azerbaijan": {
+        "title": "Azərbaycan",
+        "subtitle": "Böyük macəra",
+        "description": "Sizə Azərbaycanda inanılmaz bir tətil üçün seçilmiş tur və ekskursiyalarımızı təklif edirik"
+    },
+    "tourtypes": {
+        "default": "Tur Növünü Seçin",
+        "Packagetours": "Paket tur dsada",
+        "Daytoursexcursions": "Gündüz turları və ekskursiyalar",
+        "Visafreeshoretours": "Viza olmadan sahil turları"
+    },
+    "cityDestinations": {
+        "Baku": "Bakı",
+        "Gabala": "Qəbələ",
+        "Lerik": "Lerik",
+        "Lankaran": "Lənkəran",
+        "Guba": "Quba",
+        "Gusar": "Qusar",
+        "Shusha": "Şuşa",
+        "Khankandi": "Xankəndi",
+        "Ismailly": "İsmayıllı"
+    },
+    "citiesDropdown": {
+        "Baku": "Bakı",
+        "Gabala": "Qəbələ",
+        "Lerik": "Lerik",
+        "Lankaran": "Lənkəran",
+        "Guba": "Quba",
+        "Gusar": "Qusar",
+        "Shusha": "Şuşa",
+        "Khankandi": "Xankəndi",
+        "Ismailly": "İsmayıllı"
+    },
+    "citiesSlider": {
+        "Baku": {
+            "name": "Bakı",
+            "info": "Azərbaycanın paytaxtı və ən böyük şəhəri olan Bakı, qədim irsi və müasirlik birləşən canlı bir metropolisdır. Bakının turları, ən çox diqqət çəkən simaları və unikal məkanları ilə müşahidələrinizə maraqverici bir səyahət təklif edir. Içərişəhər'in tarixi cazibəsinindən (Qədim Şəhər) füturistik Alov Qüllələrinə qədər, bizim bilikli rehberlərimiz sərbəst etməz əsərləri paylaşacaq və sizə müasir Bakı sakini lərinin dinamik həyatının və zəngin mədəniyyətinin bir nəfəsini verəcək. Şərq və Qərbin bu cazibəkar şəhərinə xas qəhrəman blendini kəşf edin."
+        },
+        "Gabala": {
+            "name": "Qəbələ",
+            "info": "Azərbaycanın mənzərəsi peyzajlarının arasında gizli bir dəyər olan Qəbələ, araşdırılmağa gözləyən bir yarı qəpikdir. Qəbələnin turları, sakin doğal gözəllik və mədəni cazibələrinə görə ən məzmunlu bir səyahət təklif edir. Nohur Gölünün sakit sahillərindən Tufandag Dağının macəraçı yoluna qədər, Qəbələ ziyarətçiləri müxtəlif təklifləri ilə cəlb edir. Təcrübəli rehberlərimiz bu büyüleyici bölgənin sirrini açacaq, zəngin tarixi və canlı mədəniyyətindən danışacaq. Qəbələnin cazibəsinə daldırın və Azərbaycanın nəfəsə ala manzaraları arasında rəhətlik və macəra birləşməsini təcrübə edin."
+        },
+        "Gusar": {
+            "name": "Qusar",
+            "info": "Qusar, Azərbaycanın Böyük Qafqaz Dağlarının yamaclarında yaranmış pitoresk bir şəhərdir, doğa sevərlərə və macəraçılara bənzəyən sakin bir istirahət yeri təklif edir. Qusarın turları sizi təmiz peyzajlarının, yağışlı ormanlarının və mağnifik dağ zirvələrinin araşdırılmasına dəvət edir. Laza kəndinin sakit güzəlliyindən Şahdağ Milli Parkının təhlükəsiz mənzərələrinə qədər, Qusar doğa cəfərətçilərini və açıq hava fəaliyyətlərini cəzb edir. Bilikli rehberlərimiz sizi bu büyüleyici bölgənin üzvlərindən unikal flora və fauna haqqında içərisindən keçərək, onun sahiblərinin zəngin mədəni irsini bölüşərək gətirəcək. Qusarın sükutu və cazibəsi ilə tanış olun və Qafqaz Dağlarının gözəl manzaraları arasında unudulmaz bir səyahətə çıxın."
+        },
+        "Ismailly": {
+            "name": "İsmayıllı",
+            "info": "İsmayıllı, Azərbaycanın yağışlı ağaclar və eniş tez-tez dırnaqlanmış qolların ürəyində yerləşir, şəhər həyatının gürültüsündən yaylıq istirahəti təklif edir. İsmayıllının turları sizi bu gözəl bölgənin sükut güzəlliğinə batırmağa dəvət edir. Şamkir Gölünün sakin sularından Lahij Kəndinin pitoresk peyzajlarına qədər, İsmayıllı ziyarətçiləri doğal məhəbbəti və zəngin mədəni irsi ilə cəlb edir. Təcrübəli rehberlərimiz sizi bölgənin gizli incilərindən bir səyahətə aparacaq, tarixi, ənənələri və adamların səmimi qonağıçılığı barədə hekayələr paylaşacaq. Əski məscidləri araşdırmaq, bağbanlarda gəzinti etmək və ya sadəcə kənd tərəfindən sükutun tadını çıxarmaq olub, İsmayıllı, hər kim ziyarət edirsə, unudulmaz bir təcrübə vəd edir."
+        },
+        "Lankaran": {
+            "name": "Lənkəran",
+            "info": "Lənkəran, Azərbaycanın Xəzər dənizinin sahilində yerləşən bir kənddir və təbii gözəlliklərin və mədəni irsin birləşməsi ilə çağırış edir. Bizim Lənkəran turumuz bu sahil incisinin cazibəsinə bir nəfəs açır və burada boz əkinlər qumlu çimərliklərin qarşısında durur. Tarixi Xan sarayını araşdırmaqdan başlayaraq keçmiş və hazırın hekayələrini bölüşərək, mədəni bir meydançaya girmək, Lənkəran, zəngin tarixi və canlı atmosferi ilə ziyarətciləri əhatə edir. Bilikli rehberlərimiz şəhərin dolanışlı küçələrində sizi rəhbərlik edəcək, keçmiş və hazır haqqında hekayələri bölüşəcək və yerli mətbəxinin dadlarını təqdim edəcəkdir. Dəniz kənarında gəzinti edirsinizsə və ya ətraf kəndlərə səyahət edirsinizsə, Lənkəran Azərbaycanın cənub sahilinin gözəllik və müxtəlifliyini qeyd edən bir təcrübə vad edir."
+        },
+        "Lerik": {
+            "name": "Lerik",
+            "info": "Lerik, Azərbaycanın cənubunda yerləşən sakin bir dağ qəsəbəsidir və nəfəsə gətirən manzaraları və sükutlu mühitinin məşhur olduğu yerdir. Təbiət parkları, şəkilli vadi və yaşayanların uzun ömürü ilə tanınan Lerik təbii bir qaçış təklif edir. Lerik turumuz sizi onun yaşıllıqlarının və sükutlu mühitinin içində aparacaq, Hirkən Milli Parkı və maraqlı Uzunömürlülük Muzeyi kimi məkanları araşdırmağa aparacaq. Bilikli rehberlərimiz Lerik'in zəngin təbiət irsi və əhalisinin ənəklərini bölüşəcəklər. Gözəl turlu yollarla yürüyüş edirsinizsə və ya sadəcə təzə dağ havasının tadını çıxarırsınızsa, Lerik təbiət dostları və sükut arayanlar üçün bədii bir qaçış təmin edir."
+        },
+        "Guba": {
+            "name": "Quba",
+            "info": "Quba, Azərbaycanın şimal şəraitində yerləşən, gözəllik dolu təbiət mənzərələri və zəngin mədəni irsi ilə tanınmış etkileyici bir tətil məkanıdır. Qubanın turları bu müxtəlif regionu ilə əbədiyyət təklif edir, burada yağmur ormanları, yay meşələri və bənzər şahman dağlar macəralılar və təbiət dostları üçün əlavəkənərək çağırır. Əski şəhərin tarixi məkanlarını araşdırmaqdan, kəndlərin gündəlik həyatının tərəfindən özünüzü əhatə etdirməyə qədər, Quba özünün həqiqəti və cazibəsi ilə ziyarətciləri əhatə edir. Bilikli rehberlərimiz Quba'nın gizli incilərini araşdırmağa sizi rəhbərlik edəcək, tarixi, ənənələr və əhalisinin isti qonaqlığını ilə bağlı aydınlanmalar paylaşacaq. Qafqaz Dağlarının enənəvi ərazişində yürüyüş edirsinizsə, şəhər bazarlarında yerli dadlarını dadmaqda olduğunuzda və ya sadəcə gözəllik dolu mənzərəni nəzərdən keçirməkdə olduğunuzda, Quba, Azərbaycanın şimal regionunun gözəlliyini və müxtəlifliyini qeyd edən unudulmaz bir təcrübə vəd edir."
+        },
+        "Shusha": {
+            "name": "Şuşa",
+            "info": "Şuşa, Qarabağ bölgəsində yerləşən tarixi və mədəni əhəmiyyəti ilə dolu bir şəhərdir. Çox vaxt Azərbaycanın mədəni paytaxtı kimi adlandırılan Şuşa, tarixi abidələri, memarlıq inciləri və nəfəsə gətirən mənzərələri ilə zəngindir. Şuşa turlarımız bu əsərlərin tarixi və canlı tərəfinə dərin bir dalış təklif edir. Şuşa Qalasını, tarixi binalarla süslenmiş cazibədar küçələrdə dolaşmağı və Yukhari Govhar Ağa məscidi və Natavan evi kimi əhəmiyyətli mədəni məkanları ziyarət etməyi daxil edir. Bilikli rehberlərimiz Şuşa'nın tarixinə, Azərbaycan tarixinə oynadığı rol, musiqi, ədəbiyyat və incəsənətə etibarı ilə aid olan haqqında maraqlı hekayələri paylaşacaq. Şəkilli dağların ortasında yerləşən Şuşa, hər bir ziyarəçini əhatə edən sakin, lakin təsirli bir mühit təmin edir. Şuşa'nın insanlarının dayanıqlılığını və ruhunu qəşəfləyin və bu xüsusi şəhərin təbii gözəllik və mədəni zənginliyinə daldığınızda özünüzü qəzəblə yazın."
+        },
+        "Khankandi": {
+            "name": "Xankəndi",
+            "info": "Xankəndi, Qarabağ bölgəsindəki ən böyük şəhərdir və mədəni və tarixi əhəmiyyəti ilə məşhurdur. Canlı atmosferi və gözəl ətraf mühitləri ilə tanınan Xankəndi, köhnə ilə yenini birləşdirən bir şəhərdir. Xankəndi turlarımız ən vacib atraksiyonlarını və gizli incilərini daxil edərək ətraflı bir tədqiqat təklif edir. Siz Tarixi Çay və şəhər parklarının yaşıllığını baxmaq və mədəni irsinin memarlıq və mədəniyyət müəssisələrindən, o cümlədən muzey və teatrlardan, istifadə etməyə dəvət edilirsiniz ki, onlar bölgənin irsini göstərir. Təcrübəli rehberlərimiz Xankəndi'nin keçmişinə, strateji əhəmiyyətinə və mədəni inkişafına dair maraqlı hekayələr anlatır. Azərbaycanın Kiçik Qafqaz Dağlarının şəkilli mərcanlarında yerləşən Xankəndi, şahəsən gözəllikləri və təbiətə sükutlu bir qovuşma təmin edir. Xankəndi sakinlərinin dinamik həyatını və səyahətçilər üçün unikal bir məkan edən mədəni dərinliyi ilə tanınan bu şəhərdən zövq alın."
+        }
+    },
+    "search": {
+        "flightsTab": "Uçuşlar",
+        "hotelsTab": "Otellər",
+        "adults": "Yetişkinlər",
+        "children": "Uşaqlar",
+        "firstclass": "Birinci sinif",
+        "buisness": "Biznes",
+        "economy": "Ekonom",
+        "searchFlight": "Uçuşları axtar",
+        "oneway": "Bir istiqamət",
+        "twoway": "İki istiqamət",
+        "multicity": "Çox şəhərli"
+    },
+    "temp": {
+        "Wind": "Külək"
+    },
+    "api": {
+        "errormessage": "Zəhmət olmasa düzgün şəhəri daxil edin",
+        "message": "Şəhərinizi buradan yoxlayın"
     }
 }
