@@ -35,16 +35,20 @@ import recommendedpieci from '../../assets/recommended-5.png';
 import recommendedcuatro from '../../assets/recommended-4.png';
 import fifthsliderone from '../../assets/fifthsectionimgone.jpg';
 import SEARCH from '../search/search.jsx'
+import { useTranslation } from 'react-i18next';
 
 function mainpage() {
+
+    const { t, i18n } = useTranslation();
+    // const { t } = useTranslation();
 
     const dropdownRefUp = useRef(null);
     const dropdownRefDown = useRef(null);
     const dropdownRefDownFifthSection = useRef(null);
 
-    const [cityLi, setCityLi] = useState('Choose City');
+    const [cityLi, setCityLi] = useState(t('default'));
     const [selectedCity, setSelectedCity] = useState('Baku');
-    const [tourLi, setTourLi] = useState('Choose travel type');
+    const [tourLi, setTourLi] = useState(t('tourtypes.default'));
     const [tours, setTours] = useState('');
     const [chooseCity, setChooseCity] = useState('Choose City');
     const [selectedCityImg, setSelectedCityImg] = useState(fifthsliderone);
@@ -180,15 +184,14 @@ function mainpage() {
                         <div className="leftbuttons">
 
                             <div ref={dropdownRefUp} onClick={handleClickUp} className={`lftlftbtndrpdwn ${isRotatedUp ? 'lftlftbtndrpdwnactive' : ''}`}>
-                                {cityLi} <RiArrowDownSLine strokeWidth={2} style={{ transform: isRotatedUp ? 'rotate(180deg)' : 'none' }} />
+                                {t(`cities.${cityLi}`)} <RiArrowDownSLine strokeWidth={2} style={{ transform: isRotatedUp ? 'rotate(180deg)' : 'none' }} />
                                 <ul className={`lftlftbtndrpdwnul ${isRotatedUp ? 'lftlftbtndrpdwnulactive' : ''}`}>
                                     {cityData.cities.map((city, index) => (
                                         <li key={index} onClick={() => handleCityChangeLi(city.cityLi)}>
-                                            {city.cityLi}
+                                            {t(`cities.${city.cityLi}`)}
                                         </li>
                                     ))}
                                 </ul>
-
                             </div>
 
                             <div ref={dropdownRefDown} onClick={handleClickDown} className="lftrghtbtndrpdwn">
@@ -197,16 +200,13 @@ function mainpage() {
                                 <ul className={`rghtlftbtndrpdwnul ${isRotatedDown ? 'rghtlftbtndrpdwnulactive' : ''}`}>
                                     {cityTour.tourtypes.map((tour, index) => (
                                         <li key={index} onClick={() => handleTourChangeLi(tour.tourtype)}>
-                                            {tour.tourtype}
+                                            {t(`tourtypes.${tour.tourtype}`)}
                                         </li>
                                     ))}
                                 </ul>
-
-                            </div>
-                        </div>
-
+                            </div>                        </div>
                         <div className="checkoutpart">
-                            <span>Find Tours ! <FaArrowRightLong /></span>
+                            <span>{t('sectionfirst.findTours')}! <FaArrowRightLong /></span>
                         </div>
                     </div>
                 </div>
@@ -218,43 +218,39 @@ function mainpage() {
                 <div className="containerscndsc">
                     <div className='scndsctnup'>
                         <div className="scndsctntxt">
-                            <h1>Package tours</h1>
-                            <p>Select one of our tailor-made packages and get prepared for your Russian adventure! You do not need to worry about accommodation, airport transfers, museum tickets, transportation between the cities, tour guides — we will take care of it for you. </p>
+                            <h1>{t('sectionsecond.packageTours')}</h1>
+                            <p>{t('sectionsecond.selectPackage')}</p>
                         </div>
 
                         <div className="sctnscndbtnhldr">
                             <button className="btntoleft" onClick={handleScrollLeftScnd}><FaAnglesLeft size={16} color={"white"} /></button>
                             <button className="btntoright" onClick={handleScrollRightScnd}><FaAnglesRight size={16} color={"white"} /></button>
                         </div>
-
                     </div>
-                    <div className="sliderholder" id='sectionsecond'>
 
+                    <div className="sliderholder" id='sectionsecond'>
                         <div className="yellowcircle"></div>
 
                         <div className="sliderone">
                             <img src={slideruno} className='slideruno' />
                             <div className="txtprtscndscc">
-                                <h1>Tours to Baku and its sights</h1>
-                                <p>Feel the lifestyle and culture of the ancient Azerbaijani metropolis. Our professional guides...</p>
-
+                                <h1>{t('sectionsecond.toursToBaku')}</h1>
+                                <p>{t('sectionsecond.bakuBoulevard')}</p>
                                 <button className="cta mnpgbtn">
-                                    <span>View me</span>
+                                    <span>{t('sectionsecond.view')}</span>
                                     <svg width="15px" height="10px" viewBox="0 0 13 10">
                                         <path d="M1,5 L11,5"></path>
                                         <polyline points="8 1 12 5 8 9"></polyline>
                                     </svg>
                                 </button>
-
                             </div>
                         </div>
-
-                        <SLIDER imgg={sliderdos} huno={'Baku Boulevard'} p={'1 day from 179,48 eur'} btn={'View'} />
-                        <SLIDER imgg={slidertres} huno={'Weekend in Qabala from Upon request'} p={'8 days / 7 nights from 343,64 Eur'} btn={'View'} />
-                        <SLIDER imgg={slidercuatro} huno={'Weekend in Lerik from Upon request'} p={'3 days / 2 nights from 94,54'} btn={'View'} />
-                        <SLIDER imgg={sliderpierci} huno={'Weekend in Lankaran from Upon request'} p={'3 days / 2 nights from 146,85'} btn={'View'} />
-                        <SLIDER imgg={slidersessi} huno={'Weekend in Quba from Upon request'} p={'3 days / 2 nights from 245,58'} btn={'View'} />
-                        <SLIDER imgg={sliderseptini} huno={'Weekend in Shusha from Upon request'} p={'3 days / 2 nights from 180,93'} btn={'View'} />
+                        <SLIDER imgg={sliderdos} huno={t('sectionsecond.sliderProps.sliderdos.huno')} p={t('sectionsecond.sliderProps.sliderdos.p')} btn={t('sectionsecond.sliderProps.sliderdos.btn')} />
+                        <SLIDER imgg={slidercuatro} huno={t('sectionsecond.sliderProps.slidercuatro.huno')} p={t('sectionsecond.sliderProps.slidercuatro.p')} btn={t('sectionsecond.sliderProps.slidercuatro.btn')} />
+                        <SLIDER imgg={slidertres} huno={t('sectionsecond.sliderProps.slidertres.huno')} p={t('sectionsecond.sliderProps.slidertres.p')} btn={t('sectionsecond.sliderProps.slidertres.btn')} />
+                        <SLIDER imgg={sliderpierci} huno={t('sectionsecond.sliderProps.sliderpierci.huno')} p={t('sectionsecond.sliderProps.sliderpierci.p')} btn={t('sectionsecond.sliderProps.sliderpierci.btn')} />
+                        <SLIDER imgg={slidersessi} huno={t('sectionsecond.sliderProps.slidersessi.huno')} p={t('sectionsecond.sliderProps.slidersessi.p')} btn={t('sectionsecond.sliderProps.slidersessi.btn')} />
+                        <SLIDER imgg={sliderseptini} huno={t('sectionsecond.sliderProps.sliderseptini.huno')} p={t('sectionsecond.sliderProps.sliderseptini.p')} btn={t('sectionsecond.sliderProps.sliderseptini.btn')} />
                     </div>
                 </div>
             </section>
@@ -263,8 +259,8 @@ function mainpage() {
                 <div className="containerthrdsc">
                     <div className='thrdsctnup'>
                         <div className="thrdsctntxt">
-                            <h1>Package tours</h1>
-                            <p>Select one of our tailor-made packages and get prepared for your Russian adventure! You do not need to worry about accommodation, airport transfers, museum tickets, transportation between the cities, tour guides — we will take care of it for you. </p>
+                            <h1>{t('sectionthird.packageTours')}</h1>
+                            <p>{t('sectionthird.selectPackage')}</p>
                         </div>
                         <div className="sctnthrdbtnhldr">
                             <button onClick={handleScrollLeft} className="btntoleft"><FaAnglesLeft size={16} color={"white"} /></button>
@@ -279,10 +275,10 @@ function mainpage() {
                         <div className="sliderone">
                             <img src={atashgah} className='slideruno' />
                             <div className="txtprtthrdscc">
-                                <h1>Ateshgah</h1>
-                                <p>Fire Temple of Baku, is a fascinating historical and religious site. This pentagonal complex, built during the 17th and...</p>
+                                <h1>{t('sectionthird.atashgah')}</h1>
+                                <p>{t('sectionthird.atashgahDescription')}</p>
                                 <button className="cta mnpgbtn">
-                                    <span>View me</span>
+                                    <span>{t('sectionthird.viewMe')}</span>
                                     <svg width="15px" height="10px" viewBox="0 0 13 10">
                                         <path d="M1,5 L11,5"></path>
                                         <polyline points="8 1 12 5 8 9"></polyline>
@@ -291,12 +287,12 @@ function mainpage() {
                             </div>
                         </div>
 
-                        <SLIDER imgg={slidershahdag} huno={'Shahdag Mountain Resort'} p={'A large resort area with multiple hotels offering skiing, snowboarding, and other winter sports...'} btn={'View'} />
-                        <SLIDER imgg={khizidag} huno={'The Khizi Red Mountains'} p={' Khizi district of Azerbaijan, are known for their striking red and orange hues...'} btn={'View'} />
-                        <SLIDER imgg={ganimetpark} huno={'Military Trophies Park in Baku '} p={'Extensive collection of captured military equipment and artifacts, providing a stark and...'} btn={'View'} />
-                        <SLIDER imgg={mudvolcano} huno={'The Gobustan mud volcanoes'} p={'Renowned for their therapeutic properties, believed to improve skin conditions and...'} btn={'View'} />
-                        <SLIDER imgg={hdlymosque} huno={'The Heydar Aliyev Mosque'} p={'is the largest mosque in the Caucasus region, notable for its impressive architectural design and grand scale...'} btn={'View'} />
-                        <SLIDER imgg={yanardag} huno={'Yanardagh (Burning hill)'} p={' is a natural gas fire that continuously burns on a hillside, creating a mesmerizing and enduring display...'} btn={'View'} />
+                        <SLIDER imgg={slidershahdag} huno={t('sectionthird.sliderProps.slidershahdag.huno')} p={t('sectionthird.sliderProps.slidershahdag.p')} btn={t('sectionthird.sliderProps.slidershahdag.btn')} />
+                        <SLIDER imgg={khizidag} huno={t('sectionthird.sliderProps.khizidag.huno')} p={t('sectionthird.sliderProps.khizidag.p')} btn={t('sectionthird.sliderProps.khizidag.btn')} />
+                        <SLIDER imgg={ganimetpark} huno={t('sectionthird.sliderProps.ganimetpark.huno')} p={t('sectionthird.sliderProps.ganimetpark.p')} btn={t('sectionthird.sliderProps.ganimetpark.btn')} />
+                        <SLIDER imgg={mudvolcano} huno={t('sectionthird.sliderProps.mudvolcano.huno')} p={t('sectionthird.sliderProps.mudvolcano.p')} btn={t('sectionthird.sliderProps.mudvolcano.btn')} />
+                        <SLIDER imgg={hdlymosque} huno={t('sectionthird.sliderProps.hdlymosque.huno')} p={t('sectionthird.sliderProps.hdlymosque.p')} btn={t('sectionthird.sliderProps.hdlymosque.btn')} />
+                        <SLIDER imgg={yanardag} huno={t('sectionthird.sliderProps.yanardag.huno')} p={t('sectionthird.sliderProps.yanardag.p')} btn={t('sectionthird.sliderProps.yanardag.btn')} />
                     </div>
                 </div>
             </section>
@@ -304,25 +300,25 @@ function mainpage() {
             <section className="sectionfourth">
                 <div className="containerfrthsc">
                     <div className="frthlft">
-                        <h1 className='txtprtfrsth frthhuno'>Welcome to</h1>
+                        <h1 className='txtprtfrsth frthhuno'>{t('sectionfourth.welcomeTo')}</h1>
                         <div className="div">
-                            <h1 className='txtprtfrsth'>Azerbaijan <span className='yellow'>.</span></h1>
+                            <h1 className='txtprtfrsth'>{t('sectionfourth.azerbaijan')} <span className='yellow'>.</span></h1>
                         </div>
                     </div>
 
                     <div className="frthrght">
-                        <p>Planning a trip to Azerbaijan can be a challenging endeavor, particularly when you're unfamiliar with all the unique aspects and hidden treasures of this captivating country.  <a className='travelazer' target='_blank' href="https://azerbaijan.travel/"> Azerbaijan.travel</a> is here to assist you in selecting the perfect itinerary for your adventure. Why should you choose us:</p>
+                        <p>{t('sectionfourth.planningTrip')} <a className='travelazer' target='_blank' href="https://azerbaijan.travel/"> Azerbaijan.travel</a> {t('sectionfourth.assistance')}</p>
                         <div className="frthrghttxtprt">
                             <div className="pprtuno">
-                                <div className="icons"><GrUserManager size={32} color='black' /></div>  <p className='frthrghtp'>We are the experienced travel concierge with more than 10 years’ experience and thousands of happy tourists</p>
+                                <div className="icons"><GrUserManager size={32} color='black' /></div> <p className='frthrghtp'>{t('sectionfourth.reasons.first')}</p>
                             </div>
 
                             <div className="pprtdos">
-                                <div className="icons"><GrCertificate className='iconuno' size={32} color='black' /></div> <p className='frthrghtp'>We are the registered tour operator officially licensed by the State Tourism Agency of the Republic of Azerbaijan</p>
+                                <div className="icons"><GrCertificate className='iconuno' size={32} color='black' /></div> <p className='frthrghtp'>{t('sectionfourth.reasons.second')}</p>
                             </div>
 
                             <div className="pprttres">
-                                <div className="icons"><LiaHandHoldingHeartSolid size={32} color='black' /></div> <p className='frthrghtp'>We practise a personal approach to each customer and design your trip according to your needs</p>
+                                <div className="icons"><LiaHandHoldingHeartSolid size={32} color='black' /></div> <p className='frthrghtp'>{t('sectionfourth.reasons.third')}</p>
                             </div>
                         </div>
                     </div>
@@ -331,15 +327,18 @@ function mainpage() {
 
             <section className="sectionfifth">
                 <div className="containerffthsc">
-
                     <div className="ffthscup">
-                        <h1>Popular destinations</h1>
 
+                        <h1>{t('sectionfifth.popularDestinations')}</h1>
 
-                        <ul className='destinations' >
+                        <ul className='destinations'>
                             {citiesData.map(city => (
-                                <li className={`ulli ${selectedCity === city.cityName ? 'nulliactive' : ''}`} key={city.cityName} onClick={() => { handleCityChangem(city.cityName); handleClickList(); }}>
-                                    {city.cityName}
+                                <li
+                                    className={`ulli ${selectedCity === city.cityName ? 'nulliactive' : ''}`}
+                                    key={city.cityName}
+                                    onClick={() => { handleCityChangem(city.cityName); handleClickList(); }}
+                                >
+                                    {t(`cityDestinations.${city.cityName}`)}
                                 </li>
                             ))}
                         </ul>
@@ -347,100 +346,59 @@ function mainpage() {
                         <div className="horizontalffth"></div>
 
                         <div ref={dropdownRefDownFifthSection} onClick={handleClickDownFifthSection} className={`fifthsctndv ${isRotatedDownFifthSection ? 'fifthsctndvactive' : ''}`}>
-                            {chooseCity} <RiArrowDownSLine strokeWidth={2} style={{ transform: isRotatedDownFifthSection ? 'rotate(180deg)' : 'none' }} />
+                            {t('sectionfifth.chooseCity')} <RiArrowDownSLine strokeWidth={2} style={{ transform: isRotatedDownFifthSection ? 'rotate(180deg)' : 'none' }} />
                             <ul className={`ffthsctnul ${isRotatedDownFifthSection ? 'ffthsctnulactive' : ''}`}>
                                 {citiesData.map(city => (
                                     <li key={city.cityName} onClick={() => handleCityChangem(city.cityName)}  >
-                                        {city.cityName}
+                                        {t(`citiesDropdown.${city.cityName}`)}
                                     </li>
                                 ))}
                             </ul>
                         </div>
 
-
                         <div className="horizontalline"></div>
+
                     </div>
 
                     <div className="sldrhldrtwo">
                         <div className="ffthscdwnlft">
-
                             {selectedCity && (
                                 <div>
-                                    <h1 id='destinatonhuno'>{selectedCity}</h1>
-                                    <p>{cityInfo}</p>
+                                    <h1 id='destinatonhuno'>{t(`citiesSlider.${selectedCity}.name`)}</h1>
+                                    <p>{t(`citiesSlider.${selectedCity}.info`)}</p>
                                 </div>
                             )}
                         </div>
-
                         <div className="ffthscdwnrght">
                             {selectedCityImg && <img src={selectedCityImg} className='sldrimg' alt={selectedCity} />}
                         </div>
-
                     </div>
                 </div>
-
             </section>
 
             <section className="sectionsixth">
                 <div className="containersxth">
                     <div className="trstssy">
-                        <h1>What tourists say?</h1>
-                        <p>More than 1500 tourists already travelled to Russia with us. Here is what they say:</p>
+                        <h1>{t('sectionsixth.whatTouristsSay')}</h1>
+                        <p>{t('sectionsixth.touristsSayIntro')}</p>
 
                         <div className="horizontalwhite"></div>
 
                         <div className="rcmndtrst">
-                            <div className="trstuno">
-                                <p>Yvonne Sanders</p>
-                                <div className="strs">
-                                    <p>2019-10-05</p>
-                                    <div className="strcnt">
-                                        <IoMdStar color='gold' />
-                                        <IoMdStar color='gold' />
-                                        <IoMdStar color='gold' />
-                                        <IoMdStar color='gold' />
-                                        <IoMdStar color='gold' />
+                            {t('sectionsixth.testimonials', { returnObjects: true }).map((testimonial, index) => (
+                                <div key={index} className={`trst${index + 1}`}>
+                                    <p>{testimonial.name}</p>
+                                    <div className="strs">
+                                        <p>{testimonial.date}</p>
+                                        <div className="strcnt">
+                                            {[...Array(testimonial.rating)].map((_, i) => (
+                                                <IoMdStar key={i} color='gold' />
+                                            ))}
+                                        </div>
                                     </div>
+                                    <p>{testimonial.comment}</p>
                                 </div>
-                                <p>Hello and Good day We wanted to say "Thank you so very much" to Irina and Sergej for their warm welcome and the wonderful time that we had in St. Petersburg in early October while we were with them. We enjoyed their...</p>
-                            </div>
-
-                            <div className="horizontal"></div>
-                            <div className="vertical"></div>
-
-                            <div className="trstdos">
-                                <p>Yvonne Sanders</p>
-                                <div className="strs">
-                                    <p>2019-10-05</p>
-                                    <div className="strcnt">
-                                        <IoMdStar color='gold' />
-                                        <IoMdStar color='gold' />
-                                        <IoMdStar color='gold' />
-                                        <IoMdStar color='gold' />
-                                        <IoMdStar color='gold' />
-                                    </div>
-                                </div>
-                                <p>Hello and Good day We wanted to say "Thank you so very much" to Irina and Sergej for their warm welcome and the wonderful time that we had in St. Petersburg in early October while we were with them. We enjoyed their...</p>
-                            </div>
-
-                            <div className="horizontal"></div>
-                            <div className="vertical"></div>
-
-
-                            <div className="trsttres">
-                                <p>Yvonne Sanders</p>
-                                <div className="strs">
-                                    <p>2019-10-05</p>
-                                    <div className="strcnt">
-                                        <IoMdStar color='gold' />
-                                        <IoMdStar color='gold' />
-                                        <IoMdStar color='gold' />
-                                        <IoMdStar color='gold' />
-                                        <IoMdStar color='gold' />
-                                    </div>
-                                </div>
-                                <p>Hello and Good day We wanted to say "Thank you so very much" to Irina and Sergej for their warm welcome and the wonderful time that we had in St. Petersburg in early October while we were with them. We enjoyed their...</p>
-                            </div>
+                            ))}
                         </div>
                     </div>
 
@@ -448,7 +406,7 @@ function mainpage() {
                     <div className="horizontalwhite"></div>
 
                     <div className="recommendedby">
-                        <p>Recommended by:</p>
+                        <p>{t('sectionsixth.recommendedBy')}</p>
                         <div className="recomimg">
                             <img src={recommendeduno} />
                             <img src={recommendeddos} />

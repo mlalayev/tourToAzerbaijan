@@ -5,6 +5,10 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { IoLanguageSharp } from "react-icons/io5";
 import { RiArrowDownSLine } from "react-icons/ri";
 import { useTranslation } from 'react-i18next';
+import az from '../../assets/az.svg'
+import gb from '../../assets/gb.svg'
+import ru from '../../assets/ru.svg'
+import de from '../../assets/de.svg'
 
 function Header() {
     const { t, i18n } = useTranslation();
@@ -65,9 +69,10 @@ function Header() {
                         </button>
                         {langMenuOpen && (
                             <ul className="language-menu">
-                                <li onClick={() => changeLanguage('en')}>English</li>
-                                <li onClick={() => changeLanguage('az')}>Azərbaycanca</li>
-                                <li onClick={() => changeLanguage('ru')}>Русский</li>
+                                <li onClick={() => changeLanguage('en')}><img src={gb} className='flag' /> English</li>
+                                <li onClick={() => changeLanguage('az')}><img src={az} className='flag' />Azərbaycan</li>
+                                <li onClick={() => changeLanguage('ru')}><img src={ru} className='flag' /> Русский</li>
+                                <li onClick={() => changeLanguage('ge')}><img src={de} className='flag' /> German</li>
                             </ul>
                         )}
                     </div>

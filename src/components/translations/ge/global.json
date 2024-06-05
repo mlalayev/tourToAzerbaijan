@@ -1,0 +1,228 @@
+{
+    "header": {
+        "logoAlt": "Logo",
+        "multiDayTours": "Mehrtägige Touren",
+        "dayTrips": "Tagesausflüge",
+        "destinations": "Ziele",
+        "visaInformations": "Visainformationen",
+        "checkout": "Auschecken"
+    },
+    "sectionfirst": {
+        "cityChoose": "Stadt wählen",
+        "findTours": "Touren finden"
+    },
+    "sectionsecond": {
+        "packageTours": "Paketreisen",
+        "selectPackage": "Wählen Sie eines unserer maßgeschneiderten Pakete und machen Sie sich bereit für Ihr russisches Abenteuer! Sie müssen sich keine Sorgen um Unterkunft, Flughafentransfers, Museumseintrittskarten, Transport zwischen den Städten, Reiseleiter machen - wir kümmern uns darum für Sie.",
+        "toursToBaku": "Touren nach Baku und seine Sehenswürdigkeiten",
+        "bakuBoulevard": "Baku Boulevard",
+        "weekendInQabala": "Wochenende in Qabala ab Auf Anfrage",
+        "weekendInLerik": "Wochenende in Lerik ab Auf Anfrage",
+        "weekendInLankaran": "Wochenende in Lankaran ab Auf Anfrage",
+        "weekendInQuba": "Wochenende in Quba ab Auf Anfrage",
+        "weekendInShusha": "Wochenende in Shusha ab Auf Anfrage",
+        "view": "Schau mir an",
+        "sliderProps": {
+            "sliderdos": {
+                "huno": "Baku Boulevard",
+                "p": "1 Tag ab 179,48 Euro",
+                "btn": "Schau mich an"
+            },
+            "slidertres": {
+                "huno": "Wochenende in Qabala ab Auf Anfrage",
+                "p": "8 Tage / 7 Nächte ab 343,64 Euro",
+                "btn": "Schau mich an"
+            },
+            "slidercuatro": {
+                "huno": "Wochenende in Lerik ab Auf Anfrage",
+                "p": "3 Tage / 2 Nächte ab 94,54 Euro",
+                "btn": "Schau mich an"
+            },
+            "sliderpierci": {
+                "huno": "Wochenende in Lankaran ab Auf Anfrage",
+                "p": "3 Tage / 2 Nächte ab 146,85 Euro",
+                "btn": "Schau mich an"
+            },
+            "slidersessi": {
+                "huno": "Wochenende in Quba ab Auf Anfrage",
+                "p": "3 Tage / 2 Nächte ab 245,58 Euro",
+                "btn": "Schau mich an"
+            },
+            "sliderseptini": {
+                "huno": "Wochenende in Shusha ab Auf Anfrage",
+                "p": "3 Tage / 2 Nächte ab 180,93 Euro",
+                "btn": "Schau mich an"
+            }
+        }
+    },
+    "sectionthird": {
+        "packageTours": "Paketreisen",
+        "selectPackage": "Wählen Sie eines unserer maßgeschneiderten Pakete und machen Sie sich bereit für Ihr russisches Abenteuer! Sie müssen sich keine Sorgen um Unterkunft, Flughafentransfers, Museumseintrittskarten, Transport zwischen den Städten, Reiseleiter machen - wir kümmern uns darum für Sie.",
+        "atashgah": "Atashgah",
+        "atashgahDescription": "Das Feuerheiligtum von Baku ist eine faszinierende historische und religiöse Stätte. Dieser pentagonale Komplex, der im 17. Jahrhundert erbaut wurde, ...",
+        "viewMe": "Schau mich an",
+        "sliderProps": {
+            "slidershahdag": {
+                "huno": "Shahdag Bergresort",
+                "p": "Ein großes Resortgebiet mit mehreren Hotels, die Skifahren, Snowboarden und andere Wintersportarten anbieten ...",
+                "btn": "Ansehen"
+            },
+            "khizidag": {
+                "huno": "Die roten Berge von Khizi",
+                "p": "Der Bezirk Khizi in Aserbaidschan ist bekannt für seine markanten roten und orangefarbenen Farbtöne ...",
+                "btn": "Ansehen"
+            },
+            "ganimetpark": {
+                "huno": "Militärtrophäenpark in Baku",
+                "p": "Umfangreiche Sammlung erbeuteter Militärausrüstung und Artefakte, die einen krassen und ...",
+                "btn": "Ansehen"
+            },
+            "mudvolcano": {
+                "huno": "Die Schlammvulkane von Gobustan",
+                "p": "Bekannt für ihre therapeutischen Eigenschaften, die angeblich Hauterkrankungen verbessern und ...",
+                "btn": "Ansehen"
+            },
+            "hdlymosque": {
+                "huno": "Die Heydar Aliyev Moschee",
+                "p": "ist die größte Moschee in der Kaukasusregion, bekannt für ihr beeindruckendes architektonisches Design und ihre beeindruckende Größe ...",
+                "btn": "Ansehen"
+            },
+            "yanardag": {
+                "huno": "Yanardagh (Brennender Hügel)",
+                "p": "ist ein natürliches Gasfeuer, das kontinuierlich an einem Berghang brennt und ein faszinierendes und dauerhaftes Display erzeugt ...",
+                "btn": "Ansehen"
+            }
+        }
+    },
+    "sectionfourth": {
+        "welcomeTo": "Willkommen zu",
+        "azerbaijan": "Aserbaidschan",
+        "planningTrip": "Die Planung einer Reise nach Aserbaidschan kann eine herausfordernde Aufgabe sein, insbesondere wenn Sie mit allen einzigartigen Aspekten und verborgenen Schätzen dieses faszinierenden Landes nicht vertraut sind. ",
+        "assistance": "steht Ihnen zur Seite, um Ihnen bei der Auswahl des perfekten Reiseplans für Ihr Abenteuer zu helfen. Warum sollten Sie uns wählen:",
+        "reasons": {
+            "first": "Wir sind der erfahrene Reise-Concierge mit mehr als 10 Jahren Erfahrung und Tausenden von zufriedenen Touristen",
+            "second": "Wir sind der registrierte Reiseveranstalter, der offiziell von der Staatlichen TourismAgentur der Republik Aserbaidschan lizenziert ist",
+            "third": "Wir praktizieren einen persönlichen Ansatz für jeden Kunden und gestalten Ihre Reise entsprechend Ihren Bedürfnissen"
+        }
+    },
+    "sectionfifth": {
+        "popularDestinations": "Beliebte Reiseziele",
+        "chooseCity": "Stadt wählen"
+    },
+    "sectionsixth": {
+        "whatTouristsSay": "Was Touristen sagen?",
+        "touristsSayIntro": "Mehr als 1500 Touristen haben bereits mit uns nach Russland gereist. Hier ist, was sie sagen:",
+        "recommendedBy": "Empfohlen von:",
+        "testimonials": [
+            {
+                "name": "Yvonne Sanders",
+                "date": "2019-10-05",
+                "rating": 5,
+                "comment": "Hallo und guten Tag! Wir wollten Irina und Sergej für ihren herzlichen Empfang und die wundervolle Zeit danken, die wir Anfang Oktober in St. Petersburg mit ihnen hatten. Wir haben ihre..."
+            },
+            {
+                "name": "Yvonne Sanders",
+                "date": "2019-10-05",
+                "rating": 5,
+                "comment": "Hallo und guten Tag! Wir wollten Irina und Sergej für ihren herzlichen Empfang und die wundervolle Zeit danken, die wir Anfang Oktober in St. Petersburg mit ihnen hatten. Wir haben ihre..."
+            },
+            {
+                "name": "Yvonne Sanders",
+                "date": "2019-10-05",
+                "rating": 5,
+                "comment": "Hallo und guten Tag! Wir wollten Irina und Sergej für ihren herzlichen Empfang und die wundervolle Zeit danken, die wir Anfang Oktober in St. Petersburg mit ihnen hatten. Wir haben ihre..."
+            }
+        ]
+    },
+    "azerbaijan": {
+        "title": "Aserbaidschan",
+        "subtitle": "Das große Abenteuer",
+        "description": "Wir bieten Ihnen unsere handverlesenen Touren und Ausflüge für einen unglaublichen Urlaub in Aserbaidschan"
+    },
+    "tourtypes": {
+        "default": "Wählen Sie den Tourtyp",
+        "Package tours": "Paketreisen",
+        "Day tours & excursions": "Tagesausflüge & Ausflüge",
+        "Visa-free shore tours": "Visumfreie Küstentouren"
+    },
+    "cityDestinations": {
+        "Baku": "Baku",
+        "Gabala": "Gabala",
+        "Lerik": "Lerik",
+        "Lankaran": "Lankaran",
+        "Guba": "Guba",
+        "Gusar": "Gusar",
+        "Shusha": "Shusha",
+        "Khankandi": "Khankandi",
+        "Ismailly": "Ismailly"
+    },
+    "citiesDropdown": {
+        "Baku": "Baku",
+        "Gabala": "Gabala",
+        "Lerik": "Lerik",
+        "Lankaran": "Lankaran",
+        "Guba": "Guba",
+        "Gusar": "Gusar",
+        "Shusha": "Shusha",
+        "Khankandi": "Khankandi",
+        "Ismailly": "Ismailly"
+    },
+    "citiesSlider": {
+        "Baku": {
+            "name": "Baku",
+            "info": "Baku, die Hauptstadt und größte Stadt Aserbaidschans, ist eine lebendige Metropole, die antikes Erbe und Moderne verbindet. Unsere Touren durch Baku bieten eine aufschlussreiche Reise durch ihre faszinierendsten Wahrzeichen und einzigartigen Sehenswürdigkeiten. Von dem historischen Charme der Altstadt (Icherisheher) bis zu den futuristischen Flammentürmen werden Ihnen unsere sachkundigen Reiseführer interessante Geschichten erzählen und Ihnen einen Einblick in das dynamische Leben und die reiche Kultur der zeitgenössischen Bewohner Bakus geben. Entdecken Sie die bezaubernde Mischung aus Ost und West, die diese faszinierende Stadt prägt."
+        },
+        "Gabala": {
+            "name": "Gabala",
+            "info": "Gabala, eingebettet in die malerischen Landschaften Aserbaidschans, ist ein verborgenes Juwel, das darauf wartet, entdeckt zu werden. Unsere Touren durch Gabala bieten eine bezaubernde Reise durch ihre ruhige Naturschönheit und kulturellen Attraktionen. Von den ruhigen Ufern des Nohur-Sees bis zu den abenteuerlichen Pfaden des Tufandag-Berges begeistert Gabala Besucher mit seinen vielfältigen Angeboten. Unsere erfahrenen Reiseleiter werden die Geheimnisse dieser bezaubernden Region enthüllen und Geschichten aus ihrer reichen Geschichte und lebendigen Kultur teilen. Tauchen Sie ein in den Charme von Gabala und erleben Sie die perfekte Mischung aus Entspannung und Abenteuer inmitten der atemberaubenden Landschaft Aserbaidschans."
+        },
+        "Gusar": {
+            "name": "Gusar",
+            "info": "Gusar, eine malerische Stadt am Fuße des Großen Kaukasus in Aserbaidschan, bietet Naturliebhabern und Abenteurern gleichermaßen einen ruhigen Rückzugsort. Unsere Touren durch Gusar laden Sie ein, seine unberührten Landschaften, üppigen Wälder und majestätischen Berggipfel zu erkunden. Von der ruhigen Schönheit des Dorfes Laza bis zu den aufregenden Pfaden des Shahdag-Nationalparks fasziniert Gusar Besucher mit seinen Naturschönheiten und Outdoor-Aktivitäten. Unsere sachkundigen Reiseführer werden Sie durch diese bezaubernde Region führen, Einblicke in ihre einzigartige Flora und Fauna sowie das reiche kulturelle Erbe ihrer Bewohner geben. Entdecken Sie die Ruhe und den Charme von Gusar, während Sie eine unvergessliche Reise durch die atemberaubenden Ausblicke des Kaukasusgebirges antreten."
+        },
+        "Ismailly": {
+            "name": "Ismailly",
+            "info": "Ismailly, im Herzen der üppigen grünen Hügel Aserbaidschans gelegen, bietet eine friedliche Auszeit vom Trubel des Stadtlebens. Unsere Touren durch Ismailly laden Sie ein, sich in die ruhige Schönheit dieser bezaubernden Region zu vertiefen. Von den ruhigen Gewässern des Shamkir-Sees bis zu den malerischen Landschaften des Dorfes Lahij fasziniert Ismailly Besucher mit seiner natürlichen Pracht und reichen kulturellen Erbe. Unsere erfahrenen Reiseführer werden Sie auf eine Reise durch die versteckten Schätze der Region mitnehmen und Geschichten aus ihrer Geschichte, Traditionen und der herzlichen Gastfreundschaft ihrer Bewohner teilen. Ob Sie alte Moscheen erkunden, durch Weinberge schlendern oder einfach die Ruhe der Landschaft genießen, Ismailly verspricht ein unvergessliches Erlebnis für alle, die sie besuchen."
+        },
+        "Lankaran": {
+            "name": "Lankaran",
+            "info": "Lankaran, eine Küstenstadt am Kaspischen Meer in Aserbaidschan, lockt mit ihrer Mischung aus natürlicher Schönheit und kulturellem Erbe. Unsere Touren durch Lankaran bieten einen Einblick in den Charme dieses Küstenjuwels, wo üppiges Grün auf sandige Strände trifft. Vom Erkunden des historischen Khan-Palastes bis zum Bummeln durch die lebhaften Basare der Altstadt begeistert Lankaran Besucher mit seiner reichen Geschichte und lebendigen Atmosphäre. Unsere sachkundigen Reiseführer werden Sie durch die verwinkelten Straßen der Stadt führen, Geschichten aus ihrer Vergangenheit und Gegenwart teilen und Ihnen die Aromen der lokalen Küche näher bringen. Ob Sie am Ufer spazieren gehen oder ins Umland venturen, Lankaran verspricht ein intensives Erlebnis, das die Schönheit und Vielfalt der südlichen Küste Aserbaidschans feiert."
+        },
+        "Lerik": {
+            "name": "Lerik",
+            "info": "Lerik, eine friedliche Bergstadt im Süden Aserbaidschans, ist berühmt für ihre atemberaubenden Landschaften und ihre ruhige Atmosphäre. Bekannt für ihre üppigen Wälder, malerischen Täler und die Langlebigkeit ihrer Bewohner, bietet Lerik einen einzigartigen Rückzugsort in die Natur. Unsere Touren durch Lerik führen Sie durch ihre üppige Landschaft und friedliche Umgebung, erkunden Orte wie den antiken Hirkan-Nationalpark und das faszinierende Museum für Langlebigkeit. Unsere sachkundigen Reiseführer werden Geschichten über das reiche Naturerbe von Lerik und die Traditionen ihrer Bewohner teilen. Egal, ob Sie durch malerische Wanderwege wandern oder einfach die frische Bergluft genießen, Lerik bietet eine belebende Auszeit für Naturliebhaber und diejenigen, die nach Ruhe suchen."
+        },
+        "Guba": {
+            "name": "Guba",
+            "info": "Guba, eingebettet in der nordöstlichen Region Aserbaidschans, ist ein faszinierendes Reiseziel, das für seine atemberaubenden Landschaften und sein reiches kulturelles Erbe bekannt ist. Unsere Touren durch Guba bieten eine bemerkenswerte Reise durch diese vielfältige Region, in der üppige Wälder, alpine Wiesen und majestätische Berge Abenteurer und Naturliebhaber gleichermaßen locken. Vom Erkunden der historischen Stätten der antiken Stadt bis hin zum Eintauchen in die traditionelle Lebensweise der ländlichen Dörfer begeistert Guba Besucher mit seiner Authentizität und seinem Charme. Unsere sachkundigen Reiseführer werden Sie auf eine Erkundungstour durch die versteckten Schätze Gubas führen, Einblicke in seine Geschichte, Traditionen und die herzliche Gastfreundschaft seiner Bewohner geben. Egal, ob Sie durch das raue Gelände des Kaukasus wandern, lokale Köstlichkeiten auf belebten Märkten probieren oder einfach die atemberaubende Landschaft genießen, Guba verspricht ein unvergessliches Erlebnis, das die Schönheit und Vielfalt der nördlichen Region Aserbaidschans feiert."
+        },
+        "Shusha": {
+            "name": "Shusha",
+            "info": "Shusha, das im Herzen der Karabach-Region liegt, ist eine Stadt, die von Geschichte und kultureller Bedeutung geprägt ist. Oft als kulturelle Hauptstadt Aserbaidschans bezeichnet, verfügt Shusha über ein reiches Geflecht aus historischen Wahrzeichen, architektonischen Meisterwerken und atemberaubenden Landschaften. Unsere Touren durch Shusha bieten einen tiefen Einblick in ihre bewegte Vergangenheit und lebhafte Gegenwart. Sie werden die alte Festung von Shusha erkunden, durch die charmanten Straßen mit historischen Gebäuden schlendern und bedeutende Kulturstätten wie die Yukhari-Govhar-Agha-Moschee und das Natavan-Haus besuchen. Unsere sachkundigen Reiseführer werden faszinierende Geschichten über Shushas Erbe erzählen, von seiner Rolle in der Geschichte Aserbaidschans bis zu seinen Beiträgen zur Musik, Literatur und den Künsten. Inmitten der malerischen Berge eingebettet, bietet Shusha eine friedliche und zugleich inspirierende Kulisse, die jeden Besucher fesselt. Entdecken Sie die Widerstandsfähigkeit und den Geist der Bewohner von Shusha, während Sie in die einzigartige Mischung aus natürlicher Schönheit und kultureller Vielfalt eintauchen, die diese außergewöhnliche Stadt auszeichnet."
+        },
+        "Khankandi": {
+            "name": "Khankandi",
+            "info": "Khankandi, die größte Stadt in der Region Karabach, ist ein Zentrum kultureller und historischer Bedeutung. Bekannt für ihre lebhafte Atmosphäre und malerische Umgebung, ist Khankandi eine Stadt, die das Alte mit dem Neuen wunderschön verbindet. Unsere Touren in Khankandi bieten eine eingehende Erkundung ihrer bedeutendsten Sehenswürdigkeiten und verborgenen Schätze. Sie werden historische Wahrzeichen wie die Weeping Spring besuchen und das üppige Grün der Stadtparks genießen. Die reiche Geschichte der Stadt zeigt sich in ihrer Architektur und ihren kulturellen Einrichtungen, darunter Museen und Theater, die das Erbe der Region präsentieren. Unsere erfahrenen Reiseführer erzählen fesselnde Geschichten über Khankandis Vergangenheit, ihre strategische Bedeutung und ihre kulturelle Entwicklung. Eingebettet in die malerischen Ausläufer des Kleinen Kaukasus bietet Khankandi atemberaubende Aussichten und einen friedlichen Rückzug in die Natur. Entdecken Sie das dynamische Leben der Bewohner von Khankandi und die kulturelle Tiefe, die diese Stadt zu einem einzigartigen Reiseziel macht."
+        }
+    },
+    "search": {
+        "flightsTab": "Flüge",
+        "hotelsTab": "Hotels",
+        "adults": "Erwachsene",
+        "children": "Kinder",
+        "firstclass": "Erste Klasse",
+        "business": "Geschäft",
+        "economy": "Wirtschaft",
+        "searchFlight": "Flüge suchen",
+        "oneway": "Einweg",
+        "twoway": "Hin- und Rückflug",
+        "multicity": "Mehrere Städte"
+    },
+    "temp": {
+        "Wind": "Wind"
+    },
+    "api": {
+        "errormessage": "Bitte geben Sie die richtige Stadt ein",
+        "message": "Überprüfen Sie Ihre Stadt hier"
+    }
+}
