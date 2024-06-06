@@ -11,15 +11,15 @@
 
 
 .background {
-  position: absolute;
   inset: 0;
   z-index: -1;
+  position: absolute;
 }
 
 .cloud {
-  position: absolute;
-  right: 0px;
   top: 0px;
+  right: 0px;
+  position: absolute;
 }
 
 .cloud img {
@@ -28,8 +28,8 @@
 }
 
 #card .main-text {
-  font-size: 48px;
   z-index: 2;
+  font-size: 48px;
 }
 
 #card .info {
@@ -38,9 +38,9 @@
 }
 
 #card .info .text-gray {
-  color: rgba(235, 235, 245, 0.60);
   margin-top: 10px;
   margin-bottom: 0px;
+  color: rgba(235, 235, 245, 0.60);
 }
 
 #card .info .info-right {
