@@ -43,14 +43,14 @@
     background-color: var(--main-light-green-color);
 }
 
-.holder{
+.holder {
     width: 100vw;
     display: flex;
     justify-content: center;
 }
 
 .greencircle {
-    left: 10%;
+    right: 10%;
     top: -30px;
     width: 60px;
     height: 60px;
@@ -65,15 +65,10 @@
 
 
 .containerftr {
-    gap: 20px;
-    display: grid;
-    height: 150px;
-    flex-wrap: wrap;
-    margin-left: auto;
-    padding: 20px 10px;
-    margin-right: auto;
-    justify-content: space-around;
-    grid-template-columns: 10em 10em;
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 footer {
@@ -82,10 +77,8 @@ footer {
     margin-bottom: 130px;
 }
 
-.containerftr div {
-    display: flex;
-    flex-direction: column;
-    font-family: var(--font-family-reddit);
+.logofooter {
+    width: 100px;
 }
 
 .containerftr a {
@@ -141,5 +134,112 @@ footer {
 @media screen and (max-width: 360px) {
     .containerftr {
         grid-template-columns: 12em;
+    }
+}
+
+.txtholder h1{
+    font-size: 20px;
+}
+
+.txtholder{
+    display: flex;
+    align-items: center;
+}
+
+.cardfooter, .giveusacall {
+    width: 60vw;
+    height: 300px;
+    display: flex;
+    background: white;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 20px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: var(--font-family-reddit);
+    transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.shadowfooter, .giveusacall {
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.3),
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.socialfooter {
+    gap: 20px;
+    display: flex;
+    width: fit-content;
+    padding: 10px 10px;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+/* for all social containers*/
+.socialContainer {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    overflow: hidden;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.3s;
+    background-color: rgb(44, 44, 44);
+}
+
+/* instagram*/
+.containerOnefooter:hover {
+    transition-duration: 0.3s;
+    background-color: #d62976;
+}
+
+/* twitter*/
+.containerTwofooter:hover {
+    transition-duration: 0.3s;
+    background-color: #00acee;
+}
+
+/* linkdin*/
+.containerThreefooter:hover {
+    transition-duration: 0.3s;
+    background-color: #0072b1;
+}
+
+/* Whatsapp*/
+.containerFourfooter:hover {
+    background-color: green;
+    transition-duration: 0.3s;
+}
+
+.socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: 0.3s;
+}
+
+.socialSvg {
+    width: 17px;
+}
+
+.socialSvg path {
+    fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

@@ -30,9 +30,9 @@
     text-align: center;
     align-items: center;
     border-radius: 10px;
+    background-color: #fff;
     justify-content: center;
     border-bottom: var(--border);
-    background-color: #fff;
     box-shadow: 3px 3px 8px gray;
 }
 
@@ -59,27 +59,26 @@
 
 .input {
     display: flex;
-    align-items: center;
     margin-left: auto;
+    align-items: center;
 }
 
 .ccontainer button {
-    display: flex;
     margin: 5px;
-    justify-content: center;
-    align-items: center;
-    /* width: var(--space-12); */
     width: 10px;
-    height: var(--space-12);
+    display: flex;
     height: 10px;
-    border: 1px solid var(--color-blue-500);
+    align-items: center;
+    height: var(--space-12);
+    justify-content: center;
     border-radius: var(--round);
     background-color: var(--color-white);
+    border: 1px solid var(--color-blue-500);
 }
 
 .ccontainer button:hover {
-    background-color: var(--color-blue-200);
     cursor: pointer;
+    background-color: var(--color-blue-200);
 }
 
 .ccontainer button:focus {
@@ -88,8 +87,8 @@
 }
 
 .ccontainer button[disabled] {
-    opacity: var(--opacity-50);
     pointer-events: none;
+    opacity: var(--opacity-50);
 }
 
 .ccontainer button:active {
@@ -97,9 +96,9 @@
 }
 
 .number {
+    text-align: center;
     font-size: var(--text-lg);
     min-width: var(--space-12);
-    text-align: center;
 }
 
 .icon {
@@ -120,11 +119,10 @@
 
 @media screen and (min-width:830px) {
     .box {
-        /* border: 10px solid red; */
         margin: auto;
+        display: flex;
         left: auto !important;
         right: auto !important;
-        display: flex;
         align-self: center !important;
         justify-self: center !important;
     }
@@ -132,9 +130,9 @@
 
 .search-container {
     width: 94vw;
-    min-height: 500px;
     display: flex;
     transition: 0.2s;
+    min-height: 500px;
     max-width: 1400px;
     margin: 60px auto;
     padding: 20px 20px;
@@ -157,29 +155,29 @@
     left: 3px;
     width: 100%;
     display: flex;
-    align-items: center;
     position: absolute;
+    align-items: center;
 }
 
 .coontainer label {
+    color: white;
     display: flex;
     cursor: pointer;
-    color: white;
-    font-weight: 500;
-    position: relative;
-    overflow: hidden;
-    margin-bottom: 0.375em;
     font-size: 14px;
+    font-weight: 500;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 0.375em;
 }
 
 .coontainer label input {
-    position: absolute;
     left: -9999px;
+    position: absolute;
 }
 
 .coontainer label input:checked+span {
-    background-color: #e0e0f5;
     color: #00005c;
+    background-color: #e0e0f5;
 
 }
 
@@ -190,26 +188,26 @@
 .coontainer label span {
     display: flex;
     align-items: center;
-    padding: 0.375em 0.75em 0.375em 0.375em;
     border-radius: 99em;
     transition: 0.25s ease;
+    padding: 0.375em 0.75em 0.375em 0.375em;
 }
 
 .coontainer label span:hover {
-    background-color: #e0e0f5;
     color: #00005c;
+    background-color: #e0e0f5;
 }
 
 .coontainer label span:before {
-    display: flex;
-    flex-shrink: 0;
     content: "";
-    background-color: #fff;
     width: 1.5em;
     height: 1.5em;
+    display: flex;
+    flex-shrink: 0;
     border-radius: 50%;
     margin-right: 0.375em;
     transition: 0.25s ease;
+    background-color: #fff;
     box-shadow: inset 0 0 0 0.125em #00005c;
 }
 
@@ -220,10 +218,10 @@
     bottom: 0;
     padding: 20px;
     display: flex;
-    width: 90% !important;
     position: relative;
     align-items: center;
     flex-direction: row;
+    width: 90% !important;
     justify-content: center;
 }
 
@@ -237,15 +235,15 @@
 }
 
 .skyscanner {
-    filter: invert(100%);
-    width: 200px;
     color: white;
+    width: 200px;
     height: 40px;
+    filter: invert(100%);
 }
 
 .tab-container {
-    display: inline-flex;
     align-items: center;
+    display: inline-flex;
     justify-content: space-between;
 }
 
@@ -304,10 +302,9 @@
 }
 
 .btnhldr button {
-    display: inline-flex;
-    /* display: flex; */
-    justify-content: center;
     align-items: center;
+    display: inline-flex;
+    justify-content: center;
 }
 
 .tab:hover {
@@ -317,8 +314,8 @@
 }
 
 .active {
-    color: white !important;
     transition: 0.2s;
+    color: white !important;
     background-color: #007bff;
 }
 
@@ -355,14 +352,14 @@ input[type='radio'] {
 
 
 .input-style {
+    width: 84vw;
     color: black;
     height: 40px;
-    width: 84vw;
-    max-width: 510px;
     outline: none;
     font-size: 16px;
-    border-radius: 20px;
+    max-width: 510px;
     padding: 10px 20px;
+    border-radius: 20px;
     border: 2px solid #ccc;
 }
 
@@ -397,7 +394,6 @@ input[type='radio'] {
 
 
 .form-group-two {
-    /* display: flex; */
     align-items: center;
     flex-direction: column;
 }
@@ -409,12 +405,12 @@ input[type='radio'] {
 }
 
 .scndinput {
+    color: black;
+    width: 88vw;
     border: none;
     outline: none;
-    color: black;
     padding: 12px;
     font-size: 14px;
-    width: 88vw;
     font-weight: 500;
     max-height: 36px;
     max-width: 740px;
@@ -424,8 +420,8 @@ input[type='radio'] {
     background-color: #fefefe;
     transition-duration: 200ms;
     border-bottom: 2px solid black;
-    font-family: var(--font-family-reddit);
     transition-property: background-color;
+    font-family: var(--font-family-reddit);
     box-shadow:
         0px 0px 2.2px rgba(0, 0, 0, 0.052),
         0px 0px 5.3px rgba(0, 0, 0, 0.099),
@@ -437,7 +433,6 @@ input[type='radio'] {
 }
 
 .form-group-hotels {
-    /* height: 80px; */
     display: flex;
     margin-bottom: 20px;
     width: 90% !important;
@@ -484,11 +479,11 @@ input[type='radio'] {
 }
 
 .flex {
-    margin-top: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     gap: 5px;
+    display: flex;
+    margin-top: 5px;
+    align-items: center;
+    flex-direction: column;
 }
 
 .flex label {
@@ -498,17 +493,16 @@ input[type='radio'] {
 .procedbtn {
     width: 200px;
     border: none;
-    cursor: pointer;
+    display: flex;
     color: #05203C;
+    cursor: pointer;
     padding: 1em 2em;
     font-weight: 700;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 5px auto;
-    /* margin: 5px 9px; */
+    align-items: center;
     border-radius: 1.1em;
     letter-spacing: 0.1em;
+    justify-content: center;
     background-color: #ffffff;
     box-shadow: 2px 2px 5px #1c1c1c;
     --hover-shadows: 4px 4px 10px #121212;
@@ -529,19 +523,19 @@ input[type='radio'] {
 }
 
 .autocomplete {
-    display: flex;
-    flex-direction: column;
-    position: relative;
     gap: 5px;
+    display: flex;
     max-width: 1000px;
+    position: relative;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
 }
 
 .autocomplete {
+    gap: 5px;
     display: flex;
     position: relative;
-    gap: 5px;
     align-items: center;
     justify-content: center;
 }
@@ -561,8 +555,8 @@ input[type='radio'] {
 }
 
 .autocompletehotel {
-    display: flex;
     height: 38px;
+    display: flex;
     position: relative;
 }
 
@@ -582,11 +576,11 @@ input[type='radio'] {
 }
 
 .suggestions li {
-    display: flex;
-    align-items: center;
     gap: 5px;
     padding: 8px;
+    display: flex;
     cursor: pointer;
+    align-items: center;
 }
 
 .suggestions li:hover {
@@ -595,17 +589,17 @@ input[type='radio'] {
 
 .suggestionshotel {
     left: 0;
+    top: 100%;
     margin: 0;
     padding: 0;
     width: 100%;
-    top: 100%;
     z-index: 1000;
     overflow-y: auto;
     max-height: 150px;
     position: absolute;
     list-style-type: none;
-    background-color: white;
     border: 1px solid #ccc;
+    background-color: white;
 }
 
 .suggestionshotel li {
@@ -649,12 +643,12 @@ input[type='radio'] {
     margin: 0 10px;
     flex-wrap: wrap;
     font-size: 14px;
-    margin: 5px auto 0 auto;
     transition: 0.3s;
     padding: 0.25rem;
     position: relative;
     border-radius: 0.5rem;
     box-sizing: border-box;
+    margin: 5px auto 0 auto;
     background-color: white;
     box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
 }
@@ -721,8 +715,8 @@ input[type='radio'] {
 }
 
 .mydiv {
-    position: relative;
     display: flex;
+    position: relative;
     align-items: center;
 }
 
@@ -745,8 +739,8 @@ input[type='radio'] {
 
 @media screen and (min-width:1300px) {
     .input-style {
-        height: 80px;
         color: black;
+        height: 80px;
         width: 494px;
         outline: none;
         font-size: 20px;
@@ -775,14 +769,14 @@ input[type='radio'] {
 
     .inputholder {
         gap: 5px;
-        flex-direction: row;
         align-items: center;
+        flex-direction: row;
         justify-content: center;
     }
 
     .flex {
-        flex-direction: row;
         margin: 0;
+        flex-direction: row;
     }
 
     .flex input {
@@ -891,8 +885,8 @@ input[type='radio'] {
 
     .cloud {
         width: 50px;
-        height: 50px;
         right: 90px;
+        height: 50px;
     }
 
     .infouno svg,
@@ -915,9 +909,9 @@ input[type='radio'] {
     }
 
     .card {
-        max-width: 200px;
-        font-size: 12px;
         padding: 0px;
+        font-size: 12px;
+        max-width: 200px;
     }
 
     .cloud {
@@ -926,14 +920,14 @@ input[type='radio'] {
     }
 
     .main-text {
-        margin-top: 10px;
         width: 100px;
+        margin-top: 10px;
     }
 
     .info {
+        max-width: 100px;
         margin-bottom: 30px;
         flex-direction: column;
-        max-width: 100px;
     }
 
     #card {
@@ -941,9 +935,9 @@ input[type='radio'] {
     }
 
     .info-right {
-        justify-content: flex-start;
-        align-items: flex-start;
         left: 0;
+        align-items: flex-start;
+        justify-content: flex-start;
     }
 
     .info-left {
