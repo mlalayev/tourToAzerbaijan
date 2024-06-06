@@ -124,11 +124,11 @@ function onedaytour() {
                             <div className="touronediv">
                                 <h1>{tour.title}</h1>
                                 <p>{tour.description}</p>
-                                <button className="learn-more">
+                                <button className="learn-more" id='learn-more'>
                                     <span className="circle" aria-hidden="true">
                                         <span className="icon arrow"></span>
                                     </span>
-                                    <span className="button-text">Check</span>
+                                    <span className="button-text" id='button-text'>Check</span>
                                 </button>
                             </div>
                         </div>

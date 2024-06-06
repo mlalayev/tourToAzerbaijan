@@ -38,7 +38,6 @@
     width: 1600px;
     margin: 50px 0;
     max-width: 1600px;
-    position: relative;
     color: var(--main-light-green-color);
     background-color: var(--main-light-green-color);
 }
@@ -50,9 +49,9 @@
 }
 
 .greencircle {
-    right: 10%;
-    top: -30px;
+    top: 30px;
     width: 60px;
+    right: 10%;
     height: 60px;
     display: flex;
     cursor: pointer;
@@ -63,18 +62,35 @@
     background-color: #05203C;
 }
 
+.ftrpc {
+    width: 66vw;
+    max-width: 400px;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.footerrightpart {
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .containerftr {
     gap: 30px;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    margin-top: 30px;
+    justify-content: center;
 }
 
 footer {
     height: 100%;
-    margin-top: 20px;
-    margin-bottom: 130px;
+    max-width: 1600px;
+    position: relative;
+    place-content: center;
+    margin: 0 auto 30px auto;
 }
 
 .logofooter {
@@ -98,11 +114,6 @@ footer {
     margin: 10px 0;
     background-color: var(--main-light-green-color);
 }
-
-.footer {
-    width: 1600px !important;
-}
-
 
 @media screen and (min-width:830px) {
     .containerftr {
@@ -137,39 +148,51 @@ footer {
     }
 }
 
-.txtholder h1{
+.txtholder h1 {
     font-size: 20px;
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.txtholder{
+.txtholder {
     gap: 10px;
     display: flex;
     align-items: center;
 }
 
-.hypertagholder{
+.hypertagholder {
     display: flex;
     gap: 40px;
 }
 
-.hypertagholder{
+.hypertagholder {
     display: flex;
     gap: 40px;
 }
 
-.tagholderone, .tagholdertwo{
+.tagholderone,
+.tagholdertwo {
     display: flex;
     flex-direction: column;
     text-align: start;
 }
 
-.copyrighttext{
-    width: 60vw;
+.cardfooter:hover,
+.giveusacall:hover,
+.copyrighttext:hover,
+.ftrpc:hover {
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.3),
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.3),
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.3),
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.copyrighttext {
+    width: 66vw;
     max-width: 400px;
-    height: 100px;
+    height: 90px;
     display: grid;
     background: white;
     text-align: center;
@@ -178,14 +201,16 @@ footer {
     place-content: center;
     font-family: var(--font-family-reddit);
     transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: 0.3s;
 }
 
-.copyrighttext h1{
+.copyrighttext h1 {
     font-size: 18px;
     color: gray;
 }
 
-.cardfooter, .giveusacall {
+.cardfooter,
+.giveusacall {
     width: 60vw;
     height: 300px;
     display: flex;
@@ -200,15 +225,18 @@ footer {
     justify-content: space-between;
     font-family: var(--font-family-reddit);
     transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: 0.3s;
 }
 
-.shadowfooter, .giveusacall, .copyrighttext {
+.shadowfooter,
+.giveusacall,
+.copyrighttext {
     box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
         0.3em 0.3em 1em rgba(0, 0, 0, 0.3),
         0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 
-.giveusacall{
+.giveusacall {
     justify-content: space-around;
 }
 
@@ -245,7 +273,7 @@ footer {
 /* twitter*/
 .containerTwofooter:hover {
     transition-duration: 0.3s;
-    background-color: 	#c71610;
+    background-color: #c71610;
 }
 
 /* linkdin*/
@@ -279,7 +307,7 @@ footer {
     animation: slide-in-top 0.3s both;
 }
 
-.gmail{
+.gmail {
     width: 20px;
     height: 20px;
 }

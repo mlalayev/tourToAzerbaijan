@@ -197,11 +197,11 @@ function mainpage() {
                             <div className="txtprtscndscc">
                                 <h1>{t('sectionsecond.toursToBaku')}</h1>
                                 <p>{t('sectionsecond.bakuBoulevard')}</p>
-                                <button className="learn-more">
+                                <button className="learn-more" id='learn-more'>
                                     <span className="circle" aria-hidden="true">
                                         <span className="icon arrow"></span>
                                     </span>
-                                    <span className="button-text">Check</span>
+                                    <span className="button-text" id='button-text'>Check</span>
                                 </button>
                             </div>
                         </div>
@@ -237,11 +237,11 @@ function mainpage() {
                             <div className="txtprtthrdscc">
                                 <h1>{t('sectionthird.atashgah')}</h1>
                                 <p>{t('sectionthird.atashgahDescription')}</p>
-                                <button className="learn-more">
+                                <button className="learn-more" id='learn-more'>
                                     <span className="circle" aria-hidden="true">
                                         <span className="icon arrow"></span>
                                     </span>
-                                    <span className="button-text">View more</span>
+                                    <span className="button-text" id='button-text'>Check</span>
                                 </button>
                             </div>
                         </div>

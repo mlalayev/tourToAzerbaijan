@@ -1,19 +1,23 @@
+import '../whatToDo/whatToDo.css';
 import cityData from '../../cities.json';
-import '../destinations/destinations.css';
-import { useNavigate } from 'react-router-dom';
 import momuna from '../assets/mominakhatun.png';
 import { RiArrowDownSLine } from "react-icons/ri";
 import { FaArrowRightLong } from "react-icons/fa6";
 import HEADER from '../components/header/header.jsx';
-import WAPI from '../components/weatherapi/weatherapi.jsx';
 import React, { useState, useEffect, useRef } from 'react';
+import WAPI from '../components/weatherapi/weatherapi.jsx'
+import SEARCH from '../components/search/search.jsx'
+import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 
+function whattodo() {
 
-function destinations() {
+    const { t } = useTranslation();
+
     const dropdownRefUp = useRef(null);
     const [cityLi, setCityLi] = useState('Choose City');
-    const [destinations, setDestinations] = useState([]);
+    const [whatToDo, setWhatToDo] = useState([]);
     const [isRotatedUp, setIsRotatedUp] = useState(false);
     const navigate = useNavigate();
 
@@ -40,21 +44,20 @@ function destinations() {
     };
 
     useEffect(() => {
-        const fetchDestinations = async () => {
+        const fetchWhatToDo = async () => {
             try {
-                const response = await fetch('../../destinations.json');
+                const response = await fetch('../whattodo.json');
                 const data = await response.json();
-                setDestinations(data);
+                setWhatToDo(data);
             } catch (error) {
                 console.error('Error fetching the tours data:', error);
             }
         };
 
-        fetchDestinations();
+        fetchWhatToDo();
     }, []);
 
     return (
-
         <div className="body">
             <div className="upper-part">
                 <HEADER />
@@ -106,17 +109,18 @@ function destinations() {
 
             <WAPI />
 
-            <section className="section-info">
-                {destinations.map((item, index) => (
+
+            {/* <section className="section-info">
+                {whatToDo.map((item, index) => (
                     <div key={index} className='infoholder'>
                         <div className="infoholder-img">
                             {item.isRecommended && (
                                 <button className="custom-button">
-                                    <span className="custom-button-text">Recommended</span>
+                                    <span className="custom-button-text">{t('whatToDo.recommended')}</span>
                                     <div className="tooltip-container">
                                         <div className="tooltip-content">
                                             <div className="tooltip-box">
-                                                <p>This city is recommended by the author!</p>
+                                                <p>{t('whatToDo.recommendedTooltip')}</p>
                                             </div>
                                             <div className="tooltip-arrow"></div>
                                         </div>
@@ -125,25 +129,67 @@ function destinations() {
                             )}
                             <img src={item.imgSrc} alt={item.title} className='infoholder-image' />
                         </div>
-                        <div className="div-holder">
+                        <div key={index} className='div-holder'>
                             <div className="infoholder-text">
-                                <h1>{item.title}</h1>
-                                <p>{item.description}</p>
-                                <p className='descriptionadd'>{item.descriptiontwo}</p>
-                                <strong className='strong'> For further information click the button!</strong>
+                                <h1>{t(`whatToDo.${item.title}`)}</h1>
+                                <p>{t(`whatToDo.${item.description}`)}</p>
+                                <p className='descriptionadd'>{t(`whatToDo.${item.descriptiontwo}`)}</p>
+                                <strong className='strong'>{t('whatToDo.furtherInfo')}</strong>
                             </div>
-                            <button className="learn-more" id='learn-more' onClick={() => handleButtonClick(item.path)}>
+                            <button className="learn-more" id='learn-more'>
                                 <span className="circle" aria-hidden="true">
                                     <span className="icon arrow"></span>
                                 </span>
-                                <span className="button-text" id='button-text'>Check</span>
+                                <span className="button-text" id='button-text'>{t('whatToDo.check')}</span>
                             </button>
                         </div>
                     </div>
                 ))}
+            </section> */}
+
+
+            <section className="section-info">
+                {Object.keys(whatToDo).map((key, index) => {
+                    const item = whatToDo[key];
+                    return (
+                        <div key={index} className='infoholder'>
+                            <div className="infoholder-img">
+                                {item.isRecommended && (
+                                    <button className="custom-button">
+                                        <span className="custom-button-text">{t('whatToDo.recommended')}</span>
+                                        <div className="tooltip-container">
+                                            <div className="tooltip-content">
+                                                <div className="tooltip-box">
+                                                    <p>{t('whatToDo.recommendedTooltip')}</p>
+                                                </div>
+                                                <div className="tooltip-arrow"></div>
+                                            </div>
+                                        </div>
+                                    </button>
+                                )}
+                                <img src={item.imgSrc} alt={item.title} className='infoholder-image' />
+                            </div>
+                            <div key={index} className='div-holder'>
+                                <div className="infoholder-text">
+                                    <h1>{t(`whatToDo.${key}.title`)}</h1>
+                                    <p>{t(`whatToDo.${key}.info`)}</p>
+                                    {item.descriptiontwo && <p className='descriptionadd'>{t(`whatToDo.${key}.descriptiontwo`)}</p>}
+                                    <strong className='strong'>{t(`whatToDo.${key}.furtherInfo`)}</strong>
+                                </div>
+                                <button className="learn-more" id='learn-more'>
+                                    <span className="circle" aria-hidden="true">
+                                        <span className="icon arrow"></span>
+                                    </span>
+                                    <span className="button-text" id='button-text'>{t(`whatToDo.${key}.check`)}</span>
+                                </button>
+                            </div>
+                        </div>
+                    );
+                })}
             </section>
-        </div>
-    )
+
+            <SEARCH />
+        </div >)
 }
 
-export default destinations
+export default whattodo
