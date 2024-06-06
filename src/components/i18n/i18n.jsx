@@ -12,6 +12,9 @@ i18n
         lng: 'en',
         fallbackLng: 'en',
         debug: true,
+        interpolation: {
+            escapeValue: false
+        },
         resources: {
             en: {
                 translation: enTranslations

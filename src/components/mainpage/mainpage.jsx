@@ -48,8 +48,6 @@ function mainpage() {
 
     const [cityLi, setCityLi] = useState(t('default'));
     const [selectedCity, setSelectedCity] = useState('Baku');
-    const [tourLi, setTourLi] = useState(t('tourtypes.default'));
-    const [tours, setTours] = useState('');
     const [chooseCity, setChooseCity] = useState('Choose City');
     const [selectedCityImg, setSelectedCityImg] = useState(fifthsliderone);
     const [cityInfo, setCityInfo] = useState(
@@ -60,19 +58,6 @@ function mainpage() {
     const [isRotatedDown, setIsRotatedDown] = useState(false);
     const [isRotatedDownFifthSection, setIsRotatedDownFifthSection] = useState(false);
 
-    useEffect(() => {
-        const fetchTours = async () => {
-            try {
-                const response = await fetch('../../../singledaytours.json');
-                const data = await response.json();
-                setTours(data);
-            } catch (error) {
-                console.error('Error fetching the tours data:', error);
-            }
-        };
-
-        fetchTours();
-    }, []);
 
     useEffect(() => {
         const handleOutsideClickUp = handleClickOutside(dropdownRefUp, setIsRotatedUp);
@@ -115,10 +100,6 @@ function mainpage() {
 
     const handleClickUp = () => {
         setIsRotatedUp(!isRotatedUp);
-    };
-
-    const handleClickDown = () => {
-        setIsRotatedDown(!isRotatedDown);
     };
 
     const handleClickDownFifthSection = () => {
@@ -164,20 +145,6 @@ function mainpage() {
                 behavior: 'smooth',
             });
         }
-    };
-
-    const tourTypes = [
-        { "tourtype": "Package tours" },
-        { "tourtype": "Day tours & excursions" },
-        { "tourtype": "Visa-free shore tours" }
-    ];
-
-    const renderTourTypes = () => {
-        return tourTypes.map((tour, index) => (
-            <li key={index} onClick={() => handleTourChangeLi(tour.tourtype)}>
-                {tour.tourtype}
-            </li>
-        ));
     };
 
     return (
@@ -230,12 +197,11 @@ function mainpage() {
                             <div className="txtprtscndscc">
                                 <h1>{t('sectionsecond.toursToBaku')}</h1>
                                 <p>{t('sectionsecond.bakuBoulevard')}</p>
-                                <button className="cta mnpgbtn">
-                                    <span>{t('sectionsecond.view')}</span>
-                                    <svg width="15px" height="10px" viewBox="0 0 13 10">
-                                        <path d="M1,5 L11,5"></path>
-                                        <polyline points="8 1 12 5 8 9"></polyline>
-                                    </svg>
+                                <button className="learn-more">
+                                    <span className="circle" aria-hidden="true">
+                                        <span className="icon arrow"></span>
+                                    </span>
+                                    <span className="button-text">Check</span>
                                 </button>
                             </div>
                         </div>
@@ -271,12 +237,11 @@ function mainpage() {
                             <div className="txtprtthrdscc">
                                 <h1>{t('sectionthird.atashgah')}</h1>
                                 <p>{t('sectionthird.atashgahDescription')}</p>
-                                <button className="cta mnpgbtn">
-                                    <span>{t('sectionthird.viewMe')}</span>
-                                    <svg width="15px" height="10px" viewBox="0 0 13 10">
-                                        <path d="M1,5 L11,5"></path>
-                                        <polyline points="8 1 12 5 8 9"></polyline>
-                                    </svg>
+                                <button className="learn-more">
+                                    <span className="circle" aria-hidden="true">
+                                        <span className="icon arrow"></span>
+                                    </span>
+                                    <span className="button-text">View more</span>
                                 </button>
                             </div>
                         </div>

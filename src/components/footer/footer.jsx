@@ -16,7 +16,7 @@ function footer() {
         <footer>
             <div className="holder">
                 <div className="divgreenline">
-                    <div className="greencircle" onClick={scrollToTop} ><LuArrowUpCircle size={60} strokeWidth={1} color='black' /></div>
+                    <div className="greencircle" onClick={scrollToTop} ><LuArrowUpCircle size={60} strokeWidth={1} color='white' /></div>
                 </div>
             </div>
             <div className="containerftr">
