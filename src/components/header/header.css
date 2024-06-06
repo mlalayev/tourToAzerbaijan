@@ -171,8 +171,8 @@ header {
 }
 
 .chcktbtn:hover {
-    box-shadow: 4px 4px 6px rgb(158, 17, 17);
     background-color: #fff;
+    box-shadow: 4px 4px 6px rgb(158, 17, 17);
 }
 
 .hamdiv:hover {
@@ -233,16 +233,16 @@ header {
     }
 
     .headerul {
-        display: flex;
         width: 50vw;
-        justify-content: space-between;
+        display: flex;
         list-style: none;
+        justify-content: space-between;
     }
 
     .headerul a {
-        font-family: var(--font-family-reddit);
         color: black;
         text-decoration: none;
+        font-family: var(--font-family-reddit);
     }
 
     .headerul a:hover {
@@ -256,8 +256,8 @@ header {
     }
 
     .lftbtnsdv {
-        max-width: 12%;
         display: flex;
+        max-width: 12%;
         justify-content: space-around;
     }
 }
