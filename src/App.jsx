@@ -1,6 +1,6 @@
 import './App.css';
 import ONEDAY from './onedaytours/onedaytour.jsx';
-import MULTIDAY from './multidaytours/multidaytour.jsx';
+import MULTIDAY from './whatToDo/whatToDo.jsx';
 import React, { useState, useEffect } from 'react';
 import BAKU from './destinations/baku/baku.jsx';
 import LANKARAN from './destinations/lankaran/lankaran.jsx';

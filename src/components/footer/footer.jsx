@@ -1,12 +1,17 @@
-import React from 'react'
-import './footer.css'
-import { LuArrowUpCircle } from "react-icons/lu";
-import logo from '../../assets/logo.svg'
+import './footer.css';
+import React from 'react';
+import az from '../../assets/az.svg';
+import logo from '../../assets/logo.svg';
+import karabakh from '../../assets/karabakhisazerbaijan1.jpg';
 import { LuPhoneCall } from "react-icons/lu";
+import { useTranslation } from 'react-i18next';
+import { LuArrowUpCircle } from "react-icons/lu";
 import { IoLocationOutline } from "react-icons/io5";
-import az from '../../assets/az.svg'
+
 
 function footer() {
+
+    const { t } = useTranslation();
 
     const email = "lalayemurad@gmail.com";
     const subject = "Tour To Azerbaijan";
@@ -21,18 +26,16 @@ function footer() {
 
     return (
         <footer>
+            <div className="greencircle" onClick={scrollToTop}>
+                <LuArrowUpCircle size={60} strokeWidth={1} color='white' />
+            </div>
             <div className="holder">
-                <div className="divgreenline">
-                    <div className="greencircle" onClick={scrollToTop} ><LuArrowUpCircle size={60} strokeWidth={1} color='white' /></div>
-                </div>
+                <div className="divgreenline"></div>
             </div>
             <div className="containerftr">
-
                 <div className="cardfooter shadowfooter">
                     <img src={logo} alt="logo" className="logofooter" />
-
-                    <p>Discover Azerbaijan with us! Our guided tours offer personalized itineraries and expert insights. Choose an unforgettable journey with culture, history, and stunning landscapes.</p>
-
+                    <p>{t('footer.discover')}</p>
                     <div className="socialfooter">
                         <a className="socialContainer containerOnefooter" href="#">
                             <svg viewBox="0 0 16 16" className="socialSvg instagramSvg">
@@ -41,10 +44,8 @@ function footer() {
                                 ></path>
                             </svg>
                         </a>
-
                         <a className="socialContainer containerTwofooter" href={`mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`}>
-                            {/* <img src={gmail} className='gmail' /> */}
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="52 42 88 66" width="20" height="20" >
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="52 42 88 66" width="20" height="20">
                                 <path fill="white" d="M58 108h14V74L52 59v43c0 3.32 2.69 6 6 6" />
                                 <path fill="white" d="M120 108h14c3.32 0 6-2.69 6-6V59l-20 15" />
                                 <path fill="white" d="M120 48v26l20-15v-8c0-7.42-8.47-11.65-14.4-7.2" />
@@ -52,7 +53,6 @@ function footer() {
                                 <path fill="white" d="M52 51v8l20 15V48l-5.6-4.2c-5.94-4.45-14.4-.22-14.4 7.2" />
                             </svg>
                         </a>
-
                         <a className="socialContainer containerThreefooter" href="#">
                             <svg viewBox="0 0 448 512" className="socialSvg linkdinSvg">
                                 <path
@@ -60,7 +60,6 @@ function footer() {
                                 ></path>
                             </svg>
                         </a>
-
                         <a className="socialContainer containerFourfooter" href="whatsapp://send?phone=+994502740181&text=Hello,+can+you+give+me+further+details+?%2C%20I'm%20interested%20in%20your%tours!" target="_blank">
                             <svg viewBox="0 0 16 16" className="socialSvg whatsappSvg">
                                 <path
@@ -70,37 +69,40 @@ function footer() {
                         </a>
                     </div>
                 </div>
-
                 <div className="giveusacall">
-                    <div className="txtholder"><LuPhoneCall size={20} /> <h1>+994(50)-274-01-81</h1></div>
-                    <div className="txtholder"><IoLocationOutline size={20} /> <h1>Baku, Azerbaijan <img src={az} alt="" className='flag' /></h1></div>
-
+                    <div className="txtholder">
+                        <LuPhoneCall size={20} /> <h1>{t('footer.phone')}</h1>
+                    </div>
+                    <div className="txtholder">
+                        <IoLocationOutline size={20} /> <h1>{t('footer.location')} <img src={az} alt="" className='flag' /></h1>
+                    </div>
                     <div className="usefullinks">
-                        <h1>Useful Links</h1>
+                        <h1>{t('footer.useful_links')}</h1>
                         <div className="hypertagholder">
                             <div className="tagholderone">
-                                <a href="#">About us</a>
-                                <a href="#">Contact us</a>
-                                <a href="#">Privacy policy</a>
-                                <a href="#">What we offer</a>
+                                <a href="#">{t('footer.about_us')}</a>
+                                <a href="#">{t('footer.contact_us')}</a>
+                                <a href="#">{t('footer.privacy_policy')}</a>
+                                <a href="#">{t('footer.what_we_offer')}</a>
                             </div>
                             <div className="tagholdertwo">
-                                <a href="#">One day tour</a>
-                                <a href="#">Multi day tours</a>
-                                <a href="#">Destinations</a>
-                                <a href="#">Visa information</a>
+                                <a href="#">{t('footer.one_day_tour')}</a>
+                                <a href="#">{t('footer.multi_day_tours')}</a>
+                                <a href="#">{t('footer.destinations')}</a>
+                                <a href="#">{t('footer.visa_information')}</a>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div className="copyrighttext">
-                    <h1>2024 ©Azerbaijan Tours. All rights reserved.</h1>
+                <div className="footerrightpart">
+                    <img src={karabakh} alt="" className='ftrpc' />
+                    <div className="copyrighttext">
+                        <h1>{t('footer.copyright')}</h1>
+                    </div>
                 </div>
-
             </div>
-        </footer >
-    )
-}
+        </footer>
+    );
+};
 
 export default footer

@@ -71,6 +71,7 @@
     cursor: pointer;
     font-weight: 600;
     position: absolute;
+    border-radius: 8px;
     text-align: center;
     align-items: center;
     font-size: 0.875rem;
@@ -80,7 +81,6 @@
     justify-content: center;
     border: 1px solid #066f5e;
     background-color: #43c7b1;
-    border-bottom-right-radius: 0.5rem;
     font-family: var(--font-family-reddit);
     background: linear-gradient(to top right, #6dbdb0, #5ebbab);
 }
@@ -89,6 +89,10 @@
     /* transition: 1s; */
     color: #ffffff;
     background: linear-gradient(to bottom right, #1a8170, #057562);
+}
+
+#learn-more{
+    font-family: var(--font-family-reddit);
 }
 
 .custom-button:focus {

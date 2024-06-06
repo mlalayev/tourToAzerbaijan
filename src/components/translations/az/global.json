@@ -138,60 +138,60 @@
         "packageTours": "Paket turlar",
         "selectPackage": "Özel hazırlanmış paketlerimizden birini seçin ve Rusya maceranız için hazırlanın! Konaklama, havaalanı transferleri, müze biletleri, şehirler arası ulaşım, tur rehberleri ile ilgilenmenize gerek yok - biz sizin için onu hallederiz.",
         "atashgah": "Ataşgah",
-        "atashgahDescription": "Bakü'deki Ateşgah, etkileyici bir tarihi ve dini mekandır. Bu beşgen kompleks, 17. yüzyılda inşa edilmiştir ve...",
+        "atashgahDescription": "Bakıdakı Atəşgah, etkileyici bir tarihi ve dini mekandır. Bu beşgen kompleks, 17. yüzyılda inşa edilmiştir ve...",
         "viewMe": "Keçid",
         "sliderProps": {
             "slidershahdag": {
-                "huno": "Şahdağ Dağçı Bələdiyyəsi",
-                "p": "Çoxsaylı otellərin olduğu geniş bir tatil bölgesi, kayak, snowboard və digər qış idmanları təklif edir...",
-                "btn": "Baxın"
+                "huno": "Şahdağ kurort",
+                "p": "Çoxsaylı otellərin olduğu geniş bir istirahət bölgəsi, xizək, snowboard və digər qış idmanları təklif edir...",
+                "btn": "Keçid"
             },
             "khizidag": {
                 "huno": "Xızı Qırmızı Dağlar",
-                "p": "Azərbaycanın Xızı rayonu, qırmızı və narıncı renkləri ilə tanınır...",
-                "btn": "Baxın"
+                "p": "Azərbaycanın Xızı rayonu, qırmızı və narıncı rəngləri ilə tanınır...",
+                "btn": "Keçid"
             },
             "ganimetpark": {
                 "huno": "Bakıda Hərbi Qənimətlər Parkı",
-                "p": "Məsuliyyətsiz hərbi texnikanın və əşyaların geniş kolleksiyası, qeyri-adi və...",
-                "btn": "Baxın"
+                "p": "Yararsız hərbi texnikanın və silahların geniş kolleksiyası, qeyri-adi və...",
+                "btn": "Keçid"
             },
             "mudvolcano": {
-                "huno": "Qobustanda Çamur Vulkanları",
-                "p": "Dəri vəziyyətlərini yaxşılaşdırdığına inanılan, müalicəvi xüsusiyyətləri üçün tanınmış...",
-                "btn": "Baxın"
+                "huno": "Qobustanda Palçıq Vulkanları",
+                "p": "Dəri xəstəliklərini yaxşılaşdırdığına inanılan, müalicəvi xüsusiyyətləri ilə tanınmış...",
+                "btn": "Keçid"
             },
             "hdlymosque": {
                 "huno": "Heydər Əliyev Məscidi",
                 "p": "Qafqaz regionunda ən böyük məsciddir, qeyri-adi memarlıq dizaynı və böyük ölçüsü ilə...",
-                "btn": "Baxın"
+                "btn": "Keçid"
             },
             "yanardag": {
-                "huno": "Yanardağ (Yanan tepe)",
-                "p": "Sürekli yanar və büyüleyici və əbədi bir görüntü yaratan doğal qaz yandırmasıdır...",
-                "btn": "Baxın"
+                "huno": "Yanardağ",
+                "p": "Davamla yanan və heyrətamiz və möhtəşəm bir görüntü yaradan qaz sızntısı ilə...",
+                "btn": "Keçid"
             }
         }
     },
     "sectionfourth": {
-        "welcomeTo": "Xoş gəlmisiniz",
-        "azerbaijan": "Azərbaycan",
-        "planningTrip": "Azərbaycana səyahət planlamaq xüsusi qeyri-rutubətli bir iş ola bilər, xüsusən də bu cazibədar ölkənin bütün unikal aspektləri və gizli dəyərləri ilə tanış olmadıqda.",
-        "assistance": "sizin əldən gələcək vətəndaşlarınızın rəmzi səyahəti üçün mükəmməl bir marşrut seçməkdə sizə kömək edir. Niçin bizi seçməlisiniz:",
+        "welcomeTo": "Azərbaycana",
+        "azerbaijan": "Xoş gəlmişsiniz",
+        "planningTrip": "Azərbaycana səyahət planlamaq yorucu bir iş ola bilər, xüsusən də bu cazibədar ölkənin bütün unikal aspektləri və tarixi dəyərləri ilə tanış olmadıqda.",
+        "assistance": "sizin əldən gələcək vətəndaşlarınızın rəmzi səyahəti üçün mükəmməl bir marşrut seçməkdə sizə kömək edir. Nə üçün bizi seçməlisiniz:",
         "reasons": {
-            "first": "Biz 10-dan çox illik təcrübəsi olan seyahət konsercisi və minlərlə xoşbəxt turisti olan təcrübəliyik.",
-            "second": "Biz Azərbaycan Respublikasının Dövlət Turizm Agentliyi tərəfindən rəsmi lisenziya almış qeyri-rəsmi tur operatoruyuq.",
+            "first": "Biz 10 illik təcrübəsi olan turizm şirkəti və minlərlə xoşbəxt turisti olan qurumuq.",
+            "second": "Biz Azərbaycan Respublikasının Dövlət Turizm Agentliyi tərəfindən rəsmi lisenziya almamış qeyri-rəsmi tur operatoruyuq.",
             "third": "Hər bir müştəriyə şəxsi yanaşma tətbiq edirik və səyahətinizi sizin ehtiyaclarınıza görə dizayn edirik."
         }
     },
     "sectionfifth": {
         "popularDestinations": "Populyar məkanlar",
-        "chooseCity": "Şəhəri seçin"
+        "chooseCity": "Şəhər seçin"
     },
     "sectionsixth": {
         "whatTouristsSay": "Turistlər nə deyir?",
-        "touristsSayIntro": "Bizimlə artıq 1500-dən çox turist Rusiyaya səfər etdi. İşte onların sözləri:",
-        "recommendedBy": "Tərəfindən tövsiyə olunur:",
+        "touristsSayIntro": "Bizimlə artıq 1500-dən çox turist Azərbaycana səfər etdi. Onların dedikləri:",
+        "recommendedBy": "Tövsiyə olunur:",
         "testimonials": [
             {
                 "name": "Yvonne Sanders",
@@ -215,14 +215,8 @@
     },
     "azerbaijan": {
         "title": "Azərbaycan",
-        "subtitle": "Böyük macəra",
-        "description": "Sizə Azərbaycanda inanılmaz bir tətil üçün seçilmiş tur və ekskursiyalarımızı təklif edirik"
-    },
-    "tourtypes": {
-        "default": "Tur Növünü Seçin",
-        "Packagetours": "Paket tur dsada",
-        "Daytoursexcursions": "Gündüz turları və ekskursiyalar",
-        "Visafreeshoretours": "Viza olmadan sahil turları"
+        "subtitle": "Həyrətamiz Ekskursiyalar",
+        "description": "Azərbaycanda inanılmaz bir tətil üçün seçilmiş tur və ekskursiyalar."
     },
     "cityDestinations": {
         "Baku": "Bakı",
@@ -273,15 +267,15 @@
         },
         "Guba": {
             "name": "Quba",
-            "info": "Quba, Azərbaycanın şimal şəraitində yerləşən, gözəllik dolu təbiət mənzərələri və zəngin mədəni irsi ilə tanınmış etkileyici bir tətil məkanıdır. Qubanın turları bu müxtəlif regionu ilə əbədiyyət təklif edir, burada yağmur ormanları, yay meşələri və bənzər şahman dağlar macəralılar və təbiət dostları üçün əlavəkənərək çağırır. Əski şəhərin tarixi məkanlarını araşdırmaqdan, kəndlərin gündəlik həyatının tərəfindən özünüzü əhatə etdirməyə qədər, Quba özünün həqiqəti və cazibəsi ilə ziyarətciləri əhatə edir. Bilikli rehberlərimiz Quba'nın gizli incilərini araşdırmağa sizi rəhbərlik edəcək, tarixi, ənənələr və əhalisinin isti qonaqlığını ilə bağlı aydınlanmalar paylaşacaq. Qafqaz Dağlarının enənəvi ərazişində yürüyüş edirsinizsə, şəhər bazarlarında yerli dadlarını dadmaqda olduğunuzda və ya sadəcə gözəllik dolu mənzərəni nəzərdən keçirməkdə olduğunuzda, Quba, Azərbaycanın şimal regionunun gözəlliyini və müxtəlifliyini qeyd edən unudulmaz bir təcrübə vəd edir."
+            "info": "Quba, Azərbaycanın şimal bölgəsində yerləşən, gözəllik dolu təbiət mənzərələri və zəngin mədəni irsi ilə tanınmış füsunkar bir istirahət məkanıdır. Qubanın turları bu regionu müxtəlif görməli yerləri ilə heyrətamız dağ və şəlalələrə səyahəti təklif edir, burada sıx meşələr və bənzər şahman dağlar macəralılar və yaşıllıq sevgisi olanlar üçün əvəz edilməz yerdir. İçəri şəhərin tarixi məkanlarını araşdırmaqdan, kəndlərin gündəlik həyatının tərəfindən özünüzü əhatə etdirməyə qədər, Quba özünün həqiqəti və cazibəsi ilə ziyarətciləri əhatə edir. Bilikli rəhbərlərimizlə Quba'nın gizli incilərini araşdırmağa, tarixi, ənənələr və əhalisinin isti qonaqlığını ilə bağlı həkayələr paylaşacaq. Qafqaz Dağlarının ənənəvi ərazişində yürüyüş edirsinizsə, şəhər bazarlarında yerli dadlarını dadmaqda olduğunuzda və ya sadəcə gözəllik dolu mənzərəni nəzərdən keçirməkdə olduğunuzda, Quba, Azərbaycanın şimal regionunun gözəlliyini və müxtəlifliyini qeyd edən unudulmaz bir təcrübə vəd edir."
         },
         "Shusha": {
             "name": "Şuşa",
-            "info": "Şuşa, Qarabağ bölgəsində yerləşən tarixi və mədəni əhəmiyyəti ilə dolu bir şəhərdir. Çox vaxt Azərbaycanın mədəni paytaxtı kimi adlandırılan Şuşa, tarixi abidələri, memarlıq inciləri və nəfəsə gətirən mənzərələri ilə zəngindir. Şuşa turlarımız bu əsərlərin tarixi və canlı tərəfinə dərin bir dalış təklif edir. Şuşa Qalasını, tarixi binalarla süslenmiş cazibədar küçələrdə dolaşmağı və Yukhari Govhar Ağa məscidi və Natavan evi kimi əhəmiyyətli mədəni məkanları ziyarət etməyi daxil edir. Bilikli rehberlərimiz Şuşa'nın tarixinə, Azərbaycan tarixinə oynadığı rol, musiqi, ədəbiyyat və incəsənətə etibarı ilə aid olan haqqında maraqlı hekayələri paylaşacaq. Şəkilli dağların ortasında yerləşən Şuşa, hər bir ziyarəçini əhatə edən sakin, lakin təsirli bir mühit təmin edir. Şuşa'nın insanlarının dayanıqlılığını və ruhunu qəşəfləyin və bu xüsusi şəhərin təbii gözəllik və mədəni zənginliyinə daldığınızda özünüzü qəzəblə yazın."
+            "info": "Şuşa, Qarabağ bölgəsində yerləşən tarixi və mədəni əhəmiyyəti ilə dolu bir şəhərdir. Çox vaxt Azərbaycanın mədəni paytaxtı kimi adlandırılan Şuşa, tarixi abidələri, memarlıq inciləri və nəfəsə kəsən mənzərələri ilə zəngindir. Şuşa turlarımız bu əsərlərin tarixi və canlı tərəfinə dərin bir dalış təklif edir. Şuşa Qalasını, tarixi binalarla bəzənmiş və cazibədar küçələrdə dolaşmağı və Yukhari Govhar Ağa məscidi və Natavan evi kimi əhəmiyyətli mədəni məkanları ziyarət etməyi təklif edir. Bilikli rəhbərlərimiz Şuşa'nın tarixinə, Azərbaycan tarixində oynadığı rol, musiqi, ədəbiyyat və incəsənətə etibarı ilə aid olan haqqında maraqlı hekayələri paylaşacaq. Şəkilli dağların ortasında yerləşən Şuşa, hər bir ziyarəçini əhatə edən sakin, lakin təsirli bir mühit təmin edir. Şuşa'nın insanlarının dayanıqlılığını və ruhunu qəşəfləyin və bu xüsusi şəhərin təbii gözəllik və mədəni zənginliyinə özünüz hər şeyi anlayacaqsınız."
         },
         "Khankandi": {
             "name": "Xankəndi",
-            "info": "Xankəndi, Qarabağ bölgəsindəki ən böyük şəhərdir və mədəni və tarixi əhəmiyyəti ilə məşhurdur. Canlı atmosferi və gözəl ətraf mühitləri ilə tanınan Xankəndi, köhnə ilə yenini birləşdirən bir şəhərdir. Xankəndi turlarımız ən vacib atraksiyonlarını və gizli incilərini daxil edərək ətraflı bir tədqiqat təklif edir. Siz Tarixi Çay və şəhər parklarının yaşıllığını baxmaq və mədəni irsinin memarlıq və mədəniyyət müəssisələrindən, o cümlədən muzey və teatrlardan, istifadə etməyə dəvət edilirsiniz ki, onlar bölgənin irsini göstərir. Təcrübəli rehberlərimiz Xankəndi'nin keçmişinə, strateji əhəmiyyətinə və mədəni inkişafına dair maraqlı hekayələr anlatır. Azərbaycanın Kiçik Qafqaz Dağlarının şəkilli mərcanlarında yerləşən Xankəndi, şahəsən gözəllikləri və təbiətə sükutlu bir qovuşma təmin edir. Xankəndi sakinlərinin dinamik həyatını və səyahətçilər üçün unikal bir məkan edən mədəni dərinliyi ilə tanınan bu şəhərdən zövq alın."
+            "info": "Xankəndi, Qarabağ bölgəsindəki ən böyük şəhərdir və mədəni və tarixi əhəmiyyəti ilə məşhurdur. Canlı atmosferi və gözəl ətraf mühiti ilə tanınan Xankəndi, köhnə ilə yenini birləşdirən bir şəhərdir. Xankəndi turlarımız ən vacib atraksiyonlarını və gizli incilərini daxil edərək ətraflı bir tədqiqat təklif edir. Siz tarixi abidələr və şəhər parklarının yaşıllığını seyr etmək və mədəni irsinin memarlıq və mədəniyyət müəssisələrindən, o cümlədən muzey və teatrlardan, istifadə etməyə dəvət edilirsiniz ki, onlar bölgənin irsini göstərir. Təcrübəli rəhbərlərimiz Xankəndi'nin keçmişinə, strateji əhəmiyyətinə və mədəni inkişafına dair maraqlı hekayələr anlatır. Azərbaycanın Kiçik Qafqaz Dağlarının şəkilli mərcanlarında yerləşən Xankəndi, şahənə gözəllikləri və təbiətə sükutlu bir gəzinti təmin edir. Xankəndi sakinlərinin dinamik həyatını və səyahətçilər üçün unikal bir məkan edən mədəni dərinliyi ilə tanınan bu şəhərdən zövq alın."
         }
     },
     "search": {
@@ -289,12 +283,12 @@
         "hotelsTab": "Otellər",
         "adults": "Yetişkinlər",
         "children": "Uşaqlar",
-        "firstclass": "Birinci sinif",
+        "firstclass": "First Class",
         "buisness": "Biznes",
         "economy": "Ekonom",
         "searchFlight": "Uçuşları axtar",
-        "oneway": "Bir istiqamət",
-        "twoway": "İki istiqamət",
+        "oneway": "Bir tərəfli",
+        "twoway": "İki tərəfli",
         "multicity": "Çox şəhərli"
     },
     "temp": {
@@ -303,5 +297,20 @@
     "api": {
         "errormessage": "Zəhmət olmasa düzgün şəhəri daxil edin",
         "message": "Şəhərinizi buradan yoxlayın"
+    },
+    "footer": {
+        "discover": "Azərbaycanın gözəlliyini bizimlə kəşf edin! Biz bələdçili turlarımız xüsusilə seçilmiş marşrut və peşakar sürücülər təklif edir. Burada siz unudulmaz mədəniyyət, tarix və heyrətamiz mənzərə ilə qarşılaşacaqsınız",
+        "phone": "+994(50)-274-01-81",
+        "location": "Baku, Azerbaijan",
+        "useful_links": "Faydalı linklər",
+        "about_us": "Haqqımızda",
+        "contact_us": "Əlaqə",
+        "privacy_policy": "Məxfilik",
+        "what_we_offer": "Təkliflərimiz",
+        "one_day_tour": "Günlük Tur",
+        "multi_day_tours": "Həftəlik Tur",
+        "destinations": "Təyinatlar",
+        "visa_information": "Viza məlumatları",
+        "copyright": "2024 ©Azerbaijan Tours. All rights reserved."
     }
 }

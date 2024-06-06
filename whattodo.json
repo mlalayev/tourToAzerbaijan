@@ -1,0 +1,52 @@
+[
+    {
+        "imgSrc": "./src/assets/whattodoone.jpg",
+        "isRecommended": true,
+        "path": "/baku"
+    },
+    {
+        "imgSrc": "./src/assets/whattodotwo.jpg",
+        "isRecommended": false,
+        "path": "/lankaran"
+    },
+    {
+        "imgSrc": "./src/assets/whattodothree.jpg",
+        "isRecommended": true,
+        "path": "/shamakhy"
+    },
+    {
+        "imgSrc": "./src/assets/whattodofour.jpg",
+        "isRecommended": false,
+        "path": "/guba"
+    },
+    {
+        "imgSrc": "./src/assets/whattodofive.jpg",
+        "isRecommended": true,
+        "path": "/shaki"
+    },
+    {
+        "imgSrc": "./src/assets/whattodosix.jpg",
+        "isRecommended": true,
+        "path": "/ganja"
+    },
+    {
+        "imgSrc": "./src/assets/whattodoseven.jpg",
+        "isRecommended": false,
+        "path": "/gusar"
+    },
+    {
+        "imgSrc": "./src/assets/ismaillymap.png",
+        "isRecommended": true,
+        "path": "/ismailly"
+    },
+    {
+        "imgSrc": "./src/assets/khizimap.png",
+        "isRecommended": false,
+        "path": "/khizi"
+    },
+    {
+        "imgSrc": "./src/assets/lerikmap.png",
+        "isRecommended": true,
+        "path": "/lerik"
+    }
+]

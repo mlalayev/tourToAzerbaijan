@@ -80,10 +80,10 @@
     },
     "header": {
         "logoAlt": "Logo",
-        "multiDayTours": "Multi-day tours",
-        "dayTrips": "Day trips",
+        "multiDayTours": "What To Do",
+        "dayTrips": "Day Trips",
         "destinations": "Destinations",
-        "visaInformations": "Visa informations",
+        "visaInformations": "Visa Informations",
         "checkout": "Checkout"
     },
     "sectionfirst": {
@@ -249,7 +249,8 @@
     "citiesSlider": {
         "Baku": {
             "name": "Baku",
-            "info": "Baku, the capital and largest city of Azerbaijan, is a vibrant metropolis blending ancient heritage and modernity. Our tours of Baku offer an insightful journey through its most captivating landmarks and unique sites. From the historical charm of the Old City (Icherisheher) to the futuristic Flame Towers, our knowledgeable guides will share intriguing stories and give you a glimpse into the dynamic life and rich culture of contemporary Baku residents. Discover the enchanting blend of East and West that defines this fascinating city."
+            "info": "Baku, the capital and largest city of Azerbaijan, is a vibrant metropolis blending ancient heritage and modernity. Our tours of Baku offer an insightful journey through its most captivating landmarks and unique sites. From the historical charm of the Old City (Icherisheher) to the futuristic Flame Towers, our knowledgeable guides will share intriguing stories and give you a glimpse into the dynamic life and rich culture of contemporary Baku residents. Discover the enchanting blend of East and West that defines this fascinating city.",
+            "path": "/baku"
         },
         "Gabala": {
             "name": "Gabala",
@@ -303,5 +304,59 @@
     "api": {
         "errormessage": "Please enter correct city",
         "message": "Check your city from here"
+    },
+    "footer": {
+        "discover": "Discover Azerbaijan with us! Our guided tours offer personalized itineraries and expert insights. Choose an unforgettable journey with culture, history, and stunning landscapes.",
+        "phone": "+994(50)-274-01-81",
+        "location": "Baku, Azerbaijan",
+        "useful_links": "Useful Links",
+        "about_us": "About us",
+        "contact_us": "Contact us",
+        "privacy_policy": "Privacy policy",
+        "what_we_offer": "What we offer",
+        "one_day_tour": "One day tour",
+        "multi_day_tours": "Multi day tours",
+        "destinations": "Destinations",
+        "visa_information": "Visa information",
+        "copyright": "2024 ©Azerbaijan Tours. All rights reserved."
+    },
+    "whatToDo": {
+        "0": {
+            "title": "Museum",
+            "furtherInfo": "salam",
+            "info": "Discover rich history and cultural heritage of Azerbaijan through its numerous museums. From",
+            "descriptiontwo": "salamaaaaa aa ogrash",
+            "check": "Check"
+        },
+        "1": {
+            "title": "Architecture",
+            "description": "Explore the breathtaking landscapes of Azerbaijan on foot. Hike through the scenic mountains"
+        },
+        "2": {
+            "title": "carpet",
+            "description": "Explore the breathtaking landscapes of Azerbaijan on foot. Hike through the scenic mountains"
+        },
+        "3": {
+            "title": "khinalig",
+            "description": "Explore the breathtaking landscapes of Azerbaijan on foot. Hike through the scenic mountains"
+        },
+        "4": {
+            "title": "religious",
+            "description": "Explore the breathtaking landscapes of Azerbaijan on foot. Hike through the scenic mountains"
+        },
+        "5": {
+            "title": "Park",
+            "description": "Explore the breathtaking landscapes of Azerbaijan on foot. Hike through the scenic mountains"
+        },
+        "6": {
+            "title": "hiking",
+            "description": "Explore the breathtaking landscapes of Azerbaijan on foot. Hike through the scenic mountains"
+        },
+        "7": {
+            "title": "Architecture",
+            "description": "Explore the breathtaking landscapes of Azerbaijan on foot. Hike through the scenic mountains"
+        },
+        "recommended": "Recommended",
+        "recommendedTooltip": "This city is recommended by the author!"
     }
 }
