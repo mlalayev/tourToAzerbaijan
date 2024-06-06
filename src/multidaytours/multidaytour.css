@@ -1,3 +1,96 @@
+#learn-more {
+    padding: 0;
+    width: 8rem;
+    height: 40px;
+    outline: none;
+    display: flex;
+    cursor: pointer;
+    text-align: center;
+    padding-left: 15px;
+    font-size: inherit;
+    position: relative;
+    font-family: inherit;
+    text-decoration: none;
+    vertical-align: middle;
+    justify-content: center;
+    background: transparent;
+}
+
+#learn-more .circle {
+    top: 0px;
+    left: 0px;
+    width: 2.6rem;
+    display: flex;
+    height: 2.2rem;
+    max-width: 100%;
+    padding-top: 3px;
+    position: absolute;
+    text-align: center;
+    background: #282936;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.625rem;
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+}
+
+#learn-more .circle .icon {
+    margin: 0 0 3px 0;
+    background: #fff;
+    /* position: absolute; */
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+}
+
+#learn-more .circle .icon.arrow {
+    left: 0.525rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    margin-top: -1px;
+    background: none;
+    margin-left: -1px;
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+}
+
+#learn-more .circle .icon.arrow::before {
+    content: "";
+    top: -4px;
+    width: 0.625rem;
+    right: 0.0625rem;
+    height: 0.625rem;
+    position: absolute;
+    transform: rotate(45deg);
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+}
+
+#button-text {
+    z-index: 9;
+    color: #282936;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.6;
+    padding: 0.75rem 0;
+    /* margin: 0px 0 1px 1rem !important; */
+    text-transform: uppercase;
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+}
+
+#learn-more:hover .circle {
+    width: 100%;
+}
+
+#learn-more:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+}
+
+#learn-more:hover .button-text {
+    color: #fff;
+}
+
+#learn-more:hover #button-text {
+    color: #fff;
+}
+
 .sectionsecondonedaytour{
     font-family: var(--font-family-reddit);
 }

@@ -2,10 +2,15 @@ import React from 'react'
 import './footer.css'
 import { LuArrowUpCircle } from "react-icons/lu";
 import logo from '../../assets/logo.svg'
-import { IoCallOutline } from "react-icons/io5";
-
+import { LuPhoneCall } from "react-icons/lu";
+import { IoLocationOutline } from "react-icons/io5";
+import az from '../../assets/az.svg'
 
 function footer() {
+
+    const email = "lalayemurad@gmail.com";
+    const subject = "Tour To Azerbaijan";
+    const body = "Hello, can you give me further details? I'm interested in your tours";
 
     const scrollToTop = () => {
         window.scrollTo({
@@ -37,11 +42,14 @@ function footer() {
                             </svg>
                         </a>
 
-                        <a className="socialContainer containerTwofooter" href="#">
-                            <svg viewBox="0 0 16 16" className="socialSvg twitterSvg">
-                                <path
-                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
-                                ></path>
+                        <a className="socialContainer containerTwofooter" href={`mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`}>
+                            {/* <img src={gmail} className='gmail' /> */}
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="52 42 88 66" width="20" height="20" >
+                                <path fill="white" d="M58 108h14V74L52 59v43c0 3.32 2.69 6 6 6" />
+                                <path fill="white" d="M120 108h14c3.32 0 6-2.69 6-6V59l-20 15" />
+                                <path fill="white" d="M120 48v26l20-15v-8c0-7.42-8.47-11.65-14.4-7.2" />
+                                <path fill="white" d="M72 74V48l24 18 24-18v26L96 92" />
+                                <path fill="white" d="M52 51v8l20 15V48l-5.6-4.2c-5.94-4.45-14.4-.22-14.4 7.2" />
                             </svg>
                         </a>
 
@@ -64,11 +72,34 @@ function footer() {
                 </div>
 
                 <div className="giveusacall">
-                    <div className="txtholder"><IoCallOutline size={20} /> <h1>+994(50)-274-01-81</h1></div>
+                    <div className="txtholder"><LuPhoneCall size={20} /> <h1>+994(50)-274-01-81</h1></div>
+                    <div className="txtholder"><IoLocationOutline size={20} /> <h1>Baku, Azerbaijan <img src={az} alt="" className='flag' /></h1></div>
+
+                    <div className="usefullinks">
+                        <h1>Useful Links</h1>
+                        <div className="hypertagholder">
+                            <div className="tagholderone">
+                                <a href="#">About us</a>
+                                <a href="#">Contact us</a>
+                                <a href="#">Privacy policy</a>
+                                <a href="#">What we offer</a>
+                            </div>
+                            <div className="tagholdertwo">
+                                <a href="#">One day tour</a>
+                                <a href="#">Multi day tours</a>
+                                <a href="#">Destinations</a>
+                                <a href="#">Visa information</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="copyrighttext">
+                    <h1>2024 ©Azerbaijan Tours. All rights reserved.</h1>
                 </div>
 
             </div>
-        </footer>
+        </footer >
     )
 }
 
