@@ -533,6 +533,7 @@ input[type='radio'] {
     flex-direction: column;
     position: relative;
     gap: 5px;
+    max-width: 1000px;
     align-items: center;
     justify-content: center;
 }
@@ -720,6 +721,7 @@ input[type='radio'] {
 }
 
 .mydiv {
+    position: relative;
     display: flex;
     align-items: center;
 }

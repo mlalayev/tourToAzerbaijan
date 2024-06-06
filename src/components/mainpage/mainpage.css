@@ -5,14 +5,93 @@
     /* border: 1px solid red; */
 }
 
-/* :root {
-    --font-family-rubik: rubik;
-    --main-black-color: #000000;
-    --main-white-color: #ffffff;
-    --font-family-reddit: reddit sans;
-    --main-light-green-color: #43c7b1;
-    --main-yellow-color: rgb(255, 230, 0);
-} */
+.learn-more {
+    border: 0;
+    padding: 0;
+    width: 12rem;
+    height: auto;
+    outline: none;
+    display: flex;
+    cursor: pointer;
+    font-size: inherit;
+    position: relative;
+    align-items: center;
+    font-family: inherit;
+    text-decoration: none;
+    vertical-align: middle;
+    justify-content: center;
+    background: transparent;
+}
+
+.learn-more .circle {
+    margin: 0;
+    left: 10px;
+    width: 2.6rem;
+    display: flex;
+    height: 2.6rem;
+    max-width: 124px;
+    position: absolute;
+    align-items: center;
+    background: #282936;
+    justify-content: center;
+    border-radius: 1.625rem;
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+}
+
+.learn-more .circle .icon {
+    margin: auto;
+    background: #fff;
+    position: absolute;
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+}
+
+.learn-more .circle .icon.arrow {
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    margin-top: -1px;
+    background: none;
+    margin-left: -1px;
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+}
+
+.learn-more .circle .icon.arrow::before {
+    content: "";
+    top: -0.29rem;
+    width: 0.625rem;
+    right: 0.0625rem;
+    height: 0.625rem;
+    position: absolute;
+    transform: rotate(45deg);
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+}
+
+.learn-more .button-text {
+    z-index: 9;
+    color: #282936;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.6;
+    padding: 0.75rem 0;
+    text-align: center;
+    margin: 0 0 0 0.8rem;
+    text-transform: uppercase;
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+}
+
+.learn-more:hover .circle {
+    width: 100%;
+}
+
+.learn-more:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+}
+
+.learn-more:hover .button-text {
+    color: #fff;
+}
 
 .errormsg {
     height: 100px;
@@ -28,15 +107,14 @@
 }
 
 .nulliactive::before {
-    top: 25px;
-    width: 14px;
+    top: 26px;
+    width: 12px;
     content: '';
-    height: 14px;
+    height: 12px;
     z-index: 999;
     position: absolute;
     border-radius: 8px;
-    background-color: #43c7b1;
-    border: 2px solid darkgreen;
+    background-color: #05203C;
     box-shadow: 2px 2px 6px rgb(0, 0, 0);
 }
 
@@ -313,7 +391,7 @@ body {
     align-items: center;
     border-radius: 15px;
     justify-content: center;
-    background-color: var(--main-light-green-color);
+    background-color: #05203C;
 }
 
 .scndsctntxt h1 {
@@ -415,7 +493,7 @@ body {
     align-items: center;
     border-radius: 15px;
     justify-content: center;
-    background-color: var(--main-light-green-color);
+    background-color: #05203C;
 }
 
 .thrdsctntxt h1 {
