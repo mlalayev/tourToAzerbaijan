@@ -2,38 +2,32 @@
     --width-container: 540px;
 }
 
-.flex input {
-    min-width: 84vw;
-    max-width: 180px;
-    font-size: 16px;
-}
-
 .ccontainer {
     display: flex;
-    max-width: 100%;
-    border: var(--border);
-    align-items: flex-start;
-    padding: 0 var(--space-8);
-    box-shadow: var(--shadow);
-    border-radius: var(--radius);
-    width: var(--width-container);
-    justify-content: space-between;
+    min-width: 200px;
+    align-items: center;
+    justify-content: center;
     background-color: var(--color-white);
 }
 
 .input-row {
+    height: 45px;
     display: flex;
     max-width: 40%;
     margin: 0 auto;
     padding: 0 10px;
-    margin-top: 5px;
+    min-width: 130px;
     text-align: center;
     align-items: center;
     border-radius: 10px;
     background-color: #fff;
     justify-content: center;
-    border-bottom: var(--border);
-    box-shadow: 3px 3px 8px gray;
+    box-shadow: 1px 1px 4px gray;
+}
+
+.input-row div {
+    display: flex;
+    align-items: center;
 }
 
 .input-row h2 {
@@ -66,8 +60,8 @@
 .ccontainer button {
     margin: 5px;
     width: 10px;
-    display: flex;
     height: 10px;
+    display: flex;
     align-items: center;
     height: var(--space-12);
     justify-content: center;
@@ -109,30 +103,11 @@
     color: var(--color-gray-400);
 }
 
-.minus {
-    margin-right: 10px !important;
-}
-
-.plus {
-    margin-left: 10px !important;
-}
-
-@media screen and (min-width:830px) {
-    .box {
-        margin: auto;
-        display: flex;
-        left: auto !important;
-        right: auto !important;
-        align-self: center !important;
-        justify-self: center !important;
-    }
-}
-
 .search-container {
     width: 94vw;
     display: flex;
     transition: 0.2s;
-    min-height: 500px;
+    min-height: 400px;
     max-width: 1400px;
     margin: 60px auto;
     padding: 20px 20px;
@@ -163,7 +138,7 @@
     color: white;
     display: flex;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
     overflow: hidden;
     position: relative;
@@ -228,8 +203,8 @@
 .search-hotels-container {
     display: flex;
     height: 283px;
-    margin-bottom: 33px;
     align-items: center;
+    margin-bottom: 33px;
     flex-direction: column;
     justify-content: center;
 }
@@ -249,11 +224,6 @@
 
 .deactive {
     cursor: pointer;
-}
-
-.flex h1 {
-    min-width: 45px;
-    text-align: center;
 }
 
 .indecbtn {
@@ -349,8 +319,6 @@ input[type='radio'] {
     border: 1px solid #ccc;
 }
 
-
-
 .input-style {
     width: 84vw;
     color: black;
@@ -362,8 +330,6 @@ input[type='radio'] {
     border-radius: 20px;
     border: 2px solid #ccc;
 }
-
-
 
 .input-style:focus {
     border-color: #007bff;
@@ -392,12 +358,10 @@ input[type='radio'] {
     box-shadow: 2px 2px 5px black;
 }
 
-
 .form-group-two {
     align-items: center;
     flex-direction: column;
 }
-
 
 .inputholder {
     display: flex;
@@ -405,8 +369,8 @@ input[type='radio'] {
 }
 
 .scndinput {
-    color: black;
     width: 88vw;
+    color: black;
     border: none;
     outline: none;
     padding: 12px;
@@ -451,31 +415,13 @@ input[type='radio'] {
 }
 
 .form-group-three {
+    margin: 5px 0;
     gap: 5px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
-}
-
-.form-group-three input {
-    width: 50px;
-    border: none;
-    padding: 3px;
-    margin: 15px 10px;
-    margin-left: -60px;
-    border-radius: 8px;
-    background-color: #fff;
-    justify-content: flex-end;
-    border-bottom: 2px solid black;
-    box-shadow:
-        0px 0px 2.2px rgba(0, 0, 0, 0.052),
-        0px 0px 5.3px rgba(0, 0, 0, 0.099),
-        0px 0px 10px rgba(0, 0, 0, 0.108),
-        0px 0px 9px rgba(0, 0, 0, 0.179),
-        0px 0px 4px rgba(0, 0, 0, 0.254),
-        0px 0px 8px rgba(0, 0, 0, 0.33);
+    justify-content:  center;
 }
 
 .flex {
@@ -483,7 +429,18 @@ input[type='radio'] {
     display: flex;
     margin-top: 5px;
     align-items: center;
-    flex-direction: column;
+    justify-content: center;
+}
+
+.flex h1 {
+    min-width: 45px;
+    text-align: center;
+}
+
+.flex input {
+    width: 41vw;
+    max-width: 253px;
+    font-size: 16px;
 }
 
 .flex label {
@@ -525,7 +482,6 @@ input[type='radio'] {
 .autocomplete {
     gap: 5px;
     display: flex;
-    max-width: 1000px;
     position: relative;
     align-items: center;
     flex-direction: column;
@@ -541,10 +497,27 @@ input[type='radio'] {
 }
 
 .iconholder {
+    display: none;
     left: auto;
     right: auto;
+    z-index: 9;
     width: 40px;
     height: 40px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    border-radius: 20px;
+    justify-content: center;
+    background-color: white;
+    border: 4px solid #00005c;
+}
+
+.iconholder-mobile {
+    left: auto;
+    z-index: 9999;
+    right: auto;
+    width: 30px;
+    height: 30px;
     display: flex;
     position: absolute;
     align-items: center;
@@ -611,11 +584,6 @@ input[type='radio'] {
     background-color: #f0f0f0;
 }
 
-.flex {
-    display: flex;
-    align-items: center;
-}
-
 .increase-decrease-btn {
     width: 30px;
     height: 30px;
@@ -638,17 +606,15 @@ input[type='radio'] {
 
 .aradio-inputs {
     gap: 2px;
-    width: 300px;
     display: flex;
     margin: 0 10px;
-    flex-wrap: wrap;
     font-size: 14px;
+    min-width: 300px;
     transition: 0.3s;
     padding: 0.25rem;
     position: relative;
     border-radius: 0.5rem;
     box-sizing: border-box;
-    margin: 5px auto 0 auto;
     background-color: white;
     box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
 }
@@ -662,10 +628,6 @@ input[type='radio'] {
 .aradio-inputs .aradio input {
     display: none;
     transition: 0.3s;
-}
-
-.iconholder {
-    z-index: 1;
 }
 
 .aradio-inputs .aradio .nname {
@@ -720,7 +682,7 @@ input[type='radio'] {
     align-items: center;
 }
 
-.mydiv input{
+.mydiv input {
     padding-right: 70px;
 }
 
@@ -737,7 +699,38 @@ input[type='radio'] {
     box-shadow: -5px 0px 6px white;
 }
 
+@media screen and (max-width: 1300px) {
+    .iconholder {
+        display: none;
+    }
+
+    .search-container {
+        max-width: 600px;
+    }
+
+    .aradio-inputs{
+        width: 90%;
+    }
+
+    .form-group-three {
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .ccontainer {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
 @media screen and (min-width:1300px) {
+
+    .iconholder-mobile {
+        display: none;
+    }
+
     .input-style {
         color: black;
         height: 80px;
@@ -833,7 +826,9 @@ input[type='radio'] {
     }
 
     .input-row {
-        margin: 5px;
+        display: flex;
+        margin: 0 5px;
+        min-width: 170px;
     }
 
     .mydiv {
@@ -867,6 +862,41 @@ input[type='radio'] {
         background-color: #fff;
         border-left: 1px solid #05203C;
         box-shadow: -5px 0px 6px white;
+    }
+}
+
+@media screen and (max-width:830px) {
+    .input-row {
+        margin: 0 5px;
+    }
+}
+
+@media screen and (min-width:830px) {
+    .box {
+        margin: auto;
+        display: flex;
+        left: auto !important;
+        right: auto !important;
+        align-self: center !important;
+        justify-self: center !important;
+    }
+    .form-group-three {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .input-row {
+        margin: 0 5px;
+    }
+}
+
+@media screen and (max-width:670px) {
+    .aradio-inputs {
+        width: 77vw;
+    }
+
+    .input-row {
+        width: 15vw;
     }
 }
 

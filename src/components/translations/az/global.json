@@ -80,8 +80,8 @@
     },
     "header": {
         "logoAlt": "Logo",
-        "multiDayTours": "Çox gün ərzində turlar",
-        "dayTrips": "Gündüz səfərləri",
+        "multiDayTours": "Nə etməli",
+        "dayTrips": "Günlük turlar",
         "destinations": "Məkanlar",
         "visaInformations": "Viza məlumatları",
         "checkout": "Ödəniş et"
@@ -92,14 +92,9 @@
     },
     "sectionsecond": {
         "packageTours": "Paket turlar",
-        "selectPackage": "Tailor-made paketlərimizdən birini seçin və Rusiya macəranız üçün hazırlaşın! Konaklama, hava limanı transferləri, muzey biletləri, şəhərlər arası nəqliyyat, tur rehberləri ilə məşğul olmağınız üçün narahat olmalısınız - bunu sizin üçün həll edəcəyik.",
-        "toursToBaku": "Bakı və onun görünüşlərinə tur",
-        "bakuBoulevard": "Bakı Boulevardu",
-        "weekendInQabala": "Qəbələ həftə sonu Tələbələr üçün istəyə əsasən",
-        "weekendInLerik": "Lerik həftə sonu Tələbələr üçün istəyə əsasən",
-        "weekendInLankaran": "Lənkəran həftə sonu Tələbələr üçün istəyə əsasən",
-        "weekendInQuba": "Quba həftə sonu Tələbələr üçün istəyə əsasən",
-        "weekendInShusha": "Şuşa həftə sonu Tələbələr üçün istəyə əsasən",
+        "selectPackage": "Xüsusi ilə hazırladığımız turlardan birini seçin və Azərbaycan macəranız üçün hazırlaşın! Qonalamaq, hava limanı transferləri, muzey biletləri, şəhərlər arası nəqliyyat, tur rəhbərləri ilə məşğul olmaq istəmirsinizsə, buna görə narahat olmamalısınız - bunu sizin üçün həll edəcəyik.",
+        "toursToBaku": "Bakı və onun görməli yerlərinə Səyahət",
+        "bakuBoulevard": "Bakı da da daBulvarı",
         "view": "Keçid",
         "sliderProps": {
             "sliderdos": {

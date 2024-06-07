@@ -33,6 +33,8 @@ function whattodo() {
         }
     };
 
+    
+
     const handleClickOutside = (ref, setFunction) => (event) => {
         if (ref.current && !ref.current.contains(event.target)) {
             setFunction(false);
@@ -176,7 +178,7 @@ function whattodo() {
                                     {item.descriptiontwo && <p className='descriptionadd'>{t(`whatToDo.${key}.descriptiontwo`)}</p>}
                                     <strong className='strong'>{t(`whatToDo.${key}.furtherInfo`)}</strong>
                                 </div>
-                                <button className="learn-more" id='learn-more'>
+                                <button className="learn-more" id='learn-more' onClick={() => handleButtonClick(item.path)}>
                                     <span className="circle" aria-hidden="true">
                                         <span className="icon arrow"></span>
                                     </span>

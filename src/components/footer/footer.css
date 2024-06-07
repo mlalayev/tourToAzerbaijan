@@ -230,7 +230,8 @@ footer {
 
 .shadowfooter,
 .giveusacall,
-.copyrighttext {
+.copyrighttext,
+.ftrpc {
     box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
         0.3em 0.3em 1em rgba(0, 0, 0, 0.3),
         0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
@@ -251,7 +252,6 @@ footer {
     background-color: transparent;
 }
 
-/* for all social containers*/
 .socialContainer {
     width: 32px;
     height: 32px;
