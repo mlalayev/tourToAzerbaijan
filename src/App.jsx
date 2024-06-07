@@ -19,6 +19,8 @@ import UPPERPART from './components/upperpart/upperpart.jsx';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { I18nextProvider } from 'react-i18next';
 import i18n from './components/i18n/i18n.jsx';
+import MUSEUM from './whatToDo/Museums/Museums.jsx';
+import ARCHITECTURE from './whatToDo/Architecture/architecture.jsx';
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -105,6 +107,14 @@ function App() {
     <I18nextProvider i18n={i18n}>
       <BrowserRouter>
         <Routes>
+          <Route path='/museums'
+            element={<MUSEUM/>}
+          />
+         
+          <Route path='/architecture'
+            element={<ARCHITECTURE/>}
+          />
+
           <Route path="/mltdytrs"
             element={<><MULTIDAY /><FOOTER /></>}
           />

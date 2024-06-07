@@ -2,10 +2,10 @@
   color: #fff;
   width: 342px;
   height: 184px;
+  padding: 20px;
   display: flex;
   position: relative;
   flex-direction: column;
-  padding: 20px;
   justify-content: space-between;
 }
 

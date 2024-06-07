@@ -2,12 +2,12 @@
     {
         "imgSrc": "./src/assets/whattodoone.jpg",
         "isRecommended": true,
-        "path": "/baku"
+        "path": "/museums"
     },
     {
         "imgSrc": "./src/assets/whattodotwo.jpg",
         "isRecommended": false,
-        "path": "/lankaran"
+        "path": "/architecture"
     },
     {
         "imgSrc": "./src/assets/whattodothree.jpg",

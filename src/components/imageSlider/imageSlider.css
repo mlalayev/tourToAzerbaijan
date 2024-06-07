@@ -36,12 +36,6 @@
   stroke: white;
 }
 
-@keyframes squish {
-  50% {
-    scale: 1.4 0.6;
-  }
-}
-
 .img-slider-dot-btn {
   all: unset;
   width: 1rem;
@@ -70,8 +64,8 @@
 
 .skip-link {
   border: 0;
-  width: 1px;
   padding: 0;
+  width: 1px;
   height: 1px;
   margin: -1px;
   overflow: hidden;
@@ -92,17 +86,6 @@
   text-decoration: none;
   border: 1px solid black;
   background-color: white;
-}
-
-@media not (prefers-reduced-motion) {
-  .img-slider-img {
-    transition: translate 300ms ease-in-out;
-  }
-
-  .img-slider-btn:hover>*,
-  .img-slider-btn:focus-visible>* {
-    animation: squish 200ms ease-in-out;
-  }
 }
 
 .img-slider-img {
@@ -169,4 +152,21 @@
 
 .skip-link:focus {
   top: 0;
+}
+
+@media not (prefers-reduced-motion) {
+  .img-slider-img {
+    transition: translate 300ms ease-in-out;
+  }
+
+  .img-slider-btn:hover>*,
+  .img-slider-btn:focus-visible>* {
+    animation: squish 200ms ease-in-out;
+  }
+}
+
+@keyframes squish {
+  50% {
+    scale: 1.4 0.6;
+  }
 }
