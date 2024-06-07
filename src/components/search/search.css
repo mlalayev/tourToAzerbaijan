@@ -415,9 +415,9 @@ input[type='radio'] {
 }
 
 .form-group-three {
-    margin: 5px 0;
     gap: 5px;
     width: 100%;
+    margin: 5px 0;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -439,8 +439,8 @@ input[type='radio'] {
 
 .flex input {
     width: 41vw;
-    max-width: 253px;
     font-size: 16px;
+    max-width: 253px;
 }
 
 .flex label {
@@ -497,7 +497,6 @@ input[type='radio'] {
 }
 
 .iconholder {
-    display: none;
     left: auto;
     right: auto;
     z-index: 9;
@@ -514,10 +513,10 @@ input[type='radio'] {
 
 .iconholder-mobile {
     left: auto;
-    z-index: 9999;
     right: auto;
     width: 30px;
     height: 30px;
+    z-index: 9999;
     display: flex;
     position: absolute;
     align-items: center;

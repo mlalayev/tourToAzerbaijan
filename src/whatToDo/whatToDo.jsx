@@ -111,45 +111,6 @@ function whattodo() {
 
             <WAPI />
 
-
-            {/* <section className="section-info">
-                {whatToDo.map((item, index) => (
-                    <div key={index} className='infoholder'>
-                        <div className="infoholder-img">
-                            {item.isRecommended && (
-                                <button className="custom-button">
-                                    <span className="custom-button-text">{t('whatToDo.recommended')}</span>
-                                    <div className="tooltip-container">
-                                        <div className="tooltip-content">
-                                            <div className="tooltip-box">
-                                                <p>{t('whatToDo.recommendedTooltip')}</p>
-                                            </div>
-                                            <div className="tooltip-arrow"></div>
-                                        </div>
-                                    </div>
-                                </button>
-                            )}
-                            <img src={item.imgSrc} alt={item.title} className='infoholder-image' />
-                        </div>
-                        <div key={index} className='div-holder'>
-                            <div className="infoholder-text">
-                                <h1>{t(`whatToDo.${item.title}`)}</h1>
-                                <p>{t(`whatToDo.${item.description}`)}</p>
-                                <p className='descriptionadd'>{t(`whatToDo.${item.descriptiontwo}`)}</p>
-                                <strong className='strong'>{t('whatToDo.furtherInfo')}</strong>
-                            </div>
-                            <button className="learn-more" id='learn-more'>
-                                <span className="circle" aria-hidden="true">
-                                    <span className="icon arrow"></span>
-                                </span>
-                                <span className="button-text" id='button-text'>{t('whatToDo.check')}</span>
-                            </button>
-                        </div>
-                    </div>
-                ))}
-            </section> */}
-
-
             <section className="section-info">
                 {Object.keys(whatToDo).map((key, index) => {
                     const item = whatToDo[key];

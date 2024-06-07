@@ -65,7 +65,8 @@ function Header() {
                     <div className="language-switcher">
                         <button className="lang" onClick={handleLangButtonClick}>
                             <IoLanguageSharp size={20} />
-                            <RiArrowDownSLine size={20} />
+                            <RiArrowDownSLine size={20}
+                                className={langMenuOpen ? 'rotated' : 'm'} />
                         </button>
                         {langMenuOpen && (
                             <ul className="language-menu">
