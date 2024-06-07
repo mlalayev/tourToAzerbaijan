@@ -135,7 +135,7 @@ const SearchForm = () => {
             setHotelSuggestions([]);
         }
     };
-    
+
 
     const handleTabChange = (tab) => {
         setActiveTab(tab);
@@ -208,6 +208,9 @@ const SearchForm = () => {
                                 <div className="iconholder" onClick={swapInputs}>
                                     <TbReplace color='black' size={25} />
                                 </div>
+                                <div className="iconholder-mobile" onClick={swapInputs}>
+                                    <TbReplace color='black' size={15} />
+                                </div>
 
                                 <div className="mydiv">
                                     <input
@@ -248,72 +251,6 @@ const SearchForm = () => {
                         </div>
 
                         <div className="form-group-three">
-
-                            <div className="ccontainer">
-                                <div className="input-row">
-                                    <div className="title">
-                                        <h2 className="label">{t('search.adults')}</h2>
-                                    </div>
-                                    <div className="input">
-                                        <button
-                                            className="minus"
-                                            aria-label="Decrease by one"
-                                            onClick={() => handleDecrement('adult')}
-                                            disabled={adultCount === minValue}
-                                        >
-                                            <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <line y1="1" x2="16" y2="1" stroke="#0064FE" strokeWidth="2" className="icon" />
-                                            </svg>
-                                        </button>
-                                        <div className={`number ${adultCount === minValue ? 'dim' : ''}`}>
-                                            {adultCount}
-                                        </div>
-                                        <button
-                                            className="plus"
-                                            aria-label="Increase by one"
-                                            onClick={() => handleIncrement('adult')}
-                                            disabled={adultCount >= maxValue}
-                                        >
-                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" className="icon">
-                                                <line x1="8" y1="0" x2="8" y2="16" stroke="#0064FE" strokeWidth="2" />
-                                                <line y1="8" x2="16" y2="8" stroke="#0064FE" strokeWidth="2" />
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div className="input-row">
-                                    <div className="title">
-                                        <h2 className="label">{t('search.children')}</h2>
-                                    </div>
-                                    <div className="input">
-                                        <button
-                                            className="minus"
-                                            aria-label="Decrease by one"
-                                            onClick={() => handleDecrement('child')}
-                                            disabled={childCount === minValue}
-                                        >
-                                            <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <line y1="1" x2="16" y2="1" stroke="#0064FE" strokeWidth="2" className="icon" />
-                                            </svg>
-                                        </button>
-                                        <div className={`number ${childCount === minValue ? 'dim' : ''}`}>
-                                            {childCount}
-                                        </div>
-                                        <button
-                                            className="plus"
-                                            aria-label="Increase by one"
-                                            onClick={() => handleIncrement('child')}
-                                            disabled={childCount >= maxValue}
-                                        >
-                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" className="icon">
-                                                <line x1="8" y1="0" x2="8" y2="16" stroke="#0064FE" strokeWidth="2" />
-                                                <line y1="8" x2="16" y2="8" stroke="#0064FE" strokeWidth="2" />
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-
                             <div className="aradio-inputs">
                                 <label className="aradio">
                                     <input type="radio" name="radio" />
@@ -330,6 +267,79 @@ const SearchForm = () => {
                                 </label>
                             </div>
 
+                            <div className="ccontainer">
+
+                                <div className="input-row">
+                                    <div className="title">
+                                        <h2 className="label">{t('search.adults')}</h2>
+
+                                        <div className="input">
+                                            <button
+                                                className="minus"
+                                                aria-label="Decrease by one"
+                                                onClick={() => handleDecrement('adult')}
+                                                disabled={adultCount === minValue}
+                                            >
+                                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <line y1="1" x2="16" y2="1" stroke="#0064FE" strokeWidth="2" className="icon" />
+                                                </svg>
+                                            </button>
+
+                                            <div className={`number ${adultCount === minValue ? 'dim' : ''}`}>
+                                                {adultCount}
+                                            </div>
+
+                                            <button
+                                                className="plus"
+                                                aria-label="Increase by one"
+                                                onClick={() => handleIncrement('adult')}
+                                                disabled={adultCount >= maxValue}
+                                            >
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" className="icon">
+                                                    <line x1="8" y1="0" x2="8" y2="16" stroke="#0064FE" strokeWidth="2" />
+                                                    <line y1="8" x2="16" y2="8" stroke="#0064FE" strokeWidth="2" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="input-row">
+                                    <div className="title">
+                                        <h2 className="label">{t('search.children')}</h2>
+
+                                        <div className="input">
+                                            <button
+                                                className="minus"
+                                                aria-label="Decrease by one"
+                                                onClick={() => handleDecrement('adult')}
+                                                disabled={adultCount === minValue}
+                                            >
+                                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <line y1="1" x2="16" y2="1" stroke="#0064FE" strokeWidth="2" className="icon" />
+                                                </svg>
+                                            </button>
+
+                                            <div className={`number ${childCount === minValue ? 'dim' : ''}`}>
+                                                {childCount}
+                                            </div>
+
+                                            <button
+                                                className="plus"
+                                                aria-label="Increase by one"
+                                                onClick={() => handleIncrement('child')}
+                                                disabled={childCount >= maxValue}
+                                            >
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" className="icon">
+                                                    <line x1="8" y1="0" x2="8" y2="16" stroke="#0064FE" strokeWidth="2" />
+                                                    <line y1="8" x2="16" y2="8" stroke="#0064FE" strokeWidth="2" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
 
                         <button className='procedbtn' type="button" onClick={handleClick}>{t('search.searchFlight')}</button>

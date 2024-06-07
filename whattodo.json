@@ -35,17 +35,27 @@
         "path": "/gusar"
     },
     {
-        "imgSrc": "./src/assets/ismaillymap.png",
+        "imgSrc": "./src/assets/whattodoeight.jpg",
         "isRecommended": true,
         "path": "/ismailly"
     },
     {
-        "imgSrc": "./src/assets/khizimap.png",
+        "imgSrc": "./src/assets/whattodonine.webp",
         "isRecommended": false,
         "path": "/khizi"
     },
     {
-        "imgSrc": "./src/assets/lerikmap.png",
+        "imgSrc": "./src/assets/whattodoten.jpg",
+        "isRecommended": true,
+        "path": "/lerik"
+    },
+    {
+        "imgSrc": "./src/assets/whattodoeleven.jpg",
+        "isRecommended": true,
+        "path": "/lerik"
+    },
+    {
+        "imgSrc": "./src/assets/whattodotwelve.jpg",
         "isRecommended": true,
         "path": "/lerik"
     }

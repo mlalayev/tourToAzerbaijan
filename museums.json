@@ -1,0 +1,27 @@
+[
+    {
+      "image": "./src/assets/leriksliderone.jpeg",
+      "title": "First slide label",
+      "caption": "Nulla vitae elit libero, a pharetra augue mollis interdum."
+    },
+    {
+      "image": "./src/assets/lerikslidertwo.jpg",
+      "title": "Second slide label",
+      "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "image": "./src/assets/leriksliderthree.jpg",
+      "title": "Third slide label",
+      "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
+    },
+    {
+      "image": "./src/assets/leriksliderfour.jpg",
+      "title": "Fourth slide label",
+      "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
+    },
+    {
+      "image": "./src/assets/leriksliderfive.jpg",
+      "title": "Fourth slide label",
+      "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
+    }
+  ]

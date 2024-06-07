@@ -554,17 +554,18 @@ body {
     color: white;
     height: 400px;
     display: flex;
+    display: grid;
     font-size: 30px;
-    align-items: center;
+    place-content: center;
     flex-direction: column;
-    justify-content: center;
+    align-items: flex-start;
     font-family: var(--font-family-reddit);
     background-color: var(--main-light-green-color);
 }
 
 .frthrght {
     padding: 10px 20px;
-    font-family: var(--font-family-rubik);
+    font-family: var(--font-family-reddit);
 
 }
 
@@ -1042,6 +1043,10 @@ header {
         border-radius: 10px;
     }
 
+    .frthlft h1 {
+        font-size: 46px;
+    }
+
     .sectionfourth {
         height: 420px;
     }
@@ -1212,6 +1217,18 @@ header {
     padding: 50px 0;
 }
 
-#btnwdth{
+#btnwdth {
     color: #134757;
+}
+
+@media screen and (min-width:1300px) {
+    .frthlft {
+        display: grid;
+        place-content: center;
+        align-items: flex-start;
+    }
+
+    .frthlft h1 {
+        font-size: 52px;
+    }
 }
