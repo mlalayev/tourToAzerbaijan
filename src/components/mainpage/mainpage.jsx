@@ -2,7 +2,6 @@ import './mainpage.css';
 import { IoMdStar } from "react-icons/io";
 import SLIDER from '../sliders/slider.jsx';
 import cityData from '../../../cities.json';
-// import cityTour from '../../../tourtype.json';
 import { GrUserManager } from "react-icons/gr";
 import { FaAnglesLeft } from "react-icons/fa6";
 import { GrCertificate } from "react-icons/gr";
@@ -40,7 +39,6 @@ import { useTranslation } from 'react-i18next';
 function mainpage() {
 
     const { t, i18n } = useTranslation();
-    // const { t } = useTranslation();
 
     const dropdownRefUp = useRef(null);
     const dropdownRefDown = useRef(null);
@@ -341,11 +339,12 @@ function mainpage() {
                         <h1>{t('sectionsixth.whatTouristsSay')}</h1>
                         <p>{t('sectionsixth.touristsSayIntro')}</p>
 
-                        <div className="horizontalwhite"></div>
 
                         <div className="rcmndtrst">
                             {t('sectionsixth.testimonials', { returnObjects: true }).map((testimonial, index) => (
                                 <div key={index} className={`trst${index + 1}`}>
+                                <div className="horizontalwhite"></div>
+                                {/* <div className="verticalwhite"></div> */}
                                     <p>{testimonial.name}</p>
                                     <div className="strs">
                                         <p>{testimonial.date}</p>
@@ -361,7 +360,6 @@ function mainpage() {
                         </div>
                     </div>
 
-                    <div className="horizontalwhite"></div>
                     <div className="horizontalwhite"></div>
 
                     <div className="recommendedby">

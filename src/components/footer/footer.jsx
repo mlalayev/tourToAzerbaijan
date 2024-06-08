@@ -29,10 +29,11 @@ function footer() {
             <div className="greencircle" onClick={scrollToTop}>
                 <LuArrowUpCircle size={60} strokeWidth={1} color='white' />
             </div>
-            {/* <div className="holder"> */}
-                <div className="divgreenline"></div>
-            {/* </div> */}
+
+            <div className="divgreenline"></div>
+
             <div className="containerftr">
+
                 <div className="cardfooter shadowfooter">
                     <img src={logo} alt="logo" className="logofooter" />
                     <p>{t('footer.discover')}</p>
@@ -69,13 +70,8 @@ function footer() {
                         </a>
                     </div>
                 </div>
+
                 <div className="giveusacall">
-                    <div className="txtholder">
-                        <LuPhoneCall size={20} /> <h1>{t('footer.phone')}</h1>
-                    </div>
-                    <div className="txtholder">
-                        <IoLocationOutline size={20} /> <h1>{t('footer.location')} <img src={az} alt="" className='flag' /></h1>
-                    </div>
                     <div className="usefullinks">
                         <h1>{t('footer.useful_links')}</h1>
                         <div className="hypertagholder">
@@ -93,7 +89,14 @@ function footer() {
                             </div>
                         </div>
                     </div>
+                    <div className="txtholder">
+                        <LuPhoneCall size={20} /> <h1>{t('footer.phone')}</h1>
+                    </div>
+                    <div className="txtholder">
+                        <IoLocationOutline size={20} /> <h1>{t('footer.location')} <img src={az} alt="" className='flag' /></h1>
+                    </div>
                 </div>
+
                 <div className="footerrightpart">
                     <img src={karabakh} alt="" className='ftrpc' />
                     <div className="copyrighttext">
