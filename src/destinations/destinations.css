@@ -49,7 +49,7 @@
 
 .infoholder-text {
     font-family: var(--font-family-reddit);
-    padding: 10px;
+    padding: 10px 30px;
 }
 
 .infoholder-text h1 {
@@ -60,7 +60,9 @@
     font-size: 14px;
 }
 
-
+.descriptionadd {
+    display: none;
+}
 
 .custom-button {
     height: 40px;
@@ -91,7 +93,7 @@
     background: linear-gradient(to bottom right, #1a8170, #057562);
 }
 
-#learn-more{
+#learn-more {
     font-family: var(--font-family-reddit);
 }
 
@@ -162,5 +164,24 @@
         width: 500px;
         border-top-right-radius: 0;
         border-bottom-left-radius: 8px;
+    }
+}
+
+@media screen and (min-width:1130px) {
+
+    .infoholder-text{
+        height: 100%;
+        display: flex;
+        padding: 30px 60px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .infoholder-text h1{
+        font-size: 30px;
+    }
+
+    .description{
+        font-size: 20px !important;
     }
 }
