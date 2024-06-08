@@ -40,7 +40,7 @@
     top: -10px;
     z-index: 1;
     height: 2px;
-    width: 1600px;
+    width: 100vw;
     margin: 50px 0;
     max-width: 1600px;
     position: absolute;
@@ -94,14 +94,16 @@
 
 footer {
     height: 100%;
-    margin: 0 auto ;
+    margin: 0 auto;
+    width: 100vw;
     max-width: 1600px;
+    padding: 20px 0 40px 0 !important;
     position: relative;
     place-content: center;
     background-color: #DBDBDB;
 }
 
-footer::before{
+footer::before {
     top: 0;
     right: 0;
     z-index: -1;
@@ -111,6 +113,7 @@ footer::before{
     position: absolute;
     background-color: #DBDBDB;
 }
+
 footer::after {
     top: 0;
     left: 0;
@@ -144,22 +147,15 @@ footer::after {
     background-color: var(--main-light-green-color);
 }
 
-@media screen and (min-width:830px) {
-    .containerftr {
-        grid-template-columns: 12em 12em 12em;
+@media screen and (max-width:1130px) {
+    .divgreenline {
+        top: -50px;
     }
-
 }
 
 @media screen and (min-width:1130px) {
-    .containerftr {
-        grid-column-start: 4;
-        grid-template-columns: 15em 15em 15em;
-    }
-
     .divgreenline {
-        margin: 10px 0;
-        margin-bottom: 40px;
+        top: -50px;
     }
 
     .containerftr {

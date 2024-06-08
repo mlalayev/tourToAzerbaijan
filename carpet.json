@@ -1,27 +1,27 @@
 [
     {
-      "image": "./src/assets/goygolgerman.jpg",
-      "title": "First trodasdaslololo slide label",
-      "caption": "Nulla vitae elit libero, a pharetra augue mollis interdum."
+        "image": "./src/assets/goygolgerman.jpg",
+        "title": "First trodasdaslololo slide label",
+        "caption": "Nulla vitae elit libero, a pharetra augue mollis interdum."
     },
     {
-      "image": "./src/assets/kandtasarrufat.jpg",
-      "title": "Second slide label",
-      "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        "image": "./src/assets/kandtasarrufat.jpg",
+        "title": "Second slide label",
+        "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
-      "image": "./src/assets/literaturemuseum.jpg",
-      "title": "Third slide label",
-      "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
+        "image": "./src/assets/literaturemuseum.jpg",
+        "title": "Third slide label",
+        "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
     },
     {
-      "image": "./src/assets/milliincesenetmuzeyi.jpg",
-      "title": "Fourth slide label",
-      "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
+        "image": "./src/assets/milliincesenetmuzeyi.jpg",
+        "title": "Fourth slide label",
+        "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
     },
     {
-      "image": "./src/assets/haydaraliyevcenter.jpg",
-      "title": "Fourth slide label",
-      "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
+        "image": "./src/assets/haydaraliyevcenter.jpg",
+        "title": "Fourth slide label",
+        "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
     }
-  ]
+]
