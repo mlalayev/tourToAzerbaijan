@@ -33,7 +33,7 @@ function whattodo() {
         }
     };
 
-    
+
 
     const handleClickOutside = (ref, setFunction) => (event) => {
         if (ref.current && !ref.current.contains(event.target)) {
@@ -135,21 +135,27 @@ function whattodo() {
                             <div key={index} className='div-holder'>
                                 <div className="infoholder-text">
                                     <h1>{t(`whatToDo.${key}.title`)}</h1>
-                                    <p>{t(`whatToDo.${key}.info`)}</p>
+                                    <p className='description'>{t(`whatToDo.${key}.info`)}</p>
                                     {item.descriptiontwo && <p className='descriptionadd'>{t(`whatToDo.${key}.descriptiontwo`)}</p>}
-                                    <strong className='strong'>{t(`whatToDo.${key}.furtherInfo`)}</strong>
+
+                                    <div className="btnholdertext">
+                                        <strong className='strong'>{t(`whatToDo.${key}.furtherInfo`)}</strong>
+                                        <button className="learn-more" id='learn-more' onClick={() => handleButtonClick(item.path)}>
+                                            <span className="circle" aria-hidden="true">
+                                                <span className="icon arrow"></span>
+                                            </span>
+                                            <span className="button-text" id='button-text'>{t(`whatToDo.${key}.check`)}</span>
+                                        </button>
+                                    </div>
                                 </div>
-                                <button className="learn-more" id='learn-more' onClick={() => handleButtonClick(item.path)}>
-                                    <span className="circle" aria-hidden="true">
-                                        <span className="icon arrow"></span>
-                                    </span>
-                                    <span className="button-text" id='button-text'>{t(`whatToDo.${key}.check`)}</span>
-                                </button>
                             </div>
                         </div>
+
+
+
                     );
                 })}
-            </section>
+            </section >
 
             <SEARCH />
         </div >)
