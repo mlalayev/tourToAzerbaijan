@@ -128,16 +128,16 @@ function destinations() {
                         <div className="div-holder">
                             <div className="infoholder-text">
                                 <h1>{item.title}</h1>
-                                <p>{item.description}</p>
+                                <p className='description'>{item.description}</p>
                                 <p className='descriptionadd'>{item.descriptiontwo}</p>
                                 <strong className='strong'> For further information click the button!</strong>
+                                <button className="learn-more" id='learn-more' onClick={() => handleButtonClick(item.path)}>
+                                    <span className="circle" aria-hidden="true">
+                                        <span className="icon arrow"></span>
+                                    </span>
+                                    <span className="button-text" id='button-text'>Check</span>
+                                </button>
                             </div>
-                            <button className="learn-more" id='learn-more' onClick={() => handleButtonClick(item.path)}>
-                                <span className="circle" aria-hidden="true">
-                                    <span className="icon arrow"></span>
-                                </span>
-                                <span className="button-text" id='button-text'>Check</span>
-                            </button>
                         </div>
                     </div>
                 ))}
