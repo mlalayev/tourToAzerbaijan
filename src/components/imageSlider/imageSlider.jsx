@@ -21,6 +21,23 @@ function ImageSlider({ slides }) {
   };
 
   useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'ArrowRight' || e.key === 'd' ) {
+        handleNextImage();
+      } else if (e.key === 'ArrowLeft' || e.key === 'a' ) {
+        handlePrevImage();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [isSliding]);
+
+  useEffect(() => {
     if (isSliding) {
       const timer = setTimeout(() => {
         setIsSliding(false);

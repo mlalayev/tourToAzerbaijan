@@ -29,9 +29,9 @@ function footer() {
             <div className="greencircle" onClick={scrollToTop}>
                 <LuArrowUpCircle size={60} strokeWidth={1} color='white' />
             </div>
-            <div className="holder">
+            {/* <div className="holder"> */}
                 <div className="divgreenline"></div>
-            </div>
+            {/* </div> */}
             <div className="containerftr">
                 <div className="cardfooter shadowfooter">
                     <img src={logo} alt="logo" className="logofooter" />

@@ -21,6 +21,7 @@ import { I18nextProvider } from 'react-i18next';
 import i18n from './components/i18n/i18n.jsx';
 import MUSEUM from './whatToDo/Museums/Museums.jsx';
 import ARCHITECTURE from './whatToDo/Architecture/architecture.jsx';
+import CARPET from './whatToDo/Carpet/Carpet.jsx';
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -108,11 +109,15 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/museums'
-            element={<MUSEUM/>}
+            element={<MUSEUM />}
           />
-         
+
+          <Route path='/carpets'
+            element={<CARPET />}
+          />
+
           <Route path='/architecture'
-            element={<ARCHITECTURE/>}
+            element={<ARCHITECTURE />}
           />
 
           <Route path="/mltdytrs"
