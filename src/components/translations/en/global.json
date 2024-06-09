@@ -95,12 +95,6 @@
         "selectPackage": "Select one of our tailor-made packages and get prepared for your Russian adventure! You do not need to worry about accommodation, airport transfers, museum tickets, transportation between the cities, tour guides — we will take care of it for you.",
         "toursToBaku": "Tours to Baku and its sights",
         "bakuBoulevard": "Baku Boulevard",
-        "weekendInQabala": "Weekend in Qabala from Upon request",
-        "weekendInLerik": "Weekend in Lerik from Upon request",
-        "weekendInLankaran": "Weekend in Lankaran from Upon request",
-        "weekendInQuba": "Weekend in Quba from Upon request",
-        "weekendInShusha": "Weekend in Shusha from Upon request",
-        "view": "View me",
         "sliderProps": {
             "sliderdos": {
                 "huno": "Baku Boulevard",
@@ -152,7 +146,7 @@
                 "btn": "View"
             },
             "ganimetpark": {
-                "huno": "Military Trophies Park in Baku",
+                "huno": "Military Trophies Park",
                 "p": "Extensive collection of captured military equipment and artifacts, providing a stark and...",
                 "btn": "View"
             },
@@ -249,8 +243,7 @@
     "citiesSlider": {
         "Baku": {
             "name": "Baku",
-            "info": "Baku, the capital and largest city of Azerbaijan, is a vibrant metropolis blending ancient heritage and modernity. Our tours of Baku offer an insightful journey through its most captivating landmarks and unique sites. From the historical charm of the Old City (Icherisheher) to the futuristic Flame Towers, our knowledgeable guides will share intriguing stories and give you a glimpse into the dynamic life and rich culture of contemporary Baku residents. Discover the enchanting blend of East and West that defines this fascinating city.",
-            "path": "/baku"
+            "info": "Baku, the capital and largest city of Azerbaijan, is a vibrant metropolis blending ancient heritage and modernity. Our tours of Baku offer an insightful journey through its most captivating landmarks and unique sites. From the historical charm of the Old City (Icherisheher) to the futuristic Flame Towers, our knowledgeable guides will share intriguing stories and give you a glimpse into the dynamic life and rich culture of contemporary Baku residents. Discover the enchanting blend of East and West that defines this fascinating city."
         },
         "Gabala": {
             "name": "Gabala",

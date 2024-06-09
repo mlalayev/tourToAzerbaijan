@@ -95,7 +95,6 @@
         "selectPackage": "Xüsusi ilə hazırladığımız turlardan birini seçin və Azərbaycan macəranız üçün hazırlaşın! Qonalamaq, hava limanı transferləri, muzey biletləri, şəhərlər arası nəqliyyat, tur rəhbərləri ilə məşğul olmaq istəmirsinizsə, buna görə narahat olmamalısınız - bunu sizin üçün həll edəcəyik.",
         "toursToBaku": "Bakı və onun görməli yerlərinə Səyahət",
         "bakuBoulevard": "Bakı da da daBulvarı",
-        "view": "Keçid",
         "sliderProps": {
             "sliderdos": {
                 "huno": "Bakı Bulvarı",
@@ -147,7 +146,7 @@
                 "btn": "Keçid"
             },
             "ganimetpark": {
-                "huno": "Bakıda Hərbi Qənimətlər Parkı",
+                "huno": "Hərbi Qənimətlər Parkı",
                 "p": "Yararsız hərbi texnikanın və silahların geniş kolleksiyası, qeyri-adi və...",
                 "btn": "Keçid"
             },
