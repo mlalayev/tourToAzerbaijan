@@ -8,7 +8,7 @@ import HEADER from '../components/header/header.jsx';
 import WAPI from '../components/weatherapi/weatherapi.jsx';
 import React, { useState, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
-
+import SEARCH from '../components/search/search.jsx'
 
 function destinations() {
 
@@ -152,6 +152,10 @@ function destinations() {
                     );
                 })}
             </section>
+        
+            <SEARCH />
+
+
         </div>
     )
 }

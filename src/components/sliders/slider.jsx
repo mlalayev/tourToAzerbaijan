@@ -8,13 +8,12 @@ function slider(props) {
             <div className="txtprtscndsc">
                 <h1 className='propshuno'>{props.huno}</h1>
                 <p className='propsp'>{props.p}</p>
-                {/* <button className='propsbtn'>{props.btn} <FaArrowRightLong /> </button> */}
 
                 <button className="learn-more" id='learn-more'>
                     <span className="circle" aria-hidden="true">
                         <span className="icon arrow"></span>
                     </span>
-                    <span className="button-text" id='button-text'>Check</span>
+                    <span className="button-text" id='button-text'>{props.btn}</span>
                 </button>
 
             </div>

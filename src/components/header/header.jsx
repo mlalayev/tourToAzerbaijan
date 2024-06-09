@@ -11,6 +11,8 @@ import ru from '../../assets/ru.svg'
 import de from '../../assets/de.svg'
 
 function Header() {
+
+
     const { t, i18n } = useTranslation();
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,24 +27,12 @@ function Header() {
     };
 
     useEffect(() => {
-        const handleClickOutside = (event) => {
-            const langButton = document.querySelector('.lang');
-            const langMenu = document.querySelector('.language-menu');
-            const hamdiv = document.querySelector('.hamdiv');
-
-            if (langButton && langMenu && !langButton.contains(event.target) && !langMenu.contains(event.target)) {
-                setLangMenuOpen(false);
-            }
-            if (hamdiv && !hamdiv.contains(event.target)) {
-                setIsMenuOpen(false);
-            }
-        };
-
-        document.addEventListener('click', handleClickOutside);
-        return () => {
-            document.removeEventListener('click', handleClickOutside);
-        };
-    }, []);
+        const body = document.body;
+        const selectedLanguage = i18n.language; // Get the selected language from i18n
+        if (selectedLanguage === 'ru') {
+            body.style.fontFamily = "Arial-RU";
+        }
+    }, [i18n.language]); // Run this effect whenever the language changes
 
     const changeLanguage = (lng) => {
         i18n.changeLanguage(lng);

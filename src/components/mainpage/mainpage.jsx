@@ -239,7 +239,7 @@ function mainpage() {
                                     <span className="circle" aria-hidden="true">
                                         <span className="icon arrow"></span>
                                     </span>
-                                    <span className="button-text" id='button-text'>Check</span>
+                                    <span className="button-text" id='button-text'>{t('sectionthird.viewMe')}</span>
                                 </button>
                             </div>
                         </div>
@@ -343,8 +343,8 @@ function mainpage() {
                         <div className="rcmndtrst">
                             {t('sectionsixth.testimonials', { returnObjects: true }).map((testimonial, index) => (
                                 <div key={index} className={`trst${index + 1}`}>
-                                <div className="horizontalwhite"></div>
-                                {/* <div className="verticalwhite"></div> */}
+                                    <div className="horizontalwhite"></div>
+                                    {/* <div className="verticalwhite"></div> */}
                                     <p>{testimonial.name}</p>
                                     <div className="strs">
                                         <p>{testimonial.date}</p>

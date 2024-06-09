@@ -1,6 +1,6 @@
 import '../whatToDo/whatToDo.css';
 import cityData from '../../cities.json';
-import momuna from '../assets/mominakhatun.png';
+import cuisine from '../assets/cuisine.png';
 import { RiArrowDownSLine } from "react-icons/ri";
 import { FaArrowRightLong } from "react-icons/fa6";
 import HEADER from '../components/header/header.jsx';
@@ -69,15 +69,15 @@ function whattodo() {
                     <div className="text-part">
 
                         <div className="text-part-ra">
-                            <h1 className='text-part-firsth'>Where do you want
+                            <h1 className='text-part-firsth'>What do you want
                             </h1>
-                            <h1 className='text-part-secondh'>to go<span className='yellow'>?</span></h1>
+                            <h1 className='text-part-secondh'>to do<span className='yellow'>?</span></h1>
 
-                            <p className='text-partp'>Here you can book a tour to Baku, Gabala, Sheki, and other amazing cities and regions of Azerbaijan.</p>
+                            <p className='text-partp'>Here you can check what to do or where to visit, starting from delicious cuisine of Azerbaijan, to snowboarding on Shahdag resort.</p>
                         </div>
 
                         <div className="main-pic-parttwo">
-                            <img src={momuna} className='main-momuna' />
+                            <img src={cuisine} className='main-snowboard' />
                         </div>
                     </div>
                 </div>
