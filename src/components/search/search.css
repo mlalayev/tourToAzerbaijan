@@ -26,25 +26,14 @@
 }
 
 .input-row div {
+    gap: 5px;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
 .input-row h2 {
     font-size: 12px;
-}
-
-.input-row:last-child {
-    border-bottom: 0;
-}
-
-.title {
-    margin-right: var(--space-8);
-}
-
-.label {
-    margin-bottom: var(--space-1);
-    font-weight: bold;
 }
 
 .description {
@@ -53,8 +42,8 @@
 
 .input {
     display: flex;
-    margin-left: auto;
     align-items: center;
+    padding: 0 !important;
 }
 
 .ccontainer button {
@@ -421,7 +410,7 @@ input[type='radio'] {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content:  center;
+    justify-content: center;
 }
 
 .flex {
@@ -707,7 +696,7 @@ input[type='radio'] {
         max-width: 600px;
     }
 
-    .aradio-inputs{
+    .aradio-inputs {
         width: 90%;
     }
 
@@ -879,6 +868,7 @@ input[type='radio'] {
         align-self: center !important;
         justify-self: center !important;
     }
+
     .form-group-three {
         display: flex;
         justify-content: space-between;

@@ -17,46 +17,46 @@
     {
         "imgSrc": "./src/assets/whattodofour.jpg",
         "isRecommended": false,
-        "path": "/guba"
+        "path": "/unescoheritage"
     },
     {
         "imgSrc": "./src/assets/whattodofive.jpg",
         "isRecommended": true,
-        "path": "/shaki"
+        "path": "/religious"
     },
     {
         "imgSrc": "./src/assets/whattodosix.jpg",
         "isRecommended": true,
-        "path": "/ganja"
+        "path": "/park"
     },
     {
         "imgSrc": "./src/assets/whattodoseven.jpg",
         "isRecommended": false,
-        "path": "/gusar"
+        "path": "/hiking"
     },
     {
         "imgSrc": "./src/assets/whattodoeight.jpg",
         "isRecommended": true,
-        "path": "/ismailly"
+        "path": "/sportandentertaiment"
     },
     {
         "imgSrc": "./src/assets/whattodonine.webp",
         "isRecommended": false,
-        "path": "/khizi"
+        "path": "/cuisine"
     },
     {
         "imgSrc": "./src/assets/whattodoten.jpg",
         "isRecommended": true,
-        "path": "/lerik"
+        "path": "/wineries"
     },
     {
         "imgSrc": "./src/assets/whattodoeleven.jpg",
         "isRecommended": true,
-        "path": "/lerik"
+        "path": "/waterfall"
     },
     {
         "imgSrc": "./src/assets/whattodotwelve.jpg",
         "isRecommended": true,
-        "path": "/lerik"
+        "path": "/bazaars"
     }
 ]
