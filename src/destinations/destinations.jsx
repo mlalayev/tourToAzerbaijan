@@ -7,10 +7,13 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import HEADER from '../components/header/header.jsx';
 import WAPI from '../components/weatherapi/weatherapi.jsx';
 import React, { useState, useEffect, useRef } from 'react';
-
+import { useTranslation } from 'react-i18next';
 
 
 function destinations() {
+
+    const { t } = useTranslation();
+
     const dropdownRefUp = useRef(null);
     const [cityLi, setCityLi] = useState('Choose City');
     const [destinations, setDestinations] = useState([]);
@@ -107,43 +110,47 @@ function destinations() {
             <WAPI />
 
             <section className="section-info">
-                {destinations.map((item, index) => (
-                    <div key={index} className='infoholder'>
-                        <div className="infoholder-img">
-                            {item.isRecommended && (
-                                <button className="custom-button">
-                                    <span className="custom-button-text">Recommended</span>
-                                    <div className="tooltip-container">
-                                        <div className="tooltip-content">
-                                            <div className="tooltip-box">
-                                                <p>This city is recommended by the author!</p>
+                {Object.keys(destinations).map((key, index) => {
+                    const item = destinations[key];
+                    return (
+                        <div key={index} className='infoholder'>
+                            <div className="infoholder-img">
+                                {item.isRecommended && (
+                                    <button className="custom-button">
+                                        <span className="custom-button-text">{t('destinations.recommended')}</span>
+                                        <div className="tooltip-container">
+                                            <div className="tooltip-content">
+                                                <div className="tooltip-box">
+                                                    <p>{t('destinations.recommendedTooltip')}</p>
+                                                </div>
+                                                <div className="tooltip-arrow"></div>
                                             </div>
-                                            <div className="tooltip-arrow"></div>
                                         </div>
-                                    </div>
-                                </button>
-                            )}
-                            <img src={item.imgSrc} alt={item.title} className='infoholder-image' />
-                        </div>
-                        <div className="div-holder">
-                            <div className="infoholder-text">
-                                <h1>{item.title}</h1>
-                                <p className='description'>{item.description}</p>
-                                <p className='descriptionadd'>{item.descriptiontwo}</p>
-
-                                <div className="btnholdertext">
-                                    <strong className='strong'> For further information click the button!</strong>
-                                    <button className="learn-more" id='learn-more' onClick={() => handleButtonClick(item.path)}>
-                                        <span className="circle" aria-hidden="true">
-                                            <span className="icon arrow"></span>
-                                        </span>
-                                        <span className="button-text" id='button-text'>Check</span>
                                     </button>
+                                )}
+                                <img src={item.imgSrc} alt={item.title} className='infoholder-image' />
+                            </div>
+                            <div className="div-holder">
+                                <div className="infoholder-text">
+                                    <div className="p-text-holder">
+                                        <h1>{t(`destinations.${key}.title`)}</h1>
+                                        <p className='description'>{t(`destinations.${key}.info`)}</p>
+                                        <p className='descriptionadd'>{t(`destinations.${key}.descriptiontwo`)}</p>
+                                    </div>
+                                    <div className="btnholdertext">
+                                        <strong className='strong'>{t(`destinations.${key}.furtherInfo`)}</strong>
+                                        <button className="learn-more" id='learn-more' onClick={() => handleButtonClick(item.path)}>
+                                            <span className="circle" aria-hidden="true">
+                                                <span className="icon arrow"></span>
+                                            </span>
+                                            <span className="button-text" id='button-text'>{t(`destinations.${key}.check`)}</span>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                ))}
+                    );
+                })}
             </section>
         </div>
     )

@@ -134,10 +134,11 @@ function whattodo() {
                             </div>
                             <div key={index} className='div-holder'>
                                 <div className="infoholder-text">
-                                    <h1>{t(`whatToDo.${key}.title`)}</h1>
-                                    <p className='description'>{t(`whatToDo.${key}.info`)}</p>
-                                    {item.descriptiontwo && <p className='descriptionadd'>{t(`whatToDo.${key}.descriptiontwo`)}</p>}
-
+                                    <div className="p-text-holder">
+                                        <h1>{t(`whatToDo.${key}.title`)}</h1>
+                                        <p className='description'>{t(`whatToDo.${key}.info`)}</p>
+                                        <p className='descriptionadd'>{t(`whatToDo.${key}.descriptiontwo`)}</p>
+                                    </div>
                                     <div className="btnholdertext">
                                         <strong className='strong'>{t(`whatToDo.${key}.furtherInfo`)}</strong>
                                         <button className="learn-more" id='learn-more' onClick={() => handleButtonClick(item.path)}>

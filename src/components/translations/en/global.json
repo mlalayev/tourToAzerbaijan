@@ -322,46 +322,163 @@
     },
     "whatToDo": {
         "0": {
-            "title": "Museum",
-            "furtherInfo": "For Further information click the button",
-            "info": "Azerbaijani museums offer a rich glimpse into the country's diverse cultural heritage and history. The Azerbaijan National Museum of History in Baku houses extensive archaeological and ethnographic collections, providing insights into the region's past. The Azerbaijan Carpet Museum, also in Baku, showcases an impressive array of traditional Azerbaijani carpets, highlighting the intricate craftsmanship and artistry of this age-old tradition. ",
+            "title": "Museums",
+            "furtherInfo": "For Further information click the button ↓",
+            "info": "Azerbaijani museums offer a rich glimpse into the country's diverse cultural heritage and history. The Azerbaijan National Museum of History in Baku houses extensive archaeological and ethnographic collections, providing insights into the region's past. ",
             "descriptiontwo": "Additionally, the Heydar Aliyev Center, designed by renowned architect Zaha Hadid, serves as a cultural hub with rotating exhibitions and a focus on contemporary art and innovation.",
             "check": "Check"
         },
         "1": {
             "title": "Architecture",
-            "description": "Explore the breathtaking landscapes of Azerbaijan on foot. Hike through the scenic mountains",
-            "check": "Check"
+            "info": "Azerbaijan architecture uniquely blends ancient Persian, Islamic, and Soviet influences, creating a rich tapestry of styles. The medieval city of Baku, with its stunning Flame Towers and the historic Maiden Tower, showcases this eclectic mix.",
+            "furtherInfo": "For Further information click the button ↓",
+            "check": "Check",
+            "descriptiontwo": " Contemporary developments, such as the Heydar Aliyev Center designed by Zaha Hadid, highlight the country's embrace of modern, fluid design."
         },
         "2": {
-            "title": "carpet",
-            "description": "Explore the breathtaking landscapes of Azerbaijan on foot. Hike through the scenic mountains",
-            "check": "Check"
+            "title": "Carpets",
+            "info": "Azerbaijan carpets are renowned for their intricate patterns and vibrant colors, reflecting centuries-old weaving traditions. Each region, such as Karabakh, Ganja, and Shirvan, boasts its own distinctive designs and motifs, often inspired by nature and local folklore.",
+            "furtherInfo": "For Further information click the button ↓",
+            "check": "Check",
+            "descriptiontwo": " These handwoven masterpieces, celebrated for their craftsmanship and durability, hold a significant cultural and historical value in Azerbaijani heritage."
         },
         "3": {
-            "title": "khinalig",
-            "description": "Explore the breathtaking landscapes of Azerbaijan on foot. Hike through the scenic mountains",
-            "check": "Check"
+            "title": "khinalig UNESCO's Heritage",
+            "info": "Azerbaijan boasts several UNESCO World Heritage sites that highlight its rich cultural and historical heritage. The Walled City of Baku, along with the Shirvanshah's Palace and Maiden Tower, exemplifies medieval architecture and urban planning. ",
+            "furtherInfo": "For Further information click the button ↓",
+            "check": "Check",
+            "descriptiontwo": "Additionally, the Gobustan Rock Art Cultural Landscape features ancient carvings and inscriptions that provide a fascinating glimpse into prehistoric life in the region."
         },
         "4": {
-            "title": "religious",
-            "description": "Explore the breathtaking landscapes of Azerbaijan on foot. Hike through the scenic mountains",
-            "check": "Check"
+            "title": "Religious",
+            "info": "Azerbaijan's religious buildings reflect its diverse cultural and historical influences, showcasing a blend of Islamic and pre-Islamic architectural styles. The Bibi-Heybat Mosque, with its stunning modern reconstruction, stands as a significant spiritual and architectural landmark. ",
+            "furtherInfo": "For Further information click the button ↓",
+            "check": "Check",
+            "descriptiontwo": "Meanwhile, the Fire Temple of Ateshgah, a testament to the country's ancient Zoroastrian heritage, highlights Azerbaijan's role as a historical crossroads of various religious traditions."
         },
         "5": {
-            "title": "Park",
-            "description": "Explore the breathtaking landscapes of Azerbaijan on foot. Hike through the scenic mountains",
-            "check": "Check"
+            "title": "Parks",
+            "info": "Azerbaijan's parks offer a blend of natural beauty and recreational facilities, serving as green oases in urban landscapes. The Seaside Boulevard in Baku, one of the longest promenades in the world, provides picturesque views of the Caspian Sea along with entertainment and leisure activities.",
+            "furtherInfo": "For Further information click the button ↓",
+            "check": "Check",
+            "descriptiontwo": " Gobustan National Park, a UNESCO World Heritage site, not only features stunning landscapes but also ancient rock carvings and mud volcanoes, making it a fascinating destination for nature and history enthusiasts alike."
         },
         "6": {
-            "title": "hiking",
-            "description": "Explore the breathtaking landscapes of Azerbaijan on foot. Hike through the scenic mountains",
-            "check": "Check"
+            "title": "Hiking in Azerbaijan",
+            "info": "Hiking in Azerbaijan provides an opportunity to explore diverse landscapes, from the lush forests of the Caucasus Mountains to the semi-desert regions. The Greater Caucasus range offers trails with breathtaking views, such as those found in Shahdag National Park, where hikers can encounter picturesque valleys, waterfalls, and alpine meadows.",
+            "furtherInfo": "For Further information click the button ↓",
+            "check": "Check",
+            "descriptiontwo": " Additionally, the trails around the village of Lahij offer a cultural journey through ancient cobblestone streets and traditional crafts, making for a rich and varied hiking experience."
         },
         "7": {
+            "title": "Sports and entertainment",
+            "info": "Sports and entertainment in Azerbaijan are vibrant and diverse, reflecting the country's passion for both traditional and modern activities. Baku, the capital, hosts international events such as the Formula 1 Azerbaijan Grand Prix and the UEFA Europa League. Traditional sports like wrestling and horseback riding remain popular, while contemporary entertainment options include the Flame Towers' light shows, opera, ballet performances at the Azerbaijan State Academic Opera and Ballet Theater, and a bustling nightlife scene in Baku's trendy neighborhoods.",
+            "furtherInfo": "For Further information click the button ↓",
+            "check": "Check",
+            "descriptiontwo": ""
+        },
+        "8": {
+            "title": "Cuisine",
+            "info": "Azerbaijani cuisine is a rich tapestry of flavors, reflecting its diverse cultural influences and abundant local produce. Signature dishes include plov, a fragrant rice dish often cooked with saffron, meat, and dried fruits, and dolma, grape leaves stuffed with minced meat and rice. The cuisine also features an array of kebabs, fresh salads, and sweets like pakhlava and shekerbura, often enjoyed with aromatic Azerbaijani tea.",
+            "furtherInfo": "For Further information click the button ↓",
+            "check": "Check",
+            "descriptiontwo": ""
+        },
+        "9": {
+            "title": "Wineries",
+            "info": "Azerbaijan's wineries are an integral part of its rich viticultural heritage, with a history of winemaking that dates back thousands of years. The country's diverse climate and fertile soils, particularly in regions like Ganja, Shamakhi, and Gabala, produce a variety of high-quality grapes. Notable wineries such as Az-Granata and Savalan offer tours and tastings, allowing visitors to experience the unique flavors of Azerbaijani wines, from robust reds to crisp whites, and learn about the traditional and modern techniques used in their production.",
+            "furtherInfo": "For Further information click the button ↓",
+            "check": "Check",
+            "descriptiontwo": ""
+        },
+        "10": {
+            "title": "Waterfalls",
+            "info": "Azerbaijan is home to several stunning waterfalls, each offering unique natural beauty and a tranquil escape. The Afurja Waterfall in the Quba district, one of the country's most famous, cascades dramatically from a height of about 70 meters.",
+            "furtherInfo": "For Further information click the button ↓",
+            "check": "Check",
+            "descriptiontwo": " The Laza Waterfalls, located in the Gusar region, provide a picturesque setting in the Greater Caucasus Mountains, surrounded by lush greenery and rocky cliffs, making them a popular destination for hikers and nature lovers."
+        },
+        "11": {
             "title": "Architecture",
-            "description": "Explore the breathtaking landscapes of Azerbaijan on foot. Hike through the scenic mountains",
-            "check": "Check"
+            "info": "Azerbaijan's bazaars are vibrant hubs of activity, offering a sensory feast of sights, sounds, and aromas. The Taza Bazaar in Baku, one of the oldest markets in the city, showcases a dazzling array of fresh fruits, vegetables, spices, and local delicacies. Visitors can also explore the Nizami Street market, known for its eclectic mix of traditional crafts, souvenirs, and street food, providing an authentic glimpse into Azerbaijani culture and commerce.",
+            "furtherInfo": "For Further information click the button ↓",
+            "check": "Check",
+            "descriptiontwo": ""
+        },
+        "recommended": "Recommended",
+        "recommendedTooltip": "This city is recommended by the author!",
+        "check": "Check"
+    },
+    "destinations": {
+        "0": {
+            "title": "Baku",
+            "info": "Baku, the capital of Azerbaijan, is the historic center of Baku, a UNESCO World Heritage site. Wander through the charming old city, visit the iconic Flame Towers, and enjoy the vibrant nightlife along the Caspian Sea coast.",
+            "descriptiontwo": "Discover the architectural marvel of the Heydar Aliyev Center and immerse yourself in the rich cultural heritage at the Azerbaijan Carpet Museum. Stroll along the scenic Baku Boulevard and savor traditional Azerbaijani cuisine at the city's diverse restaurants.",
+            "check": "Check",
+            "furtherInfo": "For Further information click the button ↓"
+        },
+        "1": {
+            "title": "Lankaran",
+            "info": "Discover Lankaran's beautiful beaches and rich history, including its stunning Lankaran Fortress. Enjoy the lush tea plantations and the unique subtropical climate that makes this city a perfect getaway. ",
+            "descriptiontwo": "Explore the coastal charm and immerse yourself in the vibrant culture of Lankaran. Experience the warm hospitality of the locals and indulge in delicious local cuisine. Relax and unwind amidst the natural beauty of this coastal gem.",
+            "check": "Check",
+            "furtherInfo": "For Further information click the button ↓"
+        },
+        "2": {
+            "title": "Shamakhy",
+            "info": "Visit the ancient city of Shamakhy, known for its historical mosques and beautiful landscapes. Explore the Diri Baba Mausoleum and enjoy the breathtaking views of the surrounding mountains.",
+            "descriptiontwo": " Immerse yourself in the rich history and culture of this enchanting city, where every corner tells a story. Experience the tranquility of the countryside and marvel at the architectural wonders of Shamakhy's past. Don't miss the opportunity to discover the hidden treasures and ancient traditions of this historic gem.",
+            "check": "Check",
+            "furtherInfo": "For Further information click the button ↓"
+        },
+        "3": {
+            "title": "Guba",
+            "info": "A beautiful waterfall located in the village of Afurdzhi. Enjoy the scenic hike to the waterfall and the refreshing atmosphere created by the cascading waters.",
+            "descriptiontwo": "After relishing the scenic hike to the waterfall, immerse yourself in the refreshing atmosphere created by the cascading waters.Whether you're seeking adventure or simply a peaceful retreat, a visit to this beautiful waterfall promises an unforgettable experience that will leave you rejuvenated and inspired.",
+            "check": "Check",
+            "furtherInfo": "For Further information click the button ↓"
+        },
+        "4": {
+            "title": "Shaki",
+            "info": "A picturesque forest perfect for nature walks and picnics. Immerse yourself in the serene environment and discover the diverse flora and fauna that make this forest a natural haven.",
+            "descriptiontwo": "Engage your senses as you meander along winding trails, inhaling the fresh scent of pine and listening to the soothing melodies of chirping birds.Experience a true escape from the hustle and bustle of daily life as you immerse yourself in the serene beauty of this woodland oasis.",
+            "check": "Check",
+            "furtherInfo": "For Further information click the button ↓"
+        },
+        "5": {
+            "title": "Ganja",
+            "info": "A historic palace known for its beautiful stained glass windows and intricate architecture. Delve into the rich history of Sheki and admire the craftsmanship that makes this palace a national treasure.",
+            "descriptiontwo": "Wander through its grand halls and marvel at the exquisite detailing that reflects the opulence of a bygone era.Each room tells a story, showcasing the artistry and skill of the craftsmen who built this architectural masterpiece.",
+            "check": "Check",
+            "furtherInfo": "For Further information click the button ↓"
+        },
+        "6": {
+            "title": "Gusar",
+            "info": "A picturesque forest perfect for nature walks and picnics. The tranquility of the forest provides a perfect escape from the hustle and bustle of city life, making it an ideal spot for relaxation.",
+            "descriptiontwo": "As you stroll through the winding trails, you'll encounter a diverse array of flora and fauna, adding to the forest's enchanting appeal. Whether you're an avid nature enthusiast or simply looking for a peaceful retreat, this forest offers a rejuvenating experience for all visitors.",
+            "check": "Check",
+            "furtherInfo": "For Further information click the button ↓"
+        },
+        "7": {
+            "title": "Ismailly",
+            "info": "A biodiversity hotspot with unique flora and fauna, great for hiking and wildlife watching. Explore the dense forests, enjoy bird watching, and experience the natural beauty of this protected area.",
+            "descriptiontwo": "Tread along scenic trails that wind through verdant landscapes, offering breathtaking views at every turn. This protected area is a haven for nature lovers, providing a serene escape into the heart of unspoiled wilderness.",
+            "check": "Check",
+            "furtherInfo": "For Further information click the button ↓"
+        },
+        "8": {
+            "title": "Khizi",
+            "info": "Visit the historic Yeddi Gumbaz Mausoleum, known for its seven ancient tombs and serene surroundings. Learn about the history of the Shirvan dynasty and enjoy the peaceful ambiance of this historical site.",
+            "descriptiontwo": "Marvel at the architectural beauty and intricate carvings that adorn each tomb, reflecting the artistry of a bygone era. As you wander through the site, you'll gain a deeper understanding of the Shirvan dynasty's legacy and the cultural significance of this timeless monument.",
+            "check": "Check",
+            "furtherInfo": "For Further information click the button ↓"
+        },
+        "9": {
+            "title": "Lerik",
+            "info": "Lerik is renowned for the longevity of its inhabitants and its stunning mountainous landscapes. Experience the fresh mountain air, explore the picturesque villages, and discover the cultural heritage of this unique region.",
+            "descriptiontwo": "Hike through the lush, green valleys and enjoy panoramic views that stretch as far as the eye can see. Engage with the warm and welcoming locals, and immerse yourself in the traditional customs and vibrant folklore of Lerik.",
+            "check": "Check",
+            "furtherInfo": "For Further information click the button ↓"
         },
         "recommended": "Recommended",
         "recommendedTooltip": "This city is recommended by the author!",
