@@ -60,10 +60,10 @@ function Header() {
                         </button>
                         {langMenuOpen && (
                             <ul className="language-menu">
-                                <li onClick={() => changeLanguage('en')}><img src={gb} className='flag' /> English</li>
-                                <li onClick={() => changeLanguage('az')}><img src={az} className='flag' />Azərbaycan</li>
-                                <li onClick={() => changeLanguage('ru')}><img src={ru} className='flag' /> Русский</li>
-                                <li onClick={() => changeLanguage('ge')}><img src={de} className='flag' /> German</li>
+                                <li onClick={() => changeLanguage('en')}><img src={gb} className='flag'alt='flag' /> English</li>
+                                <li onClick={() => changeLanguage('az')}><img src={az} className='flag'alt='flag' />Azərbaycan</li>
+                                <li onClick={() => changeLanguage('ru')}><img src={ru} className='flag'alt='flag' /> Русский</li>
+                                <li onClick={() => changeLanguage('ge')}><img src={de} className='flag'alt='flag' /> German</li>
                             </ul>
                         )}
                     </div>
