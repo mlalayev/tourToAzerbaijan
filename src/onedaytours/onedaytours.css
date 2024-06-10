@@ -2,22 +2,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid red; */
 }
 
 .upper-part {
-    max-width: 100vw;
     height: 700px;
     overflow: hidden;
+    max-width: 100vw;
     position: relative;
     background-color: var(--main-light-green-color);
 }
 
 .text-part {
     width: 100vw;
+    padding: 0px;
     height: 540px;
     display: flex;
-    padding: 0px;
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
@@ -34,8 +33,8 @@
 }
 
 .text-part-ra h1 {
-    font-size: 32px;
     width: 100%;
+    font-size: 32px;
 }
 
 .text-part-ra p {
@@ -83,8 +82,8 @@
     width: 92vw;
     display: flex;
     max-width: 1600px;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 .city-choose {
@@ -97,16 +96,16 @@
 }
 
 .left-button {
+    margin: 0;
+    padding: 0;
     display: flex;
     align-items: center;
-    padding: 0;
-    margin: 0;
 }
 
 .left-button div {
-    padding: 0 20px;
-    width: 90vw;
     margin: 0;
+    width: 90vw;
+    padding: 0 20px;
 }
 
 .lftlftbtndrpdwnn {
@@ -128,8 +127,8 @@
 
 .form button {
     border: none;
-    background: none;
     color: #8b8ba7;
+    background: none;
 }
 
 .form {
@@ -139,12 +138,12 @@
     0px 0px 7.5px rgba(0, 0, 0, 0.199),
     0px 0px 25px rgba(0, 0, 0, 0.21);
     --timing: 0.3s;
-    --width-of-input: 90vw;
-    --height-of-input: 40px;
-    --border-height: 2px;
     --input-bg: #fff;
-    --border-color: #2f2ee9;
+    --border-height: 2px;
     --border-radius: 30px;
+    --width-of-input: 90vw;
+    --border-color: #2f2ee9;
+    --height-of-input: 40px;
     --after-border-radius: 1px;
     display: flex;
     margin: 50px 0;
@@ -203,9 +202,9 @@ input:focus {
 }
 
 .reset {
+    opacity: 0;
     border: none;
     background: none;
-    opacity: 0;
     visibility: hidden;
 }
 
@@ -220,11 +219,11 @@ input:not(:placeholder-shown)~.reset {
 }
 
 .sectionsecondonedaytour {
-    margin-top: 20px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-top: 20px;
     max-width: 1600px;
+    align-items: center;
+    flex-direction: column;
 }
 
 .touroneimgdiv {
@@ -251,9 +250,9 @@ input:not(:placeholder-shown)~.reset {
 
 .tourone {
     height: 430px;
+    transition: 0.3s;
     margin-bottom: 30px;
     border-radius: 10px;
-    transition: 0.3s;
     background-color: rgb(235, 235, 235);
     box-shadow:
         1.7px 1.7px 1.2px rgba(0, 0, 0, 0.014),
@@ -369,8 +368,8 @@ input:not(:placeholder-shown)~.reset {
 
     .left-button div {
         width: 82vw;
-        margin-right: 10px;
         max-width: 1100px;
+        margin-right: 10px;
     }
 
     .city-choose {
@@ -392,9 +391,9 @@ input:not(:placeholder-shown)~.reset {
         display: flex;
         margin-top: -40px;
         max-width: 1300px;
-        flex-direction: row;
         padding: 0 0 0 6px;
         align-items: center;
+        flex-direction: row;
         justify-content: space-between;
     }
 

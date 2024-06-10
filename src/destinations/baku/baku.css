@@ -18,18 +18,18 @@
     color: white;
     transition: 0.2s;
     letter-spacing: 2px;
-    background-color: transparent;
     border: 3px solid white;
+    background-color: transparent;
 }
 
 .plogo {
-    -webkit-filter: invert(100%) !important;
     filter: invert(100%) !important;
+    -webkit-filter: invert(100%) !important;
 }
 
 .destbtn:hover {
-    background-color: transparent;
     border: 4px solid white;
+    background-color: transparent;
     box-shadow: 3px 5px 10px rgb(55, 46, 46);
 }
 
