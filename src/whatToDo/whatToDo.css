@@ -18,9 +18,9 @@
 }
 
 .Mard{
-    position: absolute;
     bottom: 0;
     width: 200px;
+    position: absolute;
 }
 
 .rotated {
@@ -75,8 +75,8 @@
 }
 
 #learn-more .circle .icon.arrow::before {
-    content: "";
     top: -4px;
+    content: "";
     width: 0.625rem;
     right: 0.0625rem;
     height: 0.625rem;
@@ -93,7 +93,6 @@
     font-weight: 700;
     line-height: 1.6;
     padding: 0.75rem 0;
-    /* margin: 0px 0 1px 1rem !important; */
     text-transform: uppercase;
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
 }
@@ -129,14 +128,14 @@
     justify-content: center;
     height: max(30vh, 400px);
     background-color: #2f8a7b;
-}
+}   
 
 .main-snowboard {
-    min-width: 400px;
+    margin: auto;
     bottom: -40px;
     height: 400px;
-    margin: auto;
     display: flex;
+    min-width: 400px;
     position: absolute;
     align-items: center;
     justify-content: center;
@@ -155,8 +154,8 @@
 
 @media screen and (min-width:830px) {
     .main-snowboard {
-        bottom: -20px;
         width: 250px;
+        bottom: -20px;
     }
     .main-momuna {
         bottom: 20px;
@@ -173,15 +172,15 @@
 
 @media screen and (min-width:1130px) {
     .main-snowboard {
+        bottom: 20px;
         width: 250px;
         height: 400px;
-        bottom: 20px;
     }
 
     .main-momuna {
         width: 250px;
-        height: 400px;
         bottom: 80px;
+        height: 400px;
     }
 
     .main-pic-parttwo {

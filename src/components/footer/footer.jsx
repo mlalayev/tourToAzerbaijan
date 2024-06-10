@@ -35,7 +35,7 @@ function footer() {
             <div className="containerftr">
 
                 <div className="cardfooter shadowfooter">
-                    <img src={logo} alt="logo" className="logofooter" />
+                    <img src={logo} alt="logo" className="logofooter" loading='lazy' />
                     <p>{t('footer.discover')}</p>
                     <div className="socialfooter">
                         <a className="socialContainer containerOnefooter" href="#">
@@ -93,12 +93,12 @@ function footer() {
                         <LuPhoneCall size={20} /> <h1>{t('footer.phone')}</h1>
                     </div>
                     <div className="txtholder">
-                        <IoLocationOutline size={20} /> <h1>{t('footer.location')} <img src={az} alt="" className='flag' /></h1>
+                        <IoLocationOutline size={20} /> <h1>{t('footer.location')} <img src={az} alt="flag" className='flag' loading='lazy'/></h1>
                     </div>
                 </div>
 
                 <div className="footerrightpart">
-                    <img src={karabakh} alt="" className='ftrpc' />
+                    <img src={karabakh} alt="Karabakh is Azerbaijan!" className='ftrpc' loading='lazy'/>
                     <div className="copyrighttext">
                         <h1>{t('footer.copyright')}</h1>
                     </div>
