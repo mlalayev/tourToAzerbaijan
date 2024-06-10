@@ -83,7 +83,6 @@
 }
 
 .custom-button:hover {
-    /* transition: 1s; */
     color: #ffffff;
     background: linear-gradient(to bottom right, #1a8170, #057562);
 }
@@ -149,9 +148,9 @@
 
 @media screen and (min-width:930px) {
     .infoholder {
-        min-height: 350px;
         display: flex;
         min-width: 90vw;
+        min-height: 350px;
     }
 
     .infoholder-text {
@@ -181,9 +180,9 @@
 @media screen and (min-width:1130px) {
 
     .infoholder-text {
-        min-height: 250px;
         height: 100%;
         display: flex;
+        min-height: 250px;
         padding: 40px 20px;
         flex-direction: column;
         justify-content: space-between;
