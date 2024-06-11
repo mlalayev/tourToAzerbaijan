@@ -1,10 +1,10 @@
 import logo from '../../assets/logo.svg';
-import { RxHamburgerMenu } from "react-icons/rx";
-import React, { useState, useEffect, useRef } from 'react';
-import ImageSlider from '../../components/imageSlider/imageSlider.jsx';
 import { useTranslation } from 'react-i18next';
+import { RxHamburgerMenu } from "react-icons/rx";
 import { IoLanguageSharp } from "react-icons/io5";
 import { RiArrowDownSLine } from "react-icons/ri";
+import React, { useState, useEffect, useRef } from 'react';
+import ImageSlider from '../../components/imageSlider/imageSlider.jsx';
 
 import az from '../../assets/az.svg'
 import gb from '../../assets/gb.svg'
