@@ -1,4 +1,3 @@
-import './App.css';
 import PARK from './whatToDo/Park/Park.jsx';
 import i18n from './components/i18n/i18n.jsx';
 import MULTIDAY from './whatToDo/whatToDo.jsx';

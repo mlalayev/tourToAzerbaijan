@@ -13,14 +13,14 @@
     outline: none;
     display: flex;
     cursor: pointer;
-    font-size: inherit;
     position: relative;
+    font-size: inherit;
     align-items: center;
     font-family: inherit;
     text-decoration: none;
     vertical-align: middle;
-    justify-content: center;
     background: transparent;
+    justify-content: center;
 }
 
 .learn-more .circle {
