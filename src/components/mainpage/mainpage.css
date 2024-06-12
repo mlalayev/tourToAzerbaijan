@@ -799,12 +799,13 @@ select {
     height: 12px;
     background-color: #fff;
 }
+
 /* add for computer 
 .trst1, .trst2, .trst3{
     border-right: 1px solid white !important;
 } */
 
-.verticalwhite{
+.verticalwhite {
     width: 1px;
     height: 100%;
     background-color: white;
@@ -959,6 +960,11 @@ header {
         justify-content: space-around;
     }
 
+    .scndsctntxt,
+    .thrdsctntxt {
+        padding: 0 50px;
+    }
+
     .scndsctntxt h1,
     .thrdsctntxt h1 {
         font-size: 40px;
@@ -1006,6 +1012,7 @@ header {
 
     .txtprtfrsth {
         font-size: 50px;
+        margin-left: -50px;
     }
 
     .leftbuttons div {
@@ -1091,7 +1098,7 @@ header {
     .sliderholder,
     .sliderholderthrd {
         height: 620px;
-        padding-left: 180px;
+        padding-left: 150px;
     }
 
     .scndsctnup,
@@ -1100,6 +1107,7 @@ header {
     }
 
     .containerffthsc {
+        padding: 0 100px;
         max-width: 1600px;
         position: relative;
     }
@@ -1197,6 +1205,7 @@ header {
     }
 
     .containersxth {
+        padding: 0 110px;
         max-width: 1600px;
     }
 }
