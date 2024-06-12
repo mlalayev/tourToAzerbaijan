@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './header.css';
 import logo from '../../assets/logo.svg';
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -17,6 +17,7 @@ function Header() {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [langMenuOpen, setLangMenuOpen] = useState(false);
+    const langMenuRef = useRef(null);
 
     const handleLangButtonClick = () => {
         setLangMenuOpen(!langMenuOpen);
@@ -32,6 +33,18 @@ function Header() {
         if (selectedLanguage === 'ru') {
             body.style.fontFamily = "Arial-RU";
         }
+
+        // Add event listener to handle clicks outside language menu
+        function handleClickOutside(event) {
+            if (langMenuRef.current && !langMenuRef.current.contains(event.target)) {
+                setLangMenuOpen(false);
+            }
+        }
+
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
     }, [i18n.language]); // Run this effect whenever the language changes
 
     const changeLanguage = (lng) => {
@@ -59,11 +72,11 @@ function Header() {
                                 className={langMenuOpen ? 'rotated' : 'm'} />
                         </button>
                         {langMenuOpen && (
-                            <ul className="language-menu">
-                                <li onClick={() => changeLanguage('en')}><img src={gb} className='flag'alt='flag' /> English</li>
-                                <li onClick={() => changeLanguage('az')}><img src={az} className='flag'alt='flag' />Azərbaycan</li>
-                                <li onClick={() => changeLanguage('ru')}><img src={ru} className='flag'alt='flag' /> Русский</li>
-                                <li onClick={() => changeLanguage('ge')}><img src={de} className='flag'alt='flag' /> German</li>
+                            <ul className="language-menu" ref={langMenuRef}>
+                                <li onClick={() => changeLanguage('en')}><img src={gb} className='flag' alt='flag' /> English</li>
+                                <li onClick={() => changeLanguage('az')}><img src={az} className='flag' alt='flag' />Azərbaycan</li>
+                                <li onClick={() => changeLanguage('ru')}><img src={ru} className='flag' alt='flag' /> Русский</li>
+                                <li onClick={() => changeLanguage('ge')}><img src={de} className='flag' alt='flag' /> German</li>
                             </ul>
                         )}
                     </div>
