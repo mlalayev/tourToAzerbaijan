@@ -198,6 +198,7 @@ body {
     width: 92vw;
     display: flex;
     max-width: 1600px;
+    align-items: center;
     justify-content: center;
 }
 
@@ -205,7 +206,7 @@ body {
     width: 96%;
     display: flex;
     height: 110px;
-    margin: 0 auto;
+    margin-left: 10px;
     max-width: 1600px;
     margin-top: -60px;
     position: relative;
@@ -1018,7 +1019,7 @@ header {
     .sectionfirst {
         height: 70px;
         display: flex;
-        max-width: 1300px;
+        max-width: 1230px;
         padding: 0 0 0 6px;
         align-items: center;
         justify-content: space-between;
