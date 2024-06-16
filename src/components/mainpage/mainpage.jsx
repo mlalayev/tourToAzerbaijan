@@ -365,7 +365,7 @@ function mainpage() {
                     <div className="recommendedby">
                         <p>{t('sectionsixth.recommendedBy')}</p>
                         <div className="recomimg">
-                            <img src={recommendeduno} />
+                            {/* <img src={recommendeduno} /> */}
                             <img src={recommendeddos} />
                             <img src={recommendedtres} />
                             <img src={recommendedcuatro} />
