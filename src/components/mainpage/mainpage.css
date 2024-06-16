@@ -812,8 +812,10 @@ select {
 }
 
 .horizontalwhite {
-    width: 100%;
+    width: 96%;
     height: 1px;
+    max-width: 1200px;
+    margin-left: -10px;
     background-color: #fff;
 }
 
@@ -978,10 +980,6 @@ header {
         width: 100%;
     }
 
-    .sectionsixth {
-        /* min-height: 750px; */
-    }
-
     .recommendedby {
         padding: 30px 10px;
     }
@@ -1047,6 +1045,10 @@ header {
         border-radius: 10px;
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
+    }
+
+    .frthrght{
+        padding: 0 120px 0 60px;
     }
 
     .containerfrthsc {
@@ -1135,6 +1137,10 @@ header {
         height: 500px;
     }
 
+    .trstssy{
+        padding: 0 25px;
+    }
+    
     .yellowcirclescnd {
         width: 500px;
         right: -50px;
@@ -1193,19 +1199,24 @@ header {
     }
 
     .sectionsixth {
+        /* padding-left: 170px !important; */
+        /* padding-right: 100px !important; */
         display: flex;
         justify-content: center;
     }
 
     .recommendedby {
         display: flex;
-        padding: 30px 10px;
+        padding: 30px 30px;
         align-items: start;
     }
 
     .containersxth {
+        display: flex;
         padding: 0 110px;
-        max-width: 1600px;
+        max-width: 1500px;
+        align-items: center;
+        flex-direction: column;
     }
 }
 
