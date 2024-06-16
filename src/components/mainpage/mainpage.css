@@ -821,9 +821,9 @@ select {
 
 .recommendedby {
     color: white;
+    padding: 10px;
     display: flex;
     text-align: center;
-    padding: 10px;
     flex-direction: column;
     font-family: var(--font-family-reddit);
 }
