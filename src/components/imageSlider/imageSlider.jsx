@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { GrUserManager } from 'react-icons/gr';
 import './imageSlider.css';
+import { LuArrowLeftFromLine, LuArrowRightFromLine } from "react-icons/lu";
+import { TbSquareDot } from "react-icons/tb";
+import { TbCircleDotFilled } from "react-icons/tb";
+
 
 function ImageSlider({ slides }) {
   const [imageIndex, setImageIndex] = useState(0);
@@ -88,7 +92,7 @@ function ImageSlider({ slides }) {
         style={{ left: 0 }}
         aria-label="View Previous Image"
       >
-        <GrUserManager aria-hidden />
+        <LuArrowLeftFromLine aria-hidden />
       </button>
       <button
         onClick={handleNextImage}
@@ -96,7 +100,7 @@ function ImageSlider({ slides }) {
         style={{ right: 0 }}
         aria-label="View Next Image"
       >
-        <GrUserManager aria-hidden />
+        <LuArrowRightFromLine aria-hidden />
       </button>
       <div
         style={{
@@ -115,7 +119,7 @@ function ImageSlider({ slides }) {
             aria-label={`View Image ${index + 1}`}
             onClick={() => setImageIndex(index)}
           >
-            <GrUserManager aria-hidden />
+            <TbCircleDotFilled aria-hidden />
           </button>
         ))}
       </div>

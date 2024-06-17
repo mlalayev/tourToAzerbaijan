@@ -1,23 +1,23 @@
 import cityData from '../../cities.json';
 import '../onedaytours/onedaytours.css';
-import { RiArrowDownSLine } from "react-icons/ri";
-import { FaArrowRightLong } from "react-icons/fa6";
+import { RiArrowDownSLine } from 'react-icons/ri';
+import { FaArrowRight } from 'react-icons/fa';
 import maidentower from '../assets/maidentower.png';
 import HEADER from '../components/header/header.jsx';
 import React, { useState, useEffect, useRef } from 'react';
 import WAPI from '../components/weatherapi/weatherapi.jsx';
 import SEARCH from '../components/search/search.jsx';
+import { useNavigate } from 'react-router-dom';
 
 function onedaytour() {
     const dropdownRefUp = useRef(null);
     const [tours, setTours] = useState([]);
     const [cityLi, setCityLi] = useState('Choose City');
     const [isRotatedUp, setIsRotatedUp] = useState(false);
-
-
+    const navigate = useNavigate();
 
     const handleCityChangeLi = (cityName) => {
-        const cityList = cityData.cities.find(city => city.cityLi === cityName);
+        const cityList = cityData.cities.find((city) => city.cityLi === cityName);
         if (cityList) {
             setCityLi(cityName);
             setIsRotatedUp(false);
@@ -41,17 +41,15 @@ function onedaytour() {
                 const data = await response.json();
                 setTours(data);
             } catch (error) {
-                // console.error('Error fetching the tours data:', error);
+                console.error('Error fetching the tours data:', error);
             }
         };
 
         fetchTours();
-
     }, []);
 
     useEffect(() => {
         const handleOutsideClickUp = handleClickOutside(dropdownRefUp, setIsRotatedUp);
-
         document.addEventListener('mousedown', handleOutsideClickUp);
 
         return () => {
@@ -59,26 +57,29 @@ function onedaytour() {
         };
     }, []);
 
+    const handleButtonClick = (path) => {
+        navigate(path);
+    };
+
     return (
         <div className="body">
-
             <div className="upper-part">
                 <HEADER />
                 <div className="container-upr">
-
-
                     <div className="text-part">
-
                         <div className="text-part-ra">
-                            <h1 className='text-part-firsth'>Which city will you
+                            <h1 className="text-part-firsth">Which city will you</h1>
+                            <h1 className="text-part-secondh">
+                                explore with us<span className="yellow">?</span>
                             </h1>
-                            <h1 className='text-part-secondh'>explore with us<span className='yellow'>?</span></h1>
-
-                            <p className='text-partp'>Here you can book excursions and one-day tours without buying a package. You can combine these short tours to create your unique itinerary.</p>
+                            <p className="text-partp">
+                                Here you can book excursions and one-day tours without
+                                buying a package. You can combine these short tours to
+                                create your unique itinerary.
+                            </p>
                         </div>
-
                         <div className="main-pic-part">
-                            <img src={maidentower} className='main-maiden' />
+                            <img src={maidentower} className="main-maiden" alt="Maiden Tower" />
                         </div>
                     </div>
                 </div>
@@ -87,10 +88,20 @@ function onedaytour() {
             <section className="section-first">
                 <div className="container-first">
                     <div className="city-choose">
-
                         <div className="left-button">
-                            <div ref={dropdownRefUp} onClick={handleClickUp} className={`lftlftbtndrpdwnn  ${isRotatedUp ? 'lftlftbtndrpdwnactive' : ''}`}>
-                                {cityLi} <RiArrowDownSLine strokeWidth={2} style={{ transform: isRotatedUp ? 'rotate(180deg)' : 'none' }} />
+                            <div
+                                ref={dropdownRefUp}
+                                onClick={handleClickUp}
+                                className={`lftlftbtndrpdwnn ${isRotatedUp ? 'lftlftbtndrpdwnactive' : ''
+                                    }`}
+                            >
+                                {cityLi}{' '}
+                                <RiArrowDownSLine
+                                    strokeWidth={2}
+                                    style={{
+                                        transform: isRotatedUp ? 'rotate(180deg)' : 'none',
+                                    }}
+                                />
                                 <ul className={`lftlftbtndrpdwnul ${isRotatedUp ? 'lftlftbtndrpdwnulactive' : ''}`}>
                                     {cityData.cities.map((city, index) => (
                                         <li key={index} onClick={() => handleCityChangeLi(city.cityLi)}>
@@ -98,14 +109,13 @@ function onedaytour() {
                                         </li>
                                     ))}
                                 </ul>
-
                             </div>
                         </div>
-
                         <div className="checkoutpart">
-                            <span>Find Tours ! <FaArrowRightLong /></span>
+                            <span>
+                                Find Tours ! <FaArrowRight />
+                            </span>
                         </div>
-
                     </div>
                 </div>
             </section>
@@ -113,7 +123,6 @@ function onedaytour() {
             <WAPI />
 
             <section className="sectionsecondonedaytour">
-
                 <h1>Single-day tours</h1>
                 <div className="singledaytoursdiv">
                     {tours.map((tour, index) => (
@@ -124,11 +133,11 @@ function onedaytour() {
                             <div className="touronediv">
                                 <h1>{tour.title}</h1>
                                 <p>{tour.description}</p>
-                                <button className="learn-more" id='learn-more'>
+                                <button className="learn-more" id='learn-more' onClick={() => handleButtonClick(tour.path)}>
                                     <span className="circle" aria-hidden="true">
                                         <span className="icon arrow"></span>
                                     </span>
-                                    <span className="button-text" id='button-text'>Check</span>
+                                    <span className="button-text">Check</span>
                                 </button>
                             </div>
                         </div>
@@ -137,9 +146,10 @@ function onedaytour() {
             </section>
 
             <SEARCH />
-
         </div>
-    )
+    );
 }
 
-export default onedaytour
+export default onedaytour;
+
+

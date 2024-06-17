@@ -1,10 +1,12 @@
 import './mainpage.css';
 import { IoMdStar } from "react-icons/io";
+import SEARCH from '../search/search.jsx';
 import SLIDER from '../sliders/slider.jsx';
 import cityData from '../../../cities.json';
 import { GrUserManager } from "react-icons/gr";
 import { FaAnglesLeft } from "react-icons/fa6";
 import { GrCertificate } from "react-icons/gr";
+import { useTranslation } from 'react-i18next';
 import { FaAnglesRight } from "react-icons/fa6";
 import WAPI from '../weatherapi/weatherapi.jsx';
 import sliderdos from '../../assets/slider2.jpg';
@@ -26,15 +28,13 @@ import sliderseptini from '../../assets/slider7shusha.jpg';
 import React, { useState, useEffect, useRef } from 'react';
 import { LiaHandHoldingHeartSolid } from "react-icons/lia";
 import sliderpierci from '../../assets/slider5lankaran.jpg';
-import recommendeduno from '../../assets/recommended-1.png';
 import recommendeddos from '../../assets/recommended-2.png';
 import citiesData from '../../../cityinfosectionfifth.json';
 import recommendedtres from '../../assets/recommended-3.png';
 import recommendedpieci from '../../assets/recommended-5.png';
 import recommendedcuatro from '../../assets/recommended-4.png';
 import fifthsliderone from '../../assets/fifthsectionimgone.jpg';
-import SEARCH from '../search/search.jsx'
-import { useTranslation } from 'react-i18next';
+
 
 function mainpage() {
 

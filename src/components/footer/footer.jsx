@@ -1,17 +1,73 @@
-import './footer.css';
-import React from 'react';
+import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import Alert from '@mui/material/Alert';
+import './footer.css'; // Assuming you have CSS for styling
+import { LuPhoneCall } from "react-icons/lu";
+import { IoLocationOutline } from "react-icons/io5";
 import az from '../../assets/az.svg';
 import logo from '../../assets/logo.svg';
 import karabakh from '../../assets/karabakhisazerbaijan1.jpg';
-import { LuPhoneCall } from "react-icons/lu";
-import { useTranslation } from 'react-i18next';
 import { LuArrowUpCircle } from "react-icons/lu";
-import { IoLocationOutline } from "react-icons/io5";
 
-
-function footer() {
+function Footer() {
 
     const { t } = useTranslation();
+
+    const [openAboutUsAlert, setOpenAboutUsAlert] = useState(false);
+    const [openContactUsAlert, setOpenContactUsAlert] = useState(false);
+    const [openPrivacyPolicyAlert, setOpenPrivacyPolicyAlert] = useState(false);
+    const [openWhatWeOfferAlert, setOpenWhatWeOfferAlert] = useState(false);
+
+    const handleAlertClick = (alertType) => {
+        switch (alertType) {
+            case 'about_us':
+                setOpenAboutUsAlert(true);
+                setOpenContactUsAlert(false);
+                setOpenPrivacyPolicyAlert(false);
+                setOpenWhatWeOfferAlert(false);
+                break;
+            case 'contact_us':
+                setOpenAboutUsAlert(false);
+                setOpenContactUsAlert(true);
+                setOpenPrivacyPolicyAlert(false);
+                setOpenWhatWeOfferAlert(false);
+                break;
+            case 'privacy_policy':
+                setOpenAboutUsAlert(false);
+                setOpenContactUsAlert(false);
+                setOpenPrivacyPolicyAlert(true);
+                setOpenWhatWeOfferAlert(false);
+                break;
+            case 'what_we_offer':
+                setOpenAboutUsAlert(false);
+                setOpenContactUsAlert(false);
+                setOpenPrivacyPolicyAlert(false);
+                setOpenWhatWeOfferAlert(true);
+                break;
+            default:
+                break;
+        }
+    };
+
+    const handleCloseAlert = (alertType) => {
+        switch (alertType) {
+            case 'about_us':
+                setOpenAboutUsAlert(false);
+                break;
+            case 'contact_us':
+                setOpenContactUsAlert(false);
+                break;
+            case 'privacy_policy':
+                setOpenPrivacyPolicyAlert(false);
+                break;
+            case 'what_we_offer':
+                setOpenWhatWeOfferAlert(false);
+                break;
+            default:
+                break;
+        }
+    };
+
 
     const email = "lalayemurad@gmail.com";
     const subject = "Tour To Azerbaijan";
@@ -24,6 +80,16 @@ function footer() {
         });
     };
 
+    const handleClick = () => {
+        history.push('/home');
+        const sectionFourth = document.getElementById('sectionfourth');
+        if (sectionFourth) {
+            sectionFourth.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
+    const [openAlert, setOpenAlert] = useState(false);
+
     return (
         <footer>
             <div className="greencircle" onClick={scrollToTop}>
@@ -33,7 +99,6 @@ function footer() {
             <div className="divgreenline"></div>
 
             <div className="containerftr">
-
                 <div className="cardfooter shadowfooter">
                     <img src={logo} alt="logo" className="logofooter" loading='lazy' />
                     <p>{t('footer.discover')}</p>
@@ -63,6 +128,7 @@ function footer() {
                         </a>
                         <a className="socialContainer containerFourfooter" href="whatsapp://send?phone=+994502740181&text=Hello,+can+you+give+me+further+details+?%2C%20I'm%20interested%20in%20your%tours!" target="_blank">
                             <svg viewBox="0 0 16 16" className="socialSvg whatsappSvg">
+
                                 <path
                                     d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
                                 ></path>
@@ -70,16 +136,66 @@ function footer() {
                         </a>
                     </div>
                 </div>
-
                 <div className="giveusacall">
                     <div className="usefullinks">
                         <h1>{t('footer.useful_links')}</h1>
                         <div className="hypertagholder">
                             <div className="tagholderone">
-                                <a href="#">{t('footer.about_us')}</a>
-                                <a href="#">{t('footer.contact_us')}</a>
-                                <a href="#">{t('footer.privacy_policy')}</a>
-                                <a href="#">{t('footer.what_we_offer')}</a>
+                                <a>
+                                    <span onClick={() => handleAlertClick('about_us')}>{t('footer.about_us')}</span>
+                                    <Alert
+                                        variant="filled"
+                                        severity="warning"
+                                        className='variant'
+                                        style={{ display: openAboutUsAlert ? 'flex' : 'none', justifyContent: 'space-between' }}
+                                        onClose={() => handleCloseAlert('about_us')}
+                                    >
+                                        <span>This is a filled warning Alert for About Us.</span>
+                                        <span style={{ cursor: 'pointer' }} onClick={() => handleCloseAlert('about_us')}>×</span>
+                                    </Alert>
+                                </a>
+
+                                <a>
+                                    <span onClick={() => handleAlertClick('contact_us')}>{t('footer.contact_us')}</span>
+                                    <Alert
+                                        variant="filled"
+                                        severity="error"
+                                        className='variant'
+                                        style={{ display: openContactUsAlert ? 'flex' : 'none', justifyContent: 'space-between' }}
+                                        onClose={() => handleCloseAlert('contact_us')}
+                                    >
+                                        <span>This is a filled warning Alert for Contact Us.</span>
+                                        <span style={{ cursor: 'pointer' }} onClick={() => handleCloseAlert('contact_us')}>×</span>
+                                    </Alert>
+                                </a>
+
+                                <a>
+                                    <span onClick={() => handleAlertClick('privacy_policy')}>{t('footer.privacy_policy')}</span>
+                                    <Alert
+                                        variant="filled"
+                                        severity="error"
+                                        className='variant'
+                                        style={{ display: openPrivacyPolicyAlert ? 'flex' : 'none', justifyContent: 'space-between' }}
+                                        onClose={() => handleCloseAlert('privacy_policy')}
+                                    >
+                                        <span>This is a filled warning Alert for Privacy Policy.</span>
+                                        <span style={{ cursor: 'pointer' }} onClick={() => handleCloseAlert('privacy_policy')}>×</span>
+                                    </Alert>
+                                </a>
+
+                                <a>
+                                    <span onClick={() => handleAlertClick('what_we_offer')}>{t('footer.what_we_offer')}</span>
+                                    <Alert
+                                        variant="filled"
+                                        severity="error"
+                                        className='variant'
+                                        style={{ display: openWhatWeOfferAlert ? 'flex' : 'none', justifyContent: 'space-between' }}
+                                        onClose={() => handleCloseAlert('what_we_offer')}
+                                    >
+                                        <span>This is a filled warning Alert for What We Offer.</span>
+                                        <span style={{ cursor: 'pointer' }} onClick={() => handleCloseAlert('what_we_offer')}>×</span>
+                                    </Alert>
+                                </a>
                             </div>
                             <div className="tagholdertwo">
                                 <a href="#">{t('footer.one_day_tour')}</a>
@@ -93,12 +209,11 @@ function footer() {
                         <LuPhoneCall size={20} /> <h1>{t('footer.phone')}</h1>
                     </div>
                     <div className="txtholder">
-                        <IoLocationOutline size={20} /> <h1>{t('footer.location')} <img src={az} alt="flag" className='flag' loading='lazy'/></h1>
+                        <IoLocationOutline size={20} /> <h1>{t('footer.location')} <img src={az} alt="flag" className='flag' loading='lazy' /></h1>
                     </div>
                 </div>
-
                 <div className="footerrightpart">
-                    <img src={karabakh} alt="Karabakh is Azerbaijan!" className='ftrpc' loading='lazy'/>
+                    <img src={karabakh} alt="Karabakh is Azerbaijan!" className='ftrpc' loading='lazy' />
                     <div className="copyrighttext">
                         <h1>{t('footer.copyright')}</h1>
                     </div>
@@ -108,4 +223,4 @@ function footer() {
     );
 };
 
-export default footer
+export default Footer;
