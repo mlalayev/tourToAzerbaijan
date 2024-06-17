@@ -2,66 +2,55 @@
     {
         "imgSrc": "./src/assets/shahdag.jpg",
         "title": "Shahdag",
-        "description": "Shahdag in Azerbaijan is a premier mountain resort offering year-round outdoor..."
+        "description": "Shahdag in Azerbaijan is a premier mountain resort offering year-round outdoor...",
+        "path": "/gusar"
     },
     {
         "imgSrc": "./src/assets/iceriseher.jpg",
         "title": "Icherisheher (Old City)",
-        "description": "Explore the historic center of Baku, a UNESCO World Heritage site."
+        "description": "Explore the historic center of Baku, a UNESCO World Heritage site.",
+        "path": "/baku"
     },
     {
         "imgSrc": "./src/assets/bakuboulvard.jpg",
         "title": "Baku Boulevard",
-        "description": "A scenic promenade along the Caspian Sea."
+        "description": "A scenic promenade along the Caspian Sea.",
+        "path": "/baku"
     },
     {
         "imgSrc": "./src/assets/qecres.jpg",
         "title": "Qechresh Forest",
-        "description": "A picturesque forest perfect for nature walks and picnics."
+        "description": "A picturesque forest perfect for nature walks and picnics.",
+        "path": "/guba"
     },
     {
         "imgSrc": "./src/assets/afurca.jpg",
         "title": "Afurdzhi Waterfall",
-        "description": "A beautiful waterfall located in the village of Afurdzhi."
+        "description": "A beautiful waterfall located in the village of Afurdzhi.",
+        "path": "/guba"
     },
     {
         "imgSrc": "./src/assets/seki.jpg",
         "title": "Sheki Khan's Palace",
-        "description": " A historic palace known for its beautiful stained glass windows and intricate architecture."
+        "description": " A historic palace known for its beautiful stained glass windows and intricate architecture.",
+        "path": "/shaki"
     },
     {
         "imgSrc": "./src/assets/butulkaliev.jpg",
         "title": "Qechresh Forest",
-        "description": "A picturesque forest perfect for nature walks and picnics."
+        "description": "A picturesque forest perfect for nature walks and picnics.",
+        "path": "/ganja"
     },
     {
         "imgSrc": "./src/assets/hirkanmp.jpg",
         "title": "Hirkan National Park",
-        "description": "A biodiversity hotspot with unique flora and fauna, great for hiking and wildlife watching."
+        "description": "A biodiversity hotspot with unique flora and fauna, great for hiking and wildlife watching.",
+        "path": "/lankaran"
     },
     {
         "imgSrc": "./src/assets/yeddigumbaz.jpg",
         "title": "Yeddi Gumbaz Mausoleum",
-        "description": "A historic site with seven ancient tombs."
-    },
-    {
-        "imgSrc": "./src/assets/qecres.jpg",
-        "title": "Qechresh Forest",
-        "description": "A picturesque forest perfect for nature walks and picnics."
-    },
-    {
-        "imgSrc": "./src/assets/qecres.jpg",
-        "title": "Qechresh Forest",
-        "description": "A picturesque forest perfect for nature walks and picnics."
-    },
-    {
-        "imgSrc": "./src/assets/qecres.jpg",
-        "title": "Qechresh Forest",
-        "description": "A picturesque forest perfect for nature walks and picnics."
-    },
-    {
-        "imgSrc": "./src/assets/qecres.jpg",
-        "title": "Qechresh Forest",
-        "description": "A picturesque forest perfect for nature walks and picnics."
+        "description": "A historic site with seven ancient tombs.",
+        "path": "/shamakhy"
     }
 ]

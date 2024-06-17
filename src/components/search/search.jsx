@@ -4,29 +4,25 @@ import { TbReplace } from "react-icons/tb";
 import airports from '../../../airports.json';
 import skyscanner from '../../assets/poweredbyskyscanner.png'
 import { MdOutlineFlight } from "react-icons/md";
-import { MdOutlineHotel } from "react-icons/md";
-import { TbPlaneDeparture } from "react-icons/tb";
-import { TbPlaneArrival } from "react-icons/tb";
+import { TbPlaneDeparture, TbPlaneArrival } from "react-icons/tb";
 import { useTranslation } from 'react-i18next';
+import Alert from '../../../node_modules/@mui/material/Alert';
+
 
 const SearchForm = () => {
-
     const { t } = useTranslation();
 
     const minValue = 0;
     const maxValue = 10;
     const [to, setTo] = useState('');
     const [from, setFrom] = useState('');
-    const [hotel, setHotel] = useState('');
     const [adultCount, setAdultCount] = useState(1);
     const [childCount, setChildCount] = useState(0);
     const [activeTab, setActiveTab] = useState('flights');
     const [toSuggestions, setToSuggestions] = useState([]);
     const [fromSuggestions, setFromSuggestions] = useState([]);
-    const [hotelSuggestions, setHotelSuggestions] = useState([]);
     const [selectedToCode, setSelectedToCode] = useState('GYD');
     const [selectedFromCode, setSelectedFromCode] = useState('');
-
 
     const swapInputs = () => {
         const temp = from;
@@ -52,7 +48,6 @@ const SearchForm = () => {
         }
     };
 
-
     const handleFromChange = (e) => {
         const value = e.target.value;
         setFrom(value);
@@ -67,23 +62,6 @@ const SearchForm = () => {
             );
         } else {
             setFromSuggestions([]);
-        }
-    };
-
-    const handleHotelChange = (e) => {
-        const value = e.target.value;
-        setHotel(value);
-        if (value.length > 1) {
-            setHotelSuggestions(
-                airports.filter((airport) =>
-                    airport.name.toLowerCase().includes(value.toLowerCase()) ||
-                    airport.code.toLowerCase().includes(value.toLowerCase()) ||
-                    airport.country.toLowerCase().includes(value.toLowerCase()) ||
-                    airport.city.toLowerCase().includes(value.toLowerCase())
-                )
-            );
-        } else {
-            setHotelSuggestions([]);
         }
     };
 
@@ -110,11 +88,6 @@ const SearchForm = () => {
         setFromSuggestions([]);
     };
 
-    const selectHotelSuggestion = (suggestion) => {
-        setHotel(`${suggestion.name} - ${suggestion.code} - ${suggestion.city} - ${suggestion.country}`);
-        setHotelSuggestions([]);
-    };
-
     const selectToSuggestion = (suggestion) => {
         setTo(`${suggestion.name} - ${suggestion.city} - ${suggestion.country}`);
         setSelectedToCode(suggestion.code); // Update selected airport code
@@ -130,12 +103,8 @@ const SearchForm = () => {
             setTo(`${toSuggestions[0].name} - ${toSuggestions[0].city}, ${toSuggestions[0].country}`);
             setSelectedToCode(toSuggestions[0].code); // Update selected airport code
             setToSuggestions([]);
-        } else if (e.key === 'Enter' && hotelSuggestions.length > 0) {
-            setHotel(`${hotelSuggestions[0].name} - ${hotelSuggestions[0].city}, ${hotelSuggestions[0].country}`);
-            setHotelSuggestions([]);
         }
     };
-
 
     const handleTabChange = (tab) => {
         setActiveTab(tab);
@@ -144,7 +113,7 @@ const SearchForm = () => {
     const handleClick = (e) => {
         if (!from || !to) {
             e.preventDefault();
-            alert("Please select both 'from' and 'to' locations.");
+            alert("Please fill the form and then try again.");
         } else {
             window.open("https://www.skyscanner.com/", "_blank");
         }
@@ -155,12 +124,11 @@ const SearchForm = () => {
             <div className="tab-container">
                 <div className="btnhldr">
                     <button className={`tab ${activeTab === 'flights' ? 'active' : ''}`} onClick={() => handleTabChange('flights')}><MdOutlineFlight />{t('search.flightsTab')}</button>
-                    <button className={`tab ${activeTab === 'hotels' ? 'active' : ''}`} onClick={() => handleTabChange('hotels')}><MdOutlineHotel /> {t('search.hotelsTab')}</button>
                 </div>
                 <img src={skyscanner} className='skyscanner' />
             </div>
 
-            {activeTab === 'flights' ? (
+            {activeTab === 'flights' && (
                 <>
                     <div className="form-group-one">
                         <div className="coontainer">
@@ -268,7 +236,6 @@ const SearchForm = () => {
                             </div>
 
                             <div className="ccontainer">
-
                                 <div className="input-row">
                                     <div className="title">
                                         <h2 className="label">{t('search.adults')}</h2>
@@ -276,7 +243,6 @@ const SearchForm = () => {
                                         <div className="input">
                                             <button
                                                 className="minus"
-                                                aria-label="Decrease by one"
                                                 onClick={() => handleDecrement('adult')}
                                                 disabled={adultCount === minValue}
                                             >
@@ -312,8 +278,8 @@ const SearchForm = () => {
                                             <button
                                                 className="minus"
                                                 aria-label="Decrease by one"
-                                                onClick={() => handleDecrement('adult')}
-                                                disabled={adultCount === minValue}
+                                                onClick={() => handleDecrement('child')}
+                                                disabled={childCount === minValue}
                                             >
                                                 <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <line y1="1" x2="16" y2="1" stroke="#0064FE" strokeWidth="2" className="icon" />
@@ -338,124 +304,10 @@ const SearchForm = () => {
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
 
                         <button className='procedbtn' type="button" onClick={handleClick}>{t('search.searchFlight')}</button>
-                    </div>
-                </>
-            ) : (
-                <>
-                    <div className="search-hotels-container">
-                        <div className="autocompletehotel">
-                            <div className="form-group-hotels">
-                                <input
-                                    placeholder="To"
-                                    type="text"
-                                    className="scndinput"
-                                    value={hotel}
-                                    onChange={handleHotelChange}
-                                    onKeyDown={handleEnterPress}
-                                />
-                                {hotelSuggestions.length > 0 && (
-                                    <ul className="suggestions">
-                                        {hotelSuggestions.map((suggestion, index) => (
-                                            <li key={index} onClick={() => selectHotelSuggestion(suggestion)}>
-                                                {suggestion.name} - {suggestion.code} - {suggestion.city} - {suggestion.country}
-                                            </li>
-                                        ))}
-                                    </ul>
-                                )}
-                            </div>
-                        </div>
-                        <div className="flexx">
-                            <input
-                                placeholder="From"
-                                type="date"
-                                className="textInputone scndinputdate"
-                                // value={from}
-                                // onChange={handleFromChange}
-                                onKeyDown={handleEnterPress}
-                            />
-                            <input
-                                placeholder="Till"
-                                type="date"
-                                className="textInputone scndinputdate"
-                                // value={from}
-                                // onChange={handleFromChange}
-                                onKeyDown={handleEnterPress}
-                            />
-                        </div>
-
-                        <div className="form-group-four">
-                            <div className="ccontainer">
-                                <div className="input-row">
-                                    <div className="title">
-                                        <h2 className="label">Adults</h2>
-                                    </div>
-                                    <div className="input">
-                                        <button
-                                            className="minus"
-                                            aria-label="Decrease by one"
-                                            onClick={() => handleDecrement('adult')}
-                                            disabled={adultCount === minValue}
-                                        >
-                                            <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <line y1="1" x2="16" y2="1" stroke="#0064FE" strokeWidth="2" className="icon" />
-                                            </svg>
-                                        </button>
-                                        <div className={`number ${adultCount === minValue ? 'dim' : ''}`}>
-                                            {adultCount}
-                                        </div>
-                                        <button
-                                            className="plus"
-                                            aria-label="Increase by one"
-                                            onClick={() => handleIncrement('adult')}
-                                            disabled={adultCount >= maxValue}
-                                        >
-                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" className="icon">
-                                                <line x1="8" y1="0" x2="8" y2="16" stroke="#0064FE" strokeWidth="2" />
-                                                <line y1="8" x2="16" y2="8" stroke="#0064FE" strokeWidth="2" />
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div className="input-row">
-                                    <div className="title">
-                                        <h2 className="label">Children</h2>
-                                    </div>
-                                    <div className="input">
-                                        <button
-                                            className="minus"
-                                            aria-label="Decrease by one"
-                                            onClick={() => handleDecrement('child')}
-                                            disabled={childCount === minValue}
-                                        >
-                                            <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <line y1="1" x2="16" y2="1" stroke="#0064FE" strokeWidth="2" className="icon" />
-                                            </svg>
-                                        </button>
-                                        <div className={`number ${childCount === minValue ? 'dim' : ''}`}>
-                                            {childCount}
-                                        </div>
-                                        <button
-                                            className="plus"
-                                            aria-label="Increase by one"
-                                            onClick={() => handleIncrement('child')}
-                                            disabled={childCount >= maxValue}
-                                        >
-                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" className="icon">
-                                                <line x1="8" y1="0" x2="8" y2="16" stroke="#0064FE" strokeWidth="2" />
-                                                <line y1="8" x2="16" y2="8" stroke="#0064FE" strokeWidth="2" />
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <button className='procedbtn' type="button" onClick={() => window.open("https://www.skyscanner.com/", "_blank")}>Search hotels</button>
                     </div>
                 </>
             )}
@@ -464,3 +316,4 @@ const SearchForm = () => {
 }
 
 export default SearchForm;
+

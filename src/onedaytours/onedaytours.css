@@ -158,6 +158,13 @@
     background: var(--input-bg, #fff);
 }
 
+.sectionslider{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
 #btnwdth {
     width: 140px;
     font-size: 14px;
