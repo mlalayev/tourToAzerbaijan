@@ -85,7 +85,7 @@
 }
 
 .containerftr {
-    gap: 30px;
+    gap: 20px;
     display: flex;
     flex-wrap: wrap;
     margin-top: 30px;
@@ -160,6 +160,7 @@ footer::after {
 
     .containerftr {
         max-width: 1600px;
+        margin-left: -20px;
     }
 
     footer {
@@ -233,7 +234,7 @@ footer::after {
     width: 60vw;
     height: 300px;
     display: flex;
-    max-width: 400px;
+    max-width: 355px;
     background: white;
     padding: 10px 20px;
     text-align: center;

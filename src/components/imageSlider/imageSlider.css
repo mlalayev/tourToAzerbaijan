@@ -18,7 +18,7 @@
   bottom: 0;
   all: unset;
   padding: 1rem;
-  display: block;
+  display: flex;
   cursor: pointer;
   position: absolute;
   transition: background-color 100ms ease-in-out;

@@ -1,27 +1,22 @@
 [
     {
-        "image": "./src/assets/carpetmuseum.jpeg",
-        "title": "bazaar",
-        "caption": "Nulla vitae elit libero, a pharetra augue mollis interdum."
+        "image": "./src/assets/bazaarone.jpg",
+        "title": "Taza Bazaar, Shaki",
+        "caption": "A bustling market in Shaki known for its diverse array of goods."
     },
     {
-        "image": "./src/assets/kandtasarrufat.jpg",
-        "title": "Second slide label",
-        "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        "image": "./src/assets/bazaartwo.jpg",
+        "title": "Yashil Bazaar, Baku",
+        "caption": "A vibrant market in Baku offering a variety of fresh produce and local specialties."
     },
     {
-        "image": "./src/assets/literaturemuseum.jpg",
-        "title": "Third slide label",
-        "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
+        "image": "./src/assets/bazaarthree.jpg",
+        "title": "Bazaar of Lankaran",
+        "caption": "Lankaran's market featuring fresh tea leaves and regional agricultural products."
     },
     {
-        "image": "./src/assets/milliincesenetmuzeyi.jpg",
-        "title": "Fourth slide label",
-        "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
-    },
-    {
-        "image": "./src/assets/haydaraliyevcenter.jpg",
-        "title": "Fourth slide label",
-        "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
+        "image": "./src/assets/bazaarfourjpg.jpg",
+        "title": "Bazaar of Gabala",
+        "caption": "Gabala's lively bazaar offering traditional Azerbaijani goods and souvenirs."
     }
 ]
