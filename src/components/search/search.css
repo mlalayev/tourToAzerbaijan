@@ -97,7 +97,7 @@
     display: flex;
     transition: 0.2s;
     min-height: 400px;
-    max-width: 1400px;
+    max-width: 1250px;
     margin: 60px auto;
     padding: 20px 20px;
     position: relative;
@@ -314,7 +314,7 @@ input[type='radio'] {
     height: 40px;
     outline: none;
     font-size: 16px;
-    max-width: 510px;
+    max-width: 435px;
     padding: 10px 20px;
     border-radius: 20px;
     border: 2px solid #ccc;

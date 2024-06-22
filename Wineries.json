@@ -1,12 +1,12 @@
 [
     {
-      "image": "./src/assets/carpetmuseum.jpeg",
-      "title": "this is wineries",
+      "image": "./src/assets/wineriesone.jpg",
+      "title": "Goygol Winery",
       "caption": "Nulla vitae elit libero, a pharetra augue mollis interdum."
     },
     {
-      "image": "./src/assets/kandtasarrufat.jpg",
-      "title": "Second slide label",
+      "image": "./src/assets/wineriestwo.jpg",
+      "title": "Wine Testing in Goygol",
       "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {

@@ -327,6 +327,7 @@ function mainpage() {
                             )}
                         </div>
                         <div className="ffthscdwnrght">
+                            <p className='imgloadertext'>Images may load late</p>
                             {selectedCityImg && <img src={selectedCityImg} className='sldrimg' alt={selectedCity} />}
                         </div>
                     </div>

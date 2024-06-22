@@ -1,27 +1,27 @@
 [
-    {
-      "image": "./src/assets/carpetmuseum.jpeg",
-      "title": "this is waterfalls",
-      "caption": "Nulla vitae elit libero, a pharetra augue mollis interdum."
-    },
-    {
-      "image": "./src/assets/kandtasarrufat.jpg",
-      "title": "Second slide label",
-      "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-    },
-    {
-      "image": "./src/assets/literaturemuseum.jpg",
-      "title": "Third slide label",
-      "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
-    },
-    {
-      "image": "./src/assets/milliincesenetmuzeyi.jpg",
-      "title": "Fourth slide label",
-      "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
-    },
-    {
-      "image": "./src/assets/haydaraliyevcenter.jpg",
-      "title": "Fourth slide label",
-      "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
-    }
-  ]
+  {
+    "image": "./src/assets/waterfallone.jpg",
+    "title": "Tekdam Waterfall, Yardimly",
+    "caption": "A scenic waterfall nestled in Yardimly, Azerbaijan."
+  },
+  {
+    "image": "./src/assets/waterfalltwo.jpg",
+    "title": "Kapash Waterfall, Gusar",
+    "caption": "Spectacular waterfall in Gusar known for its natural beauty."
+  },
+  {
+    "image": "./src/assets/waterfallthree.jpg",
+    "title": "Ram-rama Waterfall, Ilisu",
+    "caption": "Beautiful waterfall located in the tranquil village of Ilisu."
+  },
+  {
+    "image": "./src/assets/waterfallfourjpg.jpg",
+    "title": "Khal-khal Waterfall, Oghuz",
+    "caption": "A mesmerizing waterfall surrounded by lush forests in Oghuz."
+  },
+  {
+    "image": "./src/assets/lankaransliderfour.jpg",
+    "title": "Lankaran Waterfall",
+    "caption": "Scenic waterfall near Lankaran, offering a peaceful natural retreat."
+  }
+]
