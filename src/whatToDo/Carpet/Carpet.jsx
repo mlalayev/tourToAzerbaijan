@@ -11,7 +11,7 @@ import gb from '../../assets/gb.svg';
 import ru from '../../assets/ru.svg';
 import de from '../../assets/de.svg';
 
-function Carpet() {
+function Lakes() {
 
   const { t, i18n } = useTranslation();
 
@@ -62,7 +62,7 @@ function Carpet() {
   useEffect(() => {
     const fetchSlides = async () => {
       try {
-        const response = await fetch('../../../Carpet.json');
+        const response = await fetch('../../../Lakes.json');
         const data = await response.json();
         setSlides(data[i18n.language]); // Load slides based on the current language
       } catch (error) {
@@ -135,4 +135,4 @@ function Carpet() {
   );
 }
 
-export default Carpet;
+export default Lakes;

@@ -1,27 +1,110 @@
-[
-  {
-    "image": "./src/assets/waterfallone.jpg",
-    "title": "Tekdam Waterfall, Yardimly",
-    "caption": "A scenic waterfall nestled in Yardimly, Azerbaijan."
-  },
-  {
-    "image": "./src/assets/waterfalltwo.jpg",
-    "title": "Kapash Waterfall, Gusar",
-    "caption": "Spectacular waterfall in Gusar known for its natural beauty."
-  },
-  {
-    "image": "./src/assets/waterfallthree.jpg",
-    "title": "Ram-rama Waterfall, Ilisu",
-    "caption": "Beautiful waterfall located in the tranquil village of Ilisu."
-  },
-  {
-    "image": "./src/assets/waterfallfourjpg.jpg",
-    "title": "Khal-khal Waterfall, Oghuz",
-    "caption": "A mesmerizing waterfall surrounded by lush forests in Oghuz."
-  },
-  {
-    "image": "./src/assets/lankaransliderfour.jpg",
-    "title": "Lankaran Waterfall",
-    "caption": "Scenic waterfall near Lankaran, offering a peaceful natural retreat."
-  }
-]
+{
+  "az": [
+    {
+      "image": "./src/assets/waterfallone.jpg",
+      "title": "Tekdam Şəlaləsi, Yardımlı",
+      "caption": "Yardımlıda yerləşən gözəl bir şəlalə."
+    },
+    {
+      "image": "./src/assets/waterfalltwo.jpg",
+      "title": "Kapash Şəlaləsi, Qusar",
+      "caption": "Təbii güzəlliyi ilə tanınan Qusar şəhərinin müşahidəнə dəyər şəlaləsi."
+    },
+    {
+      "image": "./src/assets/waterfallthree.jpg",
+      "title": "Ram-rama Şəlaləsi, İlisu",
+      "caption": "İlisu kəndinin sakin məkanında yerləşən gözəl şəlalə."
+    },
+    {
+      "image": "./src/assets/waterfallfourjpg.jpg",
+      "title": "Xal-xal Şəlaləsi, Oğuz",
+      "caption": "Oğuzda təbii meşələrlə ətraflanmış büyülü bir şəlalə."
+    },
+    {
+      "image": "./src/assets/lankaransliderfour.jpg",
+      "title": "Lənkəran Şəlaləsi",
+      "caption": "Lənkəranın yaxınlığında yerləşən sakin təbii bir yer."
+    }
+  ],
+  "en": [
+    {
+      "image": "./src/assets/waterfallone.jpg",
+      "title": "Tekdam Waterfall, Yardimly",
+      "caption": "A scenic waterfall nestled in Yardimly, Azerbaijan."
+    },
+    {
+      "image": "./src/assets/waterfalltwo.jpg",
+      "title": "Kapash Waterfall, Gusar",
+      "caption": "Spectacular waterfall in Gusar known for its natural beauty."
+    },
+    {
+      "image": "./src/assets/waterfallthree.jpg",
+      "title": "Ram-rama Waterfall, Ilisu",
+      "caption": "Beautiful waterfall located in the tranquil village of Ilisu."
+    },
+    {
+      "image": "./src/assets/waterfallfourjpg.jpg",
+      "title": "Khal-khal Waterfall, Oghuz",
+      "caption": "A mesmerizing waterfall surrounded by lush forests in Oghuz."
+    },
+    {
+      "image": "./src/assets/lankaransliderfour.jpg",
+      "title": "Lankaran Waterfall",
+      "caption": "Scenic waterfall near Lankaran, offering a peaceful natural retreat."
+    }
+  ],
+  "ru": [
+    {
+      "image": "./src/assets/waterfallone.jpg",
+      "title": "Водопад Текдам, Ярдымлы",
+      "caption": "Живописный водопад, расположенный в Ярдымлы, Азербайджан."
+    },
+    {
+      "image": "./src/assets/waterfalltwo.jpg",
+      "title": "Водопад Капаш, Гусар",
+      "caption": "Импозантный водопад в Гусаре, известный своей природной красотой."
+    },
+    {
+      "image": "./src/assets/waterfallthree.jpg",
+      "title": "Водопад Рам-рама, Илису",
+      "caption": "Прекрасный водопад, расположенный в тихой деревне Илису."
+    },
+    {
+      "image": "./src/assets/waterfallfourjpg.jpg",
+      "title": "Водопад Хал-хал, Огуз",
+      "caption": "Очаровательный водопад, окруженный пышными лесами в Огузе."
+    },
+    {
+      "image": "./src/assets/lankaransliderfour.jpg",
+      "title": "Водопад Ленкяран",
+      "caption": "Живописный водопад недалеко от Ленкярана, предлагающий спокойный природный отдых."
+    }
+  ],
+  "ge": [
+    {
+      "image": "./src/assets/waterfallone.jpg",
+      "title": "Tekdam Wasserfall, Yardimly",
+      "caption": "Ein malerischer Wasserfall in Yardimly, Aserbaidschan."
+    },
+    {
+      "image": "./src/assets/waterfalltwo.jpg",
+      "title": "Kapash Wasserfall, Gusar",
+      "caption": "Spektakulärer Wasserfall in Gusar, bekannt für seine natürliche Schönheit."
+    },
+    {
+      "image": "./src/assets/waterfallthree.jpg",
+      "title": "Ram-rama Wasserfall, Ilisu",
+      "caption": "Schöner Wasserfall in dem ruhigen Dorf Ilisu gelegen."
+    },
+    {
+      "image": "./src/assets/waterfallfourjpg.jpg",
+      "title": "Khal-khal Wasserfall, Oghuz",
+      "caption": "Ein faszinierender Wasserfall umgeben von üppigen Wäldern in Oghuz."
+    },
+    {
+      "image": "./src/assets/lankaransliderfour.jpg",
+      "title": "Lankaran Wasserfall",
+      "caption": "Malersicher Wasserfall in der Nähe von Lankaran, der einen friedlichen natürlichen Rückzugsort bietet."
+    }
+  ]
+}

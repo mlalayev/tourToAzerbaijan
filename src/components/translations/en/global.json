@@ -319,83 +319,83 @@
             "furtherInfo": "For Further information click the button ↓",
             "info": "Azerbaijani museums offer a rich glimpse into the country's diverse cultural heritage and history. The Azerbaijan National Museum of History in Baku houses extensive archaeological and ethnographic collections, providing insights into the region's past. ",
             "descriptiontwo": "Additionally, the Heydar Aliyev Center, designed by renowned architect Zaha Hadid, serves as a cultural hub with rotating exhibitions and a focus on contemporary art and innovation.",
-            "check": "Check"
+            "check": "Explore"
         },
         "1": {
             "title": "Architecture",
             "info": "Azerbaijan architecture uniquely blends ancient Persian, Islamic, and Soviet influences, creating a rich tapestry of styles. The medieval city of Baku, with its stunning Flame Towers and the historic Maiden Tower, showcases this eclectic mix.",
             "furtherInfo": "For Further information click the button ↓",
-            "check": "Check",
+            "check": "Explore",
             "descriptiontwo": " Contemporary developments, such as the Heydar Aliyev Center designed by Zaha Hadid, highlight the country's embrace of modern, fluid design."
         },
         "2": {
-            "title": "Carpets",
-            "info": "Azerbaijan carpets are renowned for their intricate patterns and vibrant colors, reflecting centuries-old weaving traditions. Each region, such as Karabakh, Ganja, and Shirvan, boasts its own distinctive designs and motifs, often inspired by nature and local folklore.",
-            "furtherInfo": "For Further information click the button ↓",
-            "check": "Check",
-            "descriptiontwo": " These handwoven masterpieces, celebrated for their craftsmanship and durability, hold a significant cultural and historical value in Azerbaijani heritage."
+            "title": "Lakes",
+            "info": "Azerbaijan boasts a diverse array of lakes, each offering unique natural beauty and recreational opportunities. From the tranquil waters of Goygol Lake to the scenic surroundings of Maralgol Lake in Goygol National Park, these lakes are cherished for their picturesque landscapes.",
+            "furtherInfo": "For more details, click the button below",
+            "check": "Explore",
+            "descriptiontwo": "These natural wonders not only provide habitats for diverse flora and fauna but also serve as popular destinations for outdoor enthusiasts and nature lovers."
         },
         "3": {
-            "title": "khinalig UNESCO's Heritage",
+            "title": "UNESCO's Heritage",
             "info": "Azerbaijan boasts several UNESCO World Heritage sites that highlight its rich cultural and historical heritage. The Walled City of Baku, along with the Shirvanshah's Palace and Maiden Tower, exemplifies medieval architecture and urban planning. ",
             "furtherInfo": "For Further information click the button ↓",
-            "check": "Check",
+            "check": "Explore",
             "descriptiontwo": "Additionally, the Gobustan Rock Art Cultural Landscape features ancient carvings and inscriptions that provide a fascinating glimpse into prehistoric life in the region."
         },
         "4": {
             "title": "Religious",
             "info": "Azerbaijan's religious buildings reflect its diverse cultural and historical influences, showcasing a blend of Islamic and pre-Islamic architectural styles. The Bibi-Heybat Mosque, with its stunning modern reconstruction, stands as a significant spiritual and architectural landmark. ",
             "furtherInfo": "For Further information click the button ↓",
-            "check": "Check",
+            "check": "Explore",
             "descriptiontwo": "Meanwhile, the Fire Temple of Ateshgah, a testament to the country's ancient Zoroastrian heritage, highlights Azerbaijan's role as a historical crossroads of various religious traditions."
         },
         "5": {
             "title": "Parks",
             "info": "Azerbaijan's parks offer a blend of natural beauty and recreational facilities, serving as green oases in urban landscapes. The Seaside Boulevard in Baku, one of the longest promenades in the world, provides picturesque views of the Caspian Sea along with entertainment and leisure activities.",
             "furtherInfo": "For Further information click the button ↓",
-            "check": "Check",
+            "check": "Explore",
             "descriptiontwo": " Gobustan National Park, a UNESCO World Heritage site, not only features stunning landscapes but also ancient rock carvings and mud volcanoes, making it a fascinating destination for nature and history enthusiasts alike."
         },
         "6": {
             "title": "Hiking in Azerbaijan",
             "info": "Hiking in Azerbaijan provides an opportunity to explore diverse landscapes, from the lush forests of the Caucasus Mountains to the semi-desert regions. The Greater Caucasus range offers trails with breathtaking views, such as those found in Shahdag National Park, where hikers can encounter picturesque valleys, waterfalls, and alpine meadows.",
             "furtherInfo": "For Further information click the button ↓",
-            "check": "Check",
+            "check": "Explore",
             "descriptiontwo": " Additionally, the trails around the village of Lahij offer a cultural journey through ancient cobblestone streets and traditional crafts, making for a rich and varied hiking experience."
         },
         "7": {
             "title": "Sports and entertainment",
             "info": "Sports and entertainment in Azerbaijan are vibrant and diverse, reflecting the country's passion for both traditional and modern activities. Baku, the capital, hosts international events such as the Formula 1 Azerbaijan Grand Prix and the UEFA Europa League. Traditional sports like wrestling and horseback riding remain popular, while contemporary entertainment options include the Flame Towers' light shows, opera, ballet performances at the Azerbaijan State Academic Opera and Ballet Theater, and a bustling nightlife scene in Baku's trendy neighborhoods.",
             "furtherInfo": "For Further information click the button ↓",
-            "check": "Check",
+            "check": "Explore",
             "descriptiontwo": ""
         },
         "8": {
             "title": "Cuisine",
             "info": "Azerbaijani cuisine is a rich tapestry of flavors, reflecting its diverse cultural influences and abundant local produce. Signature dishes include plov, a fragrant rice dish often cooked with saffron, meat, and dried fruits, and dolma, grape leaves stuffed with minced meat and rice. The cuisine also features an array of kebabs, fresh salads, and sweets like pakhlava and shekerbura, often enjoyed with aromatic Azerbaijani tea.",
             "furtherInfo": "For Further information click the button ↓",
-            "check": "Check",
+            "check": "Explore",
             "descriptiontwo": ""
         },
         "9": {
             "title": "Wineries",
             "info": "Azerbaijan's wineries are an integral part of its rich viticultural heritage, with a history of winemaking that dates back thousands of years. The country's diverse climate and fertile soils, particularly in regions like Ganja, Shamakhi, and Gabala, produce a variety of high-quality grapes. Notable wineries such as Az-Granata and Savalan offer tours and tastings, allowing visitors to experience the unique flavors of Azerbaijani wines, from robust reds to crisp whites, and learn about the traditional and modern techniques used in their production.",
             "furtherInfo": "For Further information click the button ↓",
-            "check": "Check",
+            "check": "Explore",
             "descriptiontwo": ""
         },
         "10": {
             "title": "Waterfalls",
             "info": "Azerbaijan is home to several stunning waterfalls, each offering unique natural beauty and a tranquil escape. The Afurja Waterfall in the Quba district, one of the country's most famous, cascades dramatically from a height of about 70 meters.",
             "furtherInfo": "For Further information click the button ↓",
-            "check": "Check",
+            "check": "Explore",
             "descriptiontwo": " The Laza Waterfalls, located in the Gusar region, provide a picturesque setting in the Greater Caucasus Mountains, surrounded by lush greenery and rocky cliffs, making them a popular destination for hikers and nature lovers."
         },
         "11": {
-            "title": "Architecture",
+            "title": "Bazaars",
             "info": "Azerbaijan's bazaars are vibrant hubs of activity, offering a sensory feast of sights, sounds, and aromas. The Taza Bazaar in Baku, one of the oldest markets in the city, showcases a dazzling array of fresh fruits, vegetables, spices, and local delicacies. Visitors can also explore the Nizami Street market, known for its eclectic mix of traditional crafts, souvenirs, and street food, providing an authentic glimpse into Azerbaijani culture and commerce.",
             "furtherInfo": "For Further information click the button ↓",
-            "check": "Check",
+            "check": "Explore",
             "descriptiontwo": ""
         },
         "recommended": "Recommended",
