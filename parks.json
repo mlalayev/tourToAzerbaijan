@@ -3,12 +3,12 @@
     {
       "image": "./src/assets/parkone.jpg",
       "title": "Dağüstü Park",
-      "caption": "Doğa sevənlər üçün mükəmməl bir yer."
+      "caption": "Təbiilik sevənlər üçün mükəmməl bir yer."
     },
     {
       "image": "./src/assets/parktwo.jpg",
       "title": "Fəvvarelər Meydanı",
-      "caption": "Təsvir edilə bilməyən gözəl bir yer."
+      "caption": "Təsəvvür edilə bilməyən gözəl bir yer."
     },
     {
       "image": "./src/assets/parkthree.jpg",
@@ -18,7 +18,7 @@
     {
       "image": "./src/assets/parkfour.jpg",
       "title": "Dədə Qorqud Parkı",
-      "caption": "Ətraflı təsvir edilə bilən yer."
+      "caption": "Ən yeni və müasir parklardan biri."
     },
     {
       "image": "./src/assets/parkfive.jpg",
