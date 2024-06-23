@@ -1,27 +1,110 @@
-[
+{
+  "az": [
     {
-      "image": "./src/assets/carpetmuseum.jpeg",
-      "title": "religious",
-      "caption": "Nulla vitae elit libero, a pharetra augue mollis interdum."
+      "image": "./src/assets/religiousone.jpg",
+      "title": "Bibi Heybet Məscidi",
+      "caption": "Şəhərin məşhur məscidlərindən biri olan Bibi Heybet Məscidi."
     },
     {
-      "image": "./src/assets/kandtasarrufat.jpg",
-      "title": "Second slide label",
-      "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      "image": "./src/assets/religioustwo.jpg",
+      "title": "Heydər Məscidi",
+      "caption": "Bakı şəhərində ən məşhur məscidlərdən biri."
     },
     {
-      "image": "./src/assets/literaturemuseum.jpg",
-      "title": "Third slide label",
-      "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
+      "image": "./src/assets/religiousthree.jpg",
+      "title": "Aleksandr Nevski Kilsəsi",
+      "caption": "Şəhərin məşhur Aleksandr Nevski Kilsəsi."
     },
     {
-      "image": "./src/assets/milliincesenetmuzeyi.jpg",
-      "title": "Fourth slide label",
-      "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
+      "image": "./src/assets/religiousfour.jpeg",
+      "title": "Müqəddəs Georgi Kilsəsi",
+      "caption": "Müqəddəs Georgi Kilsəsi haqqında qısa məlumat."
     },
     {
-      "image": "./src/assets/haydaraliyevcenter.jpg",
-      "title": "Fourth slide label",
-      "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
+      "image": "./src/assets/religiousfour.jpg",
+      "title": "Bakıdakı Ashkenazi Yəhudilərinin Sinagogu",
+      "caption": "Bakıdakı Ashkenazi Yəhudilərinin məşhur sinagogu."
+    }
+  ],
+  "en": [
+    {
+      "image": "./src/assets/religiousone.jpg",
+      "title": "Bibi Heybet Mosque",
+      "caption": "One of the city's famous mosques, Bibi Heybet Mosque."
+    },
+    {
+      "image": "./src/assets/religioustwo.jpg",
+      "title": "Haydar Mosque",
+      "caption": "One of the most famous mosques in Baku city."
+    },
+    {
+      "image": "./src/assets/religiousthree.jpg",
+      "title": "Alexander Nevsky Church",
+      "caption": "The famous Alexander Nevsky Church in the city."
+    },
+    {
+      "image": "./src/assets/religiousfour.jpeg",
+      "title": "Saint George's Church",
+      "caption": "Brief information about Saint George's Church."
+    },
+    {
+      "image": "./src/assets/religiousfour.jpg",
+      "title": "Synagogue of Ashkenazi Jews in Baku",
+      "caption": "The famous synagogue of Ashkenazi Jews in Baku."
+    }
+  ],
+  "ru": [
+    {
+      "image": "./src/assets/religiousone.jpg",
+      "title": "Мечеть Биби-Гейбат",
+      "caption": "Одна из известных мечетей города, Мечеть Биби-Гейбат."
+    },
+    {
+      "image": "./src/assets/religioustwo.jpg",
+      "title": "Мечеть Хайдара",
+      "caption": "Одна из самых известных мечетей города Баку."
+    },
+    {
+      "image": "./src/assets/religiousthree.jpg",
+      "title": "Церковь Александра Невского",
+      "caption": "Известная Церковь Александра Невского в городе."
+    },
+    {
+      "image": "./src/assets/religiousfour.jpeg",
+      "title": "Церковь Святого Георгия",
+      "caption": "Краткая информация о Церкви Святого Георгия."
+    },
+    {
+      "image": "./src/assets/religiousfour.jpg",
+      "title": "Синагога ашкеназских евреев в Баку",
+      "caption": "Известная синагога ашкеназских евреев в Баку."
+    }
+  ],
+  "ge": [
+    {
+      "image": "./src/assets/religiousone.jpg",
+      "title": "Bibi Heybet Moschee",
+      "caption": "Eine der berühmten Moscheen der Stadt, die Bibi Heybet Moschee."
+    },
+    {
+      "image": "./src/assets/religioustwo.jpg",
+      "title": "Haydar Moschee",
+      "caption": "Eine der bekanntesten Moscheen in der Stadt Baku."
+    },
+    {
+      "image": "./src/assets/religiousthree.jpg",
+      "title": "Alexander-Newski-Kirche",
+      "caption": "Die berühmte Alexander-Newski-Kirche in der Stadt."
+    },
+    {
+      "image": "./src/assets/religiousfour.jpeg",
+      "title": "Georgskirche",
+      "caption": "Kurze Informationen über die Georgskirche."
+    },
+    {
+      "image": "./src/assets/religiousfour.jpg",
+      "title": "Synagoge der Aschkenasim in Baku",
+      "caption": "Die berühmte Synagoge der Aschkenasim in Baku."
     }
   ]
+}

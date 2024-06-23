@@ -1,27 +1,130 @@
-[
+{
+  "az": [
     {
-      "image": "./src/assets/carpetmuseum.jpeg",
-      "title": "cuisine",
-      "caption": "Nulla vitae elit libero, a pharetra augue mollis interdum."
+      "image": "./src/assets/cuisineone.webp",
+      "title": "Baku Paxlavası",
+      "caption": "Qat-qat xəmirin içərisinə doğranmış qoz-fındıq doldurulmuş və şərbətlə şirinləşdirilmiş zəngin, şirin xəmir."
     },
     {
-      "image": "./src/assets/kandtasarrufat.jpg",
-      "title": "Second slide label",
-      "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      "image": "./src/assets/cuisinetwo.jpg",
+      "title": "Balqabaqlı plov",
+      "caption": "Yumşaq balqabaq parçaları ilə bişirilmiş dadlı və aromatik düyü yeməyi."
     },
     {
-      "image": "./src/assets/literaturemuseum.jpg",
-      "title": "Third slide label",
-      "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
+      "image": "./src/assets/cuisinethree.jpg",
+      "title": "Balıq içində Lavanghi",
+      "caption": "Ənənəvi yemək, balıq qoz-fındıq və otların dadlı doldurulması ilə doldurulur."
     },
     {
-      "image": "./src/assets/milliincesenetmuzeyi.jpg",
-      "title": "Fourth slide label",
-      "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
+      "image": "./src/assets/cuisinefour.jpg",
+      "title": "Qutab Ləzzətləri",
+      "caption": "Nazik xəmir, göyərti və ya ətlə doldurulmuş, qatlanmış və qızardılmış."
     },
     {
-      "image": "./src/assets/haydaraliyevcenter.jpg",
-      "title": "Fourth slide label",
-      "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
+      "image": "./src/assets/cuisinefive.jpg",
+      "title": "Şah plov",
+      "caption": "Qurudulmuş meyvələr, ət və xırtıldayan qabığın içində bükülmüş təbəqəli dəbdəbəli düyü yeməyi."
+    },
+    {
+      "image": "./src/assets/cuisinesix.jpg",
+      "title": "Yarpağ dolma",
+      "caption": "Düyü, göyərti və ədviyyatların dadlı qarışığı ilə doldurulmuş üzüm yarpaqları."
+    }
+  ],
+  "en": [
+    {
+      "image": "./src/assets/cuisineone.webp",
+      "title": "Baku Pakhlava",
+      "caption": "A rich, sweet pastry made of layers of filo filled with chopped nuts and sweetened with syrup."
+    },
+    {
+      "image": "./src/assets/cuisinetwo.jpg",
+      "title": "Plov with pumpkin",
+      "caption": "A savory and aromatic rice dish cooked with tender pieces of pumpkin."
+    },
+    {
+      "image": "./src/assets/cuisinethree.jpg",
+      "title": "Lavanghi inside fish",
+      "caption": "A traditional dish featuring fish stuffed with a flavorful walnut and herb filling."
+    },
+    {
+      "image": "./src/assets/cuisinefour.jpg",
+      "title": "Gutab Delicates",
+      "caption": "Thin dough filled with greens or meat, folded and pan-fried to perfection."
+    },
+    {
+      "image": "./src/assets/cuisinefive.jpg",
+      "title": "Shah Plov",
+      "caption": "A luxurious rice dish layered with dried fruits, meat, and wrapped in a crispy crust."
+    },
+    {
+      "image": "./src/assets/cuisinesix.jpg",
+      "title": "Yarpaq Dolma",
+      "caption": "Grape leaves stuffed with a delicious mixture of rice, herbs, and spices."
+    }
+  ],
+  "ru": [
+    {
+      "image": "./src/assets/cuisineone.webp",
+      "title": "Бакинский пахлава",
+      "caption": "Богатый, сладкий десерт из слоёного теста с измельчёнными орехами, сладким сиропом."
+    },
+    {
+      "image": "./src/assets/cuisinetwo.jpg",
+      "title": "Плов с тыквой",
+      "caption": "Ароматное рисовое блюдо с нежными кусочками тыквы."
+    },
+    {
+      "image": "./src/assets/cuisinethree.jpg",
+      "title": "Лаванги внутри рыбы",
+      "caption": "Традиционное блюдо с рыбой, начиненной ароматным ореховым и травяным начинкой."
+    },
+    {
+      "image": "./src/assets/cuisinefour.jpg",
+      "title": "Гутаб Деликатесы",
+      "caption": "Тонкое тесто, наполненное зеленью или мясом, сфальцованное и обжаренное до идеальной хрустящести."
+    },
+    {
+      "image": "./src/assets/cuisinefive.jpg",
+      "title": "Шах плов",
+      "caption": "Роскошное рисовое блюдо с сухофруктами, мясом и завернутое в хрустящую корку."
+    },
+    {
+      "image": "./src/assets/cuisinesix.jpg",
+      "title": "Листовой долма",
+      "caption": "Виноградные листья, начиненные вкусной смесью риса, трав и специй."
+    }
+  ],
+  "ge": [
+    {
+      "image": "./src/assets/cuisineone.webp",
+      "title": "Baku Pakhlava",
+      "caption": "Ein reicher, süßer Kuchen aus Schichten von Filoteig gefüllt mit gehackten Nüssen und gesüßt mit Sirup."
+    },
+    {
+      "image": "./src/assets/cuisinetwo.jpg",
+      "title": "Plov mit Kürbis",
+      "caption": "Ein herzhaftes und aromatisches Reisgericht mit zarten Stücken von Kürbis."
+    },
+    {
+      "image": "./src/assets/cuisinethree.jpg",
+      "title": "Lavanghi in Fisch",
+      "caption": "Ein traditionelles Gericht mit Fisch gefüllt mit einer würzigen Walnuss- und Kräuterfüllung."
+    },
+    {
+      "image": "./src/assets/cuisinefour.jpg",
+      "title": "Gutab Delikatessen",
+      "caption": "Dünner Teig gefüllt mit Grünzeug oder Fleisch, gefaltet und perfekt in der Pfanne gebraten."
+    },
+    {
+      "image": "./src/assets/cuisinefive.jpg",
+      "title": "Shah Plov",
+      "caption": "Ein luxuriöses Reisgericht, geschichtet mit Trockenfrüchten, Fleisch und umhüllt von einer knusprigen Kruste."
+    },
+    {
+      "image": "./src/assets/cuisinesix.jpg",
+      "title": "Yarpaq Dolma",
+      "caption": "Weinblätter gefüllt mit einer köstlichen Mischung aus Reis, Kräutern und Gewürzen."
     }
   ]
+}
