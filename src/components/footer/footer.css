@@ -234,7 +234,7 @@ footer::after {
     width: 60vw;
     height: 300px;
     display: flex;
-    max-width: 355px;
+    max-width: 360px;
     background: white;
     padding: 10px 20px;
     text-align: center;

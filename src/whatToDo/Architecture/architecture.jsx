@@ -6,25 +6,37 @@ import { RiArrowDownSLine } from "react-icons/ri";
 import React, { useState, useEffect, useRef } from 'react';
 import ImageSlider from '../../components/imageSlider/imageSlider.jsx';
 
-import az from '../../assets/az.svg'
-import gb from '../../assets/gb.svg'
-import ru from '../../assets/ru.svg'
-import de from '../../assets/de.svg'
+import az from '../../assets/az.svg';
+import gb from '../../assets/gb.svg';
+import ru from '../../assets/ru.svg';
+import de from '../../assets/de.svg';
 
-function architecture() {
-
+function Architecture() {
   const { t, i18n } = useTranslation();
 
   const [slides, setSlides] = useState([]);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [langMenuOpen, setLangMenuOpen] = useState(false);
 
-
   const handleLangButtonClick = () => {
     setLangMenuOpen(!langMenuOpen);
   };
 
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+    setLangMenuOpen(false); // Close the menu after selecting a language
+  };
 
+  const dropdownRefUp = useRef(null);
+  const menuRef = useRef(null);
+
+  const handleClickOutside = (ref, setFunction) => (event) => {
+    if (ref.current && !ref.current.contains(event.target)) {
+      setFunction(false);
+    }
+  };
+
+  const handleHamburgerClick = () => setIsMenuOpen(!isMenuOpen);
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -46,35 +58,19 @@ function architecture() {
     };
   }, []);
 
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-    setLangMenuOpen(false); // Close the menu after selecting a language
-  };
-
-  const dropdownRefUp = useRef(null);
-  const menuRef = useRef(null);
-
-  const handleClickOutside = (ref, setFunction) => (event) => {
-    if (ref.current && !ref.current.contains(event.target)) {
-      setFunction(false);
-    }
-  };
-
-  const handleHamburgerClick = () => setIsMenuOpen(!isMenuOpen);
-
   useEffect(() => {
     const fetchSlides = async () => {
       try {
-        const response = await fetch('../../../architecture.json');
+        const response = await fetch('../../../Architecture.json');
         const data = await response.json();
-        setSlides(data);
+        setSlides(data[i18n.language]); // Load slides based on the current language
       } catch (error) {
         console.error('Error fetching the slides data:', error);
       }
     };
 
     fetchSlides();
-  }, []);
+  }, [i18n.language]); // Refetch slides when the language changes
 
   useEffect(() => {
     const handleOutsideClick = handleClickOutside(menuRef, setIsMenuOpen);
@@ -101,15 +97,14 @@ function architecture() {
           <div className="language-switcher" id='sliderlangmenu'>
             <button className="lang" onClick={handleLangButtonClick}>
               <IoLanguageSharp size={20} color='white' />
-              <RiArrowDownSLine size={20} color='white'
-               className={langMenuOpen ? 'rotated' : 'm'} />
+              <RiArrowDownSLine size={20} color='white' className={langMenuOpen ? 'rotated' : 'm'} />
             </button>
             {langMenuOpen && (
               <ul className="language-menu" id='language-menu'>
-                <li onClick={() => changeLanguage('en')}><img src={gb} className='flag' /> English</li>
-                <li onClick={() => changeLanguage('az')}><img src={az} className='flag' />Azərbaycan</li>
-                <li onClick={() => changeLanguage('ru')}><img src={ru} className='flag' /> Русский</li>
-                <li onClick={() => changeLanguage('ge')}><img src={de} className='flag' /> German</li>
+                <li onClick={() => changeLanguage('en')}><img src={gb} className='flag' alt="English" /> English</li>
+                <li onClick={() => changeLanguage('az')}><img src={az} className='flag' alt="Azerbaijani" />Azərbaycan</li>
+                <li onClick={() => changeLanguage('ru')}><img src={ru} className='flag' alt="Russian" /> Русский</li>
+                <li onClick={() => changeLanguage('de')}><img src={de} className='flag' alt="German" /> German</li>
               </ul>
             )}
           </div>
@@ -132,13 +127,11 @@ function architecture() {
       </header>
 
       <section className="sectionslider">
-
         {slides.length > 0 ? <ImageSlider slides={slides} /> : <p>Loading...</p>}
-
       </section>
 
     </div>
   );
 }
 
-export default architecture;
+export default Architecture;

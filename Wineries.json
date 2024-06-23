@@ -1,27 +1,27 @@
 [
-    {
-      "image": "./src/assets/wineriesone.jpg",
-      "title": "Goygol Winery",
-      "caption": "Nulla vitae elit libero, a pharetra augue mollis interdum."
-    },
-    {
-      "image": "./src/assets/wineriestwo.jpg",
-      "title": "Wine Testing in Goygol",
-      "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-    },
-    {
-      "image": "./src/assets/literaturemuseum.jpg",
-      "title": "Third slide label",
-      "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
-    },
-    {
-      "image": "./src/assets/milliincesenetmuzeyi.jpg",
-      "title": "Fourth slide label",
-      "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
-    },
-    {
-      "image": "./src/assets/haydaraliyevcenter.jpg",
-      "title": "Fourth slide label",
-      "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
-    }
-  ]
+  {
+    "image": "./src/assets/wineriesone.jpg",
+    "title": "Goygol Winery",
+    "caption": "Historic winery known for its exquisite wine production."
+  },
+  {
+    "image": "./src/assets/wineriestwo.jpg",
+    "title": "Wine Tasting in Goygol",
+    "caption": "Experience the rich flavors of local wines in Goygol."
+  },
+  {
+    "image": "./src/assets/wineriesthree.jpeg",
+    "title": "Abrau Wine Museum",
+    "caption": "Explore the history and art of winemaking at Abrau."
+  },
+  {
+    "image": "./src/assets/wineriesfour.jpg",
+    "title": "Wine Tasting in Goygol",
+    "caption": "Savor a variety of premium wines in the scenic Goygol region."
+  },
+  {
+    "image": "./src/assets/wineriesfive.jpg",
+    "title": "Goygol Winery",
+    "caption": "Discover the legacy and taste of Goygol's finest wines."
+  }
+]

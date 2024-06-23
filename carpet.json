@@ -1,27 +1,91 @@
-[
-    {
-        "image": "./src/assets/goygolgerman.jpg",
-        "title": "First trodasdaslololo slide label",
-        "caption": "Nulla vitae elit libero, a pharetra augue mollis interdum."
-    },
-    {
-        "image": "./src/assets/kandtasarrufat.jpg",
-        "title": "Second slide label",
-        "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-    },
-    {
-        "image": "./src/assets/literaturemuseum.jpg",
-        "title": "Third slide label",
-        "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
-    },
-    {
-        "image": "./src/assets/milliincesenetmuzeyi.jpg",
-        "title": "Fourth slide label",
-        "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
-    },
-    {
-        "image": "./src/assets/haydaraliyevcenter.jpg",
-        "title": "Fourth slide label",
-        "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
-    }
-]
+{
+    "az": [
+      {
+        "image": "./src/assets/bazaarone.jpg",
+        "title": "Təzə Bazar, Şəki",
+        "caption": "Şəkini müxtəlif mallarla məşhur qalabalıq bazar."
+      },
+      {
+        "image": "./src/assets/bazaartwo.jpg",
+        "title": "Yaşıl Bazar, Bakı",
+        "caption": "Bakının təzə meyvə və tərəvəzlərinin təklif edildiyi canlı bazar."
+      },
+      {
+        "image": "./src/assets/bazaarthree.jpg",
+        "title": "Lənkəran Bazarı",
+        "caption": "Lənkəranın təzə çay yarpaqları və regional kənd təsərrüfat məhsulları ilə məşhur bazarı."
+      },
+      {
+        "image": "./src/assets/bazaarfourjpg.jpg",
+        "title": "Qəbələ Bazarı",
+        "caption": "Qəbələnin ənənəvi Azərbaycan malları və suvenirleri təklif edən canlı bazarı."
+      }
+    ],
+    "en": [
+      {
+        "image": "./src/assets/bazaarone.jpg",
+        "title": "Taza Bazaar, Shaki",
+        "caption": "A bustling market in Shaki known for its diverse array of goods."
+      },
+      {
+        "image": "./src/assets/bazaartwo.jpg",
+        "title": "Yashil Bazaar, Baku",
+        "caption": "A vibrant market in Baku offering a variety of fresh produce and local specialties."
+      },
+      {
+        "image": "./src/assets/bazaarthree.jpg",
+        "title": "Bazaar of Lankaran",
+        "caption": "Lankaran's market featuring fresh tea leaves and regional agricultural products."
+      },
+      {
+        "image": "./src/assets/bazaarfourjpg.jpg",
+        "title": "Bazaar of Gabala",
+        "caption": "Gabala's lively bazaar offering traditional Azerbaijani goods and souvenirs."
+      }
+    ],
+    "ru": [
+      {
+        "image": "./src/assets/bazaarone.jpg",
+        "title": "Таза Базар, Шеки",
+        "caption": "Шеки - живой базар, известный своим разнообразием товаров."
+      },
+      {
+        "image": "./src/assets/bazaartwo.jpg",
+        "title": "Зелёный базар, Баку",
+        "caption": "Яркий рынок в Баку, предлагающий разнообразие свежих продуктов и местных специальностей."
+      },
+      {
+        "image": "./src/assets/bazaarthree.jpg",
+        "title": "Базар Ленкорана",
+        "caption": "Рынок Ленкорана с свежими чайными листьями и региональной сельскохозяйственной продукцией."
+      },
+      {
+        "image": "./src/assets/bazaarfourjpg.jpg",
+        "title": "Базар Габалы",
+        "caption": "Живой базар в Габале с традиционными азербайджанскими товарами и сувенирами."
+      }
+    ],
+    "ge": [
+      {
+        "image": "./src/assets/bazaarone.jpg",
+        "title": "Taza Basar, Scheki",
+        "caption": "Ein belebter Markt in Scheki, bekannt für seine vielfältige Warenangebot."
+      },
+      {
+        "image": "./src/assets/bazaartwo.jpg",
+        "title": "Yashil Basar, Baku",
+        "caption": "Ein lebendiger Markt in Baku mit einer Vielzahl von frischen Produkten und lokalen Spezialitäten."
+      },
+      {
+        "image": "./src/assets/bazaarthree.jpg",
+        "title": "Basar von Lankaran",
+        "caption": "Der Markt von Lankaran bietet frische Teeblätter und regionale landwirtschaftliche Produkte."
+      },
+      {
+        "image": "./src/assets/bazaarfourjpg.jpg",
+        "title": "Basar von Gabala",
+        "caption": "Der lebhafte Basar von Gabala bietet traditionelle aserbaidschanische Waren und Souvenirs."
+      }
+    ]
+  }
+  
