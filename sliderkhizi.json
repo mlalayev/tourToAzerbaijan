@@ -1,27 +1,90 @@
-[
+{
+  "az": [
     {
       "image": "./src/assets/khizisliderone.jpg",
-      "title": "First slide label",
-      "caption": "Nulla vitae elit libero, a pharetra augue mollis interdum."
+      "title": "Khizi şirin dağları",
+      "caption": "Khizi şirin dağlarına baxış."
     },
     {
       "image": "./src/assets/khizislidertwo.jpg",
-      "title": "Second slide label",
+      "title": "Bizimlə Khizi dağlarını kəşf edin",
       "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
-      "image": "./src/assets/ismaillysliderthree.jpg",
-      "title": "Third slide label",
+      "image": "./src/assets/khizisliderthree.jpg",
+      "title": "Bəşbarmaq dağı",
       "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
     },
     {
-      "image": "./src/assets/ismaillysliderfour.jpg",
-      "title": "Fourth slide label",
+      "image": "./src/assets/khizisliderfour.jpg",
+      "title": "Bəşbarmaq dağındakı kiçik ev",
+      "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
+    }
+  ],
+  "en": [
+    {
+      "image": "./src/assets/khizisliderone.jpg",
+      "title": "Candy mountains in Khizi",
+      "caption": "Exploring the candy mountains in Khizi."
+    },
+    {
+      "image": "./src/assets/khizislidertwo.jpg",
+      "title": "Explore Khizi mountains with us",
+      "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "image": "./src/assets/khizisliderthree.jpg",
+      "title": "Beshbarmag mountain",
       "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
     },
     {
-      "image": "./src/assets/ismaillysliderfive.jpg",
-      "title": "Fourth slide label",
+      "image": "./src/assets/khizisliderfour.jpg",
+      "title": "A tiny house on Beshbarmag mountain",
+      "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
+    }
+  ],
+  "ru": [
+    {
+      "image": "./src/assets/khizisliderone.jpg",
+      "title": "Канди горы Хызи",
+      "caption": "Путешествие по Канди горам в Хызи."
+    },
+    {
+      "image": "./src/assets/khizislidertwo.jpg",
+      "title": "Исследуйте горы Хызи вместе с нами",
+      "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "image": "./src/assets/khizisliderthree.jpg",
+      "title": "Гора Бешбармак",
+      "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
+    },
+    {
+      "image": "./src/assets/khizisliderfour.jpg",
+      "title": "Маленький дом на горе Бешбармак",
+      "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
+    }
+  ],
+  "ge": [
+    {
+      "image": "./src/assets/khizisliderone.jpg",
+      "title": "Bonbon-Berge in Khizi",
+      "caption": "Erkundung der Bonbon-Berge in Khizi."
+    },
+    {
+      "image": "./src/assets/khizislidertwo.jpg",
+      "title": "Erkunden Sie die Khizi-Berge mit uns",
+      "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "image": "./src/assets/khizisliderthree.jpg",
+      "title": "Beshbarmag Berg",
+      "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
+    },
+    {
+      "image": "./src/assets/khizisliderfour.jpg",
+      "title": "Ein kleines Haus auf dem Beshbarmag Berg",
       "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
     }
   ]
+}

@@ -1,27 +1,110 @@
-[
+{
+  "az": [
     {
       "image": "./src/assets/gusarsliderone.jpg",
-      "title": "First slide label",
-      "caption": "Nulla vitae elit libero, a pharetra augue mollis interdum."
+      "title": "Qusar taxıl tarlaları çörək bişirmək üçün",
+      "caption": "Qusar taxıl tarlaları çörək bişirmək üçün ən yaxşı yerlərdən biridir."
     },
     {
       "image": "./src/assets/gusarslidertwo.jpg",
-      "title": "Second slide label",
-      "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      "title": "Qarlı dağlar xizək sürmək üçün ən yaxşı yerlərdir",
+      "caption": "Qarlı dağlar xizək sürmək üçün ən yaxşı yerlərdir."
     },
     {
       "image": "./src/assets/gusarsliderthree.jpg",
-      "title": "Third slide label",
-      "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
+      "title": "Şahdağ kurortu",
+      "caption": "Şahdağ Azərbaycanın ən turist məkanlarından biridir."
     },
     {
       "image": "./src/assets/gusarsliderfour.jpg",
-      "title": "Fourth slide label",
-      "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
+      "title": "Qusar yaylası",
+      "caption": "Qusar yaylası isti yay günlərində sərinləmək üçün ən yaxşı yerdir."
     },
     {
       "image": "./src/assets/gusarsliderfive.jpg",
-      "title": "Fourth slide label",
-      "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
+      "title": "Unudulmaz mənzərələr",
+      "caption": "Təbii gözəlliklər və rahatlıq."
+    }
+  ],
+  "en": [
+    {
+      "image": "./src/assets/gusarsliderone.jpg",
+      "title": "Gusar spike farms for making bread",
+      "caption": "Gusar spike farms are one of the best places for making bread."
+    },
+    {
+      "image": "./src/assets/gusarslidertwo.jpg",
+      "title": "Snowy mountains best for skiing",
+      "caption": "Snowy mountains are the best places for skiing."
+    },
+    {
+      "image": "./src/assets/gusarsliderthree.jpg",
+      "title": "Shahdag resort",
+      "caption": "Shahdag is one of the most touristic places in Azerbaijan."
+    },
+    {
+      "image": "./src/assets/gusarsliderfour.jpg",
+      "title": "Gusar plateau",
+      "caption": "Gusar plateau is the best place to cool off on hot summer days."
+    },
+    {
+      "image": "./src/assets/gusarsliderfive.jpg",
+      "title": "Unforgettable sights",
+      "caption": "Natural beauty and tranquility."
+    }
+  ],
+  "ru": [
+    {
+      "image": "./src/assets/gusarsliderone.jpg",
+      "title": "Кусарские фермы для выпечки хлеба",
+      "caption": "Кусарские фермы являются одними из лучших мест для выпечки хлеба."
+    },
+    {
+      "image": "./src/assets/gusarslidertwo.jpg",
+      "title": "Снежные горы лучшие для катания на лыжах",
+      "caption": "Снежные горы - лучшее место для катания на лыжах."
+    },
+    {
+      "image": "./src/assets/gusarsliderthree.jpg",
+      "title": "Курорт Шахдаг",
+      "caption": "Шахдаг - одно из самых туристических мест в Азербайджане."
+    },
+    {
+      "image": "./src/assets/gusarsliderfour.jpg",
+      "title": "Кусарское плато",
+      "caption": "Кусарское плато - лучшее место для охлаждения в жаркие летние дни."
+    },
+    {
+      "image": "./src/assets/gusarsliderfive.jpg",
+      "title": "Незабываемые виды",
+      "caption": "Природная красота и спокойствие."
+    }
+  ],
+  "ge": [
+    {
+      "image": "./src/assets/gusarsliderone.jpg",
+      "title": "Gusar-Spike-Farmen für die Brotherstellung",
+      "caption": "Gusar-Spike-Farmen sind einer der besten Orte für die Brotherstellung."
+    },
+    {
+      "image": "./src/assets/gusarslidertwo.jpg",
+      "title": "Schneebedeckte Berge am besten zum Skifahren",
+      "caption": "Schneebedeckte Berge sind die besten Orte zum Skifahren."
+    },
+    {
+      "image": "./src/assets/gusarsliderthree.jpg",
+      "title": "Shahdag-Resort",
+      "caption": "Shahdag ist einer der touristischsten Orte in Aserbaidschan."
+    },
+    {
+      "image": "./src/assets/gusarsliderfour.jpg",
+      "title": "Gusar-Plateau",
+      "caption": "Das Gusar-Plateau ist der beste Ort, um sich an heißen Sommertagen abzukühlen."
+    },
+    {
+      "image": "./src/assets/gusarsliderfive.jpg",
+      "title": "Unvergessliche Sehenswürdigkeiten",
+      "caption": "Natürliche Schönheit und Ruhe."
     }
   ]
+}
