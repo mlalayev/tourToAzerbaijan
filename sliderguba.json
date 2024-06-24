@@ -1,27 +1,110 @@
-[
-  {
-    "image": "./src/assets/gubasliderone.jpg",
-    "title": "First slide label",
-    "caption": "Nulla vitae elit libero, a pharetra augue mollis interdum."
-  },
-  {
-    "image": "./src/assets/gubaslidertwo.jpg",
-    "title": "Second slide label",
-    "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-  },
-  {
-    "image": "./src/assets/gubasliderthree.jpg",
-    "title": "GURGUR slide label",
-    "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
-  },
-  {
-    "image": "./src/assets/gubasliderfour.jpg",
-    "title": "Fourth slide label",
-    "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
-  },
-  {
-    "image": "./src/assets/gubasliderfive.jpg",
-    "title": "Fourth slide label",
-    "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
-  }
-]
+{
+  "az": [
+    {
+      "image": "./src/assets/gubasliderone.jpg",
+      "title": "Quba Dağları",
+      "caption": "Quba dağları yürüyüş üçün ən yaxşı yerdir."
+    },
+    {
+      "image": "./src/assets/gubaslidertwo.jpg",
+      "title": "Qubada Dərin Meşələr",
+      "caption": "Dərin meşə kəşf etmək və kababla piknik etmək üçün ən yaxşı yerdir."
+    },
+    {
+      "image": "./src/assets/gubasliderthree.jpg",
+      "title": "Qurğur Şəlaləsi",
+      "caption": "Qurğur Azərbaycanın ən turist məkanlarından biridir."
+    },
+    {
+      "image": "./src/assets/gubasliderfour.jpg",
+      "title": "Quba Gölü",
+      "caption": "Quba gölü isti yay günlərində sərinləmək üçün ən yaxşı yerdir."
+    },
+    {
+      "image": "./src/assets/gubasliderfive.jpg",
+      "title": "Quba Qar Dağları",
+      "caption": "Təbii gözəlliklər və rahatlıq."
+    }
+  ],
+  "en": [
+    {
+      "image": "./src/assets/gubasliderone.jpg",
+      "title": "Guba Mountains",
+      "caption": "Guba mountains are the best place for hiking."
+    },
+    {
+      "image": "./src/assets/gubaslidertwo.jpg",
+      "title": "Deep Forests in Guba",
+      "caption": "Deep forest is the best place for exploring and having a picnic with kebab."
+    },
+    {
+      "image": "./src/assets/gubasliderthree.jpg",
+      "title": "Gurgur Waterfall",
+      "caption": "Gurgur is one of the most touristic waterfalls in Azerbaijan."
+    },
+    {
+      "image": "./src/assets/gubasliderfour.jpg",
+      "title": "Guba Lake",
+      "caption": "Guba lake is the best place for getting cool on hot summer days."
+    },
+    {
+      "image": "./src/assets/gubasliderfive.jpg",
+      "title": "Guba Snowy Mountains",
+      "caption": "Natural beauty and tranquility."
+    }
+  ],
+  "ru": [
+    {
+      "image": "./src/assets/gubasliderone.jpg",
+      "title": "Кубинские горы",
+      "caption": "Кубинские горы — лучшее место для пеших прогулок."
+    },
+    {
+      "image": "./src/assets/gubaslidertwo.jpg",
+      "title": "Глубокие леса в Кубе",
+      "caption": "Глубокий лес — лучшее место для исследования и пикника с шашлыком."
+    },
+    {
+      "image": "./src/assets/gubasliderthree.jpg",
+      "title": "Водопад Гургур",
+      "caption": "Гургур — один из самых туристических водопадов в Азербайджане."
+    },
+    {
+      "image": "./src/assets/gubasliderfour.jpg",
+      "title": "Озеро Куба",
+      "caption": "Озеро Куба — лучшее место для охлаждения в жаркие летние дни."
+    },
+    {
+      "image": "./src/assets/gubasliderfive.jpg",
+      "title": "Заснеженные горы Кубы",
+      "caption": "Природная красота и спокойствие."
+    }
+  ],
+  "ge": [
+    {
+      "image": "./src/assets/gubasliderone.jpg",
+      "title": "Guba-Berge",
+      "caption": "Die Guba-Berge sind der beste Ort zum Wandern."
+    },
+    {
+      "image": "./src/assets/gubaslidertwo.jpg",
+      "title": "Tiefe Wälder in Guba",
+      "caption": "Der tiefe Wald ist der beste Ort zum Erkunden und für ein Picknick mit Kebab."
+    },
+    {
+      "image": "./src/assets/gubasliderthree.jpg",
+      "title": "Gurgur Wasserfall",
+      "caption": "Gurgur ist einer der touristischsten Wasserfälle in Aserbaidschan."
+    },
+    {
+      "image": "./src/assets/gubasliderfour.jpg",
+      "title": "Guba-See",
+      "caption": "Der Guba-See ist der beste Ort, um sich an heißen Sommertagen abzukühlen."
+    },
+    {
+      "image": "./src/assets/gubasliderfive.jpg",
+      "title": "Schneebedeckte Berge von Guba",
+      "caption": "Natürliche Schönheit und Ruhe."
+    }
+  ]
+}

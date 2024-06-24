@@ -93,46 +93,46 @@
     "sectionsecond": {
         "packageTours": "Paket turlar",
         "selectPackage": "Xüsusi ilə hazırladığımız turlardan birini seçin və Azərbaycan macəranız üçün hazırlaşın! Qonalamaq, hava limanı transferləri, muzey biletləri, şəhərlər arası nəqliyyat, tur rəhbərləri ilə məşğul olmaq istəmirsinizsə, buna görə narahat olmamalısınız - bunu sizin üçün həll edəcəyik.",
-        "toursToBaku": "Bakı və onun görməli yerlərinə Səyahət",
-        "bakuBoulevard": "Bakı da da daBulvarı",
+        "toursToBaku": "Bakı və onun turistik yerlərinə Səyahət",
+        "bakuBoulevard": "Füsunkar Bakı Bulvarı gəzintisi.",
         "sliderProps": {
             "sliderdos": {
-                "huno": "Bakı Bulvarı",
-                "p": "1 gün, 179,48 avro",
+                "huno": "Dağüstü park",
+                "p": "Şəhərin valeh edici həm gecə, həm səhər görüntüsü.",
                 "btn": "Keçid"
             },
             "slidertres": {
-                "huno": "Qəbələ həftə sonu - Tələbələr üçün istəyə əsasən",
-                "p": "8 gün / 7 gecə, 343,64 avro",
+                "huno": "Qəbələ həftə sonu - İstəklərə əsasən",
+                "p": "Tufandağ, Yeddi Gözəl Şəlaləsi, Gabaland və bir sıra gəzintilər",
                 "btn": "Keçid"
             },
             "slidercuatro": {
-                "huno": "Lerik həftə sonu - Tələbələr üçün istəyə əsasən",
-                "p": "3 gün / 2 gecə, 94,54 avro",
+                "huno": "Lerik həftə sonu - İstəklərə əsasən",
+                "p": "Relax, Ozobijon şəlaləsi və heyrətamiz gəzintilər",
                 "btn": "Keçid"
             },
             "sliderpierci": {
-                "huno": "Lənkəran həftə sonu - Tələbələr üçün istəyə əsasən",
-                "p": "3 gün / 2 gecə, 146,85 avro",
+                "huno": "Lənkəran həftə sonu",
+                "p": "Xanbulan, Mayak, Xəzər-Lənkəran stadionu gəzintisi",
                 "btn": "Keçid"
             },
             "slidersessi": {
-                "huno": "Quba həftə sonu - Tələbələr üçün istəyə əsasən",
-                "p": "3 gün / 2 gecə, 245,58 avro",
+                "huno": "Quba həftə sonu ",
+                "p": "Xınalıq, Afurca şəlaləsi, Çənlibel gölü, Təngəaltı turları",
                 "btn": "Keçid"
             },
             "sliderseptini": {
-                "huno": "Şuşa həftə sonu - Tələbələr üçün istəyə əsasən",
-                "p": "3 gün / 2 gecə, 180,93 avro",
+                "huno": "Şuşa həftə sonu",
+                "p": "Şuşa qalası və Qarabağ bölgəsinə səfər",
                 "btn": "Keçid"
             }
         }
     },
     "sectionthird": {
-        "packageTours": "Paket turlar",
-        "selectPackage": "Özel hazırlanmış paketlerimizden birini seçin ve Rusya maceranız için hazırlanın! Konaklama, havaalanı transferleri, müze biletleri, şehirler arası ulaşım, tur rehberleri ile ilgilenmenize gerek yok - biz sizin için onu hallederiz.",
+        "packageTours": "Günlük turlar",
+        "selectPackage": "Xüsusi ilə hazırladığımız günlük turlardan birini seçin və Azərbaycan macəranız üçün hazırlaşın!  Öz dostlarınız, yaxınlarınız ilə Bakını gəzmək istəyirsinizsə, o zaman doğru adresdəsiniz!",
         "atashgah": "Ataşgah",
-        "atashgahDescription": "Bakıdakı Atəşgah, etkileyici bir tarihi ve dini mekandır. Bu beşgen kompleks, 17. yüzyılda inşa edilmiştir ve...",
+        "atashgahDescription": "Bakıdakı Atəşgah, tarixi ve dini məkandır. Bu beşbucaqlı kompleks, 17. əsrdə inşa edilmişdir və...",
         "viewMe": "Keçid",
         "sliderProps": {
             "slidershahdag": {
@@ -170,10 +170,10 @@
     "sectionfourth": {
         "welcomeTo": "Azərbaycana",
         "azerbaijan": "Xoş gəlmişsiniz",
-        "planningTrip": "Azərbaycana səyahət planlamaq yorucu bir iş ola bilər, xüsusən də bu cazibədar ölkənin bütün unikal aspektləri və tarixi dəyərləri ilə tanış olmadıqda.",
-        "assistance": "sizin əldən gələcək vətəndaşlarınızın rəmzi səyahəti üçün mükəmməl bir marşrut seçməkdə sizə kömək edir. Nə üçün bizi seçməlisiniz:",
+        "planningTrip": "Azərbaycana səyahət planlamaq yorucu bir iş ola bilər, xüsusən də bu cazibədar ölkənin bütün unikal aspektləri və tarixi dəyərləri ilə yaxından tanımadıqda.",
+        "assistance": "sizin tanışlarınıza rəmzi səyahəti üçün mükəmməl bir marşrut seçməkdə sizə kömək edirik. Nə üçün bizi seçməlisiniz:",
         "reasons": {
-            "first": "Biz 10 illik təcrübəsi olan turizm şirkəti və minlərlə xoşbəxt turisti olan qurumuq.",
+            "first": "Biz 10 ildən artıq təcrübəsi olan turizm şirkəti və minlərlə xoşbəxt turisti olan qurumuq.",
             "second": "Biz Azərbaycan Respublikasının Dövlət Turizm Agentliyi tərəfindən rəsmi lisenziya almamış qeyri-rəsmi tur operatoruyuq.",
             "third": "Hər bir müştəriyə şəxsi yanaşma tətbiq edirik və səyahətinizi sizin ehtiyaclarınıza görə dizayn edirik."
         }
@@ -189,28 +189,28 @@
         "testimonials": [
             {
                 "name": "Yvonne Sanders",
-                "date": "2019-10-05",
+                "date": "2023-10-05",
                 "rating": 5,
-                "comment": "Salam və Xoş gün İrina və Sergeyə bizimlə qaldığımız və onlarla birlikdə İrina və Sergey ilə St. Petersburgda əyləncəli vaxt keçirdiyimiz üçün çox çox sağ olun. Onların..."
+                "comment": "Salam, Hamınıza xoş günlər arzulayıram, Murad bəyə və onun xüsusilə bizlər üçün seçdiyi mükəmməl tur bələdçisi və sürücüsünə dərin minnətdarlıqlarımı bildirirəm. Onların..."
             },
             {
-                "name": "Yvonne Sanders",
-                "date": "2019-10-05",
+                "name": "Aleksei İvanov",
+                "date": "2023-05-11",
                 "rating": 5,
-                "comment": "Salam və Xoş gün İrina və Sergeyə bizimlə qaldığımız və onlarla birlikdə İrina və Sergey ilə St. Petersburgda əyləncəli vaxt keçirdiyimiz üçün çox çox sağ olun. Onların..."
+                "comment": "Hər kəsə xoş istirahətlər, inanılmaz bir gəzinti istəyirsinizsə bu sayt və bu insanlar tam da sizin axtardığınızdır. Həyatımında heç zaman belə..."
             },
             {
-                "name": "Yvonne Sanders",
+                "name": "Maria Smirnova",
                 "date": "2019-10-05",
                 "rating": 5,
-                "comment": "Salam və Xoş gün İrina və Sergeyə bizimlə qaldığımız və onlarla birlikdə İrina və Sergey ilə St. Petersburgda əyləncəli vaxt keçirdiyimiz üçün çox çox sağ olun. Onların..."
+                "comment": "Bu gün mən Lerikin məhşur 'Relax' istirahət mərkəzinə baş çəkdim, Murad bəyin xüsusilə seçdiyi, professional sürücü və bələdçilərlə problemsiz və maraqlı səyahət..."
             }
         ]
     },
     "azerbaijan": {
         "title": "Azərbaycan",
-        "subtitle": "Həyrətamiz Ekskursiyalar",
-        "description": "Azərbaycanda inanılmaz bir tətil üçün seçilmiş tur və ekskursiyalar."
+        "subtitle": "Heyrətamiz Ekskursiyalar",
+        "description": "İnanılmaz bir tətil üçün seçilmiş tur və ekskursiyalar."
     },
     "cityDestinations": {
         "Baku": "Bakı",
@@ -241,11 +241,11 @@
         },
         "Gabala": {
             "name": "Qəbələ",
-            "info": "Azərbaycanın mənzərəsi peyzajlarının arasında gizli bir dəyər olan Qəbələ, araşdırılmağa gözləyən bir yarı qəpikdir. Qəbələnin turları, sakin doğal gözəllik və mədəni cazibələrinə görə ən məzmunlu bir səyahət təklif edir. Nohur Gölünün sakit sahillərindən Tufandag Dağının macəraçı yoluna qədər, Qəbələ ziyarətçiləri müxtəlif təklifləri ilə cəlb edir. Təcrübəli rehberlərimiz bu büyüleyici bölgənin sirrini açacaq, zəngin tarixi və canlı mədəniyyətindən danışacaq. Qəbələnin cazibəsinə daldırın və Azərbaycanın nəfəsə ala manzaraları arasında rəhətlik və macəra birləşməsini təcrübə edin."
+            "info": "Azərbaycan peyzajlarının arasında gizli bir dəyər olan Qəbələ, araşdırılmağa gözləyən sirlərlə dolu məkandır. Qəbələnin turları, sakin təbii gözəllik və mədəni cazibələrinə görə bir səyahət təklif edirik. Nohur Gölünün sakit sahillərindən Tufandag Dağının macəraçı yoluna qədər, Qəbələ ziyarətçiləri müxtəlif təklifləri ilə cəlb edir. Təcrübəli rehberlərimiz bu büyüleyici bölgənin sirrini açacaq, zəngin tarixi və canlı mədəniyyətindən danışacaq. Qəbələnin cazibəsinə daldırın və Azərbaycanın nəfəsə ala manzaraları arasında rəhətlik və macəra birləşməsini təcrübə edin."
         },
         "Gusar": {
             "name": "Qusar",
-            "info": "Qusar, Azərbaycanın Böyük Qafqaz Dağlarının yamaclarında yaranmış pitoresk bir şəhərdir, doğa sevərlərə və macəraçılara bənzəyən sakin bir istirahət yeri təklif edir. Qusarın turları sizi təmiz peyzajlarının, yağışlı ormanlarının və mağnifik dağ zirvələrinin araşdırılmasına dəvət edir. Laza kəndinin sakit güzəlliyindən Şahdağ Milli Parkının təhlükəsiz mənzərələrinə qədər, Qusar doğa cəfərətçilərini və açıq hava fəaliyyətlərini cəzb edir. Bilikli rehberlərimiz sizi bu büyüleyici bölgənin üzvlərindən unikal flora və fauna haqqında içərisindən keçərək, onun sahiblərinin zəngin mədəni irsini bölüşərək gətirəcək. Qusarın sükutu və cazibəsi ilə tanış olun və Qafqaz Dağlarının gözəl manzaraları arasında unudulmaz bir səyahətə çıxın."
+            "info": "Qusar, Azərbaycanın Böyük Qafqaz Dağlarının yamaclarında yaranmış pitoresk bir şəhərdir, doğa sevərlərə və macəraçılara bənzəyən sakin bir istirahət yeri təklif edir. Qusarın turları sizi təmiz peyzajlarının, yağışlı meşələrin və heyranedici dağ zirvələrinin araşdırılmasına dəvət edir. Laza kəndinin sakit güzəlliyindən Şahdağ Milli Parkının təhlükəsiz mənzərələrinə qədər, Qusar doğa cəfərətçilərini və açıq hava fəaliyyətlərini cəzb edir. Bilikli rehberlərimiz sizi bu büyüleyici bölgənin üzvlərindən unikal flora və fauna haqqında içərisindən keçərək, onun sahiblərinin zəngin mədəni irsini bölüşərək gətirəcək. Qusarın sükutu və cazibəsi ilə tanış olun və Qafqaz Dağlarının gözəl manzaraları arasında unudulmaz bir səyahətə çıxın."
         },
         "Ismailly": {
             "name": "İsmayıllı",

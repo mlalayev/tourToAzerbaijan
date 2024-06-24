@@ -1,27 +1,110 @@
-[
+{
+  "az": [
     {
-      "image": "./src/assets/carpetmuseum.jpeg",
-      "title": "sports",
-      "caption": "Nulla vitae elit libero, a pharetra augue mollis interdum."
+      "image": "./src/assets/sportsone.jpeg",
+      "title": "Bakı Olimpiya Mərkəzi",
+      "caption": "2019-cu ildə Avropa Liqasının finalı."
     },
     {
-      "image": "./src/assets/kandtasarrufat.jpg",
-      "title": "Second slide label",
-      "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      "image": "./src/assets/sportstwo.jpg",
+      "title": "Bakı Kristal Zalı",
+      "caption": "2012-ci ildə Eurovision mahnı müsabiqəsi."
     },
     {
-      "image": "./src/assets/literaturemuseum.jpg",
-      "title": "Third slide label",
-      "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
+      "image": "./src/assets/sportsthree.jpg",
+      "title": "Formula 1",
+      "caption": "Bakıda bir neçə ildir keçirilir."
     },
     {
-      "image": "./src/assets/milliincesenetmuzeyi.jpg",
-      "title": "Fourth slide label",
-      "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
+      "image": "./src/assets/sportsfour.jpg",
+      "title": "İslam Həmrəyliyi Oyunları 2017",
+      "caption": "2017-ci ildə keçirilən İslam Həmrəyliyi Oyunları."
     },
     {
-      "image": "./src/assets/haydaraliyevcenter.jpg",
-      "title": "Fourth slide label",
-      "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
+      "image": "./src/assets/sportsfive.jpg",
+      "title": "Bakı Olimpiya Oyunları 2015",
+      "caption": "2015-ci ildə keçirilən Bakı Olimpiya Oyunları."
+    }
+  ],
+  "en": [
+    {
+      "image": "./src/assets/sportsone.jpeg",
+      "title": "Baku Olympic Center",
+      "caption": "Europa League final in 2019."
+    },
+    {
+      "image": "./src/assets/sportstwo.jpg",
+      "title": "Baku Crystal Hall",
+      "caption": "Eurovision Song Contest in 2012."
+    },
+    {
+      "image": "./src/assets/sportsthree.jpg",
+      "title": "Formula 1",
+      "caption": "Held in Baku for several years."
+    },
+    {
+      "image": "./src/assets/sportsfour.jpg",
+      "title": "Islamic Solidarity Games 2017",
+      "caption": "Held in 2017 in Baku."
+    },
+    {
+      "image": "./src/assets/sportsfive.jpg",
+      "title": "Baku European Games 2015",
+      "caption": "The European Games held in Baku in 2015."
+    }
+  ],
+  "ru": [
+    {
+      "image": "./src/assets/sportsone.jpeg",
+      "title": "Бакинский Олимпийский Центр",
+      "caption": "Финал Лиги Европы 2019 года."
+    },
+    {
+      "image": "./src/assets/sportstwo.jpg",
+      "title": "Бакинский Кристальный Зал",
+      "caption": "Евровидение в 2012 году."
+    },
+    {
+      "image": "./src/assets/sportsthree.jpg",
+      "title": "Формула 1",
+      "caption": "Проводится в Баку несколько лет."
+    },
+    {
+      "image": "./src/assets/sportsfour.jpg",
+      "title": "Исламские игры солидарности 2017",
+      "caption": "Прошли в 2017 году в Баку."
+    },
+    {
+      "image": "./src/assets/sportsfive.jpg",
+      "title": "Бакинские Европейские Игры 2015",
+      "caption": "Европейские игры, прошедшие в Баку в 2015 году."
+    }
+  ],
+  "de": [
+    {
+      "image": "./src/assets/sportsone.jpeg",
+      "title": "Baku Olympiastadion",
+      "caption": "Europa League Finale 2019."
+    },
+    {
+      "image": "./src/assets/sportstwo.jpg",
+      "title": "Baku Crystal Hall",
+      "caption": "Eurovision Song Contest 2012."
+    },
+    {
+      "image": "./src/assets/sportsthree.jpg",
+      "title": "Formel 1",
+      "caption": "Seit mehreren Jahren in Baku ausgetragen."
+    },
+    {
+      "image": "./src/assets/sportsfour.jpg",
+      "title": "Islamische Solidaritätsspiele 2017",
+      "caption": "2017 in Baku ausgetragen."
+    },
+    {
+      "image": "./src/assets/sportsfive.jpg",
+      "title": "Europaspiele Baku 2015",
+      "caption": "Die Europaspiele 2015 in Baku."
     }
   ]
+}
