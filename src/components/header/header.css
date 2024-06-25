@@ -20,10 +20,11 @@
     width: 60px;
     height: 40px;
     display: flex;
+    border: 1px solid white;
     padding-left: 3px;
     position: relative;
     border-radius: 30px;
-    background-color: #fff;
+    background-color: var(--main-light-green-color);
     justify-content: center;
 }
 

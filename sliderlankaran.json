@@ -1,27 +1,110 @@
-[
-  {
-    "image": "./src/assets/lankaransliderfour.jpg",
-    "title": "First slide label",
-    "caption": "Nulla vitae elit libero, a pharetra augue mollis interdum."
-  },
-  {
-    "image": "./src/assets/lankaransliderthree.jpg",
-    "title": "Second slide label",
-    "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-  },
-  {
-    "image": "./src/assets/lankaransliderone.jpg",
-    "title": "Third slide label",
-    "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
-  },
-  {
-    "image": "./src/assets/lankaranslidertwo.jpg",
-    "title": "Fourth slide label",
-    "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
-  },
-  {
-    "image": "./src/assets/lankaransliderfive.jpg",
-    "title": "Fourth slide label",
-    "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
-  }
-]
+{
+  "az": [
+    {
+      "image": "./src/assets/lankaransliderfour.jpg",
+      "title": "Lənkəran şəlaləsi",
+      "caption": "Lənkəran şəlaləsi Azərbaycanın ən gözəl şəlalələrindən biridir."
+    },
+    {
+      "image": "./src/assets/lankaransliderthree.jpg",
+      "title": "Lənkəran istirahət mərkəzi",
+      "caption": "Lənkəran istirahət mərkəzi şəhər ərazisində gəzinti və istirahət etmək üçün ən yaxşı yerdir."
+    },
+    {
+      "image": "./src/assets/lankaransliderone.jpg",
+      "title": "Lənkəran çayı",
+      "caption": "Lənkəran çayı qızılköynəklərin ən gözəl yerlərindən biridir."
+    },
+    {
+      "image": "./src/assets/lankaranslidertwo.jpg",
+      "title": "Xanbulan gölü",
+      "caption": "Xanbulan gölü piknik və kabab etmək üçün ən yaxşı yerdir."
+    },
+    {
+      "image": "./src/assets/lankaransliderfive.jpg",
+      "title": "Xirkən təbiət qoruğu",
+      "caption": "Xirkən təbiət qoruğu Azərbaycanın ən böyük qoruqlardan biridir."
+    }
+  ],
+  "en": [
+    {
+      "image": "./src/assets/lankaransliderfour.jpg",
+      "title": "Lankaran waterfall",
+      "caption": "Lankaran waterfall is one of the picturesque waterfalls in Azerbaijan."
+    },
+    {
+      "image": "./src/assets/lankaransliderthree.jpg",
+      "title": "Lankaran Springs Wellness Resort",
+      "caption": "Lankaran Springs Wellness Resort is the best place for relaxation and strolling around the city."
+    },
+    {
+      "image": "./src/assets/lankaransliderone.jpg",
+      "title": "Lankaran River",
+      "caption": "Lankaran River is the perfect place to cool off on hot summer days."
+    },
+    {
+      "image": "./src/assets/lankaranslidertwo.jpg",
+      "title": "Khanbulan Lake",
+      "caption": "Khanbulan Lake is the ideal spot for picnicking and making kebabs."
+    },
+    {
+      "image": "./src/assets/lankaransliderfive.jpg",
+      "title": "Khirkan Reserve",
+      "caption": "Khirkan Reserve is one of the largest reserves in Azerbaijan."
+    }
+  ],
+  "ru": [
+    {
+      "image": "./src/assets/lankaransliderfour.jpg",
+      "title": "Ленкоранский водопад",
+      "caption": "Ленкоранский водопад - один из живописных водопадов Азербайджана."
+    },
+    {
+      "image": "./src/assets/lankaransliderthree.jpg",
+      "title": "Ленкоранский курорт с минеральными источниками",
+      "caption": "Ленкоранский курорт с минеральными источниками - лучшее место для отдыха и прогулок по городу."
+    },
+    {
+      "image": "./src/assets/lankaransliderone.jpg",
+      "title": "Река Ленкоран",
+      "caption": "Река Ленкоран - идеальное место для прохлады в жаркие летние дни."
+    },
+    {
+      "image": "./src/assets/lankaranslidertwo.jpg",
+      "title": "Озеро Ханбулан",
+      "caption": "Озеро Ханбулан - идеальное место для пикника и приготовления кебаба."
+    },
+    {
+      "image": "./src/assets/lankaransliderfive.jpg",
+      "title": "Заповедник Хиркан",
+      "caption": "Заповедник Хиркан - один из крупнейших заповедников Азербайджана."
+    }
+  ],
+  "ge": [
+    {
+      "image": "./src/assets/lankaransliderfour.jpg",
+      "title": "Lankaraner Wasserfall",
+      "caption": "Der Lankaraner Wasserfall ist einer der malerischsten Wasserfälle in Aserbaidschan."
+    },
+    {
+      "image": "./src/assets/lankaransliderthree.jpg",
+      "title": "Lankaraner Heilquellen-Wellness-Resort",
+      "caption": "Das Lankaraner Heilquellen-Wellness-Resort ist der beste Ort zum Entspannen und Spazierengehen in der Stadt."
+    },
+    {
+      "image": "./src/assets/lankaransliderone.jpg",
+      "title": "Lankaran Fluss",
+      "caption": "Der Lankaran Fluss ist der perfekte Ort, um sich an heißen Sommertagen abzukühlen."
+    },
+    {
+      "image": "./src/assets/lankaranslidertwo.jpg",
+      "title": "Khanbulan See",
+      "caption": "Der Khanbulan See ist der ideale Ort für Picknicks und das Zubereiten von Kebabs."
+    },
+    {
+      "image": "./src/assets/lankaransliderfive.jpg",
+      "title": "Khirkan Reservat",
+      "caption": "Das Khirkan Reservat ist eines der größten Reservate in Aserbaidschan."
+    }
+  ]
+}

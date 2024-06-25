@@ -11,20 +11,18 @@ import ru from '../../assets/ru.svg'
 import de from '../../assets/de.svg'
 
 function Header() {
-
-
     const { t, i18n } = useTranslation();
-
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [langMenuOpen, setLangMenuOpen] = useState(false);
     const langMenuRef = useRef(null);
+    const langButtonRef = useRef(null);
 
     const handleLangButtonClick = () => {
-        setLangMenuOpen(!langMenuOpen);
+        setLangMenuOpen((prev) => !prev);
     };
 
     const handleHamburgerClick = () => {
-        setIsMenuOpen(!isMenuOpen);
+        setIsMenuOpen((prev) => !prev);
     };
 
     useEffect(() => {
@@ -36,7 +34,7 @@ function Header() {
 
         // Add event listener to handle clicks outside language menu
         function handleClickOutside(event) {
-            if (langMenuRef.current && !langMenuRef.current.contains(event.target)) {
+            if (langMenuRef.current && !langMenuRef.current.contains(event.target) && langButtonRef.current && !langButtonRef.current.contains(event.target)) {
                 setLangMenuOpen(false);
             }
         }
@@ -45,11 +43,11 @@ function Header() {
         return () => {
             document.removeEventListener("mousedown", handleClickOutside);
         };
-    }, [i18n.language]); // Run this effect whenever the language changes
+    }, [i18n.language]);
 
     const changeLanguage = (lng) => {
         i18n.changeLanguage(lng);
-        setLangMenuOpen(false); // Close the menu after selecting a language
+        setLangMenuOpen(false);
     };
 
     return (
@@ -66,10 +64,9 @@ function Header() {
 
                 <div className="rghtbtnsdv">
                     <div className="language-switcher">
-                        <button className="lang" onClick={handleLangButtonClick}>
+                        <button ref={langButtonRef} className="lang" onClick={handleLangButtonClick}>
                             <IoLanguageSharp size={20} />
-                            <RiArrowDownSLine size={20}
-                                className={langMenuOpen ? 'rotated' : 'm'} />
+                            <RiArrowDownSLine size={20} className={langMenuOpen ? 'rotated' : 'm'} />
                         </button>
                         {langMenuOpen && (
                             <ul className="language-menu" ref={langMenuRef}>
