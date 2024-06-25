@@ -1,27 +1,111 @@
-[
-    {
+{
+    "az": [
+      {
         "image": "./src/assets/shakisliderfive.jpg",
-        "title": "First slide label",
-        "caption": "Nulla vitae elit libero, a pharetra augue mollis interdum."
-    },
-    {
+        "title": "Şəki Xan Sarayı",
+        "caption": "Şəki Xan Sarayı tarixi və mədəni irsin əks etdirir."
+      },
+      {
         "image": "./src/assets/shakisliderfour.jpg",
-        "title": "Second slide label",
-        "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-    },
-    {
+        "title": "Kiş adası",
+        "caption": "Kiş adası Şəki şəhəri yaxınlığında yerləşir."
+      },
+      {
         "image": "./src/assets/shakisliderthree.jpg",
-        "title": "Kish slide label",
-        "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
-    },
-    {
+        "title": "Unutulmaz mənzərə",
+        "caption": "Şəki şəhəri ətrafında görməli yerlər."
+      },
+      {
         "image": "./src/assets/shakislidertwo.jpg",
-        "title": "kish slide label",
-        "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
-    },
-    {
+        "title": "Kiş adası",
+        "caption": "Kiş adası Şəki şəhəri yaxınlığında yerləşir."
+      },
+      {
         "image": "./src/assets/shakisliderone.jpeg",
-        "title": "Fourth slide label",
-        "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
-    }
-]
+        "title": "Şəki Xan məscidi",
+        "caption": "Şəki Xan məscidi Şəki şəhərinin mərkəzində yerləşir."
+      }
+    ],
+    "en": [
+      {
+        "image": "./src/assets/shakisliderfive.jpg",
+        "title": "Shaki Khan Palace",
+        "caption": "Shaki Khan Palace reflects historical and cultural heritage."
+      },
+      {
+        "image": "./src/assets/shakisliderfour.jpg",
+        "title": "Kish Island",
+        "caption": "Kish Island is located near Shaki city."
+      },
+      {
+        "image": "./src/assets/shakisliderthree.jpg",
+        "title": "Unforgettable sight",
+        "caption": "Must-see places around Shaki city."
+      },
+      {
+        "image": "./src/assets/shakislidertwo.jpg",
+        "title": "Kish Island",
+        "caption": "Kish Island is located near Shaki city."
+      },
+      {
+        "image": "./src/assets/shakisliderone.jpeg",
+        "title": "Shaki Khan Mosque",
+        "caption": "Shaki Khan Mosque is situated in the center of Shaki city."
+      }
+    ],
+    "ru": [
+      {
+        "image": "./src/assets/shakisliderfive.jpg",
+        "title": "Шекинский ханский дворец",
+        "caption": "Шекинский ханский дворец отражает историческое и культурное наследие."
+      },
+      {
+        "image": "./src/assets/shakisliderfour.jpg",
+        "title": "Остров Киш",
+        "caption": "Остров Киш расположен недалеко от города Шеки."
+      },
+      {
+        "image": "./src/assets/shakisliderthree.jpg",
+        "title": "Незабываемый вид",
+        "caption": "Достопримечательности вокруг города Шеки."
+      },
+      {
+        "image": "./src/assets/shakislidertwo.jpg",
+        "title": "Остров Киш",
+        "caption": "Остров Киш расположен недалеко от города Шеки."
+      },
+      {
+        "image": "./src/assets/shakisliderone.jpeg",
+        "title": "Шекинская ханская мечеть",
+        "caption": "Шекинская ханская мечеть расположена в центре города Шеки."
+      }
+    ],
+    "ge": [
+      {
+        "image": "./src/assets/shakisliderfive.jpg",
+        "title": "Shaki Khans Palast",
+        "caption": "Der Shaki Khans Palast spiegelt das historische und kulturelle Erbe wider."
+      },
+      {
+        "image": "./src/assets/shakisliderfour.jpg",
+        "title": "Kish Insel",
+        "caption": "Die Kish Insel liegt in der Nähe der Stadt Shaki."
+      },
+      {
+        "image": "./src/assets/shakisliderthree.jpg",
+        "title": "Unvergesslicher Anblick",
+        "caption": "Sehenswürdigkeiten rund um die Stadt Shaki."
+      },
+      {
+        "image": "./src/assets/shakislidertwo.jpg",
+        "title": "Kish Insel",
+        "caption": "Die Kish Insel liegt in der Nähe der Stadt Shaki."
+      },
+      {
+        "image": "./src/assets/shakisliderone.jpeg",
+        "title": "Shaki Khan Moschee",
+        "caption": "Die Shaki Khan Moschee befindet sich im Zentrum der Stadt Shaki."
+      }
+    ]
+  }
+  
