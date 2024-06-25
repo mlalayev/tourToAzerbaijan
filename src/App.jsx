@@ -24,7 +24,7 @@ import MAINPAGE from './components/mainpage/mainpage.jsx';
 import RELIGIOUS from './whatToDo/Religious/Religious.jsx';
 import DESTINATIONS from './destinations/destinations.jsx';
 import LANKARAN from './destinations/Lankaran/Lankaran.jsx';
-import SHAMAKHY from './destinations/shamakhy/shamakhy.jsx';
+import SHAMAKHY from './destinations/Shamakhy/Shamakhy.jsx';
 import ISMAILLY from './destinations/Ismailly/Ismailly.jsx';
 import WATERFALL from './whatToDo/Waterfalls/Waterfall.jsx';
 import UPPERPART from './components/upperpart/upperpart.jsx';

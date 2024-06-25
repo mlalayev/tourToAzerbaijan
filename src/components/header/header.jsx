@@ -73,7 +73,7 @@ function Header() {
                                 <li><a href="/cuisine">Cuisine</a></li>
                                 <li><a href="/wineries">Wineries</a></li>
                                 <li><a href="/waterfall">Waterfall</a></li>
-                                <li><a href="/bazaar">Bazaar</a></li>
+                                <li><a href="/bazaars">Bazaar</a></li>
                             </ul>
                         </div>
                     </li>

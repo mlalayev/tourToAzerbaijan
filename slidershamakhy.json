@@ -1,27 +1,110 @@
-[
+{
+  "az": [
     {
       "image": "./src/assets/shamakhysliderfive.jpg",
-      "title": "First slide label",
-      "caption": "Nulla vitae elit libero, a pharetra augue mollis interdum."
+      "title": "Yeddı qumbaz türbəsi",
+      "caption": "Şamaxı şəhərində ən məşhur məbəddir."
     },
     {
       "image": "./src/assets/shamakhysliderfour.jpg",
-      "title": "Second slide label",
-      "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      "title": "Kalaxana türbəsi",
+      "caption": "Kalaxana türbəsi ənənəvi memarlıq nümunəsidir."
     },
     {
       "image": "./src/assets/shamakhysliderthree.jpg",
-      "title": "Third slide label",
-      "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
+      "title": "Başqa bir Kalaxana türbəsi",
+      "caption": "Şamaxıda ən qədim türbələrdəndir."
     },
     {
       "image": "./src/assets/shamakhyslidertwo.jpg",
-      "title": "Fourth slide label",
-      "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
+      "title": "Sakit göl otel",
+      "caption": "Şamaxıdakı Sakit göl oteli doğanın içində rahatlayış məkanıdır."
     },
     {
       "image": "./src/assets/shamakhysliderone.jpeg",
-      "title": "Fourth slide label",
-      "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
+      "title": "Şamaxı qalası",
+      "caption": "Şamaxı qalası Şamaxı şəhərinin tarixi simgəsidir."
+    }
+  ],
+  "en": [
+    {
+      "image": "./src/assets/shamakhysliderfive.jpg",
+      "title": "Yeddi Gumbaz Mausoleum",
+      "caption": "The Yeddi Gumbaz Mausoleum is the most famous monument in Shamakhi."
+    },
+    {
+      "image": "./src/assets/shamakhysliderfour.jpg",
+      "title": "Kalakhana Tomb",
+      "caption": "The Kalakhana Tomb is a masterpiece of traditional architecture."
+    },
+    {
+      "image": "./src/assets/shamakhysliderthree.jpg",
+      "title": "Another Kalakhana Tomb",
+      "caption": "One of the oldest tombs in Shamakhi."
+    },
+    {
+      "image": "./src/assets/shamakhyslidertwo.jpg",
+      "title": "Sakit Lake Hotel",
+      "caption": "Sakit Lake Hotel in Shamakhi offers a serene retreat in nature."
+    },
+    {
+      "image": "./src/assets/shamakhysliderone.jpeg",
+      "title": "Shamakhi Tower",
+      "caption": "The Shamakhi Tower is a historic landmark of Shamakhi city."
+    }
+  ],
+  "ru": [
+    {
+      "image": "./src/assets/shamakhysliderfive.jpg",
+      "title": "Мавзолей Йедди гумбаз",
+      "caption": "Мавзолей Йедди гумбаз — самый известный памятник в Шамахи."
+    },
+    {
+      "image": "./src/assets/shamakhysliderfour.jpg",
+      "title": "Могила Калахана",
+      "caption": "Могила Калахана — шедевр традиционной архитектуры."
+    },
+    {
+      "image": "./src/assets/shamakhysliderthree.jpg",
+      "title": "Еще одна могила Калахана",
+      "caption": "Одна из старейших могил в Шамахи."
+    },
+    {
+      "image": "./src/assets/shamakhyslidertwo.jpg",
+      "title": "Отель на озере Сакит",
+      "caption": "Отель на озере Сакит в Шамахи — уютное место для отдыха на природе."
+    },
+    {
+      "image": "./src/assets/shamakhysliderone.jpeg",
+      "title": "Шамахи башня",
+      "caption": "Шамахи башня — исторический символ города Шамахи."
+    }
+  ],
+  "ge": [
+    {
+      "image": "./src/assets/shamakhysliderfive.jpg",
+      "title": "Yeddi Gumbaz Mausoleum",
+      "caption": "Das Yeddi Gumbaz Mausoleum ist das bekannteste Denkmal in Shamakhi."
+    },
+    {
+      "image": "./src/assets/shamakhysliderfour.jpg",
+      "title": "Kalakhana Grabmal",
+      "caption": "Das Kalakhana Grabmal ist ein Meisterwerk der traditionellen Architektur."
+    },
+    {
+      "image": "./src/assets/shamakhysliderthree.jpg",
+      "title": "Ein weiteres Kalakhana Grabmal",
+      "caption": "Eine der ältesten Grabstätten in Shamakhi."
+    },
+    {
+      "image": "./src/assets/shamakhyslidertwo.jpg",
+      "title": "Sakit See Hotel",
+      "caption": "Das Sakit See Hotel in Shamakhi bietet einen ruhigen Rückzugsort in der Natur."
+    },
+    {
+      "image": "./src/assets/shamakhysliderone.jpeg",
+      "title": "Shamakhi Turm",
+      "caption": "Der Shamakhi Turm ist ein historisches Wahrzeichen der Stadt Shamakhi."
     }
   ]
+}
