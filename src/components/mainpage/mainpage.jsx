@@ -327,12 +327,12 @@ function mainpage() {
                             )}
                         </div>
                         <div className="ffthscdwnrght">
-                            <p className='imgloadertext'>Images may load late</p>
-                            {selectedCityImg && <img src={selectedCityImg} className='sldrimg' alt={selectedCity} />}
+                            {selectedCityImg && <img src={selectedCityImg} className="sldrimg" alt={selectedCity} />}
                         </div>
+
                     </div>
                 </div>
-            </section>
+            </section >
 
             <section className="sectionsixth">
                 <div className="containersxth">
@@ -378,7 +378,7 @@ function mainpage() {
 
             <SEARCH />
 
-        </div>
+        </div >
     )
 }
 

@@ -948,6 +948,7 @@ header {
     .recommendedby {
         /* height: 100%; */
         display: flex;
+        max-width: 1250px;
         align-items: center;
         flex-direction: row;
         justify-content: space-between;
@@ -1002,7 +1003,14 @@ header {
     }
 }
 
+@media (min-width: 1130px) and (max-width: 1230px) {
+    .containerffthsc{
+        padding: 0 !important;
+    }
+}
+
 @media screen and (min-width:1130px) {
+
     .citychoose {
         display: flex;
         flex-direction: row;
@@ -1048,7 +1056,7 @@ header {
         border-bottom-left-radius: 0;
     }
 
-    .frthrght{
+    .frthrght {
         padding: 0 120px 0 60px;
     }
 
@@ -1138,10 +1146,10 @@ header {
         height: 500px;
     }
 
-    .trstssy{
+    .trstssy {
         padding: 0 25px;
     }
-    
+
     .yellowcirclescnd {
         width: 500px;
         right: -50px;
@@ -1219,6 +1227,7 @@ header {
         align-items: center;
         flex-direction: column;
     }
+
 }
 
 @media screen and (max-width:590px) {
