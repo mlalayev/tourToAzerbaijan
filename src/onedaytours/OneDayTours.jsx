@@ -37,7 +37,7 @@ function onedaytour() {
     useEffect(() => {
         const fetchTours = async () => {
             try {
-                const response = await fetch('../../../singledaytours.json');
+                const response = await fetch('../../../SingleDayTours.json');
                 const data = await response.json();
                 setTours(data);
             } catch (error) {
