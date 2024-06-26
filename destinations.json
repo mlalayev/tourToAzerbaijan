@@ -1,51 +1,51 @@
 [
     {
-        "imgSrc": "./src/assets/bakumap.png",
+        "imgSrc": "./src/Assets/bakumap.png",
         "isRecommended": true,
         "path": "/baku"
     },
     {
-        "imgSrc": "./src/assets/lankaranmap.png",
+        "imgSrc": "./src/Assets/lankaranmap.png",
         "isRecommended": false,
         "path": "/lankaran"
     },
     {
-        "imgSrc": "./src/assets/shamakhimap.png",
+        "imgSrc": "./src/Assets/shamakhimap.png",
         "isRecommended": true,
         "path": "/shamakhy"
     },
     {
-        "imgSrc": "./src/assets/gubamap.png",
+        "imgSrc": "./src/Assets/gubamap.png",
         "isRecommended": false,
         "path": "/guba"
     },
     {
-        "imgSrc": "./src/assets/shakimap.png",
+        "imgSrc": "./src/Assets/shakimap.png",
         "isRecommended": true,
         "path": "/shaki"
     },
     {
-        "imgSrc": "./src/assets/ganjamap.png",
+        "imgSrc": "./src/Assets/ganjamap.png",
         "isRecommended": true,
         "path": "/ganja"
     },
     {
-        "imgSrc": "./src/assets/gusarmap.png",
+        "imgSrc": "./src/Assets/gusarmap.png",
         "isRecommended": false,
         "path": "/gusar"
     },
     {
-        "imgSrc": "./src/assets/ismaillymap.png",
+        "imgSrc": "./src/Assets/ismaillymap.png",
         "isRecommended": true,
         "path": "/ismailly"
     },
     {
-        "imgSrc": "./src/assets/khizimap.png",
+        "imgSrc": "./src/Assets/khizimap.png",
         "isRecommended": false,
         "path": "/khizi"
     },
     {
-        "imgSrc": "./src/assets/lerikmap.png",
+        "imgSrc": "./src/Assets/lerikmap.png",
         "isRecommended": true,
         "path": "/lerik"
     }

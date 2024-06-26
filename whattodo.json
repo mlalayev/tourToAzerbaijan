@@ -1,61 +1,61 @@
 [
     {
-        "imgSrc": "./src/assets/whattodoone.jpg",
+        "imgSrc": "./src/Assets/whattodoone.jpg",
         "isRecommended": true,
         "path": "/museums"
     },
     {
-        "imgSrc": "./src/assets/whattodotwo.jpg",
+        "imgSrc": "./src/Assets/whattodotwo.jpg",
         "isRecommended": false,
         "path": "/architecture"
     },
     {
-        "imgSrc": "./src/assets/lakesimg.jpg",
+        "imgSrc": "./src/Assets/lakesimg.jpg",
         "isRecommended": true,
         "path": "/carpets"
     },
     {
-        "imgSrc": "./src/assets/whattodofour.jpg",
+        "imgSrc": "./src/Assets/whattodofour.jpg",
         "isRecommended": false,
         "path": "/unescoheritage"
     },
     {
-        "imgSrc": "./src/assets/whattodofive.jpg",
+        "imgSrc": "./src/Assets/whattodofive.jpg",
         "isRecommended": true,
         "path": "/religious"
     },
     {
-        "imgSrc": "./src/assets/whattodosix.jpg",
+        "imgSrc": "./src/Assets/whattodosix.jpg",
         "isRecommended": true,
         "path": "/park"
     },
     {
-        "imgSrc": "./src/assets/whattodoseven.jpg",
+        "imgSrc": "./src/Assets/whattodoseven.jpg",
         "isRecommended": false,
         "path": "/hiking"
     },
     {
-        "imgSrc": "./src/assets/whattodoeight.jpg",
+        "imgSrc": "./src/Assets/whattodoeight.jpg",
         "isRecommended": true,
         "path": "/sportandentertaiment"
     },
     {
-        "imgSrc": "./src/assets/whattodonine.webp",
+        "imgSrc": "./src/Assets/whattodonine.webp",
         "isRecommended": false,
         "path": "/cuisine"
     },
     {
-        "imgSrc": "./src/assets/whattodoten.jpg",
+        "imgSrc": "./src/Assets/whattodoten.jpg",
         "isRecommended": true,
         "path": "/wineries"
     },
     {
-        "imgSrc": "./src/assets/whattodoeleven.jpg",
+        "imgSrc": "./src/Assets/whattodoeleven.jpg",
         "isRecommended": true,
         "path": "/waterfall"
     },
     {
-        "imgSrc": "./src/assets/whattodotwelve.jpg",
+        "imgSrc": "./src/Assets/whattodotwelve.jpg",
         "isRecommended": true,
         "path": "/bazaars"
     }

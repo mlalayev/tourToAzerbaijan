@@ -1,38 +1,38 @@
 [
   {
     "cityName": "Baku",
-    "cityImg": "./src/assets/fifthsectionimgone.jpg"
+    "cityImg": "./src/Assets/fifthsectionimgone.jpg"
   },
   {
     "cityName": "Gabala",
-    "cityImg": "./src/assets/fifthsectionimgtwo.jpg"
+    "cityImg": "./src/Assets/fifthsectionimgtwo.jpg"
   },
   {
     "cityName": "Gusar",
-    "cityImg": "./src/assets/fifthsectionimgthree.jpg"
+    "cityImg": "./src/Assets/fifthsectionimgthree.jpg"
   },
   {
     "cityName": "Ismailly",
-    "cityImg": "./src/assets/fifthsectionimgfour.jpg"
+    "cityImg": "./src/Assets/fifthsectionimgfour.jpg"
   },
   {
     "cityName": "Lankaran",
-    "cityImg": "./src/assets/fifthsectionimgfive.jpg"
+    "cityImg": "./src/Assets/fifthsectionimgfive.jpg"
   },
   {
     "cityName": "Lerik",
-    "cityImg": "./src/assets/fifthsectionimgsix.jpg"
+    "cityImg": "./src/Assets/fifthsectionimgsix.jpg"
   },
   {
     "cityName": "Guba",
-    "cityImg": "./src/assets/fifthsectionimgseven.jpg"
+    "cityImg": "./src/Assets/fifthsectionimgseven.jpg"
   },
   {
     "cityName": "Shusha",
-    "cityImg": "./src/assets/fifthsectionimgeight.jpg"
+    "cityImg": "./src/Assets/fifthsectionimgeight.jpg"
   },
   {
     "cityName": "Khankandi",
-    "cityImg": "./src/assets/fifthsectionimgnine.jpg"
+    "cityImg": "./src/Assets/fifthsectionimgnine.jpg"
   }
 ]

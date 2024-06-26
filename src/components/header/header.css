@@ -245,7 +245,7 @@ header {
     .dropdown-menu {
         top: 100%;
         left: -130%;
-        width: 400%;
+        min-width: 400%;
         display: flex;
         padding: 0 20px;
         display: none;
@@ -257,17 +257,9 @@ header {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
-    .dropdown-menu a:hover:before {
-        content: '\2190';
-        position: absolute;
-        right: -20px;
-        font-size: 14px;
-        color: black;
-    }
-
     .seconddropdown {
         left: -100%;
-        width: 280%;
+        min-width: 300%;
     }
 
     .dropdown-holder-div {

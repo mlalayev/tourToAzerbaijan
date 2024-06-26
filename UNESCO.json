@@ -1,108 +1,108 @@
 {
   "az": [
     {
-      "image": "./src/assets/unescoone.jpg",
+      "image": "./src/Assets/unescoone.jpg",
       "title": "Qədim sənətdən daşda rəssamlıq",
       "caption": "Daşda qədim sənət nümunəsi."
     },
     {
-      "image": "./src/assets/unescotwo.jpg",
+      "image": "./src/Assets/unescotwo.jpg",
       "title": "Şəki xan sarayının içi",
       "caption": "Şəki xan sarayının mətbəx hissəsi."
     },
     {
-      "image": "./src/assets/unescothree.jpg",
+      "image": "./src/Assets/unescothree.jpg",
       "title": "Bakının qədim şəhəri",
       "caption": "Bakının tarixi İçəri Şəhər hissəsi."
     },
     {
-      "image": "./src/assets/unescofour.jpg",
+      "image": "./src/Assets/unescofour.jpg",
       "title": "Şəki karvansarayı",
       "caption": "Şəki şəhərinin tarixi karvansarayı."
     },
     {
-      "image": "./src/assets/unescofive.jpg",
+      "image": "./src/Assets/unescofive.jpg",
       "title": "Xinalıq",
       "caption": "Ən yüksək dərdəcan köyü olan Xinalıq."
     }
   ],
   "en": [
     {
-      "image": "./src/assets/unescoone.jpg",
+      "image": "./src/Assets/unescoone.jpg",
       "title": "Ancient Rock Art",
       "caption": "Ancient art preserved on rocks."
     },
     {
-      "image": "./src/assets/unescotwo.jpg",
+      "image": "./src/Assets/unescotwo.jpg",
       "title": "Inside Shaki Khan Palace",
       "caption": "The kitchen section of Shaki Khan Palace."
     },
     {
-      "image": "./src/assets/unescothree.jpg",
+      "image": "./src/Assets/unescothree.jpg",
       "title": "Old Town in Baku",
       "caption": "Historical Inner City of Baku."
     },
     {
-      "image": "./src/assets/unescofour.jpg",
+      "image": "./src/Assets/unescofour.jpg",
       "title": "Shaki Caravanserai",
       "caption": "Historical caravanserai in Shaki city."
     },
     {
-      "image": "./src/assets/unescofive.jpg",
+      "image": "./src/Assets/unescofive.jpg",
       "title": "Khinaliq",
       "caption": "The highest inhabited village in Azerbaijan, Khinaliq."
     }
   ],
   "ru": [
     {
-      "image": "./src/assets/unescoone.jpg",
+      "image": "./src/Assets/unescoone.jpg",
       "title": "Искусство на камнях из древности",
       "caption": "Древнее искусство, сохранившееся на камнях."
     },
     {
-      "image": "./src/assets/unescotwo.jpg",
+      "image": "./src/Assets/unescotwo.jpg",
       "title": "Внутри дворца Шеки-хана",
       "caption": "Кухонная часть дворца Шеки-хана."
     },
     {
-      "image": "./src/assets/unescothree.jpg",
+      "image": "./src/Assets/unescothree.jpg",
       "title": "Старый город в Баку",
       "caption": "Историческая часть Внутреннего города Баку."
     },
     {
-      "image": "./src/assets/unescofour.jpg",
+      "image": "./src/Assets/unescofour.jpg",
       "title": "Шекинский каравансарай",
       "caption": "Исторический каравансарай в городе Шеки."
     },
     {
-      "image": "./src/assets/unescofive.jpg",
+      "image": "./src/Assets/unescofive.jpg",
       "title": "Хиналик",
       "caption": "Самая высокогорная деревня в Азербайджане, Хиналик."
     }
   ],
   "de": [
     {
-      "image": "./src/assets/unescoone.jpg",
+      "image": "./src/Assets/unescoone.jpg",
       "title": "Kunst auf Felsen aus der Antike",
       "caption": "Antike Kunstwerke auf Felsen erhalten."
     },
     {
-      "image": "./src/assets/unescotwo.jpg",
+      "image": "./src/Assets/unescotwo.jpg",
       "title": "Im Inneren des Scheki-Khan-Palastes",
       "caption": "Der Küchenbereich des Scheki-Khan-Palastes."
     },
     {
-      "image": "./src/assets/unescothree.jpg",
+      "image": "./src/Assets/unescothree.jpg",
       "title": "Altstadt in Baku",
       "caption": "Historische Altstadt von Baku."
     },
     {
-      "image": "./src/assets/unescofour.jpg",
+      "image": "./src/Assets/unescofour.jpg",
       "title": "Scheki Karawanserei",
       "caption": "Historische Karawanserei in der Stadt Scheki."
     },
     {
-      "image": "./src/assets/unescofive.jpg",
+      "image": "./src/Assets/unescofive.jpg",
       "title": "Khinaliq",
       "caption": "Das höchstgelegene bewohnte Dorf in Aserbaidschan, Khinaliq."
     }

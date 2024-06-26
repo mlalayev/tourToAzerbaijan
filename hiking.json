@@ -1,108 +1,108 @@
 {
   "az": [
     {
-      "image": "./src/assets/hikingone.jpg",
+      "image": "./src/Assets/hikingone.jpg",
       "title": "Bəşbarmaq Zirvəsi",
       "caption": "Doğa sevənlər üçün mükəmməl bir yer."
     },
     {
-      "image": "./src/assets/hikingtwo.jpg",
+      "image": "./src/Assets/hikingtwo.jpg",
       "title": "Xizi ərazilərində keçirilən gündüz turizmi",
       "caption": "Ətraflı təsvir edilə bilən gözəl manzaralar."
     },
     {
-      "image": "./src/assets/hikingthree.jpg",
+      "image": "./src/Assets/hikingthree.jpg",
       "title": "Bazarduzu ərazilərində keçirilən gündüz turizmi",
       "caption": "Təbiət ilə daxili əlaqənin vurğulandığı yer."
     },
     {
-      "image": "./src/assets/hikingfour.jpg",
+      "image": "./src/Assets/hikingfour.jpg",
       "title": "Qaşqaçay - İlisu turu",
       "caption": "Fərqli təbiət mənzərələrinin bir arada olduğu xüsusi yer."
     },
     {
-      "image": "./src/assets/hikingfive.jpg",
+      "image": "./src/Assets/hikingfive.jpg",
       "title": "Xinaliq - Qalaçudat turu",
       "caption": "Yüksək dağlarda səyahət edənlər üçün ideal səyahət marşrutu."
     }
   ],
   "en": [
     {
-      "image": "./src/assets/hikingone.jpg",
+      "image": "./src/Assets/hikingone.jpg",
       "title": "Beshbarmag Peak",
       "caption": "Perfect spot for nature enthusiasts."
     },
     {
-      "image": "./src/assets/hikingtwo.jpg",
+      "image": "./src/Assets/hikingtwo.jpg",
       "title": "Hiking on Candy Mountains in Khizi",
       "caption": "Beautiful landscapes that can be described in detail."
     },
     {
-      "image": "./src/assets/hikingthree.jpg",
+      "image": "./src/Assets/hikingthree.jpg",
       "title": "Hiking on Bazarduzu",
       "caption": "A place highlighting the connection with nature."
     },
     {
-      "image": "./src/assets/hikingfour.jpg",
+      "image": "./src/Assets/hikingfour.jpg",
       "title": "Gashgachay - Ilisu Trail",
       "caption": "A special place with different natural landscapes."
     },
     {
-      "image": "./src/assets/hikingfive.jpg",
+      "image": "./src/Assets/hikingfive.jpg",
       "title": "Khinalig – Galakhudat Trail",
       "caption": "Ideal travel route for hiking in high mountains."
     }
   ],
   "ru": [
     {
-      "image": "./src/assets/hikingone.jpg",
+      "image": "./src/Assets/hikingone.jpg",
       "title": "Пик Бешбармаг",
       "caption": "Отличное место для любителей природы."
     },
     {
-      "image": "./src/assets/hikingtwo.jpg",
+      "image": "./src/Assets/hikingtwo.jpg",
       "title": "Пеший туризм на конфетных горах в Хызи",
       "caption": "Красивые пейзажи, которые можно подробно описать."
     },
     {
-      "image": "./src/assets/hikingthree.jpg",
+      "image": "./src/Assets/hikingthree.jpg",
       "title": "Пеший туризм на Базардузу",
       "caption": "Место, подчеркивающее связь с природой."
     },
     {
-      "image": "./src/assets/hikingfour.jpg",
+      "image": "./src/Assets/hikingfour.jpg",
       "title": "Тропа Гашгачай - Илису",
       "caption": "Особое место с различными природными пейзажами."
     },
     {
-      "image": "./src/assets/hikingfive.jpg",
+      "image": "./src/Assets/hikingfive.jpg",
       "title": "Тропа Хиналиг - Галахудат",
       "caption": "Идеальный маршрут для путешествий по высокогорным районам."
     }
   ],
   "ge": [
     {
-      "image": "./src/assets/hikingone.jpg",
+      "image": "./src/Assets/hikingone.jpg",
       "title": "Beshbarmag Gipfel",
       "caption": "Perfekter Ort für Naturliebhaber."
     },
     {
-      "image": "./src/assets/hikingtwo.jpg",
+      "image": "./src/Assets/hikingtwo.jpg",
       "title": "Wandern auf den Candy Mountains in Khizi",
       "caption": "Schöne Landschaften, die detailliert beschrieben werden können."
     },
     {
-      "image": "./src/assets/hikingthree.jpg",
+      "image": "./src/Assets/hikingthree.jpg",
       "title": "Wandern auf dem Bazarduzu",
       "caption": "Ein Ort, der die Verbindung zur Natur hervorhebt."
     },
     {
-      "image": "./src/assets/hikingfour.jpg",
+      "image": "./src/Assets/hikingfour.jpg",
       "title": "Gashgachay - Ilisu Weg",
       "caption": "Ein besonderer Ort mit verschiedenen natürlichen Landschaften."
     },
     {
-      "image": "./src/assets/hikingfive.jpg",
+      "image": "./src/Assets/hikingfive.jpg",
       "title": "Khinalig – Galakhudat Weg",
       "caption": "Idealer Reiseweg zum Wandern in den Hochgebirgen."
     }

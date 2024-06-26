@@ -1,12 +1,11 @@
-import './search.css'
+import './Search.css'
 import React, { useState } from 'react';
 import { TbReplace } from "react-icons/tb";
-import airports from '../../../airports.json';
-import skyscanner from '../../assets/poweredbyskyscanner.png'
+import airports from '../../../Airports.json';
+import skyscanner from '../../Assets/poweredbyskyscanner.png'
 import { MdOutlineFlight } from "react-icons/md";
 import { TbPlaneDeparture, TbPlaneArrival } from "react-icons/tb";
 import { useTranslation } from 'react-i18next';
-import Alert from '../../../node_modules/@mui/material/Alert';
 
 
 const SearchForm = () => {

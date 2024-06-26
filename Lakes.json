@@ -1,88 +1,88 @@
 {
   "az": [
     {
-      "image": "./src/assets/lakesone.jpg",
+      "image": "./src/Assets/lakesone.jpg",
       "title": "Göygöl Gölü",
       "caption": "Göygöl Milli Parkı içində yerləşən gözəl göl."
     },
     {
-      "image": "./src/assets/lakestwo.png",
+      "image": "./src/Assets/lakestwo.png",
       "title": "Maral gölü",
       "caption": "Maral gölü, Şəki rayonunda."
     },
     {
-      "image": "./src/assets/lakesthree.jpg",
+      "image": "./src/Assets/lakesthree.jpg",
       "title": "Tufan Gölu, Qusar",
       "caption": "Qusarın təbii gözəlliyi ilə tanınan Tufan Gölü."
     },
     {
-      "image": "./src/assets/lakesfour.jpg",
+      "image": "./src/Assets/lakesfour.jpg",
       "title": "Düz Gölü, Masazır",
       "caption": "Masazırda yerləşən Düz Gölü, Abşeron yarımadasında."
     }
   ],
   "en": [
     {
-      "image": "./src/assets/lakesone.jpg",
+      "image": "./src/Assets/lakesone.jpg",
       "title": "Goygol Lake",
       "caption": "Beautiful lake located in Göygöl National Park."
     },
     {
-      "image": "./src/assets/lakestwo.png",
+      "image": "./src/Assets/lakestwo.png",
       "title": "Maral Lake",
       "caption": "Maral Lake in the Sheki region."
     },
     {
-      "image": "./src/assets/lakesthree.jpg",
+      "image": "./src/Assets/lakesthree.jpg",
       "title": "Tufan Lake, Gusar",
       "caption": "Tufan Lake known for its natural beauty in Gusar."
     },
     {
-      "image": "./src/assets/lakesfour.jpg",
+      "image": "./src/Assets/lakesfour.jpg",
       "title": "Duz Lake, Masazir",
       "caption": "Duz Lake located in Masazir, on the Absheron Peninsula."
     }
   ],
   "ru": [
     {
-      "image": "./src/assets/lakesone.jpg",
+      "image": "./src/Assets/lakesone.jpg",
       "title": "Озеро Гёйгёль",
       "caption": "Прекрасное озеро, расположенное в национальном парке Гёйгёль."
     },
     {
-      "image": "./src/assets/lakestwo.png",
+      "image": "./src/Assets/lakestwo.png",
       "title": "Озеро Марал",
       "caption": "Озеро Марал в регионе Шеки."
     },
     {
-      "image": "./src/assets/lakesthree.jpg",
+      "image": "./src/Assets/lakesthree.jpg",
       "title": "Озеро Туфан, Гусар",
       "caption": "Озеро Туфан, известное своей природной красотой в Гусаре."
     },
     {
-      "image": "./src/assets/lakesfour.jpg",
+      "image": "./src/Assets/lakesfour.jpg",
       "title": "Озеро Дуз, Масазыр",
       "caption": "Озеро Дуз, расположенное в Масазыре, на полуострове Абшерон."
     }
   ],
   "ge": [
     {
-      "image": "./src/assets/lakesone.jpg",
+      "image": "./src/Assets/lakesone.jpg",
       "title": "Göygöl See",
       "caption": "Ein schöner See im Göygöl Nationalpark."
     },
     {
-      "image": "./src/assets/lakestwo.png",
+      "image": "./src/Assets/lakestwo.png",
       "title": "Maral See",
       "caption": "Maral See in der Region Sheki."
     },
     {
-      "image": "./src/assets/lakesthree.jpg",
+      "image": "./src/Assets/lakesthree.jpg",
       "title": "Tufan See, Gusar",
       "caption": "Tufan See bekannt für seine natürliche Schönheit in Gusar."
     },
     {
-      "image": "./src/assets/lakesfour.jpg",
+      "image": "./src/Assets/lakesfour.jpg",
       "title": "Duz See, Masazir",
       "caption": "Duz See in Masazir, auf der Absheron Halbinsel."
     }
