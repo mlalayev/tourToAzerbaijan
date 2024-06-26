@@ -48,7 +48,7 @@ function whattodo() {
     useEffect(() => {
         const fetchWhatToDo = async () => {
             try {
-                const response = await fetch('../whattodo.json');
+                const response = await fetch('../WhatToDo.json');
                 const data = await response.json();
                 setWhatToDo(data);
             } catch (error) {
