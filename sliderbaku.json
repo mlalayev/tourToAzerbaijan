@@ -1,88 +1,88 @@
 {
   "az": [
     {
-      "image": "./src/assets/bakusliderone.webp",
+      "image": "./src/Assets/bakusliderone.webp",
       "title": "Alov Qüllələri",
       "caption": "Bakı şəhərinin simvolu olan məşhur Alov Qüllələri."
     },
     {
-      "image": "./src/assets/bakuslidertwo.webp",
+      "image": "./src/Assets/bakuslidertwo.webp",
       "title": "Heydər Əliyev Mərkəzi",
       "caption": "Modern arxitekturanın şah əsəri olan Heydər Əliyev Mərkəzi."
     },
     {
-      "image": "./src/assets/bakusliderthree.jpeg",
+      "image": "./src/Assets/bakusliderthree.jpeg",
       "title": "Bakı Bulvarı",
       "caption": "Dənizkənarı Milli Park, Bakı bulvarı."
     },
     {
-      "image": "./src/assets/bakusliderfour.jpg",
+      "image": "./src/Assets/bakusliderfour.jpg",
       "title": "İçəri Şəhər",
       "caption": "Tarixi və mədəni irsi ilə tanınan Bakı Qədim Şəhəri."
     }
   ],
   "en": [
     {
-      "image": "./src/assets/bakusliderone.webp",
+      "image": "./src/Assets/bakusliderone.webp",
       "title": "Flame Towers",
       "caption": "The iconic Flame Towers, symbol of Baku city."
     },
     {
-      "image": "./src/assets/bakuslidertwo.webp",
+      "image": "./src/Assets/bakuslidertwo.webp",
       "title": "Heydar Aliyev Center",
       "caption": "The Heydar Aliyev Center, a masterpiece of modern architecture."
     },
     {
-      "image": "./src/assets/bakusliderthree.jpeg",
+      "image": "./src/Assets/bakusliderthree.jpeg",
       "title": "Baku Boulevard",
       "caption": "Seaside National Park, Baku Boulevard."
     },
     {
-      "image": "./src/assets/bakusliderfour.jpg",
+      "image": "./src/Assets/bakusliderfour.jpg",
       "title": "Old Town",
       "caption": "The Old Town of Baku, known for its historical and cultural heritage."
     }
   ],
   "ru": [
     {
-      "image": "./src/assets/bakusliderone.webp",
+      "image": "./src/Assets/bakusliderone.webp",
       "title": "Башни Пламя",
       "caption": "Знаменитые Башни Пламя, символ города Баку."
     },
     {
-      "image": "./src/assets/bakuslidertwo.webp",
+      "image": "./src/Assets/bakuslidertwo.webp",
       "title": "Центр Гейдара Алиева",
       "caption": "Центр Гейдара Алиева, шедевр современной архитектуры."
     },
     {
-      "image": "./src/assets/bakusliderthree.jpeg",
+      "image": "./src/Assets/bakusliderthree.jpeg",
       "title": "Бакинский бульвар",
       "caption": "Приморский национальный парк, Бакинский бульвар."
     },
     {
-      "image": "./src/assets/bakusliderfour.jpg",
+      "image": "./src/Assets/bakusliderfour.jpg",
       "title": "Старый город",
       "caption": "Старый город Баку, известный своим историческим и культурным наследием."
     }
   ],
   "ge": [
     {
-      "image": "./src/assets/bakusliderone.webp",
+      "image": "./src/Assets/bakusliderone.webp",
       "title": "Flammentürme",
       "caption": "Die ikonischen Flammentürme, Symbol der Stadt Baku."
     },
     {
-      "image": "./src/assets/bakuslidertwo.webp",
+      "image": "./src/Assets/bakuslidertwo.webp",
       "title": "Heydar Aliyev Zentrum",
       "caption": "Das Heydar Aliyev Zentrum, ein Meisterwerk moderner Architektur."
     },
     {
-      "image": "./src/assets/bakusliderthree.jpeg",
+      "image": "./src/Assets/bakusliderthree.jpeg",
       "title": "Boulevard von Baku",
       "caption": "Seaside Nationalpark, Boulevard von Baku."
     },
     {
-      "image": "./src/assets/bakusliderfour.jpg",
+      "image": "./src/Assets/bakusliderfour.jpg",
       "title": "Altstadt",
       "caption": "Die Altstadt von Baku, bekannt für ihr historisches und kulturelles Erbe."
     }

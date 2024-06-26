@@ -1,13 +1,13 @@
-import cityData from '../../cities.json';
-import '../onedaytours/onedaytours.css';
-import { RiArrowDownSLine } from 'react-icons/ri';
+import '../OneDayTours/OneDayTours.css';
+import cityData from '../../Cities.json';
 import { FaArrowRight } from 'react-icons/fa';
-import maidentower from '../assets/maidentower.png';
-import HEADER from '../components/header/header.jsx';
-import React, { useState, useEffect, useRef } from 'react';
-import WAPI from '../components/weatherapi/weatherapi.jsx';
-import SEARCH from '../components/search/search.jsx';
 import { useNavigate } from 'react-router-dom';
+import { RiArrowDownSLine } from 'react-icons/ri';
+import maidentower from '../Assets/maidentower.png';
+import HEADER from '../Components/Header/Header.jsx';
+import SEARCH from '../Components/Search/Search.jsx';
+import WAPI from '../Components/WeatherAPI/WeatherAPI.jsx';
+import React, { useState, useEffect, useRef } from 'react';
 
 function onedaytour() {
     const dropdownRefUp = useRef(null);

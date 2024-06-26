@@ -1,108 +1,108 @@
 {
   "az": [
     {
-      "image": "./src/assets/ganjasliderone.jpg",
+      "image": "./src/Assets/ganjasliderone.jpg",
       "title": "Heydər Əliyev Parkı",
       "caption": "Elit həyat yaşayanlar üçün ideal istirahət yeri."
     },
     {
-      "image": "./src/assets/ganjaslidertwo.jpg",
+      "image": "./src/Assets/ganjaslidertwo.jpg",
       "title": "Aleksandr Nevski Kilsəsi",
       "caption": "Müasir memarlıq və tarixin birləşdiyi məkan."
     },
     {
-      "image": "./src/assets/ganjasliderthree.jpg",
+      "image": "./src/Assets/ganjasliderthree.jpg",
       "title": "Şüşədən Ev Gəncə",
       "caption": "Tarix və mədəniyyətin heyranlığı."
     },
     {
-      "image": "./src/assets/ganjasliderfour.jpg",
+      "image": "./src/Assets/ganjasliderfour.jpg",
       "title": "Gəncə Məscidi",
       "caption": "İslam mədəniyyətinin möhtəşəm nümunəsi."
     },
     {
-      "image": "./src/assets/ganjasliderfive.jpeg",
+      "image": "./src/Assets/ganjasliderfive.jpeg",
       "title": "Gəncə Milli Parkı",
       "caption": "Təbii gözəlliklər və rahatlıq."
     }
   ],
   "en": [
     {
-      "image": "./src/assets/ganjasliderone.jpg",
+      "image": "./src/Assets/ganjasliderone.jpg",
       "title": "Heydar Aliyev Park",
       "caption": "A place of leisure for those living elite lives."
     },
     {
-      "image": "./src/assets/ganjaslidertwo.jpg",
+      "image": "./src/Assets/ganjaslidertwo.jpg",
       "title": "Alexander Nevsky Church",
       "caption": "A place where modern architecture and history meet."
     },
     {
-      "image": "./src/assets/ganjasliderthree.jpg",
+      "image": "./src/Assets/ganjasliderthree.jpg",
       "title": "House from Bottle Ganja",
       "caption": "A marvel of history and culture."
     },
     {
-      "image": "./src/assets/ganjasliderfour.jpg",
+      "image": "./src/Assets/ganjasliderfour.jpg",
       "title": "Ganja Mosque",
       "caption": "A magnificent example of Islamic culture."
     },
     {
-      "image": "./src/assets/ganjasliderfive.jpeg",
+      "image": "./src/Assets/ganjasliderfive.jpeg",
       "title": "Ganja National Park",
       "caption": "Natural beauty and tranquility."
     }
   ],
   "ru": [
     {
-      "image": "./src/assets/ganjasliderone.jpg",
+      "image": "./src/Assets/ganjasliderone.jpg",
       "title": "Парк Гейдара Алиева",
       "caption": "Место отдыха для тех, кто ведет элитный образ жизни."
     },
     {
-      "image": "./src/assets/ganjaslidertwo.jpg",
+      "image": "./src/Assets/ganjaslidertwo.jpg",
       "title": "Церковь Александра Невского",
       "caption": "Место, где встречаются современная архитектура и история."
     },
     {
-      "image": "./src/assets/ganjasliderthree.jpg",
+      "image": "./src/Assets/ganjasliderthree.jpg",
       "title": "Дом из бутылок Гянджа",
       "caption": "Чудо истории и культуры."
     },
     {
-      "image": "./src/assets/ganjasliderfour.jpg",
+      "image": "./src/Assets/ganjasliderfour.jpg",
       "title": "Гянджинская мечеть",
       "caption": "Великолепный пример исламской культуры."
     },
     {
-      "image": "./src/assets/ganjasliderfive.jpeg",
+      "image": "./src/Assets/ganjasliderfive.jpeg",
       "title": "Национальный парк Гянджа",
       "caption": "Природная красота и спокойствие."
     }
   ],
   "ge": [
     {
-      "image": "./src/assets/ganjasliderone.jpg",
+      "image": "./src/Assets/ganjasliderone.jpg",
       "title": "Heydar Aliyev Park",
       "caption": "Ein Erholungsort für diejenigen, die ein elitäres Leben führen."
     },
     {
-      "image": "./src/assets/ganjaslidertwo.jpg",
+      "image": "./src/Assets/ganjaslidertwo.jpg",
       "title": "Alexander-Newski-Kirche",
       "caption": "Ein Ort, an dem moderne Architektur und Geschichte zusammentreffen."
     },
     {
-      "image": "./src/assets/ganjasliderthree.jpg",
+      "image": "./src/Assets/ganjasliderthree.jpg",
       "title": "Haus aus Flaschen Ganja",
       "caption": "Ein Wunder der Geschichte und Kultur."
     },
     {
-      "image": "./src/assets/ganjasliderfour.jpg",
+      "image": "./src/Assets/ganjasliderfour.jpg",
       "title": "Ganja Moschee",
       "caption": "Ein großartiges Beispiel für die islamische Kultur."
     },
     {
-      "image": "./src/assets/ganjasliderfive.jpeg",
+      "image": "./src/Assets/ganjasliderfive.jpeg",
       "title": "Ganja Nationalpark",
       "caption": "Natürliche Schönheit und Ruhe."
     }

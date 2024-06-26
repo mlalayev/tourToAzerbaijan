@@ -1,14 +1,14 @@
 import React, { useState, useEffect, useRef } from 'react';
-import './header.css';
-import logo from '../../assets/logo.svg';
+import './Header.css';
+import logo from '../../Assets/logo.svg';
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoLanguageSharp } from "react-icons/io5";
 import { RiArrowDownSLine } from "react-icons/ri";
 import { useTranslation } from 'react-i18next';
-import az from '../../assets/az.svg';
-import gb from '../../assets/gb.svg';
-import ru from '../../assets/ru.svg';
-import de from '../../assets/de.svg';
+import az from '../../Assets/az.svg';
+import gb from '../../Assets/gb.svg';
+import ru from '../../Assets/ru.svg';
+import de from '../../Assets/de.svg';
 
 function Header() {
     const { t, i18n } = useTranslation();
@@ -60,20 +60,20 @@ function Header() {
                         <a href="/mltdytrs">{t('header.multiDayTours')}</a>
                         <div className="dropdown-menu">
                             <ul className="dropdown-column">
-                                <li><a href="/museum">Museum</a></li>
-                                <li><a href="/architecture">Architecture</a></li>
-                                <li><a href="/lakes">Lakes</a></li>
-                                <li><a href="/unesco">UNESCO</a></li>
-                                <li><a href="/religious">Religious</a></li>
-                                <li><a href="/parks">Parks</a></li>
+                                <li><a href="/museum">{t('header.Museum')}</a></li>
+                                <li><a href="/architecture">{t('header.Architecture')}</a></li>
+                                <li><a href="/lakes">{t('header.Lakes')}</a></li>
+                                <li><a href="/unesco">{t('header.UNESCO')}</a></li>
+                                <li><a href="/religious">{t('header.Religious')}</a></li>
+                                <li><a href="/parks">{t('header.Parks')}</a></li>
                             </ul>
                             <ul className="dropdown-column">
-                                <li><a href="/hiking">Hiking</a></li>
-                                <li><a href="/sports">Entertainment</a></li>
-                                <li><a href="/cuisine">Cuisine</a></li>
-                                <li><a href="/wineries">Wineries</a></li>
-                                <li><a href="/waterfall">Waterfall</a></li>
-                                <li><a href="/bazaars">Bazaar</a></li>
+                                <li><a href="/hiking">{t('header.Hiking')}</a></li>
+                                <li><a href="/sports">{t('header.Entertainment')}</a></li>
+                                <li><a href="/cuisine">{t('header.Cuisine')}</a></li>
+                                <li><a href="/wineries">{t('header.Wineries')}</a></li>
+                                <li><a href="/waterfall">{t('header.Waterfall')}</a></li>
+                                <li><a href="/bazaars">{t('header.Bazaar')}</a></li>
                             </ul>
                         </div>
                     </li>
@@ -82,18 +82,18 @@ function Header() {
                         <a href="/dstntns">{t('header.destinations')}</a>
                         <div className="dropdown-menu seconddropdown">
                             <ul className="dropdown-column">
-                                <li><a href="/baku">Baku</a></li>
-                                <li><a href="/ganja">Ganja</a></li>
-                                <li><a href="/guba">Guba</a></li>
-                                <li><a href="/gusar">Gusar</a></li>
-                                <li><a href="/ismailly">Ismailly</a></li>
+                                <li><a href="/baku">{t('header.Baku')}</a></li>
+                                <li><a href="/ganja">{t('header.Ganja')}</a></li>
+                                <li><a href="/guba">{t('header.Guba')}</a></li>
+                                <li><a href="/gusar">{t('header.Gusar')}</a></li>
+                                <li><a href="/ismailly">{t('header.Ismailly')}</a></li>
                             </ul>
                             <ul className="dropdown-column">
-                                <li><a href="/khizi">Khizi</a></li>
-                                <li><a href="/lankaran">Lankaran</a></li>
-                                <li><a href="/lerik">Lerik</a></li>
-                                <li><a href="/shaki">Shaki</a></li>
-                                <li><a href="/shamaky">Shamaky</a></li>
+                                <li><a href="/khizi">{t('header.Khizi')}</a></li>
+                                <li><a href="/lankaran">{t('header.Lankaran')}</a></li>
+                                <li><a href="/lerik">{t('header.Lerik')}</a></li>
+                                <li><a href="/shaki">{t('header.Shaki')}</a></li>
+                                <li><a href="/shamaky">{t('header.Shamaky')}</a></li>
                             </ul>
                         </div>
                     </li>

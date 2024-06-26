@@ -1,108 +1,108 @@
 {
   "az": [
     {
-      "image": "./src/assets/carpetmuseum.jpeg",
+      "image": "./src/Assets/carpetmuseum.jpeg",
       "title": "Xalça Muzeyi",
       "caption": "Xalça gözəlliğinin keyfiyyətini yaşayın."
     },
     {
-      "image": "./src/assets/kandtasarrufat.jpg",
+      "image": "./src/Assets/kandtasarrufat.jpg",
       "title": "Kənd Təsərrüfatı Muzeyi",
       "caption": "Qədim kənd təsərrüfatı texnologiyaları."
     },
     {
-      "image": "./src/assets/literaturemuseum.jpg",
+      "image": "./src/Assets/literaturemuseum.jpg",
       "title": "Ədəbiyyat Muzeyi",
       "caption": "Ədəbiyyat muzeyində tarixi anlar."
     },
     {
-      "image": "./src/assets/milliincesenetmuzeyi.jpg",
+      "image": "./src/Assets/milliincesenetmuzeyi.jpg",
       "title": "İncəsənət Muzeyi",
       "caption": "Milli İncəsənət Muzeyi ilə tanışlıq."
     },
     {
-      "image": "./src/assets/haydaraliyevcenter.jpg",
+      "image": "./src/Assets/haydaraliyevcenter.jpg",
       "title": "Heydər Əliyev Mərkəzi",
       "caption": "Heydər Əliyev Mərkəzinin möhtəşəmliyi."
     }
   ],
   "en": [
     {
-      "image": "./src/assets/carpetmuseum.jpeg",
+      "image": "./src/Assets/carpetmuseum.jpeg",
       "title": "Carpet Museum",
       "caption": "Experience the beauty of carpet craftsmanship."
     },
     {
-      "image": "./src/assets/kandtasarrufat.jpg",
+      "image": "./src/Assets/kandtasarrufat.jpg",
       "title": "Agricultural Museum",
       "caption": "Ancient agricultural technologies."
     },
     {
-      "image": "./src/assets/literaturemuseum.jpg",
+      "image": "./src/Assets/literaturemuseum.jpg",
       "title": "Literature Museum",
       "caption": "Historic moments at the Literature Museum."
     },
     {
-      "image": "./src/assets/milliincesenetmuzeyi.jpg",
+      "image": "./src/Assets/milliincesenetmuzeyi.jpg",
       "title": "Art Museum",
       "caption": "Exploring the National Museum of Art."
     },
     {
-      "image": "./src/assets/haydaraliyevcenter.jpg",
+      "image": "./src/Assets/haydaraliyevcenter.jpg",
       "title": "Heydar Aliyev Center",
       "caption": "The grandeur of Heydar Aliyev Center."
     }
   ],
   "ru": [
     {
-      "image": "./src/assets/carpetmuseum.jpeg",
+      "image": "./src/Assets/carpetmuseum.jpeg",
       "title": "Музей ковров",
       "caption": "Почувствуйте красоту коврового мастерства."
     },
     {
-      "image": "./src/assets/kandtasarrufat.jpg",
+      "image": "./src/Assets/kandtasarrufat.jpg",
       "title": "Музей сельского хозяйства",
       "caption": "Древние сельскохозяйственные технологии."
     },
     {
-      "image": "./src/assets/literaturemuseum.jpg",
+      "image": "./src/Assets/literaturemuseum.jpg",
       "title": "Литературный музей",
       "caption": "Исторические моменты в Литературном музее."
     },
     {
-      "image": "./src/assets/milliincesenetmuzeyi.jpg",
+      "image": "./src/Assets/milliincesenetmuzeyi.jpg",
       "title": "Художественный музей",
       "caption": "Знакомство с Национальным музеем искусства."
     },
     {
-      "image": "./src/assets/haydaraliyevcenter.jpg",
+      "image": "./src/Assets/haydaraliyevcenter.jpg",
       "title": "Центр Гейдара Алиева",
       "caption": "Величие Центра Гейдара Алиева."
     }
   ],
   "ge": [
     {
-      "image": "./src/assets/carpetmuseum.jpeg",
+      "image": "./src/Assets/carpetmuseum.jpeg",
       "title": "Teppichmuseum",
       "caption": "Erleben Sie die Schönheit des Teppichhandwerks."
     },
     {
-      "image": "./src/assets/kandtasarrufat.jpg",
+      "image": "./src/Assets/kandtasarrufat.jpg",
       "title": "Landwirtschaftsmuseum",
       "caption": "Antike landwirtschaftliche Technologien."
     },
     {
-      "image": "./src/assets/literaturemuseum.jpg",
+      "image": "./src/Assets/literaturemuseum.jpg",
       "title": "Literaturmuseum",
       "caption": "Historische Momente im Literaturmuseum."
     },
     {
-      "image": "./src/assets/milliincesenetmuzeyi.jpg",
+      "image": "./src/Assets/milliincesenetmuzeyi.jpg",
       "title": "Kunstmuseum",
       "caption": "Erkundung des Nationalen Kunstmuseums."
     },
     {
-      "image": "./src/assets/haydaraliyevcenter.jpg",
+      "image": "./src/Assets/haydaraliyevcenter.jpg",
       "title": "Heydar Aliyev Zentrum",
       "caption": "Die Pracht des Heydar Aliyev Centers."
     }

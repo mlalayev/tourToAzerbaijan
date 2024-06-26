@@ -1,108 +1,108 @@
 {
   "az": [
     {
-      "image": "./src/assets/leriksliderone.jpeg",
+      "image": "./src/Assets/leriksliderone.jpeg",
       "title": "Lerik mağaraları",
       "caption": "Lerik mağaralarını tədqiq edin, doğal eləliklərlə zəngin."
     },
     {
-      "image": "./src/assets/lerikslidertwo.jpg",
+      "image": "./src/Assets/lerikslidertwo.jpg",
       "title": "Lerik yaylaları",
       "caption": "Lerik yaylalarının sərin manzaralarını keşf edin."
     },
     {
-      "image": "./src/assets/leriksliderthree.jpg",
+      "image": "./src/Assets/leriksliderthree.jpg",
       "title": "Talış dağları",
       "caption": "Lerikdə Talış dağlarının görkəmini seyr edin."
     },
     {
-      "image": "./src/assets/leriksliderfour.jpg",
+      "image": "./src/Assets/leriksliderfour.jpg",
       "title": "Lerik şəlaləsi",
       "caption": "Lerik şəlaləsini müşahidə edin, doğal bir maraqlılıq."
     },
     {
-      "image": "./src/assets/leriksliderfive.jpg",
+      "image": "./src/Assets/leriksliderfive.jpg",
       "title": "Lerik - 'Relax' Istirahət Mərkəzi",
       "caption": "Lerikdəki sərin təbiət qarşısında istirahət edin."
     }
   ],
   "en": [
     {
-      "image": "./src/assets/leriksliderone.jpeg",
+      "image": "./src/Assets/leriksliderone.jpeg",
       "title": "Lerik Caves",
       "caption": "Explore the fascinating caves of Lerik, rich in natural wonders."
     },
     {
-      "image": "./src/assets/lerikslidertwo.jpg",
+      "image": "./src/Assets/lerikslidertwo.jpg",
       "title": "Lerik Plateaus",
       "caption": "Discover the serene plateaus of Lerik, offering breathtaking views."
     },
     {
-      "image": "./src/assets/leriksliderthree.jpg",
+      "image": "./src/Assets/leriksliderthree.jpg",
       "title": "Talish Mountains",
       "caption": "Embrace the majestic beauty of the Talish Mountains in Lerik."
     },
     {
-      "image": "./src/assets/leriksliderfour.jpg",
+      "image": "./src/Assets/leriksliderfour.jpg",
       "title": "Lerik Waterfall",
       "caption": "Witness the cascading Lerik Waterfall, a natural marvel."
     },
     {
-      "image": "./src/assets/leriksliderfive.jpg",
+      "image": "./src/Assets/leriksliderfive.jpg",
       "title": "Lerik - Relax Resort",
       "caption": "Indulge in relaxation at Lerik's serene resort, surrounded by natural beauty."
     }
   ],
   "ru": [
     {
-      "image": "./src/assets/leriksliderone.jpeg",
+      "image": "./src/Assets/leriksliderone.jpeg",
       "title": "Лерикские пещеры",
       "caption": "Исследуйте удивительные пещеры Лерика, богатые природными чудесами."
     },
     {
-      "image": "./src/assets/lerikslidertwo.jpg",
+      "image": "./src/Assets/lerikslidertwo.jpg",
       "title": "Лерикские плато",
       "caption": "Откройте для себя уединенные плато Лерика, предлагающие захватывающие виды."
     },
     {
-      "image": "./src/assets/leriksliderthree.jpg",
+      "image": "./src/Assets/leriksliderthree.jpg",
       "title": "Талишские горы",
       "caption": "Ощутите величественную красоту Талишских гор в Лерике."
     },
     {
-      "image": "./src/assets/leriksliderfour.jpg",
+      "image": "./src/Assets/leriksliderfour.jpg",
       "title": "Лерикский водопад",
       "caption": "Созерцайте Лерикский водопад, природное чудо."
     },
     {
-      "image": "./src/assets/leriksliderfive.jpg",
+      "image": "./src/Assets/leriksliderfive.jpg",
       "title": "Лерик - Отдых в курортном комплексе",
       "caption": "Насладитесь отдыхом в уединенном курортном комплексе Лерика, окруженном природной красотой."
     }
   ],
   "ge": [
     {
-      "image": "./src/assets/leriksliderone.jpeg",
+      "image": "./src/Assets/leriksliderone.jpeg",
       "title": "Lerik Höhlen",
       "caption": "Erkunden Sie die faszinierenden Höhlen von Lerik, reich an natürlichen Wundern."
     },
     {
-      "image": "./src/assets/lerikslidertwo.jpg",
+      "image": "./src/Assets/lerikslidertwo.jpg",
       "title": "Lerik Plateaus",
       "caption": "Entdecken Sie die ruhigen Plateaus von Lerik, die atemberaubende Ausblicke bieten."
     },
     {
-      "image": "./src/assets/leriksliderthree.jpg",
+      "image": "./src/Assets/leriksliderthree.jpg",
       "title": "Talish Berge",
       "caption": "Erleben Sie die majestätische Schönheit der Talish Berge in Lerik."
     },
     {
-      "image": "./src/assets/leriksliderfour.jpg",
+      "image": "./src/Assets/leriksliderfour.jpg",
       "title": "Lerik Wasserfall",
       "caption": "Bestaunen Sie den Lerik Wasserfall, ein Naturwunder."
     },
     {
-      "image": "./src/assets/leriksliderfive.jpg",
+      "image": "./src/Assets/leriksliderfive.jpg",
       "title": "Lerik - Entspannungsresort",
       "caption": "Genießen Sie Entspannung in Leriks ruhigem Resort, umgeben von natürlicher Schönheit."
     }

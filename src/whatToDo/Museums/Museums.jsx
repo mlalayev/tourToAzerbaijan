@@ -1,15 +1,15 @@
-import logo from '../../assets/logo.svg';
+import logo from '../../Assets/logo.svg';
 import { useTranslation } from 'react-i18next';
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoLanguageSharp } from "react-icons/io5";
 import { RiArrowDownSLine } from "react-icons/ri";
 import React, { useState, useEffect, useRef } from 'react';
-import ImageSlider from '../../components/imageSlider/imageSlider.jsx';
+import ImageSlider from '../../Components/ImageSlider/ImageSlider.jsx';
 
-import az from '../../assets/az.svg';
-import gb from '../../assets/gb.svg';
-import ru from '../../assets/ru.svg';
-import de from '../../assets/de.svg';
+import az from '../../Assets/az.svg';
+import gb from '../../Assets/gb.svg';
+import ru from '../../Assets/ru.svg';
+import de from '../../Assets/de.svg';
 
 function museums() {
 

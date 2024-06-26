@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import TEMP from '../temprature/temprature.jsx';
+import TEMP from '../Temprature/Temprature.jsx';
 import { useTranslation } from 'react-i18next';
 
 function WeatherAPI() {

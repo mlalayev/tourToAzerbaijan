@@ -1,5 +1,5 @@
 import React from 'react';
-import './temprature.css';
+import './Temprature.css';
 import { useTranslation } from 'react-i18next';
 
 function Temperature({ temperature, wind, location, weather, icon }) {

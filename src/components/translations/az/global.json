@@ -79,6 +79,28 @@
         "Zardab": "Zərdab"
     },
     "header": {
+        "Baku": "Bakı",
+        "Ganja": "Gəncə",
+        "Guba": "Quba",
+        "Gusar": "Qusar",
+        "Ismailly": "İsmayıllı",
+        "Khizi": "Xızı",
+        "Lankaran": "Lənkəran",
+        "Lerik": "Lerik",
+        "Shaki": "Şəki",
+        "Shamaky": "Şamaxı",
+        "Museum": "Muzeylər",
+        "Architecture": "Arxitektura",
+        "Lakes": "Göllər",
+        "UNESCO": "YUNESKO",
+        "Religious": "Dini ",
+        "Parks": "Parklar",
+        "Hiking": "Gəzinti",
+        "Entertainment": "Əyləncə",
+        "Cuisine": "Kulinariya",
+        "Wineries": "Şərabçılıq",
+        "Waterfall": "Şəlalələr",
+        "Bazaar": "Bazarlar",
         "logoAlt": "Logo",
         "multiDayTours": "Nə etməli",
         "dayTrips": "Günlük turlar",
@@ -306,5 +328,94 @@
         "destinations": "Təyinatlar",
         "visa_information": "Viza məlumatları",
         "copyright": "2024 ©Azerbaijan Tours. All rights reserved."
+    },
+    "whatToDo": {
+        "0": {
+            "title": "Muzeylər",
+            "furtherInfo": "Daha ətraflı məlumat üçün düyməyə klikləyin ↓",
+            "info": "Azərbaycan muzeyləri ölkənin zəngin mədəni irsini və tarixini nümayiş etdirir. Bakıda yerləşən Azərbaycan Milli Tarix Muzeyi geniş arxeoloji və etnoqrafik kolleksiyaları ilə bölgənin keçmişinə dair dərin bilgilər təqdim edir.",
+            "descriptiontwo": "Bundan əlavə, məşhur memar Zaha Hadidin layihələndirdiyi Heydər Əliyev Mərkəzi müasir incəsənət və innovasiyaya yönəlmiş dövri sərgilərlə mədəniyyət mərkəzi kimi xidmət edir.",
+            "check": "Keçid"
+        },
+        "1": {
+            "title": "Memarlıq",
+            "info": "Azərbaycan memarlığı qədim Fars, İslam və Sovet təsirlərini unikal şəkildə birləşdirir. Bakı şəhərinin Orta əsr mərkəzi, möhtəşəm Alov Qüllələri və tarixi Qız Qalası bu eklektik qarışığı nümayiş etdirir.",
+            "furtherInfo": "Daha ətraflı məlumat üçün düyməyə klikləyin ↓",
+            "check": "Keçid",
+            "descriptiontwo": "Məşhur memar Zaha Hadidin layihələndirdiyi Heydər Əliyev Mərkəzi isə ölkənin müasir, axıcı dizaynı qəbul etməsini vurğulayır."
+        },
+        "2": {
+            "title": "Göllər",
+            "info": "Azərbaycan müxtəlif təbii gözəllikləri və istirahət imkanları ilə zəngin olan göllərə malikdir. Göygöl Milli Parkında yerləşən sakit Göygöl gölünün və mənzərəli Maralgöl gölünün ətrafında bu göllər sevimli mənzərələrinə görə qiymətləndirilir.",
+            "furtherInfo": "Ətraflı məlumat üçün düyməyə klikləyin ↓",
+            "check": "Keçid",
+            "descriptiontwo": "Bu təbii möcüzələr müxtəlif flora və fauna üçün yaşayış yerləri təmin edir və açıq hava həvəskarları və təbiət sevərlər üçün populyar məkanlar kimi xidmət edir."
+        },
+        "3": {
+            "title": "UNESCO İrs",
+            "info": "Azərbaycanın bir neçə UNESCO Dünya İrsi siyahısına daxil olan yerləri onun zəngin mədəni və tarixi irsini vurğulayır. Bakı Qala Divarları, Şirvanşahlar Sarayı və Qız Qalası orta əsr memarlığını və şəhər planlaşdırmasını nümayiş etdirir.",
+            "furtherInfo": "Daha ətraflı məlumat üçün düyməyə klikləyin ↓",
+            "check": "Keçid",
+            "descriptiontwo": "Bundan əlavə, Qobustan Qaya Sənəti Mədəni Landşaftı bölgədəki qədim həyatın maraqlı görüntülərini təmin edən qədim oyma və yazıları nümayiş etdirir."
+        },
+        "4": {
+            "title": "Dini yerlər",
+            "info": "Azərbaycanın dini binaları onun müxtəlif mədəni və tarixi təsirlərini əks etdirir və İslam və İslamdan əvvəlki memarlıq üslublarını birləşdirir. Müasir rekonstruksiya ilə möhtəşəm Bibi-Heybət Məscidi əhəmiyyətli bir mənəvi və memarlıq abidəsi kimi dayanır.",
+            "furtherInfo": "Daha ətraflı məlumat üçün düyməyə klikləyin ↓",
+            "check": "Keçid",
+            "descriptiontwo": "Eyni zamanda, Ateshgah Atəşgahı Azərbaycanın qədim Zərdüşt irsinin şahidi olaraq, müxtəlif dini ənənələrin tarixi kəsişməsindəki rolunu vurğulayır."
+        },
+        "5": {
+            "title": "Parklar",
+            "info": "Azərbaycanın parkları təbii gözəllik və istirahət imkanlarını birləşdirir, şəhər landşaftlarında yaşıl vahələr kimi xidmət edir. Dünyanın ən uzun promenadlarından biri olan Bakıda yerləşən Dənizkənarı Bulvar Xəzər dənizinin mənzərəli görüntüləri ilə yanaşı, əyləncə və asudə vaxt fəaliyyətləri təqdim edir.",
+            "furtherInfo": "Daha ətraflı məlumat üçün düyməyə klikləyin ↓",
+            "check": "Keçid",
+            "descriptiontwo": "Qobustan Milli Parkı isə, yalnızca gözəl mənzərələri deyil, həm də qədim qaya oymaları və palçıq vulkanları ilə təbiət və tarix həvəskarları üçün maraqlı bir məkan təşkil edir."
+        },
+        "6": {
+            "title": "Azərbaycan'da yürüş",
+            "info": "Azərbaycan'da yürüş etmək, müxtəlif mənzərələri kəşf etmək imkanı verir, Qafqaz Dağlarının sıx meşələrindən yarı-səhra bölgələrinə qədər. Böyük Qafqaz sıra dağları, xüsusilə Şahdağ Milli Parkında, nəfəs kəsən mənzərələri olan cığırlar təklif edir, burada yürüşçülər gözəl vadilər, şəlalələr və alp çəmənlikləri ilə qarşılaşa bilərlər.",
+            "furtherInfo": "Daha ətraflı məlumat üçün düyməyə klikləyin ↓",
+            "check": "Keçid",
+            "descriptiontwo": "Bundan əlavə, Lahıc kəndi ətrafındakı cığırlar qədim döşəmə daşlı küçələr və ənənəvi sənətkarlıq vasitəsilə mədəni bir səyahət təqdim edir, bu da zəngin və müxtəlif bir yürüş təcrübəsi yaradır."
+        },
+        "7": {
+            "title": "İdman və əyləncə",
+            "info": "Azərbaycanda idman və əyləncə həyatı canlı və müxtəlifdir, ölkənin həm ənənəvi, həm də müasir fəaliyyətlərə olan sevgisini əks etdirir. Paytaxt Bakı, Formula 1 Azərbaycan Qran Prisi və UEFA Avropa Liqası kimi beynəlxalq tədbirlərə ev sahibliyi edir. Güləş və at sürmə kimi ənənəvi idman növləri populyarlığını qoruyub saxlayır, müasir əyləncə seçimlərinə isə Alov Qüllələri'ndəki işıq şouları, Azərbaycan Dövlət Akademik Opera və Balet Teatrında opera və balet tamaşaları və Bakının trendi olan məhəllələrində canlı gecə həyatı daxildir.",
+            "furtherInfo": "Daha ətraflı məlumat üçün düyməyə klikləyin ↓",
+            "check": "Keçid",
+            "descriptiontwo": ""
+        },
+        "8": {
+            "title": "Mətbəx",
+            "info": "Azərbaycan mətbəxi zəngin dadların bir mozaikasıdır, onun müxtəlif mədəni təsirləri və bol yerli məhsulları əks etdirir. Səfran, ət və quru meyvələrlə bişirilən ətirli plov və üzüm yarpaqlarına doldurulmuş kıyma və düyüdən hazırlanan dolma imza yeməkləri arasındadır. Mətbəx həmçinin kebablar, təzə salatlar və paxlava və şəkərbura kimi şirniyyatları ilə məşhurdur, bu şirniyyatlar tez-tez ətirli Azərbaycan çayı ilə birlikdə zövq alınır.",
+            "furtherInfo": "Daha ətraflı məlumat üçün düyməyə klikləyin ↓",
+            "check": "Keçid",
+            "descriptiontwo": ""
+        },
+        "9": {
+            "title": "Şərabçılıq",
+            "info": "Azərbaycanın şərabçılığı onun zəngin üzümçülük irsinin ayrılmaz bir hissəsidir, minlərlə illik şərab istehsalı tarixi var. Xüsusilə Gəncə, Şamaxı və Qəbələ kimi bölgələrdə məhsuldar torpaqlar və müxtəlif iqlim yüksək keyfiyyətli üzüm sortlarının yetişdirilməsinə şərait yaradır. Az-Granata və Savalan kimi tanınmış şərab zavodları turlar və dadım seansları təklif edir, ziyarətçilərə Azərbaycan şərablarının unikal dadlarını yaşamaq və onların istehsalında istifadə edilən ənənəvi və müasir texnikalar haqqında öyrənmək imkanı verir.",
+            "furtherInfo": "Daha ətraflı məlumat üçün düyməyə klikləyin ↓",
+            "check": "Keçid",
+            "descriptiontwo": ""
+        },
+        "10": {
+            "title": "Şəlalələr",
+            "info": "Azərbaycan bir neçə möhtəşəm şəlalələrə ev sahibliyi edir, hər biri unikal təbii gözəllik və sakit bir qaçış təmin edir. Quba bölgəsində yerləşən Afurca Şəlaləsi, təxminən 70 metr hündürlükdən dramatik şəkildə tökülən, ölkənin ən məşhur şəlalələrindən biridir.",
+            "furtherInfo": "Daha ətraflı məlumat üçün düyməyə klikləyin ↓",
+            "check": "Keçid",
+            "descriptiontwo": "Qusar bölgəsində yerləşən Laza Şəlalələri, sıx yaşıl bitki örtüyü və qayalıq yamaclarla əhatə olunmuş mənzərəli bir məkan təmin edir, bu da onları yürüşçülər və təbiət həvəskarları üçün populyar bir məkan halına gətirir."
+        },
+        "11": {
+            "title": "Bazarlıq",
+            "info": "Azərbaycanın bazarları canlı fəaliyyət mərkəzləri kimi fəaliyyət göstərir, görmək, eşitmək və qoxu duyğuları üçün zəngin təcrübə təqdim edir. Bakıda yerləşən Təzə Bazaar, şəhərin ən qədim bazarlarından biridir və təzə meyvə, tərəvəz, ədviyyat və yerli ləzzətlərin parlaq bir müxtəlifliyini təqdim edir. Ziyarətçilər həmçinin ənənəvi sənətkarlıq, suvenirlər və küçə yeməkləri ilə tanınan Nizami Küçəsi bazarını araşdıra bilər, bu da Azərbaycan mədəniyyəti və ticarətinə əsl bir baxış təmin edir.",
+            "furtherInfo": "Daha ətraflı məlumat üçün düyməyə klikləyin ↓",
+            "check": "Keçid",
+            "descriptiontwo": ""
+        },
+        "recommended": "Tövsiyə olunur",
+        "recommendedTooltip": "Müəllif bu şəhəri tövsiyə edir!",
+        "check": "Yoxla"
     }
 }

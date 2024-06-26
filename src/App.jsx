@@ -1,35 +1,35 @@
-import PARK from './whatToDo/Park/Park.jsx';
-import i18n from './components/i18n/i18n.jsx';
-import MULTIDAY from './whatToDo/whatToDo.jsx';
+import PARK from './WhatToDo/Park/Park.jsx';
+import i18n from './Components/I18N/I18N.jsx';
+import MULTIDAY from './WhatToDo/WhatToDo.jsx';
 import { I18nextProvider } from 'react-i18next';
-import BAKU from './destinations/Baku/Baku.jsx';
-import GUBA from './destinations/Guba/Guba.jsx';
-import CARPET from './whatToDo/Carpet/Carpet.jsx';
-import UNESCO from './whatToDo/UNESCO/unesco.jsx';
-import HIKING from './whatToDo/Hiking/Hiking.jsx';
-import SPORTS from './whatToDo/Sports/Sports.jsx';
-import ONEDAY from './onedaytours/onedaytour.jsx';
-import KHIZI from './destinations/Khizi/Khizi.jsx';
-import LERIK from './destinations/Lerik/Lerik.jsx';
+import BAKU from './Destinations/Baku/Baku.jsx';
+import GUBA from './Destinations/Guba/Guba.jsx';
+import LAKES from './WhatToDo/Carpet/Carpet.jsx';
+import UNESCO from './WhatToDo/UNESCO/UNESCO.jsx';
+import HIKING from './WhatToDo/Hiking/Hiking.jsx';
+import SPORTS from './WhatToDo/Sports/Sports.jsx';
+import ONEDAY from './OneDayTours/OneDayTours.jsx';
+import KHIZI from './Destinations/Khizi/Khizi.jsx';
+import LERIK from './Destinations/Lerik/Lerik.jsx';
 import React, { useState, useEffect } from 'react';
-import SHAKI from './destinations/Shaki/Shaki.jsx';
-import GANJA from './destinations/Ganja/Ganja.jsx';
-import GUSAR from './destinations/Gusar/Gusar.jsx';
-import FOOTER from './components/footer/footer.jsx';
-import MUSEUM from './whatToDo/Museums/Museums.jsx';
-import CUISINE from './whatToDo/Cuisine/Cuisine.jsx';
-import BAZAARS from './whatToDo/Bazaars/Bazaars.jsx';
-import WINERIES from './whatToDo/Wineries/Wineries.jsx';
-import MAINPAGE from './components/mainpage/mainpage.jsx';
-import RELIGIOUS from './whatToDo/Religious/Religious.jsx';
-import DESTINATIONS from './destinations/destinations.jsx';
-import LANKARAN from './destinations/Lankaran/Lankaran.jsx';
-import SHAMAKHY from './destinations/Shamakhy/Shamakhy.jsx';
-import ISMAILLY from './destinations/Ismailly/Ismailly.jsx';
-import WATERFALL from './whatToDo/Waterfalls/Waterfall.jsx';
-import UPPERPART from './components/upperpart/upperpart.jsx';
+import SHAKI from './Destinations/Shaki/Shaki.jsx';
+import GANJA from './Destinations/Ganja/Ganja.jsx';
+import GUSAR from './Destinations/Gusar/Gusar.jsx';
+import FOOTER from './Components/Footer/Footer.jsx';
+import MUSEUM from './WhatToDo/Museums/Museums.jsx';
+import CUISINE from './WhatToDo/Cuisine/Cuisine.jsx';
+import BAZAARS from './WhatToDo/Bazaars/Bazaars.jsx';
+import WINERIES from './WhatToDo/Wineries/Wineries.jsx';
+import MAINPAGE from './Components/MainPage/MainPage.jsx';
+import RELIGIOUS from './WhatToDo/Religious/Religious.jsx';
+import DESTINATIONS from './Destinations/Destinations.jsx';
+import LANKARAN from './Destinations/Lankaran/Lankaran.jsx';
+import SHAMAKHY from './Destinations/Shamakhy/Shamakhy.jsx';
+import ISMAILLY from './Destinations/Ismailly/Ismailly.jsx';
+import WATERFALL from './WhatToDo/Waterfalls/Waterfall.jsx';
+import UPPERPART from './Components/UpperPart/UpperPart.jsx';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import ARCHITECTURE from './whatToDo/Architecture/architecture.jsx';
+import ARCHITECTURE from './WhatToDo/Architecture/Architecture.jsx';
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -120,8 +120,8 @@ function App() {
             element={<MUSEUM />}
           />
 
-          <Route path='/carpets'
-            element={<CARPET />}
+          <Route path='/lakes'
+            element={<LAKES />}
           />
 
           <Route path='/unescoheritage'

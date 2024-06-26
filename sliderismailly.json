@@ -1,108 +1,108 @@
 {
   "az": [
     {
-      "image": "./src/assets/ismaillysliderone.jpg",
+      "image": "./src/Assets/ismaillysliderone.jpg",
       "title": "İsmayıllı Qaranohur gölü",
       "caption": "İsmayıllı Qaranohur gölü ətrafında gezinti."
     },
     {
-      "image": "./src/assets/ismaillyslidertwo.jpg",
+      "image": "./src/Assets/ismaillyslidertwo.jpg",
       "title": "Qaçan ev İsmayıllı",
       "caption": "İsmayıllıda qeyri-adi qədim ev."
     },
     {
-      "image": "./src/assets/ismaillysliderthree.jpg",
+      "image": "./src/Assets/ismaillysliderthree.jpg",
       "title": "Lahıc gözünü açan gözəllik",
       "caption": "Lahıc İsmayıllıya yaxın olan, gözünü açan gözəllik."
     },
     {
-      "image": "./src/assets/ismaillysliderfour.jpg",
+      "image": "./src/Assets/ismaillysliderfour.jpg",
       "title": "İsmayıllı tarixi küçələr",
       "caption": "İsmayıllı tarixi şəhərə olan sevgim."
     },
     {
-      "image": "./src/assets/ismaillysliderfive.jpg",
+      "image": "./src/Assets/ismaillysliderfive.jpg",
       "title": "Tarixi samovar və əşyalar",
       "caption": "Tarixi samovar və əşyalar."
     }
   ],
   "en": [
     {
-      "image": "./src/assets/ismaillysliderone.jpg",
+      "image": "./src/Assets/ismaillysliderone.jpg",
       "title": "Qaranohur lake in Ismailly",
       "caption": "Exploring around Qaranohur lake in Ismailly."
     },
     {
-      "image": "./src/assets/ismaillyslidertwo.jpg",
+      "image": "./src/Assets/ismaillyslidertwo.jpg",
       "title": "Runaway house in Ismailly",
       "caption": "An extraordinary ancient house in Ismailly."
     },
     {
-      "image": "./src/assets/ismaillysliderthree.jpg",
+      "image": "./src/Assets/ismaillysliderthree.jpg",
       "title": "Eye-relaxing beauty of Lahij",
       "caption": "Beauty that opens your eyes near Ismailly's Lahij."
     },
     {
-      "image": "./src/assets/ismaillysliderfour.jpg",
+      "image": "./src/Assets/ismaillysliderfour.jpg",
       "title": "Historic streets of Ismailly",
       "caption": "My love for the historic city of Ismailly."
     },
     {
-      "image": "./src/assets/ismaillysliderfive.jpg",
+      "image": "./src/Assets/ismaillysliderfive.jpg",
       "title": "Historic samovar and stuff",
       "caption": "Historic samovar and stuff."
     }
   ],
   "ru": [
     {
-      "image": "./src/assets/ismaillysliderone.jpg",
+      "image": "./src/Assets/ismaillysliderone.jpg",
       "title": "Озеро Каранохур в Исмаиллы",
       "caption": "Прогулка вокруг озера Каранохур в Исмаиллы."
     },
     {
-      "image": "./src/assets/ismaillyslidertwo.jpg",
+      "image": "./src/Assets/ismaillyslidertwo.jpg",
       "title": "Беглый дом в Исмаиллы",
       "caption": "Необычный старинный дом в Исмаиллы."
     },
     {
-      "image": "./src/assets/ismaillysliderthree.jpg",
+      "image": "./src/Assets/ismaillysliderthree.jpg",
       "title": "Очарование Ляхича расслабляет глаза",
       "caption": "Красота, открывающая глаза, рядом с Ляхичем в Исмаиллы."
     },
     {
-      "image": "./src/assets/ismaillysliderfour.jpg",
+      "image": "./src/Assets/ismaillysliderfour.jpg",
       "title": "Исторические улицы Исмаиллы",
       "caption": "Моя любовь к историческому городу Исмаиллы."
     },
     {
-      "image": "./src/assets/ismaillysliderfive.jpg",
+      "image": "./src/Assets/ismaillysliderfive.jpg",
       "title": "Исторический самовар и вещи",
       "caption": "Исторический самовар и вещи."
     }
   ],
   "ge": [
     {
-      "image": "./src/assets/ismaillysliderone.jpg",
+      "image": "./src/Assets/ismaillysliderone.jpg",
       "title": "Qaranohur-See in Ismailly",
       "caption": "Erkundung rund um den Qaranohur-See in Ismailly."
     },
     {
-      "image": "./src/assets/ismaillyslidertwo.jpg",
+      "image": "./src/Assets/ismaillyslidertwo.jpg",
       "title": "Entlaufenes Haus in Ismailly",
       "caption": "Ein außergewöhnliches altes Haus in Ismailly."
     },
     {
-      "image": "./src/assets/ismaillysliderthree.jpg",
+      "image": "./src/Assets/ismaillysliderthree.jpg",
       "title": "Augenentspannende Schönheit von Lahij",
       "caption": "Schönheit, die Ihre Augen in der Nähe von Lahij in Ismailly öffnet."
     },
     {
-      "image": "./src/assets/ismaillysliderfour.jpg",
+      "image": "./src/Assets/ismaillysliderfour.jpg",
       "title": "Historische Straßen von Ismailly",
       "caption": "Meine Liebe zur historischen Stadt Ismailly."
     },
     {
-      "image": "./src/assets/ismaillysliderfive.jpg",
+      "image": "./src/Assets/ismaillysliderfive.jpg",
       "title": "Historischer Samowar und Sachen",
       "caption": "Historischer Samowar und Sachen."
     }

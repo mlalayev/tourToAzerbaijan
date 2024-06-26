@@ -1,8 +1,5 @@
+import './ImageSlider.css';
 import React, { useState, useEffect } from 'react';
-import { GrUserManager } from 'react-icons/gr';
-import './imageSlider.css';
-import { LuArrowLeftFromLine, LuArrowRightFromLine } from "react-icons/lu";
-import { TbSquareDot } from "react-icons/tb";
 import { TbCircleDotFilled } from "react-icons/tb";
 
 

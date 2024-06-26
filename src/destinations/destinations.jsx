@@ -1,14 +1,14 @@
-import cityData from '../../cities.json';
-import '../destinations/destinations.css';
+import cityData from '../../Cities.json';
+import '../Destinations/Destinations.css';
 import { useNavigate } from 'react-router-dom';
-import momuna from '../assets/mominakhatun.png';
+import { useTranslation } from 'react-i18next';
+import momuna from '../Assets/mominakhatun.png';
 import { RiArrowDownSLine } from "react-icons/ri";
 import { FaArrowRightLong } from "react-icons/fa6";
-import HEADER from '../components/header/header.jsx';
-import WAPI from '../components/weatherapi/weatherapi.jsx';
+import SEARCH from '../Components/Search/Search.jsx'
+import HEADER from '../Components/Header/Header.jsx';
+import WAPI from '../Components/WeatherAPI/WeatherAPI.jsx';
 import React, { useState, useEffect, useRef } from 'react';
-import { useTranslation } from 'react-i18next';
-import SEARCH from '../components/search/search.jsx'
 
 function destinations() {
 
@@ -45,7 +45,7 @@ function destinations() {
     useEffect(() => {
         const fetchDestinations = async () => {
             try {
-                const response = await fetch('../../destinations.json');
+                const response = await fetch('../../Destinations.json');
                 const data = await response.json();
                 setDestinations(data);
             } catch (error) {

@@ -1,108 +1,108 @@
 {
   "az": [
     {
-      "image": "./src/assets/parkone.jpg",
+      "image": "./src/Assets/parkone.jpg",
       "title": "Dağüstü Park",
       "caption": "Təbiilik sevənlər üçün mükəmməl bir yer."
     },
     {
-      "image": "./src/assets/parktwo.jpg",
+      "image": "./src/Assets/parktwo.jpg",
       "title": "Fəvvarelər Meydanı",
       "caption": "Təsəvvür edilə bilməyən gözəl bir yer."
     },
     {
-      "image": "./src/assets/parkthree.jpg",
+      "image": "./src/Assets/parkthree.jpg",
       "title": "Tarqoviy Park",
       "caption": "Təbiət ilə daxili əlaqənin vurğulandığı yer."
     },
     {
-      "image": "./src/assets/parkfour.jpg",
+      "image": "./src/Assets/parkfour.jpg",
       "title": "Dədə Qorqud Parkı",
       "caption": "Ən yeni və müasir parklardan biri."
     },
     {
-      "image": "./src/assets/parkfive.jpg",
+      "image": "./src/Assets/parkfive.jpg",
       "title": "Şahdağ Milli Parkı",
       "caption": "Yüksək dağlarda səyahət edənlər üçün mükəmməl səyahət marşrutu."
     }
   ],
   "en": [
     {
-      "image": "./src/assets/parkone.jpg",
+      "image": "./src/Assets/parkone.jpg",
       "title": "Highland Park",
       "caption": "Perfect spot for nature enthusiasts."
     },
     {
-      "image": "./src/assets/parktwo.jpg",
+      "image": "./src/Assets/parktwo.jpg",
       "title": "Fountain Square",
       "caption": "A beautiful spot that defies description."
     },
     {
-      "image": "./src/assets/parkthree.jpg",
+      "image": "./src/Assets/parkthree.jpg",
       "title": "Tarqovi Park",
       "caption": "A place highlighting the connection with nature."
     },
     {
-      "image": "./src/assets/parkfour.jpg",
+      "image": "./src/Assets/parkfour.jpg",
       "title": "Dede Korkut Park",
       "caption": "A place that can be described in detail."
     },
     {
-      "image": "./src/assets/parkfive.jpg",
+      "image": "./src/Assets/parkfive.jpg",
       "title": "Shahdag National Park",
       "caption": "An excellent travel route for hiking in high mountains."
     }
   ],
   "ru": [
     {
-      "image": "./src/assets/parkone.jpg",
+      "image": "./src/Assets/parkone.jpg",
       "title": "Парк Высокогорья",
       "caption": "Отличное место для любителей природы."
     },
     {
-      "image": "./src/assets/parktwo.jpg",
+      "image": "./src/Assets/parktwo.jpg",
       "title": "Площадь Фонтанов",
       "caption": "Красивое место, которое трудно описать словами."
     },
     {
-      "image": "./src/assets/parkthree.jpg",
+      "image": "./src/Assets/parkthree.jpg",
       "title": "Парк Тарговый",
       "caption": "Место, подчеркивающее связь с природой."
     },
     {
-      "image": "./src/assets/parkfour.jpg",
+      "image": "./src/Assets/parkfour.jpg",
       "title": "Парк Деде Коркут",
       "caption": "Место, которое можно подробно описать."
     },
     {
-      "image": "./src/assets/parkfive.jpg",
+      "image": "./src/Assets/parkfive.jpg",
       "title": "Шахдаг Национальный Парк",
       "caption": "Отличный маршрут для путешествий по высокогорным районам."
     }
   ],
   "ge": [
     {
-      "image": "./src/assets/parkone.jpg",
+      "image": "./src/Assets/parkone.jpg",
       "title": "Hochland Park",
       "caption": "Perfekter Ort für Naturliebhaber."
     },
     {
-      "image": "./src/assets/parktwo.jpg",
+      "image": "./src/Assets/parktwo.jpg",
       "title": "Springbrunnenplatz",
       "caption": "Ein schöner Ort, der schwer in Worte zu fassen ist."
     },
     {
-      "image": "./src/assets/parkthree.jpg",
+      "image": "./src/Assets/parkthree.jpg",
       "title": "Tarkovi Park",
       "caption": "Ein Ort, der die Verbindung zur Natur hervorhebt."
     },
     {
-      "image": "./src/assets/parkfour.jpg",
+      "image": "./src/Assets/parkfour.jpg",
       "title": "Dede Korkut Park",
       "caption": "Ein Ort, der genau beschrieben werden kann."
     },
     {
-      "image": "./src/assets/parkfive.jpg",
+      "image": "./src/Assets/parkfive.jpg",
       "title": "Shahdag Nationalpark",
       "caption": "Ein ausgezeichneter Reiseweg zum Wandern in den Hochgebirgen."
     }

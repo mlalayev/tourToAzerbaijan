@@ -1,13 +1,13 @@
 import React from 'react';
-import './upperpart.css';
-import main from '../../assets/main.png';
-import HEADER from '../header/header.jsx'
+import './UpperPart.css';
+import main from '../../Assets/main.png';
+import HEADER from '../Header/Header.jsx'
 import { useTranslation } from 'react-i18next';
 
 function header() {
 
     const { t } = useTranslation();
-
+    
 
     return (
 

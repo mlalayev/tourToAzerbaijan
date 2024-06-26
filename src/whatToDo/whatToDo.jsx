@@ -1,14 +1,14 @@
-import '../whatToDo/whatToDo.css';
-import cityData from '../../cities.json';
-import cuisine from '../assets/cuisine.png';
-import { RiArrowDownSLine } from "react-icons/ri";
-import { FaArrowRightLong } from "react-icons/fa6";
-import HEADER from '../components/header/header.jsx';
-import React, { useState, useEffect, useRef } from 'react';
-import WAPI from '../components/weatherapi/weatherapi.jsx'
-import SEARCH from '../components/search/search.jsx'
+import '../WhatToDo/WhatToDo.css';
+import cityData from '../../Cities.json';
+import cuisine from '../Assets/cuisine.png';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { RiArrowDownSLine } from "react-icons/ri";
+import { FaArrowRightLong } from "react-icons/fa6";
+import HEADER from '../Components/Header/Header.jsx';
+import SEARCH from '../Components/Search/Search.jsx';
+import React, { useState, useEffect, useRef } from 'react';
+import WAPI from '../Components/WeatherAPI/WeatherAPI.jsx';
 
 
 function whattodo() {

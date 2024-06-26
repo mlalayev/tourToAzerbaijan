@@ -1,13 +1,13 @@
+import './Footer.css'; 
+import az from '../../Assets/az.svg';
 import React, { useState } from 'react';
-import { useTranslation } from 'react-i18next';
 import Alert from '@mui/material/Alert';
-import './footer.css'; // Assuming you have CSS for styling
+import logo from '../../Assets/logo.svg';
 import { LuPhoneCall } from "react-icons/lu";
-import { IoLocationOutline } from "react-icons/io5";
-import az from '../../assets/az.svg';
-import logo from '../../assets/logo.svg';
-import karabakh from '../../assets/karabakhisazerbaijan1.jpg';
+import { useTranslation } from 'react-i18next';
 import { LuArrowUpCircle } from "react-icons/lu";
+import { IoLocationOutline } from "react-icons/io5";
+import karabakh from '../../Assets/karabakhisazerbaijan1.jpg';
 
 function Footer() {
 
