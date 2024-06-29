@@ -1046,6 +1046,11 @@ header {
         justify-content: flex-end;
     }
 
+    .ffthscup{
+        margin: auto;
+        max-width: 1350px;
+    }
+
     .checkoutpart {
         margin: 0;
         width: 20vw;

@@ -2,8 +2,7 @@ import './ImageSlider.css';
 import React, { useState, useEffect } from 'react';
 import { TbCircleDotFilled } from "react-icons/tb";
 
-
-function ImageSlider({ slides }) {
+function ImageSlider({ slides, interval = 3000 }) {
   const [imageIndex, setImageIndex] = useState(0);
   const [isSliding, setIsSliding] = useState(false);
 
@@ -47,6 +46,15 @@ function ImageSlider({ slides }) {
       return () => clearTimeout(timer);
     }
   }, [isSliding]);
+
+  // Autoslide effect
+  useEffect(() => {
+    const autoslide = setInterval(() => {
+      handleNextImage();
+    }, interval);
+
+    return () => clearInterval(autoslide);
+  }, [interval]);
 
   return (
     <section
