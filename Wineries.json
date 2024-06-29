@@ -1,27 +1,110 @@
-[
-  {
-    "image": "./src/Assets/wineriesone.jpg",
-    "title": "Goygol Winery",
-    "caption": "Historic winery known for its exquisite wine production."
-  },
-  {
-    "image": "./src/Assets/wineriestwo.jpg",
-    "title": "Wine Tasting in Goygol",
-    "caption": "Experience the rich flavors of local wines in Goygol."
-  },
-  {
-    "image": "./src/Assets/wineriesthree.jpeg",
-    "title": "Abrau Wine Museum",
-    "caption": "Explore the history and art of winemaking at Abrau."
-  },
-  {
-    "image": "./src/Assets/wineriesfour.jpg",
-    "title": "Wine Tasting in Goygol",
-    "caption": "Savor a variety of premium wines in the scenic Goygol region."
-  },
-  {
-    "image": "./src/Assets/wineriesfive.jpg",
-    "title": "Goygol Winery",
-    "caption": "Discover the legacy and taste of Goygol's finest wines."
-  }
-]
+{
+  "az": [
+    {
+      "image": "./src/Assets/wineriesone.jpg",
+      "title": "Göygöl Şərab Zavodu",
+      "caption": "Gözəl şərab istehsalı ilə tanınan tarixi zavod."
+    },
+    {
+      "image": "./src/Assets/wineriestwo.jpg",
+      "title": "Göygölda Şərab Dadma",
+      "caption": "Göygöl'da yerli şərabların zəngin dadını yaşayın."
+    },
+    {
+      "image": "./src/Assets/wineriesthree.jpeg",
+      "title": "Abrau Şərab Muzeyi",
+      "caption": "Abrau'da şərab istehsalının tarixi və sənəti ilə tanış olun."
+    },
+    {
+      "image": "./src/Assets/wineriesfour.jpg",
+      "title": "Göygölda Şərab Dadma",
+      "caption": "Göygöl bölgəsinin mənzərəli yerində müxtəlif premium şərabların dadına baxın."
+    },
+    {
+      "image": "./src/Assets/wineriesfive.jpg",
+      "title": "Göygöl Şərab Zavodu",
+      "caption": "Göygölun ən yaxşı şərablarının mirası və dadını kəşf edin."
+    }
+  ],
+  "en": [
+    {
+      "image": "./src/Assets/wineriesone.jpg",
+      "title": "Goygol Winery",
+      "caption": "Historic winery known for its exquisite wine production."
+    },
+    {
+      "image": "./src/Assets/wineriestwo.jpg",
+      "title": "Wine Tasting in Goygol",
+      "caption": "Experience the rich flavors of local wines in Goygol."
+    },
+    {
+      "image": "./src/Assets/wineriesthree.jpeg",
+      "title": "Abrau Wine Museum",
+      "caption": "Explore the history and art of winemaking at Abrau."
+    },
+    {
+      "image": "./src/Assets/wineriesfour.jpg",
+      "title": "Wine Tasting in Goygol",
+      "caption": "Savor a variety of premium wines in the scenic Goygol region."
+    },
+    {
+      "image": "./src/Assets/wineriesfive.jpg",
+      "title": "Goygol Winery",
+      "caption": "Discover the legacy and taste of Goygol's finest wines."
+    }
+  ],
+  "ru": [
+    {
+      "image": "./src/Assets/wineriesone.jpg",
+      "title": "Винодельня Гёйгёль",
+      "caption": "Историческая винодельня, известная своим изысканным вином."
+    },
+    {
+      "image": "./src/Assets/wineriestwo.jpg",
+      "title": "Дегустация Вина в Гёйгёле",
+      "caption": "Ощутите богатые вкусы местных вин в Гёйгёле."
+    },
+    {
+      "image": "./src/Assets/wineriesthree.jpeg",
+      "title": "Музей Вина Абрау",
+      "caption": "Исследуйте историю и искусство виноделия в Абрау."
+    },
+    {
+      "image": "./src/Assets/wineriesfour.jpg",
+      "title": "Дегустация Вина в Гёйгёле",
+      "caption": "Наслаждайтесь разнообразием премиальных вин в живописном регионе Гёйгёль."
+    },
+    {
+      "image": "./src/Assets/wineriesfive.jpg",
+      "title": "Винодельня Гёйгёль",
+      "caption": "Откройте для себя наследие и вкус лучших вин Гёйгёля."
+    }
+  ],
+  "ge": [
+    {
+      "image": "./src/Assets/wineriesone.jpg",
+      "title": "Goygol Weingut",
+      "caption": "Historisches Weingut, bekannt für seine exquisite Weinproduktion."
+    },
+    {
+      "image": "./src/Assets/wineriestwo.jpg",
+      "title": "Weinprobe in Goygol",
+      "caption": "Erleben Sie die reichen Aromen lokaler Weine in Goygol."
+    },
+    {
+      "image": "./src/Assets/wineriesthree.jpeg",
+      "title": "Abrau Weinmuseum",
+      "caption": "Erkunden Sie die Geschichte und Kunst der Weinherstellung in Abrau."
+    },
+    {
+      "image": "./src/Assets/wineriesfour.jpg",
+      "title": "Weinprobe in Goygol",
+      "caption": "Genießen Sie eine Vielzahl von Premium-Weinen in der malerischen Region Goygol."
+    },
+    {
+      "image": "./src/Assets/wineriesfive.jpg",
+      "title": "Goygol Weingut",
+      "caption": "Entdecken Sie das Erbe und den Geschmack der besten Weine von Goygol."
+    }
+  ]
+}

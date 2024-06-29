@@ -417,5 +417,11 @@
         "recommended": "Tövsiyə olunur",
         "recommendedTooltip": "Müəllif bu şəhəri tövsiyə edir!",
         "check": "Yoxla"
+    },
+    "secondupperpart": {
+        "title": "Əyləncə ilə dolu",
+        "titletwo": "Azərbaycan",
+        "titleicon": "!",
+        "titlethree": "Burada nələri ziyarət etmək istədiyinizdən tutmuş Azərbaycanın dadlı mətbəxindən, Şahdağ istirahət mərkəzində xizək sürməyə qədər məlumat ala bilərsiniz."
     }
 }

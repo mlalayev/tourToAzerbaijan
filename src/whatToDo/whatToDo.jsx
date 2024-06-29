@@ -69,11 +69,11 @@ function whattodo() {
                     <div className="text-part">
 
                         <div className="text-part-ra">
-                            <h1 className='text-part-firsth'>What do you want
+                            <h1 className='text-part-firsth'>{t('secondupperpart.title')}
                             </h1>
-                            <h1 className='text-part-secondh'>to do<span className='yellow'>?</span></h1>
+                            <h1 className='text-part-secondh'>{t('secondupperpart.titletwo')}<span className='yellow'>{t('secondupperpart.titleicon')}</span></h1>
 
-                            <p className='text-partp'>Here you can check what to do or where to visit, starting from delicious cuisine of Azerbaijan, to snowboarding on Shahdag resort.</p>
+                            <p className='text-partp'>{t('secondupperpart.titlethree')}</p>
                         </div>
 
                         <div className="main-pic-parttwo">
