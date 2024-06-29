@@ -498,5 +498,11 @@
         "recommended": "Recommended",
         "recommendedTooltip": "This city is recommended by the author!",
         "check": "Check"
+    },
+    "secondupperpart":{
+        "title": "What do you want",
+        "titletwo": "to do",
+        "titleicon": "?",
+        "titlethree": "Here you can check what to do or where to visit, starting from delicious cuisine of Azerbaijan, to snowboarding on Shahdag resort."
     }
 }
