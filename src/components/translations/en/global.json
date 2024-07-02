@@ -499,10 +499,16 @@
         "recommendedTooltip": "This city is recommended by the author!",
         "check": "Check"
     },
-    "secondupperpart":{
+    "secondupperpart": {
         "title": "What do you want",
         "titletwo": "to do",
         "titleicon": "?",
         "titlethree": "Here you can check what to do or where to visit, starting from delicious cuisine of Azerbaijan, to snowboarding on Shahdag resort."
+    },
+    "onedaytours": {
+        "title": "Which city will you",
+        "titletwo": "explore with us",
+        "titleicon": "?",
+        "titlethree":"Here you can book excursions and one-day tours without buying a package. You can combine these short tours to create your unique itinerary."
     }
 }

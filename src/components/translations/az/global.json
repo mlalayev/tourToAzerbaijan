@@ -423,5 +423,10 @@
         "titletwo": "Azərbaycan",
         "titleicon": "!",
         "titlethree": "Burada nələri ziyarət etmək istədiyinizdən tutmuş Azərbaycanın dadlı mətbəxindən, Şahdağ istirahət mərkəzində xizək sürməyə qədər məlumat ala bilərsiniz."
+    },
+    "onedaytours":{
+        "title": "Azərbaycanın hansı şəhərini",
+        "titletwo": "ziyarət etmək istəyirsiniz",
+        "titleicon": "?"
     }
 }

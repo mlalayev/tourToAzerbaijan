@@ -1,6 +1,7 @@
 import '../OneDayTours/OneDayTours.css';
 import cityData from '../../Cities.json';
 import { FaArrowRight } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 import { RiArrowDownSLine } from 'react-icons/ri';
 import maidentower from '../Assets/maidentower.png';
@@ -9,12 +10,16 @@ import SEARCH from '../Components/Search/Search.jsx';
 import WAPI from '../Components/WeatherAPI/WeatherAPI.jsx';
 import React, { useState, useEffect, useRef } from 'react';
 
+
 function onedaytour() {
     const dropdownRefUp = useRef(null);
     const [tours, setTours] = useState([]);
     const [cityLi, setCityLi] = useState('Choose City');
     const [isRotatedUp, setIsRotatedUp] = useState(false);
     const navigate = useNavigate();
+
+    const { t, i18n } = useTranslation();
+
 
     const handleCityChangeLi = (cityName) => {
         const cityList = cityData.cities.find((city) => city.cityLi === cityName);
@@ -68,14 +73,12 @@ function onedaytour() {
                 <div className="container-upr">
                     <div className="text-part">
                         <div className="text-part-ra">
-                            <h1 className="text-part-firsth">Which city will you</h1>
+                            <h1 className="text-part-firsth">{t('onedaytours.title')}</h1>
                             <h1 className="text-part-secondh">
-                                explore with us<span className="yellow">?</span>
+                            {t('onedaytours.titletwo')}<span className="yellow"> {t('onedaytours.titleicon')}</span>
                             </h1>
-                            <p className="text-partp">
-                                Here you can book excursions and one-day tours without
-                                buying a package. You can combine these short tours to
-                                create your unique itinerary.
+                            <p className="text-partp">{t('onedaytours.titlethree')}
+                                
                             </p>
                         </div>
                         <div className="main-pic-part">
