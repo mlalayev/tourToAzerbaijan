@@ -21,7 +21,6 @@ import hdlymosque from '../../Assets/hdlymosque.jpg';
 import slidersessi from '../../Assets/slider6quba.jpg';
 import ganimetpark from '../../Assets/ganimetpark.jpg';
 import slidertres from '../../Assets/slider3qabala.jpg';
-import IMAGESLIDER from '../ImageSlider/ImageSlider.jsx';
 import slidercuatro from '../../Assets/slider4lerik.jpg';
 import slidershahdag from '../../Assets/slidershahdag.jpg';
 import sliderseptini from '../../Assets/slider7shusha.jpg';
