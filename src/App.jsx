@@ -1,4 +1,4 @@
-// import PARK from './WhatToDo/Park/Park.jsx';
+import PARK from './WhatToDo/Park/Park.jsx';
 import i18n from './Components/I18N/I18N.jsx';
 import MULTIDAY from './WhatToDo/WhatToDo.jsx';
 import { I18nextProvider } from 'react-i18next';
@@ -132,9 +132,9 @@ function App() {
             element={<RELIGIOUS />}
           />
 
-          {/* <Route path='/parks'
+          <Route path='/parks'
             element={<PARK />}
-          /> */}
+          />
 
           <Route path='/hiking'
             element={<HIKING />}
