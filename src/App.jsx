@@ -132,7 +132,7 @@ function App() {
             element={<RELIGIOUS />}
           />
 
-          <Route path='/park'
+          <Route path='/parks'
             element={<PARK />}
           />
 
