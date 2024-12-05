@@ -176,7 +176,7 @@ function App() {
             element={<><DESTINATIONS /><FOOTER /></>}
           />
 
-          <Route path="/tourToAzerbaijan"
+          <Route path="/"
             element={<><UPPERPART /><MAINPAGE /><FOOTER /></>} />
 
           <Route path="/home"
