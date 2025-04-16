@@ -29,7 +29,7 @@ import ISMAILLY from './Destinations/Ismailly/Ismailly.jsx';
 import WATERFALL from './WhatToDo/Waterfalls/Waterfall.jsx';
 import UPPERPART from './Components/UpperPart/UpperPart.jsx';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import ARCHITECTURE from './WhatToDo/Architecture/Architecture.jsx';
+import ARCHITECTURE from './whatToDo/Architecture/Architecture.jsx';
 
 function App() {
   const [loading, setLoading] = useState(false);

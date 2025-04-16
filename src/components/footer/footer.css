@@ -1,10 +1,20 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
+  --font-family-rubik: rubik;
+  --main-black-color: #000000;
+  --main-white-color: #ffffff;
+  --font-family-reddit: reddit sans;
+  --main-light-green-color: #42a08a;
+  /* --main-light-green-color: #9aa042; */
+  /* --main-light-green-color: #295365; */
+  /* --main-light-blue-color: #3c819e; */
+  /* --main-light-green-color: #43c7b1; */
+  --main-yellow-color: rgb(255, 230, 0);
     --font-family-rubik: rubik;
     --main-black-color: #000000;
     --main-white-color: #ffffff;
@@ -18,319 +28,318 @@
 }
 
 .divgreenline::before {
-    top: 0;
-    right: 0;
-    content: '';
-    z-index: -1;
-    height: 2px;
-    width: 100vw;
-    position: absolute;
-    background-color: var(--main-light-green-color);
+  top: 0;
+  right: 0;
+  content: "";
+  z-index: -1;
+  height: 2px;
+  width: 100vw;
+  position: absolute;
+  background-color: var(--main-light-green-color);
 }
 
 .divgreenline::after {
-    top: 0;
-    left: 0;
-    z-index: -1;
-    content: '';
-    height: 2px;
-    width: 100vw;
-    position: absolute;
-    background-color: var(--main-light-green-color);
+  top: 0;
+  left: 0;
+  z-index: -1;
+  content: "";
+  height: 2px;
+  width: 100vw;
+  position: absolute;
+  background-color: var(--main-light-green-color);
 }
 
 .divgreenline {
-    top: -10px;
-    z-index: 1;
-    height: 2px;
-    width: 100vw;
-    margin: 50px 0;
-    max-width: 1600px;
-    position: absolute;
-    color: var(--main-light-green-color);
-    background-color: var(--main-light-green-color);
+  top: -10px;
+  z-index: 1;
+  height: 2px;
+  width: 100vw;
+  margin: 50px 0;
+  max-width: 1600px;
+  position: absolute;
+  color: var(--main-light-green-color);
+  background-color: var(--main-light-green-color);
 }
 
 .holder {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
 }
 
 .greencircle {
-    top: -30px;
-    right: 10%;
-    width: 60px;
-    z-index: 2;
-    height: 60px;
-    display: flex;
-    cursor: pointer;
-    position: absolute;
-    align-items: center;
-    border-radius: 50px;
-    justify-content: center;
-    background-color: #05203C;
+  top: -30px;
+  right: 10%;
+  width: 60px;
+  z-index: 2;
+  height: 60px;
+  display: flex;
+  cursor: pointer;
+  position: absolute;
+  align-items: center;
+  border-radius: 50px;
+  justify-content: center;
+  background-color: #05203c;
 }
 
 .ftrpc {
-    width: 66vw;
-    max-width: 400px;
-    transition: 0.3s;
-    border-radius: 10px;
+  width: 66vw;
+  max-width: 400px;
+  transition: 0.3s;
+  border-radius: 10px;
 }
 
 .footerrightpart {
-    gap: 5px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
+  gap: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .containerftr {
-    gap: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 30px;
-    justify-content: center;
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  justify-content: center;
 }
 
 footer {
-    height: 100%;
-    margin: 0 auto;
-    width: 100vw;
-    max-width: 1600px;
-    padding: 20px 0 40px 0 !important;
-    position: relative;
-    place-content: center;
-    background-color: #DBDBDB;
+  height: 100%;
+  margin: 0 auto;
+  width: 100vw;
+  max-width: 1600px;
+  padding: 20px 0 40px 0 !important;
+  position: relative;
+  place-content: center;
+  background-color: #dbdbdb;
 }
 
 footer::before {
-    top: 0;
-    right: 0;
-    z-index: -1;
-    content: '';
-    width: 100vw;
-    height: 100%;
-    position: absolute;
-    background-color: #DBDBDB;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  content: "";
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  background-color: #dbdbdb;
 }
 
 footer::after {
-    top: 0;
-    left: 0;
-    content: '';
-    z-index: -1;
-    width: 100vw;
-    height: 100%;
-    position: absolute;
-    background-color: #DBDBDB;
+  top: 0;
+  left: 0;
+  content: "";
+  z-index: -1;
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  background-color: #dbdbdb;
 }
 
 .logofooter {
-    width: 100px;
+  width: 100px;
 }
 
 .containerftr a {
-    color: black;
-    padding: 5px 0;
-    font-size: 15px;
-    text-decoration: none;
+  color: black;
+  padding: 5px 0;
+  font-size: 15px;
+  text-decoration: none;
 }
 
 .containerftr a:hover {
-    color: var(--main-light-green-color);
+  color: var(--main-light-green-color);
 }
 
 .horizontall {
-    width: 100%;
-    height: 1px;
-    margin: 10px 0;
-    background-color: var(--main-light-green-color);
+  width: 100%;
+  height: 1px;
+  margin: 10px 0;
+  background-color: var(--main-light-green-color);
 }
 
-@media screen and (max-width:1130px) {
-    .divgreenline {
-        top: -50px;
-    }
+@media screen and (max-width: 1130px) {
+  .divgreenline {
+    top: -50px;
+  }
 }
 
-@media screen and (min-width:1130px) {
-    .divgreenline {
-        top: -50px;
-    }
+@media screen and (min-width: 1130px) {
+  .divgreenline {
+    top: -50px;
+  }
 
-    .containerftr {
-        max-width: 1600px;
-        margin-left: -20px;
-    }
+  .containerftr {
+    max-width: 1600px;
+    margin-left: -20px;
+  }
 
-    footer {
-        padding: 50px 0;
-    }
+  footer {
+    padding: 50px 0;
+  }
 }
 
 @media screen and (max-width: 360px) {
-    .containerftr {
-        grid-template-columns: 12em;
-    }
+  .containerftr {
+    grid-template-columns: 12em;
+  }
 }
 
 .txtholder h1 {
-    gap: 10px;
-    display: flex;
-    font-size: 20px;
-    align-items: center;
+  gap: 10px;
+  display: flex;
+  font-size: 20px;
+  align-items: center;
 }
 
 .txtholder {
-    gap: 10px;
-    display: flex;
-    align-items: center;
+  gap: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .hypertagholder {
-    gap: 40px;
-    display: flex;
-    position: relative;
+  gap: 40px;
+  display: flex;
+  position: relative;
 }
 
 .tagholderone,
 .tagholdertwo {
-    display: flex;
-    text-align: start;
-    flex-direction: column;
+  display: flex;
+  text-align: start;
+  flex-direction: column;
 }
 
 .cardfooter:hover,
 .giveusacall:hover,
 .copyrighttext:hover,
 .ftrpc:hover {
-    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
-        0.3em 0.3em 1em rgba(0, 0, 0, 0.3),
-        0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 
 .copyrighttext {
-    width: 66vw;
-    height: 90px;
-    display: grid;
-    max-width: 400px;
-    background: white;
-    text-align: center;
-    padding: 10px 20px;
-    border-radius: 20px;
-    place-content: center;
-    font-family: var(--font-family-reddit);
-    transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    transition: 0.3s;
+  width: 66vw;
+  height: 90px;
+  display: grid;
+  max-width: 400px;
+  background: white;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 20px;
+  place-content: center;
+  font-family: var(--font-family-reddit);
+  transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: 0.3s;
 }
 
 .copyrighttext h1 {
-    color: gray;
-    font-size: 18px;
+  color: gray;
+  font-size: 18px;
 }
 
 .cardfooter,
 .giveusacall {
-    width: 60vw;
-    height: 300px;
-    display: flex;
-    max-width: 360px;
-    background: white;
-    padding: 10px 20px;
-    text-align: center;
-    border-radius: 20px;
-    align-items: center;
-    flex-direction: column;
-    box-sizing: content-box;
-    justify-content: space-between;
-    font-family: var(--font-family-reddit);
-    transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    transition: 0.3s;
+  width: 60vw;
+  height: 300px;
+  display: flex;
+  max-width: 360px;
+  background: white;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 20px;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: content-box;
+  justify-content: space-between;
+  font-family: var(--font-family-reddit);
+  transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: 0.3s;
 }
 
 .shadowfooter,
 .giveusacall,
 .copyrighttext,
 .ftrpc {
-    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
-        0.1em 0.1em 0.4em rgba(0, 0, 0, 0.3)
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0.1em 0.1em 0.4em rgba(0, 0, 0, 0.3);
 }
 
 .giveusacall {
-    justify-content: space-around;
+  justify-content: space-around;
 }
 
 .socialfooter {
-    gap: 20px;
-    display: flex;
-    width: fit-content;
-    padding: 10px 10px;
-    height: fit-content;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
+  gap: 20px;
+  display: flex;
+  width: fit-content;
+  padding: 10px 10px;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
 }
 
 .socialContainer {
-    width: 32px;
-    height: 32px;
-    display: flex;
-    overflow: hidden;
-    border-radius: 5px;
-    align-items: center;
-    justify-content: center;
-    transition-duration: 0.3s;
-    background-color: rgb(44, 44, 44);
+  width: 32px;
+  height: 32px;
+  display: flex;
+  overflow: hidden;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.3s;
+  background-color: rgb(44, 44, 44);
 }
 
 .containerOnefooter:hover {
-    transition-duration: 0.3s;
-    background-color: #d62976;
+  transition-duration: 0.3s;
+  background-color: #d62976;
 }
 
 .containerTwofooter:hover {
-    transition-duration: 0.3s;
-    background-color: #c71610;
+  transition-duration: 0.3s;
+  background-color: #c71610;
 }
 
 .containerThreefooter:hover {
-    transition-duration: 0.3s;
-    background-color: #0072b1;
+  transition-duration: 0.3s;
+  background-color: #0072b1;
 }
 
 .containerFourfooter:hover {
-    background-color: green;
-    transition-duration: 0.3s;
+  background-color: green;
+  transition-duration: 0.3s;
 }
 
 .socialContainer:active {
-    transform: scale(0.9);
-    transition-duration: 0.3s;
+  transform: scale(0.9);
+  transition-duration: 0.3s;
 }
 
 .socialSvg {
-    width: 17px;
-    position: relative;
+  width: 17px;
+  position: relative;
 }
 
 .socialSvg path {
-    fill: rgb(255, 255, 255);
+  fill: rgb(255, 255, 255);
 }
 
 .socialContainer:hover .socialSvg {
-    animation: slide-in-top 0.3s both;
+  animation: slide-in-top 0.3s both;
 }
 
 .gmail {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 }
 
-.variant{
-    width: 100%;
-    height: 100%;
-    position: absolute;
+.variant {
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
