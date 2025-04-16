@@ -1,514 +1,514 @@
 {
-    "cities": {
-        "default": "Select City",
-        "Aghdjabadi": "Aghdjabadi",
-        "Aghdam": "Aghdam",
-        "Aghdash": "Aghdash",
-        "Aghdara": "Aghdara",
-        "Ahstafa": "Ahstafa",
-        "Aghsu": "Aghsu",
-        "Astara": "Astara",
-        "Babek": "Babek",
-        "Baku": "Baku",
-        "Balakan": "Balakan",
-        "Baylagan": "Baylagan",
-        "Barda": "Barda",
-        "Bilasuvar": "Bilasuvar",
-        "Djabrail": "Djabrail",
-        "Djalilabad": "Djalilabad",
-        "Djulfa": "Djulfa",
-        "Dashkasan": "Dashkasan",
-        "Dalimammadli": "Dalimammadli",
-        "Fuzuli": "Fuzuli",
-        "Gadabay": "Gadabay",
-        "Ganja": "Ganja",
-        "Goranboy": "Goranboy",
-        "Goychay": "Goychay",
-        "Goygol": "Goygol",
-        "Goytapa": "Goytapa",
-        "Hadjikabul": "Hadjikabul",
-        "Horadiz": "Horadiz",
-        "Khachmas": "Khachmas",
-        "Khankandi": "Khankandi",
-        "Khizy": "Khizy",
-        "Khojaly": "Khojaly",
-        "Khodjavand": "Khodjavand",
-        "Khirdalan": "Khirdalan",
-        "Khudat": "Khudat",
-        "Ismailly": "Ismailly",
-        "Kalbadjar": "Kalbadjar",
-        "Kurdamir": "Kurdamir",
-        "Gakh": "Gakh",
-        "Kazakh": "Kazakh",
-        "Gabala": "Gabala",
-        "Gobustan": "Gobustan",
-        "Govlar": "Govlar",
-        "Guba": "Guba",
-        "Kubadly": "Kubadly",
-        "Kusar": "Kusar",
-        "Lachin": "Lachin",
-        "Lerik": "Lerik",
-        "Lankaran": "Lankaran",
-        "Liman": "Liman",
-        "Masally": "Masally",
-        "Mingachevir": "Mingachevir",
-        "Naftalan": "Naftalan",
-        "Oghuz": "Oghuz",
-        "Ordubad": "Ordubad",
-        "Saatly": "Saatly",
-        "Sabirabad": "Sabirabad",
-        "Salyan": "Salyan",
-        "Samukh": "Samukh",
-        "Siyasan": "Siyasan",
-        "Sumgait": "Sumgait",
-        "Shabran": "Shabran",
-        "Shahbuz": "Shahbuz",
-        "Shamakhy": "Shamakhy",
-        "Shaki": "Shaki",
-        "Shamkir": "Shamkir",
-        "Sharur": "Sharur",
-        "Shirvan": "Shirvan",
-        "Shusha": "Shusha",
-        "Tartar": "Tartar",
-        "Tovuz": "Tovuz",
-        "Udjar": "Udjar",
-        "Yardymly": "Yardymly",
-        "Yevlakh": "Yevlakh",
-        "Zagatala": "Zagatala",
-        "Zangilan": "Zangilan",
-        "Zardab": "Zardab"
-    },
-    "header": {
-        "Baku": "Baku",
-        "Ganja": "Ganja",
-        "Guba": "Guba",
-        "Gusar": "Gusar",
-        "Ismailly": "Ismailly",
-        "Khizi": "Khizi",
-        "Lankaran": "Lankaran",
-        "Lerik": "Lerik",
-        "Shaki": "Shaki",
-        "Shamaky": "Shamaky",
-        "Museum": "Museum",
-        "Architecture": "Architecture",
-        "Lakes": "Lakes",
-        "UNESCO": "UNESCO",
-        "Religious": "Religious ",
-        "Parks": "Parks",
-        "Hiking": "Hiking",
-        "Entertainment": "Entertainment",
-        "Cuisine": "Cuisine",
-        "Wineries": "Wineries",
-        "Waterfall": "Waterfall",
-        "Bazaar": "Bazaars",
-        "logoAlt": "Logo",
-        "multiDayTours": "What To Do",
-        "dayTrips": "Day Trips",
-        "destinations": "Destinations",
-        "visaInformations": "Visa Informations",
-        "checkout": "Checkout"
-    },
-    "sectionfirst": {
-        "cityChoose": "City Choose",
-        "findTours": "Find Tours"
-    },
-    "sectionsecond": {
-        "packageTours": "Package tours",
-        "selectPackage": "Select one of our tailor-made packages and get prepared for your Azerbaijan adventure! You do not need to worry about accommodation, airport transfers, museum tickets, transportation between the cities, tour guides — we will take care of it for you.",
-        "toursToBaku": "Tours to Baku and its sights",
-        "bakuBoulevard": "Baku Boulevard",
-        "sliderProps": {
-            "sliderdos": {
-                "huno": "Baku Boulevard",
-                "p": "1 day from 179,48 eur",
-                "btn": "View me"
-            },
-            "slidertres": {
-                "huno": "Weekend in Qabala from Upon request",
-                "p": "8 days / 7 nights from 343,64 Eur",
-                "btn": "View me"
-            },
-            "slidercuatro": {
-                "huno": "Weekend in Lerik from Upon request",
-                "p": "3 days / 2 nights from 94,54",
-                "btn": "View me"
-            },
-            "sliderpierci": {
-                "huno": "Weekend in Lankaran from Upon request",
-                "p": "3 days / 2 nights from 146,85",
-                "btn": "View me"
-            },
-            "slidersessi": {
-                "huno": "Weekend in Quba from Upon request",
-                "p": "3 days / 2 nights from 245,58",
-                "btn": "View me"
-            },
-            "sliderseptini": {
-                "huno": "Weekend in Shusha from Upon request",
-                "p": "3 days / 2 nights from 180,93",
-                "btn": "View me"
-            }
-        }
-    },
-    "sectionthird": {
-        "packageTours": "Package tours",
-        "selectPackage": "Select one of our tailor-made packages and get prepared for your Azerbaijan adventure! You do not need to worry about accommodation, airport transfers, museum tickets, transportation between the cities, tour guides — we will take care of it for you.",
-        "atashgah": "Atashgah",
-        "atashgahDescription": "Fire Temple of Baku, is a fascinating historical and religious site. This pentagonal complex, built during the 17th and...",
-        "viewMe": "View me",
-        "sliderProps": {
-            "slidershahdag": {
-                "huno": "Shahdag Mountain Resort",
-                "p": "A large resort area with multiple hotels offering skiing, snowboarding, and other winter sports...",
-                "btn": "View"
-            },
-            "khizidag": {
-                "huno": "The Khizi Red Mountains",
-                "p": "Khizi district of Azerbaijan, are known for their striking red and orange hues...",
-                "btn": "View"
-            },
-            "ganimetpark": {
-                "huno": "Military Trophies Park",
-                "p": "Extensive collection of captured military equipment and artifacts, providing a stark and...",
-                "btn": "View"
-            },
-            "mudvolcano": {
-                "huno": "The Gobustan mud volcanoes",
-                "p": "Renowned for their therapeutic properties, believed to improve skin conditions and...",
-                "btn": "View"
-            },
-            "hdlymosque": {
-                "huno": "The Heydar Aliyev Mosque",
-                "p": "is the largest mosque in the Caucasus region, notable for its impressive architectural design and grand scale...",
-                "btn": "View"
-            },
-            "yanardag": {
-                "huno": "Yanardagh (Burning hill)",
-                "p": "is a natural gas fire that continuously burns on a hillside, creating a mesmerizing and enduring display...",
-                "btn": "View"
-            }
-        }
-    },
-    "sectionfourth": {
-        "welcomeTo": "Welcome to",
-        "azerbaijan": "Azerbaijan",
-        "planningTrip": "Planning a trip to Azerbaijan can be a challenging endeavor, particularly when you're unfamiliar with all the unique aspects and hidden treasures of this captivating country. ",
-        "assistance": "is here to assist you in selecting the perfect itinerary for your adventure. Why should you choose us:",
-        "reasons": {
-            "first": "We are the experienced travel concierge with more than 10 years’ experience and thousands of happy tourists",
-            "second": "We are the registered tour operator officially licensed by the State Tourism Agency of the Republic of Azerbaijan",
-            "third": "We practise a personal approach to each customer and design your trip according to your needs"
-        }
-    },
-    "sectionfifth": {
-        "popularDestinations": "Popular destinations",
-        "chooseCity": "Choose a city"
-    },
-    "sectionsixth": {
-        "whatTouristsSay": "What tourists say?",
-        "touristsSayIntro": "More than 1500 tourists already travelled to Russia with us. Here is what they say:",
-        "recommendedBy": "Recommended by:",
-        "testimonials": [
-            {
-                "name": "Yvonne Sanders",
-                "date": "2019-10-05",
-                "rating": 5,
-                "comment": "Hello and Good day We wanted to say 'Thank you so very much' to Irina and Sergej for their warm welcome and the wonderful time that we had in St. Petersburg in early October while we were with them. We enjoyed their..."
-            },
-            {
-                "name": "Yvonne Sanders",
-                "date": "2019-10-05",
-                "rating": 5,
-                "comment": "Hello and Good day We wanted to say 'Thank you so very much' to Irina and Sergej for their warm welcome and the wonderful time that we had in St. Petersburg in early October while we were with them. We enjoyed their..."
-            },
-            {
-                "name": "Yvonne Sanders",
-                "date": "2019-10-05",
-                "rating": 5,
-                "comment": "Hello and Good day We wanted to say 'Thank you so very much' to Irina and Sergej for their warm welcome and the wonderful time that we had in St. Petersburg in early October while we were with them. We enjoyed their..."
-            }
-        ]
-    },
-    "azerbaijan": {
-        "title": "Azerbaijan",
-        "subtitle": "The great adventure",
-        "description": "We offer you our handpicked tours and excursions for an incredible vacation in Azerbaijan"
-    },
-    "tourtypes": {
-        "default": "Select Tour Type",
-        "Packagetours": "Package dsada tours",
-        "Daytoursexcursions": "Day tours & excursions",
-        "Visafreeshoretours": "Visa-free shore tours"
-    },
-    "cityDestinations": {
-        "Baku": "Baku",
-        "Gabala": "Gabala",
-        "Lerik": "Lerik",
-        "Lankaran": "Lankaran",
-        "Guba": "Guba",
-        "Gusar": "Gusar",
-        "Shusha": "Shusha",
-        "Khankandi": "Khankandi",
-        "Ismailly": "Ismailly"
-    },
-    "citiesDropdown": {
-        "Baku": "Baku",
-        "Gabala": "Gabala",
-        "Lerik": "Lerik",
-        "Lankaran": "Lankaran",
-        "Guba": "Guba",
-        "Gusar": "Gusar",
-        "Shusha": "Shusha",
-        "Khankandi": "Khankandi",
-        "Ismailly": "Ismailly"
-    },
-    "citiesSlider": {
-        "Baku": {
-            "name": "Baku",
-            "info": "Baku, the capital and largest city of Azerbaijan, is a vibrant metropolis blending ancient heritage and modernity. Our tours of Baku offer an insightful journey through its most captivating landmarks and unique sites. From the historical charm of the Old City (Icherisheher) to the futuristic Flame Towers, our knowledgeable guides will share intriguing stories and give you a glimpse into the dynamic life and rich culture of contemporary Baku residents. Discover the enchanting blend of East and West that defines this fascinating city."
-        },
-        "Gabala": {
-            "name": "Gabala",
-            "info": "Gabala, nestled amidst the picturesque landscapes of Azerbaijan, is a hidden gem waiting to be explored. Our tours of Gabala offer a delightful journey through its serene natural beauty and cultural attractions. From the tranquil shores of Lake Nohur to the adventurous trails of Tufandag Mountain, Gabala captivates visitors with its diverse offerings. Our experienced guides will unravel the secrets of this enchanting region, sharing stories of its rich history and vibrant culture. Immerse yourself in the charm of Gabala and experience the perfect blend of relaxation and adventure amidst the breathtaking scenery of Azerbaijan."
-        },
-        "Gusar": {
-            "name": "Gusar",
-            "info": "Gusar, a picturesque town nestled in the foothills of the Greater Caucasus Mountains in Azerbaijan, offers a serene retreat for nature lovers and adventurers alike. Our tours of Gusar invite you to explore its pristine landscapes, lush forests, and majestic mountain peaks. From the tranquil beauty of Laza Village to the exhilarating trails of Shahdag National Park, Gusar mesmerizes visitors with its natural wonders and outdoor activities. Our knowledgeable guides will lead you through this enchanting region, sharing insights into its unique flora and fauna, as well as the rich cultural heritage of its inhabitants. Discover the tranquility and charm of Gusar as you embark on an unforgettable journey amidst the stunning vistas of the Caucasus Mountains."
-        },
-        "Ismailly": {
-            "name": "Ismailly",
-            "info": "Ismailly, situated in the heart of Azerbaijan's lush greenery and rolling hills, offers a tranquil escape from the hustle and bustle of city life. Our tours of Ismailly invite you to immerse yourself in the serene beauty of this charming region. From the tranquil waters of Lake Shamkir to the picturesque landscapes of Lahij Village, Ismailly captivates visitors with its natural splendor and rich cultural heritage. Our experienced guides will take you on a journey through the region's hidden gems, sharing stories of its history, traditions, and the warm hospitality of its people. Whether you're exploring ancient mosques, wandering through vineyards, or simply enjoying the tranquility of the countryside, Ismailly promises an unforgettable experience for all who visit."
-        },
-        "Lankaran": {
-            "name": "Lankaran",
-            "info": "Lankaran, a coastal city nestled along the Caspian Sea in Azerbaijan, beckons with its blend of natural beauty and cultural heritage. Our tours of Lankaran offer a glimpse into the charm of this coastal gem, where lush greenery meets sandy beaches. From exploring the historic Khan's Palace to wandering through the vibrant bazaars of the Old Town, Lankaran captivates visitors with its rich history and bustling atmosphere. Our knowledgeable guides will lead you through the city's winding streets, sharing stories of its past and present, as well as introducing you to the flavors of local cuisine. Whether you're strolling along the promenade or venturing into the surrounding countryside, Lankaran promises an immersive experience that celebrates the beauty and diversity of Azerbaijan's southern coast."
-        },
-        "Lerik": {
-            "name": "Lerik",
-            "info": "Lerik, a serene mountain town in southern Azerbaijan, is famed for its breathtaking landscapes and tranquil atmosphere. Known for its lush forests, picturesque valleys, and the longevity of its residents, Lerik offers a unique retreat into nature. Our tours of Lerik will take you through its verdant scenery and peaceful environment, exploring places like the ancient Hirkan National Park and the intriguing Museum of Longevity. Our knowledgeable guides will share stories of Lerik's rich natural heritage and its people's traditions. Whether hiking through scenic trails or simply enjoying the fresh mountain air, Lerik provides a rejuvenating escape for nature enthusiasts and those seeking tranquility."
-        },
-        "Guba": {
-            "name": "Guba",
-            "info": "Guba, nestled in the northeastern region of Azerbaijan, is a captivating destination renowned for its stunning natural landscapes and rich cultural heritage. Our tours of Guba offer a remarkable journey through this diverse region, where verdant forests, alpine meadows, and majestic mountains beckon adventurers and nature lovers alike. From exploring the historic sites of the ancient city to immersing yourself in the traditional way of life of rural villages, Guba captivates visitors with its authenticity and charm. Our knowledgeable guides will lead you on an exploration of Guba's hidden treasures, sharing insights into its history, traditions, and the warm hospitality of its people. Whether you're trekking through the rugged terrain of the Caucasus Mountains, sampling local delicacies at bustling markets, or simply taking in the breathtaking scenery, Guba promises an unforgettable experience that celebrates the beauty and diversity of Azerbaijan's northern region."
-        },
-        "Shusha": {
-            "name": "Shusha",
-            "info": "Shusha, located in the heart of the Karabakh region, is a city steeped in history and cultural significance. Often referred to as the cultural capital of Azerbaijan, Shusha boasts a rich tapestry of historical landmarks, architectural marvels, and breathtaking landscapes. Our tours of Shusha offer a deep dive into its storied past and vibrant present. You'll explore the ancient Shusha Fortress, wander through the charming streets lined with historical buildings, and visit significant cultural sites such as the Yukhari Govhar Agha Mosque and the Natavan House. Our knowledgeable guides will share fascinating stories about Shusha's heritage, from its role in Azerbaijani history to its contributions to music, literature, and the arts. Nestled amidst the picturesque mountains, Shusha provides a serene yet inspiring setting that captivates every visitor. Discover the resilience and spirit of Shusha's people as you immerse yourself in the unique blend of natural beauty and cultural richness that defines this extraordinary city."
-        },
-        "Khankandi": {
-            "name": "Khankandi",
-            "info": "Khankandi, the largest city in the Karabakh region, is a hub of cultural and historical significance. Known for its vibrant atmosphere and scenic surroundings, Khankandi is a city that beautifully melds the old with the new. Our tours of Khankandi provide an in-depth exploration of its most notable attractions and hidden gems. You will visit historical landmarks such as the Weeping Spring and enjoy the lush greenery of city parks. The city's rich history is evident in its architecture and cultural institutions, including museums and theaters that showcase the region's heritage. Our experienced guides will narrate captivating stories about Khankandi's past, its strategic importance, and its cultural evolution. Nestled in the picturesque foothills of the Lesser Caucasus Mountains, Khankandi offers stunning views and a peaceful retreat into nature. Discover the dynamic life of Khankandi residents and the cultural depth that makes this city a unique destination for travelers."
-        }
-    },
-    "search": {
-        "flightsTab": "Flights",
-        "hotelsTab": "Hotels",
-        "adults": "Adults",
-        "children": "Children",
-        "firstclass": "First Class",
-        "buisness": "Buisness",
-        "economy": "Economy",
-        "searchFlight": "Search Flights",
-        "oneway": "One Way",
-        "twoway": "Two Way",
-        "multicity": "Multi-city"
-    },
-    "temp": {
-        "Wind": "Wind"
-    },
-    "api": {
-        "errormessage": "Please enter correct city",
-        "message": "Check your city from here"
-    },
-    "footer": {
-        "discover": "Discover Azerbaijan with us! Our guided tours offer personalized itineraries and expert insights. Choose an unforgettable journey with culture, history, and stunning landscapes.",
-        "phone": "+994(50)-274-01-81",
-        "location": "Baku, Azerbaijan",
-        "useful_links": "Useful Links",
-        "about_us": "About us",
-        "contact_us": "Contact us",
-        "privacy_policy": "Privacy policy",
-        "what_we_offer": "What we offer",
-        "one_day_tour": "One day tour",
-        "multi_day_tours": "Multi day tours",
-        "destinations": "Destinations",
-        "visa_information": "Visa information",
-        "copyright": "2024 ©Azerbaijan Tours. All rights reserved."
-    },
-    "whatToDo": {
-        "0": {
-            "title": "Museums",
-            "furtherInfo": "For Further information click the button ↓",
-            "info": "Azerbaijani museums offer a rich glimpse into the country's diverse cultural heritage and history. The Azerbaijan National Museum of History in Baku houses extensive archaeological and ethnographic collections, providing insights into the region's past. ",
-            "descriptiontwo": "Additionally, the Heydar Aliyev Center, designed by renowned architect Zaha Hadid, serves as a cultural hub with rotating exhibitions and a focus on contemporary art and innovation.",
-            "check": "Explore"
-        },
-        "1": {
-            "title": "Architecture",
-            "info": "Azerbaijan architecture uniquely blends ancient Persian, Islamic, and Soviet influences, creating a rich tapestry of styles. The medieval city of Baku, with its stunning Flame Towers and the historic Maiden Tower, showcases this eclectic mix.",
-            "furtherInfo": "For Further information click the button ↓",
-            "check": "Explore",
-            "descriptiontwo": " Contemporary developments, such as the Heydar Aliyev Center designed by Zaha Hadid, highlight the country's embrace of modern, fluid design."
-        },
-        "2": {
-            "title": "Lakes",
-            "info": "Azerbaijan boasts a diverse array of lakes, each offering unique natural beauty and recreational opportunities. From the tranquil waters of Goygol Lake to the scenic surroundings of Maralgol Lake in Goygol National Park, these lakes are cherished for their picturesque landscapes.",
-            "furtherInfo": "For more details, click the button below",
-            "check": "Explore",
-            "descriptiontwo": "These natural wonders not only provide habitats for diverse flora and fauna but also serve as popular destinations for outdoor enthusiasts and nature lovers."
-        },
-        "3": {
-            "title": "UNESCO's Heritage",
-            "info": "Azerbaijan boasts several UNESCO World Heritage sites that highlight its rich cultural and historical heritage. The Walled City of Baku, along with the Shirvanshah's Palace and Maiden Tower, exemplifies medieval architecture and urban planning. ",
-            "furtherInfo": "For Further information click the button ↓",
-            "check": "Explore",
-            "descriptiontwo": "Additionally, the Gobustan Rock Art Cultural Landscape features ancient carvings and inscriptions that provide a fascinating glimpse into prehistoric life in the region."
-        },
-        "4": {
-            "title": "Religious",
-            "info": "Azerbaijan's religious buildings reflect its diverse cultural and historical influences, showcasing a blend of Islamic and pre-Islamic architectural styles. The Bibi-Heybat Mosque, with its stunning modern reconstruction, stands as a significant spiritual and architectural landmark. ",
-            "furtherInfo": "For Further information click the button ↓",
-            "check": "Explore",
-            "descriptiontwo": "Meanwhile, the Fire Temple of Ateshgah, a testament to the country's ancient Zoroastrian heritage, highlights Azerbaijan's role as a historical crossroads of various religious traditions."
-        },
-        "5": {
-            "title": "Parks",
-            "info": "Azerbaijan's parks offer a blend of natural beauty and recreational facilities, serving as green oases in urban landscapes. The Seaside Boulevard in Baku, one of the longest promenades in the world, provides picturesque views of the Caspian Sea along with entertainment and leisure activities.",
-            "furtherInfo": "For Further information click the button ↓",
-            "check": "Explore",
-            "descriptiontwo": " Gobustan National Park, a UNESCO World Heritage site, not only features stunning landscapes but also ancient rock carvings and mud volcanoes, making it a fascinating destination for nature and history enthusiasts alike."
-        },
-        "6": {
-            "title": "Hiking in Azerbaijan",
-            "info": "Hiking in Azerbaijan provides an opportunity to explore diverse landscapes, from the lush forests of the Caucasus Mountains to the semi-desert regions. The Greater Caucasus range offers trails with breathtaking views, such as those found in Shahdag National Park, where hikers can encounter picturesque valleys, waterfalls, and alpine meadows.",
-            "furtherInfo": "For Further information click the button ↓",
-            "check": "Explore",
-            "descriptiontwo": " Additionally, the trails around the village of Lahij offer a cultural journey through ancient cobblestone streets and traditional crafts, making for a rich and varied hiking experience."
-        },
-        "7": {
-            "title": "Sports and entertainment",
-            "info": "Sports and entertainment in Azerbaijan are vibrant and diverse, reflecting the country's passion for both traditional and modern activities. Baku, the capital, hosts international events such as the Formula 1 Azerbaijan Grand Prix and the UEFA Europa League. Traditional sports like wrestling and horseback riding remain popular, while contemporary entertainment options include the Flame Towers' light shows, opera, ballet performances at the Azerbaijan State Academic Opera and Ballet Theater, and a bustling nightlife scene in Baku's trendy neighborhoods.",
-            "furtherInfo": "For Further information click the button ↓",
-            "check": "Explore",
-            "descriptiontwo": ""
-        },
-        "8": {
-            "title": "Cuisine",
-            "info": "Azerbaijani cuisine is a rich tapestry of flavors, reflecting its diverse cultural influences and abundant local produce. Signature dishes include plov, a fragrant rice dish often cooked with saffron, meat, and dried fruits, and dolma, grape leaves stuffed with minced meat and rice. The cuisine also features an array of kebabs, fresh salads, and sweets like pakhlava and shekerbura, often enjoyed with aromatic Azerbaijani tea.",
-            "furtherInfo": "For Further information click the button ↓",
-            "check": "Explore",
-            "descriptiontwo": ""
-        },
-        "9": {
-            "title": "Wineries",
-            "info": "Azerbaijan's wineries are an integral part of its rich viticultural heritage, with a history of winemaking that dates back thousands of years. The country's diverse climate and fertile soils, particularly in regions like Ganja, Shamakhi, and Gabala, produce a variety of high-quality grapes. Notable wineries such as Az-Granata and Savalan offer tours and tastings, allowing visitors to experience the unique flavors of Azerbaijani wines, from robust reds to crisp whites, and learn about the traditional and modern techniques used in their production.",
-            "furtherInfo": "For Further information click the button ↓",
-            "check": "Explore",
-            "descriptiontwo": ""
-        },
-        "10": {
-            "title": "Waterfalls",
-            "info": "Azerbaijan is home to several stunning waterfalls, each offering unique natural beauty and a tranquil escape. The Afurja Waterfall in the Quba district, one of the country's most famous, cascades dramatically from a height of about 70 meters.",
-            "furtherInfo": "For Further information click the button ↓",
-            "check": "Explore",
-            "descriptiontwo": " The Laza Waterfalls, located in the Gusar region, provide a picturesque setting in the Greater Caucasus Mountains, surrounded by lush greenery and rocky cliffs, making them a popular destination for hikers and nature lovers."
-        },
-        "11": {
-            "title": "Bazaars",
-            "info": "Azerbaijan's bazaars are vibrant hubs of activity, offering a sensory feast of sights, sounds, and aromas. The Taza Bazaar in Baku, one of the oldest markets in the city, showcases a dazzling array of fresh fruits, vegetables, spices, and local delicacies. Visitors can also explore the Nizami Street market, known for its eclectic mix of traditional crafts, souvenirs, and street food, providing an authentic glimpse into Azerbaijani culture and commerce.",
-            "furtherInfo": "For Further information click the button ↓",
-            "check": "Explore",
-            "descriptiontwo": ""
-        },
-        "recommended": "Recommended",
-        "recommendedTooltip": "This city is recommended by the author!",
-        "check": "Check"
-    },
-    "destinations": {
-        "0": {
-            "title": "Baku",
-            "info": "Baku, the capital of Azerbaijan, is the historic center of Baku, a UNESCO World Heritage site. Wander through the charming old city, visit the iconic Flame Towers, and enjoy the vibrant nightlife along the Caspian Sea coast.",
-            "descriptiontwo": "Discover the architectural marvel of the Heydar Aliyev Center and immerse yourself in the rich cultural heritage at the Azerbaijan Carpet Museum. Stroll along the scenic Baku Boulevard and savor traditional Azerbaijani cuisine at the city's diverse restaurants.",
-            "check": "Check",
-            "furtherInfo": "For Further information click the button ↓"
-        },
-        "1": {
-            "title": "Lankaran",
-            "info": "Discover Lankaran's beautiful beaches and rich history, including its stunning Lankaran Fortress. Enjoy the lush tea plantations and the unique subtropical climate that makes this city a perfect getaway. ",
-            "descriptiontwo": "Explore the coastal charm and immerse yourself in the vibrant culture of Lankaran. Experience the warm hospitality of the locals and indulge in delicious local cuisine. Relax and unwind amidst the natural beauty of this coastal gem.",
-            "check": "Check",
-            "furtherInfo": "For Further information click the button ↓"
-        },
-        "2": {
-            "title": "Shamakhy",
-            "info": "Visit the ancient city of Shamakhy, known for its historical mosques and beautiful landscapes. Explore the Diri Baba Mausoleum and enjoy the breathtaking views of the surrounding mountains.",
-            "descriptiontwo": " Immerse yourself in the rich history and culture of this enchanting city, where every corner tells a story. Experience the tranquility of the countryside and marvel at the architectural wonders of Shamakhy's past. Don't miss the opportunity to discover the hidden treasures and ancient traditions of this historic gem.",
-            "check": "Check",
-            "furtherInfo": "For Further information click the button ↓"
-        },
-        "3": {
-            "title": "Guba",
-            "info": "A beautiful waterfall located in the village of Afurdzhi. Enjoy the scenic hike to the waterfall and the refreshing atmosphere created by the cascading waters.",
-            "descriptiontwo": "After relishing the scenic hike to the waterfall, immerse yourself in the refreshing atmosphere created by the cascading waters.Whether you're seeking adventure or simply a peaceful retreat, a visit to this beautiful waterfall promises an unforgettable experience that will leave you rejuvenated and inspired.",
-            "check": "Check",
-            "furtherInfo": "For Further information click the button ↓"
-        },
-        "4": {
-            "title": "Shaki",
-            "info": "A picturesque forest perfect for nature walks and picnics. Immerse yourself in the serene environment and discover the diverse flora and fauna that make this forest a natural haven.",
-            "descriptiontwo": "Engage your senses as you meander along winding trails, inhaling the fresh scent of pine and listening to the soothing melodies of chirping birds.Experience a true escape from the hustle and bustle of daily life as you immerse yourself in the serene beauty of this woodland oasis.",
-            "check": "Check",
-            "furtherInfo": "For Further information click the button ↓"
-        },
-        "5": {
-            "title": "Ganja",
-            "info": "A historic palace known for its beautiful stained glass windows and intricate architecture. Delve into the rich history of Sheki and admire the craftsmanship that makes this palace a national treasure.",
-            "descriptiontwo": "Wander through its grand halls and marvel at the exquisite detailing that reflects the opulence of a bygone era.Each room tells a story, showcasing the artistry and skill of the craftsmen who built this architectural masterpiece.",
-            "check": "Check",
-            "furtherInfo": "For Further information click the button ↓"
-        },
-        "6": {
-            "title": "Gusar",
-            "info": "A picturesque forest perfect for nature walks and picnics. The tranquility of the forest provides a perfect escape from the hustle and bustle of city life, making it an ideal spot for relaxation.",
-            "descriptiontwo": "As you stroll through the winding trails, you'll encounter a diverse array of flora and fauna, adding to the forest's enchanting appeal. Whether you're an avid nature enthusiast or simply looking for a peaceful retreat, this forest offers a rejuvenating experience for all visitors.",
-            "check": "Check",
-            "furtherInfo": "For Further information click the button ↓"
-        },
-        "7": {
-            "title": "Ismailly",
-            "info": "A biodiversity hotspot with unique flora and fauna, great for hiking and wildlife watching. Explore the dense forests, enjoy bird watching, and experience the natural beauty of this protected area.",
-            "descriptiontwo": "Tread along scenic trails that wind through verdant landscapes, offering breathtaking views at every turn. This protected area is a haven for nature lovers, providing a serene escape into the heart of unspoiled wilderness.",
-            "check": "Check",
-            "furtherInfo": "For Further information click the button ↓"
-        },
-        "8": {
-            "title": "Khizi",
-            "info": "Visit the historic Yeddi Gumbaz Mausoleum, known for its seven ancient tombs and serene surroundings. Learn about the history of the Shirvan dynasty and enjoy the peaceful ambiance of this historical site.",
-            "descriptiontwo": "Marvel at the architectural beauty and intricate carvings that adorn each tomb, reflecting the artistry of a bygone era. As you wander through the site, you'll gain a deeper understanding of the Shirvan dynasty's legacy and the cultural significance of this timeless monument.",
-            "check": "Check",
-            "furtherInfo": "For Further information click the button ↓"
-        },
-        "9": {
-            "title": "Lerik",
-            "info": "Lerik is renowned for the longevity of its inhabitants and its stunning mountainous landscapes. Experience the fresh mountain air, explore the picturesque villages, and discover the cultural heritage of this unique region.",
-            "descriptiontwo": "Hike through the lush, green valleys and enjoy panoramic views that stretch as far as the eye can see. Engage with the warm and welcoming locals, and immerse yourself in the traditional customs and vibrant folklore of Lerik.",
-            "check": "Check",
-            "furtherInfo": "For Further information click the button ↓"
-        },
-        "recommended": "Recommended",
-        "recommendedTooltip": "This city is recommended by the author!",
-        "check": "Check"
-    },
-    "secondupperpart": {
-        "title": "What do you want",
-        "titletwo": "to do",
-        "titleicon": "?",
-        "titlethree": "Here you can check what to do or where to visit, starting from delicious cuisine of Azerbaijan, to snowboarding on Shahdag resort."
-    },
-    "onedaytours": {
-        "title": "Which city will you",
-        "titletwo": "explore with us",
-        "titleicon": "?",
-        "titlethree":"Here you can book excursions and one-day tours without buying a package. You can combine these short tours to create your unique itinerary."
+  "cities": {
+    "default": "Select City",
+    "Aghdjabadi": "Aghdjabadi",
+    "Aghdam": "Aghdam",
+    "Aghdash": "Aghdash",
+    "Aghdara": "Aghdara",
+    "Ahstafa": "Ahstafa",
+    "Aghsu": "Aghsu",
+    "Astara": "Astara",
+    "Babek": "Babek",
+    "Baku": "Baku",
+    "Balakan": "Balakan",
+    "Baylagan": "Baylagan",
+    "Barda": "Barda",
+    "Bilasuvar": "Bilasuvar",
+    "Djabrail": "Djabrail",
+    "Djalilabad": "Djalilabad",
+    "Djulfa": "Djulfa",
+    "Dashkasan": "Dashkasan",
+    "Dalimammadli": "Dalimammadli",
+    "Fuzuli": "Fuzuli",
+    "Gadabay": "Gadabay",
+    "Ganja": "Ganja",
+    "Goranboy": "Goranboy",
+    "Goychay": "Goychay",
+    "Goygol": "Goygol",
+    "Goytapa": "Goytapa",
+    "Hadjikabul": "Hadjikabul",
+    "Horadiz": "Horadiz",
+    "Khachmas": "Khachmas",
+    "Khankandi": "Khankandi",
+    "Khizy": "Khizy",
+    "Khojaly": "Khojaly",
+    "Khodjavand": "Khodjavand",
+    "Khirdalan": "Khirdalan",
+    "Khudat": "Khudat",
+    "Ismailly": "Ismailly",
+    "Kalbadjar": "Kalbadjar",
+    "Kurdamir": "Kurdamir",
+    "Gakh": "Gakh",
+    "Kazakh": "Kazakh",
+    "Gabala": "Gabala",
+    "Gobustan": "Gobustan",
+    "Govlar": "Govlar",
+    "Guba": "Guba",
+    "Kubadly": "Kubadly",
+    "Kusar": "Kusar",
+    "Lachin": "Lachin",
+    "Lerik": "Lerik",
+    "Lankaran": "Lankaran",
+    "Liman": "Liman",
+    "Masally": "Masally",
+    "Mingachevir": "Mingachevir",
+    "Naftalan": "Naftalan",
+    "Oghuz": "Oghuz",
+    "Ordubad": "Ordubad",
+    "Saatly": "Saatly",
+    "Sabirabad": "Sabirabad",
+    "Salyan": "Salyan",
+    "Samukh": "Samukh",
+    "Siyasan": "Siyasan",
+    "Sumgait": "Sumgait",
+    "Shabran": "Shabran",
+    "Shahbuz": "Shahbuz",
+    "Shamakhy": "Shamakhy",
+    "Shaki": "Shaki",
+    "Shamkir": "Shamkir",
+    "Sharur": "Sharur",
+    "Shirvan": "Shirvan",
+    "Shusha": "Shusha",
+    "Tartar": "Tartar",
+    "Tovuz": "Tovuz",
+    "Udjar": "Udjar",
+    "Yardymly": "Yardymly",
+    "Yevlakh": "Yevlakh",
+    "Zagatala": "Zagatala",
+    "Zangilan": "Zangilan",
+    "Zardab": "Zardab"
+  },
+  "header": {
+    "Baku": "Baku",
+    "Ganja": "Ganja",
+    "Guba": "Guba",
+    "Gusar": "Gusar",
+    "Ismailly": "Ismailly",
+    "Khizi": "Khizi",
+    "Lankaran": "Lankaran",
+    "Lerik": "Lerik",
+    "Shaki": "Shaki",
+    "Shamaky": "Shamaky",
+    "Museum": "Museum",
+    "Architecture": "Architecture",
+    "Lakes": "Lakes",
+    "UNESCO": "UNESCO",
+    "Religious": "Religious ",
+    "Parks": "Parks",
+    "Hiking": "Hiking",
+    "Entertainment": "Entertainment",
+    "Cuisine": "Cuisine",
+    "Wineries": "Wineries",
+    "Waterfall": "Waterfall",
+    "Bazaar": "Bazaars",
+    "logoAlt": "Logo",
+    "multiDayTours": "What To Do",
+    "dayTrips": "Day Trips",
+    "destinations": "Destinations",
+    "visaInformations": "Visa Informations",
+    "checkout": "Checkout"
+  },
+  "sectionfirst": {
+    "cityChoose": "City Choose",
+    "findTours": "Find Tours"
+  },
+  "sectionsecond": {
+    "packageTours": "Package tours",
+    "selectPackage": "Select one of our tailor-made packages and get prepared for your Azerbaijan adventure! You do not need to worry about accommodation, airport transfers, museum tickets, transportation between the cities, tour guides — we will take care of it for you.",
+    "toursToBaku": "Tours to Baku and its sights",
+    "bakuBoulevard": "Baku Boulevard",
+    "sliderProps": {
+      "sliderdos": {
+        "huno": "Baku Boulevard",
+        "p": "1 day from 179,48 eur",
+        "btn": "View me"
+      },
+      "slidertres": {
+        "huno": "Weekend in Qabala from Upon request",
+        "p": "8 days / 7 nights from 343,64 Eur",
+        "btn": "View me"
+      },
+      "slidercuatro": {
+        "huno": "Weekend in Lerik from Upon request",
+        "p": "3 days / 2 nights from 94,54",
+        "btn": "View me"
+      },
+      "sliderpierci": {
+        "huno": "Weekend in Lankaran from Upon request",
+        "p": "3 days / 2 nights from 146,85",
+        "btn": "View me"
+      },
+      "slidersessi": {
+        "huno": "Weekend in Quba from Upon request",
+        "p": "3 days / 2 nights from 245,58",
+        "btn": "View me"
+      },
+      "sliderseptini": {
+        "huno": "Weekend in Shusha from Upon request",
+        "p": "3 days / 2 nights from 180,93",
+        "btn": "View me"
+      }
     }
+  },
+  "sectionthird": {
+    "packageTours": "Package tours",
+    "selectPackage": "Select one of our tailor-made packages and get prepared for your Azerbaijan adventure! You do not need to worry about accommodation, airport transfers, museum tickets, transportation between the cities, tour guides — we will take care of it for you.",
+    "atashgah": "Atashgah",
+    "atashgahDescription": "Fire Temple of Baku, is a fascinating historical and religious site. This pentagonal complex, built during the 17th and...",
+    "viewMe": "View me",
+    "sliderProps": {
+      "slidershahdag": {
+        "huno": "Shahdag Mountain Resort",
+        "p": "A large resort area with multiple hotels offering skiing, snowboarding, and other winter sports...",
+        "btn": "View"
+      },
+      "khizidag": {
+        "huno": "The Khizi Red Mountains",
+        "p": "Khizi district of Azerbaijan, are known for their striking red and orange hues...",
+        "btn": "View"
+      },
+      "ganimetpark": {
+        "huno": "Military Trophies Park",
+        "p": "Extensive collection of captured military equipment and artifacts, providing a stark and...",
+        "btn": "View"
+      },
+      "mudvolcano": {
+        "huno": "The Gobustan mud volcanoes",
+        "p": "Renowned for their therapeutic properties, believed to improve skin conditions and...",
+        "btn": "View"
+      },
+      "hdlymosque": {
+        "huno": "The Heydar Aliyev Mosque",
+        "p": "is the largest mosque in the Caucasus region, notable for its impressive architectural design and grand scale...",
+        "btn": "View"
+      },
+      "yanardag": {
+        "huno": "Yanardagh (Burning hill)",
+        "p": "is a natural gas fire that continuously burns on a hillside, creating a mesmerizing and enduring display...",
+        "btn": "View"
+      }
+    }
+  },
+  "sectionfourth": {
+    "welcomeTo": "Welcome to",
+    "azerbaijan": "Azerbaijan",
+    "planningTrip": "Planning a trip to Azerbaijan can be a challenging endeavor, particularly when you're unfamiliar with all the unique aspects and hidden treasures of this captivating country. ",
+    "assistance": "is here to assist you in selecting the perfect itinerary for your adventure. Why should you choose us:",
+    "reasons": {
+      "first": "We are the experienced travel concierge with more than 10 years’ experience and thousands of happy tourists",
+      "second": "We are the registered tour operator officially licensed by the State Tourism Agency of the Republic of Azerbaijan",
+      "third": "We practise a personal approach to each customer and design your trip according to your needs"
+    }
+  },
+  "sectionfifth": {
+    "popularDestinations": "Popular destinations",
+    "chooseCity": "Choose a city"
+  },
+  "sectionsixth": {
+    "whatTouristsSay": "What tourists say?",
+    "touristsSayIntro": "More than 1500 tourists already travelled to Russia with us. Here is what they say:",
+    "recommendedBy": "Recommended by:",
+    "testimonials": [
+      {
+        "name": "Yvonne Sanders",
+        "date": "2019-10-05",
+        "rating": 5,
+        "comment": "Hello and Good day We wanted to say 'Thank you so very much' to Irina and Sergej for their warm welcome and the wonderful time that we had in St. Petersburg in early October while we were with them. We enjoyed their..."
+      },
+      {
+        "name": "Yvonne Sanders",
+        "date": "2019-10-05",
+        "rating": 5,
+        "comment": "Hello and Good day We wanted to say 'Thank you so very much' to Irina and Sergej for their warm welcome and the wonderful time that we had in St. Petersburg in early October while we were with them. We enjoyed their..."
+      },
+      {
+        "name": "Yvonne Sanders",
+        "date": "2019-10-05",
+        "rating": 5,
+        "comment": "Hello and Good day We wanted to say 'Thank you so very much' to Irina and Sergej for their warm welcome and the wonderful time that we had in St. Petersburg in early October while we were with them. We enjoyed their..."
+      }
+    ]
+  },
+  "azerbaijan": {
+    "title": "Azerbaijan",
+    "subtitle": "The great adventure",
+    "description": "We offer you our handpicked tours and excursions for an incredible vacation in Azerbaijan"
+  },
+  "tourtypes": {
+    "default": "Select Tour Type",
+    "Packagetours": "Package dsada tours",
+    "Daytoursexcursions": "Day tours & excursions",
+    "Visafreeshoretours": "Visa-free shore tours"
+  },
+  "cityDestinations": {
+    "Baku": "Baku",
+    "Gabala": "Gabala",
+    "Lerik": "Lerik",
+    "Lankaran": "Lankaran",
+    "Guba": "Guba",
+    "Gusar": "Gusar",
+    "Shusha": "Shusha",
+    "Khankandi": "Khankandi",
+    "Ismailly": "Ismailly"
+  },
+  "citiesDropdown": {
+    "Baku": "Baku",
+    "Gabala": "Gabala",
+    "Lerik": "Lerik",
+    "Lankaran": "Lankaran",
+    "Guba": "Guba",
+    "Gusar": "Gusar",
+    "Shusha": "Shusha",
+    "Khankandi": "Khankandi",
+    "Ismailly": "Ismailly"
+  },
+  "citiesSlider": {
+    "Baku": {
+      "name": "Baku",
+      "info": "Baku, the capital and largest city of Azerbaijan, is a vibrant metropolis blending ancient heritage and modernity. Our tours of Baku offer an insightful journey through its most captivating landmarks and unique sites. From the historical charm of the Old City (Icherisheher) to the futuristic Flame Towers, our knowledgeable guides will share intriguing stories and give you a glimpse into the dynamic life and rich culture of contemporary Baku residents. Discover the enchanting blend of East and West that defines this fascinating city."
+    },
+    "Gabala": {
+      "name": "Gabala",
+      "info": "Gabala, nestled amidst the picturesque landscapes of Azerbaijan, is a hidden gem waiting to be explored. Our tours of Gabala offer a delightful journey through its serene natural beauty and cultural attractions. From the tranquil shores of Lake Nohur to the adventurous trails of Tufandag Mountain, Gabala captivates visitors with its diverse offerings. Our experienced guides will unravel the secrets of this enchanting region, sharing stories of its rich history and vibrant culture. Immerse yourself in the charm of Gabala and experience the perfect blend of relaxation and adventure amidst the breathtaking scenery of Azerbaijan."
+    },
+    "Gusar": {
+      "name": "Gusar",
+      "info": "Gusar, a picturesque town nestled in the foothills of the Greater Caucasus Mountains in Azerbaijan, offers a serene retreat for nature lovers and adventurers alike. Our tours of Gusar invite you to explore its pristine landscapes, lush forests, and majestic mountain peaks. From the tranquil beauty of Laza Village to the exhilarating trails of Shahdag National Park, Gusar mesmerizes visitors with its natural wonders and outdoor activities. Our knowledgeable guides will lead you through this enchanting region, sharing insights into its unique flora and fauna, as well as the rich cultural heritage of its inhabitants. Discover the tranquility and charm of Gusar as you embark on an unforgettable journey amidst the stunning vistas of the Caucasus Mountains."
+    },
+    "Ismailly": {
+      "name": "Ismailly",
+      "info": "Ismailly, situated in the heart of Azerbaijan's lush greenery and rolling hills, offers a tranquil escape from the hustle and bustle of city life. Our tours of Ismailly invite you to immerse yourself in the serene beauty of this charming region. From the tranquil waters of Lake Shamkir to the picturesque landscapes of Lahij Village, Ismailly captivates visitors with its natural splendor and rich cultural heritage. Our experienced guides will take you on a journey through the region's hidden gems, sharing stories of its history, traditions, and the warm hospitality of its people. Whether you're exploring ancient mosques, wandering through vineyards, or simply enjoying the tranquility of the countryside, Ismailly promises an unforgettable experience for all who visit."
+    },
+    "Lankaran": {
+      "name": "Lankaran",
+      "info": "Lankaran, a coastal city nestled along the Caspian Sea in Azerbaijan, beckons with its blend of natural beauty and cultural heritage. Our tours of Lankaran offer a glimpse into the charm of this coastal gem, where lush greenery meets sandy beaches. From exploring the historic Khan's Palace to wandering through the vibrant bazaars of the Old Town, Lankaran captivates visitors with its rich history and bustling atmosphere. Our knowledgeable guides will lead you through the city's winding streets, sharing stories of its past and present, as well as introducing you to the flavors of local cuisine. Whether you're strolling along the promenade or venturing into the surrounding countryside, Lankaran promises an immersive experience that celebrates the beauty and diversity of Azerbaijan's southern coast."
+    },
+    "Lerik": {
+      "name": "Lerik",
+      "info": "Lerik, a serene mountain town in southern Azerbaijan, is famed for its breathtaking landscapes and tranquil atmosphere. Known for its lush forests, picturesque valleys, and the longevity of its residents, Lerik offers a unique retreat into nature. Our tours of Lerik will take you through its verdant scenery and peaceful environment, exploring places like the ancient Hirkan National Park and the intriguing Museum of Longevity. Our knowledgeable guides will share stories of Lerik's rich natural heritage and its people's traditions. Whether hiking through scenic trails or simply enjoying the fresh mountain air, Lerik provides a rejuvenating escape for nature enthusiasts and those seeking tranquility."
+    },
+    "Guba": {
+      "name": "Guba",
+      "info": "Guba, nestled in the northeastern region of Azerbaijan, is a captivating destination renowned for its stunning natural landscapes and rich cultural heritage. Our tours of Guba offer a remarkable journey through this diverse region, where verdant forests, alpine meadows, and majestic mountains beckon adventurers and nature lovers alike. From exploring the historic sites of the ancient city to immersing yourself in the traditional way of life of rural villages, Guba captivates visitors with its authenticity and charm. Our knowledgeable guides will lead you on an exploration of Guba's hidden treasures, sharing insights into its history, traditions, and the warm hospitality of its people. Whether you're trekking through the rugged terrain of the Caucasus Mountains, sampling local delicacies at bustling markets, or simply taking in the breathtaking scenery, Guba promises an unforgettable experience that celebrates the beauty and diversity of Azerbaijan's northern region."
+    },
+    "Shusha": {
+      "name": "Shusha",
+      "info": "Shusha, located in the heart of the Karabakh region, is a city steeped in history and cultural significance. Often referred to as the cultural capital of Azerbaijan, Shusha boasts a rich tapestry of historical landmarks, architectural marvels, and breathtaking landscapes. Our tours of Shusha offer a deep dive into its storied past and vibrant present. You'll explore the ancient Shusha Fortress, wander through the charming streets lined with historical buildings, and visit significant cultural sites such as the Yukhari Govhar Agha Mosque and the Natavan House. Our knowledgeable guides will share fascinating stories about Shusha's heritage, from its role in Azerbaijani history to its contributions to music, literature, and the arts. Nestled amidst the picturesque mountains, Shusha provides a serene yet inspiring setting that captivates every visitor. Discover the resilience and spirit of Shusha's people as you immerse yourself in the unique blend of natural beauty and cultural richness that defines this extraordinary city."
+    },
+    "Khankandi": {
+      "name": "Khankandi",
+      "info": "Khankandi, the largest city in the Karabakh region, is a hub of cultural and historical significance. Known for its vibrant atmosphere and scenic surroundings, Khankandi is a city that beautifully melds the old with the new. Our tours of Khankandi provide an in-depth exploration of its most notable attractions and hidden gems. You will visit historical landmarks such as the Weeping Spring and enjoy the lush greenery of city parks. The city's rich history is evident in its architecture and cultural institutions, including museums and theaters that showcase the region's heritage. Our experienced guides will narrate captivating stories about Khankandi's past, its strategic importance, and its cultural evolution. Nestled in the picturesque foothills of the Lesser Caucasus Mountains, Khankandi offers stunning views and a peaceful retreat into nature. Discover the dynamic life of Khankandi residents and the cultural depth that makes this city a unique destination for travelers."
+    }
+  },
+  "search": {
+    "flightsTab": "Flights",
+    "hotelsTab": "Hotels",
+    "adults": "Adults",
+    "children": "Children",
+    "firstclass": "First Class",
+    "buisness": "Buisness",
+    "economy": "Economy",
+    "searchFlight": "Search Flights",
+    "oneway": "One Way",
+    "twoway": "Two Way",
+    "multicity": "Multi-city"
+  },
+  "temp": {
+    "Wind": "Wind"
+  },
+  "api": {
+    "errormessage": "Please enter correct city",
+    "message": "Check your city from here"
+  },
+  "footer": {
+    "discover": "Discover Azerbaijan with us! Our guided tours offer personalized itineraries and expert insights. Choose an unforgettable journey with culture, history, and stunning landscapes.",
+    "phone": "+994(50)-274-01-81",
+    "location": "Baku, Azerbaijan",
+    "useful_links": "Useful Links",
+    "about_us": "About us",
+    "contact_us": "Contact us",
+    "privacy_policy": "Privacy policy",
+    "what_we_offer": "What we offer",
+    "one_day_tour": "One day tour",
+    "multi_day_tours": "Multi day tours",
+    "destinations": "Destinations",
+    "visa_information": "Visa information",
+    "copyright": "2024 ©Azerbaijan Tours. All rights reserved."
+  },
+  "whatToDo": {
+    "0": {
+      "title": "Museums",
+      "furtherInfo": "For Further information click the button ↓",
+      "info": "Azerbaijani museums offer a rich glimpse into the country's diverse cultural heritage and history. The Azerbaijan National Museum of History in Baku houses extensive archaeological and ethnographic collections, providing insights into the region's past. ",
+      "descriptiontwo": "Additionally, the Heydar Aliyev Center, designed by renowned architect Zaha Hadid, serves as a cultural hub with rotating exhibitions and a focus on contemporary art and innovation.",
+      "check": "Explore"
+    },
+    "1": {
+      "title": "Architecture",
+      "info": "Azerbaijan architecture uniquely blends ancient Persian, Islamic, and Soviet influences, creating a rich tapestry of styles. The medieval city of Baku, with its stunning Flame Towers and the historic Maiden Tower, showcases this eclectic mix.",
+      "furtherInfo": "For Further information click the button ↓",
+      "check": "Explore",
+      "descriptiontwo": " Contemporary developments, such as the Heydar Aliyev Center designed by Zaha Hadid, highlight the country's embrace of modern, fluid design."
+    },
+    "2": {
+      "title": "Lakes",
+      "info": "Azerbaijan boasts a diverse array of lakes, each offering unique natural beauty and recreational opportunities. From the tranquil waters of Goygol Lake to the scenic surroundings of Maralgol Lake in Goygol National Park, these lakes are cherished for their picturesque landscapes.",
+      "furtherInfo": "For more details, click the button below",
+      "check": "Explore",
+      "descriptiontwo": "These natural wonders not only provide habitats for diverse flora and fauna but also serve as popular destinations for outdoor enthusiasts and nature lovers."
+    },
+    "3": {
+      "title": "UNESCO's Heritage",
+      "info": "Azerbaijan boasts several UNESCO World Heritage sites that highlight its rich cultural and historical heritage. The Walled City of Baku, along with the Shirvanshah's Palace and Maiden Tower, exemplifies medieval architecture and urban planning. ",
+      "furtherInfo": "For Further information click the button ↓",
+      "check": "Explore",
+      "descriptiontwo": "Additionally, the Gobustan Rock Art Cultural Landscape features ancient carvings and inscriptions that provide a fascinating glimpse into prehistoric life in the region."
+    },
+    "4": {
+      "title": "Religious",
+      "info": "Azerbaijan's religious buildings reflect its diverse cultural and historical influences, showcasing a blend of Islamic and pre-Islamic architectural styles. The Bibi-Heybat Mosque, with its stunning modern reconstruction, stands as a significant spiritual and architectural landmark. ",
+      "furtherInfo": "For Further information click the button ↓",
+      "check": "Explore",
+      "descriptiontwo": "Meanwhile, the Fire Temple of Ateshgah, a testament to the country's ancient Zoroastrian heritage, highlights Azerbaijan's role as a historical crossroads of various religious traditions."
+    },
+    "5": {
+      "title": "Parks",
+      "info": "Azerbaijan's parks offer a blend of natural beauty and recreational facilities, serving as green oases in urban landscapes. The Seaside Boulevard in Baku, one of the longest promenades in the world, provides picturesque views of the Caspian Sea along with entertainment and leisure activities.",
+      "furtherInfo": "For Further information click the button ↓",
+      "check": "Explore",
+      "descriptiontwo": " Gobustan National Park, a UNESCO World Heritage site, not only features stunning landscapes but also ancient rock carvings and mud volcanoes, making it a fascinating destination for nature and history enthusiasts alike."
+    },
+    "6": {
+      "title": "Hiking in Azerbaijan",
+      "info": "Hiking in Azerbaijan provides an opportunity to explore diverse landscapes, from the lush forests of the Caucasus Mountains to the semi-desert regions. The Greater Caucasus range offers trails with breathtaking views, such as those found in Shahdag National Park, where hikers can encounter picturesque valleys, waterfalls, and alpine meadows.",
+      "furtherInfo": "For Further information click the button ↓",
+      "check": "Explore",
+      "descriptiontwo": " Additionally, the trails around the village of Lahij offer a cultural journey through ancient cobblestone streets and traditional crafts, making for a rich and varied hiking experience."
+    },
+    "7": {
+      "title": "Sports and entertainment",
+      "info": "Sports and entertainment in Azerbaijan are vibrant and diverse, reflecting the country's passion for both traditional and modern activities. Baku, the capital, hosts international events such as the Formula 1 Azerbaijan Grand Prix and the UEFA Europa League. Traditional sports like wrestling and horseback riding remain popular, while contemporary entertainment options include the Flame Towers' light shows, opera, ballet performances at the Azerbaijan State Academic Opera and Ballet Theater, and a bustling nightlife scene in Baku's trendy neighborhoods.",
+      "furtherInfo": "For Further information click the button ↓",
+      "check": "Explore",
+      "descriptiontwo": ""
+    },
+    "8": {
+      "title": "Cuisine",
+      "info": "Azerbaijani cuisine is a rich tapestry of flavors, reflecting its diverse cultural influences and abundant local produce. Signature dishes include plov, a fragrant rice dish often cooked with saffron, meat, and dried fruits, and dolma, grape leaves stuffed with minced meat and rice. The cuisine also features an array of kebabs, fresh salads, and sweets like pakhlava and shekerbura, often enjoyed with aromatic Azerbaijani tea.",
+      "furtherInfo": "For Further information click the button ↓",
+      "check": "Explore",
+      "descriptiontwo": ""
+    },
+    "9": {
+      "title": "Wineries",
+      "info": "Azerbaijan's wineries are an integral part of its rich viticultural heritage, with a history of winemaking that dates back thousands of years. The country's diverse climate and fertile soils, particularly in regions like Ganja, Shamakhi, and Gabala, produce a variety of high-quality grapes. Notable wineries such as Az-Granata and Savalan offer tours and tastings, allowing visitors to experience the unique flavors of Azerbaijani wines, from robust reds to crisp whites, and learn about the traditional and modern techniques used in their production.",
+      "furtherInfo": "For Further information click the button ↓",
+      "check": "Explore",
+      "descriptiontwo": ""
+    },
+    "10": {
+      "title": "Waterfalls",
+      "info": "Azerbaijan is home to several stunning waterfalls, each offering unique natural beauty and a tranquil escape. The Afurja Waterfall in the Quba district, one of the country's most famous, cascades dramatically from a height of about 70 meters.",
+      "furtherInfo": "For Further information click the button ↓",
+      "check": "Explore",
+      "descriptiontwo": " The Laza Waterfalls, located in the Gusar region, provide a picturesque setting in the Greater Caucasus Mountains, surrounded by lush greenery and rocky cliffs, making them a popular destination for hikers and nature lovers."
+    },
+    "11": {
+      "title": "Bazaars",
+      "info": "Azerbaijan's bazaars are vibrant hubs of activity, offering a sensory feast of sights, sounds, and aromas. The Taza Bazaar in Baku, one of the oldest markets in the city, showcases a dazzling array of fresh fruits, vegetables, spices, and local delicacies. Visitors can also explore the Nizami Street market, known for its eclectic mix of traditional crafts, souvenirs, and street food, providing an authentic glimpse into Azerbaijani culture and commerce.",
+      "furtherInfo": "For Further information click the button ↓",
+      "check": "Explore",
+      "descriptiontwo": ""
+    },
+    "recommended": "Recommended",
+    "recommendedTooltip": "This city is recommended by the author!",
+    "check": "Check"
+  },
+  "destinations": {
+    "0": {
+      "title": "Baku",
+      "info": "Baku, the capital of Azerbaijan, is the historic center of Baku, a UNESCO World Heritage site. Wander through the charming old city, visit the iconic Flame Towers, and enjoy the vibrant nightlife along the Caspian Sea coast.",
+      "descriptiontwo": "Discover the architectural marvel of the Heydar Aliyev Center and immerse yourself in the rich cultural heritage at the Azerbaijan Carpet Museum. Stroll along the scenic Baku Boulevard and savor traditional Azerbaijani cuisine at the city's diverse restaurants.",
+      "check": "Check",
+      "furtherInfo": "For Further information click the button ↓"
+    },
+    "1": {
+      "title": "Lankaran",
+      "info": "Discover Lankaran's beautiful beaches and rich history, including its stunning Lankaran Fortress. Enjoy the lush tea plantations and the unique subtropical climate that makes this city a perfect getaway. ",
+      "descriptiontwo": "Explore the coastal charm and immerse yourself in the vibrant culture of Lankaran. Experience the warm hospitality of the locals and indulge in delicious local cuisine. Relax and unwind amidst the natural beauty of this coastal gem.",
+      "check": "Check",
+      "furtherInfo": "For Further information click the button ↓"
+    },
+    "2": {
+      "title": "Shamakhy",
+      "info": "Visit the ancient city of Shamakhy, known for its historical mosques and beautiful landscapes. Explore the Diri Baba Mausoleum and enjoy the breathtaking views of the surrounding mountains.",
+      "descriptiontwo": " Immerse yourself in the rich history and culture of this enchanting city, where every corner tells a story. Experience the tranquility of the countryside and marvel at the architectural wonders of Shamakhy's past. Don't miss the opportunity to discover the hidden treasures and ancient traditions of this historic gem.",
+      "check": "Check",
+      "furtherInfo": "For Further information click the button ↓"
+    },
+    "3": {
+      "title": "Guba",
+      "info": "A beautiful waterfall located in the village of Afurdzhi. Enjoy the scenic hike to the waterfall and the refreshing atmosphere created by the cascading waters.",
+      "descriptiontwo": "After relishing the scenic hike to the waterfall, immerse yourself in the refreshing atmosphere created by the cascading waters.Whether you're seeking adventure or simply a peaceful retreat, a visit to this beautiful waterfall promises an unforgettable experience that will leave you rejuvenated and inspired.",
+      "check": "Check",
+      "furtherInfo": "For Further information click the button ↓"
+    },
+    "4": {
+      "title": "Shaki",
+      "info": "A picturesque forest perfect for nature walks and picnics. Immerse yourself in the serene environment and discover the diverse flora and fauna that make this forest a natural haven.",
+      "descriptiontwo": "Engage your senses as you meander along winding trails, inhaling the fresh scent of pine and listening to the soothing melodies of chirping birds.Experience a true escape from the hustle and bustle of daily life as you immerse yourself in the serene beauty of this woodland oasis.",
+      "check": "Check",
+      "furtherInfo": "For Further information click the button ↓"
+    },
+    "5": {
+      "title": "Ganja",
+      "info": "A historic palace known for its beautiful stained glass windows and intricate architecture. Delve into the rich history of Sheki and admire the craftsmanship that makes this palace a national treasure.",
+      "descriptiontwo": "Wander through its grand halls and marvel at the exquisite detailing that reflects the opulence of a bygone era.Each room tells a story, showcasing the artistry and skill of the craftsmen who built this architectural masterpiece.",
+      "check": "Check",
+      "furtherInfo": "For Further information click the button ↓"
+    },
+    "6": {
+      "title": "Gusar",
+      "info": "A picturesque forest perfect for nature walks and picnics. The tranquility of the forest provides a perfect escape from the hustle and bustle of city life, making it an ideal spot for relaxation.",
+      "descriptiontwo": "As you stroll through the winding trails, you'll encounter a diverse array of flora and fauna, adding to the forest's enchanting appeal. Whether you're an avid nature enthusiast or simply looking for a peaceful retreat, this forest offers a rejuvenating experience for all visitors.",
+      "check": "Check",
+      "furtherInfo": "For Further information click the button ↓"
+    },
+    "7": {
+      "title": "Ismailly",
+      "info": "A biodiversity hotspot with unique flora and fauna, great for hiking and wildlife watching. Explore the dense forests, enjoy bird watching, and experience the natural beauty of this protected area.",
+      "descriptiontwo": "Tread along scenic trails that wind through verdant landscapes, offering breathtaking views at every turn. This protected area is a haven for nature lovers, providing a serene escape into the heart of unspoiled wilderness.",
+      "check": "Check",
+      "furtherInfo": "For Further information click the button ↓"
+    },
+    "8": {
+      "title": "Khizi",
+      "info": "Visit the historic Yeddi Gumbaz Mausoleum, known for its seven ancient tombs and serene surroundings. Learn about the history of the Shirvan dynasty and enjoy the peaceful ambiance of this historical site.",
+      "descriptiontwo": "Marvel at the architectural beauty and intricate carvings that adorn each tomb, reflecting the artistry of a bygone era. As you wander through the site, you'll gain a deeper understanding of the Shirvan dynasty's legacy and the cultural significance of this timeless monument.",
+      "check": "Check",
+      "furtherInfo": "For Further information click the button ↓"
+    },
+    "9": {
+      "title": "Lerik",
+      "info": "Lerik is renowned for the longevity of its inhabitants and its stunning mountainous landscapes. Experience the fresh mountain air, explore the picturesque villages, and discover the cultural heritage of this unique region.",
+      "descriptiontwo": "Hike through the lush, green valleys and enjoy panoramic views that stretch as far as the eye can see. Engage with the warm and welcoming locals, and immerse yourself in the traditional customs and vibrant folklore of Lerik.",
+      "check": "Check",
+      "furtherInfo": "For Further information click the button ↓"
+    },
+    "recommended": "Recommended",
+    "recommendedTooltip": "This city is recommended by the author!",
+    "check": "Check"
+  },
+  "secondupperpart": {
+    "title": "What do you want",
+    "titletwo": "to do",
+    "titleicon": "?",
+    "titlethree": "Here you can check what to do or where to visit, starting from delicious cuisine of Azerbaijan, to snowboarding on Shahdag resort."
+  },
+  "onedaytours": {
+    "title": "Which city will you",
+    "titletwo": "explore with us",
+    "titleicon": "?",
+    "titlethree": "Here you can book excursions and one-day tours without buying a package. You can combine these short tours to create your unique itinerary."
+  }
 }
