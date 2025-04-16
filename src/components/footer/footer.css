@@ -15,6 +15,16 @@
   /* --main-light-blue-color: #3c819e; */
   /* --main-light-green-color: #43c7b1; */
   --main-yellow-color: rgb(255, 230, 0);
+    --font-family-rubik: rubik;
+    --main-black-color: #000000;
+    --main-white-color: #ffffff;
+    --font-family-reddit: reddit sans;
+    --main-light-green-color: #42a08a;
+    /* --main-light-green-color: #9aa042; */
+    /* --main-light-green-color: #29536s5; */
+    /* --main-light-blue-color: #3c819e; */
+    /* --main-light-green-color: #43c7b1; */
+    --main-yellow-color: rgb(255, 230, 0);
 }
 
 .divgreenline::before {
